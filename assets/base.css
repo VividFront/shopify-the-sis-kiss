@@ -1350,9 +1350,8 @@ button.shopify-payment-button__button--unbranded,
   --shadow-blur-radius: var(--buttons-shadow-blur-radius);
   --shadow-opacity: var(--buttons-shadow-opacity);
   --shadow-visible: var(--buttons-shadow-visible);
-  --border-offset: var(
-    --buttons-border-offset
-  ); /* reduce radius edge artifacts */
+  --border-offset: var(--buttons-border-offset);
+  /* reduce radius edge artifacts */
   --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
@@ -2684,11 +2683,6 @@ menu-drawer + .header__search {
   .header--top-center > .header__search {
     display: inline-flex;
   }
-
-  .header:not(.header--top-center) > .header__search,
-  .header--top-center * > .header__search {
-    display: none;
-  }
 }
 
 .no-js .predictive-search {
@@ -3061,6 +3055,7 @@ details-disclosure > details {
     border-right: none;
     border-radius: 0;
   }
+
   .content-container--full-width-mobile:after {
     display: none;
   }
@@ -3317,6 +3312,7 @@ details-disclosure > details {
     0% {
       transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2);
     }
+
     100% {
       transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2);
     }
@@ -3349,6 +3345,7 @@ details-disclosure > details {
       transform: translateY(10vh);
       opacity: 0;
     }
+
     to {
       transform: translateY(0);
       opacity: 1;

@@ -9,9 +9,10 @@
   ::after {
     --vf-font-size-root: 16;
 
-    --vf-font-size-display: calc(32rem / var(--vf-font-size-root));
+    --vf-font-size-display: calc(4rem / var(--vf-font-size-root));
     --vf-font-size-h1: calc(26rem / var(--vf-font-size-root));
     --vf-font-size-h2: calc(22rem / var(--vf-font-size-root));
+    --vf-font-size-h2-alt: calc(48rem / var(--vf-font-size-root));
     --vf-font-size-h3: calc(20rem / var(--vf-font-size-root));
     --vf-font-size-h4: calc(18rem / var(--vf-font-size-root));
     --vf-font-size-h5: calc(17rem / var(--vf-font-size-root));
@@ -20,9 +21,10 @@
     --vf-font-size-body-copy-small: calc(13rem / var(--vf-font-size-root));
     --vf-font-size-body-copy-large: calc(16rem / var(--vf-font-size-root));
 
-    --vf-line-height-display: calc(40rem / var(--vf-font-size-root));
+    --vf-line-height-display: calc(48rem / var(--vf-font-size-root));
     --vf-line-height-h1: calc(30rem / var(--vf-font-size-root));
     --vf-line-height-h2: calc(28rem / var(--vf-font-size-root));
+    --vf-line-height-h2-alt: calc(56rem / var(--vf-font-size-root));
     --vf-line-height-h3: calc(26rem / var(--vf-font-size-root));
     --vf-line-height-h4: calc(24rem / var(--vf-font-size-root));
     --vf-line-height-h5: calc(24rem / var(--vf-font-size-root));
@@ -31,26 +33,26 @@
     --vf-line-height-body-copy-small: calc(18rem / var(--vf-font-size-root));
     --vf-line-height-body-copy-large: calc(24rem / var(--vf-font-size-root));
 
-    --vf-font-family-heading: 'Josefin Slab', Times, serif;
-    --vf-font-family-body: 'semplicitapro', Helvetica, sans-serif;
+    --vf-font-family-display: 'Playfari Display', Times, serif;
+    --vf-font-family-heading: 'Quasimoda', Helvetica, sans-serif;
+    --vf-font-family-body: 'Quasimoda', Helvetica, sans-serif;
     --vf-font-family-sans: 'Open Sans', Helvetica, sans-serif;
 
-    --vf-color-primary: 173 31 46;
-    --vf-color-primary-hover: 224 40 59;
-    --vf-color-primary-pressed: 97 17 25;
-    --vf-color-secondary: 233 104 82;
-    --vf-color-secondary-hover: 252 113 88;
-    --vf-color-secondary-pressed: 138 62 48;
-    --vf-color-tertiary: 63 115 141;
+    --vf-color-primary: 0 0 0;
+    --vf-color-primary-hover: 44 44 44;
+    --vf-color-primary-pressed: 23 23 23;
+    --vf-color-secondary: 249 230 238;
+    --vf-color-secondary-hover: 255 247 250;
+    --vf-color-secondary-pressed: 248 221 233;
     --vf-color-ui-background: 247 247 247;
-    --vf-color-ui-dark: 239 239 239;
-    --vf-color-ui-medium: 242 242 242;
+    --vf-color-ui-dark: 25 25 25;
+    --vf-color-ui-pink: 243 229 232;
     --vf-color-input-background: 253 253 253;
-    --vf-color-border: 221 222 223;
+    --vf-color-border: 193 193 194;
     --vf-color-disabled: 222 222 222;
     --vf-color-disabled-high-contrast: 148 148 148;
     --vf-color-placeholder-high-contrast: 115 115 115;
-    --vf-color-error: 173 31 46;
+    --vf-color-error: 205 32 38;
     --vf-color-warning: 249 198 66;
     --vf-color-success: 41 168 37;
     --vf-color-error-background: 250 233 233;
@@ -91,27 +93,17 @@
     /* Grid */
     --vf-grid-cols-default: repeat(6, minmax(0, 1fr));
     --vf-grid-gap: 16px;
-
-    /* Influencer Images Grid */
-    --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-    --vf-h-influencer-lg: auto;
-    --vf-h-influencer-xl: auto;
-    --vf-h-influencer-half: auto;
-
-    /* Section Specific */
-    --vf-home-icons-padding: 14rem;
-    --vf-home-icons-image-height: calc(100% - var(--vf-home-icons-padding));
-    --vf-home-icons-bg-color: 235 235 237;
   }
 
   @media screen(md) {
     :root,
     ::before,
     ::after {
-      --vf-font-size-display: calc(56rem / var(--vf-font-size-root));
-      --vf-font-size-h1: calc(40rem / var(--vf-font-size-root));
-      --vf-font-size-h2: calc(32rem / var(--vf-font-size-root));
-      --vf-font-size-h3: calc(28rem / var(--vf-font-size-root));
+      --vf-font-size-display: calc(72rem / var(--vf-font-size-root));
+      --vf-font-size-h1: calc(56rem / var(--vf-font-size-root));
+      --vf-font-size-h2: calc(44rem / var(--vf-font-size-root));
+      --vf-font-size-h2-alt: calc(64rem / var(--vf-font-size-root));
+      --vf-font-size-h3: calc(32rem / var(--vf-font-size-root));
       --vf-font-size-h4: calc(24rem / var(--vf-font-size-root));
       --vf-font-size-h5: calc(20rem / var(--vf-font-size-root));
       --vf-font-size-h6: calc(18rem / var(--vf-font-size-root));
@@ -120,10 +112,11 @@
       --vf-font-size-body-copy-large: calc(18rem / var(--vf-font-size-root));
       --vf-font-size-nav: calc(20rem / var(--vf-font-size-root));
 
-      --vf-line-height-display: calc(62rem / var(--vf-font-size-root));
-      --vf-line-height-h1: calc(48rem / var(--vf-font-size-root));
-      --vf-line-height-h2: calc(38rem / var(--vf-font-size-root));
-      --vf-line-height-h3: calc(34rem / var(--vf-font-size-root));
+      --vf-line-height-display: calc(68rem / var(--vf-font-size-root));
+      --vf-line-height-h1: calc(64rem / var(--vf-font-size-root));
+      --vf-line-height-h2: calc(48rem / var(--vf-font-size-root));
+      --vf-line-height-h2-alt: calc(72rem / var(--vf-font-size-root));
+      --vf-line-height-h3: calc(38rem / var(--vf-font-size-root));
       --vf-line-height-h4: calc(29rem / var(--vf-font-size-root));
       --vf-line-height-h5: calc(28rem / var(--vf-font-size-root));
       --vf-line-height-h6: calc(26rem / var(--vf-font-size-root));
@@ -142,28 +135,6 @@
       /* Grid */
       --vf-grid-cols-default: repeat(12, minmax(0, 1fr));
       --vf-grid-gap: 32px;
-
-      /* Influencer Images Grid */
-      --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-      --vf-h-influencer-lg: calc(448rem / 16);
-      --vf-h-influencer-xl: calc(616rem / 16);
-      --vf-h-influencer-half: calc(var(--vf-h-influencer-xl) / 2);
-
-      /* Section Specific */
-      --vf-home-icons-padding: 21.75rem;
-      --vf-home-icons-image-height: calc(100% - var(--vf-home-icons-padding));
-    }
-  }
-
-  @media screen(lg) {
-    :root,
-    ::before,
-    ::after {
-      /* Influencer Images Grid */
-      --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-      --vf-h-influencer-lg: calc(616rem / 16);
-      --vf-h-influencer-xl: calc(887rem / 16);
-      --vf-h-influencer-half: calc(var(--vf-h-influencer-xl) / 2);
     }
   }
 

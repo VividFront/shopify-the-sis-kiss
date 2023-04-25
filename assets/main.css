@@ -472,9 +472,10 @@ video {
 ::after {
   --vf-font-size-root: 16;
 
-  --vf-font-size-display: calc(32rem / var(--vf-font-size-root));
+  --vf-font-size-display: calc(4rem / var(--vf-font-size-root));
   --vf-font-size-h1: calc(26rem / var(--vf-font-size-root));
   --vf-font-size-h2: calc(22rem / var(--vf-font-size-root));
+  --vf-font-size-h2-alt: calc(48rem / var(--vf-font-size-root));
   --vf-font-size-h3: calc(20rem / var(--vf-font-size-root));
   --vf-font-size-h4: calc(18rem / var(--vf-font-size-root));
   --vf-font-size-h5: calc(17rem / var(--vf-font-size-root));
@@ -483,9 +484,10 @@ video {
   --vf-font-size-body-copy-small: calc(13rem / var(--vf-font-size-root));
   --vf-font-size-body-copy-large: calc(16rem / var(--vf-font-size-root));
 
-  --vf-line-height-display: calc(40rem / var(--vf-font-size-root));
+  --vf-line-height-display: calc(48rem / var(--vf-font-size-root));
   --vf-line-height-h1: calc(30rem / var(--vf-font-size-root));
   --vf-line-height-h2: calc(28rem / var(--vf-font-size-root));
+  --vf-line-height-h2-alt: calc(56rem / var(--vf-font-size-root));
   --vf-line-height-h3: calc(26rem / var(--vf-font-size-root));
   --vf-line-height-h4: calc(24rem / var(--vf-font-size-root));
   --vf-line-height-h5: calc(24rem / var(--vf-font-size-root));
@@ -494,26 +496,26 @@ video {
   --vf-line-height-body-copy-small: calc(18rem / var(--vf-font-size-root));
   --vf-line-height-body-copy-large: calc(24rem / var(--vf-font-size-root));
 
-  --vf-font-family-heading: 'Josefin Slab', Times, serif;
-  --vf-font-family-body: 'semplicitapro', Helvetica, sans-serif;
+  --vf-font-family-display: 'Playfari Display', Times, serif;
+  --vf-font-family-heading: 'Quasimoda', Helvetica, sans-serif;
+  --vf-font-family-body: 'Quasimoda', Helvetica, sans-serif;
   --vf-font-family-sans: 'Open Sans', Helvetica, sans-serif;
 
-  --vf-color-primary: 173 31 46;
-  --vf-color-primary-hover: 224 40 59;
-  --vf-color-primary-pressed: 97 17 25;
-  --vf-color-secondary: 233 104 82;
-  --vf-color-secondary-hover: 252 113 88;
-  --vf-color-secondary-pressed: 138 62 48;
-  --vf-color-tertiary: 63 115 141;
+  --vf-color-primary: 0 0 0;
+  --vf-color-primary-hover: 44 44 44;
+  --vf-color-primary-pressed: 23 23 23;
+  --vf-color-secondary: 249 230 238;
+  --vf-color-secondary-hover: 255 247 250;
+  --vf-color-secondary-pressed: 248 221 233;
   --vf-color-ui-background: 247 247 247;
-  --vf-color-ui-dark: 239 239 239;
-  --vf-color-ui-medium: 242 242 242;
+  --vf-color-ui-dark: 25 25 25;
+  --vf-color-ui-pink: 243 229 232;
   --vf-color-input-background: 253 253 253;
-  --vf-color-border: 221 222 223;
+  --vf-color-border: 193 193 194;
   --vf-color-disabled: 222 222 222;
   --vf-color-disabled-high-contrast: 148 148 148;
   --vf-color-placeholder-high-contrast: 115 115 115;
-  --vf-color-error: 173 31 46;
+  --vf-color-error: 205 32 38;
   --vf-color-warning: 249 198 66;
   --vf-color-success: 41 168 37;
   --vf-color-error-background: 250 233 233;
@@ -554,26 +556,16 @@ video {
   /* Grid */
   --vf-grid-cols-default: repeat(6, minmax(0, 1fr));
   --vf-grid-gap: 16px;
-
-  /* Influencer Images Grid */
-  --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-  --vf-h-influencer-lg: auto;
-  --vf-h-influencer-xl: auto;
-  --vf-h-influencer-half: auto;
-
-  /* Section Specific */
-  --vf-home-icons-padding: 14rem;
-  --vf-home-icons-image-height: calc(100% - var(--vf-home-icons-padding));
-  --vf-home-icons-bg-color: 235 235 237;
 }
 @media (min-width: 768px) {
   :root,
   ::before,
   ::after {
-    --vf-font-size-display: calc(56rem / var(--vf-font-size-root));
-    --vf-font-size-h1: calc(40rem / var(--vf-font-size-root));
-    --vf-font-size-h2: calc(32rem / var(--vf-font-size-root));
-    --vf-font-size-h3: calc(28rem / var(--vf-font-size-root));
+    --vf-font-size-display: calc(72rem / var(--vf-font-size-root));
+    --vf-font-size-h1: calc(56rem / var(--vf-font-size-root));
+    --vf-font-size-h2: calc(44rem / var(--vf-font-size-root));
+    --vf-font-size-h2-alt: calc(64rem / var(--vf-font-size-root));
+    --vf-font-size-h3: calc(32rem / var(--vf-font-size-root));
     --vf-font-size-h4: calc(24rem / var(--vf-font-size-root));
     --vf-font-size-h5: calc(20rem / var(--vf-font-size-root));
     --vf-font-size-h6: calc(18rem / var(--vf-font-size-root));
@@ -582,10 +574,11 @@ video {
     --vf-font-size-body-copy-large: calc(18rem / var(--vf-font-size-root));
     --vf-font-size-nav: calc(20rem / var(--vf-font-size-root));
 
-    --vf-line-height-display: calc(62rem / var(--vf-font-size-root));
-    --vf-line-height-h1: calc(48rem / var(--vf-font-size-root));
-    --vf-line-height-h2: calc(38rem / var(--vf-font-size-root));
-    --vf-line-height-h3: calc(34rem / var(--vf-font-size-root));
+    --vf-line-height-display: calc(68rem / var(--vf-font-size-root));
+    --vf-line-height-h1: calc(64rem / var(--vf-font-size-root));
+    --vf-line-height-h2: calc(48rem / var(--vf-font-size-root));
+    --vf-line-height-h2-alt: calc(72rem / var(--vf-font-size-root));
+    --vf-line-height-h3: calc(38rem / var(--vf-font-size-root));
     --vf-line-height-h4: calc(29rem / var(--vf-font-size-root));
     --vf-line-height-h5: calc(28rem / var(--vf-font-size-root));
     --vf-line-height-h6: calc(26rem / var(--vf-font-size-root));
@@ -604,27 +597,6 @@ video {
     /* Grid */
     --vf-grid-cols-default: repeat(12, minmax(0, 1fr));
     --vf-grid-gap: 32px;
-
-    /* Influencer Images Grid */
-    --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-    --vf-h-influencer-lg: calc(448rem / 16);
-    --vf-h-influencer-xl: calc(616rem / 16);
-    --vf-h-influencer-half: calc(var(--vf-h-influencer-xl) / 2);
-
-    /* Section Specific */
-    --vf-home-icons-padding: 21.75rem;
-    --vf-home-icons-image-height: calc(100% - var(--vf-home-icons-padding));
-  }
-}
-@media (min-width: 992px) {
-  :root,
-  ::before,
-  ::after {
-    /* Influencer Images Grid */
-    --vf-grid-cols-influencer: repeat(12, minmax(0, 1fr));
-    --vf-h-influencer-lg: calc(616rem / 16);
-    --vf-h-influencer-xl: calc(887rem / 16);
-    --vf-h-influencer-half: calc(var(--vf-h-influencer-xl) / 2);
   }
 }
 body {
@@ -632,7 +604,7 @@ body {
   font-size: var(--vf-font-size-body-copy);
   line-height: calc(22rem / 16);
   line-height: var(--vf-line-height-body-copy);
-  font-family: 'semplicitapro', Helvetica, sans-serif;
+  font-family: 'Quasimoda', Helvetica, sans-serif;
   font-family: var(--vf-font-family-body);
 }
 h1 {
@@ -676,7 +648,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Josefin Slab', Times, serif;
+  font-family: 'Quasimoda', Helvetica, sans-serif;
   font-family: var(--vf-font-family-heading);
 }
 select:enabled {
@@ -1032,7 +1004,7 @@ select:disabled {
   border-top-width: 0px;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgba(221, 222, 223, var(--tw-border-opacity));
+  border-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
   background-color: transparent;
 }
@@ -1042,7 +1014,7 @@ select:disabled {
   display: flex;
   padding: calc(12rem / 16);
   padding: calc(12rem / var(--vf-font-size-root));
-  font-family: 'semplicitapro', Helvetica, sans-serif, ui-sans-serif, system-ui,
+  font-family: 'Quasimoda', Helvetica, sans-serif, ui-sans-serif, system-ui,
     -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -1075,7 +1047,7 @@ select:disabled {
   padding-top: 0px;
   padding-bottom: calc(16rem / 16);
   padding-bottom: calc(16rem / var(--vf-font-size-root));
-  font-family: 'semplicitapro', Helvetica, sans-serif, ui-sans-serif, system-ui,
+  font-family: 'Quasimoda', Helvetica, sans-serif, ui-sans-serif, system-ui,
     -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
     BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -1176,7 +1148,7 @@ select:disabled {
   font-weight: 600;
   text-transform: capitalize;
   --tw-text-opacity: 1;
-  color: rgba(173, 31, 46, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
   color: rgb(var(--vf-color-primary) / var(--tw-text-opacity));
 }
 #slidecarthq
@@ -1186,7 +1158,7 @@ select:disabled {
   .upsell-add
   button:hover {
   --tw-text-opacity: 1;
-  color: rgba(224, 40, 59, var(--tw-text-opacity));
+  color: rgba(44, 44, 44, var(--tw-text-opacity));
   color: rgb(var(--vf-color-primary-hover) / var(--tw-text-opacity));
 }
 #slidecarthq .slidecarthq .upsells-stacked .upsell-item .upsell-add button svg {
@@ -1227,7 +1199,7 @@ select:disabled {
   border-top-width: 1px;
   border-style: solid;
   --tw-border-opacity: 1;
-  border-top-color: rgba(221, 222, 223, var(--tw-border-opacity));
+  border-top-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-top-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1262,7 +1234,7 @@ select:disabled {
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgba(221, 222, 223, var(--tw-border-opacity));
+  border-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1409,12 +1381,12 @@ summary::-webkit-details-marker {
 }
 ::-moz-selection {
   --tw-bg-opacity: 1;
-  background-color: rgba(173, 31, 46, var(--tw-bg-opacity));
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
 }
 ::selection {
   --tw-bg-opacity: 1;
-  background-color: rgba(173, 31, 46, var(--tw-bg-opacity));
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
 }
 .shopify-challenge__container {
@@ -1432,7 +1404,7 @@ summary::-webkit-details-marker {
   border-radius: 2px;
   border-radius: var(--vf-border-radius);
   --tw-bg-opacity: 1;
-  background-color: rgba(173, 31, 46, var(--tw-bg-opacity));
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
   padding-top: calc(9rem / 16);
   padding-bottom: calc(9rem / 16);
@@ -1444,7 +1416,7 @@ summary::-webkit-details-marker {
 }
 .shopify-challenge__container input[type='submit']:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(224, 40, 59, var(--tw-bg-opacity));
+  background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary-hover) / var(--tw-bg-opacity));
 }
 footer #contact_form {
@@ -1578,7 +1550,7 @@ footer #contact_form {
 }
 .richtext-content a:not(.button):not(.swp_share_link) {
   --tw-text-opacity: 1;
-  color: rgba(173, 31, 46, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
   color: rgb(var(--vf-color-primary) / var(--tw-text-opacity));
 }
 .richtext-content a:not(.button):hover {
@@ -1608,14 +1580,14 @@ footer #contact_form {
   border-radius: 50%;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgba(173, 31, 46, var(--tw-border-opacity));
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
   content: '';
 }
 .richtext-content.-note-section h5 {
   font-style: normal;
   --tw-text-opacity: 1;
-  color: rgba(173, 31, 46, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
   color: rgb(var(--vf-color-primary) / var(--tw-text-opacity));
 }
 .richtext-content.-note-section p {
@@ -1628,7 +1600,7 @@ footer #contact_form {
   margin-bottom: calc(24rem / var(--vf-font-size-root));
   border-left-width: 4px;
   --tw-border-opacity: 1;
-  border-color: rgba(173, 31, 46, var(--tw-border-opacity));
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
