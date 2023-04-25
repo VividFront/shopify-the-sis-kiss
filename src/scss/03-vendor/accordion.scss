@@ -1,0 +1,31 @@
+.ac {
+  @apply border-x-0 border-t-0 border-b border-border mt-0 bg-transparent;
+
+  .ac-trigger {
+    @apply flex font-body text-body-copy transition-none p-12;
+
+    &:focus {
+      @apply text-copy;
+    }
+
+    &::after {
+      content: '' !important;
+    }
+  }
+
+  .ac-panel {
+    .ac-text {
+      @apply px-12 pt-0 pb-16 font-body text-body-copy text-copy;
+    }
+  }
+
+  &.is-active {
+    .close-icon {
+      @apply hidden;
+    }
+
+    .open-icon {
+      @apply inline;
+    }
+  }
+}

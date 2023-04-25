@@ -1,0 +1,101 @@
+#slidecarthq {
+  .slidecarthq {
+    .header {
+      @apply -order-2;
+    }
+
+    .rewards {
+      @apply -order-1 bg-white py-24 sticky top-0;
+
+      p {
+        @apply flex justify-center items-center gap-4;
+      }
+    }
+
+    .upsells-stacked {
+      @apply px-30;
+
+      .upsell-item {
+        @apply w-full rounded-none;
+
+        .upsell-add {
+          button {
+            @apply bg-transparent text-primary capitalize text-body-copy font-semibold hover:text-primary-hover;
+
+            svg {
+              @apply mr-10;
+            }
+          }
+        }
+      }
+    }
+
+    .items {
+      border-top: none !important;
+
+      .item {
+        .main {
+          .main-top {
+            @apply mb-12;
+          }
+
+          .main-bottom {
+            .quantity-selector {
+              button,
+              input {
+                @apply rounded-none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .upsells {
+      @apply sticky bottom-[190px] bg-white overflow-y-auto h-[180px] border-t-border border-0 border-t border-solid;
+    }
+
+    .upsells-header {
+      h2 {
+        @apply text-h5;
+      }
+    }
+
+    .rewards-progress-bar {
+      @apply relative pr-16;
+
+      &::after {
+        @apply content-[''] absolute right-0 top-[3px] w-34 h-34 bg-white translate-y-[-50%] translate-x-[50%] rounded-full border-border border-[1px];
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.23' height='18.584' viewBox='0 0 23.23 18.584'%3E%3Cpath id='Path_3316' data-name='Path 3316' d='M.906-21.75V-5.489H3.35a3.073,3.073,0,0,0,1.089,1.67,2.951,2.951,0,0,0,1.887.653,2.951,2.951,0,0,0,1.887-.653A3.073,3.073,0,0,0,9.3-5.489H15.74a3.073,3.073,0,0,0,1.089,1.67,2.951,2.951,0,0,0,1.887.653A2.951,2.951,0,0,0,20.6-3.819a3.073,3.073,0,0,0,1.089-1.67h2.444v-8.058l-.218-.242-4.646-4.646-.242-.218H14.844v-3.1ZM2.455-20.2H13.3V-7.038H9.3a3.073,3.073,0,0,0-1.089-1.67,2.951,2.951,0,0,0-1.887-.653,2.951,2.951,0,0,0-1.887.653A3.073,3.073,0,0,0,3.35-7.038h-.9Zm12.389,3.1h3.533l4.21,4.21v5.856h-.9A3.073,3.073,0,0,0,20.6-8.707a2.951,2.951,0,0,0-1.887-.653,2.951,2.951,0,0,0-1.887.653,3.073,3.073,0,0,0-1.089,1.67h-.9ZM6.327-7.812a1.5,1.5,0,0,1,1.1.448,1.5,1.5,0,0,1,.448,1.1,1.5,1.5,0,0,1-.448,1.1,1.5,1.5,0,0,1-1.1.448,1.5,1.5,0,0,1-1.1-.448,1.5,1.5,0,0,1-.448-1.1,1.5,1.5,0,0,1,.448-1.1A1.5,1.5,0,0,1,6.327-7.812Zm12.389,0a1.5,1.5,0,0,1,1.1.448,1.5,1.5,0,0,1,.448,1.1,1.5,1.5,0,0,1-.448,1.1,1.5,1.5,0,0,1-1.1.448,1.5,1.5,0,0,1-1.1-.448,1.5,1.5,0,0,1-.448-1.1,1.5,1.5,0,0,1,.448-1.1A1.5,1.5,0,0,1,18.716-7.812Z' transform='translate(-0.906 21.75)' fill='%23ad1f2e'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center;
+      }
+    }
+
+    .rewards-tiers-labels > .rewards-tiers-labels-item > span {
+      display: none !important;
+    }
+
+    .footer {
+      .footer-row:first-of-type {
+        @apply relative pb-32;
+
+        &::after {
+          content: 'Shipping calculated at checkout';
+          @apply absolute bottom-12 left-0 text-disabled-high-contrast text-[11px] pt-6;
+        }
+
+        strong:first-of-type {
+          @apply font-normal text-h6;
+        }
+      }
+
+      #slidecart-checkout-form {
+        button {
+          @apply text-h6;
+        }
+      }
+    }
+  }
+}
