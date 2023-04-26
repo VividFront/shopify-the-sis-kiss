@@ -28,7 +28,9 @@
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
-                            <a href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                            {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                              {{ block.settings.title }}
+                            {%- if block.settings.link != blank -%}</a>{%- endif -%}
                           </span>
                           <span class="absolute right-32 text-primary inline-block group-open:[display:none]" aria-hidden="true">{%- render 'icon-plus' %}</span>
                           <span class="absolute right-32 text-primary [display:none] group-open:inline-block" aria-hidden="true">{%- render 'icon-minus' %}</span>
@@ -57,24 +59,28 @@
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
-                            <a href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                            {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                              {{ block.settings.title }}
+                            {%- if block.settings.link != blank -%}</a>{%- endif -%}
                           </span>
                           <span class="absolute right-32 text-primary inline-block group-open:[display:none]" aria-hidden="true">{%- render 'icon-plus' %}</span>
                           <span class="absolute right-32 text-primary [display:none] group-open:inline-block" aria-hidden="true">{%- render 'icon-minus' %}</span>
                         </summary>
                         <div id="MobileMenu-Content-{{ forloop.index }}" class="py-24 bg-white" tabindex="-1">
                           <div class="container">
-                            <div class="flex flex-wrap gap-y-24">
+                            <div class="grid grid-cols-2 gap-y-24">
                               {%- if block.settings.image != blank -%}
-                                {% render 'menu-image', 
-                                  image_heading: block.settings.image_heading, 
-                                  image: block.settings.image,
-                                  callout_heading: block.settings.callout_heading,
-                                  callout_body: block.settings.callout_body,
-                                  link_text: block.settings.link_text,
-                                  link_url: block.settings.link_url,
-                                  size: 'medium'
-                                %}
+                                <div class="row-start-1 col-span-2">
+                                  {% render 'menu-image', 
+                                    image_heading: block.settings.image_heading, 
+                                    image: block.settings.image,
+                                    callout_heading: block.settings.callout_heading,
+                                    callout_body: block.settings.callout_body,
+                                    link_text: block.settings.link_text,
+                                    link_url: block.settings.link_url,
+                                    size: 'medium'
+                                  %}
+                                </div>
                               {%- endif -%}
                               {%- if block.settings.list_1_menu != blank -%}
                                 {% render 'menu-list', heading: block.settings.list_1_heading, menu: block.settings.list_1_menu %}
@@ -83,7 +89,9 @@
                                 {% render 'menu-list', heading: block.settings.list_2_heading, menu: block.settings.list_2_menu %}
                               {%- endif -%}
                               {%- if block.settings.list_3_menu != blank -%}
-                                {% render 'menu-list', heading: block.settings.list_3_heading, menu: block.settings.list_3_menu %}
+                                <div class="row-start-2 row-span-2 col-start-2">
+                                  {% render 'menu-list', heading: block.settings.list_3_heading, menu: block.settings.list_3_menu %}
+                                </div>
                               {%- endif -%}
                             </div>
                           </div>
@@ -97,7 +105,9 @@
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
-                            <a href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                            {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                              {{ block.settings.title }}
+                            {%- if block.settings.link != blank -%}</a>{%- endif -%}
                           </span>
                           <span class="absolute right-32 text-primary inline-block group-open:[display:none]" aria-hidden="true">{%- render 'icon-plus' %}</span>
                           <span class="absolute right-32 text-primary [display:none] group-open:inline-block" aria-hidden="true">{%- render 'icon-minus' %}</span>
@@ -142,7 +152,9 @@
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
-                            <a href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                            {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                              {{ block.settings.title }}
+                            {%- if block.settings.link != blank -%}</a>{%- endif -%}
                           </span>
                           <span class="absolute right-32 text-primary inline-block group-open:[display:none]" aria-hidden="true">{%- render 'icon-plus' %}</span>
                           <span class="absolute right-32 text-primary [display:none] group-open:inline-block" aria-hidden="true">{%- render 'icon-minus' %}</span>

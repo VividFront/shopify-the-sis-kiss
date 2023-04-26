@@ -707,9 +707,6 @@ a:hover {
 .tw-hidden {
   display: none;
 }
-.\!tw-hidden {
-  display: none !important;
-}
 *,
 ::before,
 ::after {
@@ -917,11 +914,23 @@ a:hover {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .col-span-5 {
   grid-column: span 5 / span 5;
+}
+.col-start-1 {
+  grid-column-start: 1;
+}
+.col-start-2 {
+  grid-column-start: 2;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+.row-start-1 {
+  grid-row-start: 1;
+}
+.row-start-2 {
+  grid-row-start: 2;
 }
 .mb-12 {
   margin-bottom: calc(12rem / 16);
@@ -991,6 +1000,10 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.h-20 {
+  height: calc(20rem / 16);
+  height: calc(20rem / var(--vf-font-size-root));
+}
 .min-h-\[270px\] {
   min-height: 270px;
 }
@@ -1019,6 +1032,10 @@ a:hover {
 .w-full {
   width: 100%;
 }
+.w-20 {
+  width: calc(20rem / 16);
+  width: calc(20rem / var(--vf-font-size-root));
+}
 .shrink-0 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1041,6 +1058,9 @@ a:hover {
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-wrap {
   -ms-flex-wrap: wrap;
@@ -2035,20 +2055,6 @@ product-modal .product-media-modal__content img.active {
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
 }
-@media (min-width: 768px) {
-  .md\:col-start-6 {
-    grid-column-start: 6;
-  }
-  .md\:col-start-8 {
-    grid-column-start: 8;
-  }
-  .md\:col-end-13 {
-    grid-column-end: 13;
-  }
-  .md\:col-end-8 {
-    grid-column-end: 8;
-  }
-}
 @media (min-width: 992px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
@@ -2076,18 +2082,15 @@ product-modal .product-media-modal__content img.active {
     margin-top: calc(16rem / 16);
     margin-top: calc(16rem / var(--vf-font-size-root));
   }
-  .lg\:block {
-    display: block;
+  .lg\:\!flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .lg\:flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .lg\:\!flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
   }
   .lg\:hidden {
     display: none;

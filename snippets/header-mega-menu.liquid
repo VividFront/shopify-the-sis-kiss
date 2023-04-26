@@ -15,7 +15,9 @@
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
                   <span class="pb-16 px-12 inline-block">
-                    <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
                   </span>
                 </summary>
                 <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
@@ -42,7 +44,9 @@
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
                   <span class="pb-16 px-12 inline-block">
-                    <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
                   </span>
                 </summary>
                 <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
@@ -80,7 +84,9 @@
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
                   <span class="pb-16 px-12 inline-block">
-                    <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
                   </span>
                 </summary>
                 <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
@@ -123,7 +129,9 @@
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
                   <span class="pb-16 px-12 inline-block">
-                    <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
                   </span>
                 </summary>
                 <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[270px] absolute w-full left-0 bg-white" tabindex="-1">

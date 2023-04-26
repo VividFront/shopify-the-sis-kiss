@@ -10,7 +10,7 @@
     assign image_grid_cols = 'lg:grid-cols-5'
   endif
 -%}
-<div class="{{ flex_basis }}">
+<div class="group {{ flex_basis }}">
   {%- if image_heading != blank -%}
     <h6 class="mb-12 text-copy-light">{{ image_heading }}</h6>
   {%- endif -%}
@@ -27,7 +27,7 @@
       </div>
       <div class="col-span-4 lg:col-span-3">
         {%- if callout_heading != blank -%}
-          <h6>{{ callout_heading }}</h6>
+          <h6 class="group-hover:underline">{{ callout_heading }}</h6>
         {%- endif -%}
         <p class="mt-6 lg:mt-12">{{ callout_body }}</p>
         <p class="font-bold mt-8 lg:mt-16 text-primary flex gap-8 items-center">
