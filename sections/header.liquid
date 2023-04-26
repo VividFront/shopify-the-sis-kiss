@@ -139,11 +139,16 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="pb-24 pt-16 lg:pt-12 lg:pb-0 header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }}{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="pb-24 pt-16 lg:pt-12 lg:pb-0 header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }}{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %} header--has-menu{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     <div class="container">
       <div class="grid grid-cols gap-x-16 lg:gap-0">
         <div class="col-span-2 lg:hidden">
           {%- render 'header-drawer' -%}
+        </div>
+        <div class="tw-hidden lg:flex items-center col-span-5">
+          {% if section.settings.shipping_text %}
+            <p>{{ section.settings.shipping_text }}</p>
+          {% endif %}
         </div>
         <div class="col-span-2 lg:col-start-6 lg:col-end-8 header__heading">
           <a href="{{ routes.root_url }}" class="w-[141px] h-[61px] block">
@@ -154,7 +159,7 @@
           <div class="flex justify-end items-center w-full gap-26 h-full">
             {% render 'header-search', input_id: 'Search-In-Modal' %}
             {%- if shop.customer_accounts_enabled -%}
-              <a class="group flex items-center gap-x-12 header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
+              <a class="group hidden lg:!flex items-center gap-x-12 header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
                 {% render 'icon-account' %}
                 <span class="group-hover:underline shrink-0">
                   {%- liquid
@@ -362,6 +367,11 @@
   "class": "section-header",
   "settings": [
     {
+      "type": "text",
+      "id": "shipping_text",
+      "label": "Shipping Text"
+    },
+    {
       "type": "select",
       "id": "logo_position",
       "options": [
@@ -385,33 +395,6 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    },
-    {
-      "type": "select",
-      "id": "menu_type_desktop",
-      "options": [
-        {
-          "value": "dropdown",
-          "label": "t:sections.header.settings.menu_type_desktop.options__1.label"
-        },
-        {
-          "value": "mega",
-          "label": "t:sections.header.settings.menu_type_desktop.options__2.label"
-        },
-        {
-          "value": "drawer",
-          "label": "t:sections.header.settings.menu_type_desktop.options__3.label"
-        }
-      ],
-      "default": "dropdown",
-      "label": "t:sections.header.settings.menu_type_desktop.label",
-      "info": "t:sections.header.settings.menu_type_desktop.info"
     },
     {
       "type": "select",

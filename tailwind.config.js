@@ -51,6 +51,9 @@ module.exports = {
       borderWidth: {
         DEFAULT: '1px',
       },
+      borderStyle: {
+        DEFAULT: 'solid',
+      },
       backgroundImage: {
         'hero-overlay':
           'linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',

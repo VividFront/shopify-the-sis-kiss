@@ -1109,18 +1109,10 @@ details[open] > .share-button__fallback {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
   width: 100%;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
-  border-radius: var(--inputs-radius);
-  height: 4.5rem;
-  min-height: calc(var(--inputs-border-width) * 2);
-  min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
-  border: 0;
 }
 
 .field:before,
@@ -1257,7 +1249,7 @@ details[open] > .share-button__fallback {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 1.5rem;
+  padding: 16px;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
 }
@@ -1265,8 +1257,8 @@ details[open] > .share-button__fallback {
 .field__label,
 .customer .field label {
   font-size: 1.6rem;
-  left: calc(var(--inputs-border-width) + 2rem);
-  top: calc(1rem + var(--inputs-border-width));
+  left: calc(33px);
+  top: calc(11px);
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
@@ -1316,14 +1308,14 @@ details[open] > .share-button__fallback {
   color: currentColor;
   cursor: pointer;
   display: flex;
-  height: 4.4rem;
+  height: 44px;
   justify-content: center;
   overflow: hidden;
   padding: 0;
   position: absolute;
   right: 0;
   top: 0;
-  width: 4.4rem;
+  width: 44px;
 }
 
 .field__button > svg {
@@ -1597,8 +1589,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
   align-items: center;
   padding: 0rem;
-  height: 4.4rem;
-  width: 4.4rem;
+  height: calc(44rem / 16);
+  width: calc(44rem / 16);
   background-color: transparent;
 }
 
@@ -2042,12 +2034,12 @@ details[open] .modal-overlay::after {
 
 @media screen and (min-width: 990px) {
   .search-modal__form {
-    max-width: 74.2rem;
+    max-width: 622px;
   }
 
   .search-modal__close-button {
     position: initial;
-    margin-left: 0.5rem;
+    margin-left: 2px;
   }
 }
 

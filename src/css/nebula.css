@@ -20,6 +20,7 @@
     --vf-font-size-body-copy: calc(15rem / var(--vf-font-size-root));
     --vf-font-size-body-copy-small: calc(13rem / var(--vf-font-size-root));
     --vf-font-size-body-copy-large: calc(16rem / var(--vf-font-size-root));
+    --vf-font-size-nav: calc(18rem / var(--vf-font-size-root));
 
     --vf-line-height-display: calc(48rem / var(--vf-font-size-root));
     --vf-line-height-h1: calc(30rem / var(--vf-font-size-root));
@@ -32,6 +33,7 @@
     --vf-line-height-body-copy: calc(22rem / var(--vf-font-size-root));
     --vf-line-height-body-copy-small: calc(18rem / var(--vf-font-size-root));
     --vf-line-height-body-copy-large: calc(24rem / var(--vf-font-size-root));
+    --vf-line-height-nav: calc(24rem / var(--vf-font-size-root));
 
     --vf-font-family-display: 'Playfari Display', Times, serif;
     --vf-font-family-heading: 'Quasimoda', Helvetica, sans-serif;
@@ -96,7 +98,7 @@
     --vf-grid-gap: 16px;
   }
 
-  @media screen(md) {
+  @media screen(lg) {
     :root,
     ::before,
     ::after {
@@ -111,7 +113,6 @@
       --vf-font-size-body-copy: calc(16rem / var(--vf-font-size-root));
       --vf-font-size-body-copy-small: calc(14rem / var(--vf-font-size-root));
       --vf-font-size-body-copy-large: calc(18rem / var(--vf-font-size-root));
-      --vf-font-size-nav: calc(20rem / var(--vf-font-size-root));
 
       --vf-line-height-display: calc(68rem / var(--vf-font-size-root));
       --vf-line-height-h1: calc(64rem / var(--vf-font-size-root));
@@ -240,5 +241,9 @@
 
   a:hover {
     text-decoration: none;
+  }
+
+  .tw-hidden {
+    display: none;
   }
 }
