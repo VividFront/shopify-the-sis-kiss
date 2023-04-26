@@ -1910,10 +1910,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
 }
 
-.header__icon span {
-  height: 100%;
-}
-
 .header__icon::after {
   content: none;
 }
@@ -1926,9 +1922,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   content: '';
   top: 100%;
   left: 0;
-  height: calc(
-    var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))
-  );
   width: 100%;
   display: block;
   position: absolute;

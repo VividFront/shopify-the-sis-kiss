@@ -14,7 +14,7 @@
             <header-menu>
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
-                  <span class="peer pb-16 px-12 inline-block">
+                  <span class="pb-16 px-12 inline-block">
                     <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
                   </span>
                 </summary>
@@ -41,7 +41,7 @@
             <header-menu>
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
-                  <span class="peer pb-16 px-12 inline-block">
+                  <span class="pb-16 px-12 inline-block">
                     <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
                   </span>
                 </summary>
@@ -79,7 +79,7 @@
             <header-menu>
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
-                  <span class="peer pb-16 px-12 inline-block">
+                  <span class="pb-16 px-12 inline-block">
                     <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
                   </span>
                 </summary>
@@ -122,7 +122,7 @@
             <header-menu>
               <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
                 <summary class="flex items-center">
-                  <span class="peer pb-16 px-12 inline-block">
+                  <span class="pb-16 px-12 inline-block">
                     <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
                   </span>
                 </summary>
@@ -150,6 +150,12 @@
                 </div>
               </details>
             </header-menu>
+          </li>
+        {%- elsif block.type == 'nav_item' -%}
+          <li>
+            <span class="pb-16 px-12 inline-block text-center">
+              <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
+            </span>
           </li>
         {%- endif -%}
       {%- endfor -%}

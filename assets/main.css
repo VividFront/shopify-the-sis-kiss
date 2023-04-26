@@ -906,6 +906,9 @@ a:hover {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .col-start-6 {
   grid-column-start: 6;
 }
@@ -985,6 +988,10 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.h-24 {
+  height: calc(24rem / 16);
+  height: calc(24rem / var(--vf-font-size-root));
+}
 .min-h-\[367px\] {
   min-height: 367px;
 }
@@ -1008,6 +1015,10 @@ a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-24 {
+  width: calc(24rem / 16);
+  width: calc(24rem / var(--vf-font-size-root));
 }
 .shrink-0 {
   -ms-flex-negative: 0;
@@ -1085,6 +1096,14 @@ a:hover {
   -webkit-column-gap: calc(32rem / var(--vf-font-size-root));
   -moz-column-gap: calc(32rem / var(--vf-font-size-root));
   column-gap: calc(32rem / var(--vf-font-size-root));
+}
+.gap-x-16 {
+  -webkit-column-gap: calc(16rem / 16);
+  -moz-column-gap: calc(16rem / 16);
+  column-gap: calc(16rem / 16);
+  -webkit-column-gap: calc(16rem / var(--vf-font-size-root));
+  -moz-column-gap: calc(16rem / var(--vf-font-size-root));
+  column-gap: calc(16rem / var(--vf-font-size-root));
 }
 .truncate {
   overflow: hidden;
@@ -1167,6 +1186,14 @@ a:hover {
 .pt-12 {
   padding-top: calc(12rem / 16);
   padding-top: calc(12rem / var(--vf-font-size-root));
+}
+.pb-24 {
+  padding-bottom: calc(24rem / 16);
+  padding-bottom: calc(24rem / var(--vf-font-size-root));
+}
+.pt-16 {
+  padding-top: calc(16rem / 16);
+  padding-top: calc(16rem / var(--vf-font-size-root));
 }
 .text-center {
   text-align: center;
@@ -1973,6 +2000,21 @@ product-modal .product-media-modal__content img.active {
   display: block;
 }
 @media (min-width: 992px) {
+  .lg\:col-start-6 {
+    grid-column-start: 6;
+  }
+  .lg\:col-start-8 {
+    grid-column-start: 8;
+  }
+  .lg\:col-end-13 {
+    grid-column-end: 13;
+  }
+  .lg\:col-end-8 {
+    grid-column-end: 8;
+  }
+  .lg\:hidden {
+    display: none;
+  }
   .lg\:h-100 {
     height: calc(100rem / 16);
     height: calc(100rem / var(--vf-font-size-root));
@@ -1988,6 +2030,16 @@ product-modal .product-media-modal__content img.active {
   .lg\:w-64 {
     width: calc(64rem / 16);
     width: calc(64rem / var(--vf-font-size-root));
+  }
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+  .lg\:pt-12 {
+    padding-top: calc(12rem / 16);
+    padding-top: calc(12rem / var(--vf-font-size-root));
   }
 }
 .\[\&_li\]\:mt-12 li {

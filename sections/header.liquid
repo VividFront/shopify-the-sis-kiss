@@ -139,20 +139,18 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="pt-12 header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }}{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="pb-24 pt-16 lg:pt-12 lg:pb-0 header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }}{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     <div class="container">
-      {%- liquid
-        if section.settings.menu != blank
-          render 'header-drawer'
-        endif
-      -%}
-      <div class="grid grid-cols">
-        <div class="col-start-6 col-end-8 header__heading">
+      <div class="grid grid-cols gap-x-16 lg:gap-0">
+        <div class="col-span-2 lg:hidden">
+          {%- render 'header-drawer' -%}
+        </div>
+        <div class="col-span-2 lg:col-start-6 lg:col-end-8 header__heading">
           <a href="{{ routes.root_url }}" class="w-[141px] h-[61px] block">
             {%- render 'logo' -%}
           </a>
         </div>
-        <div class="col-start-8 col-end-13">
+        <div class="col-span-2 lg:col-start-8 lg:col-end-13">
           <div class="flex justify-end items-center w-full gap-26 h-full">
             {% render 'header-search', input_id: 'Search-In-Modal' %}
             {%- if shop.customer_accounts_enabled -%}
@@ -747,6 +745,22 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "nav_item",
+      "name": "Nav Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
         }
       ]
     }
