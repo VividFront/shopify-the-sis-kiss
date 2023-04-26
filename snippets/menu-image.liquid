@@ -1,17 +1,19 @@
 {% assign flex_basis = 'basis-1/2' %}
 {% assign ratio = 'aspect-[4/3]' %}
 {% assign image_col_span = 'col-span-3' %}
+{% assign image_grid_cols = 'grid-cols-6' %}
 {% if size == 'small' %}
-  {% assign flex_basis = 'basis-[5/12]' %}
+  {% assign flex_basis = 'basis-[calc(5/12_*_100%)]' %}
   {% assign ratio = 'aspect-square' %}
   {% assign image_col_span = 'col-span-2' %}
+  {% assign image_grid_cols = 'grid-cols-5' %}
 {% endif %}
 <div class="{{ flex_basis }}">
   {%- if image_heading != blank -%}
     <h6 class="mb-12 text-copy-light">{{ image_heading }}</h6>
   {%- endif -%}
   {%- if link_url != blank -%}<a href="{{ link_url }}">{%- endif -%}
-    <div class="grid grid-cols-6 gap-x-32">
+    <div class="grid {{ image_grid_cols }} gap-x-32">
       <div class="mt-4 {{ ratio }} {{ image_col_span }}">
         {{ image | image_url: width: image.width | image_tag:
           width: image.width,
