@@ -23,19 +23,50 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
+          "type": "menu_no_image",
+          "settings": {
+            "title": "Gifts & Accessories",
+            "link": "shopify://collections/gift-sets",
+            "list_1_heading": "Categories",
+            "list_1_menu": "gift-categories",
+            "list_2_heading": "Collections",
+            "list_2_menu": "gift-collections",
+            "list_3_heading": "",
+            "list_3_menu": ""
+          }
+        },
+        "3eefb546-19a9-45f4-b019-741bc5d870ae": {
+          "type": "menu_one_image",
+          "settings": {
+            "title": "Jewelry",
+            "link": "shopify://collections/non-custom-best-sellers",
+            "list_1_heading": "Collabs",
+            "list_1_menu": "jewelry-collabs",
+            "list_2_heading": "Collections",
+            "list_2_menu": "jewelry-collections",
+            "list_3_heading": "Categories",
+            "list_3_menu": "jewelry-categories",
+            "image_heading": "Featured Collab/Collection",
+            "image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.39.04_PM.png",
+            "callout_heading": "Spring Collection",
+            "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/spring-summer-new-arrivals"
+          }
+        }
+      },
+      "block_order": [
+        "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
+        "3eefb546-19a9-45f4-b019-741bc5d870ae"
+      ],
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "background-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "sticky_header_type": "always",
+        "mobile_logo_position": "center"
       }
     }
   },
