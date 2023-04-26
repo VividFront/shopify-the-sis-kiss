@@ -66,6 +66,7 @@ module.exports = {
       display: ['var(--vf-font-size-display)', 'var(--vf-line-height-display)'],
       h1: ['var(--vf-font-size-h1)', 'var(--vf-line-height-h1)'],
       h2: ['var(--vf-font-size-h2)', 'var(--vf-line-height-h2)'],
+      'h2-alt': ['var(--vf-font-size-h2-alt)', 'var(--vf-line-height-h2-alt)'],
       h3: ['var(--vf-font-size-h3)', 'var(--vf-line-height-h3)'],
       h4: ['var(--vf-font-size-h4)', 'var(--vf-line-height-h4)'],
       h5: ['var(--vf-font-size-h5)', 'var(--vf-line-height-h5)'],
@@ -132,10 +133,9 @@ module.exports = {
       'secondary-hover': 'rgb(var(--vf-color-secondary-hover) / <alpha-value>)',
       'secondary-pressed':
         'rgb(var(--vf-color-secondary-pressed) / <alpha-value>)',
-      tertiary: 'rgb(var(--vf-color-tertiary) / <alpha-value>)',
       'ui-background': 'rgb(var(--vf-color-ui-background) / <alpha-value>)',
       'ui-dark': 'rgb(var(--vf-color-ui-dark) / <alpha-value>)',
-      'ui-medium': 'rgb(var(--vf-color-ui-medium) / <alpha-value>)',
+      'ui-pink': 'rgb(var(--vf-color-ui-pink) / <alpha-value>)',
       'input-background':
         'rgb(var(--vf-color-input-background) / <alpha-value>)',
       border: 'rgb(var(--vf-color-border) / <alpha-value>)',

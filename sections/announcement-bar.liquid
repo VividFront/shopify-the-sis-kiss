@@ -2,7 +2,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 <div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
+  class="utility-bar bg-ui-dark text-white text-center py-10 font-open-sans"
   {{ block.shopify_attributes }}
 >
   {%- if section.blocks.size == 1 -%}
@@ -12,7 +12,7 @@
           <a href="{{ section.blocks.first.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
         {%- endif -%}
           <div class="container">
-            <p class="announcement-bar__message h5">
+            <p class="text-body-copy-small">
               <span>{{ section.blocks.first.settings.text | escape }}</span>
               {%- if section.blocks.first.settings.link != blank -%}
                 {% render 'icon-arrow' %}
