@@ -83,6 +83,13 @@
             "link_url": "shopify://collections/tsk-atelier-1979"
           }
         },
+        "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Permanent Jewelry",
+            "link": "shopify://pages/sis-kiss-links-permanent-jewelry"
+          }
+        },
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
           "type": "menu_no_image",
           "settings": {
@@ -94,6 +101,13 @@
             "list_2_menu": "gift-collections",
             "list_3_heading": "",
             "list_3_menu": ""
+          }
+        },
+        "ea6e3905-17ec-4eaa-b686-06afe1091ca4": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Sale",
+            "link": "shopify://collections"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
@@ -111,13 +125,14 @@
         "3eefb546-19a9-45f4-b019-741bc5d870ae",
         "e027b231-35b0-45e5-ac9e-2e531511e453",
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
+        "10a917bf-6bdd-48c6-b641-2c32af38ef52",
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
+        "ea6e3905-17ec-4eaa-b686-06afe1091ca4",
         "d83de503-6965-4841-aef4-e189be6e7c98"
       ],
       "settings": {
+        "shipping_text": "FREE domestic shipping on all orders $150+!",
         "logo_position": "top-center",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
         "mobile_logo_position": "center"
       }
