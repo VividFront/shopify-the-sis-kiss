@@ -154,6 +154,7 @@ module.exports = {
       'success-background':
         'rgb(var(--vf-color-success-background) / <alpha-value>)',
       copy: 'rgb(var(--vf-color-copy) / <alpha-value>)',
+      'copy-light': 'rgb(var(--vf-color-copy-light) / <alpha-value>)',
       header: 'rgb(var(--vf-color-header) / <alpha-value>)',
       facebook: 'rgb(var(--vf-color-facebook) / <alpha-value>)',
       twitter: 'rgb(var(--vf-color-twitter) / <alpha-value>)',

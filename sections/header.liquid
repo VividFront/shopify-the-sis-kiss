@@ -139,65 +139,67 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="py-12 container header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} container{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
-    {%- liquid
-      if section.settings.menu != blank
-        render 'header-drawer'
-      endif
-    -%}
-    <div class="grid grid-cols">
-      <div class="col-start-6 col-end-8 header__heading">
-        <a href="{{ routes.root_url }}" class="w-[141px] h-[61px] block">
-          {%- render 'logo' -%}
-        </a>
-      </div>
-      <div class="col-start-8 col-end-13">
-        <div class="flex justify-end items-center w-full gap-26 h-full">
-          {% render 'header-search', input_id: 'Search-In-Modal' %}
-          {%- if shop.customer_accounts_enabled -%}
-            <a class="group flex items-center gap-x-12 header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
-              {% render 'icon-account' %}
-              <span class="group-hover:underline shrink-0">
-                {%- liquid
-                  if customer
-                    echo 'customer.account_fallback' | t
-                  else
-                    echo 'customer.log_in' | t
-                  endif
-                -%}
-              </span>
-            </a>
-          {%- endif -%}
-    
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when '@app' -%}
-                {% render block %}
-            {%- endcase -%}
-          {%- endfor -%}
-          <a href="{{ routes.cart_url }}" class="relative shrink-0 header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-            {%- liquid
-              if cart == empty
-                render 'icon-cart-empty'
-              else
-                render 'icon-cart'
-              endif
-            -%}
-            <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-            {%- if cart != empty -%}
-              <div class="cart-count-bubble w-16 h-16 flex items-center justify-center bg-ui-pink font-bold font-open-sans text-[12px] rounded-full absolute -right-4 top-0">
-                {%- if cart.item_count < 100 -%}
-                  <span aria-hidden="true">{{ cart.item_count }}</span>
-                {%- endif -%}
-                <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-              </div>
-            {%- endif -%}
+  <header class="py-12 header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }}{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+    <div class="container">
+      {%- liquid
+        if section.settings.menu != blank
+          render 'header-drawer'
+        endif
+      -%}
+      <div class="grid grid-cols">
+        <div class="col-start-6 col-end-8 header__heading">
+          <a href="{{ routes.root_url }}" class="w-[141px] h-[61px] block">
+            {%- render 'logo' -%}
           </a>
+        </div>
+        <div class="col-start-8 col-end-13">
+          <div class="flex justify-end items-center w-full gap-26 h-full">
+            {% render 'header-search', input_id: 'Search-In-Modal' %}
+            {%- if shop.customer_accounts_enabled -%}
+              <a class="group flex items-center gap-x-12 header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
+                {% render 'icon-account' %}
+                <span class="group-hover:underline shrink-0">
+                  {%- liquid
+                    if customer
+                      echo 'customer.account_fallback' | t
+                    else
+                      echo 'customer.log_in' | t
+                    endif
+                  -%}
+                </span>
+              </a>
+            {%- endif -%}
+      
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when '@app' -%}
+                  {% render block %}
+              {%- endcase -%}
+            {%- endfor -%}
+            <a href="{{ routes.cart_url }}" class="relative shrink-0 header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+              {%- liquid
+                if cart == empty
+                  render 'icon-cart-empty'
+                else
+                  render 'icon-cart'
+                endif
+              -%}
+              <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+              {%- if cart != empty -%}
+                <div class="cart-count-bubble w-16 h-16 flex items-center justify-center bg-ui-pink font-bold font-open-sans text-[12px] rounded-full absolute -right-4 top-0">
+                  {%- if cart.item_count < 100 -%}
+                    <span aria-hidden="true">{{ cart.item_count }}</span>
+                  {%- endif -%}
+                  <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                </div>
+              {%- endif -%}
+            </a>
+          </div>
         </div>
       </div>
     </div>
     {%- liquid
-      render 'header-mega-menu', blocks: section.blocks
+      render 'header-mega-menu'
     %}
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
