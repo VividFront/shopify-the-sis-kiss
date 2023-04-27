@@ -5,49 +5,35 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "eaa86db0-13f2-445c-8bbf-f0357ef52ebe": {
+          "type": "menu",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "About Us",
+            "menu": "footer-about"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "cf23ac7c-dc5f-4a8b-a303-7b787df0754b": {
+          "type": "menu",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Resources",
+            "menu": "resources"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "de921721-51f7-47c3-bf9e-4404295ef55a": {
+          "type": "menu",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Support",
+            "menu": "footer-support"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "eaa86db0-13f2-445c-8bbf-f0357ef52ebe",
+        "cf23ac7c-dc5f-4a8b-a303-7b787df0754b",
+        "de921721-51f7-47c3-bf9e-4404295ef55a"
       ],
-      "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }
