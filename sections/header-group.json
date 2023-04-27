@@ -36,7 +36,7 @@
             "list_3_heading": "Categories",
             "list_3_menu": "jewelry-categories",
             "image_heading": "Featured Collab/Collection",
-            "image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.39.04_PM.png",
+            "image": "shopify://shop_images/featured.jpg",
             "callout_heading": "Spring Collection",
             "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur",
             "link_text": "Shop Now",
@@ -51,13 +51,13 @@
             "list_1_heading": "Categories",
             "list_1_menu": "custom-categories",
             "image_1_heading": "",
-            "image_1": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.43.16_PM.png",
+            "image_1": "shopify://shop_images/charm.jpg",
             "callout_1_heading": "Charm Bar",
             "callout_1_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
             "link_1_text": "Shop Now",
             "link_1_url": "shopify://collections/charm-bar",
             "image_2_heading": "",
-            "image_2": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.43.37_PM.png",
+            "image_2": "shopify://shop_images/your-way.jpg",
             "callout_2_heading": "TSK Your Way",
             "callout_2_body": "Get your hand-made favorite custom styles, created each week.",
             "link_2_text": "Shop Now",
@@ -76,7 +76,7 @@
             "list_3_heading": "",
             "list_3_menu": "",
             "image_heading": "",
-            "image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.49.08_PM.png",
+            "image": "shopify://shop_images/diamonds.jpg",
             "callout_heading": "TSK Atelier Diamonds",
             "callout_body": "Elevate your accessory collection with modern, made-to-order diamond pieces from the badass founder of The Sis Kiss",
             "link_text": "Shop Now",
@@ -103,11 +103,23 @@
             "list_3_menu": ""
           }
         },
-        "ea6e3905-17ec-4eaa-b686-06afe1091ca4": {
-          "type": "nav_item",
+        "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2": {
+          "type": "menu_one_image",
           "settings": {
             "title": "Sale",
-            "link": "shopify://collections"
+            "link": "",
+            "list_1_heading": "Categories",
+            "list_1_menu": "sale-categories",
+            "list_2_heading": "",
+            "list_2_menu": "",
+            "list_3_heading": "",
+            "list_3_menu": "",
+            "image_heading": "",
+            "image": "shopify://shop_images/featured.jpg",
+            "callout_heading": "",
+            "callout_body": "",
+            "link_text": "Shop Now",
+            "link_url": ""
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
@@ -117,7 +129,7 @@
             "link": "shopify://pages/about-us",
             "list_1_heading": "",
             "list_1_menu": "about-us",
-            "image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.51.10_PM.png"
+            "image": "shopify://shop_images/about.jpg"
           }
         }
       },
@@ -127,7 +139,7 @@
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
         "10a917bf-6bdd-48c6-b641-2c32af38ef52",
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
-        "ea6e3905-17ec-4eaa-b686-06afe1091ca4",
+        "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2",
         "d83de503-6965-4841-aef4-e189be6e7c98"
       ],
       "settings": {

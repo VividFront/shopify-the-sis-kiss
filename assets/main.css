@@ -917,9 +917,6 @@ a:hover {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
-.col-start-1 {
-  grid-column-start: 1;
-}
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -986,6 +983,10 @@ a:hover {
   height: calc(18rem / 16);
   height: calc(18rem / var(--vf-font-size-root));
 }
+.h-20 {
+  height: calc(20rem / 16);
+  height: calc(20rem / var(--vf-font-size-root));
+}
 .h-24 {
   height: calc(24rem / 16);
   height: calc(24rem / var(--vf-font-size-root));
@@ -999,10 +1000,6 @@ a:hover {
 }
 .h-full {
   height: 100%;
-}
-.h-20 {
-  height: calc(20rem / 16);
-  height: calc(20rem / var(--vf-font-size-root));
 }
 .min-h-\[270px\] {
   min-height: 270px;
@@ -1018,6 +1015,10 @@ a:hover {
   width: calc(18rem / 16);
   width: calc(18rem / var(--vf-font-size-root));
 }
+.w-20 {
+  width: calc(20rem / 16);
+  width: calc(20rem / var(--vf-font-size-root));
+}
 .w-24 {
   width: calc(24rem / 16);
   width: calc(24rem / var(--vf-font-size-root));
@@ -1031,10 +1032,6 @@ a:hover {
 }
 .w-full {
   width: 100%;
-}
-.w-20 {
-  width: calc(20rem / 16);
-  width: calc(20rem / var(--vf-font-size-root));
 }
 .shrink-0 {
   -ms-flex-negative: 0;
@@ -1056,11 +1053,11 @@ a:hover {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-template-columns: var(--vf-grid-cols-default);
 }
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-wrap {
   -ms-flex-wrap: wrap;
