@@ -9,36 +9,146 @@
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ]
+      "block_order": ["announcement-bar-0"],
+      "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+      }
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "3eefb546-19a9-45f4-b019-741bc5d870ae": {
+          "type": "menu_one_image",
+          "settings": {
+            "title": "Jewelry",
+            "link": "shopify://collections/non-custom-best-sellers",
+            "list_1_heading": "Collabs",
+            "list_1_menu": "jewelry-collabs",
+            "list_2_heading": "Collections",
+            "list_2_menu": "jewelry-collections",
+            "list_3_heading": "Categories",
+            "list_3_menu": "jewelry-categories",
+            "image_heading": "Featured Collab/Collection",
+            "image": "shopify://shop_images/featured.jpg",
+            "callout_heading": "Spring Collection",
+            "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/spring-summer-new-arrivals"
+          }
+        },
+        "e027b231-35b0-45e5-ac9e-2e531511e453": {
+          "type": "menu_two_images",
+          "settings": {
+            "title": "Custom",
+            "link": "shopify://collections/custom-jewelry",
+            "list_1_heading": "Categories",
+            "list_1_menu": "custom-categories",
+            "image_1_heading": "",
+            "image_1": "shopify://shop_images/charm.jpg",
+            "callout_1_heading": "Charm Bar",
+            "callout_1_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
+            "link_1_text": "Shop Now",
+            "link_1_url": "shopify://collections/charm-bar",
+            "image_2_heading": "",
+            "image_2": "shopify://shop_images/your-way.jpg",
+            "callout_2_heading": "TSK Your Way",
+            "callout_2_body": "Get your hand-made favorite custom styles, created each week.",
+            "link_2_text": "Shop Now",
+            "link_2_url": "shopify://collections/tsk-your-way"
+          }
+        },
+        "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
+          "type": "menu_one_image",
+          "settings": {
+            "title": "Fine Jewelry",
+            "link": "shopify://collections",
+            "list_1_heading": "Categories",
+            "list_1_menu": "fine-jewelry-categories",
+            "list_2_heading": "",
+            "list_2_menu": "",
+            "list_3_heading": "",
+            "list_3_menu": "",
+            "image_heading": "",
+            "image": "shopify://shop_images/diamonds.jpg",
+            "callout_heading": "TSK Atelier Diamonds",
+            "callout_body": "Elevate your accessory collection with modern, made-to-order diamond pieces from the badass founder of The Sis Kiss",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/tsk-atelier-1979"
+          }
+        },
+        "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Permanent Jewelry",
+            "link": "shopify://pages/sis-kiss-links-permanent-jewelry"
+          }
+        },
+        "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
+          "type": "menu_no_image",
+          "settings": {
+            "title": "Gifts & Accessories",
+            "link": "shopify://collections/gift-sets",
+            "list_1_heading": "Categories",
+            "list_1_menu": "gift-categories",
+            "list_2_heading": "Collections",
+            "list_2_menu": "gift-collections",
+            "list_3_heading": "",
+            "list_3_menu": ""
+          }
+        },
+        "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2": {
+          "type": "menu_one_image",
+          "settings": {
+            "title": "Sale",
+            "link": "",
+            "list_1_heading": "Categories",
+            "list_1_menu": "sale-categories",
+            "list_2_heading": "",
+            "list_2_menu": "",
+            "list_3_heading": "",
+            "list_3_menu": "",
+            "image_heading": "",
+            "image": "shopify://shop_images/featured.jpg",
+            "callout_heading": "",
+            "callout_body": "",
+            "link_text": "Shop Now",
+            "link_url": ""
+          }
+        },
+        "d83de503-6965-4841-aef4-e189be6e7c98": {
+          "type": "menu_large_image",
+          "settings": {
+            "title": "About Us",
+            "link": "shopify://pages/about-us",
+            "list_1_heading": "",
+            "list_1_menu": "about-us",
+            "image": "shopify://shop_images/about.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "3eefb546-19a9-45f4-b019-741bc5d870ae",
+        "e027b231-35b0-45e5-ac9e-2e531511e453",
+        "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
+        "10a917bf-6bdd-48c6-b641-2c32af38ef52",
+        "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
+        "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2",
+        "d83de503-6965-4841-aef4-e189be6e7c98"
+      ],
       "settings": {
-        "color_scheme": "background-1",
-        "logo_position": "middle-left",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "shipping_text": "FREE domestic shipping on all orders $150+!",
+        "logo_position": "top-center",
+        "sticky_header_type": "always",
+        "mobile_logo_position": "center"
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

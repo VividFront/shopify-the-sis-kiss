@@ -5,84 +5,168 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
-      <li>
-        {%- if link.links != blank -%}
-          <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-              <summary class="header__menu-item list-menu__item link focus-inset">
-                <span
-                  {%- if link.child_active %}
-                    class="header__active-menu-item"
-                  {% endif %}
-                >
-                  {{- link.title | escape -}}
-                </span>
-                {% render 'icon-caret' %}
-              </summary>
-              <div
-                id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content gradient motion-reduce global-settings-popup"
-                tabindex="-1"
-              >
-                <ul
-                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
-                  role="list"
-                >
-                  {%- for childlink in link.links -%}
-                    <li>
-                      <a
-                        href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
-                        {% if childlink.current %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ childlink.title | escape }}
-                      </a>
-                      {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
-                          {%- for grandchildlink in childlink.links -%}
-                            <li>
-                              <a
-                                href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
-                                {% if grandchildlink.current %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ grandchildlink.title | escape }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
+<div class="container">
+  <nav class="header__inline-menu">
+    <ul class="flex justify-center w-full" role="list">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'menu_no_image' -%}
+          <li>
+            <header-menu>
+              <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
+                <summary class="flex items-center">
+                  <span class="pb-16 px-12 inline-block">
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </span>
+                </summary>
+                <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
+                  <div class="container">
+                    <div class="flex gap-x-32 justify-center">
+                      {%- if block.settings.list_1_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_1_heading, menu: block.settings.list_1_menu %}
                       {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              </div>
-            </details>
-          </header-menu>
-        {%- else -%}
-          <a
-            href="{{ link.url }}"
-            class="header__menu-item list-menu__item link link--text focus-inset"
-            {% if link.current %}
-              aria-current="page"
-            {% endif %}
-          >
-            <span
-              {%- if link.current %}
-                class="header__active-menu-item"
-              {% endif %}
-            >
-              {{- link.title | escape -}}
+                      {%- if block.settings.list_2_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_2_heading, menu: block.settings.list_2_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.list_3_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_3_heading, menu: block.settings.list_3_menu %}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </header-menu>
+          </li>
+        {%- elsif block.type == 'menu_one_image' -%}
+          <li>
+            <header-menu>
+              <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
+                <summary class="flex items-center">
+                  <span class="pb-16 px-12 inline-block">
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </span>
+                </summary>
+                <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
+                  <div class="container">
+                    <div class="flex gap-x-32 justify-center">
+                      {%- if block.settings.list_1_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_1_heading, menu: block.settings.list_1_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.list_2_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_2_heading, menu: block.settings.list_2_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.list_3_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_3_heading, menu: block.settings.list_3_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.image != blank -%}
+                        {% render 'menu-image', 
+                          image_heading: block.settings.image_heading, 
+                          image: block.settings.image,
+                          callout_heading: block.settings.callout_heading,
+                          callout_body: block.settings.callout_body,
+                          link_text: block.settings.link_text,
+                          link_url: block.settings.link_url,
+                          size: 'medium'
+                        %}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </header-menu>
+          </li>
+        {%- elsif block.type == 'menu_two_images' -%}
+          <li>
+            <header-menu>
+              <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
+                <summary class="flex items-center">
+                  <span class="pb-16 px-12 inline-block">
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </span>
+                </summary>
+                <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[367px] absolute w-full left-0 bg-white" tabindex="-1">
+                  <div class="container">
+                    <div class="flex gap-x-32 justify-center">
+                      {%- if block.settings.list_1_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_1_heading, menu: block.settings.list_1_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.image_1 != blank -%}
+                        {% render 'menu-image', 
+                          image_heading: block.settings.image_1_heading, 
+                          image: block.settings.image_1,
+                          callout_heading: block.settings.callout_1_heading,
+                          callout_body: block.settings.callout_1_body,
+                          link_text: block.settings.link_1_text,
+                          link_url: block.settings.link_1_url,
+                          size: 'small'
+                        %}
+                      {%- endif -%}
+                      {%- if block.settings.image_2 != blank -%}
+                        {% render 'menu-image', 
+                          image_heading: block.settings.image_2_heading, 
+                          image: block.settings.image_2,
+                          callout_heading: block.settings.callout_2_heading,
+                          callout_body: block.settings.callout_2_body,
+                          link_text: block.settings.link_2_text,
+                          link_url: block.settings.link_2_url,
+                          size: 'small'
+                        %}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </header-menu>
+          </li>
+        {%- elsif block.type == 'menu_large_image' -%}
+          <li>
+            <header-menu>
+              <details id="Details-HeaderMenu-{{ forloop.index }}" class="static">
+                <summary class="flex items-center">
+                  <span class="pb-16 px-12 inline-block">
+                    {%- if block.settings.link != blank -%}<a class="hover:underline" href="{{ block.settings.link }}">{%- endif -%}
+                      {{ block.settings.title }}
+                    {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                  </span>
+                </summary>
+                <div id="HeaderMenu-Content-{{ forloop.index }}" class="pt-34 pb-44 shadow min-h-[270px] absolute w-full left-0 bg-white" tabindex="-1">
+                  <div class="container">
+                    <div class="flex gap-x-32 justify-center">
+                      {%- if block.settings.list_1_menu != blank -%}
+                        {% render 'menu-list', heading: block.settings.list_1_heading, menu: block.settings.list_1_menu %}
+                      {%- endif -%}
+                      {%- if block.settings.image != blank -%}
+                        <div class="basis-1/2">
+                          <div class="aspect-[3/1]">
+                            {{ block.settings.image | image_url: width: block.settings.image.width | image_tag:
+                              width: block.settings.image.width,
+                              class: 'w-full h-full object-cover rounded',
+                              sizes: block.settings.image.sizes,
+                              widths: '375, 550, 750',
+                              alt: block.settings.image.alt | escape
+                            }}
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </header-menu>
+          </li>
+        {%- elsif block.type == 'nav_item' -%}
+          <li>
+            <span class="pb-16 px-12 inline-block text-center">
+              <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
             </span>
-          </a>
+          </li>
         {%- endif -%}
-      </li>
-    {%- endfor -%}
-  </ul>
-</nav>
+      {%- endfor -%}
+    </ul>
+  </nav>
+</div>

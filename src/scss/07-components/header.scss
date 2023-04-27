@@ -1,0 +1,12 @@
+.c-header {
+  &__item {
+    &:hover {
+      .c-header__itemDropdown {
+        display: flex;
+      }
+    }
+    &Dropdown {
+      display: none;
+    }
+  }
+}

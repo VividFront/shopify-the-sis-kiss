@@ -1,0 +1,23 @@
+product-modal {
+  @apply hidden fixed top-0 left-0 w-full h-[100vh] z-[199] bg-[rgba(51,51,51,.73)] px-32;
+
+  &[open] {
+    @apply block;
+  }
+
+  .product-media-modal__dialog {
+    @apply h-full;
+  }
+
+  .product-media-modal__content {
+    @apply flex flex-col items-center justify-center h-full;
+
+    img {
+      @apply hidden max-w-[calc(100vw-64px)] max-h-[calc(400rem/16)] md:max-w-[calc(600rem/16)] md:max-h-[calc(600rem/16)] object-contain bg-white;
+
+      &.active {
+        @apply block;
+      }
+    }
+  }
+}

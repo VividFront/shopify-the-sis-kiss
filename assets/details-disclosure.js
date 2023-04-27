@@ -41,23 +41,43 @@ customElements.define('details-disclosure', DetailsDisclosure);
 class HeaderMenu extends DetailsDisclosure {
   constructor() {
     super();
-    this.header = document.querySelector('.header-wrapper');
+
+    this.navigation = this.mainDetailsToggle.closest('nav') || '';
+
+    // this.header = document.querySelector('.header-wrapper');
+    this.mainDetailsToggle.addEventListener(
+      'mouseenter',
+      this.onMouseEnter.bind(this),
+    );
+    this.mainDetailsToggle.addEventListener(
+      'mouseleave',
+      this.onMouseLeave.bind(this),
+    );
   }
 
-  onToggle() {
-    if (!this.header) return;
-    this.header.preventHide = this.mainDetailsToggle.open;
-
+  onMouseEnter() {
+    clearTimeout(this.timer);
     if (
-      document.documentElement.style.getPropertyValue(
-        '--header-bottom-position-desktop',
-      ) !== ''
-    )
-      return;
-    document.documentElement.style.setProperty(
-      '--header-bottom-position-desktop',
-      `${Math.floor(this.header.getBoundingClientRect().bottom)}px`,
-    );
+      this.navigation.querySelectorAll(
+        ':scope > ul > li > header-menu > details[open]',
+      ).length
+    ) {
+      for (const details of this.navigation.querySelectorAll(
+        ':scope > ul > li > header-menu > details[open]',
+      )) {
+        details.removeAttribute('open');
+      }
+    }
+
+    this.mainDetailsToggle.setAttribute('open', '');
+  }
+
+  onMouseLeave(e) {
+    let that = this;
+
+    this.timer = setTimeout(function () {
+      that.mainDetailsToggle.removeAttribute('open');
+    }, 200);
   }
 }
 
