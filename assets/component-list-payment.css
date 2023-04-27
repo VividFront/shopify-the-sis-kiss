@@ -3,14 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: -0.5rem 0;
-  padding-top: 1rem;
   padding-left: 0;
 }
 
 @media screen and (min-width: 750px) {
   .list-payment {
     justify-content: flex-end;
-    margin: -0.5rem;
+    margin: -5px;
     padding-top: 0;
   }
 }
@@ -18,5 +17,9 @@
 .list-payment__item {
   align-items: center;
   display: flex;
-  padding: 0.5rem;
+  padding: 5px;
+  filter: grayscale(100%);
+  /* adding this */
+  -webkit-filter: grayscale(100%);
+  /* Safari unless you're using autoprefixer or similar */
 }
