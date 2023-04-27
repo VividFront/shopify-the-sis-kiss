@@ -47,6 +47,7 @@ module.exports = {
       },
       borderRadius: {
         DEFAULT: 'var(--vf-border-radius)',
+        button: 'var(--vf-border-radius-button)',
       },
       borderWidth: {
         DEFAULT: '1px',

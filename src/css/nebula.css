@@ -92,6 +92,7 @@
 
     /* Border */
     --vf-border-radius: 16px;
+    --vf-border-radius-button: 24px;
 
     /* Grid */
     --vf-grid-cols-default: repeat(6, minmax(0, 1fr));

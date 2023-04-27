@@ -555,6 +555,7 @@ video {
 
   /* Border */
   --vf-border-radius: 16px;
+  --vf-border-radius-button: 24px;
 
   /* Grid */
   --vf-grid-cols-default: repeat(6, minmax(0, 1fr));
@@ -911,6 +912,9 @@ a:hover {
 .isolate {
   isolation: isolate;
 }
+.z-\[-1\] {
+  z-index: -1;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1194,6 +1198,10 @@ a:hover {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-button {
+  border-radius: 24px;
+  border-radius: var(--vf-border-radius-button);
+}
 .border {
   border-width: 1px;
 }
@@ -1227,6 +1235,11 @@ a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1274,6 +1287,12 @@ a:hover {
   padding-bottom: calc(24rem / 16);
   padding-bottom: calc(24rem / var(--vf-font-size-root));
 }
+.px-24 {
+  padding-left: calc(24rem / 16);
+  padding-left: calc(24rem / var(--vf-font-size-root));
+  padding-right: calc(24rem / 16);
+  padding-right: calc(24rem / var(--vf-font-size-root));
+}
 .pb-16 {
   padding-bottom: calc(16rem / 16);
   padding-bottom: calc(16rem / var(--vf-font-size-root));
@@ -1290,6 +1309,10 @@ a:hover {
   padding-bottom: calc(48rem / 16);
   padding-bottom: calc(48rem / var(--vf-font-size-root));
 }
+.pb-54 {
+  padding-bottom: calc(54rem / 16);
+  padding-bottom: calc(54rem / var(--vf-font-size-root));
+}
 .pb-60 {
   padding-bottom: calc(60rem / 16);
   padding-bottom: calc(60rem / var(--vf-font-size-root));
@@ -1301,6 +1324,10 @@ a:hover {
 .pt-34 {
   padding-top: calc(34rem / 16);
   padding-top: calc(34rem / var(--vf-font-size-root));
+}
+.pt-42 {
+  padding-top: calc(42rem / 16);
+  padding-top: calc(42rem / var(--vf-font-size-root));
 }
 .text-center {
   text-align: center;
@@ -1323,11 +1350,23 @@ a:hover {
 .text-\[16px\] {
   font-size: 16px;
 }
+.text-body-copy-large {
+  font-size: calc(16rem / 16);
+  font-size: var(--vf-font-size-body-copy-large);
+  line-height: calc(24rem / 16);
+  line-height: var(--vf-line-height-body-copy-large);
+}
 .text-body-copy-small {
   font-size: calc(13rem / 16);
   font-size: var(--vf-font-size-body-copy-small);
   line-height: calc(18rem / 16);
   line-height: var(--vf-line-height-body-copy-small);
+}
+.text-display {
+  font-size: calc(4rem / 16);
+  font-size: var(--vf-font-size-display);
+  line-height: calc(48rem / 16);
+  line-height: var(--vf-line-height-display);
 }
 .text-h2 {
   font-size: calc(22rem / 16);
@@ -1341,8 +1380,14 @@ a:hover {
   line-height: calc(24rem / 16);
   line-height: var(--vf-line-height-nav);
 }
+.text-\[calc\(18rem\/16\)\] {
+  font-size: calc(18rem / 16);
+}
 .font-bold {
   font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1352,6 +1397,9 @@ a:hover {
 }
 .italic {
   font-style: italic;
+}
+.leading-\[calc\(26rem\/16\)\] {
+  line-height: calc(26rem / 16);
 }
 .text-copy-light {
   --tw-text-opacity: 1;
@@ -2109,6 +2157,11 @@ product-modal .product-media-modal__content img {
 product-modal .product-media-modal__content img.active {
   display: block;
 }
+.hover\:bg-primary-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary-hover) / var(--tw-bg-opacity));
+}
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2148,6 +2201,9 @@ product-modal .product-media-modal__content img.active {
   }
   .lg\:col-end-13 {
     grid-column-end: 13;
+  }
+  .lg\:col-end-5 {
+    grid-column-end: 5;
   }
   .lg\:col-end-8 {
     grid-column-end: 8;
@@ -2268,9 +2324,15 @@ product-modal .product-media-modal__content img.active {
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
+  .lg\:pb-\[calc\(108rem\/16\)\] {
+    padding-bottom: calc(108rem / 16);
+  }
   .lg\:pt-12 {
     padding-top: calc(12rem / 16);
     padding-top: calc(12rem / var(--vf-font-size-root));
+  }
+  .lg\:pt-\[calc\(108rem\/16\)\] {
+    padding-top: calc(108rem / 16);
   }
   .lg\:text-left {
     text-align: left;
