@@ -35,7 +35,7 @@
     --vf-line-height-body-copy-large: calc(24rem / var(--vf-font-size-root));
     --vf-line-height-nav: calc(24rem / var(--vf-font-size-root));
 
-    --vf-font-family-display: 'Playfair Display', Times, serif;
+    --vf-font-family-display: 'playfair-display', Times, serif;
     --vf-font-family-heading: 'Quasimoda', Helvetica, sans-serif;
     --vf-font-family-body: 'Quasimoda', Helvetica, sans-serif;
     --vf-font-family-sans: 'Open Sans', Helvetica, sans-serif;
@@ -93,7 +93,8 @@
 
     /* Border */
     --vf-border-radius: 16px;
-    --vf-border-radius-button: 24px;
+    --vf-border-radius-button: 20px;
+    --vf-border-radius-button-lg: 24px;
 
     /* Grid */
     --vf-grid-cols-default: repeat(6, minmax(0, 1fr));
