@@ -122,11 +122,75 @@
         "heading": "Loverly x TSK (Sterling)",
         "collection": "loverly-grey-x-the-sis-kiss"
       }
+    },
+    "efd3c021-b667-4075-93fd-09a6d2277d0e": {
+      "type": "home-product-tabs",
+      "blocks": {
+        "d15ef88c-f2c4-49c6-84b1-b67963c90fe3": {
+          "type": "category",
+          "settings": {
+            "title": "Necklaces",
+            "product_main": "acrylic-hair-clips",
+            "product_alt_image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.00_PM.png",
+            "product_secondary": "drink-up-its-all-in-a-name-necklace",
+            "collection": "necklaces"
+          }
+        },
+        "8150f579-29b2-4181-9920-dcfb6df1146d": {
+          "type": "category",
+          "settings": {
+            "title": "Earrings",
+            "product_main": "adjustable-crystal-initial-ring",
+            "product_alt_image": "shopify://shop_images/your-way.jpg",
+            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "collection": "earrings"
+          }
+        },
+        "82ec5070-51e6-4ab9-9434-fb712f63896f": {
+          "type": "category",
+          "settings": {
+            "title": "Bracelets",
+            "product_main": "adjustable-lucky-cord-bracelets",
+            "product_alt_image": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
+            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "collection": "bracelets-cuffs"
+          }
+        },
+        "be4c93a1-6c16-4093-918b-ad0c829f9ee1": {
+          "type": "category",
+          "settings": {
+            "title": "Rings",
+            "product_main": "adjustable-crystal-initial-ring",
+            "product_alt_image": "shopify://shop_images/HOME_PAGE_-_GALLERY_NEW_ARRIVALS_2022.jpg",
+            "product_secondary": "adjustable-initial-pinky-ring-in-gold",
+            "collection": "rings"
+          }
+        },
+        "f655c052-e686-464e-a80f-d3ea6d3793fc": {
+          "type": "category",
+          "settings": {
+            "title": "Accessories",
+            "product_main": "mini-mama-it-s-all-in-a-name-necklace",
+            "product_alt_image": "shopify://shop_images/charm.jpg",
+            "product_secondary": "acrylic-hair-clips",
+            "collection": "hair-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "d15ef88c-f2c4-49c6-84b1-b67963c90fe3",
+        "8150f579-29b2-4181-9920-dcfb6df1146d",
+        "82ec5070-51e6-4ab9-9434-fb712f63896f",
+        "be4c93a1-6c16-4093-918b-ad0c829f9ee1",
+        "f655c052-e686-464e-a80f-d3ea6d3793fc"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
-    "837a7077-541b-41b2-bdb2-9145cb52cde4"
+    "837a7077-541b-41b2-bdb2-9145cb52cde4",
+    "efd3c021-b667-4075-93fd-09a6d2277d0e"
   ]
 }
