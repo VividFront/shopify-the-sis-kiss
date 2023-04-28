@@ -86,10 +86,47 @@
         "collection_text": "Shop All <br>Best Sellers",
         "collection": "best-sellers"
       }
+    },
+    "837a7077-541b-41b2-bdb2-9145cb52cde4": {
+      "type": "home-featured-collection",
+      "blocks": {
+        "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
+          "type": "image_short",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.23_PM.png",
+            "position_adjustment": "up"
+          }
+        },
+        "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
+          "type": "image_tall",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.00_PM.png"
+          }
+        },
+        "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
+          "type": "image_short",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.49_PM.png",
+            "position_adjustment": "down"
+          }
+        }
+      },
+      "block_order": [
+        "106204a7-9ee4-4c22-b68e-59f0473cbe1b",
+        "b2cc5eee-4012-4457-b9c7-cf8abdd09809",
+        "6aa3e035-1f3c-4096-99dd-c60e364ec4d2"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
+        "subheading": "Featured Collection",
+        "heading": "Loverly x TSK (Sterling)",
+        "collection": "loverly-grey-x-the-sis-kiss"
+      }
     }
   },
   "order": [
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
-    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394"
+    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
+    "837a7077-541b-41b2-bdb2-9145cb52cde4"
   ]
 }

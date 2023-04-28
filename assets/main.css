@@ -1023,6 +1023,10 @@ a:hover {
   margin-top: calc(20rem / 16);
   margin-top: calc(20rem / var(--vf-font-size-root));
 }
+.mt-24 {
+  margin-top: calc(24rem / 16);
+  margin-top: calc(24rem / var(--vf-font-size-root));
+}
 .mt-4 {
   margin-top: calc(4rem / 16);
   margin-top: calc(4rem / var(--vf-font-size-root));
@@ -1045,10 +1049,6 @@ a:hover {
 }
 .mt-\[100px\] {
   margin-top: 100px;
-}
-.mt-24 {
-  margin-top: calc(24rem / 16);
-  margin-top: calc(24rem / var(--vf-font-size-root));
 }
 .block {
   display: block;
@@ -1320,12 +1320,12 @@ a:hover {
   border-radius: 20px;
   border-radius: var(--vf-border-radius-button);
 }
-.rounded-full {
-  border-radius: 9999px;
-}
 .rounded-button-lg {
   border-radius: 24px;
   border-radius: var(--vf-border-radius-button-lg);
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -1341,14 +1341,14 @@ a:hover {
   border-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
 }
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-}
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
 }
 .bg-\[\#FDFDFD\] {
   --tw-bg-opacity: 1;
@@ -1410,6 +1410,12 @@ a:hover {
   padding-right: calc(16rem / 16);
   padding-right: calc(16rem / var(--vf-font-size-root));
 }
+.px-20 {
+  padding-left: calc(20rem / 16);
+  padding-left: calc(20rem / var(--vf-font-size-root));
+  padding-right: calc(20rem / 16);
+  padding-right: calc(20rem / var(--vf-font-size-root));
+}
 .px-24 {
   padding-left: calc(24rem / 16);
   padding-left: calc(24rem / var(--vf-font-size-root));
@@ -1445,12 +1451,6 @@ a:hover {
   padding-top: calc(24rem / var(--vf-font-size-root));
   padding-bottom: calc(24rem / 16);
   padding-bottom: calc(24rem / var(--vf-font-size-root));
-}
-.px-20 {
-  padding-left: calc(20rem / 16);
-  padding-left: calc(20rem / var(--vf-font-size-root));
-  padding-right: calc(20rem / 16);
-  padding-right: calc(20rem / var(--vf-font-size-root));
 }
 .py-8 {
   padding-top: calc(8rem / 16);
@@ -1563,9 +1563,6 @@ a:hover {
 }
 .font-normal {
   font-weight: 400;
-}
-.font-semibold {
-  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
