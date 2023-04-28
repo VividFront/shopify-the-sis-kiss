@@ -83,7 +83,7 @@
         "0f0c72ae-5798-47f0-bf9b-99f6efe373a3"
       ],
       "settings": {
-        "collection_text": "Shop All Best Sellers",
+        "collection_text": "Shop All <br>Best Sellers",
         "collection": "best-sellers"
       }
     }

@@ -1,6 +1,9 @@
 {
   "current": {
     "logo_width": 90,
+    "emoji_trending": "https://cdn.shopify.com/s/files/1/1216/9642/files/kiss-mark_1f48b.png?v=1682697466",
+    "emoji_new": "https://cdn.shopify.com/s/files/1/1216/9642/files/sparkles_2728.png?v=1682697466",
+    "emoji_limited": "https://cdn.shopify.com/s/files/1/1216/9642/files/locked_1f512.png?v=1682697466",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
