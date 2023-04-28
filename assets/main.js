@@ -303,8 +303,8 @@
               D = {}.hasOwnProperty,
               N = [],
               L = N.pop,
-              q = N.push,
               P = N.push,
+              q = N.push,
               O = N.slice,
               I = function (e, t) {
                 for (var n = 0, r = e.length; n < r; n++)
@@ -423,13 +423,13 @@
                 { dir: 'parentNode', next: 'legend' },
               );
             try {
-              P.apply((N = O.call(w.childNodes)), w.childNodes),
+              q.apply((N = O.call(w.childNodes)), w.childNodes),
                 N[w.childNodes.length].nodeType;
             } catch (e) {
-              P = {
+              q = {
                 apply: N.length
                   ? function (e, t) {
-                      q.apply(e, O.call(t));
+                      P.apply(e, O.call(t));
                     }
                   : function (e, t) {
                       for (var n = e.length, r = 0; (e[n++] = t[r++]); );
@@ -466,13 +466,13 @@
                     )
                       return r.push(c), r;
                   } else {
-                    if (f[2]) return P.apply(r, t.getElementsByTagName(e)), r;
+                    if (f[2]) return q.apply(r, t.getElementsByTagName(e)), r;
                     if (
                       (o = f[3]) &&
                       n.getElementsByClassName &&
                       t.getElementsByClassName
                     )
-                      return P.apply(r, t.getElementsByClassName(o)), r;
+                      return q.apply(r, t.getElementsByClassName(o)), r;
                   }
                 if (
                   n.qsa &&
@@ -495,7 +495,7 @@
                     y = h.join(',');
                   }
                   try {
-                    return P.apply(r, m.querySelectorAll(y)), r;
+                    return q.apply(r, m.querySelectorAll(y)), r;
                   } catch (t) {
                     A(e, !0);
                   } finally {
@@ -1399,7 +1399,7 @@
                           (c = i ? I(o, f) : d[l]) > -1 &&
                           (o[c] = !(a[c] = f));
                     }
-                  } else (y = Ee(y === a ? y.splice(h, y.length) : y)), i ? i(null, a, y, u) : P.apply(a, y);
+                  } else (y = Ee(y === a ? y.splice(h, y.length) : y)), i ? i(null, a, y, u) : q.apply(a, y);
                 })
               );
             }
@@ -1549,7 +1549,7 @@
                                     b[m] || x[m] || (x[m] = L.call(u));
                                 x = Ee(x);
                               }
-                              P.apply(u, x),
+                              q.apply(u, x),
                                 l &&
                                   !o &&
                                   x.length > 0 &&
@@ -1603,7 +1603,7 @@
                         ))
                       ) {
                         if ((u.splice(o, 1), !(e = i.length && be(u))))
-                          return P.apply(n, i), n;
+                          return q.apply(n, i), n;
                         break;
                       }
                   }
@@ -1697,7 +1697,7 @@
           }
           var L =
             /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
-          function q(e, t, n) {
+          function P(e, t, n) {
             return y(t)
               ? C.grep(e, function (e, r) {
                   return !!t.call(e, r, e) !== n;
@@ -1746,25 +1746,25 @@
                 return r > 1 ? C.uniqueSort(n) : n;
               },
               filter: function (e) {
-                return this.pushStack(q(this, e || [], !1));
+                return this.pushStack(P(this, e || [], !1));
               },
               not: function (e) {
-                return this.pushStack(q(this, e || [], !0));
+                return this.pushStack(P(this, e || [], !0));
               },
               is: function (e) {
-                return !!q(
+                return !!P(
                   this,
                   'string' == typeof e && D.test(e) ? C(e) : e || [],
                   !1,
                 ).length;
               },
             });
-          var P,
+          var q,
             O = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/;
           ((C.fn.init = function (e, t, n) {
             var r, i;
             if (!e) return this;
-            if (((n = n || P), 'string' == typeof e)) {
+            if (((n = n || q), 'string' == typeof e)) {
               if (
                 !(r =
                   '<' === e[0] && '>' === e[e.length - 1] && e.length >= 3
@@ -1805,7 +1805,7 @@
                 : e(C)
               : C.makeArray(e, this);
           }).prototype = C.fn),
-            (P = C(b));
+            (q = C(b));
           var I = /^(?:parents|prev(?:Until|All))/,
             H = { children: !0, contents: !0, next: !0, prev: !0 };
           function M(e, t) {
@@ -3217,8 +3217,8 @@
             });
           var Ne = /<script|<style|<link/i,
             Le = /checked\s*(?:[^=]|=\s*.checked.)/i,
-            qe = /^\s*<!\[CDATA\[|\]\]>\s*$/g;
-          function Pe(e, t) {
+            Pe = /^\s*<!\[CDATA\[|\]\]>\s*$/g;
+          function qe(e, t) {
             return (
               (N(e, 'table') &&
                 N(11 !== t.nodeType ? t : t.firstChild, 'tr') &&
@@ -3308,7 +3308,7 @@
                             { nonce: c.nonce || c.getAttribute('nonce') },
                             l,
                           )
-                        : w(c.textContent.replace(qe, ''), c, l));
+                        : w(c.textContent.replace(Pe, ''), c, l));
             }
             return e;
           }
@@ -3408,7 +3408,7 @@
                   (1 !== this.nodeType &&
                     11 !== this.nodeType &&
                     9 !== this.nodeType) ||
-                    Pe(this, e).appendChild(e);
+                    qe(this, e).appendChild(e);
                 });
               },
               prepend: function () {
@@ -3418,7 +3418,7 @@
                     11 === this.nodeType ||
                     9 === this.nodeType
                   ) {
-                    var t = Pe(this, e);
+                    var t = qe(this, e);
                     t.insertBefore(e, t.firstChild);
                   }
                 });
@@ -4898,13 +4898,13 @@
             Dt = /\r?\n/g,
             Nt = /^(?:submit|button|image|reset|file)$/i,
             Lt = /^(?:input|select|textarea|keygen)/i;
-          function qt(e, t, n, r) {
+          function Pt(e, t, n, r) {
             var i;
             if (Array.isArray(t))
               C.each(t, function (t, i) {
                 n || jt.test(e)
                   ? r(e, i)
-                  : qt(
+                  : Pt(
                       e +
                         '[' +
                         ('object' == typeof i && null != i ? t : '') +
@@ -4915,7 +4915,7 @@
                     );
               });
             else if (n || 'object' !== E(t)) r(e, t);
-            else for (i in t) qt(e + '[' + i + ']', t[i], n, r);
+            else for (i in t) Pt(e + '[' + i + ']', t[i], n, r);
           }
           (C.param = function (e, t) {
             var n,
@@ -4932,7 +4932,7 @@
               C.each(e, function () {
                 i(this.name, this.value);
               });
-            else for (n in e) qt(n, e[n], t, i);
+            else for (n in e) Pt(n, e[n], t, i);
             return r.join('&');
           }),
             C.fn.extend({
@@ -4967,7 +4967,7 @@
                   .get();
               },
             });
-          var Pt = /%20/g,
+          var qt = /%20/g,
             Ot = /#.*$/,
             It = /([?&])_=[^&]*/,
             Ht = /^(.*?):[ \t]*([^\r\n]*)$/gm,
@@ -5166,7 +5166,7 @@
                       (p.contentType || '').indexOf(
                         'application/x-www-form-urlencoded',
                       ) &&
-                    (p.data = p.data.replace(Pt, '+'))
+                    (p.data = p.data.replace(qt, '+'))
                   : ((d = p.url.slice(i.length)),
                     p.data &&
                       (p.processData || 'string' == typeof p.data) &&
@@ -6354,16 +6354,16 @@
       return typeof t === e;
     }
     function A(e) {
-      return !q(e) && k('object', e);
+      return !P(e) && k('object', e);
     }
     var j = Array.isArray,
       D = E(k, 'function'),
       N = E(k, 'string'),
       L = E(k, 'undefined');
-    function q(e) {
+    function P(e) {
       return null === e;
     }
-    function P(e) {
+    function q(e) {
       try {
         return e instanceof (e.ownerDocument.defaultView || window).HTMLElement;
       } catch (e) {
@@ -6401,7 +6401,7 @@
       });
     }
     function B(e, t) {
-      return P(e) && (e.msMatchesSelector || e.matches).call(e, t);
+      return q(e) && (e.msMatchesSelector || e.matches).call(e, t);
     }
     function $(e, t) {
       var n = e ? w(e.children) : [];
@@ -6466,7 +6466,7 @@
             J(e, n, t);
           })
         : I(e, function (e) {
-            q(n) || '' === n ? Q(e, t) : e.setAttribute(t, String(n));
+            P(n) || '' === n ? Q(e, t) : e.setAttribute(t, String(n));
           });
     }
     function K(e, t, n) {
@@ -6475,7 +6475,7 @@
     }
     function Z(e, t, n) {
       if (L(n)) return getComputedStyle(e)[t];
-      q(n) || (e.style[t] = '' + n);
+      P(n) || (e.style[t] = '' + n);
     }
     function ee(e, t) {
       Z(e, 'display', t);
@@ -6621,8 +6621,8 @@
     var De = 'mounted',
       Ne = 'ready',
       Le = 'move',
-      qe = 'moved',
-      Pe = 'click',
+      Pe = 'moved',
+      qe = 'click',
       Oe = 'refresh',
       Ie = 'updated',
       He = 'resize',
@@ -6742,8 +6742,8 @@
       Dt = At + '--next',
       Nt = mt + 'pagination',
       Lt = Nt + '__page',
-      qt = mt + 'progress__bar',
-      Pt = mt + 'toggle',
+      Pt = mt + 'progress__bar',
+      qt = mt + 'toggle',
       Ot = mt + 'sr',
       It = bt + 'initialized',
       Ht = bt + 'active',
@@ -6879,8 +6879,8 @@
                   pagination: Nt,
                   prev: jt,
                   next: Dt,
-                  bar: qt,
-                  toggle: Pt,
+                  bar: Pt,
+                  toggle: qt,
                 },
                 function (e, t) {
                   f[t] = m('.' + e);
@@ -7058,9 +7058,9 @@
                     J(r, rt, v ? 'tabpanel' : 'group'),
                     J(r, pt, h.slide),
                     J(r, ct, w || Se(h.slideLabel, [t + 1, e.length]))),
-                    u(r, 'click', E(s, Pe, D)),
+                    u(r, 'click', E(s, qe, D)),
                     u(r, 'keydown', E(s, Xe, D)),
-                    a([qe, Ue, Re], A),
+                    a([Pe, Ue, Re], A),
                     a(We, S),
                     p && a(Le, k);
                 },
@@ -7136,7 +7136,7 @@
             },
             add: function (e, t) {
               I(e, function (e) {
-                if ((N(e) && (e = ae(e)), P(e))) {
+                if ((N(e) && (e = ae(e)), q(e))) {
                   var r = u[t];
                   r ? W(e, r) : F(c, e),
                     R(e, n.classes.slide),
@@ -7461,7 +7461,7 @@
                 s(y),
                 a(Le, t, n, e),
                 r.start(t, function () {
-                  s(3), a(qe, t, n, e), i && i();
+                  s(3), a(Pe, t, n, e), i && i();
                 });
             },
             jump: E,
@@ -7513,16 +7513,16 @@
           }
           function D(e, t) {
             var n = o || (_() ? 1 : a),
-              i = q(S + n * (e ? -1 : 1), S, !(o || _()));
+              i = P(S + n * (e ? -1 : 1), S, !(o || _()));
             return -1 === i && w && !we(f(), d(!e), 1)
               ? e
                 ? 0
                 : r
               : t
               ? i
-              : P(i);
+              : q(i);
           }
-          function q(t, s, u) {
+          function P(t, s, u) {
             if (v() || _()) {
               var c = (function (t) {
                 if (w && 'move' === n.trimSpace && t !== S)
@@ -7554,7 +7554,7 @@
             } else t = -1;
             return t;
           }
-          function P(e) {
+          function q(e) {
             return x ? (e + i) % i || 0 : e;
           }
           function O() {
@@ -7593,20 +7593,20 @@
                         i = n[1],
                         o = n[2];
                       '+' === i || '-' === i
-                        ? (t = q(S + +('' + i + (+o || 1)), S))
+                        ? (t = P(S + +('' + i + (+o || 1)), S))
                         : '>' === i
                         ? (t = o ? I(+o) : T(!0))
                         : '<' === i && (t = C(!0));
                     } else t = x ? e : Te(e, 0, r);
                     return t;
                   })(e),
-                  o = P(i);
+                  o = q(i);
                 o > -1 && (t || o !== S) && (M(o), l.move(i, o, k, n));
               }
             },
             scroll: function (e, n, i, o) {
               t.Scroll.scroll(e, n, i, function () {
-                var e = P(l.toIndex(f()));
+                var e = q(l.toIndex(f()));
                 M(b ? ge(e, r) : e), o && o();
               });
             },
@@ -7661,7 +7661,7 @@
                 ee(v, e ? '' : 'none'),
                 R(v, (i = kt + '--' + n.direction)),
                 e &&
-                  (a([De, qe, Oe, Re, Ve], S),
+                  (a([De, Pe, Oe, Re, Ve], S),
                   s(y, 'click', E(T, '>')),
                   s(g, 'click', E(T, '<')),
                   S(),
@@ -7885,11 +7885,11 @@
             D = b.getPosition,
             N = b.exceededLimit,
             L = !1;
-          function q() {
+          function P() {
             var e = n.drag;
             z(!e), (a = 'free' === e);
           }
-          function P(e) {
+          function q(e) {
             if (((u = !1), !c)) {
               var t = $(e);
               (r = e.target),
@@ -7997,10 +7997,10 @@
             mount: function () {
               h(E, Ut, C, Kt),
                 h(E, Vt, C, Kt),
-                h(E, Xt, P, Kt),
+                h(E, Xt, q, Kt),
                 h(E, 'click', H, { capture: !0 }),
                 h(E, 'dragstart', se),
-                d([De, Ie], q);
+                d([De, Ie], P);
             },
             disable: z,
             isDragging: function () {
@@ -8054,7 +8054,7 @@
             a = r.bind,
             s = r.emit,
             u = 'sequential' === n.lazyLoad,
-            c = [qe, Re],
+            c = [Pe, Re],
             l = [];
           function f() {
             x(l),
@@ -8218,7 +8218,7 @@
               t.isParent || (u(e, t.splide), u(t.splide, e));
             }),
               r &&
-                ((n = (t = Ge(e)).on)(Pe, l),
+                ((n = (t = Ge(e)).on)(qe, l),
                 n(Xe, f),
                 n([De, Ie], c),
                 o.push(t),
@@ -8301,7 +8301,7 @@
                 (a.textContent = '…'),
                 r(Be, E(c, !0)),
                 r($e, E(c, !1)),
-                r([qe, Re], E(u, !0)));
+                r([Pe, Re], E(u, !0)));
             },
             disable: c,
             destroy: function () {
@@ -8553,16 +8553,40 @@
     (dn.defaults = {}),
       (dn.STATES = b),
       document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('[data-vf-trending-slider]') &&
-          new dn('[data-vf-trending-slider]', {
-            gap: 32,
-            type: 'slide',
-            pagination: !1,
-            arrows: !0,
-            perPage: 4,
-            perMove: 1,
-            breakpoints: { 575: { perPage: 2, gap: 16 }, 992: { perPage: 3 } },
-          }).mount();
+        if (
+          (document.querySelector('[data-vf-trending-slider]') &&
+            new dn('[data-vf-trending-slider]', {
+              gap: 32,
+              type: 'slide',
+              pagination: !1,
+              arrows: !0,
+              perPage: 4,
+              perMove: 1,
+              breakpoints: {
+                575: { perPage: 2, gap: 16 },
+                992: { perPage: 3 },
+              },
+            }).mount(),
+          document.querySelector('[data-vf-category-slider-products]'))
+        ) {
+          var e = new dn('[data-vf-category-slider-products]', {
+              type: 'fade',
+              pagination: !1,
+              arrows: !1,
+              perPage: 1,
+              perMove: 1,
+            }),
+            t = new dn('[data-vf-category-slider-list]', {
+              rewind: !1,
+              pagination: !1,
+              isNavigation: !0,
+              arrows: !1,
+              perPage: 8,
+              direction: 'ttb',
+              heightRatio: 0.1,
+            });
+          t.mount(), e.sync(t), e.mount();
+        }
       });
   })();
 })();

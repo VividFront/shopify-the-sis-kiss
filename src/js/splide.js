@@ -3,7 +3,7 @@ import '@splidejs/splide/css/core';
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('[data-vf-trending-slider]')) {
-    const testimonials = new Splide('[data-vf-trending-slider]', {
+    const trending = new Splide('[data-vf-trending-slider]', {
       gap: 32,
       type: 'slide',
       pagination: false,
@@ -21,6 +21,30 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
-    testimonials.mount();
+    trending.mount();
+  }
+
+  if (document.querySelector('[data-vf-category-slider-products]')) {
+    const categoryProducts = new Splide('[data-vf-category-slider-products]', {
+      type: 'fade',
+      pagination: false,
+      arrows: false,
+      perPage: 1,
+      perMove: 1,
+    });
+
+    const categoryList = new Splide('[data-vf-category-slider-list]', {
+      rewind: false,
+      pagination: false,
+      isNavigation: true,
+      arrows: false,
+      perPage: 8,
+      direction: 'ttb',
+      heightRatio: 0.1,
+    });
+
+    categoryList.mount();
+    categoryProducts.sync(categoryList);
+    categoryProducts.mount();
   }
 });

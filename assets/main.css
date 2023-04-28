@@ -954,6 +954,16 @@ a:hover {
 .z-\[1\] {
   z-index: 1;
 }
+.order-1 {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+.order-2 {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -971,6 +981,15 @@ a:hover {
 }
 .col-start-2 {
   grid-column-start: 2;
+}
+.col-start-5 {
+  grid-column-start: 5;
+}
+.col-end-4 {
+  grid-column-end: 4;
+}
+.col-end-12 {
+  grid-column-end: 12;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -1169,8 +1188,8 @@ a:hover {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
 }
-.-translate-y-\[60px\] {
-  --tw-translate-y: -60px;
+.-translate-y-\[30px\] {
+  --tw-translate-y: -30px;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1178,8 +1197,8 @@ a:hover {
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.translate-y-\[60px\] {
-  --tw-translate-y: 60px;
+.translate-y-\[30px\] {
+  --tw-translate-y: 30px;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));

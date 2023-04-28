@@ -24,9 +24,9 @@
             {%- liquid 
               assign translate = ''
               if block.settings.position_adjustment == 'up'
-                assign translate = '-translate-y-[60px]'
+                assign translate = '-translate-y-[30px]'
               elsif block.settings.position_adjustment == 'down'
-                assign translate = 'translate-y-[60px]'
+                assign translate = 'translate-y-[30px]'
               endif
             -%}
             <div class="tw-hidden lg:block basis-1/4 {{ translate }}">
