@@ -104,6 +104,10 @@ module.exports = {
         'var(--vf-font-family-heading)',
         ...defaultTheme.fontFamily.serif,
       ],
+      display: [
+        'var(--vf-font-family-display)',
+        ...defaultTheme.fontFamily.serif,
+      ],
     },
     spacing: {
       0: '0px',

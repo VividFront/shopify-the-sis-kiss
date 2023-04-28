@@ -1,0 +1,12 @@
+{% assign tags = tags join | ' ' %}
+{% if tags contains 'badge:' %}
+  <div class="absolute top-12 left-8 flex items-center gap-x-4 shadow-xs rounded-[4px] z-2">
+    {% if tags contains 'badge:new' %}
+      <img src="./assets/emoji-new.png" width="15" height="15"><span>New</span>
+    {% elsif tags contains 'badge:trending' %}
+      <img src="./assets/emoji-trending.png" width="15" height="15"><span>Trending</span>
+    {% elsif tags contains 'badge:limited' %}
+  {% endif %}
+  <img src="./assets/emoji-limited.png" width="15" height="15"><span>Limited</span>
+  </div>
+{% endif %}

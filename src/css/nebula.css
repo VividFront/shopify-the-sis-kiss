@@ -9,7 +9,7 @@
   ::after {
     --vf-font-size-root: 16;
 
-    --vf-font-size-display: calc(4rem / var(--vf-font-size-root));
+    --vf-font-size-display: calc(44rem / var(--vf-font-size-root));
     --vf-font-size-h1: calc(26rem / var(--vf-font-size-root));
     --vf-font-size-h2: calc(22rem / var(--vf-font-size-root));
     --vf-font-size-h2-alt: calc(48rem / var(--vf-font-size-root));
@@ -35,7 +35,7 @@
     --vf-line-height-body-copy-large: calc(24rem / var(--vf-font-size-root));
     --vf-line-height-nav: calc(24rem / var(--vf-font-size-root));
 
-    --vf-font-family-display: 'Playfari Display', Times, serif;
+    --vf-font-family-display: 'Playfair Display', Times, serif;
     --vf-font-family-heading: 'Quasimoda', Helvetica, sans-serif;
     --vf-font-family-body: 'Quasimoda', Helvetica, sans-serif;
     --vf-font-family-sans: 'Open Sans', Helvetica, sans-serif;
@@ -89,6 +89,7 @@
       center / 1em no-repeat;
 
     --vf-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    --vf-box-shadow-xs: 0px 0px 4px rgba(65, 65, 65, 0.12);
 
     /* Border */
     --vf-border-radius: 16px;
@@ -145,6 +146,7 @@
     font-size: var(--vf-font-size-body-copy);
     line-height: var(--vf-line-height-body-copy);
     font-family: var(--vf-font-family-body);
+    color: rgb(var(--vf-color-copy));
   }
 
   h1,
@@ -241,6 +243,10 @@
     --vf-toggle-background: rgb(var(--vf-color-disabled-high-contrast))
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='1em' height='1em' preserveAspectRatio='xMidYMid meet' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23dedede'/%3E%3C/svg%3E")
       left 1px center / 1.375em no-repeat;
+  }
+
+  a {
+    color: rgb(var(--vf-color-primary));
   }
 
   a:hover {

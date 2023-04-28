@@ -1,29 +1,40 @@
-<div class="relative pt-42 pb-54 lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
-  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+<div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
+  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
     {% if section.settings.image != blank %}
       {{ section.settings.image | image_url: width: 1500 | image_tag:
         width: section.settings.image.width,
-        class: 'h-full object-cover',
-        sizes: sizes,
+        class: 'h-full w-full object-cover [display:none] md:block',
+        sizes: section.settings.image.sizes,
         widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
         alt: section.settings.image.alt | escape
       }}
     {% else %}
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     {% endif %}
+    {% if section.settings.image_mobile != blank %}
+      {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
+        width: section.settings.image_mobile.width,
+        class: 'h-full w-full object-cover md:hidden',
+        widths: '375, 550, 750',
+        alt: section.settings.image_mobile.alt | escape
+      }}
+    {% endif %}
+    {% if section.settings.designer_tag %}
+      <span class="absolute bottom-12 left-12 text-body-copy-small text-white">{{ section.settings.designer_tag}}</span>
+    {% endif %}
   </div>
-  <div class="container grid grid-cols">
+  <div class="container lg:grid grid-cols py-24 lg:py-0">
     <div class="lg:col-start-2 lg:col-end-5">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'subheading' -%}
-            <h6>{{ block.settings.text }}</h6>
+            <h6 class="mb-8">{{ block.settings.text }}</h6>
           {%- when 'heading' -%}
-            <h1 class="text-display font-display">{{ block.settings.text }}</h1>
+            <h1 class="text-display font-display font-normal">{{ block.settings.text }}</h1>
           {%- when 'body' -%}
-            <p class="mt-12 text-body-copy-large">{{ block.settings.text }}</p>
+            <p class="my-8 lg:mt-12 text-body-copy-large">{{ block.settings.text }}</p>
           {%- when 'cta' -%}
-            {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-16 lg:mt-32' -%}
+            {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-20 lg:mt-28' -%}
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -40,6 +51,16 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "designer_tag",
+      "label": "Designer Tag"
     }
   ],
   "blocks": [

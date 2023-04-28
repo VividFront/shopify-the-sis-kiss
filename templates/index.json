@@ -1,54 +1,37 @@
 {
   "sections": {
-    "multicolumn": {
-      "type": "multicolumn",
+    "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
+      "type": "home-hero",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "507c6d37-3da1-48f2-8e83-20b3df62b326": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "The Essential Earrings"
           }
         },
-        "column2": {
-          "type": "column",
+        "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
+          "type": "body",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "Lorem ipsum dolor sit amet, consetetur"
           }
         },
-        "column3": {
-          "type": "column",
+        "fd92ceac-7245-4615-940f-11e2ed4d36e2": {
+          "type": "cta",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "Shop Now",
+            "url": "shopify://collections/earrings"
           }
         }
       },
-      "block_order": ["column1", "column2", "column3"],
+      "block_order": [
+        "507c6d37-3da1-48f2-8e83-20b3df62b326",
+        "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2",
+        "fd92ceac-7245-4615-940f-11e2ed4d36e2"
+      ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png"
       }
     }
   },
-  "order": ["multicolumn"]
+  "order": ["9112a0ba-7f75-4de6-84f8-5477492c9d9c"]
 }
