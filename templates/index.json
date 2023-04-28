@@ -3,6 +3,12 @@
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
       "type": "home-hero",
       "blocks": {
+        "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
+          "type": "subheading",
+          "settings": {
+            "text": "Introducing"
+          }
+        },
         "507c6d37-3da1-48f2-8e83-20b3df62b326": {
           "type": "heading",
           "settings": {
@@ -24,14 +30,66 @@
         }
       },
       "block_order": [
+        "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6",
         "507c6d37-3da1-48f2-8e83-20b3df62b326",
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2",
         "fd92ceac-7245-4615-940f-11e2ed4d36e2"
       ],
       "settings": {
-        "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png"
+        "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png",
+        "image_mobile": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
+        "designer_tag": "@designer_tag"
+      }
+    },
+    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
+      "type": "home-trending",
+      "blocks": {
+        "e585fc6c-2b93-4fed-a45c-02a7ba737714": {
+          "type": "product",
+          "settings": {
+            "product": "drink-up-its-all-in-a-name-necklace"
+          }
+        },
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
+          "type": "product",
+          "settings": {
+            "product": "acrylic-hair-clips"
+          }
+        },
+        "b57d275a-8796-4afc-ac7f-e148534af010": {
+          "type": "product",
+          "settings": {
+            "product": "adjustable-old-english-lowercase-initial-ring"
+          }
+        },
+        "5c3f95ac-2cd8-413e-a978-0899e1308776": {
+          "type": "product",
+          "settings": {
+            "product": "adjustable-lowercase-old-english-initial-ring-wholesale"
+          }
+        },
+        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3": {
+          "type": "product",
+          "settings": {
+            "product": "authentic-pearl-bracelet"
+          }
+        }
+      },
+      "block_order": [
+        "e585fc6c-2b93-4fed-a45c-02a7ba737714",
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
+        "b57d275a-8796-4afc-ac7f-e148534af010",
+        "5c3f95ac-2cd8-413e-a978-0899e1308776",
+        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3"
+      ],
+      "settings": {
+        "collection_text": "Shop All Best Sellers",
+        "collection": "best-sellers"
       }
     }
   },
-  "order": ["9112a0ba-7f75-4de6-84f8-5477492c9d9c"]
+  "order": [
+    "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
+    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394"
+  ]
 }

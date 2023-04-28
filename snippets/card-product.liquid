@@ -20,53 +20,55 @@
 {%- if product and product != empty -%}
   <div class="flex flex-col">
     {%- if product.featured_media -%}
-      <div class="media media--transparent relative {{ aspect_ratio }}{% if show_secondary_image and product.media[1] != nil %} group{% endif %}">
-        <a href="{{ product.url }}" title="View {{ product.title }}">
-          {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-          {% assign img_bg_color = 'bg-white' %}
-          {% if bg_color != blank and bg_color != 'white' %}
-            {% assign img_bg_color = 'bg-' | append: bg_color %}
-          {% endif %}
-          <img
-            srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-              {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-              {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-              {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-              {{ product.featured_media | image_url }} {{ product.featured_media.width }}w"
-            src="{{ product.featured_media | image_url: width: 533 }}"
-            sizes="(min-width: 1536px) 470px, (min-width: 1200px) 360px, (min-width: 992px) 288px, (min-width: 768px) 475px, 374px"
-            alt="{{ product.featured_media.alt | escape }}"
-            class="rounded absolute top-0 left-0 w-full h-full {{ aspect_ratio }} object-cover opacity-1 md:group-hover:opacity-0 motion-reduce z-[1] transition-opacity duration-200 ease-in-out {{ img_bg_color }}"
-            {% unless lazy_load == false %}loading="lazy"{% endunless %}
-            width="{{ product.featured_media.width }}"
-            height="{{ product.featured_media.height }}"
-          >
-          {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-          {%- if product.media[1] != nil and show_secondary_image -%}
+      <div class="relative">
+        <div class="media media--transparent relative {{ aspect_ratio }}{% if show_secondary_image and product.media[1] != nil %} group{% endif %}">
+          <a href="{{ product.url }}" title="View {{ product.title }}">
+            {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+            {% assign img_bg_color = 'bg-white' %}
+            {% if bg_color != blank and bg_color != 'white' %}
+              {% assign img_bg_color = 'bg-' | append: bg_color %}
+            {% endif %}
             <img
-              srcset="{%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if product.media[1].width >= 360 -%}{{ product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if product.media[1].width >= 533 -%}{{ product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
-                {%- if product.media[1].width >= 720 -%}{{ product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
-                {%- if product.media[1].width >= 940 -%}{{ product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
-                {%- if product.media[1].width >= 1066 -%}{{ product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
-                {{ product.media[1] | image_url }} {{ product.media[1].width }}w"
-              src="{{ product.media[1] | image_url: width: 533 }}"
+              srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if product.featured_media.width >= 360 -%}{{ product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if product.featured_media.width >= 533 -%}{{ product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
+                {%- if product.featured_media.width >= 720 -%}{{ product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if product.featured_media.width >= 940 -%}{{ product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
+                {%- if product.featured_media.width >= 1066 -%}{{ product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+                {{ product.featured_media | image_url }} {{ product.featured_media.width }}w"
+              src="{{ product.featured_media | image_url: width: 533 }}"
               sizes="(min-width: 1536px) 470px, (min-width: 1200px) 360px, (min-width: 992px) 288px, (min-width: 768px) 475px, 374px"
-              alt="{{ product.media[1].alt | escape }}"
-              class="rounded absolute top-0 left-0 w-full h-full aspect-3/4 object-cover opacity-1 motion-reduce z-0"
-              loading="lazy"
-              width="{{ product.media[1].width }}"
-              height="{{ product.media[1].height }}"
+              alt="{{ product.featured_media.alt | escape }}"
+              class="rounded absolute top-0 left-0 w-full h-full {{ aspect_ratio }} object-cover opacity-1 md:group-hover:opacity-0 motion-reduce z-[1] transition-opacity duration-200 ease-in-out {{ img_bg_color }}"
+              {% unless lazy_load == false %}loading="lazy"{% endunless %}
+              width="{{ product.featured_media.width }}"
+              height="{{ product.featured_media.height }}"
             >
-          {%- endif -%}
-          {% render 'product-badge', tags: product.tags %}
-        </a>
+            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+            {%- if product.media[1] != nil and show_secondary_image -%}
+              <img
+                srcset="{%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if product.media[1].width >= 360 -%}{{ product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if product.media[1].width >= 533 -%}{{ product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if product.media[1].width >= 720 -%}{{ product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if product.media[1].width >= 940 -%}{{ product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
+                  {%- if product.media[1].width >= 1066 -%}{{ product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
+                  {{ product.media[1] | image_url }} {{ product.media[1].width }}w"
+                src="{{ product.media[1] | image_url: width: 533 }}"
+                sizes="(min-width: 1536px) 470px, (min-width: 1200px) 360px, (min-width: 992px) 288px, (min-width: 768px) 475px, 374px"
+                alt="{{ product.media[1].alt | escape }}"
+                class="rounded absolute top-0 left-0 w-full h-full aspect-3/4 object-cover opacity-1 motion-reduce z-0"
+                loading="lazy"
+                width="{{ product.media[1].width }}"
+                height="{{ product.media[1].height }}"
+              >
+            {%- endif -%}
+          </a>
+        </div>
+        {% render 'product-badge', tags: product.tags %}
       </div>
     {%- endif -%}
-    <div class="mt-24 {% if product.available == false %}text-disabled-high-contrast{% endif %}">
+    <div class="mt-16 {% if product.available == false %}text-disabled-high-contrast{% endif %}">
       <h6 class="card__heading"{% if product.featured_media == nil and settings.card_style == 'standard' %} id="title-{{ section_id }}-{{ product.id }}"{% endif %}>
         <a href="{{ product.url }}" class="hover:underline">
           {{ product.title | escape }}

@@ -34,6 +34,26 @@
     ]
   },
   {
+    "name": "Emojis",
+    "settings": [
+      {
+        "type": "url",
+        "id": "emoji_trending",
+        "label": "Trending"
+      },
+      {
+        "type": "url",
+        "id": "emoji_new",
+        "label": "New"
+      },
+      {
+        "type": "url",
+        "id": "emoji_limited",
+        "label": "Limited"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

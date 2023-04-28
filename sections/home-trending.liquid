@@ -10,17 +10,17 @@
               </li>
             {% endif %}
           {% endfor %}
+          {% if section.settings.collection_text %}
+            <li class="splide__slide">
+              <a href="{{ section.settings.collection.url }}" class="text-h3 font-bold text-center hover:underline block mt-80">{{ section.settings.collection_text }}</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
-      <div class="splide__arrows w-full flex justify-between absolute top-[50%] transform-[translateY(-50%)] pointer-events-none">
-        <button class="splide__arrow splide__arrow--prev text-white h-44 w-44 border-[2px] border-white flex items-center justify-center bg-[rgba(0,0,0,0.4)] pointer-events-auto">
-          <svg id="Icon:_Chevron:_Left:_Large" data-name="Icon: Chevron: Left: Large" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <circle id="Ellipse_31" data-name="Ellipse 31" cx="12" cy="12" r="12" fill="none"/>
-            <path id="Path_3228" data-name="Path 3228" d="M12.442-11.859,4.188-3.605l-.516.539.516.539,8.254,8.254L13.52,4.649,5.806-3.066l7.715-7.715Z" transform="translate(1.838 15.072)" fill="currentColor"/>
-          </svg>            
-        </button>
-        <button class="splide__arrow splide__arrow--next text-white h-44 w-44 border-[2px] border-white flex items-center justify-center bg-[rgba(0,0,0,0.4)] pointer-events-auto">
-          <svg id="Icon:_Chevron:_Right:_Large" data-name="Icon: Chevron: Right: Large" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <div class="splide__arrows w-full flex justify-end absolute top-[150px] pointer-events-none">
+        <button class="hidden splide__arrow splide__arrow--prev"></button>
+        <button class="splide__arrow splide__arrow--next bg-white h-52 w-52 rounded-full border-white flex items-center justify-center shadow pointer-events-auto">
+          <svg id="Icon:_Chevron:_Right:_Large" data-name="Icon: Chevron: Right: Large" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
             <circle id="Ellipse_31" data-name="Ellipse 31" cx="12" cy="12" r="12" fill="none"/>
             <path id="Path_3228" data-name="Path 3228" d="M4.751-11.859,13-3.605l.516.539L13-2.527,4.751,5.727,3.672,4.649l7.715-7.715L3.672-10.781Z" transform="translate(4.971 15.072)" fill="currentColor"/>
           </svg>            

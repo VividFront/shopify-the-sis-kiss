@@ -32,6 +32,7 @@ module.exports = {
       },
       boxShadow: {
         DEFAULT: 'var(--vf-box-shadow)',
+        xs: 'var(--vf-box-shadow-xs)',
       },
       gridTemplateColumns: {
         DEFAULT: 'var(--vf-grid-cols-default)',
@@ -190,5 +191,4 @@ module.exports = {
   variants: {
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  plugins: [require('@tailwindcss/line-clamp')],
 };

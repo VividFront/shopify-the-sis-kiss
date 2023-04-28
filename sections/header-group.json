@@ -114,10 +114,10 @@
             "list_2_menu": "",
             "list_3_heading": "",
             "list_3_menu": "",
-            "image_heading": "",
+            "image_heading": "Featured Sale Collection",
             "image": "shopify://shop_images/featured.jpg",
-            "callout_heading": "",
-            "callout_body": "",
+            "callout_heading": "Collection/Item",
+            "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
             "link_text": "Shop Now",
             "link_url": ""
           }
