@@ -1,37 +1,49 @@
 <div class="bg-white p-section-md">
   <div class="container">
-    <div class="grid grid-cols">
-      <div class="col-start-2 col-end-4">
-        <div class="splide" data-vf-category-slider-list>
-          <div class="splide__track">
-            <ul class="splide__list">
+    <div class="lg:grid grid-cols" data-vf-product-tabs>
+      <div class="col-start-1 col-end-4 lg:flex items-center">
+        <div class="splide relative lg:pr-32 lg:py-40 lg:w-full lg:after:absolute lg:after:h-full lg:after:right-0 lg:after:top-0 lg:after:w-[1px] lg:after:bg-border" data-vf-category-slider-list>
+          <div data-vf-category-bar class="tw-hidden lg:block mt-42 bg-ui-pink h-50 absolute rounded-[32px] w-full transition-[top,width]"></div>
+          <div class="lg:hidden bg-ui-pink h-50 w-[160px] absolute rounded-[32px] top-0 left-[50%] translate-x-[-50%]"></div>
+          <div class="splide__track lg:h-full">
+            <ul class="splide__list lg:!flex lg:items-end lg:flex-col lg:justify-center [&_.is-active_p]:font-bold [&_.is-active_p]:text-h3">
               {% for block in section.blocks %}
                 {% if block.type == 'category' %}
-                  <li class="splide__slide"><h3>{{ block.settings.title }}</h3></li>
+                  <li data-category-list-index="{{ forloop.index0 }}" class="splide__slide flex justify-center lg:justify-start items-center"><p class="text-[20px] leading-[26px] lg:text-[28px] lg:leading-[34px]">{{ block.settings.title }}</p></li>
                 {% endif %}
               {% endfor %}
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-start-5 col-end-12">
+      <div class="col-start-5 col-end-12 mt-12 lg:mt-0">
         <div class="splide" data-vf-category-slider-products>
           <div class="splide__track">
             <ul class="splide__list">
               {% for block in section.blocks %}
                 {% if block.type == 'category' %}
-                  {%- capture secondary_product_order -%}
-                  {%- cycle 'order-1', 'order-2' -%}
-                  {%- endcapture -%}
+                  {% assign secondary_product_order = 'order-1' %}
+                  {% assign main_product_order = 'order-2' %}
+                  {% assign mod = forloop.index | modulo: 2 %}
+                  {% if mod == 0 %}
+                    {% assign secondary_product_order = 'order-2' %}
+                    {% assign main_product_order = 'order-1' %}
+                  {% endif %}
                   <li class="splide__slide">
-                    <div class="flex gap-grid items-center">
-                      <div class="{{ secondary_product_order }}">
+                    <div class="grid grid-cols-7 gap-grid items-center">
+                      <div class="col-span-3 {{ secondary_product_order }}">
                         {% render 'card-product', product: block.settings.product_secondary, show_secondary_image: true %}
                       </div>
-                      <div>
+                      <div class="col-span-4 {{ main_product_order }}">
                         {% render 'card-product', product: block.settings.product_main, alt_image: block.settings.product_alt_image, tall_image: true %}
                       </div>
                     </div>
+                    {% if block.settings.collection != blank %}
+                      {% assign button_text = 'Shop All ' | append: block.settings.title %}
+                      <div class="flex justify-center mt-30">
+                        {% render 'button-secondary', text: button_text, url: block.settings.collection.url %}
+                      </div>
+                    {% endif %}
                   </li>
                 {% endif %}
               {% endfor %}

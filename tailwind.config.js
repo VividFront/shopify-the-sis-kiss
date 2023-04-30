@@ -33,6 +33,7 @@ module.exports = {
       boxShadow: {
         DEFAULT: 'var(--vf-box-shadow)',
         xs: 'var(--vf-box-shadow-xs)',
+        button: 'var(--vf-box-shadow-button)',
       },
       gridTemplateColumns: {
         DEFAULT: 'var(--vf-grid-cols-default)',

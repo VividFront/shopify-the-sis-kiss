@@ -1,3 +1,5 @@
-<a href="{{ url }}" 
-  class="inline-block text-primary bg-white hover:underline py-8 px-20 rounded-button font-bold border-primary border-[2px] {{ class }}" 
-  target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
+<div class="inline-block p-6">
+  <a href="{{ url }}" 
+    class="inline-block text-primary bg-white hover:underline py-8 px-20 rounded-button font-bold border-primary border-[2px] hover:shadow-button transition-[box-shadow] {{ class }}" 
+    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
+</div>
