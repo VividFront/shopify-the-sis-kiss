@@ -3,13 +3,24 @@
     <div class="lg:grid grid-cols" data-vf-product-tabs>
       <div class="col-start-1 col-end-4 lg:flex items-center">
         <div class="splide relative lg:pr-32 lg:py-40 lg:w-full lg:after:absolute lg:after:h-full lg:after:right-0 lg:after:top-0 lg:after:w-[1px] lg:after:bg-border" data-vf-category-slider-list>
-          <div data-vf-category-bar class="tw-hidden lg:block mt-42 bg-ui-pink h-50 absolute rounded-[32px] w-full transition-[top,width]"></div>
-          <div class="lg:hidden bg-ui-pink h-50 w-[160px] absolute rounded-[32px] top-0 left-[50%] translate-x-[-50%]"></div>
+          <div data-vf-category-bar class="tw-hidden lg:block mt-42 bg-ui-pink h-50 absolute rounded-[32px] w-full transition-[top,width]">
+            <div data-sparkle-group class="w-48 h-48 flex items-center justify-center absolute left-0 -translate-x-[100%] -translate-y-[50%] transition-transform">
+              {% render 'svg-pink-sparkle-group' %}
+            </div>
+            <div data-sparkle-small class="w-24 h-24 flex items-center justify-center absolute right-0 bottom-0 translate-x-[100%] translate-y-[100%]">
+              {% render 'svg-pink-sparkle-small' %}
+            </div>
+          </div>
+          <div data-vf-category-pill class="lg:hidden bg-ui-pink h-50 w-[160px] absolute rounded-[32px] top-0 left-[50%] translate-x-[-50%] transition-[width]">
+            <div data-sparkle-group class="w-30 h-30 flex items-center justify-center absolute left-0 -translate-x-[90%] -translate-y-[50%] transition-transform">
+              {% render 'svg-pink-sparkle-group' %}
+            </div>
+          </div>
           <div class="splide__track lg:h-full">
             <ul class="splide__list lg:!flex lg:items-end lg:flex-col lg:justify-center [&_.is-active_p]:font-bold [&_.is-active_p]:text-h3">
               {% for block in section.blocks %}
                 {% if block.type == 'category' %}
-                  <li data-category-list-index="{{ forloop.index0 }}" class="splide__slide flex justify-center lg:justify-start items-center"><p class="text-[20px] leading-[26px] lg:text-[28px] lg:leading-[34px]">{{ block.settings.title }}</p></li>
+                  <li data-category-list-index="{{ forloop.index0 }}" class="splide__slide cursor-pointer flex justify-center lg:justify-start items-center"><p class="text-[20px] leading-[26px] lg:text-[28px] lg:leading-[34px]">{{ block.settings.title }}</p></li>
                 {% endif %}
               {% endfor %}
             </ul>
@@ -34,8 +45,14 @@
                       <div class="col-span-3 {{ secondary_product_order }}">
                         {% render 'card-product', product: block.settings.product_secondary, show_secondary_image: true %}
                       </div>
-                      <div class="col-span-4 {{ main_product_order }}">
+                      <div class="col-span-4 {{ main_product_order }} relative">
                         {% render 'card-product', product: block.settings.product_main, alt_image: block.settings.product_alt_image, tall_image: true %}
+                        <div class="w-48 h-48 flex items-center justify-center absolute bottom-0 right-0 translate-x-[100%]">
+                          {% render 'svg-pink-sparkle-group' %}
+                        </div>
+                        <div class="w-30 h-30 flex items-center justify-center absolute left-0 top-0 -translate-x-[100%] translate-y-[100%]">
+                          {% render 'svg-pink-sparkle-large' %}
+                        </div>
                       </div>
                     </div>
                     {% if block.settings.collection != blank %}

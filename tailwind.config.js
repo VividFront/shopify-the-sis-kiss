@@ -19,6 +19,8 @@ module.exports = {
     'lg:h-100',
     'w-48',
     'h-48',
+    'rotate-90',
+    '!translate-y-[50%]',
   ],
   theme: {
     extend: {

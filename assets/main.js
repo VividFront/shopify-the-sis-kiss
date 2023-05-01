@@ -8601,25 +8601,40 @@
             });
           n.mount(), t.sync(n), t.mount();
           var r = document.querySelector('[data-vf-category-bar]'),
-            i = document.querySelector('[data-category-list-index="0"]'),
-            o = document.querySelector('[data-vf-product-tabs]');
-          (r.style.top = i.offsetTop + 'px'),
-            (r.style.left = i.offsetLeft - 24 + 'px'),
-            (r.style.width = e(o.offsetWidth, i.offsetWidth, 116));
-          var a = i;
+            i = document.querySelector('[data-vf-category-pill]'),
+            o = document.querySelector('[data-category-list-index="0"]'),
+            a = document.querySelector('[data-vf-product-tabs]'),
+            s = document.querySelector(
+              '[data-vf-category-bar] [data-sparkle-group]',
+            );
+          (r.style.top = o.offsetTop + 'px'),
+            (r.style.left = o.offsetLeft - 24 + 'px'),
+            (r.style.width = e(a.offsetWidth, o.offsetWidth, 116));
+          var u = o;
           n.on('move', function (t) {
             var n = document.querySelector(
               '[data-category-list-index="' + t + '"]',
             );
-            (r.style.top = n.offsetTop + 'px'),
-              (r.style.left = n.offsetLeft - 24 - 24 + 'px'),
-              (r.style.width = e(o.offsetWidth, n.offsetWidth, 116)),
-              (a = n);
+            if (
+              (r &&
+                ((r.style.top = n.offsetTop + 'px'),
+                (r.style.left = n.offsetLeft - 24 - 24 + 'px'),
+                (r.style.width = e(a.offsetWidth, n.offsetWidth, 116)),
+                s &&
+                  (t % 2
+                    ? s.classList.add('rotate-90', '!translate-y-[50%]')
+                    : s.classList.remove('rotate-90', '!translate-y-[50%]')),
+                (u = n)),
+              i)
+            ) {
+              var o = n.querySelector('p');
+              i.style.width = o.offsetWidth + 48 + 'px';
+            }
           }),
             n.on('resize', function () {
-              (r.style.top = a.offsetTop + 'px'),
-                (r.style.left = a.offsetLeft - 24 - 24 + 'px'),
-                (r.style.width = e(o.offsetWidth, a.offsetWidth, 116));
+              (r.style.top = u.offsetTop + 'px'),
+                (r.style.left = u.offsetLeft - 24 - 24 + 'px'),
+                (r.style.width = e(a.offsetWidth, u.offsetWidth, 116));
             });
         }
       });

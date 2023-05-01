@@ -43,10 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
       height: '100%',
       fixedHeight: 50,
       breakpoints: {
-        // 575: {
-        //   perPage: 2,
-        //   gap: 16,
-        // },
         992: {
           perPage: 3,
           direction: 'ltr',
@@ -63,8 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
     categoryProducts.mount();
 
     const pinkBar = document.querySelector('[data-vf-category-bar]'),
+      pinkPill = document.querySelector('[data-vf-category-pill]'),
       firstSlide = document.querySelector('[data-category-list-index="0"]'),
       slidersContainer = document.querySelector('[data-vf-product-tabs]');
+
+    const pinkBarSparkle = document.querySelector(
+      '[data-vf-category-bar] [data-sparkle-group]',
+    );
 
     const leftPadding = 24,
       rightPadding = 60,
@@ -85,15 +86,31 @@ document.addEventListener('DOMContentLoaded', function () {
       const nextSlide = document.querySelector(
         '[data-category-list-index="' + newIndex + '"]',
       );
-      pinkBar.style.top = nextSlide.offsetTop + 'px';
-      pinkBar.style.left =
-        nextSlide.offsetLeft - leftPadding - leftPadding + 'px';
-      pinkBar.style.width = getBarWidth(
-        slidersContainer.offsetWidth,
-        nextSlide.offsetWidth,
-        extraWidth,
-      );
-      currentSlide = nextSlide;
+      if (pinkBar) {
+        pinkBar.style.top = nextSlide.offsetTop + 'px';
+        pinkBar.style.left =
+          nextSlide.offsetLeft - leftPadding - leftPadding + 'px';
+        pinkBar.style.width = getBarWidth(
+          slidersContainer.offsetWidth,
+          nextSlide.offsetWidth,
+          extraWidth,
+        );
+
+        if (pinkBarSparkle) {
+          if (newIndex % 2) {
+            pinkBarSparkle.classList.add('rotate-90', '!translate-y-[50%]');
+          } else {
+            pinkBarSparkle.classList.remove('rotate-90', '!translate-y-[50%]');
+          }
+        }
+
+        currentSlide = nextSlide;
+      }
+
+      if (pinkPill) {
+        const slideText = nextSlide.querySelector('p');
+        pinkPill.style.width = slideText.offsetWidth + leftPadding * 2 + 'px';
+      }
     });
 
     categoryList.on('resize', () => {
