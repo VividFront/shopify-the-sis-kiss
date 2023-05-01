@@ -217,6 +217,17 @@
         "cta_text": "Shop All Spring",
         "cta_url": "shopify://collections/spring-summer-new-arrivals"
       }
+    },
+    "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
+      "type": "full-width-image-callout",
+      "settings": {
+        "background_image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.51.10_PM.png",
+        "image_mobile": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.23_PM.png",
+        "heading": "Custom Pieces",
+        "body": "Custom styles, hand made. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+        "cta_text": "Shop Custom Jewelry",
+        "cta_url": "shopify://collections/custom-jewelry"
+      }
     }
   },
   "order": [
@@ -224,6 +235,7 @@
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
     "efd3c021-b667-4075-93fd-09a6d2277d0e",
-    "bc1dcc69-4df7-4e65-8092-482942e52e37"
+    "bc1dcc69-4df7-4e65-8092-482942e52e37",
+    "03e98e28-bb6a-4d26-8fa8-bed336462fcb"
   ]
 }
