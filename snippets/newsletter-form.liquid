@@ -1,0 +1,58 @@
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+
+{%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+  <input type="hidden" name="contact[tags]" value="newsletter">
+  <div class="newsletter-form__field-wrapper flex items-center gap-12">
+    <div class="relative w-full">
+      <input
+        id="NewsletterForm--{{ section.id }}"
+        type="email"
+        name="contact[email]"
+        class="bg-transparent text-white text-body-copy rounded-[4px] border-white border w-full h-42 px-12 py-12"
+        value="{{ form.email }}"
+        aria-required="true"
+        autocorrect="off"
+        autocapitalize="off"
+        autocomplete="email"
+        {% if form.errors %}
+          autofocus
+          aria-invalid="true"
+          aria-describedby="ContactFooter-error"
+        {% elsif form.posted_successfully? %}
+          aria-describedby="ContactFooter-success"
+        {% endif %}
+        required
+      >
+      <label class="absolute top-0 px-2 left-12 translate-y-[-50%] text-white text-body-copy bg-ui-dark" for="NewsletterForm--{{ section.id }}">
+        Email Address
+      </label>
+    </div>
+    <button
+      type="submit"
+      class="inline-block shrink-0 text-white hover:underline py-6 px-20 rounded-button font-bold border-border border-[2px] transition-[box-shadow]"
+      name="commit"
+      id="Subscribe"
+      aria-label="{{ 'newsletter.button_label' | t }}"
+    >
+      Submit
+    </button>
+    {%- if form.errors -%}
+      <small class="newsletter-form__message form__message" id="ContactFooter-error">
+        {%- render 'icon-error' -%}
+        {{- form.errors.translated_fields.email | capitalize }}
+        {{ form.errors.messages.email -}}
+      </small>
+    {%- endif -%}
+  </div>
+  {%- if form.posted_successfully? -%}
+    <h3
+      class="newsletter-form__message newsletter-form__message--success form__message"
+      id="ContactFooter-success"
+      tabindex="-1"
+      autofocus
+    >
+      {% render 'icon-success' -%}
+      {{- 'newsletter.success' | t }}
+    </h3>
+  {%- endif -%}
+{%- endform -%}

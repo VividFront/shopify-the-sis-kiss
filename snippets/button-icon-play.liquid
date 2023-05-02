@@ -1,8 +1,6 @@
-<div class="inline-block px-6 pb-6">
-  <a href="{{ url }}" 
-    class="inline-flex flex-nowrap items-center gap-14 text-primary hover:underline py-8 px-20 rounded-button font-bold border-primary border-[2px] hover:shadow-button transition-[box-shadow] {{ class }}" 
-    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">
-      {% render 'icon-play' %}
-      {{ text }}
-    </a>
-</div>
+<a href="{{ url }}" 
+  class="inline-flex flex-nowrap items-center gap-14 text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px] hover:shadow-button hover:translate-y-[-4px] hover:translate-x-[-5px] transition-[box-shadow,transform] {{ class }}" 
+  target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">
+    {% render 'icon-play' %}
+    {{ text }}
+</a>
