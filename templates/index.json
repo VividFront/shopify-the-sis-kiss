@@ -93,20 +93,20 @@
         "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
           "type": "image_short",
           "settings": {
-            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.23_PM.png",
+            "image": "shopify://shop_images/collab-2.jpg",
             "position_adjustment": "up"
           }
         },
         "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
           "type": "image_tall",
           "settings": {
-            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.00_PM.png"
+            "image": "shopify://shop_images/collab-1.jpg"
           }
         },
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
           "type": "image_short",
           "settings": {
-            "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.49_PM.png",
+            "image": "shopify://shop_images/collab-3.jpg",
             "position_adjustment": "down"
           }
         }
@@ -131,7 +131,7 @@
           "settings": {
             "title": "Necklaces",
             "product_main": "acrylic-hair-clips",
-            "product_alt_image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.00_PM.png",
+            "product_alt_image": "shopify://shop_images/necklace-lifestyle.jpg",
             "product_secondary": "drink-up-its-all-in-a-name-necklace",
             "collection": "necklaces"
           }
@@ -141,7 +141,7 @@
           "settings": {
             "title": "Earrings",
             "product_main": "adjustable-crystal-initial-ring",
-            "product_alt_image": "shopify://shop_images/your-way.jpg",
+            "product_alt_image": "shopify://shop_images/collab-1.jpg",
             "product_secondary": "adjustable-old-english-lowercase-initial-ring",
             "collection": "earrings"
           }
@@ -212,7 +212,7 @@
         "body": "Seasonal trends and guides. This can also be a gift guide. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod sed diam nonumy.",
         "badge_emoji": "https://cdn.shopify.com/s/files/1/1216/9642/files/tulip_1f337.png?v=1682973594",
         "badge_text": "New This Season",
-        "image": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.00_PM.png",
+        "image": "shopify://shop_images/spring-1.jpg",
         "designer_tag": "@designer_tag",
         "cta_text": "Shop All Spring",
         "cta_url": "shopify://collections/spring-summer-new-arrivals"
@@ -221,8 +221,8 @@
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
       "type": "full-width-image-callout",
       "settings": {
-        "background_image": "shopify://shop_images/Screen_Shot_2023-04-25_at_10.51.10_PM.png",
-        "image_mobile": "shopify://shop_images/Screen_Shot_2023-04-28_at_2.20.23_PM.png",
+        "background_image": "shopify://shop_images/custom.jpg",
+        "image_mobile": "shopify://shop_images/custom_copy.jpg",
         "heading": "Custom Pieces",
         "body": "Custom styles, hand made. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
         "cta_text": "Shop Custom Jewelry",
@@ -235,7 +235,7 @@
         "535ac3b1-681a-4114-80b4-18b90c38e2f3": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.45.49_AM.png",
+            "icon": "shopify://shop_images/women-icon.png",
             "heading": "Women Owned",
             "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
           }
@@ -243,7 +243,7 @@
         "240d4905-1fb8-4d40-a7bb-4bfe0241e563": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.45.56_AM.png",
+            "icon": "shopify://shop_images/shipping-icon.png",
             "heading": "Free Shipping*",
             "body": "<p>*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.</p>"
           }
@@ -251,7 +251,7 @@
         "177408fd-1357-494d-81f8-73c3a819d9b7": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.46.03_AM.png",
+            "icon": "shopify://shop_images/rewards-icon.png",
             "heading": "Lifetime Guarantee",
             "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
           }
@@ -259,7 +259,7 @@
         "18543a21-5d02-4ef0-8d62-f97c768af217": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.46.08_AM.png",
+            "icon": "shopify://shop_images/waterproof-icon.png",
             "heading": "Waterproof",
             "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
           }
