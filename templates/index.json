@@ -228,6 +228,102 @@
         "cta_text": "Shop Custom Jewelry",
         "cta_url": "shopify://collections/custom-jewelry"
       }
+    },
+    "e55e6111-cf7e-4f0e-99df-a63469c1213f": {
+      "type": "icon-section",
+      "blocks": {
+        "535ac3b1-681a-4114-80b4-18b90c38e2f3": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.45.49_AM.png",
+            "heading": "Women Owned",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        },
+        "240d4905-1fb8-4d40-a7bb-4bfe0241e563": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.45.56_AM.png",
+            "heading": "Free Shipping*",
+            "body": "<p>*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.</p>"
+          }
+        },
+        "177408fd-1357-494d-81f8-73c3a819d9b7": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.46.03_AM.png",
+            "heading": "Lifetime Guarantee",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        },
+        "18543a21-5d02-4ef0-8d62-f97c768af217": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.46.08_AM.png",
+            "heading": "Waterproof",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "535ac3b1-681a-4114-80b4-18b90c38e2f3",
+        "240d4905-1fb8-4d40-a7bb-4bfe0241e563",
+        "177408fd-1357-494d-81f8-73c3a819d9b7",
+        "18543a21-5d02-4ef0-8d62-f97c768af217"
+      ],
+      "settings": {}
+    },
+    "532c5839-bed9-45ca-993c-1b983e6903c8": {
+      "type": "featured-in",
+      "blocks": {
+        "2ef7ebef-8e24-454f-9445-30934ada670d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.54.01_AM.png",
+            "url": "shopify://collections/beaded-jewelry"
+          }
+        },
+        "2ae773bf-3575-4cec-a316-00e35328aff1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "de3068c3-34b5-4af8-a26e-4c0c35a187eb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "8154a033-8e22-4675-b626-d9654c9837b1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2ef7ebef-8e24-454f-9445-30934ada670d",
+        "2ae773bf-3575-4cec-a316-00e35328aff1",
+        "de3068c3-34b5-4af8-a26e-4c0c35a187eb",
+        "8154a033-8e22-4675-b626-d9654c9837b1"
+      ],
+      "settings": {
+        "heading": "Featured In"
+      }
+    },
+    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0": {
+      "type": "podcast-callout",
+      "settings": {
+        "image": "shopify://shop_images/Background_1.png",
+        "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+        "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
+        "cta_text": "Listen Now",
+        "cta_url": "shopify://blogs/news"
+      }
     }
   },
   "order": [
@@ -236,6 +332,9 @@
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
     "efd3c021-b667-4075-93fd-09a6d2277d0e",
     "bc1dcc69-4df7-4e65-8092-482942e52e37",
-    "03e98e28-bb6a-4d26-8fa8-bed336462fcb"
+    "03e98e28-bb6a-4d26-8fa8-bed336462fcb",
+    "e55e6111-cf7e-4f0e-99df-a63469c1213f",
+    "532c5839-bed9-45ca-993c-1b983e6903c8",
+    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0"
   ]
 }
