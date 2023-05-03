@@ -1,8 +1,24 @@
+<div class="lg:hidden bg-split-white-pink">
+  <div class="container">
+    {% if settings.lottie_cat_glasses != blank %}
+      <div class="flex w-full justify-center">
+        {% render 'lottie', json_url: settings.lottie_cat_glasses, class: 'max-w-[168px] w-full aspect-square' %}
+      </div>
+    {% endif %}
+  </div>
+</div>
 <div class="bg-ui-pink p-section-md overflow-hidden">
   <div class="container">
     <div class="splide" data-vf-trending-slider>
       <div class="splide__track overflow-visible">
         <ul class="splide__list">
+          {% if settings.lottie_cat_glasses != blank %}
+            <li data-vf-leopard-slide class="js-leopard-slide tw-hidden lg:list-item splide__slide">
+              <div class="flex items-start">
+                {% render 'lottie', json_url: settings.lottie_cat_glasses, class: 'w-full aspect-square' %}
+              </div>
+            </li>
+          {% endif %}
           {% for block in section.blocks %}
             {% if block.type == 'product' %}
               <li class="splide__slide">

@@ -59,6 +59,16 @@
     ]
   },
   {
+    "name": "Lottie JSON",
+    "settings": [
+      {
+        "type": "url",
+        "id": "lottie_cat_glasses",
+        "label": "Trending Leopard"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

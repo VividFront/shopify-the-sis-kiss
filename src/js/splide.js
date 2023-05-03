@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     trending.mount();
+
+    const { Slides } = trending.Components;
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      Slides.remove('.js-leopard-slide');
+    }
   }
 
   if (document.querySelector('[data-vf-category-slider-products]')) {
@@ -124,9 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     });
   }
-
-  // pink bar width = sliders container * (8/12) + list item width + x padding + gap
-  function getBarWidth(containerWidth, listItemWidth, extra) {
-    return containerWidth * 0.667 + listItemWidth + extra + 'px';
-  }
 });
+
+// pink bar width = sliders container * (8/12) + list item width + x padding + gap
+function getBarWidth(containerWidth, listItemWidth, extra) {
+  return containerWidth * 0.667 + listItemWidth + extra + 'px';
+}

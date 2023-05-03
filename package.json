@@ -61,7 +61,7 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@trelliscommerce/prettier-config": "^1.0.0",
+    "@lottiefiles/lottie-player": "^1.7.1",
     "@shopify/shopify-api": "^3.1.0",
     "@shopify/theme-a11y": "^4.1.1",
     "@shopify/theme-addresses": "^4.1.1",
@@ -74,8 +74,9 @@
     "@shopify/theme-rte": "^4.1.1",
     "@shopify/theme-sections": "^4.1.1",
     "@splidejs/splide": "^4.1.1",
-    "sass-loader": "^12.6.0",
-    "jquery": "^3.6.0"
+    "@trelliscommerce/prettier-config": "^1.0.0",
+    "jquery": "^3.6.0",
+    "sass-loader": "^12.6.0"
   },
   "prettier": "@trelliscommerce/prettier-config",
   "lint-staged": {
