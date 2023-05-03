@@ -1,6 +1,9 @@
-<a href="{{ url }}" 
-  class="inline-flex flex-nowrap items-center gap-14 text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px] hover:shadow-button hover:translate-y-[-4px] hover:translate-x-[-5px] transition-[box-shadow,transform] {{ class }}" 
-  target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">
-    {% render 'icon-play' %}
-    {{ text }}
-</a>
+<div class="relative inline-block shadow-hover-button {{ class }}">
+  <div arai-hidden class="button-shadow"></div>
+  <a href="{{ url }}" 
+    class="relative inline-flex flex-nowrap items-center gap-14 text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px]" 
+    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">
+      {% render 'icon-play' %}
+      {{ text }}
+  </a>
+</div>

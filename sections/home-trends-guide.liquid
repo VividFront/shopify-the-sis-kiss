@@ -38,7 +38,7 @@
           {% for block in section.blocks %}
             {% if block.type == 'product' %}
               <div class="basis-1/2">
-                {% render 'card-product', product: block.settings.product %}
+                {% render 'card-product', product: block.settings.product, show_secondary_image: true %}
               </div>
             {% endif %}
           {% endfor %}

@@ -31,7 +31,7 @@
             <p class="mt-12">{{ section.settings.body }}</p>
           {% endif %}
           {% if section.settings.cta_url != blank %}
-            {% render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' %}
+            {% render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24 [&_a]:bg-ui-pink' %}
           {% endif %}
         </div>
       </div>

@@ -1,3 +1,6 @@
-<a href="{{ url }}" 
-  class="inline-block text-white text-[calc(18rem/16)] leading-[calc(26rem/16)] bg-primary hover:bg-primary-hover py-12 px-24 rounded-button-lg font-bold {{ class }}" 
-  target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
+<div class="relative inline-block shadow-hover-button {{ class }}">
+  <div arai-hidden class="button-shadow"></div>
+  <a href="{{ url }}" 
+    class="relative inline-block text-white text-[calc(18rem/16)] leading-[calc(26rem/16)] bg-primary py-10 px-24 rounded-button-lg font-bold" 
+    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
+</div>

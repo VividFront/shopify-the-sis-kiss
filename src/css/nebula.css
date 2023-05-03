@@ -10,9 +10,9 @@
     --vf-font-size-root: 16;
 
     --vf-font-size-display: calc(44rem / var(--vf-font-size-root));
-    --vf-font-size-h1: calc(26rem / var(--vf-font-size-root));
-    --vf-font-size-h2: calc(22rem / var(--vf-font-size-root));
-    --vf-font-size-h2-alt: calc(48rem / var(--vf-font-size-root));
+    --vf-font-size-h1: calc(40rem / var(--vf-font-size-root));
+    --vf-font-size-h2: calc(32rem / var(--vf-font-size-root));
+    --vf-font-size-h2-alt: calc(40rem / var(--vf-font-size-root));
     --vf-font-size-h3: calc(20rem / var(--vf-font-size-root));
     --vf-font-size-h4: calc(18rem / var(--vf-font-size-root));
     --vf-font-size-h5: calc(17rem / var(--vf-font-size-root));
@@ -23,9 +23,9 @@
     --vf-font-size-nav: calc(18rem / var(--vf-font-size-root));
 
     --vf-line-height-display: calc(48rem / var(--vf-font-size-root));
-    --vf-line-height-h1: calc(30rem / var(--vf-font-size-root));
-    --vf-line-height-h2: calc(28rem / var(--vf-font-size-root));
-    --vf-line-height-h2-alt: calc(56rem / var(--vf-font-size-root));
+    --vf-line-height-h1: calc(44rem / var(--vf-font-size-root));
+    --vf-line-height-h2: calc(36rem / var(--vf-font-size-root));
+    --vf-line-height-h2-alt: calc(48rem / var(--vf-font-size-root));
     --vf-line-height-h3: calc(26rem / var(--vf-font-size-root));
     --vf-line-height-h4: calc(24rem / var(--vf-font-size-root));
     --vf-line-height-h5: calc(24rem / var(--vf-font-size-root));

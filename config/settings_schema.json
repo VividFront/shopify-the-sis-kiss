@@ -50,6 +50,11 @@
         "type": "url",
         "id": "emoji_limited",
         "label": "Limited"
+      },
+      {
+        "type": "url",
+        "id": "emoji_wine",
+        "label": "Wine (Water Resitant)"
       }
     ]
   },

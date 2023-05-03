@@ -319,10 +319,18 @@
       "type": "podcast-callout",
       "settings": {
         "image": "shopify://shop_images/Background_1.png",
-        "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+        "image_mobile": "shopify://shop_images/podcast-Background.jpg",
+        "logo": "shopify://shop_images/WU-logo.png",
         "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
         "cta_text": "Listen Now",
         "cta_url": "shopify://blogs/news"
+      }
+    },
+    "686f2ccf-6996-4ccb-8881-ec7928848173": {
+      "type": "newsletter-callout",
+      "settings": {
+        "heading": "Join Our Mailing List",
+        "body": "Insider info and lifestyle content. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
       }
     }
   },
@@ -335,6 +343,7 @@
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb",
     "e55e6111-cf7e-4f0e-99df-a63469c1213f",
     "532c5839-bed9-45ca-993c-1b983e6903c8",
-    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0"
+    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0",
+    "686f2ccf-6996-4ccb-8881-ec7928848173"
   ]
 }
