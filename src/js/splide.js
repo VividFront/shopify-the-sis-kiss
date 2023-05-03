@@ -2,151 +2,136 @@ import Splide from '@splidejs/splide';
 import '@splidejs/splide/css/core';
 
 document.addEventListener('DOMContentLoaded', function () {
-  if (document.querySelector('.js-slider--testimonials')) {
-    const testimonials = new Splide('.js-slider--testimonials', {
-      gap: 0,
-      type: 'loop',
-      rewind: true,
+  if (document.querySelector('[data-vf-trending-slider]')) {
+    const trending = new Splide('[data-vf-trending-slider]', {
+      gap: 32,
+      type: 'slide',
       pagination: false,
       arrows: true,
-      perPage: 3,
+      perPage: 4,
       perMove: 1,
       breakpoints: {
         575: {
-          perPage: 1,
+          perPage: 2,
+          gap: 16,
         },
         992: {
-          perPage: 2,
+          perPage: 3,
         },
       },
     });
 
-    testimonials.mount();
+    trending.mount();
 
-    testimonials.on('move', () => {
-      // remove hidden styles on first item to allow for offset
-      const slider = document.querySelector('.js-slider--testimonials');
-      slider.classList.add('has-moved');
-    });
+    const { Slides } = trending.Components;
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      Slides.remove('.js-leopard-slide');
+    }
   }
 
-  if (document.querySelector('.js-slider--announcements')) {
-    const testimonials = new Splide('.js-slider--announcements', {
-      gap: 0,
-      type: 'loop',
-      rewind: true,
+  if (document.querySelector('[data-vf-category-slider-products]')) {
+    const categoryProducts = new Splide('[data-vf-category-slider-products]', {
+      type: 'fade',
       pagination: false,
       arrows: false,
       perPage: 1,
       perMove: 1,
-      autoplay: true,
-      drag: false,
     });
 
-    testimonials.mount();
-  }
-
-  if (document.querySelector('.js-slider--mentions')) {
-    const mentions = new Splide('.js-slider--mentions', {
-      gap: 0,
-      type: 'loop',
-      rewind: true,
-      pagination: false,
-      arrows: true,
-      perPage: 1,
-    });
-
-    const logoCount = document.querySelector('.js-slider--mentions__logos')
-      .dataset.count;
-
-    const mentionsLogos = new Splide('.js-slider--mentions__logos', {
-      gap: 24,
-      rewind: true,
+    const categoryList = new Splide('[data-vf-category-slider-list]', {
+      rewind: false,
       pagination: false,
       isNavigation: true,
       arrows: false,
-      fixedHeight: 53,
-      perPage: logoCount,
-      breakpoints: {
-        767: {
-          perPage: 3,
-        },
-      },
-    });
-
-    mentionsLogos.mount();
-    mentions.sync(mentionsLogos);
-    mentions.mount();
-  }
-
-  if (document.querySelector('.js-slider--mobileSlider')) {
-    const arrows =
-      document.querySelector('.js-slider--mobileSlider').dataset.arrows ===
-      'true';
-    const gap = document.querySelector('.js-slider--mobileSlider').dataset.gap
-      ? document.querySelector('.js-slider--mobileSlider').dataset.gap
-      : 0;
-    const mobileSlider = new Splide('.js-slider--mobileSlider', {
-      gap: gap,
-      type: 'loop',
-      rewind: true,
-      pagination: false,
-      arrows: arrows,
-      perPage: 1,
-      destroy: true,
+      perPage: 8,
+      direction: 'ttb',
+      height: '100%',
+      fixedHeight: 50,
       breakpoints: {
         992: {
-          destroy: false,
-        },
-      },
-    });
-
-    mobileSlider.mount();
-  }
-
-  if (document.querySelector('.js-slider--product')) {
-    const productSlider = new Splide('.js-slider--product', {
-      gap: 2, // fix for slide peeking visual bug
-      type: 'loop',
-      rewind: true,
-      pagination: false,
-      arrows: false,
-      fixedHeight: 518,
-      perPage: 1,
-      breakpoints: {
-        767: {
-          fixedHeight: 320,
-        },
-      },
-    });
-
-    const productThumbnails = new Splide('.js-slider--product__thumbnails', {
-      gap: 12,
-      rewind: true,
-      pagination: false,
-      isNavigation: true,
-      arrows: true,
-      fixedHeight: 70,
-      fixedWidth: 70,
-      height: 'calc(500rem/16)',
-      perPage: 5,
-      direction: 'ttb',
-      breakpoints: {
-        767: {
-          direction: 'ltr',
           perPage: 3,
-          height: 'calc(72rem/16)',
-          width: 'calc(300rem/16)',
+          direction: 'ltr',
+          height: 50,
+          focus: 'center',
+          fixedHeight: false,
+          trimSpace: false,
         },
       },
     });
 
-    productThumbnails.mount();
-    productSlider.sync(productThumbnails);
-    productSlider.mount();
+    categoryList.mount();
+    categoryProducts.sync(categoryList);
+    categoryProducts.mount();
 
-    // save slider Controller to window to allow VariantSelects to access
-    const { Controller } = productSlider.Components;
-    window.productSliderController = Controller;
+    const pinkBar = document.querySelector('[data-vf-category-bar]'),
+      pinkPill = document.querySelector('[data-vf-category-pill]'),
+      firstSlide = document.querySelector('[data-category-list-index="0"]'),
+      slidersContainer = document.querySelector('[data-vf-product-tabs]');
+
+    const pinkBarSparkle = document.querySelector(
+      '[data-vf-category-bar] [data-sparkle-group]',
+    );
+
+    const leftPadding = 24,
+      rightPadding = 60,
+      gap = 32;
+    const extraWidth = leftPadding + rightPadding + gap;
+
+    pinkBar.style.top = firstSlide.offsetTop + 'px';
+    pinkBar.style.left = firstSlide.offsetLeft - leftPadding + 'px';
+
+    pinkBar.style.width = getBarWidth(
+      slidersContainer.offsetWidth,
+      firstSlide.offsetWidth,
+      extraWidth,
+    );
+
+    let currentSlide = firstSlide;
+    categoryList.on('move', (newIndex) => {
+      const nextSlide = document.querySelector(
+        '[data-category-list-index="' + newIndex + '"]',
+      );
+      if (pinkBar) {
+        pinkBar.style.top = nextSlide.offsetTop + 'px';
+        pinkBar.style.left =
+          nextSlide.offsetLeft - leftPadding - leftPadding + 'px';
+        pinkBar.style.width = getBarWidth(
+          slidersContainer.offsetWidth,
+          nextSlide.offsetWidth,
+          extraWidth,
+        );
+
+        if (pinkBarSparkle) {
+          if (newIndex % 2) {
+            pinkBarSparkle.classList.add('rotate-90', '!translate-y-[50%]');
+          } else {
+            pinkBarSparkle.classList.remove('rotate-90', '!translate-y-[50%]');
+          }
+        }
+
+        currentSlide = nextSlide;
+      }
+
+      if (pinkPill) {
+        const slideText = nextSlide.querySelector('p');
+        pinkPill.style.width = slideText.offsetWidth + leftPadding * 2 + 'px';
+      }
+    });
+
+    categoryList.on('resize', () => {
+      pinkBar.style.top = currentSlide.offsetTop + 'px';
+      pinkBar.style.left =
+        currentSlide.offsetLeft - leftPadding - leftPadding + 'px';
+      pinkBar.style.width = getBarWidth(
+        slidersContainer.offsetWidth,
+        currentSlide.offsetWidth,
+        extraWidth,
+      );
+    });
   }
 });
+
+// pink bar width = sliders container * (8/12) + list item width + x padding + gap
+function getBarWidth(containerWidth, listItemWidth, extra) {
+  return containerWidth * 0.667 + listItemWidth + extra + 'px';
+}

@@ -1,0 +1,86 @@
+<div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
+  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: 1500 | image_tag:
+        width: section.settings.image.width,
+        class: 'h-full w-full object-cover [display:none] md:block',
+        sizes: section.settings.image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+    {% if section.settings.image_mobile != blank %}
+      {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
+        width: section.settings.image_mobile.width,
+        class: 'h-full w-full object-cover md:hidden',
+        widths: '375, 550, 750',
+        alt: section.settings.image_mobile.alt | escape
+      }}
+    {% endif %}
+  </div>
+  <div class="lg:container bg-ui-pink lg:bg-transparent">
+    <div class="md:grid grid-cols">
+      <div class="md:col-start-2 md:col-end-6 flex">
+        <div class="pt-32 pb-48 lg:py-0 lg:aspect-square lg:rounded-full lg:bg-ui-pink px-32 flex flex-col items-center justify-center h-full text-center">
+          {% if section.settings.logo != blank %}
+            <img class="max-h-96 w-full object-contain" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}"/>
+          {% endif %}
+          {% if section.settings.body != blank %}
+            <p class="mt-12">{{ section.settings.body }}</p>
+          {% endif %}
+          {% if section.settings.cta_url != blank %}
+            {% render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24 [&_a]:bg-ui-pink' %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Podcast Callout",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Podcast Callout"
+    }
+  ],
+  "templates": ["index"]
+}
+{% endschema %}

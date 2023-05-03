@@ -19,6 +19,8 @@ module.exports = {
     'lg:h-100',
     'w-48',
     'h-48',
+    'rotate-90',
+    '!translate-y-[50%]',
   ],
   theme: {
     extend: {
@@ -32,6 +34,8 @@ module.exports = {
       },
       boxShadow: {
         DEFAULT: 'var(--vf-box-shadow)',
+        xs: 'var(--vf-box-shadow-xs)',
+        button: 'var(--vf-box-shadow-button)',
       },
       gridTemplateColumns: {
         DEFAULT: 'var(--vf-grid-cols-default)',
@@ -47,6 +51,8 @@ module.exports = {
       },
       borderRadius: {
         DEFAULT: 'var(--vf-border-radius)',
+        button: 'var(--vf-border-radius-button)',
+        'button-lg': 'var(--vf-border-radius-button-lg)',
       },
       borderWidth: {
         DEFAULT: '1px',
@@ -55,14 +61,11 @@ module.exports = {
         DEFAULT: 'solid',
       },
       backgroundImage: {
-        'hero-overlay':
-          'linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
-        'card-overlay':
-          'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)',
-        features:
-          'linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(248,248,248,1) 50%)',
         'disabled-variant':
           'linear-gradient(to top right, rgb(var(--vf-color-disabled)) calc(50% - 1px), rgb(var(--vf-color-disabled-high-contrast)), rgb(var(--vf-color-disabled)) calc(50% + 1px) )',
+        'curvy-badge':
+          "url(data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 217.91 217.91'%3E%3Cdefs%3E%3Cstyle%3E.curvy-badge%7Bfill:%23231f20;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_1-2'%3E%3Cpath class='curvy-badge' d='m116.19,7.92l20.93-6.77c10.98-3.55,22.91,1.39,28.15,11.66l10.01,19.59c2.25,4.4,5.83,7.98,10.23,10.23l19.59,10.01c10.27,5.25,15.21,17.18,11.66,28.15l-6.77,20.93c-1.52,4.7-1.52,9.77,0,14.47l6.77,20.93c3.55,10.98-1.39,22.91-11.66,28.15l-19.59,10.01c-4.4,2.25-7.98,5.83-10.23,10.23l-10.01,19.59c-5.25,10.27-17.18,15.21-28.15,11.66l-20.93-6.77c-4.7-1.52-9.77-1.52-14.47,0l-20.93,6.77c-10.98,3.55-22.91-1.39-28.15-11.66l-10.01-19.59c-2.25-4.4-5.83-7.98-10.23-10.23l-19.59-10.01c-10.27-5.25-15.21-17.18-11.66-28.15l6.77-20.93c1.52-4.7,1.52-9.77,0-14.47l-6.77-20.93c-3.55-10.98,1.39-22.91,11.66-28.15l19.59-10.01c4.4-2.25,7.98-5.83,10.23-10.23l10.01-19.59c5.25-10.27,17.18-15.21,28.15-11.66l20.93,6.77c4.7,1.52,9.77,1.52,14.47,0Z'/%3E%3C/g%3E%3C/svg%3E)",
+        'split-white-pink': 'var(--vf-bg-split-white-pink)',
       },
     },
     fontSize: {
@@ -101,6 +104,10 @@ module.exports = {
       body: ['var(--vf-font-family-body)', ...defaultTheme.fontFamily.sans],
       heading: [
         'var(--vf-font-family-heading)',
+        ...defaultTheme.fontFamily.serif,
+      ],
+      display: [
+        'var(--vf-font-family-display)',
         ...defaultTheme.fontFamily.serif,
       ],
     },
@@ -185,5 +192,4 @@ module.exports = {
   variants: {
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  plugins: [require('@tailwindcss/line-clamp')],
 };

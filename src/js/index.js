@@ -12,3 +12,4 @@ import * as sections from '@shopify/theme-sections';
 /* eslint-enable no-unused-vars */
 
 import './splide.js';
+import './lottie.js';

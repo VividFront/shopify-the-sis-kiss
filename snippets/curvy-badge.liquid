@@ -1,0 +1,8 @@
+<div class="relative p-4 lg:p-12 h-[104px] w-[104px] lg:h-[192px] lg:w-[192px] bg-curvy-badge">
+  <div class="p-4 lg:p-12 flex flex-col items-center justify-center relative h-full w-full">
+    {% if emoji_url != blank %}
+      <img class="w-24 h-24 lg:w-52 lg:h-52" src="{{ emoji_url }}" width="24" height="24">
+    {% endif %}
+    <p class="mt-4 text-center text-[14px] leading-[18px] lg:text-h3 font-display text-white">{{ text }}</p>
+  </div>
+</div>

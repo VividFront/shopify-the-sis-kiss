@@ -28,7 +28,7 @@
           "type": "menu_one_image",
           "settings": {
             "title": "Jewelry",
-            "link": "shopify://collections/non-custom-best-sellers",
+            "link": "",
             "list_1_heading": "Collabs",
             "list_1_menu": "jewelry-collabs",
             "list_2_heading": "Collections",
@@ -47,7 +47,7 @@
           "type": "menu_two_images",
           "settings": {
             "title": "Custom",
-            "link": "shopify://collections/custom-jewelry",
+            "link": "",
             "list_1_heading": "Categories",
             "list_1_menu": "custom-categories",
             "image_1_heading": "",
@@ -68,7 +68,7 @@
           "type": "menu_one_image",
           "settings": {
             "title": "Fine Jewelry",
-            "link": "shopify://collections",
+            "link": "",
             "list_1_heading": "Categories",
             "list_1_menu": "fine-jewelry-categories",
             "list_2_heading": "",
@@ -94,7 +94,7 @@
           "type": "menu_no_image",
           "settings": {
             "title": "Gifts & Accessories",
-            "link": "shopify://collections/gift-sets",
+            "link": "",
             "list_1_heading": "Categories",
             "list_1_menu": "gift-categories",
             "list_2_heading": "Collections",
@@ -114,10 +114,10 @@
             "list_2_menu": "",
             "list_3_heading": "",
             "list_3_menu": "",
-            "image_heading": "",
+            "image_heading": "Featured Sale Collection",
             "image": "shopify://shop_images/featured.jpg",
-            "callout_heading": "",
-            "callout_body": "",
+            "callout_heading": "Collection/Item",
+            "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
             "link_text": "Shop Now",
             "link_url": ""
           }
@@ -126,7 +126,7 @@
           "type": "menu_large_image",
           "settings": {
             "title": "About Us",
-            "link": "shopify://pages/about-us",
+            "link": "",
             "list_1_heading": "",
             "list_1_menu": "about-us",
             "image": "shopify://shop_images/about.jpg"

@@ -1,54 +1,349 @@
 {
   "sections": {
-    "multicolumn": {
-      "type": "multicolumn",
+    "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
+      "type": "home-hero",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
+          "type": "subheading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "Introducing"
           }
         },
-        "column2": {
-          "type": "column",
+        "507c6d37-3da1-48f2-8e83-20b3df62b326": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "The Essential Earrings"
           }
         },
-        "column3": {
-          "type": "column",
+        "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
+          "type": "body",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text": "Lorem ipsum dolor sit amet, consetetur"
+          }
+        },
+        "fd92ceac-7245-4615-940f-11e2ed4d36e2": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify://collections/earrings"
           }
         }
       },
-      "block_order": ["column1", "column2", "column3"],
+      "block_order": [
+        "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6",
+        "507c6d37-3da1-48f2-8e83-20b3df62b326",
+        "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2",
+        "fd92ceac-7245-4615-940f-11e2ed4d36e2"
+      ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png",
+        "image_mobile": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
+        "designer_tag": "@designer_tag"
+      }
+    },
+    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
+      "type": "home-trending",
+      "blocks": {
+        "e585fc6c-2b93-4fed-a45c-02a7ba737714": {
+          "type": "product",
+          "settings": {
+            "product": "drink-up-its-all-in-a-name-necklace"
+          }
+        },
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
+          "type": "product",
+          "settings": {
+            "product": "acrylic-hair-clips"
+          }
+        },
+        "b57d275a-8796-4afc-ac7f-e148534af010": {
+          "type": "product",
+          "settings": {
+            "product": "adjustable-old-english-lowercase-initial-ring"
+          }
+        },
+        "5c3f95ac-2cd8-413e-a978-0899e1308776": {
+          "type": "product",
+          "settings": {
+            "product": "adjustable-lowercase-old-english-initial-ring-wholesale"
+          }
+        },
+        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3": {
+          "type": "product",
+          "settings": {
+            "product": "authentic-pearl-bracelet"
+          }
+        }
+      },
+      "block_order": [
+        "e585fc6c-2b93-4fed-a45c-02a7ba737714",
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
+        "b57d275a-8796-4afc-ac7f-e148534af010",
+        "5c3f95ac-2cd8-413e-a978-0899e1308776",
+        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3"
+      ],
+      "settings": {
+        "collection_text": "Shop All <br>Best Sellers",
+        "collection": "best-sellers"
+      }
+    },
+    "837a7077-541b-41b2-bdb2-9145cb52cde4": {
+      "type": "home-featured-collection",
+      "blocks": {
+        "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
+          "type": "image_short",
+          "settings": {
+            "image": "shopify://shop_images/collab-2.jpg",
+            "position_adjustment": "up"
+          }
+        },
+        "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
+          "type": "image_tall",
+          "settings": {
+            "image": "shopify://shop_images/collab-1.jpg"
+          }
+        },
+        "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
+          "type": "image_short",
+          "settings": {
+            "image": "shopify://shop_images/collab-3.jpg",
+            "position_adjustment": "down"
+          }
+        }
+      },
+      "block_order": [
+        "106204a7-9ee4-4c22-b68e-59f0473cbe1b",
+        "b2cc5eee-4012-4457-b9c7-cf8abdd09809",
+        "6aa3e035-1f3c-4096-99dd-c60e364ec4d2"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
+        "subheading": "Featured Collection",
+        "heading": "Loverly x TSK (Sterling)",
+        "collection": "loverly-grey-x-the-sis-kiss"
+      }
+    },
+    "efd3c021-b667-4075-93fd-09a6d2277d0e": {
+      "type": "home-product-tabs",
+      "blocks": {
+        "d15ef88c-f2c4-49c6-84b1-b67963c90fe3": {
+          "type": "category",
+          "settings": {
+            "title": "Necklaces",
+            "product_main": "acrylic-hair-clips",
+            "product_alt_image": "shopify://shop_images/necklace-lifestyle.jpg",
+            "product_secondary": "drink-up-its-all-in-a-name-necklace",
+            "collection": "necklaces"
+          }
+        },
+        "8150f579-29b2-4181-9920-dcfb6df1146d": {
+          "type": "category",
+          "settings": {
+            "title": "Earrings",
+            "product_main": "adjustable-crystal-initial-ring",
+            "product_alt_image": "shopify://shop_images/collab-1.jpg",
+            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "collection": "earrings"
+          }
+        },
+        "82ec5070-51e6-4ab9-9434-fb712f63896f": {
+          "type": "category",
+          "settings": {
+            "title": "Bracelets",
+            "product_main": "adjustable-lucky-cord-bracelets",
+            "product_alt_image": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
+            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "collection": "bracelets-cuffs"
+          }
+        },
+        "be4c93a1-6c16-4093-918b-ad0c829f9ee1": {
+          "type": "category",
+          "settings": {
+            "title": "Rings",
+            "product_main": "adjustable-crystal-initial-ring",
+            "product_alt_image": "shopify://shop_images/HOME_PAGE_-_GALLERY_NEW_ARRIVALS_2022.jpg",
+            "product_secondary": "adjustable-initial-pinky-ring-in-gold",
+            "collection": "rings"
+          }
+        },
+        "f655c052-e686-464e-a80f-d3ea6d3793fc": {
+          "type": "category",
+          "settings": {
+            "title": "Accessories",
+            "product_main": "mini-mama-it-s-all-in-a-name-necklace",
+            "product_alt_image": "shopify://shop_images/charm.jpg",
+            "product_secondary": "acrylic-hair-clips",
+            "collection": "hair-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "d15ef88c-f2c4-49c6-84b1-b67963c90fe3",
+        "8150f579-29b2-4181-9920-dcfb6df1146d",
+        "82ec5070-51e6-4ab9-9434-fb712f63896f",
+        "be4c93a1-6c16-4093-918b-ad0c829f9ee1",
+        "f655c052-e686-464e-a80f-d3ea6d3793fc"
+      ],
+      "settings": {}
+    },
+    "bc1dcc69-4df7-4e65-8092-482942e52e37": {
+      "type": "home-trends-guide",
+      "blocks": {
+        "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
+          "type": "product",
+          "settings": {
+            "product": "mini-mama-it-s-all-in-a-name-necklace"
+          }
+        },
+        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
+          "type": "product",
+          "settings": {
+            "product": "drink-up-its-all-in-a-name-necklace"
+          }
+        }
+      },
+      "block_order": [
+        "f51c9b3f-d069-43bb-bb00-0b8edeeddb97",
+        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Background.png",
+        "heading": "Spring Trends Guide",
+        "body": "Seasonal trends and guides. This can also be a gift guide. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod sed diam nonumy.",
+        "badge_emoji": "https://cdn.shopify.com/s/files/1/1216/9642/files/tulip_1f337.png?v=1682973594",
+        "badge_text": "New This Season",
+        "image": "shopify://shop_images/spring-1.jpg",
+        "designer_tag": "@designer_tag",
+        "cta_text": "Shop All Spring",
+        "cta_url": "shopify://collections/spring-summer-new-arrivals"
+      }
+    },
+    "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
+      "type": "full-width-image-callout",
+      "settings": {
+        "background_image": "shopify://shop_images/custom.jpg",
+        "image_mobile": "shopify://shop_images/custom_copy.jpg",
+        "heading": "Custom Pieces",
+        "body": "Custom styles, hand made. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+        "cta_text": "Shop Custom Jewelry",
+        "cta_url": "shopify://collections/custom-jewelry"
+      }
+    },
+    "e55e6111-cf7e-4f0e-99df-a63469c1213f": {
+      "type": "icon-section",
+      "blocks": {
+        "535ac3b1-681a-4114-80b4-18b90c38e2f3": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/women-icon.png",
+            "heading": "Women Owned",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        },
+        "240d4905-1fb8-4d40-a7bb-4bfe0241e563": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Free Shipping*",
+            "body": "<p>*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.</p>"
+          }
+        },
+        "177408fd-1357-494d-81f8-73c3a819d9b7": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/rewards-icon.png",
+            "heading": "Lifetime Guarantee",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        },
+        "18543a21-5d02-4ef0-8d62-f97c768af217": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/waterproof-icon.png",
+            "heading": "Waterproof",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "535ac3b1-681a-4114-80b4-18b90c38e2f3",
+        "240d4905-1fb8-4d40-a7bb-4bfe0241e563",
+        "177408fd-1357-494d-81f8-73c3a819d9b7",
+        "18543a21-5d02-4ef0-8d62-f97c768af217"
+      ],
+      "settings": {}
+    },
+    "532c5839-bed9-45ca-993c-1b983e6903c8": {
+      "type": "featured-in",
+      "blocks": {
+        "2ef7ebef-8e24-454f-9445-30934ada670d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.54.01_AM.png",
+            "url": "shopify://collections/beaded-jewelry"
+          }
+        },
+        "2ae773bf-3575-4cec-a316-00e35328aff1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "de3068c3-34b5-4af8-a26e-4c0c35a187eb": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "8154a033-8e22-4675-b626-d9654c9837b1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2ef7ebef-8e24-454f-9445-30934ada670d",
+        "2ae773bf-3575-4cec-a316-00e35328aff1",
+        "de3068c3-34b5-4af8-a26e-4c0c35a187eb",
+        "8154a033-8e22-4675-b626-d9654c9837b1"
+      ],
+      "settings": {
+        "heading": "Featured In"
+      }
+    },
+    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0": {
+      "type": "podcast-callout",
+      "settings": {
+        "image": "shopify://shop_images/Background_1.png",
+        "image_mobile": "shopify://shop_images/podcast-Background.jpg",
+        "logo": "shopify://shop_images/WU-logo.png",
+        "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
+        "cta_text": "Listen Now",
+        "cta_url": "shopify://blogs/news"
+      }
+    },
+    "686f2ccf-6996-4ccb-8881-ec7928848173": {
+      "type": "newsletter-callout",
+      "settings": {
+        "heading": "Join Our Mailing List",
+        "body": "Insider info and lifestyle content. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
       }
     }
   },
-  "order": ["multicolumn"]
+  "order": [
+    "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
+    "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
+    "837a7077-541b-41b2-bdb2-9145cb52cde4",
+    "efd3c021-b667-4075-93fd-09a6d2277d0e",
+    "bc1dcc69-4df7-4e65-8092-482942e52e37",
+    "03e98e28-bb6a-4d26-8fa8-bed336462fcb",
+    "e55e6111-cf7e-4f0e-99df-a63469c1213f",
+    "532c5839-bed9-45ca-993c-1b983e6903c8",
+    "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0",
+    "686f2ccf-6996-4ccb-8881-ec7928848173"
+  ]
 }

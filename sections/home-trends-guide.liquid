@@ -1,0 +1,131 @@
+<div class="relative p-section-md">
+  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% endif %}
+  </div>
+  <div class="container">
+    <div class="lg:grid grid-cols gap-x-grid">
+      <div class="lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-3">
+        <div class="relative pl-44 pt-32 lg:pl-64 lg:pt-74">
+          <div class="relative">
+            {{ section.settings.image | image_url: width: 800 | image_tag:
+              width: section.settings.image.width,
+              class: 'rounded aspect-[3/4] w-full object-cover',
+              sizes: section.settings.image.sizes,
+              widths: '375, 550, 750, 900, 1100',
+              alt: section.settings.image.alt | escape
+            }}
+            {% if section.settings.designer_tag != blank %}
+              <p class="absolute bottom-12 left-12 text-body-copy-small">{{ section.settings.designer_tag }}</p>
+            {% endif %}
+          </div>
+          <div class="absolute top-0 left-0">{% render 'curvy-badge.liquid', emoji_url: section.settings.badge_emoji, text: section.settings.badge_text %}</div>
+        </div>
+      </div>
+      <div class="mt-32 lg:mt-0 lg:col-start-4 xl:col-start-5 lg:col-end-12 lg:row-start-1 lg:row-end-2 relative z-[1] flex lg:items-end">
+        <h2 class="text-center lg:text-left text-h2-alt font-display font-normal leading-h2-alt w-full">{{ section.settings.heading }}</h1>
+      </div>
+      <div class="lg:col-start-7 lg:col-end-13 lg:row-start-2 lg:row-end-3 mt-8 lg:mt-0">
+        <p class="text-center lg:text-left lg:mt-24">{{ section.settings.body }}</p>
+        <div class="mt-18 flex gap-grid justify-center px-30">
+          {% for block in section.blocks %}
+            {% if block.type == 'product' %}
+              <div class="basis-1/2">
+                {% render 'card-product', product: block.settings.product, show_secondary_image: true %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="text-center mt-24">
+          {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Home Trends Guide",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "url",
+      "id": "badge_emoji",
+      "label": "Badge Emoji"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "designer_tag",
+      "label": "Designer Tag"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Trends Guide"
+    }
+  ],
+  "templates": ["index"]
+}
+{% endschema %}
