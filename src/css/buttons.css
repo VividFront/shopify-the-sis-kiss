@@ -6,6 +6,10 @@
   @apply translate-y-[-4px] translate-x-[-5px];
 }
 
+.shadow-hover-button:hover .button-shadow {
+  @apply block;
+}
+
 .button-shadow {
   @apply w-full h-full box-border rounded-button bg-white border-primary border-[2px] absolute left-0 bottom-0;
 }

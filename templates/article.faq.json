@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-faq-article"
+    }
+  },
+  "order": ["main"]
+}

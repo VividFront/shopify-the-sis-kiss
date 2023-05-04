@@ -119,11 +119,11 @@
 }
 
 .richtext-content a:not(.button):not(.swp_share_link) {
-  @apply text-primary;
+  @apply text-primary font-bold underline;
 }
 
 .richtext-content a:not(.button):hover {
-  @apply underline;
+  @apply text-primary-hover;
 }
 
 // Site specific
@@ -133,6 +133,7 @@
 
     li {
       position: relative;
+
       &::before {
         @apply absolute left-[-16px] top-[13px] translate-y-[-50%] rounded-[50%] w-6 h-6 border-primary border;
         content: '';
