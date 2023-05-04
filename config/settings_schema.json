@@ -54,7 +54,12 @@
       {
         "type": "url",
         "id": "emoji_wine",
-        "label": "Wine (Water Resitant)"
+        "label": "Wine"
+      },
+      {
+        "type": "url",
+        "id": "emoji_water",
+        "label": "Water"
       }
     ]
   },

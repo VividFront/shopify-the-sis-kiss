@@ -1467,6 +1467,10 @@ a:hover {
   gap: 16px;
   gap: var(--vf-grid-gap);
 }
+.gap-4 {
+  gap: calc(4rem / 16);
+  gap: calc(4rem / var(--vf-font-size-root));
+}
 .gap-x-12 {
   -webkit-column-gap: calc(12rem / 16);
   -moz-column-gap: calc(12rem / 16);
