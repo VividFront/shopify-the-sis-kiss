@@ -1,7 +1,9 @@
+.shadow-hover-button button,
 .shadow-hover-button a {
   @apply transition-[transform] ease-linear;
 }
 
+.shadow-hover-button:hover button,
 .shadow-hover-button:hover a {
   @apply translate-y-[-4px] translate-x-[-5px];
 }
