@@ -2,9 +2,7 @@
   "sections": {
     "main": {
       "type": "main-faq",
-      "settings": {
-        "posts_per_page": 12
-      }
+      "settings": {}
     }
   },
   "order": ["main"]

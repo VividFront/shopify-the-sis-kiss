@@ -1,8 +1,15 @@
 {
   "sections": {
     "main": {
-      "type": "main-faq-article"
+      "type": "main-faq-article",
+      "settings": {}
+    },
+    "f258a8b9-433f-429e-aff3-b9bfbedc4038": {
+      "type": "faq-related-questions",
+      "settings": {
+        "heading": "Related Questions"
+      }
     }
   },
-  "order": ["main"]
+  "order": ["main", "f258a8b9-433f-429e-aff3-b9bfbedc4038"]
 }
