@@ -1,7 +1,12 @@
 {
   "sections": {
     "form": {
-      "type": "contact-form"
+      "type": "contact-form",
+      "settings": {
+        "form_body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo",
+        "form_topics": "",
+        "background_image": "shopify://shop_images/Background_2.png"
+      }
     }
   },
   "order": ["form"]
