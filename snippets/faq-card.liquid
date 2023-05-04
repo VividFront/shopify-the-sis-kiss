@@ -1,0 +1,18 @@
+{% assign faq_title = '' %}
+{% assign faq_url = '' %}
+
+{% if faq == blank %}
+  {% assign faq_title = title %}
+  {% assign faq_url = url %}
+{% else %}
+  {% assign faq_title = faq.title %}
+  {% assign faq_url = faq.url %}
+{% endif %}
+
+<div class="bg-white shadow rounded relative overflow-hidden pl-24 pr-72 pt-20 pb-28 group">
+  <h5>{{ faq_title }}</h5>
+  <div class="absolute right-0 top-0 h-full w-48 bg-ui-pink flex items-center justify-center text-white group-hover:text-primary transition-colors">
+    {% render 'icon-chevron-right' %}
+  </div>
+  <a href="{{ faq_url }}" class="block absolute top-0 left-0 w-full h-full"></a>
+</div>

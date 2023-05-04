@@ -1,0 +1,62 @@
+<div class="bg-ui-background pb-48 lg:pb-56">
+  {% render 'breadcrumbs' %}
+  <div class="container">
+    <h1 class="text-center">{{ blog.title }}</h2>
+    {% if section.settings.subheading != blank %}
+      <h2 class="mt-24 text-center">{{ section.settings.subheading }}</h2>
+    {% endif %}
+    <div class="grid grid-cols mt-32">
+      <div class="col-span-full lg:col-span-auto lg:col-start-2 lg:col-end-12">
+        <div class="flex gap-grid flex-wrap lg:flex-nowrap">
+          {% for block in section.blocks %}
+            {% if block.type == 'featured_question' %}
+              <div class="basis-full lg:basis-1/2">
+                {% render 'faq-card', title: block.settings.title, url: block.settings.url %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "FAQ Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "All Questions",
+      "label": "Subheading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_question",
+      "name": "Featured Question",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Banner"
+    }
+  ]
+}
+{% endschema %}

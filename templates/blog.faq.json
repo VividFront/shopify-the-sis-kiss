@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "da9fd767-1c72-4078-ba56-a229a45ba083": {
+      "type": "banner-faq",
+      "blocks": {
+        "03620eb0-edac-4831-9f9a-2bc0f2586ae2": {
+          "type": "featured_question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq/what-is-the-sis-kiss-jewelry-made-of-1"
+          }
+        },
+        "abeba2a7-6544-4272-a29f-0af30c3c6f32": {
+          "type": "featured_question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq/what-is-the-sis-kiss-jewelry-made-of-2"
+          }
+        }
+      },
+      "block_order": [
+        "03620eb0-edac-4831-9f9a-2bc0f2586ae2",
+        "abeba2a7-6544-4272-a29f-0af30c3c6f32"
+      ],
+      "settings": {
+        "subheading": "All Questions"
+      }
+    },
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "407c93d7-f8c4-4fba-b44d-4d9f70a3af89": {
+          "type": "category",
+          "settings": {
+            "category": "Jewelry Care"
+          }
+        },
+        "a3bc2b44-dfb1-442c-a580-0055f7ba85a3": {
+          "type": "category",
+          "settings": {
+            "category": "Bag Care"
+          }
+        },
+        "365254ad-216b-4ec9-bffd-eeb6c533be97": {
+          "type": "category",
+          "settings": {
+            "category": "Promotions"
+          }
+        }
+      },
+      "block_order": [
+        "407c93d7-f8c4-4fba-b44d-4d9f70a3af89",
+        "a3bc2b44-dfb1-442c-a580-0055f7ba85a3",
+        "365254ad-216b-4ec9-bffd-eeb6c533be97"
+      ],
+      "settings": {
+        "heading": "All Questions"
+      }
+    },
+    "bc0f8ae1-844e-44ef-9648-6d6ca067e422": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Didnt Find What You Were Looking For?",
+        "body": "Reach out to us and let us help!",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us"
+      }
+    }
+  },
+  "order": [
+    "da9fd767-1c72-4078-ba56-a229a45ba083",
+    "main",
+    "bc0f8ae1-844e-44ef-9648-6d6ca067e422"
+  ]
+}

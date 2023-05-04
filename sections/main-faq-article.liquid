@@ -1,0 +1,14 @@
+<div class="pb-48 lg:pb-72">
+  {% render 'breadcrumbs' %}
+  <div class="container">
+    <div class="grid grid-cols">
+      <div class="col-span-full lg:col-span-auto lg:col-start-3 lg:col-end-11">
+        {% render 'button-icon-back', text: 'Back', url: blog.url, class: 'mt-12' %}
+        <h1 class="mt-24">{{ article.title }}</h1>
+        <article class="richtext-content mt-24">
+          {{ article.content }}
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

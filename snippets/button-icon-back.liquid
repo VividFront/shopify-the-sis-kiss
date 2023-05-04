@@ -1,0 +1,9 @@
+<div class="relative inline-block shadow-hover-button {{ class }}">
+  <div arai-hidden class="button-shadow"></div>
+  <a href="{{ url }}" 
+    class="relative inline-flex flex-nowrap bg-white items-center gap-14 text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px]" 
+    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">
+      {% render 'icon-chevron-left' %}
+      {{ text }}
+  </a>
+</div>

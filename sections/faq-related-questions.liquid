@@ -1,0 +1,64 @@
+{% assign related_posts = "" %}
+{% for faq in blogs.faq.articles %}
+  {% if article.tags contains faq.tags[0] and article != faq %}
+    {% capture post %}
+      <div class="basis-full lg:basis-1/2">
+        {% render 'faq-card', title: faq.title, url: faq.url %}
+      </div>
+    {% endcapture %}
+    {% assign related_posts = related_posts | append:post %}
+  {% endif %}
+{% endfor %}
+
+{% unless article.metafields.custom.related_question_1_url == blank and article.metafields.custom.related_question_2_url == blank and related_posts == blank %}
+  <div class="bg-ui-pink p-section-md">
+    <div class="container">
+      {% if section.settings.heading != blank %}
+        <h2 class="text-center">{{ section.settings.heading }}</h2>
+      {% endif %}
+  
+      <div class="grid grid-cols mt-32">
+        <div class="col-span-full lg:col-span-auto lg:col-start-2 lg:col-end-12">
+          <div class="flex gap-grid flex-wrap lg:flex-nowrap">
+            {% if article.metafields.custom.related_question_1_url == blank and article.metafields.custom.related_question_2_url == blank %}
+              {{ related_posts }}
+            {% else %}
+              {% if article.metafields.custom.related_question_1_url != blank %}
+                <div class="basis-full lg:basis-1/2">
+                  {% render 'faq-card', title: article.metafields.custom.related_question_1_title, url: article.metafields.custom.related_question_1_url %}
+                </div>
+              {% endif %}
+              {% if article.metafields.custom.related_question_2_url != blank %}
+                <div class="basis-full lg:basis-1/2">
+                  {% render 'faq-card', title: article.metafields.custom.related_question_2_title, url: article.metafields.custom.related_question_2_url %}
+                </div>
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endunless %}
+
+
+{% schema %}
+{
+  "name": "Related Questions",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Related Questions"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Related Questions"
+    }
+  ]
+}
+{% endschema %}
