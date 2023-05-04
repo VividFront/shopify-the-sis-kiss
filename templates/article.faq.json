@@ -9,7 +9,20 @@
       "settings": {
         "heading": "Related Questions"
       }
+    },
+    "76be4303-6316-45e1-b809-b6da32d5a6d9": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Didn't Find What You Were Looking For?",
+        "body": "Reach out to us and let us help!",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us"
+      }
     }
   },
-  "order": ["main", "f258a8b9-433f-429e-aff3-b9bfbedc4038"]
+  "order": [
+    "main",
+    "f258a8b9-433f-429e-aff3-b9bfbedc4038",
+    "76be4303-6316-45e1-b809-b6da32d5a6d9"
+  ]
 }
