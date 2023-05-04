@@ -24,6 +24,34 @@
   </div>
 </div>
 
+{% assign faq_schema = '' %}
+{% for faq in blogs.faq.articles %}
+  {% capture schema %}
+  {
+    "@type": "Question",
+    "name": "{{ faq.title | escape }}",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{ faq.content | escape }}"
+    }
+  }
+  {% endcapture %}
+  {% assign faq_schema = faq_schema | append:schema %}
+  {% unless forloop.last %}
+    {% assign faq_schema = faq_schema | append:',' %}
+  {% endunless %}
+{% endfor %}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {{ faq_schema }}
+    ]
+  }
+  </script>
+
 {% schema %}
 {
   "name": "FAQ Main",
