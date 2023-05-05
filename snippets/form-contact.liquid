@@ -17,7 +17,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-y-24 gap-x-grid">
       <div class="tsk-field-group">
         <input required aria-required="true" autocomplete="first_name" type="text" id="ContactForm-fname" name="contact[first_name]" value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}">
-        <label class="font-bold" for="ContactForm-name">First Name</label>
+        <label class="font-bold" for="ContactForm-name">First Name *</label>
         {%- if form.errors contains 'first_name' -%}
           <small class="contact__field-error" id="ContactForm-first_name-error">
             <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -27,7 +27,7 @@
       </div>
       <div class="tsk-field-group">
         <input required aria-required="true" autocomplete="last_name" type="text" id="ContactForm-lname" name="contact[last_name]" value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}">
-        <label class="font-bold" for="ContactForm-name">Last Name</label>
+        <label class="font-bold" for="ContactForm-name">Last Name *</label>
         {%- if form.errors contains 'last_name' -%}
           <small class="contact__field-error" id="ContactForm-last_name-error">
             <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
@@ -36,6 +36,17 @@
         {%- endif -%}
       </div>
     </div>
+    {% if topics != blank %}
+      {% assign topics_array = topics | split: ',' %}
+      <div class="tsk-field-group field--with-error flex flex-col gap-6">
+        <select name="contact[topic]" id="ContactForm-topic">
+          {% for topic in topics_array %}
+            <option value="{{ topic }}">{{ topic }}</option>
+          {% endfor %}
+        </select>
+        <label class="font-bold" for="ContactForm-topic">Topic *</label>
+      </div>
+    {% endif %}
     <div class="tsk-field-group field--with-error flex flex-col gap-6">
       <input
         autocomplete="email"

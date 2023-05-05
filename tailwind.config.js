@@ -39,7 +39,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         DEFAULT: 'var(--vf-grid-cols-default)',
-        influencer: 'var(--vf-grid-cols-influencer)',
+        'full-bleed':
+          '1fr repeat(12, calc(var(--vf-container-width) / 12)) 1fr',
       },
       gap: {
         grid: 'var(--vf-grid-gap)',

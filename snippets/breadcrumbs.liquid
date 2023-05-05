@@ -12,8 +12,8 @@
   endif
 %}
 
-<div class="container py-16">
-  <nav aria-label="breadcrumbs" class="text-body-copy-small flex gap-8 {{ breadcrumb_classes }}" role="navigation">
+<div class="container py-12 lg:py-16">
+  <nav aria-label="breadcrumbs" class="text-body-copy-small items-center flex gap-8 {{ breadcrumb_classes }}" role="navigation">
     <a class="{% if show_home_on_mobile == false %}hidden {% endif %}md:inline hover:underline font-normal" href="{{ shop.url }}" title="Home">Home</a>
     {% if show_home_on_mobile == false %}
     <span class="w-12 flex md:hidden items-center" aria-hidden="true">{%- render 'icon-chevron-left' -%}</span>

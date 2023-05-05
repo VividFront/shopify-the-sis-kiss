@@ -7,8 +7,18 @@
 }
 
 .tsk-field-group input,
+.tsk-field-group select,
 .tsk-field-group textarea {
-  @apply bg-[#FDFDFD] text-body-copy rounded-[4px] border-border border w-full h-42 px-12 py-12 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
+  @apply text-body-copy rounded-[4px] border-border border w-full h-42 px-12 py-12 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
+}
+
+.tsk-field-group input,
+.tsk-field-group textarea {
+  @apply bg-input-background;
+}
+
+.tsk-field-group select {
+  @apply py-8;
 }
 
 .tsk-field-group textarea {

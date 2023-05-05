@@ -1,49 +1,41 @@
-<div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
-  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
-    {% if section.settings.image != blank %}
+<div class="relative" style="background-color: {{ section.settings.color | default: '#fff' }}">
+  {% if section.settings.show_breadcrumbs == true %}
+    <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+      {% render 'breadcrumbs' %}
+    </div>
+  {% endif %}
+  <div class="flex flex-col lg:grid lg:grid-cols-full-bleed">
+    <div class="order-2 lg:order-1 lg:col-start-2 xl:col-start-3 lg:col-end-7 pt-24 lg:pt-0 pb-48 lg:pb-0 lg:pl-16 lg:pr-32 flex flex-col h-full justify-center">
+      <div class="container lg:!max-w-full lg:!px-0 lg:!mx-0">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'subheading' -%}
+              <h6 class="mb-8">{{ block.settings.text }}</h6>
+            {%- when 'heading' -%}
+              <h1 class="text-display font-display font-normal">{{ block.settings.text }}</h1>
+            {%- when 'body' -%}
+              <p class="my-8 lg:mt-24 text-body-copy-large">{{ block.settings.text }}</p>
+            {%- when 'cta' -%}
+              {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-20 lg:mt-28' -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 lg:col-start-7 lg:col-end-[15]">
       {{ section.settings.image | image_url: width: 1500 | image_tag:
         width: section.settings.image.width,
-        class: 'h-full w-full object-cover [display:none] md:block',
+        class: 'h-full w-full object-cover asepct-4/3 lg:aspect-auto max-h-[250px] md:max-h-[300px] lg:max-h-[600px]',
         sizes: section.settings.image.sizes,
         widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
         alt: section.settings.image.alt | escape
       }}
-    {% else %}
-      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-    {% endif %}
-    {% if section.settings.image_mobile != blank %}
-      {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
-        width: section.settings.image_mobile.width,
-        class: 'h-full w-full object-cover md:hidden',
-        widths: '375, 550, 750',
-        alt: section.settings.image_mobile.alt | escape
-      }}
-    {% endif %}
-    {% if section.settings.designer_tag %}
-      <span class="absolute bottom-12 left-12 text-body-copy-small text-white">{{ section.settings.designer_tag}}</span>
-    {% endif %}
-  </div>
-  <div class="container lg:grid grid-cols py-24 lg:py-0">
-    <div class="lg:col-start-2 lg:col-end-5">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'subheading' -%}
-            <h6 class="mb-8">{{ block.settings.text }}</h6>
-          {%- when 'heading' -%}
-            <h1 class="text-display font-display font-normal">{{ block.settings.text }}</h1>
-          {%- when 'body' -%}
-            <p class="my-8 lg:mt-24 text-body-copy-large">{{ block.settings.text }}</p>
-          {%- when 'cta' -%}
-            {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-20 lg:mt-28' -%}
-        {%- endcase -%}
-      {%- endfor -%}
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Hero",
+  "name": "Hero (Color Block)",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -132,7 +124,7 @@
   ],
   "presets": [
     {
-      "name": "Hero"
+      "name": "Hero (Color Block)"
     }
   ]
 }
