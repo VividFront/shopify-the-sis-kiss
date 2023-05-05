@@ -21,6 +21,16 @@ module.exports = {
     'h-48',
     'rotate-90',
     '!translate-y-[50%]',
+    'object-bottom',
+    'object-center',
+    'object-left',
+    'object-left-bottom',
+    'object-left-top',
+    'object-right	',
+    'object-right-bottom',
+    'object-right-top',
+    'object-top',
+    '[&_a]:text-white',
   ],
   theme: {
     extend: {
