@@ -7,7 +7,57 @@
         "form_topics": "",
         "background_image": "shopify://shop_images/Background_2.png"
       }
+    },
+    "a11d2a42-3702-4a9d-951b-efb3f15a2a4b": {
+      "type": "z-pattern-image-left",
+      "settings": {
+        "image": "shopify://shop_images/collab-1.jpg",
+        "heading": "Meet Meg",
+        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. </p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. </p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! </p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.</p>",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us",
+        "sticker": "shopify://shop_images/women-icon.png"
+      }
+    },
+    "0d6c58c8-2c83-45af-bb7d-c45e771995ff": {
+      "type": "faq-callout",
+      "blocks": {
+        "4b0ef2ce-2b57-4e50-a483-92dbb8072452": {
+          "type": "question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq"
+          }
+        },
+        "ec0cd7e1-182a-4afa-ad89-deb090947166": {
+          "type": "question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq"
+          }
+        }
+      },
+      "block_order": [
+        "4b0ef2ce-2b57-4e50-a483-92dbb8072452",
+        "ec0cd7e1-182a-4afa-ad89-deb090947166"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "cta_text": "FAQ Page",
+        "cta_url": "shopify://blogs/faq"
+      }
+    },
+    "875a8207-5128-440f-b8c5-fa8dc0279b20": {
+      "type": "full-width-image",
+      "settings": {
+        "image": "shopify://shop_images/podcast-Background.jpg"
+      }
     }
   },
-  "order": ["form"]
+  "order": [
+    "form",
+    "a11d2a42-3702-4a9d-951b-efb3f15a2a4b",
+    "0d6c58c8-2c83-45af-bb7d-c45e771995ff",
+    "875a8207-5128-440f-b8c5-fa8dc0279b20"
+  ]
 }
