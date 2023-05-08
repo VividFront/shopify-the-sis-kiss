@@ -3070,17 +3070,13 @@ product-modal .product-media-modal__content img.active {
   content: var(--tw-content);
   position: absolute;
 }
-.after\:left-0::after {
+.after\:bottom-0::after {
   content: var(--tw-content);
-  left: 0px;
+  bottom: 0px;
 }
 .after\:right-0::after {
   content: var(--tw-content);
   right: 0px;
-}
-.after\:bottom-0::after {
-  content: var(--tw-content);
-  bottom: 0px;
 }
 .after\:h-full::after {
   content: var(--tw-content);
@@ -3116,10 +3112,6 @@ product-modal .product-media-modal__content img.active {
     rgba(255, 255, 255, 0) 0%,
     #ffffff 100%
   );
-}
-.after\:opacity-0::after {
-  content: var(--tw-content);
-  opacity: 0;
 }
 .after\:opacity-20::after {
   content: var(--tw-content);
@@ -3275,6 +3267,9 @@ product-modal .product-media-modal__content img.active {
   }
   .lg\:col-end-\[15\] {
     grid-column-end: 15;
+  }
+  .lg\:col-end-10 {
+    grid-column-end: 10;
   }
   .lg\:row-start-1 {
     grid-row-start: 1;

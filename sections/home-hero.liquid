@@ -1,4 +1,9 @@
 <div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
+  {% if section.settings.show_breadcrumbs == true %}
+    <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+      {% render 'breadcrumbs' %}
+    </div>
+  {% endif %}
   <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
     {% if section.settings.image != blank %}
       {{ section.settings.image | image_url: width: 1500 | image_tag:
@@ -24,17 +29,34 @@
     {% endif %}
   </div>
   <div class="container lg:grid grid-cols py-24 lg:py-0">
-    <div class="lg:col-start-2 lg:col-end-5">
+    {%- liquid 
+      assign content_col_end = 'lg:col-end-5'
+      assign content_col_start = 'lg:col-start-2'
+      assign text_center = ''
+      assign button_align = ''
+      if section.settings.content_width == 'normal'
+        assign content_col_end = 'lg:col-end-6'
+      endif
+      if section.settings.content_align == 'center'
+        assign content_col_end = 'md:col-end-6 lg:col-end-10'
+        assign content_col_start = 'md:col-start-2 lg:col-start-4'
+        assign text_center = 'text-center'
+        assign button_align = 'flex justify-center'
+      endif
+    -%}
+    <div class="{{ content_col_start }} {{ content_col_end }}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'subheading' -%}
-            <h6 class="mb-8">{{ block.settings.text }}</h6>
+            <h6 class="mb-8 {{ text_center }}">{{ block.settings.text }}</h6>
           {%- when 'heading' -%}
-            <h1 class="text-display font-display font-normal">{{ block.settings.text }}</h1>
+            <h1 class="text-display font-display font-normal {{ text_center }}">{{ block.settings.text }}</h1>
           {%- when 'body' -%}
-            <p class="mt-8 lg:mt-24 text-body-copy-large">{{ block.settings.text }}</p>
+            <p class="mt-8 lg:mt-24 text-body-copy-large {{ text_center }}">{{ block.settings.text }}</p>
           {%- when 'cta' -%}
-            {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-20 lg:mt-28' -%}
+            <div class="mt-20 lg:mt-28 {{ button_align }}">
+              {%- render 'button-large', url: block.settings.url, text: block.settings.text -%}
+            </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -63,10 +85,36 @@
       "label": "Designer Tag"
     },
     {
-      "type": "color",
-      "id": "color",
-      "label": "Color Block",
-      "info": "If selected, hero will be split w/ selected color"
+      "type": "select",
+      "id": "content_width",
+      "label": "Content Width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "Narrow"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        }
+      ],
+      "default": "narrow"
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Content Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "checkbox",

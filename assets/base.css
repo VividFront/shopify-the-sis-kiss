@@ -823,7 +823,7 @@ button.shopify-payment-button__button--unbranded {
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
-
+/* 
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -859,7 +859,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-}
+} */
 
 .button--full-width {
   display: flex;
