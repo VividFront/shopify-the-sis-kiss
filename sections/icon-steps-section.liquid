@@ -1,0 +1,120 @@
+<div class="relative p-section-md bg-white">
+  <div class="container">
+    <div class="grid grid-cols gap-grid">
+      <div class="col-start-2 col-end-6">
+        {% liquid 
+          assign aspect_ratio = 'aspect-[2/3]'
+          assign image_class = 'h-full w-full object-cover rounded'
+        %}
+        <div class="relative {{ image_padding }}">
+          {% if section.settings.image != blank %}
+            <div class="{{ aspect_ratio }}">
+              {{ section.settings.image | image_url: width: 1500 | image_tag:
+                width: section.settings.image.width,
+                class: image_class,
+                sizes: section.settings.image.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image.alt | escape
+              }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="mt-32 lg:mt-0 col-start-1 col-end-7 lg:col-start-6 lg:col-end-12">
+        <div class="flex flex-col justify-center items-start h-full">
+          <h2>{{ section.settings.heading }}</h2>
+          <div class="mt-12 richtext-content">{{ section.settings.body }}</div>
+          <div class="flex flex-col gap-24 lg:gap-32 mt-24 lg:mt-32">
+            {% for block in section.blocks %}
+              {% if block.type == 'step' %}
+                <div class="flex gap-grid">
+                  {% if block.settings.image != blank %}
+                    {{ block.settings.image | image_url: width: 150 | image_tag:
+                      width: block.settings.image.width,
+                      class: 'w-48 h-48 lg:w-76 lg:h-76 object-contain',
+                      sizes: block.settings.image.sizes,
+                      widths: '96, 152',
+                      alt: block.settings.image.alt | escape
+                    }}
+                  {% endif %}
+                  <div>
+                    <h4>{{ block.settings.heading }}</h4>
+                    {% if block.settings.body != blank %}
+                      <p class="mt-12">{{ block.settings.body }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% if section.settings.cta_url != blank %}
+            {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Icon Steps",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Body"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Steps"
+    }
+  ]
+}
+{% endschema %}

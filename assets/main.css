@@ -1063,6 +1063,9 @@ a:hover {
 .col-end-7 {
   grid-column-end: 7;
 }
+.col-end-6 {
+  grid-column-end: 6;
+}
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -1215,6 +1218,9 @@ a:hover {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
 }
 .h-100 {
   height: calc(100rem / 16);
@@ -3706,6 +3712,10 @@ product-modal .product-media-modal__content img.active {
   .lg\:h-full {
     height: 100%;
   }
+  .lg\:h-76 {
+    height: calc(76rem / 16);
+    height: calc(76rem / var(--vf-font-size-root));
+  }
   .lg\:max-h-\[600px\] {
     max-height: 600px;
   }
@@ -3729,6 +3739,10 @@ product-modal .product-media-modal__content img.active {
   }
   .lg\:w-full {
     width: 100%;
+  }
+  .lg\:w-76 {
+    width: calc(76rem / 16);
+    width: calc(76rem / var(--vf-font-size-root));
   }
   .lg\:\!max-w-full {
     max-width: 100% !important;
