@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "34ad640d-b626-4293-9efd-3d5f975afc13": {
+      "type": "yotpo-rewards",
+      "settings": {
+        "instance_id": "396174"
+      }
+    }
+  },
+  "order": ["34ad640d-b626-4293-9efd-3d5f975afc13"]
+}

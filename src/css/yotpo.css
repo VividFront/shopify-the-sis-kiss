@@ -1,0 +1,115 @@
+.yotpo-widget-loyalty-page
+  .yotpo-widget-campaign-widget
+  .yotpo-widget-campaign-widget-container {
+  @apply container !p-0;
+}
+
+.yotpo-widget-campaign-widget-icon-container {
+  @apply flex justify-center;
+}
+
+.yotpo-widget-campaign-widget-icon-container svg {
+  @apply !text-primary;
+}
+
+.yotpo-widget-campaign-widget-container .flexified-wrapper {
+  @apply grid grid-cols gap-grid mt-32;
+}
+
+.yotpo-widget-campaign-widget-container .yotpo-container-headline {
+  @apply !text-h2 !text-header !pb-0;
+}
+
+.yotpo-widget-campaign-widget-container .flexified-wrapper .yotpo-outer-tile {
+  @apply rounded overflow-hidden col-span-3 border-none !w-auto h-auto !m-0;
+}
+
+.yotpo-widget-campaign-widget-container
+  .yotpo-outer-tile
+  .yotpo-tile
+  .yotpo-title-text {
+  @apply !text-header !text-h6 !leading-[26px];
+}
+
+.yotpo-widget-campaign-widget-container
+  .yotpo-outer-tile
+  .yotpo-tile
+  .yotpo-description-text {
+  @apply !text-copy !text-body-copy;
+}
+
+.yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tiers-list {
+  @apply !p-0 !max-w-full;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-headline {
+  @apply !text-h2 !mb-0;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container {
+  @apply container mt-32;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tiers-wrapper {
+  @apply max-w-full gap-16 lg:gap-32 xl:gap-48;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tiers-wrapper
+  .yotpo-vip-tier-container {
+  @apply bg-white p-16 pb-24 m-0 basis-full sm:basis-3/4 lg:basis-1/4 rounded shadow overflow-hidden;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier-benefits-list-item {
+  @apply items-start;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier-benefits-list-item
+  svg {
+  @apply mt-8;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-benefits {
+  @apply mt-0 p-0;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-icon-wrapper {
+  @apply flex justify-center;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-threshold {
+  @apply !text-h5 !font-bold !h-auto mt-8;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-name {
+  @apply !text-h4 !font-bold !h-auto mt-18;
+}
+
+.yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
+  @apply p-0;
+}
