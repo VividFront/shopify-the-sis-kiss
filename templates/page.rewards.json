@@ -1,5 +1,46 @@
 {
   "sections": {
+    "08ec4a0a-a3c1-4053-bba8-821962208ca4": {
+      "type": "icon-steps-section",
+      "blocks": {
+        "7dfe37e4-92cf-4859-96c4-8c6c60fa84f5": {
+          "type": "step",
+          "settings": {
+            "heading": "Sign Up",
+            "body": "Create an account and get 50 points. Plus, follow us on social for even more points!",
+            "image": "shopify://shop_images/rewards-icon.png"
+          }
+        },
+        "fc450c58-28c1-4009-85b7-06ab2e767113": {
+          "type": "step",
+          "settings": {
+            "heading": "Earn Points",
+            "body": "Earn points every time you shop, share, review, and refer!",
+            "image": "shopify://shop_images/shipping-icon.png"
+          }
+        },
+        "cfeab51d-917a-4571-adf9-ebb9ce3a2b34": {
+          "type": "step",
+          "settings": {
+            "heading": "Redeem Points",
+            "body": "Redeem points for exclusive discounts and level-up for more perks!",
+            "image": "shopify://shop_images/waterproof-icon.png"
+          }
+        }
+      },
+      "block_order": [
+        "7dfe37e4-92cf-4859-96c4-8c6c60fa84f5",
+        "fc450c58-28c1-4009-85b7-06ab2e767113",
+        "cfeab51d-917a-4571-adf9-ebb9ce3a2b34"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
+        "heading": "How it Works",
+        "body": "<p>ecome a member and earn points & exclusive rewards every time you shop</p>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
     "34ad640d-b626-4293-9efd-3d5f975afc13": {
       "type": "yotpo-rewards",
       "settings": {
@@ -23,6 +64,7 @@
     }
   },
   "order": [
+    "08ec4a0a-a3c1-4053-bba8-821962208ca4",
     "34ad640d-b626-4293-9efd-3d5f975afc13",
     "14b50ac8-94e1-4877-97ab-cdcc9f9e82ab",
     "69c88128-dea8-4d25-9047-41a325d471ef"
