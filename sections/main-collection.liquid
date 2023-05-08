@@ -1,0 +1,35 @@
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{% render 'breadcrumbs' %}
+<div class="container">
+  <div class="grid grid-cols">
+    <div class="col-span-3">
+    
+    </div>
+    <div class="col-span-9 bg-ui-background rounded px-16 pt-18 pb-20">
+      {% render 'product-grid', collection: collection, section: section %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-collection-product-grid.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 9,
+      "max": 30,
+      "step": 3,
+      "default": 27,
+      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    }
+  ]
+}
+{% endschema %}
