@@ -5,7 +5,26 @@
       "settings": {
         "instance_id": "396174"
       }
+    },
+    "14b50ac8-94e1-4877-97ab-cdcc9f9e82ab": {
+      "type": "yotpo-tiers",
+      "settings": {
+        "instance_id": "396269"
+      }
+    },
+    "69c88128-dea8-4d25-9047-41a325d471ef": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "What Are You Waiting For?",
+        "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+        "cta_text": "Join Now",
+        "cta_url": "shopify://pages/rewards-new"
+      }
     }
   },
-  "order": ["34ad640d-b626-4293-9efd-3d5f975afc13"]
+  "order": [
+    "34ad640d-b626-4293-9efd-3d5f975afc13",
+    "14b50ac8-94e1-4877-97ab-cdcc9f9e82ab",
+    "69c88128-dea8-4d25-9047-41a325d471ef"
+  ]
 }
