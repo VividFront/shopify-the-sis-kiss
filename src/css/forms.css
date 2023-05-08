@@ -1,0 +1,26 @@
+.tsk-field-group {
+  @apply relative;
+}
+
+.tsk-field-group label {
+  @apply bg-white absolute top-0 px-2 left-12 translate-y-[-50%] font-bold z-[1];
+}
+
+.tsk-field-group input,
+.tsk-field-group select,
+.tsk-field-group textarea {
+  @apply text-body-copy rounded-[4px] border-border border w-full h-42 px-12 py-12 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
+}
+
+.tsk-field-group input,
+.tsk-field-group textarea {
+  @apply bg-input-background;
+}
+
+.tsk-field-group select {
+  @apply py-8;
+}
+
+.tsk-field-group textarea {
+  @apply h-[64px];
+}

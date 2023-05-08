@@ -38,7 +38,10 @@
       "settings": {
         "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png",
         "image_mobile": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
-        "designer_tag": "@designer_tag"
+        "designer_tag": "@designer_tag",
+        "content_width": "narrow",
+        "content_align": "left",
+        "show_breadcrumbs": false
       }
     },
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
@@ -237,7 +240,8 @@
           "settings": {
             "icon": "shopify://shop_images/women-icon.png",
             "heading": "Women Owned",
-            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>",
+            "large_text": ""
           }
         },
         "240d4905-1fb8-4d40-a7bb-4bfe0241e563": {
@@ -245,7 +249,8 @@
           "settings": {
             "icon": "shopify://shop_images/shipping-icon.png",
             "heading": "Free Shipping*",
-            "body": "<p>*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.</p>"
+            "body": "<p>*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.</p>",
+            "large_text": ""
           }
         },
         "177408fd-1357-494d-81f8-73c3a819d9b7": {
@@ -253,7 +258,8 @@
           "settings": {
             "icon": "shopify://shop_images/rewards-icon.png",
             "heading": "Lifetime Guarantee",
-            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>",
+            "large_text": ""
           }
         },
         "18543a21-5d02-4ef0-8d62-f97c768af217": {
@@ -261,7 +267,8 @@
           "settings": {
             "icon": "shopify://shop_images/waterproof-icon.png",
             "heading": "Waterproof",
-            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>"
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>",
+            "large_text": ""
           }
         }
       },

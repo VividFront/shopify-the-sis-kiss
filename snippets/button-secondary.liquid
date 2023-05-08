@@ -1,6 +1,10 @@
+{% if bg_class == blank %}
+  {% assign bg_class = 'bg-white' %}
+{% endif %}
+
 <div class="relative inline-block shadow-hover-button {{ class }}">
   <div arai-hidden class="button-shadow"></div>
   <a href="{{ url }}" 
-    class="relative inline-block text-primary bg-white py-8 px-20 rounded-button font-bold border-primary border-[2px]" 
+    class="relative inline-block text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px] {{ bg_class }}" 
     target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
 </div>

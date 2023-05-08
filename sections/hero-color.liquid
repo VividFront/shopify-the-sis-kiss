@@ -1,0 +1,220 @@
+{%- liquid 
+  assign text_color = section.settings.text_color
+  assign breadcrumb_classes = text_color | append: ' [&_a]:' | append: text_color
+-%}
+
+<div class="relative" style="background-color: {{ section.settings.color | default: '#fff' }}">
+  {% if section.settings.show_breadcrumbs == true %}
+    <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+      {% render 'breadcrumbs', breadcrumb_classes: breadcrumb_classes %}
+    </div>
+  {% endif %}
+  <div class="flex flex-col lg:grid lg:grid-cols-full-bleed">
+    <div class="order-2 lg:order-1 lg:col-start-2 xl:col-start-3 lg:col-end-7 pt-24 pb-48 lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)] lg:pl-16 lg:pr-32 flex flex-col h-full justify-center">
+      <div class="container lg:!max-w-full lg:!px-0 lg:!mx-0">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'subheading' -%}
+              <h6 class="mb-8 {{ text_color }}">{{ block.settings.text }}</h6>
+            {%- when 'heading' -%}
+              <h1 class="text-display font-display font-normal {{ text_color }}">{{ block.settings.text }}</h1>
+            {%- when 'body' -%}
+              <p class="mt-8 lg:mt-24 text-body-copy-large {{ text_color }}">{{ block.settings.text }}</p>
+            {%- when 'cta' -%}
+              {%- render 'button-large', url: block.settings.url, text: block.settings.text, class: 'mt-20 lg:mt-28' -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 lg:col-start-7 lg:col-end-[15] relative">
+      {%- liquid 
+        assign image_class = 'h-full w-full object-cover asepct-4/3 lg:aspect-auto max-h-[250px] md:max-h-[300px] lg:max-h-[600px] '
+        if section.settings.image_position != blank
+          assign image_class = image_class | append: section.settings.image_position
+        endif
+      -%}
+      {{ section.settings.image | image_url: width: 1500 | image_tag:
+        width: section.settings.image.width,
+        class: image_class,
+        sizes: section.settings.image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt | escape
+      }}
+      {% if section.settings.designer_tag != blank %}
+        <span class="absolute bottom-12 left-12 text-body-copy-small {{ section.settings.tag_color }}">{{ section.settings.designer_tag}}</span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero (Color Block)",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "object-center",
+          "label": "Center"
+        },
+        {
+          "value": "object-right",
+          "label": "Right"
+        },
+        {
+          "value": "object-left",
+          "label": "Left"
+        },
+        {
+          "value": "object-top",
+          "label": "Top"
+        },
+        {
+          "value": "object-bottom",
+          "label": "Bottom"
+        },
+        {
+          "value": "object-left-top",
+          "label": "Top Left"
+        },
+        {
+          "value": "object-left-bottom",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "object-right-top",
+          "label": "Top Right"
+        },
+        {
+          "value": "object-right-bottom",
+          "label": "Bottom Right"
+        }
+      ],
+      "default": "object-center"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "designer_tag",
+      "label": "Designer Tag"
+    },
+    {
+      "type": "select",
+      "id": "tag_color",
+      "label": "Tag Color",
+      "options": [
+        {
+          "value": "text-white",
+          "label": "White"
+        },
+        {
+          "value": "text-copy",
+          "label": "Body"
+        }
+      ],
+      "default": "text-white"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Background Color"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text Color",
+      "options": [
+        {
+          "value": "text-white",
+          "label": "White"
+        },
+        {
+          "value": "text-copy",
+          "label": "Body"
+        }
+      ],
+      "default": "text-copy"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show breadcrumbs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Hero Banner",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "name": "Body",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "name": "CTA",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero (Color Block)"
+    }
+  ]
+}
+{% endschema %}

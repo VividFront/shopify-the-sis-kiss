@@ -823,7 +823,7 @@ button.shopify-payment-button__button--unbranded {
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
-
+/* 
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -859,7 +859,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-}
+} */
 
 .button--full-width {
   display: flex;
@@ -1073,36 +1073,6 @@ details[open] > .share-button__fallback {
 }
 
 /* component-form */
-.field__input,
-.select__select,
-.customer .field input,
-.customer select {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  box-sizing: border-box;
-  transition: box-shadow var(--duration-short) ease;
-  position: relative;
-}
-
-.field:before,
-.select:before,
-.customer .field:before,
-.customer select:before,
-.localization-form__select:before {
-  pointer-events: none;
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--inputs-radius-outset);
-  box-shadow: var(--inputs-shadow-horizontal-offset)
-    var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius)
-    rgba(var(--color-base-text), var(--inputs-shadow-opacity));
-  z-index: -1;
-}
 
 .field:after,
 .select:after,

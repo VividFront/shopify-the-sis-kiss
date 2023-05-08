@@ -1,13 +1,27 @@
-<div class="bg-ui-dark p-section-sm">
+{%- liquid
+  assign text_color = 'text-white'
+  assign bg_color = 'bg-ui-dark'
+
+  if section.settings.theme == 'light'
+    assign text_color = 'text-copy'
+    assign bg_color = 'bg-white'
+  endif
+-%}
+
+<div class="{{ bg_color }} p-section-sm">
   <div class="container">
     <div class="grid grid-cols gap-grid">
       <div class="col-start-1 col-end-13 lg:col-start-3 lg:col-end-11 text-center">
-        <h2 class="text-white">{{ section.settings.heading }}</h2>
+        <h2 class="{{ text_color }}">{{ section.settings.heading }}</h2>
         {% if section.settings.body != blank %}
-          <p class="mt-12 text-white">{{ section.settings.body }}</p>
+          <p class="mt-12 {{ text_color }}">{{ section.settings.body }}</p>
         {% endif %}
         {% if section.settings.cta_url != blank %}
-          {% render 'button', text: section.settings.cta_text, url: section.settings.cta_url, bg_class: 'bg-ui-dark', class: 'mt-24' %}
+          {% if section.settings.theme == 'dark' %}
+            {% render 'button', text: section.settings.cta_text, url: section.settings.cta_url, bg_class: 'bg-ui-dark', class: 'mt-24' %}
+          {% else %}
+            {% render 'button-secondary', text: section.settings.cta_text, url: section.settings.cta_url, class: 'mt-24' %}
+          {% endif %}
         {% endif %}
       </div>
     </div>
@@ -40,6 +54,21 @@
       "type": "url",
       "id": "cta_url",
       "label": "CTA (Url)"
+    },
+    {
+      "type": "select",
+      "id": "theme",
+      "label": "Theme",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Dark"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        }
+      ]
     }
   ],
   "presets": [

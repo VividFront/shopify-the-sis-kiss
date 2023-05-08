@@ -1,0 +1,31 @@
+<div class="">
+  {% if section.settings.image != blank %}
+    {{ section.settings.image | image_url: width: 1500 | image_tag:
+      width: section.settings.image.width,
+      class: 'h-full w-full object-cover aspect-square md:aspect-auto max-h-[480px]',
+      sizes: section.settings.image.sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.image.alt | escape
+    }}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Full Width Image Callout",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full Width Image"
+    }
+  ]
+}
+{% endschema %}

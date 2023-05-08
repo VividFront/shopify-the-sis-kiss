@@ -1,0 +1,24 @@
+<div class="p-section-md bg-ui-pink">
+  <div class="yotpo-widget-instance" data-yotpo-instance-id="{{ section.settings.instance_id }}"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Yotpo Tiers",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "instance_id",
+      "label": "Yotpo Instance ID",
+      "default": "396269"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Yotpo Tiers"
+    }
+  ]
+}
+{% endschema %}
