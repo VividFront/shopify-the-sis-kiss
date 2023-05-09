@@ -5,6 +5,8 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
+{% assign menu_item_class = 'py-12 px-16 inline-block w-full text-center text-[calc(22rem/16)] leading-[calc(24rem/16)] text-primary' %}
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -27,7 +29,7 @@
                     <mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
-                          <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
+                          <span class="{{ menu_item_class }}">
                             {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
                               {{ block.settings.title }}
                             {%- if block.settings.link != blank -%}</a>{%- endif -%}
@@ -58,7 +60,7 @@
                     <mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
-                          <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
+                          <span class="{{ menu_item_class }}">
                             {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
                               {{ block.settings.title }}
                             {%- if block.settings.link != blank -%}</a>{%- endif -%}
@@ -104,7 +106,7 @@
                     <mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
-                          <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
+                          <span class="{{ menu_item_class }}">
                             {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
                               {{ block.settings.title }}
                             {%- if block.settings.link != blank -%}</a>{%- endif -%}
@@ -151,7 +153,7 @@
                     <mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
-                          <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
+                          <span class="{{ menu_item_class }}">
                             {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
                               {{ block.settings.title }}
                             {%- if block.settings.link != blank -%}</a>{%- endif -%}
@@ -186,7 +188,7 @@
                   </li>
                 {%- elsif block.type == 'nav_item' -%}
                   <li>
-                    <span class="py-12 px-16 inline-block w-full text-center text-h2 leading-h2">
+                    <span class="{{ menu_item_class }}">
                       <a class="hover:underline" href="{{ block.settings.link }}">{{ block.settings.title }}</a>
                     </span>
                   </li>
