@@ -26,7 +26,7 @@
               {%- for block in section.blocks -%}
                 {%- if block.type == 'menu_no_image' -%}
                   <li>
-                    <mobile-menu>
+                    <div data-vf-mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="{{ menu_item_class }}">
@@ -53,11 +53,11 @@
                           </div>
                         </div>
                       </details>
-                    </mobile-menu>
+                    </div>
                   </li>
                 {%- elsif block.type == 'menu_one_image' -%}
                   <li>
-                    <mobile-menu>
+                    <div data-vf-mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="{{ menu_item_class }}">
@@ -99,11 +99,11 @@
                           </div>
                         </div>
                       </details>
-                    </mobile-menu>
+                    </div>
                   </li>
                 {%- elsif block.type == 'menu_two_images' -%}
                   <li>
-                    <mobile-menu>
+                    <div data-vf-mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="{{ menu_item_class }}">
@@ -146,11 +146,11 @@
                           </div>
                         </div>
                       </details>
-                    </mobile-menu>
+                    </div>
                   </li>
                 {%- elsif block.type == 'menu_large_image' -%}
                   <li>
-                    <mobile-menu>
+                    <div data-vf-mobile-menu>
                       <details id="Details-MobileMenu-{{ forloop.index }}" class="static group">
                         <summary class="flex items-center relative">
                           <span class="{{ menu_item_class }}">
