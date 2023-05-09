@@ -24,8 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
     trending.mount();
 
     const { Slides } = trending.Components;
+    let leopardIsRemoved = false;
     if (window.matchMedia('(max-width: 991px)').matches) {
       Slides.remove('.js-leopard-slide');
+      leopardIsRemoved = true;
+    }
+
+    if (!leopardIsRemoved) {
+      trending.on('resize', () => {
+        if (leopardIsRemoved) return;
+
+        if (window.matchMedia('(max-width: 991px)').matches) {
+          Slides.remove('.js-leopard-slide');
+          leopardIsRemoved = true;
+        }
+      });
     }
   }
 
