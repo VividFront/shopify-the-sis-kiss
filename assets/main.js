@@ -29583,19 +29583,26 @@
             breakpoints: { 575: { perPage: 2, gap: 16 }, 992: { perPage: 3 } },
           });
           t.mount();
-          var e = t.Components.Slides;
+          var e = t.Components.Slides,
+            r = !1;
           window.matchMedia('(max-width: 991px)').matches &&
-            e.remove('.js-leopard-slide');
+            (e.remove('.js-leopard-slide'), (r = !0)),
+            r ||
+              t.on('resize', function () {
+                r ||
+                  (window.matchMedia('(max-width: 991px)').matches &&
+                    (e.remove('.js-leopard-slide'), (r = !0)));
+              });
         }
         if (document.querySelector('[data-vf-category-slider-products]')) {
-          var r = new pr('[data-vf-category-slider-products]', {
+          var i = new pr('[data-vf-category-slider-products]', {
               type: 'fade',
               pagination: !1,
               arrows: !1,
               perPage: 1,
               perMove: 1,
             }),
-            i = new pr('[data-vf-category-slider-list]', {
+            n = new pr('[data-vf-category-slider-list]', {
               rewind: !1,
               pagination: !1,
               isNavigation: !0,
@@ -29615,42 +29622,42 @@
                 },
               },
             });
-          i.mount(), r.sync(i), r.mount();
-          var n = document.querySelector('[data-vf-category-bar]'),
-            a = document.querySelector('[data-vf-category-pill]'),
-            s = document.querySelector('[data-category-list-index="0"]'),
-            o = document.querySelector('[data-vf-product-tabs]'),
-            l = document.querySelector(
+          n.mount(), i.sync(n), i.mount();
+          var a = document.querySelector('[data-vf-category-bar]'),
+            s = document.querySelector('[data-vf-category-pill]'),
+            o = document.querySelector('[data-category-list-index="0"]'),
+            l = document.querySelector('[data-vf-product-tabs]'),
+            h = document.querySelector(
               '[data-vf-category-bar] [data-sparkle-group]',
             );
-          (n.style.top = s.offsetTop + 'px'),
-            (n.style.left = s.offsetLeft - 24 + 'px'),
-            (n.style.width = cr(o.offsetWidth, s.offsetWidth, 116));
-          var h = s;
-          i.on('move', function (t) {
+          (a.style.top = o.offsetTop + 'px'),
+            (a.style.left = o.offsetLeft - 24 + 'px'),
+            (a.style.width = cr(l.offsetWidth, o.offsetWidth, 116));
+          var p = o;
+          n.on('move', function (t) {
             var e = document.querySelector(
               '[data-category-list-index="' + t + '"]',
             );
             if (
-              (n &&
-                ((n.style.top = e.offsetTop + 'px'),
-                (n.style.left = e.offsetLeft - 24 - 24 + 'px'),
-                (n.style.width = cr(o.offsetWidth, e.offsetWidth, 116)),
-                l &&
+              (a &&
+                ((a.style.top = e.offsetTop + 'px'),
+                (a.style.left = e.offsetLeft - 24 - 24 + 'px'),
+                (a.style.width = cr(l.offsetWidth, e.offsetWidth, 116)),
+                h &&
                   (t % 2
-                    ? l.classList.add('rotate-90', '!translate-y-[50%]')
-                    : l.classList.remove('rotate-90', '!translate-y-[50%]')),
-                (h = e)),
-              a)
+                    ? h.classList.add('rotate-90', '!translate-y-[50%]')
+                    : h.classList.remove('rotate-90', '!translate-y-[50%]')),
+                (p = e)),
+              s)
             ) {
               var r = e.querySelector('p');
-              a.style.width = r.offsetWidth + 48 + 'px';
+              s.style.width = r.offsetWidth + 48 + 'px';
             }
           }),
-            i.on('resize', function () {
-              (n.style.top = h.offsetTop + 'px'),
-                (n.style.left = h.offsetLeft - 24 - 24 + 'px'),
-                (n.style.width = cr(o.offsetWidth, h.offsetWidth, 116));
+            n.on('resize', function () {
+              (a.style.top = p.offsetTop + 'px'),
+                (a.style.left = p.offsetLeft - 24 - 24 + 'px'),
+                (a.style.width = cr(l.offsetWidth, p.offsetWidth, 116));
             });
         }
       }),
