@@ -1207,9 +1207,6 @@ a:hover {
 .aspect-3\/2 {
   aspect-ratio: 3 / 2;
 }
-.aspect-3\/4 {
-  aspect-ratio: 3 / 4;
-}
 .aspect-4\/3 {
   aspect-ratio: 4 / 3;
 }
@@ -1807,9 +1804,6 @@ a:hover {
   -o-object-position: top;
   object-position: top;
 }
-.p-1 {
-  padding: 1px;
-}
 .p-12 {
   padding: calc(12rem / 16);
   padding: calc(12rem / var(--vf-font-size-root));
@@ -2225,14 +2219,6 @@ a:hover {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-}
-.transition-\[padding\] {
-  -webkit-transition-property: padding;
-  transition-property: padding;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 150ms;
@@ -2762,6 +2748,58 @@ a:hover {
 }
 .yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
   padding: 0px;
+}
+.infinite-marquee {
+  --gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: var(--gap);
+}
+.infinite-marquee-content {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  -webkit-animation: scroll 10s linear infinite;
+  animation: scroll 10s linear infinite;
+}
+@-webkit-keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+@keyframes scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+/* Pause animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__content {
+    -webkit-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+  }
 }
 .ac {
   margin-top: 0px;
@@ -3521,15 +3559,6 @@ product-modal .product-media-modal__content img.active {
 .group[open] .group-open\:\[display\:none\] {
   display: none;
 }
-.group:hover .group-hover\:block {
-  display: block;
-}
-.group:hover .group-hover\:hidden {
-  display: none;
-}
-.group:hover .group-hover\:p-0 {
-  padding: 0px;
-}
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -3540,22 +3569,6 @@ product-modal .product-media-modal__content img.active {
 }
 .group:hover .group-hover\:opacity-\[1\] {
   opacity: 1;
-}
-.group:hover .group-hover\:transition-\[padding\] {
-  -webkit-transition-property: padding;
-  transition-property: padding;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
-}
-.group:hover .group-hover\:transition-\[opacity\] {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 150ms;
-  transition-duration: 150ms;
 }
 @media (min-width: 576px) {
   .sm\:basis-2\/3 {
