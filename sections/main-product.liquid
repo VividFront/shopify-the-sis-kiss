@@ -232,7 +232,9 @@
                     </div>
                   </div>
                 {%- when 'variant_picker' -%}
-                  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                  <div class="mt-18 flex flex-col gap-y-16">
+                    {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                  </div>
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
                 {%- when 'rating' -%}
