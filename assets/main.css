@@ -1656,12 +1656,12 @@ a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.\!rounded-\[8px\] {
-  border-radius: 8px !important;
-}
 .rounded {
   border-radius: 16px;
   border-radius: var(--vf-border-radius);
+}
+.rounded-\[18px\] {
+  border-radius: 18px;
 }
 .rounded-\[32px\] {
   border-radius: 32px;
@@ -1714,10 +1714,6 @@ a:hover {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-}
-.bg-\[\#FDFDFD\] {
-  --tw-bg-opacity: 1;
-  background-color: rgba(253, 253, 253, var(--tw-bg-opacity));
 }
 .bg-primary {
   --tw-bg-opacity: 1;
@@ -2134,9 +2130,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-.opacity-0 {
-  opacity: 0;
-}
 .shadow {
   --tw-shadow: var(--vf-box-shadow);
   --tw-shadow-colored: var(--vf-box-shadow);
@@ -2421,6 +2414,17 @@ a:hover {
 }
 .tsk-field-group textarea {
   height: 64px;
+}
+/* hide browser serach icon */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+input[type='search'] {
+  -webkit-appearance: none;
+  font-size: 16px;
 }
 .yotpo-widget-loyalty-page
   .yotpo-widget-campaign-widget
@@ -2749,6 +2753,7 @@ a:hover {
 .yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
   padding: 0px;
 }
+/* https://ryanmulligan.dev/blog/css-marquee/ */
 .infinite-marquee {
   --gap: 1rem;
   display: -webkit-box;
@@ -3566,9 +3571,6 @@ product-modal .product-media-modal__content img.active {
 }
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
-}
-.group:hover .group-hover\:opacity-\[1\] {
-  opacity: 1;
 }
 @media (min-width: 576px) {
   .sm\:basis-2\/3 {

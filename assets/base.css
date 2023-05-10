@@ -1196,7 +1196,7 @@ details[open] > .share-button__fallback {
 
 .field__label,
 .customer .field label {
-  font-size: 1.6rem;
+  font-size: 16px;
   left: calc(33px);
   top: calc(11px);
   margin-bottom: 0;
@@ -1940,7 +1940,7 @@ details[open] .modal-overlay::after {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 0 5rem 0 1rem;
+  padding: 0 50px 0 10px;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   position: relative;
 }

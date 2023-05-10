@@ -29611,6 +29611,7 @@
               arrows: !1,
               perPage: 1,
               perMove: 1,
+              breakpoints: { 992: { dragMinThreshold: { touch: 8 } } },
             }),
             i = new pr('[data-vf-category-slider-list]', {
               rewind: !1,
