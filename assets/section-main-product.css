@@ -149,16 +149,16 @@
 .product-form__error-message-wrapper:not([hidden]) {
   display: flex;
   align-items: flex-start;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .product-form__error-message-wrapper svg {
   flex-shrink: 0;
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 0.7rem;
-  margin-top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  margin-right: 7px;
+  margin-top: 8px;
 }
 
 /* Form Elements */
@@ -291,10 +291,6 @@ fieldset.product-form__input .form__label {
   max-width: 25rem;
 }
 
-.product-form__submit {
-  margin-bottom: 1rem;
-}
-
 .no-js .product-form__submit.button--secondary {
   --color-button: var(--color-base-accent-1);
   --color-button-text: var(--color-base-solid-button-labels);
@@ -329,18 +325,8 @@ fieldset.product-form__input .form__label {
 
 /* Product info */
 
-.product__info-container > * + * {
-  margin: 1.5rem 0;
-}
-
 .product__info-container iframe {
   max-width: 100%;
-}
-
-.product__info-container .product-form,
-.product__info-container .product__description,
-.product__info-container .icon-with-text {
-  margin: 2.5rem 0;
 }
 
 .product__text {
@@ -359,7 +345,6 @@ a.product__text {
 
 .product__title {
   word-break: break-word;
-  margin-bottom: 1.5rem;
 }
 
 .product__title > * {
@@ -485,10 +470,6 @@ a.product__text {
 .product--no-media fieldset.product-form__input {
   flex-wrap: wrap;
   margin: 0 auto 1.2rem auto;
-}
-
-.product-form__buttons {
-  max-width: 44rem;
 }
 
 .product--no-media .product__info-container > modal-opener {

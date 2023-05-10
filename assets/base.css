@@ -1347,7 +1347,7 @@ input[type='checkbox'] {
 }
 
 /* component-quantity */
-.quantity {
+/* .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
   width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
@@ -1463,7 +1463,7 @@ input[type='checkbox'] {
 
 .quantity__input[type='number'] {
   -moz-appearance: textfield;
-}
+} */
 
 .quantity__rules {
   margin-top: 1.2rem;
