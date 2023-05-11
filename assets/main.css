@@ -4173,6 +4173,9 @@ product-modal .product-media-modal__content img.active {
   .lg\:block {
     display: block;
   }
+  .lg\:inline {
+    display: inline;
+  }
   .lg\:\!flex {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
