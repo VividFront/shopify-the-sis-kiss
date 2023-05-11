@@ -179,6 +179,7 @@
                   {% render block %}
               {%- endcase -%}
             {%- endfor -%}
+            <a href="#wishlist" class="relative shrink-0 header__icon">Wishlist</a>
             <a href="{{ routes.cart_url }}" class="relative shrink-0 header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
               {%- liquid
                 if cart == empty

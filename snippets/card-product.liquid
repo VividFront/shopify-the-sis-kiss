@@ -70,6 +70,9 @@
           </a>
         </div>
         {% render 'product-badge', tags: product.tags %}
+        <div class="absolute top-14 right-14 z-[1] w-18 h-18">
+          <div class="product-card-wishlist-icon" aria-hidden="true"></div>
+        </div>
       </div>
     {%- endif -%}
     <div class="mt-16 {% if product.available == false %}text-disabled-high-contrast{% endif %}">

@@ -1,0 +1,7 @@
+#wishlist-whale-button.wishlist-whale-button-collection {
+  @apply relative top-0 right-0 z-[1];
+}
+
+#wishlist-whale-button.wishlist-whale-button-collection svg {
+  @apply w-18 h-18;
+}

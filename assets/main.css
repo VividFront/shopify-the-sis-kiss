@@ -991,6 +991,10 @@ a:hover {
 .right-0 {
   right: 0px;
 }
+.right-14 {
+  right: calc(14rem / 16);
+  right: calc(14rem / var(--vf-font-size-root));
+}
 .right-32 {
   right: calc(32rem / 16);
   right: calc(32rem / var(--vf-font-size-root));
@@ -1001,6 +1005,10 @@ a:hover {
 .top-12 {
   top: calc(12rem / 16);
   top: calc(12rem / var(--vf-font-size-root));
+}
+.top-14 {
+  top: calc(14rem / 16);
+  top: calc(14rem / var(--vf-font-size-root));
 }
 .top-\[150px\] {
   top: 150px;
@@ -3119,6 +3127,18 @@ input[type='search'] {
   padding-right: calc(2rem / 16);
   padding-right: calc(2rem / var(--vf-font-size-root));
   font-weight: 700;
+}
+#wishlist-whale-button.wishlist-whale-button-collection {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+#wishlist-whale-button.wishlist-whale-button-collection svg {
+  height: calc(18rem / 16);
+  height: calc(18rem / var(--vf-font-size-root));
+  width: calc(18rem / 16);
+  width: calc(18rem / var(--vf-font-size-root));
 }
 @-webkit-keyframes placeHolderShimmer {
   0% {
