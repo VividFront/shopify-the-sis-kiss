@@ -5,3 +5,40 @@
 #wishlist-whale-button.wishlist-whale-button-collection svg {
   @apply w-18 h-18;
 }
+
+.wishlist-whale-wrapper .wishlist-form-Items-Container {
+  @apply h-auto p-8 bg-ui-background rounded mx-16 pb-32;
+}
+
+.wishlist-whale-wrapper .wishlist-form-Items-Container .wishlist-form-Item {
+  @apply flex flex-col w-1/2 md:w-1/3 lg:w-1/4 m-0 p-8;
+}
+
+.wishlist-whale-wrapper
+  .wishlist-form-Items-Container
+  .wishlist-form-Item
+  .wishlist-form-Item-AddToCart {
+  @apply rounded-button font-bold;
+}
+
+.wishlist-whale-wrapper
+  .wishlist-form-Items-Container
+  .wishlist-form-Item
+  .wishlist-form-Item-Product-Name {
+  @apply text-h6 font-bold h-auto;
+}
+
+.wishlist-whale-wrapper
+  .wishlist-form-Items-Container
+  .wishlist-form-Item
+  .wishlist-form-Item-Image {
+  @apply rounded w-full aspect-square h-auto mb-8;
+}
+
+.wishlist-whale-wrapper #wishlist-form-Header-Container {
+  @apply py-24 px-16 h-auto;
+}
+
+.wishlist-whale-wrapper #wishlist-formContainer {
+  @apply max-w-[calc(100%_-_32px)] mx-auto px-16 mb-60;
+}
