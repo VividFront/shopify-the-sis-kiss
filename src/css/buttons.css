@@ -13,5 +13,5 @@
 }
 
 .button-shadow {
-  @apply w-full h-full box-border rounded-button bg-white border-primary border-[2px] absolute left-0 bottom-0;
+  @apply w-full h-full box-border rounded-[24px] bg-white border-primary border-[2px] absolute left-0 bottom-0;
 }

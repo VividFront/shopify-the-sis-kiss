@@ -13,7 +13,7 @@
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
-      class="no-js-hidden"
+      class="no-js-hidden flex flex-col gap-y-16"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
@@ -22,8 +22,14 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}</legend>
+        {%- liquid 
+          assign radio_type = '-standard'
+          if 'Initial' == option.name
+            assign radio_type = '-letter'
+          endif
+        -%}
+        <fieldset class="js product-form__input tsk-variant-radio {{ radio_type }}">
+          <legend class="form__label font-open-sans font-semibold">{{ option.name }}</legend>
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
       {%- endfor -%}

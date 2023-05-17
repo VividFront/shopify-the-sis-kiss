@@ -73,18 +73,11 @@
             id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            class="product-form__submit flex justify-center items-center gap-12 rounded-[24px] py-12 px-16 text-h6 font-bold bg-primary hover:bg-primary-hover active:bg-primary-pressed text-white w-full disabled:bg-disabled disabled:text-disabled-high-contrast"
             {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
               disabled
             {% endif %}
           >
-            <span>
-              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
-            </span>
             <div class="loading-overlay__spinner hidden">
               <svg
                 aria-hidden="true"
@@ -96,6 +89,13 @@
                 <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
               </svg>
             </div>
+            <span>
+              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- else -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- endif -%}
+            </span>
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}

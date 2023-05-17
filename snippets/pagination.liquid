@@ -17,11 +17,11 @@
       <ul class="flex gap-x-8 w-full justify-center items-center" role="list">
       <li>
         {%- if paginate.previous -%}
-          <a class="text-body-copy" href="{{ paginate.previous.url }}{{ anchor }}" aria-label="{{ 'general.pagination.previous' | t }}">
+          <a class="text-body-copy w-16 flex items-center" href="{{ paginate.previous.url }}{{ anchor }}" aria-label="{{ 'general.pagination.previous' | t }}">
             {%- render 'icon-chevron-left' -%}
           </a>
         {%- else -%}
-          <span class="text-disabled">
+          <span class="text-disabled w-16 flex items-center">
             {%- render 'icon-chevron-left' -%}
           </span>
         {%- endif -%}
@@ -30,12 +30,12 @@
       {%- for part in paginate.parts -%}
         <li class="w-[calc(25rem/16)] h-[calc(25rem/16)] text-body-copy-small flex items-center rounded-full justify-center {% if part.title == paginate.current_page %} text-white bg-primary{% endif %}">
           {%- if part.is_link -%}
-            <a href="{{ part.url }}{{ anchor }}" class="pagination__item link" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
+            <a href="{{ part.url }}{{ anchor }}" class="pagination__item h-full link" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
           {%- else -%}
             {%- if part.title == paginate.current_page -%}
-              <span class="pagination__item pagination__item--current" aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</span>
+              <span class="pagination__item h-full pagination__item--current" aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</span>
             {%- else -%}
-              <span class="pagination__item">{{ part.title }}</span>
+              <span class="pagination__item h-full">{{ part.title }}</span>
             {%- endif -%}
           {%- endif -%}
         </li>
@@ -43,11 +43,11 @@
 
       <li>
         {%- if paginate.next -%}
-          <a class="text-body-copy" href="{{ paginate.next.url }}{{ anchor }}" aria-label="{{ 'general.pagination.next' | t }}">
+          <a class="text-body-copy w-16 flex items-center" href="{{ paginate.next.url }}{{ anchor }}" aria-label="{{ 'general.pagination.next' | t }}">
             {%- render 'icon-chevron-right' -%}
           </a>
         {%- else -%}
-          <span class="text-disabled">
+          <span class="text-disabled w-16 flex items-center">
             {%- render 'icon-chevron-right' -%}
           </span>
         {%- endif -%}

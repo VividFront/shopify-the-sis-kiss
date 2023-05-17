@@ -1,0 +1,30 @@
+.tsk-quantity {
+  @apply h-40 w-[140px] flex;
+}
+
+.tsk-quantity button {
+  @apply w-32 h-full bg-white border-border border flex items-center shrink-0 justify-center hover:bg-primary enabled:hover:text-white enabled:hover:border-primary disabled:bg-disabled disabled:border-disabled-high-contrast disabled:cursor-not-allowed;
+}
+
+.tsk-quantity .tsk-quantity-remove {
+  @apply rounded-l-[12px];
+}
+
+.tsk-quantity .tsk-quantity-add {
+  @apply rounded-r-[12px];
+}
+
+.tsk-quantity .tsk-quantity-icon {
+  @apply w-16 flex items-center justify-center;
+}
+
+.tsk-quantity input[type='number'] {
+  -moz-appearance: textfield;
+  @apply w-40 border-y border-border text-center disabled:bg-disabled disabled:border-disabled-high-contrast disabled:cursor-not-allowed;
+}
+
+.tsk-quantity input[type='number']::-webkit-outer-spin-button,
+.tsk-quantity input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,28 @@
+.tsk-variant-radio {
+  @apply flex flex-wrap gap-8;
+}
+
+.tsk-variant-radio.-letter {
+  @apply gap-y-8 gap-x-4 max-w-[348px];
+}
+
+.tsk-variant-radio label {
+  @apply relative border border-border rounded-[4px] py-8 px-16 text-center cursor-pointer 
+  hover:bg-primary-hover hover:text-white text-body-copy-small;
+}
+
+.tsk-variant-radio.-letter label {
+  @apply py-8 px-6 border-transparent hover:border-primary-hover hover:bg-transparent hover:text-primary-hover;
+}
+
+.tsk-variant-radio input:checked + label {
+  @apply bg-primary text-white;
+}
+
+.tsk-variant-radio.-letter input:checked + label {
+  @apply bg-transparent text-primary border-primary;
+}
+
+.tsk-variant-radio input.disabled + label {
+  @apply cursor-not-allowed bg-disabled bg-disabled-variant border-disabled-high-contrast text-disabled-high-contrast;
+}

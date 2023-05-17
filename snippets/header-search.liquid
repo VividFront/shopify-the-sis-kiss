@@ -8,7 +8,7 @@
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
 
-<details-modal class="header__searc">
+<details-modal class="header__search hidden lg:!inline-flex">
   <details>
     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
@@ -31,13 +31,12 @@
           <search-form class="search-modal__form">
         {%- endif -%}
             <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-              <div class="field">
-                <input class="search__input field__input !rounded-[8px] border border-border bg-[#FDFDFD]"
+              <div class="tsk-field-group">
+                <input
                   id="{{ input_id }}"
                   type="search"
                   name="q"
                   value="{{ search.terms | escape }}"
-                  placeholder="{{ 'general.search.search' | t }}"
                   {%- if settings.predictive_search_enabled -%}
                     role="combobox"
                     aria-expanded="false"
@@ -51,7 +50,7 @@
                     spellcheck="false"
                   {%- endif -%}
                 >
-                <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+                <label for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
                 <input type="hidden" name="options[prefix]" value="last">
                 <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
                   <svg class="icon icon-close" aria-hidden="true" focusable="false">

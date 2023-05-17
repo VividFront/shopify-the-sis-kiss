@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: false,
       perPage: 1,
       perMove: 1,
+      breakpoints: {
+        992: {
+          dragMinThreshold: {
+            touch: 8,
+          },
+        },
+      },
     });
 
     const categoryList = new Splide('[data-vf-category-slider-list]', {
