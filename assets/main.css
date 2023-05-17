@@ -1129,9 +1129,6 @@ a:hover {
   margin-bottom: calc(8rem / 16);
   margin-bottom: calc(8rem / var(--vf-font-size-root));
 }
-.ml-auto {
-  margin-left: auto;
-}
 .mt-10 {
   margin-top: calc(10rem / 16);
   margin-top: calc(10rem / var(--vf-font-size-root));
@@ -1201,9 +1198,6 @@ a:hover {
 }
 .mt-\[2rem\] {
   margin-top: 2rem;
-}
-.mt-auto {
-  margin-top: auto;
 }
 .block {
   display: block;
@@ -1312,9 +1306,6 @@ a:hover {
 }
 .h-\[300px\] {
   height: 300px;
-}
-.h-\[60\%\] {
-  height: 60%;
 }
 .h-\[61px\] {
   height: 61px;
@@ -1435,11 +1426,6 @@ a:hover {
 .shrink-0 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-.grow-0 {
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
 }
 .basis-1\/2 {
   -ms-flex-preferred-size: 50%;
@@ -1610,11 +1596,6 @@ a:hover {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-}
-.items-end {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
 }
 .items-center {
   -webkit-box-align: center;
@@ -2911,6 +2892,10 @@ input[type='search'] {
 .yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
   padding: 0px;
 }
+.yotpo.yotpo-main-widget {
+  padding: calc(40rem / 16) 0 calc(48rem / 16);
+  padding: var(--vf-padding-section-medium);
+}
 /* https://ryanmulligan.dev/blog/css-marquee/ */
 .infinite-marquee {
   --gap: 1rem;
@@ -4038,6 +4023,11 @@ product-modal .product-media-modal__content img {
 }
 product-modal .product-media-modal__content img.active {
   display: block;
+}
+@media (min-width: 768px) {
+  .md\:tw-hidden {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .lg\:container {

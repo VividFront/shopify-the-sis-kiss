@@ -113,3 +113,7 @@
 .yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
   @apply p-0;
 }
+
+.yotpo.yotpo-main-widget {
+  @apply p-section-md;
+}

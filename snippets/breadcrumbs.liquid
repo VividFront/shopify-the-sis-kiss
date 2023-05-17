@@ -14,23 +14,23 @@
 
 <div class="container py-12 lg:py-16">
   <nav aria-label="breadcrumbs" class="text-body-copy-small items-center flex gap-8 {{ breadcrumb_classes }}" role="navigation">
-    <a class="{% if show_home_on_mobile == false %}hidden {% endif %}md:inline hover:underline font-normal" href="{{ shop.url }}" title="Home">Home</a>
+    <a class="{% if show_home_on_mobile == false %}tw-hidden {% endif %}md:inline hover:underline font-normal" href="{{ shop.url }}" title="Home">Home</a>
     {% if show_home_on_mobile == false %}
-    <span class="w-12 flex md:hidden items-center" aria-hidden="true">{%- render 'icon-chevron-left' -%}</span>
+    <span class="w-12 flex md:tw-hidden items-center" aria-hidden="true">{%- render 'icon-chevron-left' -%}</span>
     {% endif %}
     {% if template contains 'page' %}
       <span class="w-12 flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
       <span class="font-bold">{{ page.title }}</span>
     {% elsif template contains 'product' %}
       {% if collection.url %}
-        <span class="w-12 hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
-        {{ collection.title | link_to: collection.url, class: 'font-normal hover:underline hidden md:inline' }}
+        <span class="w-12 tw-hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
+        {{ collection.title | link_to: collection.url, class: 'font-normal hover:underline tw-hidden md:inline' }}
       {% elsif product.collections != nil and product.collections[0].url != blank %}
-        <span class="w-12 hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
+        <span class="w-12 tw-hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
         {{ product.collections[0].title | link_to: product.collections[0].url, class: 'font-normal hover:underline' }}
       {% endif %}
-      <span class="w-12 hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
-      <span class="hidden md:inline font-bold">{{ product.title }}</span>
+      <span class="w-12 tw-hidden md:flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
+      <span class="tw-hidden md:inline font-bold">{{ product.title }}</span>
     {% elsif template contains 'collection' and collection.handle %}
       <span class="w-12 flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
       {% if current_tags %}
@@ -52,10 +52,10 @@
         <span>{{ blog.title }}</span>
       {% endif %}
     {% elsif template == 'article' %}
-      <span aria-hidden="true" class="w-12 hidden md:flex items-center">{%- render 'icon-chevron-right' -%}</span>
+      <span aria-hidden="true" class="w-12 tw-hidden md:flex items-center">{%- render 'icon-chevron-right' -%}</span>
       {{ blog.title | link_to: blog.url, class: 'font-normal' }}
-      <span aria-hidden="true" class="w-12 hidden md:flex items-center">{%- render 'icon-chevron-right' -%}</span>
-      <span aria-current="page" class="font-semibold hidden md:block">{{ article.title }}</span>
+      <span aria-hidden="true" class="w-12 tw-hidden md:flex items-center">{%- render 'icon-chevron-right' -%}</span>
+      <span aria-current="page" class="font-semibold tw-hidden md:block">{{ article.title }}</span>
     {% else %}
       <span class="w-12 flex items-center" aria-hidden="true">{%- render 'icon-chevron-right' -%}</span>
       <span class="font-bold">{{ page_title }}</span>
