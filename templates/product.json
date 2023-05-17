@@ -105,6 +105,13 @@
         "padding_bottom": 12
       }
     },
+    "605a63e6-525e-429b-a87a-b51c70b37d88": {
+      "type": "complete-the-look",
+      "settings": {
+        "background_image": "shopify://shop_images/wallpaper.png",
+        "marquee_text": "Complete the Look"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -124,5 +131,5 @@
       }
     }
   },
-  "order": ["main", "related-products"]
+  "order": ["main", "605a63e6-525e-429b-a87a-b51c70b37d88", "related-products"]
 }
