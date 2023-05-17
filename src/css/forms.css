@@ -3,7 +3,7 @@
 }
 
 .tsk-field-group label {
-  @apply bg-white absolute top-0 px-2 left-12 translate-y-[-50%] font-bold z-[1];
+  @apply leading-[24px] bg-white absolute top-0 px-2 left-12 translate-y-[-50%] font-bold z-[1];
 }
 
 .tsk-field-group input,
