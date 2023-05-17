@@ -3180,10 +3180,9 @@ input[type='search'] {
   margin-top: calc(20rem / 16);
   margin-top: calc(20rem / var(--vf-font-size-root));
 }
-#infiniteoptions-container:empty {
-  height: calc(46rem / 16);
-  height: calc(46rem / var(--vf-font-size-root));
-}
+/* #infiniteoptions-container:empty {
+  @apply h-46;
+} */
 #infiniteoptions-container > div {
   position: relative;
 }
@@ -4040,30 +4039,6 @@ product-modal .product-media-modal__content img {
 product-modal .product-media-modal__content img.active {
   display: block;
 }
-#infiniteoptions-container:empty {
-  -webkit-animation-duration: 1.25s;
-  animation-duration: 1.25s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: placeHolderShimmer;
-  animation-name: placeHolderShimmer;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  background: #a9a9a9;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(10%, #eeeeee),
-    color-stop(18%, #dddddd),
-    color-stop(33%, #eeeeee)
-  );
-  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
-  background-size: 800px 104px;
-  position: relative;
-}
 @media (min-width: 992px) {
   .lg\:container {
     width: 100%;
@@ -4442,11 +4417,6 @@ product-modal .product-media-modal__content img.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .lg\:inline-flex {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
   }
   .lg\:\!inline-flex {
     display: -webkit-inline-box !important;

@@ -2,9 +2,9 @@
   @apply mt-20;
 }
 
-#infiniteoptions-container:empty {
+/* #infiniteoptions-container:empty {
   @apply h-46;
-}
+} */
 
 #infiniteoptions-container > div {
   @apply relative;
