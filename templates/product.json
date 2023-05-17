@@ -49,7 +49,7 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Custom Details",
             "content": "",
             "page": ""
           }
@@ -57,7 +57,7 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "Story",
             "content": "",
             "page": ""
           }
@@ -65,9 +65,9 @@
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
+            "heading": "Shipping & Order Information",
             "content": "",
-            "page": ""
+            "page": "shipping-order-information"
           }
         },
         "share": {
@@ -100,9 +100,7 @@
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "enable_video_looping": false
       }
     },
     "605a63e6-525e-429b-a87a-b51c70b37d88": {
@@ -111,6 +109,59 @@
         "background_image": "shopify://shop_images/wallpaper.png",
         "marquee_text": "Complete the Look"
       }
+    },
+    "1684352239614af5b1": {
+      "type": "apps",
+      "blocks": {
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
+          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": ["c2913024-b9fb-4da4-ad2d-d8717af1a674"],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb": {
+      "type": "icon-section",
+      "blocks": {
+        "97091f40-77bb-45ef-bf3b-5808317f311e": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Free Shipping*",
+            "body": "*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.",
+            "large_text": ""
+          }
+        },
+        "17c58f09-71ce-4caa-969a-d06a1880fcfa": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/rewards-icon.png",
+            "heading": "Sis Kiss Rewards",
+            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "large_text": ""
+          }
+        },
+        "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/waterproof-icon.png",
+            "heading": "Over 100 Custom Styles",
+            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "large_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "97091f40-77bb-45ef-bf3b-5808317f311e",
+        "17c58f09-71ce-4caa-969a-d06a1880fcfa",
+        "3c7c4bc1-73a8-4790-8e6d-24bed14afe89"
+      ],
+      "settings": {}
     },
     "related-products": {
       "type": "related-products",
@@ -131,5 +182,11 @@
       }
     }
   },
-  "order": ["main", "605a63e6-525e-429b-a87a-b51c70b37d88", "related-products"]
+  "order": [
+    "main",
+    "605a63e6-525e-429b-a87a-b51c70b37d88",
+    "1684352239614af5b1",
+    "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
+    "related-products"
+  ]
 }
