@@ -70,6 +70,11 @@
         "type": "url",
         "id": "lottie_cat_glasses",
         "label": "Trending Leopard"
+      },
+      {
+        "type": "url",
+        "id": "lottie_podcast_ribbon_homepage",
+        "label": "Podcast Ribbon (Homepage)"
       }
     ]
   },

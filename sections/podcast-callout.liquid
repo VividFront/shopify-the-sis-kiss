@@ -19,6 +19,12 @@
         alt: section.settings.image_mobile.alt | escape
       }}
     {% endif %}
+    {% if settings.lottie_podcast_ribbon_homepage != blank %}
+      {% render 'lottie', json_url: settings.lottie_podcast_ribbon_homepage, class: 'max-w-[60%] lg:max-w-auto w-auto h-auto absolute right-0 bottom-0' %}
+      {% comment %} <div class="absolute right-0 bottom-0 h-full flex items-end justify-end">
+        {% render 'lottie', json_url: settings.lottie_podcast_ribbon_homepage, class: 'grow-0 h-[60%] lg:h-full mt-auto ml-auto' %}
+      </div> {% endcomment %}
+    {% endif %}
   </div>
   <div class="lg:container bg-ui-pink lg:bg-transparent">
     <div class="md:grid grid-cols">
