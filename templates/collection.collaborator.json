@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "product-grid": {
+      "type": "collaborator-collection"
+    }
+  },
+  "order": ["product-grid"]
+}
