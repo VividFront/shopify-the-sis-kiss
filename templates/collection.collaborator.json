@@ -1,8 +1,26 @@
 {
   "sections": {
+    "ae01f731-9608-4135-94b6-40a1ad00daed": {
+      "type": "collaborator-hero",
+      "settings": {
+        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
+      }
+    },
     "product-grid": {
-      "type": "collaborator-collection"
+      "type": "collaborator-collection",
+      "settings": {}
+    },
+    "f4c1a069-311f-4f47-9202-67bca3ee48ba": {
+      "type": "yotpo-gallery",
+      "settings": {
+        "heading": "See How Other TSK Ladies Are Layering",
+        "gallery_id": "6467939ccb6260364b9b9478"
+      }
     }
   },
-  "order": ["product-grid"]
+  "order": [
+    "ae01f731-9608-4135-94b6-40a1ad00daed",
+    "product-grid",
+    "f4c1a069-311f-4f47-9202-67bca3ee48ba"
+  ]
 }
