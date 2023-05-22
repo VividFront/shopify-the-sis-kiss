@@ -1260,6 +1260,9 @@ a:hover {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-3\/4 {
+  aspect-ratio: 3 / 4;
+}
 .h-100 {
   height: calc(100rem / 16);
   height: calc(100rem / var(--vf-font-size-root));
@@ -1421,6 +1424,9 @@ a:hover {
 .w-full {
   width: 100%;
 }
+.w-3\/5 {
+  width: 60%;
+}
 .max-w-\[104px\] {
   max-width: 104px;
 }
@@ -1438,6 +1444,10 @@ a:hover {
 .shrink-0 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+.shrink {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 .basis-1\/2 {
   -ms-flex-preferred-size: 50%;
@@ -1678,6 +1688,10 @@ a:hover {
   gap: 16px;
   gap: var(--vf-grid-gap);
 }
+.gap-30 {
+  gap: calc(30rem / 16);
+  gap: calc(30rem / var(--vf-font-size-root));
+}
 .gap-x-12 {
   -webkit-column-gap: calc(12rem / 16);
   -moz-column-gap: calc(12rem / 16);
@@ -1738,6 +1752,14 @@ a:hover {
   row-gap: calc(32rem / 16);
   row-gap: calc(32rem / var(--vf-font-size-root));
 }
+.self-start {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.self-end {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1775,6 +1797,9 @@ a:hover {
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.rounded-none {
+  border-radius: 0px;
 }
 .border {
   border-width: 1px;
@@ -4204,6 +4229,9 @@ product-modal .product-media-modal__content img {
   }
 }
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -4254,12 +4282,25 @@ product-modal .product-media-modal__content img {
   .md\:aspect-auto {
     aspect-ratio: auto;
   }
+  .md\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .md\:h-\[450px\] {
+    height: 450px;
+  }
   .md\:max-h-\[300px\] {
     max-height: 300px;
+  }
+  .md\:w-3\/5 {
+    width: 60%;
   }
   .md\:basis-3\/4 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
+  }
+  .md\:basis-1\/2 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4267,6 +4308,9 @@ product-modal .product-media-modal__content img {
   .md\:flex-nowrap {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+  .md\:rounded-none {
+    border-radius: 0px;
   }
   .md\:pt-64 {
     padding-top: calc(64rem / 16);
@@ -4611,6 +4655,10 @@ product-modal .product-media-modal__content img {
   .lg\:gap-32 {
     gap: calc(32rem / 16);
     gap: calc(32rem / var(--vf-font-size-root));
+  }
+  .lg\:gap-grid {
+    gap: 16px;
+    gap: var(--vf-grid-gap);
   }
   .lg\:gap-x-32 {
     -webkit-column-gap: calc(32rem / 16);
