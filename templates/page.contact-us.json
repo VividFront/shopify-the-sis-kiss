@@ -4,19 +4,30 @@
       "type": "contact-form",
       "settings": {
         "form_body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo",
-        "form_topics": "",
+        "form_topics": "Jewelry Care,Bag Care,Returns,Shipping",
         "background_image": "shopify://shop_images/Background_2.png"
       }
     },
-    "a11d2a42-3702-4a9d-951b-efb3f15a2a4b": {
-      "type": "z-pattern-image-left",
+    "bae0b27f-6748-4629-9b23-d72bc6ba747c": {
+      "type": "z-pattern-contact",
       "settings": {
-        "image": "shopify://shop_images/collab-1.jpg",
-        "heading": "Meet Meg",
-        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. </p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. </p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! </p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.</p>",
-        "cta_text": "Contact Us",
-        "cta_url": "shopify://pages/contact-us",
-        "sticker": "shopify://shop_images/women-icon.png"
+        "image": "shopify://shop_images/Screen_Shot_2023-05-22_at_2.03.05_PM.png",
+        "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_link": "https://google.com",
+        "heading": "TSK HQ",
+        "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p><p><a href=\"https://google.com\" target=\"_blank\" title=\"https://google.com\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>M–F: 10AM–5PM</li><li>Saturday: 11AM–4PM</li></ul>"
+      }
+    },
+    "4a119896-ce6d-4e84-8fe4-f6b457385bd4": {
+      "type": "z-pattern-multi-image",
+      "settings": {
+        "heading": "Our Designs",
+        "body": "Paragraph about the jewelry designs. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et",
+        "cta_text": "Shop All Jewelry",
+        "cta_url": "shopify://collections/best-sellers",
+        "image_1": "shopify://shop_images/your-way.jpg",
+        "image_2": "shopify://shop_images/collab-1.jpg",
+        "image_3": "shopify://shop_images/NatalieDawnPhotoLLC-TSKNEW024-01016.jpg"
       }
     },
     "0d6c58c8-2c83-45af-bb7d-c45e771995ff": {
@@ -46,18 +57,12 @@
         "cta_text": "FAQ Page",
         "cta_url": "shopify://blogs/faq"
       }
-    },
-    "875a8207-5128-440f-b8c5-fa8dc0279b20": {
-      "type": "full-width-image",
-      "settings": {
-        "image": "shopify://shop_images/podcast-Background.jpg"
-      }
     }
   },
   "order": [
     "form",
-    "a11d2a42-3702-4a9d-951b-efb3f15a2a4b",
-    "0d6c58c8-2c83-45af-bb7d-c45e771995ff",
-    "875a8207-5128-440f-b8c5-fa8dc0279b20"
+    "bae0b27f-6748-4629-9b23-d72bc6ba747c",
+    "4a119896-ce6d-4e84-8fe4-f6b457385bd4",
+    "0d6c58c8-2c83-45af-bb7d-c45e771995ff"
   ]
 }
