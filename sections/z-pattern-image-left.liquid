@@ -1,4 +1,4 @@
-<div class="relative p-section-md bg-white">
+<div class="relative p-section-md">
   {% if section.settings.background_image != blank %}
     <div class="absolute left-0 top-0 w-full h-full z-[-1]">
       {{ section.settings.background_image | image_url: width: 1500 | image_tag:
@@ -10,7 +10,10 @@
       }}
     </div>
   {% endif %}
-  <div class="container">
+  {% if section.settings.background_lottie_json != blank %}
+    {% render 'lottie', json_url: section.settings.background_lottie_json, class: 'w-full h-auto absolute top-0 left-0' %}
+  {% endif %}
+  <div class="container relative z-[1]">
     <div class="lg:grid grid-cols gap-grid">
       <div class="lg:col-start-2 lg:col-end-6">
         {% liquid 
@@ -101,6 +104,11 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "background_lottie_json",
+      "label": "Background Lottie JSON"
     }
   ],
   "presets": [
