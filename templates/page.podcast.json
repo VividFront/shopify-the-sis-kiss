@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "podcast-hero": {
+      "type": "podcast-hero"
+    }
+  },
+  "order": ["podcast-hero"]
+}
