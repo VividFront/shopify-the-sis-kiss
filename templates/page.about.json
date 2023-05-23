@@ -81,6 +81,12 @@
         "badge": "shopify://shop_images/About_Us_2x_3ec5d157-654d-415e-9ab1-20cfbbcdd346.png"
       }
     },
+    "c98304e7-a01c-46d1-9b89-684959bb0ffb": {
+      "type": "full-width-image",
+      "settings": {
+        "image": "shopify://shop_images/31.png"
+      }
+    },
     "235c7e17-9b9f-49ba-8f41-c31b8511b8aa": {
       "type": "quote-section",
       "settings": {
@@ -88,6 +94,18 @@
         "cta_text": "",
         "cta_url": "",
         "button_type": "primary"
+      }
+    },
+    "aabc5ef0-f0d5-4f75-9c50-0fa466c6d61d": {
+      "type": "z-pattern-image-left",
+      "settings": {
+        "image": "shopify://shop_images/Match_Height.png",
+        "heading": "Meet Meg",
+        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. </p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. </p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! </p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.</p>",
+        "cta_text": "",
+        "cta_url": "",
+        "background_image": "shopify://shop_images/cloud-background_2x_09f3b4fe-9a30-4b25-8f99-db08a1770762.png",
+        "background_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/plane.json?v=1684879256"
       }
     },
     "88dafa87-5b02-41fd-959d-f0088b1c928c": {
@@ -124,7 +142,9 @@
   },
   "order": [
     "about-hero",
+    "c98304e7-a01c-46d1-9b89-684959bb0ffb",
     "235c7e17-9b9f-49ba-8f41-c31b8511b8aa",
+    "aabc5ef0-f0d5-4f75-9c50-0fa466c6d61d",
     "88dafa87-5b02-41fd-959d-f0088b1c928c",
     "302f7269-d87d-4f62-ab45-0039fa32a6d0",
     "e03a4851-1cf5-4ecc-87cc-9d4460cb37bd"

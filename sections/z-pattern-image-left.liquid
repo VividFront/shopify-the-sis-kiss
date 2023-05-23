@@ -11,7 +11,7 @@
     </div>
   {% endif %}
   {% if section.settings.background_lottie_json != blank %}
-    {% render 'lottie', json_url: section.settings.background_lottie_json, class: 'w-full h-auto absolute top-0 left-0' %}
+    {% render 'lottie', json_url: section.settings.background_lottie_json, class: 'tw-hidden lg:block w-full h-auto absolute top-0 left-0' %}
   {% endif %}
   <div class="container relative z-[1]">
     <div class="lg:grid grid-cols gap-grid">

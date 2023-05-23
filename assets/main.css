@@ -4497,6 +4497,9 @@ product-modal .product-media-modal__content img {
   .lg\:row-end-3 {
     grid-row-end: 3;
   }
+  .lg\:m-0 {
+    margin: 0px;
+  }
   .lg\:\!mx-0 {
     margin-left: 0px !important;
     margin-right: 0px !important;
