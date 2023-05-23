@@ -4,7 +4,7 @@
       <div class="order-2 lg:order-1 col-start-1 col-end-7 lg:col-start-2 lg:col-end-6">
         <h2>{{ section.settings.heading }}</h2>
         {% if section.settings.body != blank %}
-          <p>{{ section.settings.body }}</p>
+          <p class="mt-12">{{ section.settings.body }}</p>
         {% endif %}
         {% if section.settings.cta_url != blank %}
           {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
