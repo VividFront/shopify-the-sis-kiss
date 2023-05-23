@@ -1,8 +1,118 @@
 {
   "sections": {
     "about-hero": {
-      "type": "about-hero"
+      "type": "about-hero",
+      "blocks": {
+        "7c74adcc-e45b-46c7-9fbf-1ad022abbca0": {
+          "type": "text",
+          "settings": {
+            "text": "For",
+            "is_bold": false
+          }
+        },
+        "08b7fac4-19bb-495f-ace9-862f1f8674b9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/31_2x_copy.png"
+          }
+        },
+        "778b04e4-d2b8-464d-b395-437b2bdab499": {
+          "type": "text",
+          "settings": {
+            "text": "The Baddies",
+            "is_bold": true
+          }
+        },
+        "f29a3d1e-3e2f-4a55-bd62-059c2414d594": {
+          "type": "text",
+          "settings": {
+            "text": "&",
+            "is_bold": false
+          }
+        },
+        "52ae4aad-1375-49ba-9133-4b8d197fdbb9": {
+          "type": "text",
+          "settings": {
+            "text": "The Classy Girls",
+            "is_bold": true
+          }
+        },
+        "88671957-b83d-4933-bfd8-1ef8e5891553": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/31_2x_1de6e05a-f2d4-4a53-a4d3-4ff5b6c07233.png"
+          }
+        },
+        "963e11f2-b186-4dcb-8af8-8db5468d3b30": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/31_2x_copy_2.png"
+          }
+        },
+        "12a20791-63f5-43cb-b74a-7001a0ce6c3b": {
+          "type": "text",
+          "settings": {
+            "text": "We Are",
+            "is_bold": false
+          }
+        },
+        "40dbdfb1-f6a1-4e14-952c-a96e68d44ef2": {
+          "type": "text",
+          "settings": {
+            "text": "The Sis Kiss",
+            "is_bold": true
+          }
+        }
+      },
+      "block_order": [
+        "7c74adcc-e45b-46c7-9fbf-1ad022abbca0",
+        "08b7fac4-19bb-495f-ace9-862f1f8674b9",
+        "778b04e4-d2b8-464d-b395-437b2bdab499",
+        "f29a3d1e-3e2f-4a55-bd62-059c2414d594",
+        "52ae4aad-1375-49ba-9133-4b8d197fdbb9",
+        "88671957-b83d-4933-bfd8-1ef8e5891553",
+        "963e11f2-b186-4dcb-8af8-8db5468d3b30",
+        "12a20791-63f5-43cb-b74a-7001a0ce6c3b",
+        "40dbdfb1-f6a1-4e14-952c-a96e68d44ef2"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/cloud-background_2x_513a1aaa-0c5c-4feb-83a6-2d5c4939d629.png",
+        "background_image_position_mobile": "left",
+        "badge": "shopify://shop_images/About_Us_2x_3ec5d157-654d-415e-9ab1-20cfbbcdd346.png"
+      }
+    },
+    "235c7e17-9b9f-49ba-8f41-c31b8511b8aa": {
+      "type": "quote-section",
+      "settings": {
+        "quote": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod”",
+        "cta_text": "",
+        "cta_url": "",
+        "button_type": "primary"
+      }
+    },
+    "88dafa87-5b02-41fd-959d-f0088b1c928c": {
+      "type": "full-width-image",
+      "settings": {
+        "image": "shopify://shop_images/DSC06364.png"
+      }
+    },
+    "302f7269-d87d-4f62-ab45-0039fa32a6d0": {
+      "type": "z-pattern-multi-image",
+      "settings": {
+        "heading": "Our Designs",
+        "body": "Paragraph about the jewelry designs. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et",
+        "cta_text": "Shop All Jewelry",
+        "cta_url": "shopify://collections",
+        "image_1": "shopify://shop_images/your-way.jpg",
+        "image_2": "shopify://shop_images/DSC00916.png",
+        "image_3": "shopify://shop_images/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
+      }
     }
   },
-  "order": ["about-hero"]
+  "order": [
+    "about-hero",
+    "235c7e17-9b9f-49ba-8f41-c31b8511b8aa",
+    "88dafa87-5b02-41fd-959d-f0088b1c928c",
+    "302f7269-d87d-4f62-ab45-0039fa32a6d0"
+  ]
 }
