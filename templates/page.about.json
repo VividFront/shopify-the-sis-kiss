@@ -107,12 +107,26 @@
         "image_2": "shopify://shop_images/DSC00916.png",
         "image_3": "shopify://shop_images/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
       }
+    },
+    "e03a4851-1cf5-4ecc-87cc-9d4460cb37bd": {
+      "type": "podcast-callout",
+      "settings": {
+        "image": "shopify://shop_images/NEW_WU_008.png",
+        "image_mobile": "shopify://shop_images/NEW_WU_008.png",
+        "logo": "shopify://shop_images/WU-logo.png",
+        "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
+        "cta_text": "Listen Now",
+        "cta_url": "shopify://pages/about",
+        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-about-cropped.json?v=1684878609",
+        "logo_circle_position": "right"
+      }
     }
   },
   "order": [
     "about-hero",
     "235c7e17-9b9f-49ba-8f41-c31b8511b8aa",
     "88dafa87-5b02-41fd-959d-f0088b1c928c",
-    "302f7269-d87d-4f62-ab45-0039fa32a6d0"
+    "302f7269-d87d-4f62-ab45-0039fa32a6d0",
+    "e03a4851-1cf5-4ecc-87cc-9d4460cb37bd"
   ]
 }
