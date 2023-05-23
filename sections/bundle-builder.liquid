@@ -1,0 +1,201 @@
+<style type="text/css">
+  .product-box {
+      display: flex;
+  }
+  .product {
+      display: flex;
+      flex-direction: column;
+  }
+  .note-field--container {
+      display: flex;
+      flex-direction: column;
+  }
+</style>
+
+<script type="text/javascript">
+const selectedVariants = new Map();
+
+function setAddDisabled(form) {
+  const variantId = form.querySelector('[name="variant"]').value;
+  const sectionId = form.querySelector('[name="section"]').value;
+  const canAdd = window.BundleBuilder.canAddVariant(variantId, sectionId);
+  form.querySelector('[type="submit"]').disabled = !canAdd;
+}
+
+
+/* Change variant price after variant change */
+Array.prototype.forEach.call(
+  document.querySelectorAll('.bundle-builder--add-to-bundle-form select[name="variant"]'),
+  function (select) {
+      select.addEventListener('change', function (e) {
+          const variantId = e.target.value;
+          selectedVariants.set(e.target.id, variantId);
+          const price = e.target.querySelector('option[value="' + variantId + '"]').dataset.price;
+          e.target.parentNode.querySelector('.variant-price').textContent = price;
+
+         const form = e.target.parentElement;
+         setAddDisabled(form);
+      });
+  }
+);
+
+
+function render() {
+  selectedVariants.forEach(function (variantId, selectId) {
+      const select = document.getElementById(selectId);
+      if (select) {
+          select.value = variantId;
+      }
+  });
+  Array.prototype.forEach.call(
+      document.querySelectorAll('.bundle-builder--add-to-bundle-form'),
+      setAddDisabled,
+  );
+}
+/* Change variant to what was selected last */
+document.body.addEventListener('bundlebuilder:render', render);
+render()
+</script>
+{% if bundle.published %}
+  <div class="p-section-md relative">
+    <div class="absolute left-0 top-0 w-full h-full z-[0]">
+      <img src="{{ bundle.header_image_url }}" class="h-full w-full object-cover">
+    </div>
+    <div class="container relative">
+      <div class="grid grid-cols">
+        <div class="col-start-1 col-end-7 lg:col-start-4 lg:col-end-10 rounded bg-white px-24 pt-24 pb-32">
+          <h1 class="text-display font-display font-normal text-center">{{ bundle.external_name }}</h1>
+          <div class="text-center mt-16">{{ bundle.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-section-sm">
+    <div class="container">
+      <div class="grid grid-cols gap-grid">
+        <div class="col-start-1 col-end-7 lg:col-end-10">
+          <div>
+            <ul class="flex justify-center gap-48 lg:gap-[116px]">
+            {% for section in bundle.sections %}
+              <li class="flex flex-col items-center">
+                <div class="mb-6 w-24 h-24 bg-primary rounded-full flex justify-center items-center">
+                  {% assign step_number = section.index | add: 1 %}
+                  <span class="text-body-copy-small text-white">{{ step_number }}</span>
+                </div>
+                <span class="text-center font-open-sans text-[12px]">{{ section.name }}</span>
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+          <h2 class="text-center mt-24">{{ bundle.current_section.name }}</h2>
+          <div class="mt-24 product-box !grid grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-24">
+            {% for product in bundle.current_section.products %}
+              <div class="product">
+                <img class="rounded aspect-square w-full object-cover" src="{{ product.image.src }}" />
+                <h6 class="mt-12">{{ product.title }}</h6>
+                  <div class="mt-12">
+                    {% add_to_bundle_form bundle.current_section %}
+                      {% if product.available_variants.size > 1 %}
+                          <div class="tsk-field-group">
+                            <select name="variant" id="select-{{ bundle.current_section.index }}-{{ product.id }}">
+                              {% for variant in product.available_variants %}
+                                <option value="{{ variant.id }}" data-price={{ variant.price | money }}>
+                                  {{ variant.title }}
+                                </option>
+                              {% endfor %}
+                            </select>
+                          </div>
+                      {% else %}
+                          <input type="hidden" name="variant" value="{{ product.available_variants[0].id }}" />
+                          <p>{{ product.available_variants[0].title }}</p>
+                      {% endif %}
+                      <span class="inline-block variant-price mt-12">{{ product.available_variants[0].price | money }}</span>
+                      <button class="mt-16 block w-full text-white py-8 px-20 rounded-button font-bold text-center bg-primary hover:bg-primary-hover" type="submit">Add</button>
+                    {% end_add_to_bundle_form %}
+                  </div>
+                  {% for variant in product.variants_in_bundle %}
+                    {% change_quantity_form %}
+                    <div class="mt-12 px-12 py-8 rounded-[16px] border border-border w-[60%] mx-auto">
+                      <span class="text-center block">{{ variant.title }}</span>
+                      <input type="hidden" name="variant" value="{{ variant.id }}" />
+                      <input type="hidden" name="section" value="{{ bundle.current_section.index }}" />
+                      <div class="flex justify-between">
+                        <button type="submit" name="remove">-</button>
+                          <span class="text-center">{{ variant.count }}</span>
+                        <button type="submit" name="add">+</button>
+                      </div>
+                    </div>
+                    {% end_change_quantity_form %}
+                  {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+          
+          <div class="flex mt-40">
+            {% if bundle.has_next_section %}
+              <div class="self-end">
+                {% section_switch_form %}
+                    <input type="hidden" name="section" value="{{ bundle.current_section.index | plus: 1 }}" />
+                    <button class="text-white py-8 px-20 rounded-button font-bold text-center bg-primary hover:bg-primary-hover disabled:bg-disabled disabled:text-disabled-high-contrast disabled:cursor-not-allowed" type="submit">Next</button>
+                {% end_section_switch_form %}
+              </div>
+            {% endif %}
+          
+            {% if bundle.has_prev_section %}
+              <div class="self-start">
+                {% section_switch_form %}
+                    <input type="hidden" name="section" value="{{ bundle.current_section.index | plus: -1 }}" />
+                    <button class="text-primary py-8 px-20 rounded-button font-bold border-primary border-[2px] bg-white" type="submit">Previous</button>
+                {% end_section_switch_form %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-start-1 col-end-7 lg:col-start-10 lg:col-end-13">
+          <div class="rounded-[16px] p-24 pb-32 border border-[#707070]">
+          {% if bundle.errors.size > 0 %}
+            <ul class="">
+              {% for error in bundle.errors %}
+                <li class="py-4">{{ error }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        
+          <div class="bundle-content">
+              {% if bundle.content.items.size == 0 %}
+                <span class="inline-block mt-12">Your bundle is empty</span>
+              {% else %}
+                {% if settings.note_enabled %}
+                    <div class="tsk-field-group mt-32">
+                      <label>{{ settings.note_label }}{% if settings.note_required %} (required){% endif %}</label>
+                      {% note_field %}{{ settings.note_text }}{% end_note_field %}
+                    </div>
+                    {% if settings.note_prompt_visible %}
+                      <div class="note-field--error-message">
+                        <p>Note required before adding to cart.</p>
+                      </div>
+                    {% endif %}
+                {% endif %}
+        
+                  {% add_to_cart_form %}
+                    <button class="text-white mt-12 py-8 px-20 rounded-button font-bold text-center bg-primary hover:bg-primary-hover disabled:bg-disabled disabled:text-disabled-high-contrast disabled:cursor-not-allowed" type="submit"{% unless bundle.can_add_to_cart %} disabled="disabled"{% endunless %}>
+                      {% if bundle.adding_to_cart %}
+                          Processing...
+                      {% else %}
+                          Add bundle to cart
+                      {% endif %}
+                    </button>
+                  {% end_add_to_cart_form %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+{% else %}
+  <p>Sorry, this bundle is currently unavailable.</p>
+{% endif %}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cb754a67fdd2250","token":"13ef8b465a1f4e0faed1ee744ddae6aa","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
