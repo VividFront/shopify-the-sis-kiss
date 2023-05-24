@@ -18,23 +18,23 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__warnings {
   display: none;
   text-align: center;
-  padding: 3rem 0 1rem;
+  padding: 30px 0 10px;
 }
 
 .cart__empty-text {
-  margin: 4.5rem 0 2rem;
+  margin: 45px 0 20px;
 }
 
 .cart__contents > * + * {
-  margin-top: 2.5rem;
+  margin-top: 25px;
 }
 
 .cart__login-title {
-  margin: 5.5rem 0 0.5rem;
+  margin: 55px 0 5px;
 }
 
 .cart__login-paragraph {
-  margin-top: 0.8rem;
+  margin-top: 8px;
 }
 
 .cart__login-paragraph a {
@@ -43,11 +43,11 @@ cart-items.is-empty .title-wrapper-with-link,
 
 @media screen and (min-width: 990px) {
   .cart__warnings {
-    padding: 7rem 0 1rem;
+    padding: 70px 0 10px;
   }
 
   .cart__empty-text {
-    margin: 0 0 3rem;
+    margin: 0 0 30px;
   }
 }
 
@@ -57,7 +57,7 @@ cart-items {
 
 .cart__items {
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 30px;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
@@ -66,11 +66,11 @@ cart-items {
 }
 
 .cart__footer {
-  padding: 4rem 0 0;
+  padding: 40px 0 0;
 }
 
 .cart__footer-wrapper:last-child .cart__footer {
-  padding-bottom: 5rem;
+  padding-bottom: 50px;
 }
 
 .cart__footer > div:only-child {
@@ -78,7 +78,7 @@ cart-items {
 }
 
 .cart__footer > * + * {
-  margin-top: 4rem;
+  margin-top: 40px;
 }
 
 .cart__footer .discounts {
@@ -123,7 +123,6 @@ cart-items {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-bottom: 4rem;
   }
 
   .cart__contents > * + * {
@@ -145,11 +144,11 @@ cart-items {
   }
 
   .cart__footer > * {
-    width: 35rem;
+    width: 350px;
   }
 
   .cart__footer > * + * {
-    margin-left: 4rem;
+    margin-left: 40px;
     margin-top: 0;
   }
 }
@@ -164,11 +163,6 @@ cart-items {
 
 .cart__update-button {
   margin-bottom: 1rem;
-}
-
-.cart__dynamic-checkout-buttons {
-  max-width: 36rem;
-  margin: 0 auto;
 }
 
 .cart__blocks > * + * {
@@ -186,13 +180,13 @@ cart-items {
 }
 
 .tax-note {
-  margin: 2.2rem 0 1.6rem auto;
+  margin: 22px 0 16px auto;
   text-align: center;
   display: block;
 }
 
 .cart__checkout-button {
-  max-width: 36rem;
+  max-width: 360px;
 }
 
 .cart__ctas {
@@ -201,7 +195,7 @@ cart-items {
 
 @media screen and (min-width: 750px) {
   .cart-note {
-    max-width: 35rem;
+    max-width: 350px;
   }
 
   .cart__update-button {
@@ -210,7 +204,7 @@ cart-items {
   }
 
   .tax-note {
-    margin-bottom: 2.2rem;
+    margin-bottom: 22px;
     text-align: right;
   }
 
@@ -220,6 +214,6 @@ cart-items {
 
   .cart__ctas {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
   }
 }
