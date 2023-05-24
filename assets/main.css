@@ -1466,6 +1466,9 @@ a:hover {
 .max-w-\[60\%\] {
   max-width: 60%;
 }
+.max-w-\[440px\] {
+  max-width: 440px;
+}
 .flex-\[0_1_25\%\] {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 25%;
@@ -4978,6 +4981,15 @@ product-modal .product-media-modal__content img {
 .\[\&_a\]\:text-white a {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.\[\&_iframe\]\:w-full iframe {
+  width: 100%;
+}
+.\[\&_iframe\]\:\!w-full iframe {
+  width: 100% !important;
+}
+.\[\&_iframe\]\:\!max-w-none iframe {
+  max-width: none !important;
 }
 .\[\&_li\]\:mt-12 li {
   margin-top: calc(12rem / 16);
