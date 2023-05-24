@@ -1,0 +1,91 @@
+{% assign hero_text_color = '' %}
+{% assign breadcrumb_text_class = '' %}
+{% if collection.metafields.custom.hero_white_text == true %}
+  {% assign hero_text_color = 'text-white' %}
+  {% assign breadcrumb_text_class = 'text-white [&_a]:text-white' %}
+{% endif %}
+
+<div class="relative lg:mb-72 lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]" style="background-color: {{ collection.metafields.custom.hero_background_color | default: '#fff' }}">
+  <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+    {% render 'breadcrumbs', breadcrumb_classes: breadcrumb_text_class %}
+  </div>
+  {%- liquid
+    assign desktop_image_class = 'h-full w-full object-cover'
+    assign mobile_image_class = 'h-full w-full object-cover md:hidden'
+    if collection.metafields.custom.hero_background_image_mobile != blank
+      assign desktop_image_class = 'h-full w-full object-cover [display:none] md:block'
+    endif
+    assign image_position = collection.metafields.custom.hero_image_position | default: 'center'
+    assign desktop_image_class = desktop_image_class | append: ' object-' | append: image_position
+    assign mobile_image_class = mobile_image_class | append: ' object-' | append: image_position
+  -%}
+  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[0]">
+    {% if collection.metafields.custom.hero_background_image != blank %}
+      {{ collection.metafields.custom.hero_background_image.value | image_url: width: 1500 | image_tag:
+        width: collection.metafields.custom.hero_background_image.width,
+        class: desktop_image_class,
+        sizes: collection.metafields.custom.hero_background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: collection.metafields.custom.hero_background_image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+    {% if collection.metafields.custom.hero_background_image_mobile != blank %}
+      {{ collection.metafields.custom.hero_background_image_mobile | image_url: width: 1500 | image_tag:
+        width: collection.metafields.custom.hero_background_image_mobile.width,
+        class: mobile_image_class,
+        widths: '375, 550, 750',
+        alt: collection.metafields.custom.hero_background_image_mobile.alt | escape
+      }}
+    {% endif %}
+    {% if collection.metafields.custom.hero_influencer_tag != blank %}
+      <span class="absolute bottom-12 left-12 text-body-copy-small {{ hero_text_color }}">{{ collection.metafields.custom.hero_influencer_tag }}</span>
+    {% endif %}
+  </div>
+  <div class="relative container lg:grid grid-cols py-24 lg:py-0">
+    {%- liquid 
+      assign content_col_start = 'lg:col-start-1 xl:col-start-2'
+      assign content_col_end = 'lg:col-end-6'
+    -%}
+    <div class="{{ content_col_start }} {{ content_col_end }} {{ hero_text_color }}">
+      <h6 class="mb-8">{{ collection.metafields.custom.hero_subtitle | default: 'Introducing' }}</h6>
+      <h1 class="text-display font-display font-normal">{{ collection.title }}</h1>
+      {% if collection.metafields.custom.hero_body != blank %}
+        <p class="mt-8 lg:mt-24 text-body-copy-large">{{ collection.metafields.custom.hero_body }}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% if section.settings.explore_badge != blank %}
+    <div class="absolute bottom-0 w-full flex justify-center translate-y-[50%] z-[1]">
+      {{ section.settings.explore_badge | image_url: width: 246 | image_tag:
+        width: section.settings.explore_badge.width,
+        class: 'w-[124px] lg:h-[124px] object-contain',
+        sizes: section.settings.explore_badge.sizes,
+        widths: '246',
+        alt: section.settings.explore_badge.alt | escape
+      }}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Collaborator Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "explore_badge",
+      "label": "Explore Badge"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collaborator Hero"
+    }
+  ],
+  "templates": ["collection"]
+}
+{% endschema %}

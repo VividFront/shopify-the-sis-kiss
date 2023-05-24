@@ -1,10 +1,10 @@
-<div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
+<div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]" style="background-color: {{ section.settings.color | default: '#fff' }}">
   {% if section.settings.show_breadcrumbs == true %}
     <div class="lg:absolute lg:left-0 lg:top-0 w-full">
       {% render 'breadcrumbs' %}
     </div>
   {% endif %}
-  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
+  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[0]">
     {% if section.settings.image != blank %}
       {{ section.settings.image | image_url: width: 1500 | image_tag:
         width: section.settings.image.width,
@@ -25,10 +25,10 @@
       }}
     {% endif %}
     {% if section.settings.designer_tag != blank %}
-      <span class="absolute bottom-12 left-12 text-body-copy-small text-white">{{ section.settings.designer_tag}}</span>
+      <span class="absolute bottom-12 left-12 text-body-copy-small {{ section.settings.tag_color }}">{{ section.settings.designer_tag}}</span>
     {% endif %}
   </div>
-  <div class="container lg:grid grid-cols py-24 lg:py-0">
+  <div class="relative container lg:grid grid-cols py-24 lg:py-0">
     {%- liquid 
       assign content_col_end = 'lg:col-end-5'
       assign content_col_start = 'lg:col-start-2'
@@ -86,6 +86,22 @@
     },
     {
       "type": "select",
+      "id": "tag_color",
+      "label": "Tag Color",
+      "options": [
+        {
+          "value": "text-white",
+          "label": "White"
+        },
+        {
+          "value": "text-copy",
+          "label": "Body"
+        }
+      ],
+      "default": "text-white"
+    },
+    {
+      "type": "select",
       "id": "content_width",
       "label": "Content Width",
       "options": [
@@ -120,6 +136,11 @@
       "type": "checkbox",
       "id": "show_breadcrumbs",
       "label": "Show breadcrumbs"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Background Color"
     }
   ],
   "blocks": [

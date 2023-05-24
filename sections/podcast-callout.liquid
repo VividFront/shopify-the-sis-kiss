@@ -1,3 +1,14 @@
+{%- liquid 
+  assign lottie_class = 'max-w-[60%] lg:max-w-auto w-auto h-auto absolute bottom-0'
+  assign logo_circle_col_class = 'md:col-start-2 md:col-end-6'
+  if section.settings.logo_circle_position == 'left'
+    assign lottie_class = lottie_class | append: ' right-0'
+  elsif section.settings.logo_circle_position == 'right'
+    assign lottie_class = lottie_class | append: ' left-0'
+    assign logo_circle_col_class = 'md:col-start-8 md:col-end-12'
+  endif
+-%}
+
 <div class="relative lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]">
   <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[-1]">
     {% if section.settings.image != blank %}
@@ -19,16 +30,13 @@
         alt: section.settings.image_mobile.alt | escape
       }}
     {% endif %}
-    {% if settings.lottie_podcast_ribbon_homepage != blank %}
-      {% render 'lottie', json_url: settings.lottie_podcast_ribbon_homepage, class: 'max-w-[60%] lg:max-w-auto w-auto h-auto absolute right-0 bottom-0' %}
-      {% comment %} <div class="absolute right-0 bottom-0 h-full flex items-end justify-end">
-        {% render 'lottie', json_url: settings.lottie_podcast_ribbon_homepage, class: 'grow-0 h-[60%] lg:h-full mt-auto ml-auto' %}
-      </div> {% endcomment %}
+    {% if section.settings.ribbon_lottie_json != blank %}
+      {% render 'lottie', json_url: section.settings.ribbon_lottie_json, class: lottie_class %}
     {% endif %}
   </div>
   <div class="lg:container bg-ui-pink lg:bg-transparent">
     <div class="md:grid grid-cols">
-      <div class="md:col-start-2 md:col-end-6 flex">
+      <div class="{{ logo_circle_col_class }} flex">
         <div class="pt-32 pb-48 lg:py-0 lg:aspect-square lg:rounded-full lg:bg-ui-pink px-32 flex flex-col items-center justify-center h-full text-center">
           {% if section.settings.logo != blank %}
             <img class="max-h-96 w-full object-contain" loading="lazy" src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ section.settings.logo.alt }}"/>
@@ -80,13 +88,33 @@
       "type": "url",
       "id": "cta_url",
       "label": "CTA Url"
+    },
+    {
+      "type": "url",
+      "id": "ribbon_lottie_json",
+      "label": "Ribbon Lottie JSON"
+    },
+    {
+      "type": "select",
+      "id": "logo_circle_position",
+      "label": "Logo Circle Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     }
   ],
   "presets": [
     {
       "name": "Podcast Callout"
     }
-  ],
-  "templates": ["index"]
+  ]
 }
 {% endschema %}

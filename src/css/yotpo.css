@@ -113,3 +113,19 @@
 .yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
   @apply p-0;
 }
+
+.yotpo.yotpo-main-widget {
+  @apply p-section-md;
+}
+
+.yotpo-lightbox-wrapper
+  .yotpo-lightbox-products-main
+  .yotpo-lightbox-product-button {
+  @apply !bg-primary !rounded-button;
+}
+
+.yotpo-lightbox-wrapper
+  .yotpo-lightbox-products-footer
+  .yotpo-lightbox-more-products {
+  @apply !text-primary;
+}

@@ -40,5 +40,5 @@
 }
 
 .wishlist-whale-wrapper #wishlist-formContainer {
-  @apply max-w-[calc(100%_-_32px)] mx-auto px-16 mb-60;
+  @apply max-w-[calc(100%_-_32px)] mx-auto px-16 pb-48 mb-60;
 }

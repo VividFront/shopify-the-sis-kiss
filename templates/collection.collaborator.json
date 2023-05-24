@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "ae01f731-9608-4135-94b6-40a1ad00daed": {
+      "type": "collaborator-hero",
+      "settings": {
+        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
+      }
+    },
+    "product-grid": {
+      "type": "collaborator-collection",
+      "settings": {}
+    },
+    "f4c1a069-311f-4f47-9202-67bca3ee48ba": {
+      "type": "yotpo-gallery",
+      "settings": {
+        "heading": "See How Other TSK Ladies Are Layering",
+        "gallery_id": "6467939ccb6260364b9b9478"
+      }
+    },
+    "f742666f-e94f-415a-9ab2-94669d7550a2": {
+      "type": "icon-section",
+      "blocks": {
+        "64dbc44c-7246-4ceb-9b08-8537552f709b": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Free Shipping",
+            "body": "Free shipping on all domestic US orders when you spend $150.",
+            "large_text": ""
+          }
+        },
+        "c5d4ab1d-11b0-4b82-84fc-e4924ff9c6be": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/rewards-icon.png",
+            "heading": "Sis Kiss Rewards",
+            "body": "Earn rewards just for following us on social media, sharing your birthday, and more.",
+            "large_text": ""
+          }
+        },
+        "a0247a74-4ed3-4a50-8bc6-e2530c56eb0a": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/custom-necklace.png",
+            "heading": "Over 100 Custom Styles",
+            "body": "Shop over 100 custom styles to design the perfect gift for yourself and your loved ones.",
+            "large_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "64dbc44c-7246-4ceb-9b08-8537552f709b",
+        "c5d4ab1d-11b0-4b82-84fc-e4924ff9c6be",
+        "a0247a74-4ed3-4a50-8bc6-e2530c56eb0a"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "ae01f731-9608-4135-94b6-40a1ad00daed",
+    "product-grid",
+    "f4c1a069-311f-4f47-9202-67bca3ee48ba",
+    "f742666f-e94f-415a-9ab2-94669d7550a2"
+  ]
+}

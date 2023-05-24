@@ -1209,6 +1209,14 @@ class VariantSelects extends HTMLElement {
           `Inventory-${this.dataset.section}`,
         );
 
+        this.currentVariant.options.forEach((option, index) => {
+          const optionLabelElement = document.getElementById(
+            `option${index + 1}_value`,
+          );
+          if (!optionLabelElement) return;
+          optionLabelElement.innerHTML = option;
+        });
+
         if (source && destination) destination.innerHTML = source.innerHTML;
         if (inventorySource && inventoryDestination)
           inventoryDestination.innerHTML = inventorySource.innerHTML;

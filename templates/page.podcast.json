@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "podcast-hero": {
+      "type": "podcast-hero",
+      "blocks": {
+        "e1b550e7-e14b-43c3-a2dc-01edb4f5cbef": {
+          "type": "heading",
+          "settings": {
+            "text": "Wildly Unprofessional",
+            "visually_hidden": true
+          }
+        },
+        "1b06720e-113c-4a88-952b-4d301641095e": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/WU-logo_2x_00f44470-91c5-4ded-b2ce-0527767b9f46.png"
+          }
+        },
+        "7f57173b-1fce-47e2-b4b8-392a1b7433bb": {
+          "type": "body",
+          "settings": {
+            "text": "Meet Meg: Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks."
+          }
+        },
+        "d3a4eca2-5c6f-40fe-a5a9-46653b248a35": {
+          "type": "cta",
+          "settings": {
+            "text": "Listen Now",
+            "url": "shopify://pages/zodiac"
+          }
+        }
+      },
+      "block_order": [
+        "e1b550e7-e14b-43c3-a2dc-01edb4f5cbef",
+        "1b06720e-113c-4a88-952b-4d301641095e",
+        "7f57173b-1fce-47e2-b4b8-392a1b7433bb",
+        "d3a4eca2-5c6f-40fe-a5a9-46653b248a35"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Fixed_Height.png",
+        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-podcast-cropped.json?v=1684881086"
+      }
+    }
+  },
+  "order": ["podcast-hero"]
+}
