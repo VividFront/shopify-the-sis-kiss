@@ -27,9 +27,9 @@
                 {% render block %}
               {%- when 'subtotal' -%}
                 <div class="js-contents" {{ block.shopify_attributes }}>
-                  <div class="totals">
-                    <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-                    <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                  <div class="totals !justify-end">
+                    <h2 class="font-normal totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
+                    <p class="totals__subtotal-value font-bold">{{ cart.total_price | money }}</p>
                   </div>
 
                   <div>
@@ -46,7 +46,7 @@
                     {%- endif -%}
                   </div>
 
-                  <small class="tax-note caption-large rte">
+                  <p class="mt-16 mb-32 rte text-right">
                     {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                       {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
                     {%- elsif cart.taxes_included -%}
@@ -56,10 +56,10 @@
                     {%- else -%}
                       {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                     {%- endif -%}
-                  </small>
+                  </p>
                 </div>
               {%- else -%}
-                <div class="cart__ctas justify-end" {{ block.shopify_attributes }}>
+                <div class="cart__ctas justify-center lg:justify-end" {{ block.shopify_attributes }}>
                   <noscript>
                     <button type="submit" class="cart__update-button inline-block text-white text-[calc(18rem/16)] leading-[calc(26rem/16)] bg-primary py-8 px-24 rounded-button-lg font-bold border-primary border-[2px]" form="cart">
                       {{ 'sections.cart.update' | t }}
@@ -80,8 +80,10 @@
                   </button>
                 </div>
 
+                <a href="{%- if section.settings.empty_cart_cta_link != blank -%}{{ section.settings.empty_cart_cta_link }}{%- else -%}{{ routes.all_products_collection_url }}{%- endif -%}" class="text-center lg:text-right block mt-32 font-bold underline">{{ 'general.continue_shopping' | t }}</a>
+
                 {%- if additional_checkout_buttons -%}
-                  <div class="cart__dynamic-checkout-buttons additional-checkout-buttons flex justify-end">
+                  <div class="cart__dynamic-checkout-buttons additional-checkout-buttons flex justify-center lg:justify-end">
                     {{ content_for_additional_checkout_buttons }}
                   </div>
                 {%- endif -%}
