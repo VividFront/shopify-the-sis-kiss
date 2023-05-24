@@ -42,7 +42,7 @@
             <div class="absolute right-0 bottom-0">
               {{ section.settings.sticker | image_url: width: 800 | image_tag:
                 width: section.settings.sticker.width,
-                class: 'h-[160px] lg:h-[248px] object-contain',
+                class: 'h-[160px] lg:h-[248px] object-contain object-right',
                 sizes: section.settings.sticker.sizes,
                 widths: '375, 550, 750',
                 alt: section.settings.sticker.alt | escape
@@ -51,7 +51,13 @@
           {% endif %}
         </div>
       </div>
-      <div class="mt-32 lg:mt-0 lg:col-start-6 lg:col-end-12">
+      {%- liquid 
+        assign mobile_margin = 'mt-28'
+        if section.settings.sticker != blank
+          assign mobile_margin = 'mt-16'
+        endif
+      -%}
+      <div class="{{ mobile_margin }} lg:mt-0 lg:col-start-6 lg:col-end-12">
         <div class="flex flex-col justify-center items-start h-full">
           <h2>{{ section.settings.heading }}</h2>
           <div class="mt-12 richtext-content">{{ section.settings.body }}</div>
