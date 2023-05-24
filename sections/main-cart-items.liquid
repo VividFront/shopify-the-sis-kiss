@@ -283,13 +283,21 @@
                 <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
               </form>
 
-            <div class="cart__warnings">
+            <div>
               {% if cart == empty %}
               <div class="flex justify-center text-center flex-col">
                 <div class="flex justify-center text-primary">
-                  <lottie-player autoplay loop mode="normal" class="w-[300px] h-[300px]" src="https://cdn.shopify.com/s/files/1/0660/1156/2239/files/Cart.json?v=1682106476"></lottie-player>
+                  {% if section.settings.empty_cart_image != blank %}
+                    {{ section.settings.empty_cart_image | image_url: width: 196 | image_tag:
+                      width: section.settings.empty_cart_image.width,
+                      class: 'w-98 h-98 object-contain',
+                      sizes: section.settings.empty_cart_image.sizes,
+                      widths: '196',
+                      alt: section.settings.empty_cart_image.alt | escape
+                    }}
+                  {% endif %}
                 </div>
-                <h1 class="cart__empty-text text-display">{{ 'sections.cart.empty' | t }}</h1>
+                <h1 class="h2 mt-12">Your Cart is Empty</h1>
                 {% if section.settings.empty_cart_cta_text != blank %}
                   <div class="flex justify-center mt-24 lg:mt-32">
                     {% render 'button-large', text: section.settings.empty_cart_cta_text, url: section.settings.empty_cart_cta_link %}
@@ -299,8 +307,8 @@
               {% endif %}
               {%- if shop.customer_accounts_enabled and customer == nil and cart != empty -%}
                 <div class="py-16 border-border border-y my-32 flex items-center justify-between gap-12 flex-wrap">
-                  <h3 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h3>
-                  <p class="cart__login-paragraph">
+                  <h3>{{ 'sections.cart.login.title' | t }}</h3>
+                  <p class="[&_a]:underline [&_a]:font-bold">
                     {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
                   </p>
                 </div>
@@ -331,6 +339,11 @@
       "type": "url",
       "id": "empty_cart_cta_link",
       "label": "CTA Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "empty_cart_image",
+      "label": "Empty Cart Image"
     }
   ]
 }

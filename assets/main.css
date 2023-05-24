@@ -1350,6 +1350,10 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.h-98 {
+  height: calc(98rem / 16);
+  height: calc(98rem / var(--vf-font-size-root));
+}
 .max-h-96 {
   max-height: calc(96rem / 16);
   max-height: calc(96rem / var(--vf-font-size-root));
@@ -1452,6 +1456,10 @@ a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-98 {
+  width: calc(98rem / 16);
+  width: calc(98rem / var(--vf-font-size-root));
 }
 .max-w-\[104px\] {
   max-width: 104px;
@@ -5014,9 +5022,15 @@ product-modal .product-media-modal__content img {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
+.\[\&_a\]\:font-bold a {
+  font-weight: 700;
+}
 .\[\&_a\]\:text-white a {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.\[\&_a\]\:underline a {
+  text-decoration-line: underline;
 }
 .\[\&_iframe\]\:\!w-full iframe {
   width: 100% !important;
