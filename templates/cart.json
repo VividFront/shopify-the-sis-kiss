@@ -4,7 +4,8 @@
       "type": "main-cart-items",
       "settings": {
         "empty_cart_cta_text": "Continue Shopping",
-        "empty_cart_cta_link": ""
+        "empty_cart_cta_link": "shopify://collections",
+        "empty_cart_image": "shopify://shop_images/cart.png"
       }
     },
     "cart-footer": {
