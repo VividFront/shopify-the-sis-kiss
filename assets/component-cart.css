@@ -217,3 +217,10 @@ cart-items {
     gap: 10px;
   }
 }
+
+.additional-checkout-buttons > * {
+  display: block !important;
+}
+.additional-checkout-buttons {
+  display: block !important;
+}

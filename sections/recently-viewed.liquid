@@ -1,0 +1,84 @@
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+
+<div class="p-section-md relative overflow-hidden">
+  <div class="absolute left-0 top-0 w-full h-full">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <div class="container relative z-[1]">
+    <h2 class="text-center">{{ section.settings.heading }}</h2>
+    <div class="mt-18">
+      <div class="splide" data-vf-recenlty-viewed-slider>
+        <div class="splide__track overflow-visible">
+          <ul class="splide__list md:!flex md:gap-grid" id="recently-viewed-products">
+            {% comment %} products from script added here {% endcomment %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% raw %}
+  <script id="recently-viewed-product-template" type="text/x-jquery-tmpl">
+  <li id="product-${handle}" class="splide__slide md:basis-1/4 md:shrink">
+    <div class="flex flex-col">
+      <div class="image">
+        <a href="${url}">
+          <img class="rounded aspect-square w-full" src="${Shopify.Products.resizeImage(featured_image, "medium")}" />
+        </a>
+      </div>
+      <div class="mt-16">
+        <h6><a class="hover:underline" href="${url}">${title}</a></h6>
+        <p class="mt-8">{{if price_varies}}From {{/if}}${Shopify.formatMoney(price)}</p>
+      </div>
+    </div>
+  </li>
+  </script>
+{% endraw %}
+
+<script>
+  Shopify.Products.showRecentlyViewed( {
+    howManyToShow: 4,
+    onComplete: function() {
+      // mount slider after products are added to dom
+      if (window.RecentlyViewedSlider) {
+        window.RecentlyViewedSlider.mount();
+      }
+    } 
+  } );
+</script>
+
+{% schema %}
+{
+  "name": "Recently Viewed",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Recently Viewed"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recently Viewed"
+    }
+  ]
+}
+{% endschema %}
