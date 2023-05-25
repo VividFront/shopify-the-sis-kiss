@@ -1359,10 +1359,6 @@ a:hover {
 .h-full {
   height: 100%;
 }
-.h-12 {
-  height: calc(12rem / 16);
-  height: calc(12rem / var(--vf-font-size-root));
-}
 .max-h-96 {
   max-height: calc(96rem / 16);
   max-height: calc(96rem / var(--vf-font-size-root));
@@ -1924,11 +1920,6 @@ a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-}
-.bg-disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgba(222, 222, 222, var(--tw-bg-opacity));
-  background-color: rgb(var(--vf-color-disabled) / var(--tw-bg-opacity));
 }
 .bg-curvy-badge {
   background-image: url('data:image/svg+xml,%3C%3Fxml version=%271.0%27 encoding=%27UTF-8%27%3F%3E%3Csvg id=%27Layer_2%27 xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 217.91 217.91%27%3E%3Cdefs%3E%3Cstyle%3E.curvy-badge%7Bfill:%23231f20;%7D%3C/style%3E%3C/defs%3E%3Cg id=%27Layer_1-2%27%3E%3Cpath class=%27curvy-badge%27 d=%27m116.19,7.92l20.93-6.77c10.98-3.55,22.91,1.39,28.15,11.66l10.01,19.59c2.25,4.4,5.83,7.98,10.23,10.23l19.59,10.01c10.27,5.25,15.21,17.18,11.66,28.15l-6.77,20.93c-1.52,4.7-1.52,9.77,0,14.47l6.77,20.93c3.55,10.98-1.39,22.91-11.66,28.15l-19.59,10.01c-4.4,2.25-7.98,5.83-10.23,10.23l-10.01,19.59c-5.25,10.27-17.18,15.21-28.15,11.66l-20.93-6.77c-4.7-1.52-9.77-1.52-14.47,0l-20.93,6.77c-10.98,3.55-22.91-1.39-28.15-11.66l-10.01-19.59c-2.25-4.4-5.83-7.98-10.23-10.23l-19.59-10.01c-10.27-5.25-15.21-17.18-11.66-28.15l6.77-20.93c1.52-4.7,1.52-9.77,0-14.47l-6.77-20.93c-3.55-10.98,1.39-22.91,11.66-28.15l19.59-10.01c4.4-2.25,7.98-5.83,10.23-10.23l10.01-19.59c5.25-10.27,17.18-15.21,28.15-11.66l20.93,6.77c4.7,1.52,9.77,1.52,14.47,0Z%27/%3E%3C/g%3E%3C/svg%3E');
@@ -5015,13 +5006,6 @@ product-modal .product-media-modal__content img {
 }
 .\[\&_\+_\.tsk-product-accordion\]\:mt-0 + .tsk-product-accordion {
   margin-top: 0px;
-}
-.\[\&_\.is-active\]\:scroll-mt-50 .is-active {
-  scroll-margin-top: calc(50rem / 16);
-  scroll-margin-top: calc(50rem / var(--vf-font-size-root));
-}
-.\[\&_\.is-active\]\:scroll-mt-\[500px\] .is-active {
-  scroll-margin-top: 500px;
 }
 .\[\&_\.is-active_p\]\:text-h3 .is-active p {
   font-size: calc(20rem / 16);

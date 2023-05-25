@@ -29687,6 +29687,20 @@
           });
           window.RecentlyViewedSlider = c;
         }
+        document.querySelector('[data-vf-recommended-products-slider]') &&
+          new pr('[data-vf-recommended-products-slider]', {
+            gap: 32,
+            type: 'slide',
+            pagination: !1,
+            arrows: !1,
+            perPage: 4,
+            perMove: 1,
+            destroy: !0,
+            breakpoints: {
+              575: { perPage: 2, destroy: !1 },
+              767: { perPage: 3, gap: 16, destroy: !1 },
+            },
+          }).mount();
       }),
       __webpack_require__(886),
       /Chrome/i.test(navigator.userAgent) &&

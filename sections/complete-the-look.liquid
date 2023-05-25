@@ -25,6 +25,28 @@
         {% endfor %}
       </ul>
     </div>
+    <div class="container">
+      <product-recommendations
+        class="section-{{ section.id }}-padding"
+        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
+      >
+        {% if recommendations.performed and recommendations.products_count > 0 %}
+          <div class="mt-18">
+            <div class="splide" data-vf-recommended-products-slider>
+              <div class="splide__track overflow-visible">
+                <ul class="splide__list md:!flex md:gap-grid">
+                  {% for recommendation in recommendations.products %}
+                    <li class="splide__slide md:basis-1/4 md:shrink">
+                      {% render 'card-product', product: recommendation, show_secondary_image: true %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </product-recommendations>
+    </div>
   </div>
 </div>
 
