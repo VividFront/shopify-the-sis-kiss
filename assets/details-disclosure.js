@@ -69,7 +69,11 @@ class HeaderMenu extends DetailsDisclosure {
       }
     }
 
-    this.mainDetailsToggle.setAttribute('open', '');
+    let that = this;
+
+    this.timer = setTimeout(function () {
+      that.mainDetailsToggle.setAttribute('open', '');
+    }, 200);
   }
 
   onMouseLeave(e) {

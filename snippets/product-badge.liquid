@@ -3,8 +3,8 @@
   tags contains 'badge:trending' or 
   tags contains 'badge:limited' 
 -%}
-{% assign badge_classes = 'flex items-center gap-x-4 shadow-xs rounded-[4px] z-[1] bg-white py-2 px-8 text-body-copy-small' %}
-<div class="absolute top-12 left-8 flex gap-4 flex-wrap">
+{% assign badge_classes = '!flex items-center gap-x-4 shadow-xs rounded-[4px] z-[1] bg-white py-2 px-8 text-body-copy-small' %}
+<div class="!absolute top-12 left-8 !flex gap-4 flex-wrap">
   {%- if tags contains 'badge:new' -%}
     <div class="{{ badge_classes }}">
       <img src="{{ settings.emoji_new }}" width="16" height="16"><span class="shrink-0">New</span>
