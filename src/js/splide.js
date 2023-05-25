@@ -149,6 +149,32 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     });
   }
+
+  if (document.querySelector('[data-vf-recenlty-viewed-slider]')) {
+    const recentlyViewed = new Splide('[data-vf-recenlty-viewed-slider]', {
+      gap: 32,
+      type: 'slide',
+      pagination: false,
+      arrows: false,
+      perPage: 4,
+      perMove: 1,
+      destroy: true,
+      breakpoints: {
+        575: {
+          perPage: 2,
+          destroy: false,
+        },
+        767: {
+          perPage: 3,
+          gap: 16,
+          destroy: false,
+        },
+      },
+    });
+
+    // recentlyViewed.mount();
+    window.RecentlyViewedSlider = recentlyViewed;
+  }
 });
 
 // pink bar width = sliders container * (8/12) + list item width + x padding + gap

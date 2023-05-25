@@ -40,7 +40,120 @@
         "image": "shopify://shop_images/Fixed_Height.png",
         "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-podcast-cropped.json?v=1684881086"
       }
+    },
+    "a8fe3ca0-9e1c-41a0-abfa-0fcc08097f40": {
+      "type": "podcast-platforms",
+      "blocks": {
+        "81b2d880-bb53-446a-89bb-ccb753005000": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/hero_icon__c135x5gz14mu_large_4545ca6d-7ed2-45e3-b94c-397ae235f51f.png",
+            "link": "https://podcasts.apple.com/us/podcast/wildly-unprofessional/id1680051979"
+          }
+        },
+        "49198738-42a6-46a8-931f-24311aac9808": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/pngwing.com.png",
+            "link": "https://open.spotify.com/show/6g3jCkAYEpqGj26bjQ8qmM"
+          }
+        },
+        "039132d4-ff81-4496-b4ba-f2d17fc9044d": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/brand-icon.png",
+            "link": "https://podcastindex.org/podcast/5610901"
+          }
+        },
+        "753496a6-ca1c-44ec-9866-8c086321c2d2": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/overcastCanvas-group.png",
+            "link": "https://overcast.fm/itunes1680051979"
+          }
+        },
+        "3d3560bb-d6d4-47c1-9598-2267fdc2d7bd": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/pngwing.com-2_f57cebfa-a9f0-4f85-9485-5e4dd795bd64.png",
+            "link": "https://music.amazon.com/podcasts/108e1fa8-07bd-494c-87da-99fc889f928b/wildly-unprofessional"
+          }
+        },
+        "f33ee890-8bab-4e10-b4e1-090decc47171": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/podcast-addict.png",
+            "link": "https://podcastaddict.com/podcast/wildly-unprofessional/4235646"
+          }
+        },
+        "da21b3a8-bf72-4262-a988-13a5f89c7769": {
+          "type": "podcast_icon",
+          "settings": {
+            "image": "shopify://shop_images/castro.png",
+            "link": "https://castro.fm/podcast/c0c017ed-c460-4ee6-ac6c-82e6af22f86a"
+          }
+        }
+      },
+      "block_order": [
+        "81b2d880-bb53-446a-89bb-ccb753005000",
+        "49198738-42a6-46a8-931f-24311aac9808",
+        "039132d4-ff81-4496-b4ba-f2d17fc9044d",
+        "753496a6-ca1c-44ec-9866-8c086321c2d2",
+        "3d3560bb-d6d4-47c1-9598-2267fdc2d7bd",
+        "f33ee890-8bab-4e10-b4e1-090decc47171",
+        "da21b3a8-bf72-4262-a988-13a5f89c7769"
+      ],
+      "settings": {
+        "heading": "Available on"
+      }
+    },
+    "43f4d3e1-01f9-4776-8429-4a5ea12900b4": {
+      "type": "podcast-preview",
+      "settings": {
+        "background_image": "shopify://shop_images/Background_2x_2.png",
+        "heading": "Preview One of the Wild Ones",
+        "podcast_embed": "<iframe allow=\"autoplay *; encrypted-media *; fullscreen *; clipboard-write\" frameborder=\"0\" height=\"175\" style=\"width:100%;max-width:660px;overflow:hidden;border-radius:10px;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.podcasts.apple.com/us/podcast/ep-1-wildly-unprofessional-x-loverly-grey/id1680051979?i=1000606665006\"></iframe>"
+      }
+    },
+    "29ac43d5-b170-4284-93de-f513935e105d": {
+      "type": "z-pattern-image-left",
+      "settings": {
+        "image": "shopify://shop_images/meg.png",
+        "heading": "Meet Meg",
+        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. </p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. </p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! </p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.</p>",
+        "cta_text": "",
+        "cta_url": "",
+        "sticker": "shopify://shop_images/leopard_2x_befb3c9a-6b18-403d-aa60-ee595d580c32.png",
+        "background_lottie_json": ""
+      }
+    },
+    "066087f6-7f23-4a15-a1b6-452f3be5e360": {
+      "type": "quote-section",
+      "settings": {
+        "quote": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod”",
+        "cta_text": "Listen Now",
+        "cta_url": "https://wildlyunprofessional.buzzsprout.com/",
+        "button_type": "primary_play"
+      }
+    },
+    "251a871e-9853-4ce8-bb6d-91fde0bd99db": {
+      "type": "z-pattern-narrow",
+      "settings": {
+        "image": "shopify://shop_images/pattern.png",
+        "heading": "The Wildly Unprofessional Collection",
+        "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>",
+        "cta_text": "Shop Now",
+        "cta_url": "shopify://collections",
+        "copy_aligment": "center"
+      }
     }
   },
-  "order": ["podcast-hero"]
+  "order": [
+    "podcast-hero",
+    "a8fe3ca0-9e1c-41a0-abfa-0fcc08097f40",
+    "43f4d3e1-01f9-4776-8429-4a5ea12900b4",
+    "29ac43d5-b170-4284-93de-f513935e105d",
+    "066087f6-7f23-4a15-a1b6-452f3be5e360",
+    "251a871e-9853-4ce8-bb6d-91fde0bd99db"
+  ]
 }
