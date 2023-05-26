@@ -13,7 +13,6 @@ if (!customElements.get('media-gallery')) {
 
         this.sliderControlWrapper = this.querySelector('.slider-buttons');
         if (this.sliderControlWrapper) {
-          console.log('slider control wrapper');
           this.sliderControlLinksArray = Array.from(
             this.sliderControlWrapper.querySelectorAll('.slider-counter__link'),
           );
@@ -64,7 +63,6 @@ if (!customElements.get('media-gallery')) {
       }
 
       setActiveMedia(mediaId, prepend) {
-        console.log(mediaId);
         const activeMedia = this.elements.viewer.querySelector(
           `[data-media-id="${mediaId}"]`,
         );
@@ -128,7 +126,6 @@ if (!customElements.get('media-gallery')) {
       }
 
       announceLiveRegion(activeItem, position) {
-        console.log('announce live');
         const image = activeItem.querySelector(
           '.product__modal-opener--image img',
         );

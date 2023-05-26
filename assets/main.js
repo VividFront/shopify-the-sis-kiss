@@ -29582,7 +29582,10 @@
     (pr.defaults = {}),
       (pr.STATES = v),
       document.addEventListener('DOMContentLoaded', function () {
-        if (document.querySelector('[data-vf-trending-slider]')) {
+        if (
+          ((window.Splide = pr),
+          document.querySelector('[data-vf-trending-slider]'))
+        ) {
           var t = new pr('[data-vf-trending-slider]', {
             gap: 32,
             type: 'slide',
@@ -29687,20 +29690,6 @@
           });
           window.RecentlyViewedSlider = c;
         }
-        document.querySelector('[data-vf-recommended-products-slider]') &&
-          new pr('[data-vf-recommended-products-slider]', {
-            gap: 32,
-            type: 'slide',
-            pagination: !1,
-            arrows: !1,
-            perPage: 4,
-            perMove: 1,
-            destroy: !0,
-            breakpoints: {
-              575: { perPage: 2, destroy: !1 },
-              767: { perPage: 3, gap: 16, destroy: !1 },
-            },
-          }).mount();
       }),
       __webpack_require__(886),
       /Chrome/i.test(navigator.userAgent) &&

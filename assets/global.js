@@ -1343,9 +1343,11 @@ class ProductRecommendations extends HTMLElement {
       if (!entries[0].isIntersecting) return;
       observer.unobserve(this);
 
-      fetch(this.dataset.url)
+      window.recommendedPromise = fetch(this.dataset.url);
+      window.recommendedPromise
         .then((response) => response.text())
         .then((text) => {
+          console.log(text);
           const html = document.createElement('div');
           html.innerHTML = text;
           const recommendations = html.querySelector('product-recommendations');

@@ -2,6 +2,8 @@ import Splide from '@splidejs/splide';
 import '@splidejs/splide/css/core';
 
 document.addEventListener('DOMContentLoaded', function () {
+  window.Splide = Splide;
+
   if (document.querySelector('[data-vf-trending-slider]')) {
     const trending = new Splide('[data-vf-trending-slider]', {
       gap: 32,
@@ -175,31 +177,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // recentlyViewed.mount();
     // save in window to mount after recently viewed script runs
     window.RecentlyViewedSlider = recentlyViewed;
-  }
-
-  if (document.querySelector('[data-vf-recommended-products-slider]')) {
-    const recommended = new Splide('[data-vf-recommended-products-slider]', {
-      gap: 32,
-      type: 'slide',
-      pagination: false,
-      arrows: false,
-      perPage: 4,
-      perMove: 1,
-      destroy: true,
-      breakpoints: {
-        575: {
-          perPage: 2,
-          destroy: false,
-        },
-        767: {
-          perPage: 3,
-          gap: 16,
-          destroy: false,
-        },
-      },
-    });
-
-    recommended.mount();
   }
 });
 
