@@ -1,0 +1,31 @@
+<div class="js-video relative aspect-16/9">
+  {% if video_type == 'youtube' %}
+    <div id="video-player-{{ id }}" 
+      class="js-video__player w-full h-full absolute top-0 left-0"
+      data-youtube-id="{{ id }}"
+      data-start="{{ start }}">
+    </div>
+  {% endif %}
+  {% if thumbnail %}
+    <div class="js-video__thumbnail absolute top-0 left-0 h-full w-full group cursor-pointer">
+      {%- comment -%} check if image object or file url {%- endcomment -%}
+      {% if thumbnail.id != nil %}
+        {{ thumbnail | image_url: width: 600 | image_tag:
+          width: thumbnail.width,
+          class: 'w-full h-full object-cover',
+          widths: '375, 550, 750, 1100, 1500',
+          alt: thumbnail.alt | escape
+        }}
+      {% else %}
+        <img
+          src="{{ thumbnail }}"
+          {% unless lazy_load == false %}loading="lazy"{% endunless %}
+          class="w-full h-full object-cover"
+        >
+      {% endif %}
+      <div class="absolute top-[50%] left-[50%] w-62 h-62 bg-primary translate-y-[-50%] translate-x-[-50%] rounded-[50%] flex items-center justify-center text-white group-hover:bg-primary-hover">
+        {%- render 'icon-play' -%}
+      </div>
+    </div>
+  {% endif %}
+</div>

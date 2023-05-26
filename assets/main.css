@@ -1030,6 +1030,9 @@ a:hover {
 .top-\[150px\] {
   top: 150px;
 }
+.top-\[50\%\] {
+  top: 50%;
+}
 .isolate {
   isolation: isolate;
 }
@@ -1085,6 +1088,9 @@ a:hover {
 .col-start-5 {
   grid-column-start: 5;
 }
+.col-start-4 {
+  grid-column-start: 4;
+}
 .col-end-12 {
   grid-column-end: 12;
 }
@@ -1099,6 +1105,9 @@ a:hover {
 }
 .col-end-7 {
   grid-column-end: 7;
+}
+.col-end-10 {
+  grid-column-end: 10;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -1286,6 +1295,9 @@ a:hover {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-16\/9 {
+  aspect-ratio: 16 / 9;
+}
 .h-100 {
   height: calc(100rem / 16);
   height: calc(100rem / var(--vf-font-size-root));
@@ -1358,6 +1370,10 @@ a:hover {
 }
 .h-full {
   height: 100%;
+}
+.h-62 {
+  height: calc(62rem / 16);
+  height: calc(62rem / var(--vf-font-size-root));
 }
 .max-h-96 {
   max-height: calc(96rem / 16);
@@ -1462,6 +1478,10 @@ a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-62 {
+  width: calc(62rem / 16);
+  width: calc(62rem / var(--vf-font-size-root));
 }
 .max-w-\[104px\] {
   max-width: 104px;
@@ -1855,6 +1875,9 @@ a:hover {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
 .border {
   border-width: 1px;
 }
@@ -1924,6 +1947,20 @@ a:hover {
 .bg-curvy-badge {
   background-image: url('data:image/svg+xml,%3C%3Fxml version=%271.0%27 encoding=%27UTF-8%27%3F%3E%3Csvg id=%27Layer_2%27 xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 217.91 217.91%27%3E%3Cdefs%3E%3Cstyle%3E.curvy-badge%7Bfill:%23231f20;%7D%3C/style%3E%3C/defs%3E%3Cg id=%27Layer_1-2%27%3E%3Cpath class=%27curvy-badge%27 d=%27m116.19,7.92l20.93-6.77c10.98-3.55,22.91,1.39,28.15,11.66l10.01,19.59c2.25,4.4,5.83,7.98,10.23,10.23l19.59,10.01c10.27,5.25,15.21,17.18,11.66,28.15l-6.77,20.93c-1.52,4.7-1.52,9.77,0,14.47l6.77,20.93c3.55,10.98-1.39,22.91-11.66,28.15l-19.59,10.01c-4.4,2.25-7.98,5.83-10.23,10.23l-10.01,19.59c-5.25,10.27-17.18,15.21-28.15,11.66l-20.93-6.77c-4.7-1.52-9.77-1.52-14.47,0l-20.93,6.77c-10.98,3.55-22.91-1.39-28.15-11.66l-10.01-19.59c-2.25-4.4-5.83-7.98-10.23-10.23l-19.59-10.01c-10.27-5.25-15.21-17.18-11.66-28.15l6.77-20.93c1.52-4.7,1.52-9.77,0-14.47l-6.77-20.93c-3.55-10.98,1.39-22.91,11.66-28.15l19.59-10.01c4.4-2.25,7.98-5.83,10.23-10.23l10.01-19.59c5.25-10.27,17.18-15.21,28.15-11.66l20.93,6.77c4.7,1.52,9.77,1.52,14.47,0Z%27/%3E%3C/g%3E%3C/svg%3E');
 }
+.bg-hero-overlay {
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.5))
+  );
+  background-image: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
 .bg-split-white-pink {
   background-image: -webkit-gradient(
     linear,
@@ -1986,6 +2023,10 @@ a:hover {
 .p-4 {
   padding: calc(4rem / 16);
   padding: calc(4rem / var(--vf-font-size-root));
+}
+.p-section-lg {
+  padding: calc(56rem / 16) 0 calc(64rem / 16);
+  padding: var(--vf-padding-section-large);
 }
 .p-section-md {
   padding: calc(40rem / 16) 0 calc(48rem / 16);
@@ -2180,6 +2221,12 @@ a:hover {
 .pt-80 {
   padding-top: calc(80rem / 16);
   padding-top: calc(80rem / var(--vf-font-size-root));
+}
+.pb-\[126px\] {
+  padding-bottom: 126px;
+}
+.pt-\[138px\] {
+  padding-top: 138px;
 }
 .text-left {
   text-align: left;
@@ -4282,6 +4329,11 @@ product-modal .product-media-modal__content img {
 .group[open] .group-open\:\[display\:none\] {
   display: none;
 }
+.group:hover .group-hover\:bg-primary-hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary-hover) / var(--tw-bg-opacity));
+}
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
@@ -4856,6 +4908,10 @@ product-modal .product-media-modal__content img {
     padding: calc(12rem / 16);
     padding: calc(12rem / var(--vf-font-size-root));
   }
+  .lg\:p-section-lg {
+    padding: calc(56rem / 16) 0 calc(64rem / 16);
+    padding: var(--vf-padding-section-large);
+  }
   .lg\:\!px-0 {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -4944,6 +5000,10 @@ product-modal .product-media-modal__content img {
   }
   .lg\:pt-\[calc\(108rem\/16\)\] {
     padding-top: calc(108rem / 16);
+  }
+  .lg\:pt-64 {
+    padding-top: calc(64rem / 16);
+    padding-top: calc(64rem / var(--vf-font-size-root));
   }
   .lg\:text-left {
     text-align: left;

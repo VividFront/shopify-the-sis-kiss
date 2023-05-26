@@ -14,3 +14,4 @@ import * as sections from '@shopify/theme-sections';
 import './splide.js';
 import './lottie.js';
 import './mobile-menu.js';
+import './video.js';
