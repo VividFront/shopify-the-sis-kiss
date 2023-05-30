@@ -1,0 +1,44 @@
+<div class="bg-white pb-48 lg:pb-56">
+  {% render 'breadcrumbs' %}
+  <div class="container">
+    <div class="grid grid-cols">
+      <div class="col-start-1 col-end-7 lg:col-start-3 lg:col-end-11">
+        {%- liquid
+          assign heading = page.title
+          if section.settings.heading != blank  
+            assign heading = section.settings.heading
+          endif
+        -%}
+        <h1 class="text-center">{{ heading }}</h2>
+        {% if section.settings.body != blank %}
+          <div class="richtext-content mt-18 text-center">{{ section.settings.body }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Banner"
+    }
+  ]
+}
+{% endschema %}
