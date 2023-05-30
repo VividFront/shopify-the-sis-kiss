@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "",
+        "body": "<p>The Sis Kiss recommends taking off all jewelry before using hand sanitizer or washing your hands. We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!</p>"
+      }
+    },
+    "63336ce7-e407-40ba-9a0b-00b0848dbe13": {
+      "type": "icon-steps-section",
+      "blocks": {
+        "902e5742-97f3-4630-a863-b0ac30df19e3": {
+          "type": "step",
+          "settings": {
+            "heading": "Avoid Oils",
+            "body": "Do not let your gold dipped jewelry come in contact with perfume, lotion, hairspray, sunscreen, nail polish, oils or chlorine. Remove before using any of these items or similar items.",
+            "image": "shopify://shop_images/custom-necklace.png"
+          }
+        },
+        "d8f88d3c-5f90-4634-8f0e-0d93c2c81004": {
+          "type": "step",
+          "settings": {
+            "heading": "Remove Before Swimming",
+            "body": "Remove before sweating, swimming, showering or hot tubs. Keep gold dipped jewelry as dry as possible.",
+            "image": "shopify://shop_images/custom-necklace.png"
+          }
+        },
+        "53058563-7838-4d03-9ce9-19158ac893b6": {
+          "type": "step",
+          "settings": {
+            "heading": "Clean with Gentle Cloth",
+            "body": "Gently clean with a soft jewelry cloth or cotton ball after every use. Don’t use harsh jewelry cleaners or soaps to clean.",
+            "image": "shopify://shop_images/custom-necklace.png"
+          }
+        },
+        "902cf06a-01ad-41bf-89db-8aefb4e32ece": {
+          "type": "step",
+          "settings": {
+            "heading": "Store in a Safe Space",
+            "body": "Avoid scratches by storing in the original box and away from other items.",
+            "image": "shopify://shop_images/custom-necklace.png"
+          }
+        }
+      },
+      "block_order": [
+        "902e5742-97f3-4630-a863-b0ac30df19e3",
+        "d8f88d3c-5f90-4634-8f0e-0d93c2c81004",
+        "53058563-7838-4d03-9ce9-19158ac893b6",
+        "902cf06a-01ad-41bf-89db-8aefb4e32ece"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/chains.png",
+        "heading": "Care Specifics",
+        "body": "<p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. For exact product materials, visit the product page.</p>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "cb3dc79e-d085-4493-a760-a8b1b4303eb1": {
+      "type": "accordion-section",
+      "blocks": {
+        "e42d1854-5bb1-4455-9b63-4769c0c5f067": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Gold Vermeil",
+            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
+          }
+        },
+        "4b453b4c-0b2a-4b16-9e66-435e15cc6471": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Sterling Silver",
+            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
+          }
+        },
+        "859fd3f9-9920-4ebb-b5dc-54df03297144": {
+          "type": "accordion",
+          "settings": {
+            "heading": "14K Solid Gold",
+            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
+          }
+        },
+        "4aabf690-fac2-40d1-8b5d-fe73efb965eb": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Brass",
+            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "e42d1854-5bb1-4455-9b63-4769c0c5f067",
+        "4b453b4c-0b2a-4b16-9e66-435e15cc6471",
+        "859fd3f9-9920-4ebb-b5dc-54df03297144",
+        "4aabf690-fac2-40d1-8b5d-fe73efb965eb"
+      ],
+      "settings": {
+        "heading": "Jewelry Care by Material"
+      }
+    },
+    "d0381a0d-4c05-40be-a600-7879293e180d": {
+      "type": "z-pattern-narrow",
+      "settings": {
+        "image": "shopify://shop_images/jewelry-on-rug.png",
+        "heading": "Shop Jewelry Care Essentials",
+        "body": "<p>Avoid scratches by storing in the original box and away from other items.</p>",
+        "cta_text": "Shop Now",
+        "cta_url": "shopify://collections",
+        "copy_aligment": "center"
+      }
+    },
+    "3683f3fd-1121-4729-9399-7882d3088227": {
+      "type": "faq-callout",
+      "blocks": {
+        "5f0bab59-e1a4-4502-9436-02eae120c4dc": {
+          "type": "question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq"
+          }
+        },
+        "7cdb7b6a-12a8-403b-b0a3-a7b99bacff83": {
+          "type": "question",
+          "settings": {
+            "title": "What is The Sis Kiss Jewelry Made of?",
+            "url": "shopify://blogs/faq"
+          }
+        }
+      },
+      "block_order": [
+        "5f0bab59-e1a4-4502-9436-02eae120c4dc",
+        "7cdb7b6a-12a8-403b-b0a3-a7b99bacff83"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "cta_text": "FAQ Page",
+        "cta_url": "shopify://blogs/faq"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "63336ce7-e407-40ba-9a0b-00b0848dbe13",
+    "cb3dc79e-d085-4493-a760-a8b1b4303eb1",
+    "d0381a0d-4c05-40be-a600-7879293e180d",
+    "3683f3fd-1121-4729-9399-7882d3088227"
+  ]
+}

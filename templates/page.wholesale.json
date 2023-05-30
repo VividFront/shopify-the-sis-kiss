@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "banner": {
+      "type": "affiliates-banner",
+      "blocks": {
+        "1ac19b48-30fa-457e-9ec8-1f9c9a350f46": {
+          "type": "affiliate_card",
+          "settings": {
+            "heading": "Order Wholesale",
+            "body": "<p>Our custom wholesale is exclusively available for licensed boutique owners who wish to order & carry our jewelry items for resale.</p>",
+            "cta_text": "Shop Wholesale",
+            "cta_link": "shopify://collections/wholesale",
+            "target_blank": false
+          }
+        },
+        "dcbbba90-6eaa-4690-bb8f-f57b61cb3599": {
+          "type": "affiliate_card",
+          "settings": {
+            "heading": "Questions?",
+            "body": "<p>Have questions or need help with your wholesale order? Just email our Customer Service Team at <a href=\"mailto:customerservice@thesiskiss.com\" title=\"mailto:customerservice@thesiskiss.com\">customerservice@thesiskiss.com</a></p>",
+            "cta_text": "Contact Us",
+            "cta_link": "shopify://pages/contact-us-new",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "1ac19b48-30fa-457e-9ec8-1f9c9a350f46",
+        "dcbbba90-6eaa-4690-bb8f-f57b61cb3599"
+      ],
+      "settings": {
+        "heading": "Welcome to The Sis Kiss™ Wholesale!",
+        "subheading": ""
+      }
+    },
+    "bd67eb47-97c4-4fa0-bac8-6d76914ae1b6": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "New to Faire?",
+        "body": "You’ll get $100 off your first order, plus free shipping with us for an entire year",
+        "cta_text": "Shop Wholesale",
+        "cta_url": "shopify://collections/wholesale",
+        "theme": "light"
+      }
+    },
+    "ee3ec4f8-57ab-40e7-a2e0-c9bdfdcb4a24": {
+      "type": "icon-steps-section",
+      "blocks": {
+        "2a6e89ae-038b-432a-b0c4-b3acf259038d": {
+          "type": "step",
+          "settings": {
+            "heading": "Free Returns",
+            "body": "for risk–free buying",
+            "image": "shopify://shop_images/women-icon.png"
+          }
+        },
+        "f56a33c3-4cf9-4821-afce-e9d950758d3c": {
+          "type": "step",
+          "settings": {
+            "heading": "Net 60 terms",
+            "body": "for stress–free payments",
+            "image": "shopify://shop_images/women-icon.png"
+          }
+        }
+      },
+      "block_order": [
+        "2a6e89ae-038b-432a-b0c4-b3acf259038d",
+        "f56a33c3-4cf9-4821-afce-e9d950758d3c"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/32.png",
+        "heading": "Order Wholesale From Us Today",
+        "body": "<p>Optional description paragraph. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "8c8e8258-25a6-4ead-ada8-aff17aa47c14": {
+      "type": "icon-section",
+      "blocks": {
+        "faa9cb33-1373-4973-82e0-4a08411e5a50": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Minimum",
+            "body": "",
+            "large_text": "$100"
+          }
+        },
+        "c1cf5314-c9a1-4ea1-bde8-782032ec4952": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Shipping Form",
+            "body": "",
+            "large_text": "Bay Village, OH"
+          }
+        },
+        "0a6b8c55-6f62-41b2-a275-8fa956a210dc": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify://shop_images/shipping-icon.png",
+            "heading": "Lead Time",
+            "body": "",
+            "large_text": "1-3 Days"
+          }
+        }
+      },
+      "block_order": [
+        "faa9cb33-1373-4973-82e0-4a08411e5a50",
+        "c1cf5314-c9a1-4ea1-bde8-782032ec4952",
+        "0a6b8c55-6f62-41b2-a275-8fa956a210dc"
+      ],
+      "settings": {}
+    },
+    "53a2602b-eedd-4e60-83c4-7f1ce5f5e671": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Customer Care",
+        "body": "Reach out to us and let us help!",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us-new",
+        "theme": "dark"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "bd67eb47-97c4-4fa0-bac8-6d76914ae1b6",
+    "ee3ec4f8-57ab-40e7-a2e0-c9bdfdcb4a24",
+    "8c8e8258-25a6-4ead-ada8-aff17aa47c14",
+    "53a2602b-eedd-4e60-83c4-7f1ce5f5e671"
+  ]
+}

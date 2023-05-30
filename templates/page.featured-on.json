@@ -1,0 +1,191 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-featured-on",
+      "blocks": {
+        "ef46a241-47ca-4ea9-8392-2a803a4984b0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": "shopify://pages/about"
+          }
+        },
+        "0584af32-7d6a-4750-ba46-a468faeb9110": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "b82c2d73-d5e8-46fa-8db7-8e9a14c36538": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "30cac9e7-3701-4c46-ba75-00a061a5907d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "01d64b3e-6aa8-4821-86c0-cbba0028bcfe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "2f8bdc66-7b16-4407-97e3-fe901730a429": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "70ed1f72-345d-4343-9b85-9c3c28349db9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "ba88903d-af13-4638-a539-d8f5dda4f6b6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        },
+        "98024684-59bf-4c64-93b8-fa828bba6a28": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading": "FirstName LastName",
+            "body": "Lorem ipsum dolor sit amet",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ef46a241-47ca-4ea9-8392-2a803a4984b0",
+        "0584af32-7d6a-4750-ba46-a468faeb9110",
+        "b82c2d73-d5e8-46fa-8db7-8e9a14c36538",
+        "30cac9e7-3701-4c46-ba75-00a061a5907d",
+        "01d64b3e-6aa8-4821-86c0-cbba0028bcfe",
+        "2f8bdc66-7b16-4407-97e3-fe901730a429",
+        "70ed1f72-345d-4343-9b85-9c3c28349db9",
+        "ba88903d-af13-4638-a539-d8f5dda4f6b6",
+        "98024684-59bf-4c64-93b8-fa828bba6a28"
+      ],
+      "settings": {
+        "heading": "Featured On",
+        "subheading": "Seen On"
+      }
+    },
+    "7d71d370-67a8-4e6e-8f29-31ca023dff7a": {
+      "type": "featured-in",
+      "blocks": {
+        "82f227f0-e219-4d82-856f-cd16f71606a1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "8bc771a8-5008-4b6c-a1c3-51fe63fc30e7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.54.01_AM.png",
+            "url": ""
+          }
+        },
+        "57a5210d-37f7-45dc-b735-6785dba04a2a": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/vogue.png",
+            "url": ""
+          }
+        },
+        "dc8b821b-b226-41be-9b54-ce36e481378b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/vogue.png",
+            "url": ""
+          }
+        },
+        "0d55bdbf-6c45-42ae-a7fd-bbf95f1bb5b9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.53.59_AM.png",
+            "url": ""
+          }
+        },
+        "8395b95e-b1eb-4ad5-ac23-7a3f9d93fb70": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/vogue.png",
+            "url": ""
+          }
+        },
+        "f1c33b3b-7512-4716-85f4-63fd7859790f": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Screen_Shot_2023-05-02_at_11.54.01_AM.png",
+            "url": ""
+          }
+        },
+        "fbc08209-bf9c-4d6c-b5c2-85c1057e4634": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/vogue.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "82f227f0-e219-4d82-856f-cd16f71606a1",
+        "8bc771a8-5008-4b6c-a1c3-51fe63fc30e7",
+        "57a5210d-37f7-45dc-b735-6785dba04a2a",
+        "dc8b821b-b226-41be-9b54-ce36e481378b",
+        "0d55bdbf-6c45-42ae-a7fd-bbf95f1bb5b9",
+        "8395b95e-b1eb-4ad5-ac23-7a3f9d93fb70",
+        "f1c33b3b-7512-4716-85f4-63fd7859790f",
+        "fbc08209-bf9c-4d6c-b5c2-85c1057e4634"
+      ],
+      "settings": {
+        "heading": "Featured In"
+      }
+    },
+    "be3d586c-738c-4ef3-9c8c-409b180ddd67": {
+      "type": "yotpo-gallery",
+      "settings": {
+        "heading": "See How Other TSK Ladies Are Layering",
+        "gallery_id": "6467939ccb6260364b9b9478"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7d71d370-67a8-4e6e-8f29-31ca023dff7a",
+    "be3d586c-738c-4ef3-9c8c-409b180ddd67"
+  ]
+}
