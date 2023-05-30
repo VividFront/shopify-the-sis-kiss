@@ -2,6 +2,8 @@ import Splide from '@splidejs/splide';
 import '@splidejs/splide/css/core';
 
 document.addEventListener('DOMContentLoaded', function () {
+  window.Splide = Splide;
+
   if (document.querySelector('[data-vf-trending-slider]')) {
     const trending = new Splide('[data-vf-trending-slider]', {
       gap: 32,
@@ -173,6 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // recentlyViewed.mount();
+    // save in window to mount after recently viewed script runs
     window.RecentlyViewedSlider = recentlyViewed;
   }
 });

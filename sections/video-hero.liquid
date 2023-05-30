@@ -1,0 +1,134 @@
+<div class="relative pt-[138px] pb-[126px] lg:p-section-lg bg-hero-overlay">
+  <div class="bg-ui-dark lg:bg-transparent absolute left-0 top-0 w-full">
+    {% render 'breadcrumbs', breadcrumb_classes: 'text-white [&_a]:text-white' %}
+  </div>
+  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+    {% if section.settings.video_url != blank %}
+      <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+      </video>
+    {% elsif section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full object-cover',
+        sizes: sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <div class="relative container">
+    <div class="grid grid-cols">
+      <div class="col-start-1 col-end-7 lg:col-start-4 lg:col-end-10">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'subheading' -%}
+              <h6 class="mb-8 text-white text-center font-normal">{{ block.settings.text }}</h6>
+            {%- when 'heading' -%}
+              <h1 class="text-display font-display font-normal text-white text-center">{{ block.settings.text }}</h1>
+            {%- when 'body' -%}
+              <p class="mt-8 lg:mt-24 text-body-copy-large text-white text-center">{{ block.settings.text }}</p>
+            {%- when 'cta' -%}
+              <div class="mt-20 lg:mt-28 flex justify-center">
+                {%- liquid 
+                  assign cta_link = block.settings.url
+                  if block.settings.anchor != blank
+                    assign cta_link = block.settings.anchor
+                  endif
+                -%}
+                {%- render 'button-secondary', url: cta_link, text: block.settings.text, bg_class: 'bg-white' -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Video Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "name": "Body",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "name": "CTA",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "anchor",
+          "label": "Anchor",
+          "default": "#product-section"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Hero"
+    }
+  ]
+}
+{% endschema %}

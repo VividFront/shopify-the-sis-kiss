@@ -1,5 +1,86 @@
 {
   "sections": {
+    "db0377bb-7301-4096-a731-1be37f8f598f": {
+      "type": "video-hero",
+      "blocks": {
+        "9041d596-7a43-42aa-b10c-3fd773c0728e": {
+          "type": "subheading",
+          "settings": {
+            "text": "Permanent Jewelry"
+          }
+        },
+        "679054a2-51ea-43ab-82fc-85edeab76720": {
+          "type": "heading",
+          "settings": {
+            "text": "Sis Kiss Links"
+          }
+        },
+        "f3dfa036-1021-4149-b780-0d3806c801a7": {
+          "type": "body",
+          "settings": {
+            "text": "We’re making our love for jewelry official! Introducing Sis Kiss Links, a permanent jewelry collection of 14k gold, semi-precious, and precious stones that last a lifetime."
+          }
+        },
+        "5d95a708-54d1-4814-aefc-0a2ce103d459": {
+          "type": "cta",
+          "settings": {
+            "text": "Make An Appointment",
+            "anchor": "#product-section",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "9041d596-7a43-42aa-b10c-3fd773c0728e",
+        "679054a2-51ea-43ab-82fc-85edeab76720",
+        "f3dfa036-1021-4149-b780-0d3806c801a7",
+        "5d95a708-54d1-4814-aefc-0a2ce103d459"
+      ],
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/5bcfd1becf194b53a0e09182b4953b35.mp4"
+      }
+    },
+    "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b": {
+      "type": "icon-steps-section",
+      "blocks": {
+        "99ed81c3-bde2-41ea-b9fb-eeaf72adca01": {
+          "type": "step",
+          "settings": {
+            "heading": "Choose and purchase your chain",
+            "body": "Pick out the chain you want from our current collection. Charm and additional chain availability is subject to change.",
+            "image": "shopify://shop_images/One_2x_561d3299-19bf-4058-a2ba-f7fb3704cb4c.png"
+          }
+        },
+        "98563b9c-11c7-425e-892b-dfeb8f7404df": {
+          "type": "step",
+          "settings": {
+            "heading": "Schedule your fitting",
+            "body": "Schedule your 15 minute fitting at time of online purchase.",
+            "image": "shopify://shop_images/Two_2x_91db532e-ce61-4f84-8014-88296cf0b3db.png"
+          }
+        },
+        "a6ee1b76-5c57-41e0-803b-7edd75ebaf6c": {
+          "type": "step",
+          "settings": {
+            "heading": "Come to HQ and get linked!",
+            "body": "We request you arrive at least 5 minutes early. Feel free peruse our current charm and add-on pieces for extra bling.",
+            "image": "shopify://shop_images/Three_2x_fb6018b0-b0cd-4582-aa51-cb3000558b29.png"
+          }
+        }
+      },
+      "block_order": [
+        "99ed81c3-bde2-41ea-b9fb-eeaf72adca01",
+        "98563b9c-11c7-425e-892b-dfeb8f7404df",
+        "a6ee1b76-5c57-41e0-803b-7edd75ebaf6c"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/DSC00916.png",
+        "heading": "How it Works",
+        "body": "<p>Choose your chain and book an appointment on our website, then get linked at our Sis Kiss HQ on Dover Center Rd., just outside Cleveland, Ohio!</p>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -93,6 +174,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "hide_breadcrumbs": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -101,14 +183,6 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false
-      }
-    },
-    "605a63e6-525e-429b-a87a-b51c70b37d88": {
-      "type": "complete-the-look",
-      "settings": {
-        "background_image": "shopify://shop_images/wallpaper.png",
-        "marquee_text": "Complete the Look",
-        "recommendation_type": "related"
       }
     },
     "1684352239614af5b1": {
@@ -164,19 +238,32 @@
       ],
       "settings": {}
     },
-    "bedc88e8-8e96-4831-bbc6-ab67c80aa826": {
-      "type": "recently-viewed",
+    "3cb2d5a7-2642-427b-9496-bf32f5a9fb7b": {
+      "type": "z-pattern-contact",
       "settings": {
-        "background_image": "shopify://shop_images/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
-        "heading": "Recently Viewed"
+        "image": "shopify://shop_images/Screen_Shot_2023-05-22_at_2.03.05_PM.png",
+        "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_link": "https://google.com",
+        "heading": "TSK HQ",
+        "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p><p><a href=\"https://google.com\" target=\"_blank\" title=\"https://google.com\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>M–F: 10AM–5PM</li><li>Saturday: 11AM–4PM</li></ul>"
+      }
+    },
+    "605a63e6-525e-429b-a87a-b51c70b37d88": {
+      "type": "complete-the-look",
+      "settings": {
+        "background_image": "shopify://shop_images/wallpaper.png",
+        "marquee_text": "You May Also Like",
+        "recommendation_type": "related"
       }
     }
   },
   "order": [
+    "db0377bb-7301-4096-a731-1be37f8f598f",
+    "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b",
     "main",
-    "605a63e6-525e-429b-a87a-b51c70b37d88",
     "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
-    "bedc88e8-8e96-4831-bbc6-ab67c80aa826"
+    "3cb2d5a7-2642-427b-9496-bf32f5a9fb7b",
+    "605a63e6-525e-429b-a87a-b51c70b37d88"
   ]
 }

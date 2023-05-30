@@ -186,6 +186,10 @@
     }
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-size: var(--vf-font-size-body-copy);
     line-height: var(--vf-line-height-body-copy);

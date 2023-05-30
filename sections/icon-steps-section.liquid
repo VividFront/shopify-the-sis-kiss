@@ -1,12 +1,12 @@
 <div class="relative p-section-md bg-white">
   <div class="container">
-    <div class="grid grid-cols gap-grid">
+    <div class="grid grid-cols gap-32 lg:gap-grid">
       <div class="col-start-2 col-end-6">
         {% liquid 
           assign aspect_ratio = 'aspect-[2/3]'
           assign image_class = 'h-full w-full object-cover rounded'
         %}
-        <div class="relative {{ image_padding }}">
+        <div class="relative">
           {% if section.settings.image != blank %}
             <div class="{{ aspect_ratio }}">
               {{ section.settings.image | image_url: width: 1500 | image_tag:
@@ -20,7 +20,7 @@
           {% endif %}
         </div>
       </div>
-      <div class="mt-32 lg:mt-0 col-start-1 col-end-7 lg:col-start-6 lg:col-end-12">
+      <div class="col-start-1 col-end-7 lg:col-start-6 lg:col-end-12">
         <div class="flex flex-col justify-center items-start h-full">
           <h2>{{ section.settings.heading }}</h2>
           <div class="mt-12 richtext-content">{{ section.settings.body }}</div>
@@ -40,7 +40,7 @@
                   <div>
                     <h4>{{ block.settings.heading }}</h4>
                     {% if block.settings.body != blank %}
-                      <p class="mt-12">{{ block.settings.body }}</p>
+                      <p class="mt-8">{{ block.settings.body }}</p>
                     {% endif %}
                   </div>
                 </div>

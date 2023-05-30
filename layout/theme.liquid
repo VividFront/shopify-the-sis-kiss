@@ -25,10 +25,6 @@
 
     {% render 'meta-tags' %}
 
-    {{ '//code.jquery.com/jquery-3.3.1.js' | script_tag }}
-    {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
-    {{ 'jquery.products.min.js' | asset_url | script_tag }}
-
     <link rel="stylesheet" href="https://use.typekit.net/adu3bbn.css">
     <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
@@ -192,6 +188,9 @@
   <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/15rEmWh3J0iW4RhjOCBHrg" async></script>
 
   <!-- Begin Recently Viewed Products -->
+  {{ '//code.jquery.com/jquery-3.3.1.js' | script_tag }}
+  {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+  {{ 'jquery.products.min.js' | asset_url | script_tag }}
   {% if template contains 'product' %}
     <script>
     Shopify.Products.recordRecentlyViewed();

@@ -371,19 +371,19 @@ slider-component.slider-component-full-width {
   justify-content: center;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
     display: none;
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 991px) {
   .slider--desktop:not(.slider--tablet) + .slider-buttons {
     display: none;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 992px) {
   .slider--mobile + .slider-buttons {
     display: none;
   }

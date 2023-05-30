@@ -25,8 +25,84 @@
         {% endfor %}
       </ul>
     </div>
+    <div class="container">
+      <div
+        class="product-recommendations"
+        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent={{ section.settings.recommendation_type }}"
+      >
+        <div class="mt-18">
+          <div class="splide" data-vf-recommended-products-slider>
+            <div class="splide__track overflow-visible">
+              <ul class="splide__list md:!flex md:gap-grid">
+                {% if recommendations.performed and recommendations.products_count > 0 %}
+                  {% for recommendation in recommendations.products %}
+                    <li class="splide__slide md:basis-1/4 md:shrink">
+                      {% render 'card-product', product: recommendation, show_secondary_image: true %}
+                    </li>
+                  {% endfor %}
+                {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+{% javascript %}
+  const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+        }
+        if (document.querySelector('[data-vf-recommended-products-slider]')) {
+          const recommended = new window.Splide('[data-vf-recommended-products-slider]', {
+            gap: 32,
+            type: 'slide',
+            pagination: false,
+            arrows: false,
+            perPage: 4,
+            perMove: 1,
+            destroy: true,
+            breakpoints: {
+              575: {
+                perPage: 2,
+                destroy: false,
+              },
+              767: {
+                perPage: 3,
+                gap: 16,
+                destroy: false,
+              },
+            },
+          });
+          recommended.mount();
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
+  const productRecommendationsSection = document.querySelector('.product-recommendations');
+  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+  observer.observe(productRecommendationsSection);
+{% endjavascript %}
 
 {% schema %}
 {
@@ -44,6 +120,22 @@
       "id": "marquee_text",
       "label": "Marquee Text",
       "default": "Complete the Look"
+    },
+    {
+      "type": "select",
+      "id": "recommendation_type",
+      "label": "Recommendation Type",
+      "options": [
+        {
+          "value": "related",
+          "label": "Related"
+        },
+        {
+          "value": "complementary",
+          "label": "Complementary"
+        }
+      ],
+      "default": "related"
     }
   ],
   "presets": [

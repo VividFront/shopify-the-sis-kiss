@@ -29582,7 +29582,10 @@
     (pr.defaults = {}),
       (pr.STATES = v),
       document.addEventListener('DOMContentLoaded', function () {
-        if (document.querySelector('[data-vf-trending-slider]')) {
+        if (
+          ((window.Splide = pr),
+          document.querySelector('[data-vf-trending-slider]'))
+        ) {
           var t = new pr('[data-vf-trending-slider]', {
             gap: 32,
             type: 'slide',
