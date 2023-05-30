@@ -1,4 +1,11 @@
-<div class="bg-white pb-48 lg:pb-56">
+{%- liquid
+  assign bg_color = 'bg-white'
+  if section.settings.background_color != blank
+    assign bg_color = section.settings.background_color
+  endif
+-%}
+
+<div class="{{ bg_color }} pb-48 lg:pb-56">
   {% render 'breadcrumbs' %}
   <div class="container">
     <div class="grid grid-cols">
@@ -33,6 +40,22 @@
       "type": "richtext",
       "id": "body",
       "label": "Body"
+    },
+    {
+      "type": "select",
+      "id": "background_color",
+      "label": "Background Color",
+      "options": [
+        {
+        "value": "bg-white",
+        "label": "White"
+        },
+        {
+        "value": "bg-ui-pink",
+        "label": "Pink"
+        }
+      ],
+      "default": "bg-white"
     }
   ],
   "presets": [
