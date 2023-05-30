@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "banner": {
+      "type": "affiliates-banner",
+      "settings": {}
+    }
+  },
+  "order": ["banner"]
+}

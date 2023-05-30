@@ -1238,6 +1238,10 @@ a:hover {
 .mt-\[2rem\] {
   margin-top: 2rem;
 }
+.mb-10 {
+  margin-bottom: calc(10rem / 16);
+  margin-bottom: calc(10rem / var(--vf-font-size-root));
+}
 .block {
   display: block;
 }
@@ -1884,6 +1888,9 @@ a:hover {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-\[16px\] {
+  border-radius: 16px;
+}
 .border {
   border-width: 1px;
 }
@@ -2037,6 +2044,10 @@ a:hover {
 .p-section-sm {
   padding: calc(32rem / 16) 0 calc(40rem / 16);
   padding: var(--vf-padding-section-small);
+}
+.p-24 {
+  padding: calc(24rem / 16);
+  padding: calc(24rem / var(--vf-font-size-root));
 }
 .px-12 {
   padding-left: calc(12rem / 16);
@@ -4826,14 +4837,11 @@ product-modal .product-media-modal__content img {
   .lg\:w-\[295px\] {
     width: 295px;
   }
-  .lg\:w-full {
-    width: 100%;
-  }
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
   .lg\:w-\[85\%\] {
     width: 85%;
+  }
+  .lg\:w-full {
+    width: 100%;
   }
   .lg\:\!max-w-full {
     max-width: 100% !important;
