@@ -1,23 +1,66 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
-
-<div class="template-404 container page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+<div class="p-section-md">
+  <div class="container">
+    {% if section.settings.image != blank %}
+      <div class="grid grid-cols">
+        <div class="col-start-1 col-end-7 lg:col-start-5 lg:col-end-9">
+          <div class="aspect-3/2">
+            {{ section.settings.image | image_url: width: 1500 | image_tag:
+              width: section.settings.image.width,
+              class: 'mx-auto h-full w-full object-contain',
+              sizes: section.settings.image.sizes,
+              widths: '375, 550, 750, 1100',
+              alt: section.settings.image.alt | escape
+            }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="grid grid-cols">
+      <div class="col-start-1 col-end-7 lg:col-start-3 lg:col-end-11">
+        <div class="flex flex-col items-center">
+          <h3 class="text-center">404</h3>
+          <h1 class="mt-4 text-center">{{ section.settings.heading | default: 'Page Not Found' }}</h1>
+          <div class="mt-24 fex justify-center">
+            {% render 'button-secondary', text: section.settings.cta_text, url: section.settings.cta_url %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+{% schema %}
+{
+  "name": "Main 404",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main 404"
+    }
+  ]
+}
+{% endschema %}

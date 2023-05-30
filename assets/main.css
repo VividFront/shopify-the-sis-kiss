@@ -4664,6 +4664,9 @@ product-modal .product-media-modal__content img {
   .lg\:col-end-\[15\] {
     grid-column-end: 15;
   }
+  .lg\:col-end-9 {
+    grid-column-end: 9;
+  }
   .lg\:row-start-1 {
     grid-row-start: 1;
   }
