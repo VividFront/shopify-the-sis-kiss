@@ -76,7 +76,8 @@
     "@splidejs/splide": "^4.1.1",
     "@trelliscommerce/prettier-config": "^1.0.0",
     "jquery": "^3.6.0",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^12.6.0",
+    "vlitejs": "^5.0.2"
   },
   "prettier": "@trelliscommerce/prettier-config",
   "lint-staged": {

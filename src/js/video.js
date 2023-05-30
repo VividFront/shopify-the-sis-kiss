@@ -1,29 +1,24 @@
-import YouTubePlayer from 'youtube-player';
+// import Vlitejs from 'vlitejs';
+// import VlitejsYoutube from 'vlitejs/dist/providers/youtube';
+// import 'vlitejs/dist/vlite.css';
 
-const videos = document.querySelectorAll('.js-video');
+// Vlitejs.registerProvider('youtube', VlitejsYoutube);
 
-videos.forEach((video) => {
-  const button = video.querySelector('.js-video__thumbnail');
-  const id = video.querySelector('.js-video__player').dataset.youtubeId;
-  const start = video.querySelector('.js-video__player').dataset.start;
+// const videos = document.querySelectorAll('.js-video');
 
-  const player = YouTubePlayer('video-player-' + id, {
-    videoId: id,
-    playerVars: {
-      rel: 0,
-      showinfo: 0,
-      start: start || 0,
-    },
-  });
+// if (videos) {
+//   videos.forEach(video => {
+//     const options = {autoHide: true, autoHideDelay: 750};
 
-  player.on('stateChange', (event) => {
-    if (event.data == 0) {
-      button.classList.remove('hidden');
-    }
-  });
+//     if (video.dataset.posterUrl) {
+//       options.poster = video.dataset.posterUrl;
+//     }
 
-  button.onclick = () => {
-    player.playVideo();
-    button.classList.add('hidden');
-  };
-});
+//     if (video.dataset && video.dataset.youtubeId) {
+//       const youtubeId = video.dataset.youtubeId;
+//       new Vlitejs('#youtube-' + youtubeId, { options, provider: 'youtube' });
+//     } else {
+//       new Vlitejs(video, { options, provider: 'html5' });
+//     }
+//   });
+// }

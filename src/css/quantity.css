@@ -20,6 +20,8 @@
 
 .tsk-quantity input[type='number'] {
   -moz-appearance: textfield;
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
   @apply w-40 border-y border-border text-center disabled:bg-disabled disabled:border-disabled-high-contrast disabled:cursor-not-allowed;
 }
 

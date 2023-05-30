@@ -1,6 +1,7 @@
 {% unless section.settings.hide_breadcrumbs == true %}
   {% render 'breadcrumbs' %}
 {% endunless %}
+<div id="product-section" class="invisible relative top-[-100px] lg:top-[-130px]" aria-hidden="true"></div>
 <section
   id="MainProduct-{{ section.id }}"
   class="pb-48 lg:pb-72 {% if section.settings.hide_breadcrumbs == true %} pt-40 lg:pt-64{% endif %}"
@@ -44,9 +45,9 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div id="product-section" class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="container">
-      <div class="grid grid-cols gap-grid">
+      <div class="grid grid-cols gap-grid relative lg:static">
         <div class="col-span-full lg:col-span-7">
           {% render 'product-media-gallery', variant_images: variant_images %}
         </div>
@@ -71,8 +72,8 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <div class="product__title mb-12 relative" {{ block.shopify_attributes }}>
-                    <h1>{{ product.title | escape }}</h1>
+                  <div class="product__title mb-12 lg:relative" {{ block.shopify_attributes }}>
+                    <h1 class="lg:w-[85%]">{{ product.title | escape }}</h1>
                     <a href="{{ product.url }}" class="product__title">
                       <h2 class="h1">
                         {{ product.title | escape }}

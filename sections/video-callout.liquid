@@ -1,141 +1,58 @@
-{% if product == nil or product.metafields.product.show_video == 'true' %}
-  {% assign bg_class = 'bg-white' %}
-  {% if section.settings.background_color == 'black' %}
-    {% assign bg_class = 'bg-black text-white' %}
-  {% elsif section.settings.background_color == 'gray' %}
-    {% assign bg_class = 'bg-ui-background' %}
-  {% endif %}
-
-  {% assign video_col_start = '' %}
-  {% assign content_col_start = 'lg:col-start-8' %}
-  {% if section.settings.video_on_right %}
-    {% assign video_col_start = 'lg:col-start-7' %}
-    {% assign content_col_start = 'lg:col-start-1 lg:row-start-1' %}
-  {% endif %}
-
-  {% assign section_padding = 'p-section-md' %}
-  {% if section.settings.padding_size == 'large' %}
-    {% assign section_padding = 'p-section-lg' %}
-  {% endif %}
-
-  {% assign video_id = section.settings.video_url.id|strip %}
-  {% assign video_type = section.settings.video_url.type|strip %}
-  {% if section.settings.product_youtube_id != blank %}
-    {% assign video_id = section.settings.product_youtube_id|strip %}
-    {% assign video_type = 'youtube' %}
-  {% endif %}
-
-  {% assign thumbnail = section.settings.video_thumbnail %}
-  {% if section.settings.product_video_thumbnail_url != blank %}
-    {% assign thumbnail = section.settings.product_video_thumbnail_url %}
-  {% endif %}
-
-  <div class="{{ section_padding }} {{ bg_class }}{% if section.settings.remove_bottom_padding %} pb-0{% endif %}">
-    <div class="container">
-      <div class="lg:grid lg:grid-cols lg:gap-grid items-center">
-        <div class="{{ video_col_start }} lg:col-span-6">
-          {% if section.settings.thumbnail_only == false %}
-            {%- render 'video-player', video_type: video_type, id: video_id, thumbnail: thumbnail, start: section.settings.video_start -%}
-          {% else %}  
-            <div class="aspect-16/9">
-              {% if thumbnail.id != nil %}
-                {{ thumbnail | image_url: width: 1500 | image_tag:
-                  width: thumbnail.width,
-                  class: 'w-full h-full object-cover',
-                  widths: '375, 550, 750, 1100, 1500',
-                  alt: thumbnail.alt | escape
-                }}
-              {% else %}
-                <img
-                  src="{{ thumbnail }}"
-                  {% unless lazy_load == false %}loading="lazy"{% endunless %}
-                  class="w-full h-full object-cover"
-                >
-              {% endif %}
+<div class="relative p-section-md bg-ui-pink">
+  <div class="container">
+    <div class="lg:grid grid-cols gap-grid">
+      <div class="lg:col-start-2 lg:col-end-6">
+        <div class="relative">
+          {% if section.settings.thumbnail != blank %}
+            <div class="aspect-[4/7] w-full max-w-[440px] mx-auto">
+              {{ section.settings.thumbnail | image_url: width: 1500 | image_tag:
+                width: section.settings.thumbnail.width,
+                class: 'object-cover h-full w-full rounded',
+                sizes: section.settings.thumbnail.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.thumbnail.alt | escape
+              }}
             </div>
           {% endif %}
         </div>
-        <div class="{{ content_col_start }} lg:col-span-5 mt-24 lg:mt-0">
-          {% if section.settings.super_heading != blank %}
-            <p class="mb-6">{{ section.settings.super_heading }}</p>
-          {% endif %}
-          {% if section.settings.heading != blank %}
-            <h2>{{ section.settings.heading }}</h2>
-          {% endif %}
-          {% if section.settings.subheading != blank %}
-            <p class="text-body-copy-large mt-18{% if section.settings.italic_subheading %} italic{% endif %}">{{ section.settings.subheading }}</p>
-          {% endif %}
-          {% if section.settings.subheading_hr != blank %}
-            <hr class="w-78 mt-24 mb-12 lg:mb-20 border-t-2 text-primary">
-          {% endif %}
-          {% if section.settings.body != blank %}
-            <div class="mt-20 richtext-content">{{ section.settings.body }}</div>
-          {% endif %}
-          {% if section.settings.link_text != blank %}
-            {%- render 'textlink', text: section.settings.link_text, url: section.settings.link_url, class: 'mt-24' -%}
+      </div>
+      <div class="mt-28 lg:mt-0 lg:col-start-6 lg:col-end-12">
+        <div class="flex flex-col justify-center h-full">
+          <h2 class="h2-alt">{{ section.settings.heading }}</h2>
+          <div class="mt-16 richtext-content">{{ section.settings.body }}</div>
+          {% if section.settings.cta_url != blank %}
+            {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
           {% endif %}
         </div>
       </div>
     </div>
   </div>
-{% endif %}
-
-
+</div>
 
 {% schema %}
 {
-  "name": "Video Section",
+  "name": "Video Callout",
   "tag": "section",
   "class": "section",
   "settings": [
     {
-      "type": "header",
-      "content": "Video"
+      "type": "image_picker",
+      "id": "thumbnail",
+      "label": "Video Thumbnail"
     },
     {
       "type": "video_url",
       "id": "video_url",
-      "label": "Video Url",
+      "label": "Video URL",
       "accept": [
-        "youtube"
-      ]  
-    },
-    {
-      "type": "number",
-      "id": "video_start",
-      "label": "Video Start Time",
-      "default": 0
-    },
-    {
-      "type": "image_picker",
-      "id": "video_thumbnail",
-      "label": "Video Thumbnail"
-    },
-    {
-      "type": "checkbox",
-      "id": "thumbnail_only",
-      "label": "Use thumbnail only (no video)"
-    },
-    {
-      "type": "header",
-      "content": "Content"
+        "youtube",
+        "vimeo"
+      ]    
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
-      "default": "Our Story"
-    },
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading"
-    },
-    {
-      "type": "text",
-      "id": "super_heading",
-      "label": "Super Heading",
-      "info": "Text above the heading"
+      "label": "Heading"
     },
     {
       "type": "richtext",
@@ -144,94 +61,18 @@
     },
     {
       "type": "text",
-      "id": "link_text",
-      "label": "Link Text",
-      "default": "More About Gabriel-Glas"
+      "id": "cta_text",
+      "label": "CTA Text"
     },
     {
       "type": "url",
-      "id": "link_url",
-      "label": "Link Url"
-    },
-    {
-      "type": "header",
-      "content": "Appearance"
-    },
-    {
-      "type": "select",
-      "id": "background_color",
-      "label": "Background Color",
-      "options": [
-        {
-          "value": "white",
-          "label": "White"
-        },
-        {
-          "value": "black",
-          "label": "Black"
-        },
-        {
-          "value": "gray",
-          "label": "Gray"
-        }
-      ],
-      "default": "white"
-    },
-    {
-      "type": "select",
-      "id": "padding_size",
-      "label": "Padding Size",
-      "options": [
-        {
-          "value": "medium",
-          "label": "Medium"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        }
-      ],
-      "default": "medium"
-    },
-    {
-      "type": "checkbox",
-      "id": "video_on_right",
-      "label": "Video on Right"
-    },
-    {
-      "type": "checkbox",
-      "id": "italic_subheading",
-      "label": "Enable italic subheading"
-    },
-    {
-      "type": "checkbox",
-      "id": "subheading_hr",
-      "label": "Enable red HR beneath subheading"
-    },
-    {
-      "type": "checkbox",
-      "id": "remove_bottom_padding",
-      "label": "Remove bottom padding"
-    },
-    {
-      "type": "header",
-      "content": "Product Fields"
-    },
-    {
-      "type": "text",
-      "id": "product_youtube_id",
-      "label": "YouTube Video ID",
-      "info": "For use with Product metafields"
-    },
-    {
-      "type": "url",
-      "id": "product_video_thumbnail_url",
-      "label": "Video Thumbnail Image URL"
+      "id": "cta_url",
+      "label": "CTA Url"
     }
   ],
   "presets": [
     {
-      "name": "Video Section"
+      "name": "Video Callout"
     }
   ]
 }
