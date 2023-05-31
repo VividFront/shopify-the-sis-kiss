@@ -71,9 +71,11 @@ class HeaderMenu extends DetailsDisclosure {
 
     let that = this;
 
-    this.timer = setTimeout(function () {
-      that.mainDetailsToggle.setAttribute('open', '');
-    }, 200);
+    that.mainDetailsToggle.setAttribute('open', '');
+
+    // this.timer = setTimeout(function () {
+    //   that.mainDetailsToggle.setAttribute('open', '');
+    // }, 75);
   }
 
   onMouseLeave(e) {

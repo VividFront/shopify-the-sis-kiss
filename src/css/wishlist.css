@@ -42,3 +42,7 @@
 .wishlist-whale-wrapper #wishlist-formContainer {
   @apply max-w-[calc(100%_-_32px)] mx-auto px-16 pb-48 mb-60;
 }
+
+.wishlist-whale-wrapper .wishlist-form-Button {
+  @apply rounded-button font-bold;
+}

@@ -2743,6 +2743,36 @@ input[type='search'] {
   -webkit-appearance: none;
   font-size: 16px;
 }
+.button,
+.shopify-challenge__button,
+.customer button {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  border-radius: var(--vf-border-radius-button);
+  border-width: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  padding-left: calc(20rem / 16);
+  padding-left: calc(20rem / var(--vf-font-size-root));
+  padding-right: calc(20rem / 16);
+  padding-right: calc(20rem / var(--vf-font-size-root));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary-hover) / var(--tw-bg-opacity));
+}
 .yotpo-widget-loyalty-page
   .yotpo-widget-campaign-widget
   .yotpo-widget-campaign-widget-container {
@@ -3543,6 +3573,11 @@ input[type='search'] {
   padding-right: calc(16rem / var(--vf-font-size-root));
   padding-bottom: calc(48rem / 16);
   padding-bottom: calc(48rem / var(--vf-font-size-root));
+}
+.wishlist-whale-wrapper .wishlist-form-Button {
+  border-radius: 20px;
+  border-radius: var(--vf-border-radius-button);
+  font-weight: 700;
 }
 .tsk-about-hero-text {
   font-size: max(18px, min(7vw, 98px));
@@ -4366,6 +4401,10 @@ product-modal .product-media-modal__content img {
   background-color: rgba(44, 44, 44, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary-hover) / var(--tw-bg-opacity));
 }
+.hover\:\!text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
@@ -4528,6 +4567,12 @@ product-modal .product-media-modal__content img {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
   .md\:flex-nowrap {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -4661,11 +4706,11 @@ product-modal .product-media-modal__content img {
   .lg\:col-end-8 {
     grid-column-end: 8;
   }
-  .lg\:col-end-\[15\] {
-    grid-column-end: 15;
-  }
   .lg\:col-end-9 {
     grid-column-end: 9;
+  }
+  .lg\:col-end-\[15\] {
+    grid-column-end: 15;
   }
   .lg\:row-start-1 {
     grid-row-start: 1;
