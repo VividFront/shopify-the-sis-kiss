@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "banner": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "Where to Find Us",
+        "body": "",
+        "background_color": "bg-ui-pink"
+      }
+    },
+    "007ad14e-ea33-4102-b80d-cc908ac1bc34": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Have a Question Now?",
+        "body": "Reach out to us and let us help!",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us-new",
+        "theme": "dark"
+      }
+    }
+  },
+  "order": ["banner", "007ad14e-ea33-4102-b80d-cc908ac1bc34"]
+}
