@@ -1,20 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-<div class="customer register section-{{ section.id }}-padding">
+<div class="p-section-md customer register">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -49,7 +35,7 @@
         {%- endfor -%}
       </ul>
     {%- endif -%}
-    <div class="field">
+    <div class="tsk-field-group mt-24">
       <input
         type="text"
         name="customer[first_name]"
@@ -64,7 +50,7 @@
         {{ 'customer.register.first_name' | t }}
       </label>
     </div>
-    <div class="field">
+    <div class="tsk-field-group mt-24">
       <input
         type="text"
         name="customer[last_name]"
@@ -79,7 +65,7 @@
         {{ 'customer.register.last_name' | t }}
       </label>
     </div>
-    <div class="field">
+    <div class="tsk-field-group mt-24">
       <input
         type="email"
         name="customer[email]"
@@ -110,7 +96,7 @@
         {{ form.errors.messages.email }}.
       </span>
     {%- endif -%}
-    <div class="field">
+    <div class="tsk-field-group mt-24">
       <input
         type="password"
         name="customer[password]"
@@ -135,7 +121,7 @@
         {{ form.errors.messages.password }}.
       </span>
     {%- endif -%}
-    <button>
+    <button class="mt-32">
       {{ 'customer.register.submit' | t }}
     </button>
   {%- endform -%}

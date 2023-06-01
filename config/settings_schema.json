@@ -79,6 +79,26 @@
     ]
   },
   {
+    "name": "Yotpo Tiers",
+    "settings": [
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_silver",
+        "label": "Silver Icon"
+      },
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_gold",
+        "label": "Gold Icon"
+      },
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_diamond",
+        "label": "Diamond Icon"
+      }
+    ]
+  },
+  {
     "name": "Swatches",
     "settings": [
       {
