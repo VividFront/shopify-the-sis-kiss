@@ -1308,6 +1308,9 @@ a:hover {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
 .h-100 {
   height: calc(100rem / 16);
   height: calc(100rem / var(--vf-font-size-root));
@@ -5354,6 +5357,18 @@ product-modal .product-media-modal__content img {
   .lg\:grid-cols-full-bleed {
     grid-template-columns: 1fr repeat(12, calc(100% / 12)) 1fr;
     grid-template-columns: 1fr repeat(12, calc(var(--vf-container-width) / 12)) 1fr;
+  }
+  .lg\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .lg\:flex-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .lg\:flex-col {
     -webkit-box-orient: vertical;
