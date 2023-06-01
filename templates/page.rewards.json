@@ -22,7 +22,7 @@
           "settings": {
             "heading": "Sign Up",
             "body": "Create an account and get 50 points. Plus, follow us on social for even more points!",
-            "image": "shopify://shop_images/rewards-icon.png"
+            "image": "shopify://shop_images/sign.png"
           }
         },
         "fc450c58-28c1-4009-85b7-06ab2e767113": {
@@ -30,7 +30,7 @@
           "settings": {
             "heading": "Earn Points",
             "body": "Earn points every time you shop, share, review, and refer!",
-            "image": "shopify://shop_images/shipping-icon.png"
+            "image": "shopify://shop_images/point.png"
           }
         },
         "cfeab51d-917a-4571-adf9-ebb9ce3a2b34": {
@@ -38,7 +38,7 @@
           "settings": {
             "heading": "Redeem Points",
             "body": "Redeem points for exclusive discounts and level-up for more perks!",
-            "image": "shopify://shop_images/waterproof-icon.png"
+            "image": "shopify://shop_images/reward.png"
           }
         }
       },
