@@ -19,7 +19,7 @@
             <h1 class="mt-12 lg:mt-0">{{ section.settings.heading }}</h1>
             <p class="text-body-copy-large mt-12">{{ section.settings.body }}</p>
             <div class="flex gap-24 mt-24">
-              {% render 'button', text: section.settings.join_text, url: section.settings.join_link %}
+              {% render 'button', text: section.settings.join_text, url: section.settings.join_link, border_color_class: 'border-primary' %}
               {% render 'button-secondary', text: section.settings.login_text, url: section.settings.login_link %}
             </div>
           </div>

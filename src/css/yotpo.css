@@ -207,7 +207,7 @@
   .yotpo-tile-wrapper
   .yotpo-tile-box
   > div {
-  @apply flex flex-col gap-y-16;
+  @apply flex flex-col !w-full;
 }
 
 .yotpo-widget-referral-widget
@@ -225,7 +225,7 @@
   .yotpo-tile-box
   > div
   [role='heading'] {
-  @apply p-0 font-bold;
+  @apply p-0 !font-bold;
 }
 
 .yotpo-widget-referral-widget
@@ -234,6 +234,22 @@
   .yotpo-tile-box
   .yotpo-referral-widget-form {
   @apply !flex-row gap-24 !items-center !mt-0;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-description-text {
+  @apply mt-12;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form {
+  @apply mt-24;
 }
 
 .yotpo-widget-referral-widget
@@ -287,7 +303,7 @@
   .yotpo-tile-box
   .yotpo-referral-widget-form
   .yotpo-action-button-widget {
-  @apply w-68;
+  @apply w-80;
 }
 
 .yotpo-widget-referral-widget
@@ -314,7 +330,7 @@
   .yotpo-referral-widget-form
   .yotpo-action-button-widget
   button {
-  @apply text-primary !py-8 !px-20 rounded-button font-bold !border-solid !border-primary !border-[2px] h-auto;
+  @apply text-primary !py-8 !px-16 rounded-button font-bold !border-solid !border-primary !border-[2px] h-auto;
 }
 
 .yotpo-widget-referral-widget .yotpo-share-buttons-container {

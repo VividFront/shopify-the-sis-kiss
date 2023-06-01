@@ -3298,6 +3298,13 @@ input[type='search'] {
   .yotpo-tile-wrapper
   .yotpo-tile-box
   > div {
+  width: 100% !important;
+}
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3305,8 +3312,6 @@ input[type='search'] {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  row-gap: calc(16rem / 16);
-  row-gap: calc(16rem / var(--vf-font-size-root));
 }
 .yotpo-widget-referral-widget
   .yotpo-background
@@ -3322,8 +3327,15 @@ input[type='search'] {
   .yotpo-tile-box
   > div
   [role='heading'] {
+  font-weight: 700 !important;
+}
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  > div
+  [role='heading'] {
   padding: 0px;
-  font-weight: 700;
 }
 .yotpo-widget-referral-widget
   .yotpo-background
@@ -3346,6 +3358,22 @@ input[type='search'] {
   .yotpo-referral-widget-form {
   gap: calc(24rem / 16);
   gap: calc(24rem / var(--vf-font-size-root));
+}
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-description-text {
+  margin-top: calc(12rem / 16);
+  margin-top: calc(12rem / var(--vf-font-size-root));
+}
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form {
+  margin-top: calc(24rem / 16);
+  margin-top: calc(24rem / var(--vf-font-size-root));
 }
 .yotpo-widget-referral-widget
   .yotpo-background
@@ -3412,8 +3440,8 @@ input[type='search'] {
   .yotpo-tile-box
   .yotpo-referral-widget-form
   .yotpo-action-button-widget {
-  width: calc(68rem / 16);
-  width: calc(68rem / var(--vf-font-size-root));
+  width: calc(80rem / 16);
+  width: calc(80rem / var(--vf-font-size-root));
 }
 .yotpo-widget-referral-widget
   .yotpo-background
@@ -3486,10 +3514,10 @@ input[type='search'] {
   padding-top: calc(8rem / var(--vf-font-size-root)) !important;
   padding-bottom: calc(8rem / 16) !important;
   padding-bottom: calc(8rem / var(--vf-font-size-root)) !important;
-  padding-left: calc(20rem / 16) !important;
-  padding-left: calc(20rem / var(--vf-font-size-root)) !important;
-  padding-right: calc(20rem / 16) !important;
-  padding-right: calc(20rem / var(--vf-font-size-root)) !important;
+  padding-left: calc(16rem / 16) !important;
+  padding-left: calc(16rem / var(--vf-font-size-root)) !important;
+  padding-right: calc(16rem / 16) !important;
+  padding-right: calc(16rem / var(--vf-font-size-root)) !important;
 }
 .yotpo-widget-referral-widget
   .yotpo-background
