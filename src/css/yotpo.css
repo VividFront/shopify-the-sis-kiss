@@ -233,7 +233,7 @@
   .yotpo-tile-wrapper
   .yotpo-tile-box
   .yotpo-referral-widget-form {
-  @apply !flex-row gap-24 !items-center !mt-0;
+  @apply !flex-row gap-24 !items-center !mt-24;
 }
 
 .yotpo-widget-referral-widget
@@ -242,14 +242,6 @@
   .yotpo-tile-box
   .yotpo-description-text {
   @apply mt-12;
-}
-
-.yotpo-widget-referral-widget
-  .yotpo-background
-  .yotpo-tile-wrapper
-  .yotpo-tile-box
-  .yotpo-referral-widget-form {
-  @apply mt-24;
 }
 
 .yotpo-widget-referral-widget

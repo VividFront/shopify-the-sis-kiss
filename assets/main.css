@@ -3342,7 +3342,8 @@ input[type='search'] {
   .yotpo-tile-wrapper
   .yotpo-tile-box
   .yotpo-referral-widget-form {
-  margin-top: 0px !important;
+  margin-top: calc(24rem / 16) !important;
+  margin-top: calc(24rem / var(--vf-font-size-root)) !important;
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
   -ms-flex-direction: row !important;
@@ -3366,14 +3367,6 @@ input[type='search'] {
   .yotpo-description-text {
   margin-top: calc(12rem / 16);
   margin-top: calc(12rem / var(--vf-font-size-root));
-}
-.yotpo-widget-referral-widget
-  .yotpo-background
-  .yotpo-tile-wrapper
-  .yotpo-tile-box
-  .yotpo-referral-widget-form {
-  margin-top: calc(24rem / 16);
-  margin-top: calc(24rem / var(--vf-font-size-root));
 }
 .yotpo-widget-referral-widget
   .yotpo-background
