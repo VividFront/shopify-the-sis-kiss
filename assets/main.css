@@ -4995,6 +4995,11 @@ product-modal .product-media-modal__content img {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
+  .md\:justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .md\:gap-grid {
     gap: 16px;
     gap: var(--vf-grid-gap);
