@@ -99,6 +99,16 @@
     ]
   },
   {
+    "name": "Bundle Builder",
+    "settings": [
+      {
+        "type": "url",
+        "id": "bundle_builder_note_image",
+        "label": "Custom Note Image"
+      }
+    ]
+  },
+  {
     "name": "Swatches",
     "settings": [
       {

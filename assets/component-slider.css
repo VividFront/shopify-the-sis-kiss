@@ -94,7 +94,6 @@ slider-component.slider-component-full-width {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-padding-left: 1rem;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -110,7 +109,6 @@ slider-component.slider-component-full-width {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scroll-padding-left: 1.5rem;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
   }
@@ -119,7 +117,6 @@ slider-component.slider-component-full-width {
   .slider--tablet:after {
     content: '';
     width: 0;
-    padding-left: 1.5rem;
     margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
   }
 
@@ -177,7 +174,6 @@ slider-component.slider-component-full-width {
   .slider--desktop:after {
     content: '';
     width: 0;
-    padding-left: 5rem;
     margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
   }
 

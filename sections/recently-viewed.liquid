@@ -1,7 +1,7 @@
 {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
 {{ 'jquery.products.min.js' | asset_url | script_tag }}
 
-<div class="p-section-md relative overflow-hidden">
+<div id="recently-viewed-section" class="p-section-md relative overflow-hidden" style="display:none">
   <div class="absolute left-0 top-0 w-full h-full">
     {% if section.settings.background_image != blank %}
       {{ section.settings.background_image | image_url: width: 1500 | image_tag:
@@ -54,6 +54,10 @@
       // mount slider after products are added to dom
       if (window.RecentlyViewedSlider) {
         window.RecentlyViewedSlider.mount();
+      }
+
+      if (document.getElementById('recently-viewed-section')) {
+        document.getElementById('recently-viewed-section').style.display = 'block'
       }
     } 
   } );

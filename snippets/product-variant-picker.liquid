@@ -9,8 +9,23 @@
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
+{%- liquid 
+  assign picker_type = 'button'
+  assign max_variant_count = 0
+  for option in product.options_with_values
+    assign variant_count = option.values | size
+    if variant_count > max_variant_count
+      assign max_variant_count = variant_count
+    endif
+  endfor
+  if max_variant_count > 5
+    assign picker_type = 'select'
+  endif
+-%}
+
+
 {%- unless product.has_only_default_variant -%}
-  {%- if block.settings.picker_type == 'button' -%}
+  {%- if picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden flex flex-col gap-y-16"
@@ -31,17 +46,17 @@
         {%- assign default_value = option.values | first -%}
         <fieldset class="js product-form__input tsk-variant-radio {{ radio_type }}">
           <legend class="form__label font-open-sans font-semibold">{{ option.name }}: <span class="italic font-normal text-placeholder-high-contrast" id="option{{ option.position }}_value">{{ option.selected_value | default: default_value }}</span></legend>
-          {% render 'product-variant-options', product: product, option: option, block: block %}
+          {% render 'product-variant-options', product: product, option: option, block: block, picker_type: 'button' %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
         {{ product.variants | json }}
       </script>
     </variant-radios>
-  {%- else -%}
+  {%- elsif picker_type == 'select' -%}
     <variant-selects
       id="variant-selects-{{ section.id }}"
-      class="no-js-hidden"
+      class="no-js-hidden mt-12"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
@@ -50,21 +65,18 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <div class="product-form__input product-form__input--dropdown">
+        <div class="product-form__input tsk-field-group">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
-          <div class="select">
-            <select
-              id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-            >
-              {% render 'product-variant-options', product: product, option: option, block: block %}
-            </select>
-            {% render 'icon-caret' %}
-          </div>
+          <select
+            id="Option-{{ section.id }}-{{ forloop.index0 }}"
+            class="select__select"
+            name="options[{{ option.name | escape }}]"
+            form="{{ product_form_id }}"
+          >
+            {% render 'product-variant-options', product: product, option: option, block: block,  picker_type: 'select' %}
+          </select>
         </div>
       {%- endfor -%}
 
