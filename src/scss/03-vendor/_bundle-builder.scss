@@ -1,0 +1,190 @@
+#bundle-builder-app--bundle--root,
+#bundle-builder-app--bundle-contents-modal {
+  .bundle-builder-app--bundle--name {
+    @apply text-h2-alt font-display my-0 font-normal container;
+  }
+
+  .bundle-builder-app--bundle--description {
+    @apply container my-0;
+  }
+
+  .bundle-builder-app--content {
+    @apply container pt-48 pb-72 grid grid-cols gap-grid;
+  }
+
+  button:not(.bundle-builder-app--button--increase):not(.bundle-builder-app--button--decrease):not(.bundle-builder-app--bundle--contents-add):not(.bundle-builder-app--bundle--contents-subtract) {
+    @apply w-full max-w-none text-white py-8 px-20 rounded-button font-bold border-[2px] border-solid border-primary hover:border-primary;
+
+    &.bundle-builder-app--bundle--button--next,
+    &.bundle-builder-app--bundle--button--prev {
+      @apply w-auto;
+    }
+
+    &.bundle-builder-app--bundle--view-contents--button,
+    &.bundle-builder-app--bundle--button--prev {
+      @apply text-primary bg-white hover:[&_span]:underline;
+
+      &:hover {
+        background-color: #fff !important;
+        color: #000 !important;
+      }
+
+      .bundle-bundler-app--view-contents--number-of-products {
+        @apply hidden;
+      }
+    }
+
+    &.bundle-builder-app--bundle--add-to-cart-button {
+      &:disabled {
+        opacity: 1 !important;
+        @apply bg-disabled text-disabled-high-contrast border-disabled hover:bg-disabled hover:border-disabled;
+
+        &:hover {
+          background-color: rgb(222, 222, 222) !important;
+          color: rgb(148, 148, 148) !important;
+          border-color: rgb(222, 222, 222) !important;
+        }
+      }
+    }
+  }
+
+  .bundle-builder-app--bundle--section-breadcrumbs {
+    @apply mb-0;
+  }
+
+  .bundle-builder-app--bundle--section-name {
+    @apply after:hidden;
+  }
+
+  .bundle-builder-app--bundle--section-description {
+    @apply hidden;
+  }
+
+  .bundle-builder-app--products--block {
+    @apply col-start-1 col-end-7 lg:col-end-9 xl:col-end-10 w-full float-none;
+
+    .bundle-builder-app--bundle--section--product-list {
+      @apply grid grid-cols gap-grid mt-24;
+
+      .bundle-builder-app--bundle--product {
+        padding: 0 !important;
+        @apply col-span-3 lg:col-span-4 text-left transition-none w-full h-full;
+
+        & > div {
+          @apply flex flex-col h-full;
+        }
+
+        .bundle-builder-app--bundle--product-add--wrapper {
+          @apply mt-auto;
+        }
+
+        .bundle-builder-app--bundle--product-image {
+          @apply rounded aspect-square object-cover;
+        }
+
+        .bundle-builder-app--bundle--product-details {
+          @apply p-0 mt-16 flex flex-col h-full;
+        }
+
+        .bundle-builder-app--bundle--product-name {
+          @apply text-body-copy-large m-0;
+        }
+
+        .bundle-builder-app--bundle--product-select-label {
+          @apply font-bold text-[15px] mt-6;
+        }
+
+        .bundle-builder-app--bundle--product-select {
+          background: var(--vf-select-background);
+          @apply appearance-none text-body-copy-small text-left rounded-[4px] border-border border w-full h-32 px-8 py-2 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
+        }
+
+        .bundle-builder-app--bundle--product-select-container {
+          @apply max-w-none;
+
+          &::after {
+            @apply hidden;
+          }
+        }
+
+        .bundle-builder-app--bundle--product-options {
+          @apply m-0;
+        }
+
+        .bundle-builder-app--bundle--product-price {
+          @apply mt-16;
+
+          .money {
+            @apply font-normal;
+          }
+        }
+      }
+    }
+  }
+
+  .bundle-builder-app--summary--block {
+    @apply col-start-1 col-end-7 lg:col-start-9 xl:col-start-10 lg:col-end-13 w-full float-none m-0 lg:mt-[250px] relative;
+  }
+
+  .bundle-builder-app--bundle--summary {
+    @apply rounded p-24 pb-32 border-border lg:sticky lg:top-[150px];
+
+    .bundle-builder-app--bundle--summary--empty {
+      @apply p-0;
+    }
+  }
+
+  .bundle-builder-app--bundle--price {
+    .bundle-builder-app--bundle--total-price {
+      @apply text-body-copy-large font-bold;
+    }
+  }
+
+  .bundle-builder-app--note-container {
+    @apply text-white bg-black p-16 pb-24 rounded mb-24;
+
+    label {
+      @apply text-left font-bold;
+
+      &::before {
+        content: "Don't Forget to Type in Your Name";
+        @apply font-bold block text-center mb-12;
+      }
+    }
+
+    #bundle-builder-app--note-textarea {
+      @apply w-42 bg-black border-white text-white border-[1px] rounded-[4px] px-12 py-12;
+    }
+
+    &::before {
+      @apply content-[''] w-98 h-98 mx-auto block bg-no-repeat bg-center bg-contain;
+      background-image: var(--tsk-bundle-builder-note-image);
+    }
+  }
+}
+
+#bundle-builder-app--bundle-contents-modal {
+  inset: 16px !important;
+
+  .bundle-builder-app--bundle--contents-list {
+    .bundle-builder-app--bundle--contents-name {
+      @apply text-body-copy-large text-left;
+    }
+
+    .bundle-builder-app--bundle--contents-item {
+      @apply text-left;
+    }
+  }
+
+  .bundle-builder-app--bundle--contents--quantity {
+    @apply max-w-none;
+  }
+
+  .bundle-builder-app--bundle--contents-image {
+    @apply rounded aspect-square object-cover;
+  }
+
+  .bundle-builder-app--bundle--add-to-cart-button {
+    width: auto !important;
+  }
+}
