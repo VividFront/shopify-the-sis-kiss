@@ -25,10 +25,25 @@
   }
 
   .bundle-builder-app--bundle--section-breadcrumbs
-    .bundle-builder-app--bundle--section-breadcrumb:nth-child(1n)::before {
-    content: '';
+    .bundle-builder-app--bundle--section-breadcrumb {
+    padding-bottom: 60px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .bundle-builder-app--bundle--section-breadcrumbs
+    .bundle-builder-app--bundle--section-breadcrumb[data-step='1'] {
     background-image: var(--tsk-bundle-builder-chain-icon);
-    @apply h-60 w-60 block;
+  }
+
+  .bundle-builder-app--bundle--section-breadcrumbs
+    .bundle-builder-app--bundle--section-breadcrumb[data-step='2'] {
+    background-image: var(--tsk-bundle-builder-diamond-icon);
+  }
+
+  .bundle-builder-app--bundle--error-message {
+    @apply pt-0 text-error;
   }
 
   button:not(.bundle-builder-app--button--increase):not(.bundle-builder-app--button--decrease):not(.bundle-builder-app--bundle--contents-add):not(.bundle-builder-app--bundle--contents-subtract) {

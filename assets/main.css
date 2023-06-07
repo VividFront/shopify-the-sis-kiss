@@ -4609,17 +4609,38 @@ sesami-button button:hover {
 }
 #bundle-builder-app--bundle--root
   .bundle-builder-app--bundle--section-breadcrumbs
-  .bundle-builder-app--bundle--section-breadcrumb:nth-child(1n)::before,
+  .bundle-builder-app--bundle--section-breadcrumb,
 #bundle-builder-app--bundle-contents-modal
   .bundle-builder-app--bundle--section-breadcrumbs
-  .bundle-builder-app--bundle--section-breadcrumb:nth-child(1n)::before {
-  content: '';
+  .bundle-builder-app--bundle--section-breadcrumb {
+  padding-bottom: 60px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#bundle-builder-app--bundle--root
+  .bundle-builder-app--bundle--section-breadcrumbs
+  .bundle-builder-app--bundle--section-breadcrumb[data-step='1'],
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--bundle--section-breadcrumbs
+  .bundle-builder-app--bundle--section-breadcrumb[data-step='1'] {
   background-image: var(--tsk-bundle-builder-chain-icon);
-  display: block;
-  height: calc(60rem / 16);
-  height: calc(60rem / var(--vf-font-size-root));
-  width: calc(60rem / 16);
-  width: calc(60rem / var(--vf-font-size-root));
+}
+#bundle-builder-app--bundle--root
+  .bundle-builder-app--bundle--section-breadcrumbs
+  .bundle-builder-app--bundle--section-breadcrumb[data-step='2'],
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--bundle--section-breadcrumbs
+  .bundle-builder-app--bundle--section-breadcrumb[data-step='2'] {
+  background-image: var(--tsk-bundle-builder-diamond-icon);
+}
+#bundle-builder-app--bundle--root .bundle-builder-app--bundle--error-message,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--bundle--error-message {
+  padding-top: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(205, 32, 38, var(--tw-text-opacity));
+  color: rgb(var(--vf-color-error) / var(--tw-text-opacity));
 }
 #bundle-builder-app--bundle--root
   button:not(.bundle-builder-app--button--increase):not(.bundle-builder-app--button--decrease):not(.bundle-builder-app--bundle--contents-add):not(.bundle-builder-app--bundle--contents-subtract),
