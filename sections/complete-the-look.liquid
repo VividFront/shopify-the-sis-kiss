@@ -33,12 +33,14 @@
         <div class="mt-18">
           <div class="splide" data-vf-recommended-products-slider>
             <div class="splide__track overflow-visible">
-              <ul class="splide__list md:!flex md:gap-grid">
+              <ul class="splide__list md:!flex md:gap-grid md:justify-center">
                 {% if recommendations.performed and recommendations.products_count > 0 %}
                   {% for recommendation in recommendations.products %}
-                    <li class="splide__slide md:basis-1/4 md:shrink">
-                      {% render 'card-product', product: recommendation, show_secondary_image: true %}
-                    </li>
+                    {% unless recommendation.vendor == 'Route' %}
+                      <li class="splide__slide md:basis-1/4 md:shrink">
+                        {% render 'card-product', product: recommendation, show_secondary_image: true %}
+                      </li>
+                    {% endunless %}
                   {% endfor %}
                 {% endif %}
                 </ul>

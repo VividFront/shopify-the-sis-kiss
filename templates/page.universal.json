@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-universal",
+      "blocks": {
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796": {
+          "type": "page_header",
+          "settings": {
+            "text": "Page Header"
+          }
+        },
+        "3823a248-bbf2-485b-8d35-81d8679e1ec1": {
+          "type": "richtext_content",
+          "settings": {
+            "content": "<h3>Section Header</h3><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p><h4>Paragraph Heading</h4><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p><h4>Bullet Heading</h4><ul><li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</li><li>Lorem ipsum dolor sit amet.</li><li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</li></ul><p>Sentence with inline links like <a href=\"/collections\" title=\"All collections\">this one</a> and <a href=\"/pages/about\" title=\"About\">also this link</a></p>"
+          }
+        },
+        "c146184e-25c3-42da-a5a3-d15899aae202": {
+          "type": "image_full",
+          "settings": {
+            "image": "shopify://shop_images/31_2x_1de6e05a-f2d4-4a53-a4d3-4ff5b6c07233.png",
+            "heading": "Inline Image Title",
+            "image_tag": "@influencer_tag",
+            "image_caption": "Image Attribution & Caption"
+          }
+        },
+        "813f12dd-03bd-416c-9d72-813ba2b1e870": {
+          "type": "image_split",
+          "settings": {
+            "image_1": "shopify://shop_images/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "heading_1": "Inline Image Title",
+            "image_tag_1": "@influencer_tag",
+            "image_caption_1": "Image Attribution & Caption",
+            "image_2": "shopify://shop_images/32.png",
+            "heading_2": "Inline Image Title",
+            "image_tag_2": "@influencer_tag",
+            "image_caption_2": "Image Attribution & Caption"
+          }
+        },
+        "f4b7a4c6-b7ec-4e4f-979f-031d34c0e297": {
+          "type": "z_pattern",
+          "settings": {
+            "image": "shopify://shop_images/Fixed_Height.png",
+            "heading": "Z Pattern Heading",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+            "image_tag": "@influencer_tag",
+            "image_position": "left"
+          }
+        },
+        "fed637cc-507f-4ada-8ecc-13123289e0ff": {
+          "type": "z_pattern",
+          "settings": {
+            "image": "shopify://shop_images/header.jpg",
+            "heading": "Z Pattern Heading",
+            "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>",
+            "image_tag": "@influencer_tag",
+            "image_position": "right"
+          }
+        }
+      },
+      "block_order": [
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796",
+        "3823a248-bbf2-485b-8d35-81d8679e1ec1",
+        "c146184e-25c3-42da-a5a3-d15899aae202",
+        "813f12dd-03bd-416c-9d72-813ba2b1e870",
+        "f4b7a4c6-b7ec-4e4f-979f-031d34c0e297",
+        "fed637cc-507f-4ada-8ecc-13123289e0ff"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "content_width": "narrow"
+      }
+    }
+  },
+  "order": ["main"]
+}

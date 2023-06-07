@@ -1,9 +1,9 @@
-product-modal {
-  @apply bg-[rgba(51,51,51,.73)] px-32;
+// product-modal {
+//   @apply bg-[rgba(51,51,51,.73)] px-32;
 
-  .product-media-modal__content {
-    img {
-      @apply hidden max-w-[calc(100vw-64px)] max-h-[calc(400rem/16)] md:max-w-[calc(600rem/16)] md:max-h-[calc(600rem/16)] object-contain bg-white;
-    }
-  }
-}
+//   .product-media-modal__content {
+//     img {
+//       @apply hidden max-w-[calc(100vw-64px)] max-h-[calc(400rem/16)] md:max-w-[calc(600rem/16)] md:max-h-[calc(600rem/16)] object-contain bg-white;
+//     }
+//   }
+// }

@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "9.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -95,6 +95,56 @@
         "type": "url",
         "id": "yotpo_tiers_icon_diamond",
         "label": "Diamond Icon"
+      }
+    ]
+  },
+  {
+    "name": "Bundle Builder",
+    "settings": [
+      {
+        "type": "url",
+        "id": "bundle_builder_note_image",
+        "label": "Custom Note Image"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_tsk_your_way_image",
+        "label": "TSK Your Way Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_tsk_your_way_image_mobile",
+        "label": "TSK Your Way Image (mobile)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_me_image",
+        "label": "Charm Me Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_me_image_mobile",
+        "label": "Charm Me Image (mobile)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_diamond_icon",
+        "label": "Diamond Icon"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_chain_icon",
+        "label": "Chain Icon"
+      },
+      {
+        "type": "text",
+        "id": "settings.bundle_builder_tsk_your_way_id",
+        "label": "TSK Your Way ID"
+      },
+      {
+        "type": "text",
+        "id": "bundle_builder_charm_me_id",
+        "label": "Charm Me ID"
       }
     ]
   },
