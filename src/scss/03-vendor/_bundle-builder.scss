@@ -1,15 +1,34 @@
 #bundle-builder-app--bundle--root,
 #bundle-builder-app--bundle-contents-modal {
   .bundle-builder-app--bundle--name {
-    @apply text-h2-alt font-display my-0 font-normal container;
+    @apply text-h2-alt font-display my-0 font-normal container pt-24 lg:pt-64;
   }
 
   .bundle-builder-app--bundle--description {
-    @apply container my-0;
+    @apply container my-0 mt-12 pb-48 lg:pb-72 lg:grid lg:grid-cols;
+  }
+
+  .bundle-builder-app--bundle--description p {
+    @apply col-start-3 col-end-11;
+  }
+
+  .bundle-builder-app--bundle--header-image-wrapper {
+    @apply bg-bottom h-[315px] lg:h-[222px];
+  }
+
+  .bundle-builder-app--bundle--header-image-wrapper img {
+    display: none !important;
   }
 
   .bundle-builder-app--content {
     @apply container pt-48 pb-72 grid grid-cols gap-grid;
+  }
+
+  .bundle-builder-app--bundle--section-breadcrumbs
+    .bundle-builder-app--bundle--section-breadcrumb:nth-child(1n)::before {
+    content: '';
+    background-image: var(--tsk-bundle-builder-chain-icon);
+    @apply h-60 w-60 block;
   }
 
   button:not(.bundle-builder-app--button--increase):not(.bundle-builder-app--button--decrease):not(.bundle-builder-app--bundle--contents-add):not(.bundle-builder-app--bundle--contents-subtract) {

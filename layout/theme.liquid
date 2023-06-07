@@ -204,6 +204,34 @@
       ::before,
       ::after {
         --tsk-bundle-builder-note-image: url({{ settings.bundle_builder_note_image }});
+        --tsk-bundle-builder-chain-icon: url({{ settings.bundle_builder_chain_icon }});
+        --tsk-bundle-builder-diamond-icon: url({{ settings.bundle_builder_diamond_icon }});
+      }
+
+      #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_tsk_your_way_id }} .bundle-builder-app--bundle--header-image-wrapper {
+        background-image: url({{ settings.bundle_builder_tsk_your_way_image }});
+      }
+
+      #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_me_id }} .bundle-builder-app--bundle--header-image-wrapper {
+        background-image: url({{ settings.bundle_builder_charm_me_image }});
+      }
+
+      #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_tsk_your_way_id }} .bundle-builder-app--bundle--header-image-wrapper img {
+        display: none !important;
+      }
+
+      #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_me_id }} .bundle-builder-app--bundle--header-image-wrapper img {
+        display: none !important;
+      }
+
+      @media screen and (max-width: 989px) {
+        #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_tsk_your_way_id }} .bundle-builder-app--bundle--header-image-wrapper {
+          background-image: url({{ settings.bundle_builder_tsk_your_way_image_mobile }});
+        }
+  
+        #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_me_id }} {
+          background-image: url({{ settings.bundle_builder_charm_me_image_mobile }});
+        }
       }
     </style>
   {% endif %}
