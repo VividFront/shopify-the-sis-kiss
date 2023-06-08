@@ -13,7 +13,7 @@
   }
 
   .bundle-builder-app--bundle--header-image-wrapper {
-    @apply bg-bottom h-[315px] lg:h-[222px];
+    @apply bg-bottom bg-cover bg-no-repeat h-[315px] lg:h-[222px];
   }
 
   .bundle-builder-app--bundle--header-image-wrapper img {
