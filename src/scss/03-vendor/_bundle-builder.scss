@@ -109,7 +109,15 @@
         }
 
         .bundle-builder-app--bundle--product-add--wrapper {
-          @apply mt-auto;
+          @apply mt-auto flex-col-reverse;
+
+          .bundle-builder-app--product--quantity {
+            @apply max-w-none m-0 mt-16;
+
+            .bundle-builder-app--quantity--variant {
+              @apply p-0 text-body-copy-small;
+            }
+          }
         }
 
         .bundle-builder-app--bundle--product-image {
