@@ -90,7 +90,7 @@
     "235c7e17-9b9f-49ba-8f41-c31b8511b8aa": {
       "type": "quote-section",
       "settings": {
-        "quote": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod”",
+        "quote": "Jewelry for Unapologetic Babes.",
         "cta_text": "",
         "cta_url": "",
         "button_type": "primary"
@@ -118,7 +118,7 @@
       "type": "z-pattern-multi-image",
       "settings": {
         "heading": "Our Designs",
-        "body": "Paragraph about the jewelry designs. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et",
+        "body": "Our jewelry collections are hand curated by our TSK team. We collaborate with our favorite influencer's to bring you unique and hand-picked styles we are sure you will love.",
         "cta_text": "Shop All Jewelry",
         "cta_url": "shopify:\/\/collections",
         "image_1": "shopify:\/\/shop_images\/your-way.jpg",
