@@ -70,7 +70,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/32.png",
         "heading": "Order Wholesale From Us Today",
-        "body": "<p>Optional description paragraph. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod<\/p>",
+        "body": "<p>We've partnered with Faire to offer you:<\/p>",
         "cta_text": "",
         "cta_url": ""
       }
