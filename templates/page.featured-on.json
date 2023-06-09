@@ -6,7 +6,7 @@
         "ef46a241-47ca-4ea9-8392-2a803a4984b0": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/Media_2-2C8B7C59-976D-4C7E-8CAE-7CD5D0B36FAD.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": "shopify:\/\/pages\/about"
@@ -15,7 +15,7 @@
         "0584af32-7d6a-4750-ba46-a468faeb9110": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/unknown_model118.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -24,7 +24,7 @@
         "b82c2d73-d5e8-46fa-8db7-8e9a14c36538": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/DSC06893.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -33,7 +33,7 @@
         "30cac9e7-3701-4c46-ba75-00a061a5907d": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/DSC02336.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -42,7 +42,7 @@
         "01d64b3e-6aa8-4821-86c0-cbba0028bcfe": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/New_Lovely_links058.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -51,7 +51,7 @@
         "2f8bdc66-7b16-4407-97e3-fe901730a429": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_14.png",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -60,7 +60,7 @@
         "70ed1f72-345d-4343-9b85-9c3c28349db9": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/DSC01454.jpg",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -69,16 +69,7 @@
         "ba88903d-af13-4638-a539-d8f5dda4f6b6": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
-            "heading": "FirstName LastName",
-            "body": "Lorem ipsum dolor sit amet",
-            "link": ""
-          }
-        },
-        "98024684-59bf-4c64-93b8-fa828bba6a28": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-05-30_at_2.54.46_PM.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_15.png",
             "heading": "FirstName LastName",
             "body": "Lorem ipsum dolor sit amet",
             "link": ""
@@ -93,8 +84,7 @@
         "01d64b3e-6aa8-4821-86c0-cbba0028bcfe",
         "2f8bdc66-7b16-4407-97e3-fe901730a429",
         "70ed1f72-345d-4343-9b85-9c3c28349db9",
-        "ba88903d-af13-4638-a539-d8f5dda4f6b6",
-        "98024684-59bf-4c64-93b8-fa828bba6a28"
+        "ba88903d-af13-4638-a539-d8f5dda4f6b6"
       ],
       "settings": {
         "heading": "Featured On",
