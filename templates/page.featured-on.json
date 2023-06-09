@@ -43,35 +43,35 @@
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/New_Lovely_links058.jpg",
-            "heading": "FirstName LastName",
-            "body": "Lorem ipsum dolor sit amet",
-            "link": ""
+            "heading": "Cleveland Mag: Best of CLE 23",
+            "body": "Best of Cleveland: The Sis Kiss, Permanent Jewelry",
+            "link": "https:\/\/clevelandmagazine.com\/best-of\/best-of-cleveland\/articles\/best-of-cleveland-the-sis-kiss-permanent-jewelry"
           }
         },
         "2f8bdc66-7b16-4407-97e3-fe901730a429": {
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_14.png",
-            "heading": "FirstName LastName",
-            "body": "Lorem ipsum dolor sit amet",
-            "link": ""
+            "heading": "Loverly Gray at TSK HQ!",
+            "body": "Loverly and Meg cheers their curated jewelry collection.",
+            "link": "shopify:\/\/collections\/loverly-grey-x-the-sis-kiss"
           }
         },
         "70ed1f72-345d-4343-9b85-9c3c28349db9": {
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC01454.jpg",
-            "heading": "FirstName LastName",
-            "body": "Lorem ipsum dolor sit amet",
-            "link": ""
+            "heading": "Charm Bar 2nd Anniversary",
+            "body": "TSK's exclusive Charm Bar turns two!",
+            "link": "shopify:\/\/collections\/charm-bar"
           }
         },
         "ba88903d-af13-4638-a539-d8f5dda4f6b6": {
           "type": "card",
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_15.png",
-            "heading": "FirstName LastName",
-            "body": "Lorem ipsum dolor sit amet",
+            "heading": "Influencer Name Here in TSK",
+            "body": "Influencer shows off her must-have TSK necklace.",
             "link": ""
           }
         }
