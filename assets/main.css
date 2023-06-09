@@ -1164,6 +1164,10 @@ a:hover {
   margin-bottom: calc(32rem / 16);
   margin-bottom: calc(32rem / var(--vf-font-size-root));
 }
+.mb-40 {
+  margin-bottom: calc(40rem / 16);
+  margin-bottom: calc(40rem / var(--vf-font-size-root));
+}
 .mb-48 {
   margin-bottom: calc(48rem / 16);
   margin-bottom: calc(48rem / var(--vf-font-size-root));
@@ -4903,6 +4907,47 @@ sesami-button button:hover {
   .bundle-builder-app--bundle--product
   .bundle-builder-app--bundle--product-add--wrapper {
   margin-top: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+#bundle-builder-app--bundle--root
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper
+  .bundle-builder-app--product--quantity,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper
+  .bundle-builder-app--product--quantity {
+  margin: 0px;
+  margin-top: calc(16rem / 16);
+  margin-top: calc(16rem / var(--vf-font-size-root));
+  max-width: none;
+}
+#bundle-builder-app--bundle--root
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper
+  .bundle-builder-app--product--quantity
+  .bundle-builder-app--quantity--variant,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper
+  .bundle-builder-app--product--quantity
+  .bundle-builder-app--quantity--variant {
+  padding: 0px;
+  font-size: calc(13rem / 16);
+  font-size: var(--vf-font-size-body-copy-small);
+  line-height: calc(18rem / 16);
+  line-height: var(--vf-line-height-body-copy-small);
 }
 #bundle-builder-app--bundle--root
   .bundle-builder-app--products--block
@@ -5883,9 +5928,18 @@ footer #contact_form {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+  .md\:flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
   .md\:flex-nowrap {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+  .md\:justify-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
   .md\:justify-center {
     -webkit-box-pack: center;
