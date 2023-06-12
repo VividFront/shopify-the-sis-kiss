@@ -5,14 +5,18 @@
 {%- endif -%}
 
 <div class="container">
-  <div class="grid grid-cols">
+  <div class="grid grid-cols gap-grid">
     <div class="col-span-3">
     
     </div>
-    <div class="col-span-9 bg-ui-background rounded px-16 pt-18 pb-20">
+    <div class="col-span-9 bg-ui-background rounded-t px-16 pt-18">
       {% if collection.metafields.custom.subcategories != nil %}
         {% render 'subcategories', categories: collection.metafields.custom.subcategories.value %}
       {% endif %}
+    </div>
+  </div>
+  <div id="tsk-product-grid" class="grid grid-cols gap-grid">
+    <div id="collection-filters-grid">
       {% render 'product-grid', collection: collection, section: section %}
     </div>
   </div>
