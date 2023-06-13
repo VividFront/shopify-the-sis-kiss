@@ -1,5 +1,5 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'component-card.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-search.css' | asset_url | stylesheet_tag }}
 
@@ -14,135 +14,96 @@
 
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
 
-<style>
-  .template-search__header {
-    margin-bottom: 3rem;
-  }
-
-  .template-search__search {
-    margin: 0 auto 3.5rem;
-    max-width: 74.1rem;
-  }
-
-  .template-search__search .search {
-    margin-top: 3rem;
-  }
-
-  .template-search--empty {
-    padding-bottom: 18rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .template-search__header {
-      margin-bottom: 5rem;
-    }
-  }
-
-  .search__button .icon {
-    height: 1.8rem;
-  }
-</style>
-
 {%- liquid
   assign sort_by = search.sort_by | default: search.default_sort_by
   assign terms = search.terms | escape
   assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
 -%}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
 {% paginate search.results by 24 %}
-  <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
+  <div class="template-search pt-48">
     <div class="template-search__header container">
-      <h1 class="h2 center">
+      <h1 class="text-center">
         {%- if search.performed -%}
           {{- 'templates.search.title' | t -}}
         {%- else -%}
           {{- 'general.search.search' | t -}}
         {%- endif -%}
       </h1>
-      <div class="template-search__search">
-        {%- if settings.predictive_search_enabled -%}
-          <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
-        {%- endif -%}
-            <main-search>
-              <form action="{{ routes.search_url }}" method="get" role="search" class="search">
-                <div class="field">
-                  <input
-                    class="search__input field__input"
-                    id="Search-In-Template"
-                    type="search"
-                    name="q"
-                    value="{{ search.terms | escape }}"
-                    placeholder="{{ 'general.search.search' | t }}"
-                    {%- if settings.predictive_search_enabled -%}
-                      role="combobox"
-                      aria-expanded="false"
-                      aria-owns="predictive-search-results"
-                      aria-controls="predictive-search-results"
-                      aria-haspopup="listbox"
-                      aria-autocomplete="list"
-                      autocorrect="off"
-                      autocomplete="off"
-                      autocapitalize="off"
-                      spellcheck="false"
-                    {%- endif -%}
-                  >
-                  <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
-                  <input name="options[prefix]" type="hidden" value="last">
-
-                  {%- if settings.predictive_search_enabled -%}
-                    <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
-                      <div class="predictive-search__loading-state">
-                        <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-                  {%- endif -%}
-
-                  <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
-                    <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                      <use xlink:href="#icon-reset">
-                    </svg>
-                  </button>
-                  <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                    <svg class="icon icon-search" aria-hidden="true" focusable="false">
-                      <use xlink:href="#icon-search">
-                    </svg>
-                  </button>
-                </div>
-              </form>
-            </main-search>
-        {%- if settings.predictive_search_enabled -%}
-          </predictive-search>
-        {%- endif -%}
-
-      </div>
-      {%- if search.performed -%}
-        {%- unless section.settings.enable_filtering or section.settings.enable_sorting -%}
-          {%- if search.results_count > 0 -%}
-            <p role="status">{{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}</p>
+      <div class="lg:grid grid-cols gap-grid mt-24">
+        <div class="lg:col-start-4 lg:col-end-10">
+          <div class="template-search__search ">
+          {%- if settings.predictive_search_enabled -%}
+            <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
           {%- endif -%}
-        {%- endunless -%}
-        {%- if search.results_count == 0 and search.filters == empty -%}
-          <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+              <main-search>
+                <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+                  <div class="tsk-field-group">
+                    <input
+                      class=""
+                      id="Search-In-Template"
+                      type="search"
+                      name="q"
+                      value="{{ search.terms | escape }}"
+                      placeholder="{{ 'general.search.search' | t }}"
+                      {%- if settings.predictive_search_enabled -%}
+                        role="combobox"
+                        aria-expanded="false"
+                        aria-owns="predictive-search-results"
+                        aria-controls="predictive-search-results"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocorrect="off"
+                        autocomplete="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                      {%- endif -%}
+                    >
+                    <label class="" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
+                    <input name="options[prefix]" type="hidden" value="last">
+  
+                    {%- if settings.predictive_search_enabled -%}
+                      <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
+                        <div class="predictive-search__loading-state">
+                          <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                      </div>
+  
+                      <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                    {%- endif -%}
+  
+                    <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
+                      <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                        <use xlink:href="#icon-reset">
+                      </svg>
+                    </button>
+                    <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                        <use xlink:href="#icon-search">
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </main-search>
+          {%- if settings.predictive_search_enabled -%}
+            </predictive-search>
+          {%- endif -%}
+  
+        </div>
+        {%- if search.performed -%}
+          {%- unless section.settings.enable_filtering or section.settings.enable_sorting -%}
+            {%- if search.results_count > 0 -%}
+              <p role="status" class="text-center mt-12">{{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}</p>
+            {%- endif -%}
+          {%- endunless -%}
+          {%- if search.results_count == 0 and search.filters == empty -%}
+            <p role="status" class="text-center mt-12">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+          {%- endif -%}
         {%- endif -%}
-      {%- endif -%}
+        </div>
+      </div>
     </div>
     {%- if search.performed -%}
       {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' and search.filters != empty -%}
@@ -189,7 +150,7 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-      <div id="tsk-product-grid" {% if section.settings.filter_type == 'vertical' %} class="facets-vertical container"{% endif %}>
+      <div id="tsk-product-grid" class="search-grid no-subcategories mt-40">
         {%- if search.filters != empty -%}
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} container{% endif %}" id="main-search-filters" data-id="{{ section.id }}">

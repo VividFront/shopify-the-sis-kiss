@@ -6,16 +6,49 @@
 
 <div class="container">
   <div class="grid grid-cols gap-grid">
-    <div class="col-span-3">
-    
+    {% comment %} <div class="col-span-3">
+      <div>
+        {% if collection.all_types != nil %}
+          {% assign product_types = collection.all_types | uniq | sort %}
+          <h3>All {{ collection.title }}</h3>
+          <ul class="mb-32 mt-6">
+            {% for type in product_types %}
+              {% if type != blank %}
+                <li class="py-4">{{ type | link_to_type: class: 'capitalize hover:underline' | downcase }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+        <h3 class="mb-24">Filters</h3>
+      </div>
     </div>
-    <div class="col-span-9 bg-ui-background rounded-t px-16 pt-18">
-      {% if collection.metafields.custom.subcategories != nil %}
+    {% if collection.metafields.custom.subcategories != nil %}
+      <div class="col-span-9 bg-ui-background rounded-t px-16 pt-18">
         {% render 'subcategories', categories: collection.metafields.custom.subcategories.value %}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %} {% endcomment %}
   </div>
-  <div id="tsk-product-grid" class="grid grid-cols gap-grid">
+  <div id="tsk-product-grid" class="grid grid-cols gap-x-grid items-start {% if collection.metafields.custom.subcategories == nil %}no-subcategories{% endif %}">
+    <div class="tw-hidden lg:block col-span-3 lg:row-start-1 lg:row-end-2">
+      <div>
+        {% if collection.all_types != nil %}
+          {% assign product_types = collection.all_types | uniq | sort %}
+          <h3>All {{ collection.title }}</h3>
+          <ul class="mb-32 mt-6">
+            {% for type in product_types %}
+              {% if type != blank %}
+                <li class="py-4">{{ type | link_to_type: class: 'capitalize hover:underline' | downcase }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+    {% if collection.metafields.custom.subcategories != nil %}
+      <div class="lg:row-start-1 lg:row-end-2 col-span-6 lg:col-span-9 bg-ui-background rounded-t px-16 pt-18 h-full">
+        {% render 'subcategories', categories: collection.metafields.custom.subcategories.value %}
+      </div>
+    {% endif %}
     <div id="collection-filters-grid">
       {% render 'product-grid', collection: collection, section: section %}
     </div>

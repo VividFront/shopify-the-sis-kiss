@@ -125,7 +125,7 @@
     "social_pinterest_link": "https://www.pinterest.com/TheSisKiss/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "predictive_search_enabled": true,
+    "predictive_search_enabled": false,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
@@ -162,11 +162,16 @@
         "disabled": false,
         "settings": {}
       },
+      "15706352229161960306": {
+        "type": "shopify://apps/slide-cart-sticky-cart-drawer/blocks/app-embeded/41ace2ee-41e6-45af-a9c4-452e6defecc0",
+        "disabled": false,
+        "settings": {}
+      },
       "5059203847231188605": {
         "type": "shopify://apps/smart-product-filter-search/blocks/app-embed/5cc1944c-3014-4a2a-af40-7d65abc0ef73",
         "disabled": false,
         "settings": {
-          "productGridSelector": "",
+          "productGridSelector": "#collection-filters-grid",
           "customJs": "",
           "customCss": ""
         }

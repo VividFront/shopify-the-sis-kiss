@@ -5,7 +5,7 @@
     clear: none !important;
     padding-left: 0;
 
-    @apply col-start-1 col-end-7 lg:col-start-4 lg:col-end-13 bg-ui-background rounded-b px-16 pt-18 lg:pt-0 pb-20;
+    @apply col-start-1 col-end-7 lg:row-start-2 lg:row-end-4 lg:col-start-4 lg:col-end-13 bg-ui-background rounded-b px-16 pt-18 lg:pt-0 pb-20;
 
     #gf-products {
       @apply grid gap-y-24 gap-x-16 grid-cols-2 lg:grid-cols-3;
@@ -26,6 +26,10 @@
     }
   }
 
+  &.no-subcategories #gf-grid {
+    @apply pt-18 rounded-t lg:row-start-1;
+  }
+
   #gf-controls-container {
     .sort-by-toggle {
       @apply border-primary border flex gap-4 items-center h-auto;
@@ -35,10 +39,31 @@
         @apply font-bold;
       }
     }
+
+    .gf-refine-toggle-mobile,
+    .gf-form-button-group button {
+      background: transparent !important;
+      border: 1px solid #000 !important;
+    }
+  }
+
+  &.search-grid {
+    #product-grid {
+      @apply items-start;
+    }
+
+    #gf-tree {
+      @apply lg:row-start-1;
+    }
   }
 
   #gf-tree {
-    @apply col-start-1 col-end-7  lg:col-start-1 lg:col-end-4 w-full float-none clear-none;
+    @apply col-start-1 col-end-7 row-start-3 lg:start-2 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-4 w-full float-none clear-none;
+
+    &::before {
+      content: 'Filters';
+      @apply text-h3 font-heading font-bold pb-24 block;
+    }
 
     .gf-option-block {
       @apply p-12 border-border border-t border-b mt-[-1px];

@@ -121,39 +121,82 @@
           {%- endif -%}
         {%- endif -%} 
       </div> 
-        <div class="card__content">
-          <div class="card__information">
-            <h6 class="mt-16" {% if card_product.featured_image or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}" {% endif %}>
-              <a class="hover:underline" href="{{ card_product.url }}{{variant_url}}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
-                {{ card_product.title | escape }}
-              </a>
-            </h6>
-            <div class="card-information">  
-                {% assign product = card_product %} {% assign price_class = '' %} {%- if use_variant -%} {%-   assign target = product.selected_or_first_available_variant -%} {%- else -%} {%-   assign target = product -%} {%- endif -%} {%- assign compare_at_price = target.compare_at_price -%} {%- assign price = target.price -%} {%- assign available = target.available | default: false -%} {%- assign money_price = price | money -%} {%- if settings.currency_code_enabled -%} {%-   assign money_price = price | money_with_currency -%} {%- endif -%} {%- if target == product and product.price_varies -%} {% assign price = money_price %} {%- capture money_price %} {% endraw %}{{ 'products.product.price.from_price_html' | t }}{% raw %} {% endcapture %} {%- endif -%} <div class="price
-                  {%- if price_class %} {{ price_class }}{% endif -%}
-                  {%- if available == false %} price--sold-out {% endif -%}
-                  {%- if target.compare_at_price > target.price %} price--on-sale {% endif -%}">
-                <div class="price__container mt-8">
-                  <div class="price__regular">
-                    <span class="visually-hidden visually-hidden--inline">{% endraw %}{{ 'products.product.price.regular_price' | t }}{% raw %}</span>
-                    <span class="price-item price-item--regular">
-                      {{ money_price }}
-                    </span>
-                  </div>
-                  <div class="price__sale"> {%- unless product.price_varies == false and product.compare_at_price_varies %} <span class="visually-hidden visually-hidden--inline">{% endraw %}{{ 'products.product.price.regular_price' | t }}{% raw %}</span>
-                    <span>
-                      <s class="price-item price-item--regular"> {% if settings.currency_code_enabled %} {{ compare_at_price | money_with_currency }} {% else %} {{ compare_at_price | money }} {% endif %} </s>
-                    </span> {%- endunless -%} <span class="visually-hidden visually-hidden--inline">{% endraw %}{{ 'products.product.price.sale_price' | t }}{% raw %}</span>
-                    <span class="price-item price-item--sale price-item--last">
-                      {{ money_price }}
-                    </span>
-                  </div>
+      <div class="card__content">
+        <div class="card__information">
+          <h6 class="mt-16" {% if card_product.featured_image or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}" {% endif %}>
+            <a class="hover:underline" href="{{ card_product.url }}{{variant_url}}" id="CardLink-{{ section_id }}-{{ card_product.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
+              {{ card_product.title | escape }}
+            </a>
+          </h6>
+          <div class="card-information">  
+            {% assign product = card_product %} {% assign price_class = '' %} 
+            {%- if use_variant -%} 
+              {%-   assign target = product.selected_or_first_available_variant -%} 
+            {%- else -%} 
+              {%-   assign target = product -%} 
+            {%- endif -%} 
+            {%- assign compare_at_price = target.compare_at_price -%} 
+            {%- assign price = target.price -%} 
+            {%- assign available = target.available | default: false -%} 
+            {%- assign money_price = price | money -%} 
+            {%- if settings.currency_code_enabled -%} 
+              {%-   assign money_price = price | money_with_currency -%} 
+            {%- endif -%} 
+            {%- if target == product and product.price_varies -%} 
+              {% assign price = money_price %} {%- capture money_price %} {% endraw %}{{ 'products.product.price.from_price_html' | t }}{% raw %} {% endcapture %} 
+            {%- endif -%} 
+            <div class="price mt-8 
+              {%- if price_class %} {{ price_class }}{% endif -%}
+              {%- if available == false %} price--sold-out {% endif -%}
+              {%- if target.compare_at_price > target.price %} price--on-sale {% endif -%}">
+              <div class="price__container">
+                {%- comment -%}
+                  Explanation of description list:
+                    - div.price__regular: Displayed when there are no variants on sale
+                    - div.price__sale: Displayed when a variant is a sale
+                {%- endcomment -%}
+                <div class="price__regular">
+                  <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+                  <span class="price-item price-item--regular">
+                    {{ money_price }}
+                  </span>
                 </div>
+                <div class="price__sale">
+                  {%- unless product.price_varies == false and product.compare_at_price_varies %}
+                    <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+                    <span>
+                      <s class="price-item price-item--regular text-disabled-high-contrast">
+                        {% if settings.currency_code_enabled %}
+                          {{ compare_at_price | money_with_currency }}
+                        {% else %}
+                          {{ compare_at_price | money }}
+                        {% endif %}
+                      </s>
+                    </span>
+                  {%- endunless -%}
+                  <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
+                  <span class="price-item price-item--sale price-item--last font-bold">
+                    {{ money_price }}
+                  </span>
+                </div>
+                <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
+                  <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                  <span class="price-item price-item--last">
+                    <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+                    <span aria-hidden="true">/</span>
+                    <span>
+                      {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+                        {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+                      {%- endif -%}
+                      {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+                    </span>
+                  </span>
+                </small>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
   </li>
       {% endraw %}
