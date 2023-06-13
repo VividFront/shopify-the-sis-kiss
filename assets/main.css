@@ -1086,9 +1086,6 @@ a:hover {
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
-.col-span-9 {
-  grid-column: span 9 / span 9;
-}
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -2253,6 +2250,10 @@ a:hover {
   padding-top: calc(40rem / 16);
   padding-top: calc(40rem / var(--vf-font-size-root));
 }
+.pt-48 {
+  padding-top: calc(48rem / 16);
+  padding-top: calc(48rem / var(--vf-font-size-root));
+}
 .pt-8 {
   padding-top: calc(8rem / 16);
   padding-top: calc(8rem / var(--vf-font-size-root));
@@ -2263,10 +2264,6 @@ a:hover {
 }
 .pt-\[138px\] {
   padding-top: 138px;
-}
-.pt-48 {
-  padding-top: calc(48rem / 16);
-  padding-top: calc(48rem / var(--vf-font-size-root));
 }
 .text-left {
   text-align: left;
@@ -4568,6 +4565,8 @@ sesami-button button:hover {
   grid-row-start: 3;
   float: none;
   clear: none;
+  margin-top: calc(32rem / 16);
+  margin-top: calc(32rem / var(--vf-font-size-root));
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -4590,6 +4589,7 @@ sesami-button button:hover {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-top: 0px;
   }
 }
 #tsk-product-grid #gf-tree::before {
