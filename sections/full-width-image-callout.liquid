@@ -17,7 +17,7 @@
           <div class="lg:hidden aspect-4/3">
             {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
               width: section.settings.image_mobile.width,
-              class: 'h-full w-full object-cover',
+              class: 'h-full w-full object-cover rounded',
               sizes: section.settings.image_mobile.sizes,
               widths: '375, 550, 750, 1100',
               alt: section.settings.image_mobile.alt | escape
