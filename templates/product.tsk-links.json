@@ -185,6 +185,16 @@
         "enable_video_looping": false
       }
     },
+    "4db25240-7fe7-48e9-8f1d-61cdea6ffe79": {
+      "type": "video-callout",
+      "settings": {
+        "video_url": "https://vimeo.com/705957189",
+        "heading": "What Makes Sis Kiss Links Special?",
+        "body": "<p>The Sis Kiss has always been on the forefront of custom, high-quality jewelry. Now, we’ve added the next level of customization for you to enjoy. We use only the best quality 14k gold and .925 sterling silver chains and charms to partner with you and your friends to create unique, evergreen pieces you will enjoy for a lifetime!</p>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
     "1684352239614af5b1": {
       "type": "apps",
       "blocks": {
@@ -261,6 +271,7 @@
     "db0377bb-7301-4096-a731-1be37f8f598f",
     "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b",
     "main",
+    "4db25240-7fe7-48e9-8f1d-61cdea6ffe79",
     "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
     "3cb2d5a7-2642-427b-9496-bf32f5a9fb7b",
