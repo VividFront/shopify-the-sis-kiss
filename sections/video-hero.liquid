@@ -2,9 +2,9 @@
   <div class="bg-ui-dark lg:bg-transparent absolute left-0 top-0 w-full">
     {% render 'breadcrumbs', breadcrumb_classes: 'text-white [&_a]:text-white' %}
   </div>
-  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+  <div class="absolute top-20 left-0 lg:top-0 w-full h-full z-[-1]">
     {% if section.settings.video_url != blank %}
-      <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+      <video class="w-full h-full object-cover" autoplay muted loop playsinline preload="true">
         <source src="{{ section.settings.video_url }}" type="video/mp4">
       </video>
     {% elsif section.settings.background_image != blank %}

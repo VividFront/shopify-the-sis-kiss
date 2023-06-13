@@ -7,9 +7,9 @@
           "type": "affiliate_card",
           "settings": {
             "heading": "ShareASale",
-            "body": "<p>Apply to become an affiliate through ShareASale now.<\/p>",
+            "body": "<p>Apply to become an affiliate through ShareASale now.</p>",
             "cta_text": "Apply Now",
-            "cta_link": "https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=91421",
+            "cta_link": "https://www.shareasale.com/shareasale.cfm?merchantID=91421",
             "target_blank": true
           }
         },
@@ -17,9 +17,9 @@
           "type": "affiliate_card",
           "settings": {
             "heading": "Amazon",
-            "body": "<p>Apply to become an affiliate through Amazon Affliates now.<\/p>",
+            "body": "<p>Apply to become an affiliate through Amazon Affliates now.</p>",
             "cta_text": "Apply Now",
-            "cta_link": "https:\/\/amazon.com",
+            "cta_link": "https://amazon.com",
             "target_blank": true
           }
         },
@@ -27,9 +27,9 @@
           "type": "affiliate_card",
           "settings": {
             "heading": "LTK",
-            "body": "<p>Apply to become an influencer on LTK now.<\/p>",
+            "body": "<p>Apply to become an influencer on LTK now.</p>",
             "cta_text": "Apply Now",
-            "cta_link": "https:\/\/ltk.com",
+            "cta_link": "https://ltk.com",
             "target_blank": true
           }
         }
@@ -50,13 +50,10 @@
         "heading": "Ready to apply? The time is now!",
         "body": "If you have questions regarding how to apply to become a TSK affiliate partner, please contact us below.",
         "cta_text": "Contact Us",
-        "cta_url": "shopify:\/\/pages\/contact-us-new",
+        "cta_url": "shopify://pages/contact-us-new",
         "theme": "dark"
       }
     }
   },
-  "order": [
-    "banner",
-    "1c9814c5-09ba-4627-8150-0a0ab1166e60"
-  ]
+  "order": ["banner", "1c9814c5-09ba-4627-8150-0a0ab1166e60"]
 }
