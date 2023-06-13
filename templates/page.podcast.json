@@ -130,7 +130,7 @@
     "066087f6-7f23-4a15-a1b6-452f3be5e360": {
       "type": "quote-section",
       "settings": {
-        "quote": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod”",
+        "quote": "“Podcast talking about getting sh*t done and looking good doing it.”",
         "cta_text": "Listen Now",
         "cta_url": "https://wildlyunprofessional.buzzsprout.com/",
         "button_type": "primary_play"
@@ -141,7 +141,7 @@
       "settings": {
         "image": "shopify://shop_images/pattern.png",
         "heading": "The Wildly Unprofessional Collection",
-        "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>",
+        "body": "<p>Exclusive Wild Ones Merch</p>",
         "cta_text": "Shop Now",
         "cta_url": "shopify://collections",
         "copy_aligment": "center"
