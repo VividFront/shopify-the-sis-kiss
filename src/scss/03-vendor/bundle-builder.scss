@@ -138,7 +138,7 @@
 
         .bundle-builder-app--bundle--product-select {
           background: var(--vf-select-background);
-          @apply appearance-none text-body-copy-small text-left rounded-[4px] border-border border w-full h-32 px-8 py-2 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
+          @apply max-w-none appearance-none text-body-copy-small text-left rounded-[4px] border-border border w-full h-32 px-8 py-2 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled;
         }
 
         .bundle-builder-app--bundle--product-select-container {
@@ -190,7 +190,7 @@
 
       &::before {
         content: "Don't Forget to Type in Your Name";
-        @apply font-bold block text-center mb-12;
+        @apply font-bold block text-center mb-12 text-h4;
       }
     }
 

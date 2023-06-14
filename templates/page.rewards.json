@@ -3,7 +3,7 @@
     "12aafa56-c7da-43bc-b441-0a2a4802d0e8": {
       "type": "rewards-hero",
       "settings": {
-        "image": "shopify://shop_images/rewards.png",
+        "image": "shopify://shop_images/rewards-mobile.png",
         "image_mobile": "shopify://shop_images/rewards-mobile.png",
         "sticker": "shopify://shop_images/rewards-icon_1a19753a-6460-415e-9ca2-d8a2c2d547c9.png",
         "heading": "Join the Club",
