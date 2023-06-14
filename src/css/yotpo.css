@@ -328,3 +328,24 @@
 .yotpo-widget-referral-widget .yotpo-share-buttons-container {
   @apply lg:!mt-64 !gap-8;
 }
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper {
+  @apply flex gap-grid flex-wrap lg:flex-nowrap justify-center;
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container {
+  @apply flex-[0_1_calc(33.33%_-_12px)] lg:flex-[0_1_25%];
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container:not(.yotpo-single-image-container:nth-of-type(-n
+      + 4)) {
+  @apply lg:hidden;
+}
