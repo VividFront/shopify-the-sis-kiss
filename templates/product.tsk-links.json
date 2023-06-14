@@ -251,7 +251,8 @@
     "3cb2d5a7-2642-427b-9496-bf32f5a9fb7b": {
       "type": "z-pattern-contact",
       "settings": {
-        "image": "shopify://shop_images/Screen_Shot_2023-05-22_at_2.03.05_PM.png",
+        "image": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_secondary": "shopify://shop_images/Screen_Shot_2023-06-14_at_3.02.46_PM.png",
         "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
         "image_link": "https://google.com",
         "heading": "TSK HQ",
