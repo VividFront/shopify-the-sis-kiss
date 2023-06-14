@@ -1397,6 +1397,15 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.h-\[124px\] {
+  height: 124px;
+}
+.h-\[164px\] {
+  height: 164px;
+}
+.h-\[60\%\] {
+  height: 60%;
+}
 .max-h-96 {
   max-height: calc(96rem / 16);
   max-height: calc(96rem / var(--vf-font-size-root));
@@ -1504,6 +1513,12 @@ a:hover {
 }
 .w-full {
   width: 100%;
+}
+.w-\[164px\] {
+  width: 164px;
+}
+.w-\[60\%\] {
+  width: 60%;
 }
 .max-w-\[104px\] {
   max-width: 104px;
@@ -2273,6 +2288,10 @@ a:hover {
 }
 .pt-\[138px\] {
   padding-top: 138px;
+}
+.pl-48 {
+  padding-left: calc(48rem / 16);
+  padding-left: calc(48rem / var(--vf-font-size-root));
 }
 .text-left {
   text-align: left;

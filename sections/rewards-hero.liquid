@@ -26,13 +26,34 @@
         </div>
         <div class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13">
           {% if section.settings.image != blank %}
-            {{ section.settings.image | image_url: width: 1500 | image_tag:
-              width: section.settings.image.width,
-              class: 'object-contain tw-hidden lg:block',
-              sizes: section.settings.image.sizes,
-              widths: '375, 550, 750, 1100',
-              alt: section.settings.image.alt | escape
-            }}
+            {% liquid
+              assign image_wrapper_classes = 'tw-hidden lg:block relative'
+              assign image_classes = 'object-contain'
+              if section.settings.sticker != blank
+                assign image_classes = 'object-cover rounded aspect-3/2'
+                assign image_wrapper_classes = image_wrapper_classes | append: ' pb-48 pl-48'
+              endif
+            %}
+            <div class="{{ image_wrapper_classes }}">
+              {{ section.settings.image | image_url: width: 1500 | image_tag:
+                width: section.settings.image.width,
+                class: image_classes,
+                sizes: section.settings.image.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image.alt | escape
+              }}
+              {% if section.settings.sticker != blank %}
+                <div class="absolute bottom-0 left-0">
+                  {{ section.settings.sticker | image_url: width: 328 | image_tag:
+                    width: section.settings.sticker.width,
+                    class: 'h-[164px] w-[164px] object-contain mx-auto',
+                    sizes: section.settings.sticker.sizes,
+                    widths: '328',
+                    alt: section.settings.sticker.alt | escape
+                  }}
+                </div>
+              {% endif %}
+            </div>
           {% endif %}
           {% if section.settings.image_mobile != blank %}
             {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:

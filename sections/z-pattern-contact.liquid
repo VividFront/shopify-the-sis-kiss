@@ -14,18 +14,37 @@
     <div class="lg:grid grid-cols gap-grid">
       <div class="lg:col-start-2 lg:col-end-6">
         {%- if section.settings.image != blank -%}
-          {%- if section.settings.image_link != blank -%}<a href="{{ section.settings.image_link }}" target="_blank">{%- endif -%}
+          {% liquid 
+            assign image_wrapper_classes = 'tw-hidden lg:block'
+            assign image_classes = 'rounded md:rounded-none aspect-4/3 object-contain'
+            if section.settings.image_secondary != blank
+              assign image_wrapper_classes = image_wrapper_classes | append: ' relative aspect-square'
+              assign image_classes = 'absolute top-0 left-0 h-[60%] w-[60%] aspect-square object-cover'
+            endif
+          %}
+          <div class="{{ image_wrapper_classes }}">
+            {%- if section.settings.image_link != blank -%}<a href="{{ section.settings.image_link }}" target="_blank">{%- endif -%}
             {{ section.settings.image | image_url: width: 1500 | image_tag:
               width: section.settings.image.width,
-              class: 'rounded md:rounded-none aspect-4/3 object-contain tw-hidden md:block',
+              class: image_classes,
               sizes: section.settings.image.sizes,
               widths: '375, 550, 750, 1100',
               alt: section.settings.image.alt | escape
             }}
+            {% if section.settings.image_secondary != blank %}
+              {{ section.settings.image_secondary | image_url: width: 1500 | image_tag:
+                width: section.settings.image_secondary.width,
+                class: 'absolute h-[60%] w-[60%] bottom-0 right-0 rounded aspect-square object-cover',
+                sizes: section.settings.image_secondary.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image_secondary.alt | escape
+              }}
+            {% endif %}
+          </div>
             {%- if section.settings.image_mobile != blank -%}
               {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
                 width: section.settings.image_mobile.width,
-                class: 'rounded object-cover aspect-3/2 md:hidden',
+                class: 'rounded object-cover aspect-3/2 lg:hidden mx-auto',
                 sizes: section.settings.image_mobile.sizes,
                 widths: '375, 550, 750, 1100',
                 alt: section.settings.image_mobile.alt | escape
@@ -60,6 +79,11 @@
     },
     {
       "type": "image_picker",
+      "id": "image_secondary",
+      "label": "Image (Secondary)"
+    },
+    {
+      "type": "image_picker",
       "id": "image_mobile",
       "label": "Image (mobile)"
     },
@@ -77,11 +101,6 @@
       "type": "richtext",
       "id": "body",
       "label": "Body"
-    },
-    {
-      "type": "image_picker",
-      "id": "sticker",
-      "label": "Sticker"
     },
     {
       "type": "image_picker",
