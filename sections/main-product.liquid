@@ -233,6 +233,8 @@
                   {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
                 {%- when 'rating' -%}
                   {%- comment -%} TODO: Yotpo rating {%- endcomment -%}
+                {%- when 'sezzle' -%}
+                  {% render 'sezzle-widget' %}
               {%- endcase -%}
             {%- endfor -%}
             <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -624,6 +626,11 @@
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
         }
       ]
+    },
+    {
+      "type": "sezzle",
+      "name": "Sezzle Widget",
+      "limit": 1
     }
   ],
   "settings": [

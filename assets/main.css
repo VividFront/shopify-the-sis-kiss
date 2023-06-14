@@ -1385,6 +1385,12 @@ a:hover {
 .h-\[160px\] {
   height: 160px;
 }
+.h-\[164px\] {
+  height: 164px;
+}
+.h-\[60\%\] {
+  height: 60%;
+}
 .h-\[61px\] {
   height: 61px;
 }
@@ -1396,15 +1402,6 @@ a:hover {
 }
 .h-full {
   height: 100%;
-}
-.h-\[124px\] {
-  height: 124px;
-}
-.h-\[164px\] {
-  height: 164px;
-}
-.h-\[60\%\] {
-  height: 60%;
 }
 .max-h-96 {
   max-height: calc(96rem / 16);
@@ -1499,8 +1496,14 @@ a:hover {
 .w-\[160px\] {
   width: 160px;
 }
+.w-\[164px\] {
+  width: 164px;
+}
 .w-\[284px\] {
   width: 284px;
+}
+.w-\[60\%\] {
+  width: 60%;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -1513,12 +1516,6 @@ a:hover {
 }
 .w-full {
   width: 100%;
-}
-.w-\[164px\] {
-  width: 164px;
-}
-.w-\[60\%\] {
-  width: 60%;
 }
 .max-w-\[104px\] {
   max-width: 104px;
@@ -2230,6 +2227,10 @@ a:hover {
   padding-left: calc(44rem / 16);
   padding-left: calc(44rem / var(--vf-font-size-root));
 }
+.pl-48 {
+  padding-left: calc(48rem / 16);
+  padding-left: calc(48rem / var(--vf-font-size-root));
+}
 .pr-16 {
   padding-right: calc(16rem / 16);
   padding-right: calc(16rem / var(--vf-font-size-root));
@@ -2288,10 +2289,6 @@ a:hover {
 }
 .pt-\[138px\] {
   padding-top: 138px;
-}
-.pl-48 {
-  padding-left: calc(48rem / 16);
-  padding-left: calc(48rem / var(--vf-font-size-root));
 }
 .text-left {
   text-align: left;
@@ -3591,6 +3588,53 @@ input[type='search'] {
   .yotpo-widget-referral-widget .yotpo-share-buttons-container {
     margin-top: calc(64rem / 16) !important;
     margin-top: calc(64rem / var(--vf-font-size-root)) !important;
+  }
+}
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 16px;
+  gap: var(--vf-grid-gap);
+}
+@media (min-width: 992px) {
+  .yotpo-display-wrapper
+    .yotpo-pictures-gallery-wrapper
+    .yotpo-pictures-gallery-images-wrapper {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(33.33% - 12px);
+  flex: 0 1 calc(33.33% - 12px);
+}
+@media (min-width: 992px) {
+  .yotpo-display-wrapper
+    .yotpo-pictures-gallery-wrapper
+    .yotpo-pictures-gallery-images-wrapper
+    .yotpo-single-image-container {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+  }
+  .yotpo-display-wrapper
+    .yotpo-pictures-gallery-wrapper
+    .yotpo-pictures-gallery-images-wrapper
+    .yotpo-single-image-container:not(.yotpo-single-image-container:nth-of-type(-n
+        + 4)) {
+    display: none;
   }
 }
 /* https://ryanmulligan.dev/blog/css-marquee/ */

@@ -170,6 +170,9 @@
         "background_image": "shopify://shop_images/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
         "heading": "Recently Viewed"
       }
+    },
+    "sezzle": {
+      "type": "sezzle-section"
     }
   },
   "order": [
@@ -177,6 +180,7 @@
     "605a63e6-525e-429b-a87a-b51c70b37d88",
     "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
-    "bedc88e8-8e96-4831-bbc6-ab67c80aa826"
+    "bedc88e8-8e96-4831-bbc6-ab67c80aa826",
+    "sezzle"
   ]
 }
