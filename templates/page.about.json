@@ -13,7 +13,7 @@
         "08b7fac4-19bb-495f-ace9-862f1f8674b9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/31_2x_copy.png"
+            "image": "shopify:\/\/shop_images\/31_2x_copy.png"
           }
         },
         "778b04e4-d2b8-464d-b395-437b2bdab499": {
@@ -40,13 +40,13 @@
         "88671957-b83d-4933-bfd8-1ef8e5891553": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/31_2x_1de6e05a-f2d4-4a53-a4d3-4ff5b6c07233.png"
+            "image": "shopify:\/\/shop_images\/31_2x_1de6e05a-f2d4-4a53-a4d3-4ff5b6c07233.png"
           }
         },
         "963e11f2-b186-4dcb-8af8-8db5468d3b30": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/31_2x_copy_2.png"
+            "image": "shopify:\/\/shop_images\/31_2x_copy_2.png"
           }
         },
         "12a20791-63f5-43cb-b74a-7001a0ce6c3b": {
@@ -76,15 +76,15 @@
         "40dbdfb1-f6a1-4e14-952c-a96e68d44ef2"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/cloud-background_2x_513a1aaa-0c5c-4feb-83a6-2d5c4939d629.png",
+        "background_image": "shopify:\/\/shop_images\/cloud-background_2x_513a1aaa-0c5c-4feb-83a6-2d5c4939d629.png",
         "background_image_position_mobile": "left",
-        "badge": "shopify://shop_images/About_Us_2x_3ec5d157-654d-415e-9ab1-20cfbbcdd346.png"
+        "badge": "shopify:\/\/shop_images\/About_Us_2x_3ec5d157-654d-415e-9ab1-20cfbbcdd346.png"
       }
     },
     "c98304e7-a01c-46d1-9b89-684959bb0ffb": {
       "type": "full-width-image",
       "settings": {
-        "image": "shopify://shop_images/31.png"
+        "image": "shopify:\/\/shop_images\/31.png"
       }
     },
     "235c7e17-9b9f-49ba-8f41-c31b8511b8aa": {
@@ -99,19 +99,19 @@
     "aabc5ef0-f0d5-4f75-9c50-0fa466c6d61d": {
       "type": "z-pattern-image-left",
       "settings": {
-        "image": "shopify://shop_images/Match_Height.png",
+        "image": "shopify:\/\/shop_images\/Match_Height.png",
         "heading": "Meet Meg",
-        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. </p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. </p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! </p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.</p>",
+        "body": "<p>Founder of The Sis Kiss, ex-defense attorney, badass, wife, mother, and friend. <\/p><p>Megan started her career as a trial attorney, which seemed perfectly matched with her talkative, enthusiastic, and dramatic nature. She thrived…until she didn’t. She found herself feeling depressed and anxious, and one day had a panic attack in court. She knew she had to make a change. <\/p><p>Thankfully, before Megan’s exit from law, Megan and her sister had started The Sis Kiss. It was the side hustle the sisters loved that blossomed from their personal need for more dainty bangles to fit their petite wrists. Friends became fans, and then customers! <\/p><p>Megan realized the side hustle wasn’t JUST a side hustle to her. Her passion, drama, and desire had returned with every order and opportunity for growth with The Sis Kiss. After growing into the CEO role at The Sis Kiss she has never looked back. Designing, building a team, and of course, all things shiny are her calling, passion, and purpose.<\/p>",
         "cta_text": "",
         "cta_url": "",
-        "background_image": "shopify://shop_images/cloud-background_2x_09f3b4fe-9a30-4b25-8f99-db08a1770762.png",
-        "background_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/plane-2.json?v=1686679623"
+        "background_image": "shopify:\/\/shop_images\/cloud-background_2x_09f3b4fe-9a30-4b25-8f99-db08a1770762.png",
+        "background_lottie_json": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/plane-2.json?v=1686679623"
       }
     },
     "88dafa87-5b02-41fd-959d-f0088b1c928c": {
       "type": "full-width-image",
       "settings": {
-        "image": "shopify://shop_images/DSC06364.png"
+        "image": "shopify:\/\/shop_images\/DSC06364.png"
       }
     },
     "302f7269-d87d-4f62-ab45-0039fa32a6d0": {
@@ -120,22 +120,22 @@
         "heading": "Our Designs",
         "body": "Our jewelry collections are hand curated by our TSK team. We collaborate with our favorite influencer's to bring you unique and hand-picked styles we are sure you will love.",
         "cta_text": "Shop All Jewelry",
-        "cta_url": "shopify://collections",
-        "image_1": "shopify://shop_images/your-way.jpg",
-        "image_2": "shopify://shop_images/DSC00916.png",
-        "image_3": "shopify://shop_images/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
+        "cta_url": "shopify:\/\/collections",
+        "image_1": "shopify:\/\/shop_images\/your-way.jpg",
+        "image_2": "shopify:\/\/shop_images\/DSC00916.png",
+        "image_3": "shopify:\/\/shop_images\/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
       }
     },
     "e03a4851-1cf5-4ecc-87cc-9d4460cb37bd": {
       "type": "podcast-callout",
       "settings": {
-        "image": "shopify://shop_images/NEW_WU_008.png",
-        "image_mobile": "shopify://shop_images/NEW_WU_008.png",
-        "logo": "shopify://shop_images/WU-logo.png",
+        "image": "shopify:\/\/shop_images\/NEW_WU_008.png",
+        "image_mobile": "shopify:\/\/shop_images\/NEW_WU_008.png",
+        "logo": "shopify:\/\/shop_images\/WU-logo.png",
         "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
         "cta_text": "Listen Now",
-        "cta_url": "shopify://pages/about",
-        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-about-cropped.json?v=1684878609",
+        "cta_url": "shopify:\/\/pages\/about",
+        "ribbon_lottie_json": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/ribbon-about-cropped.json?v=1684878609",
         "logo_circle_position": "right"
       }
     }
