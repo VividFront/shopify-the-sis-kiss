@@ -125,25 +125,26 @@
       <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
         <button
           type="button"
-          class="slider-button slider-button--prev"
+          class="slider-button slider-button--prev absolute top-[50%] left-0 rotate-180 disabled:text-disabled"
           name="previous"
           aria-label="{{ 'general.slider.previous_slide' | t }}"
         >
-          {% render 'icon-caret' %}
+          {% render 'icon-chevron-right' %}
         </button>
         <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-          <span aria-hidden="true"> / </span>
-          <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-          <span class="slider-counter--total">{{ media_count }}</span>
+          <ul class="flex gap-12 w-full items-center">
+            {% for page in (1..media_count) %}
+              <li><button data-vf-slider-dot="{{ page }}" class="w-12 h-12 rounded-full bg-disabled aria-[current]:bg-primary"><span class="sr-only">Move to Product #{{ page }}</span></button></li>
+            {% endfor %}
+          </ul>
         </div>
         <button
           type="button"
-          class="slider-button slider-button--next"
+          class="slider-button slider-button--next absolute top-[50%] right-0 disabled:text-disabled"
           name="next"
           aria-label="{{ 'general.slider.next_slide' | t }}"
         >
-          {% render 'icon-caret' %}
+          {% render 'icon-chevron-right' %}
         </button>
       </div>
     {%- endunless -%}
