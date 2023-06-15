@@ -700,6 +700,7 @@ class SliderComponent extends HTMLElement {
     this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
+    this.dots = this.querySelectorAll('[data-vf-slider-dot]');
 
     if (!this.slider || !this.nextButton) return;
 
@@ -710,6 +711,9 @@ class SliderComponent extends HTMLElement {
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
+    this.dots.forEach((dot) => {
+      dot.addEventListener('click', this.onDotClick.bind(this));
+    });
   }
 
   initPages() {
@@ -749,6 +753,15 @@ class SliderComponent extends HTMLElement {
     }
 
     if (this.currentPage != previousPage) {
+      this.dots.forEach((dot) => {
+        const dotValue = Number(dot.dataset.vfSliderDot);
+        if (dotValue === this.currentPage) {
+          dot.setAttribute('aria-current', true);
+        } else {
+          dot.removeAttribute('aria-current');
+        }
+      });
+
       this.dispatchEvent(
         new CustomEvent('slideChanged', {
           detail: {
@@ -797,6 +810,15 @@ class SliderComponent extends HTMLElement {
       event.currentTarget.name === 'next'
         ? this.slider.scrollLeft + step * this.sliderItemOffset
         : this.slider.scrollLeft - step * this.sliderItemOffset;
+    this.slider.scrollTo({
+      left: this.slideScrollPosition,
+    });
+  }
+
+  onDotClick(event) {
+    event.preventDefault();
+    const dotValue = Number(event.currentTarget.dataset.vfSliderDot);
+    this.slideScrollPosition = (dotValue - 1) * this.sliderItemOffset;
     this.slider.scrollTo({
       left: this.slideScrollPosition,
     });
