@@ -12,7 +12,7 @@
         "507c6d37-3da1-48f2-8e83-20b3df62b326": {
           "type": "heading",
           "settings": {
-            "text": "The <br>Sis Kiss Essentials"
+            "text": "Sis Kiss Essentials"
           }
         },
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
@@ -214,8 +214,8 @@
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Background.png",
-        "heading": "Spring Trends Guide",
-        "body": "Seasonal trends and guides. This can also be a gift guide. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod sed diam nonumy.",
+        "heading": "Summer Trends Guide",
+        "body": "Trends we are loving at Sis Kiss HQ!",
         "badge_emoji": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/tulip_1f337.png?v=1682973594",
         "badge_text": "New This Season",
         "image": "shopify:\/\/shop_images\/spring-1.jpg",
@@ -230,7 +230,7 @@
         "background_image": "shopify:\/\/shop_images\/custom.jpg",
         "image_mobile": "shopify:\/\/shop_images\/custom_copy.jpg",
         "heading": "Custom Pieces",
-        "body": "Custom styles, hand made. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+        "body": "Custom styles are handmade with care and take between 4-6 weeks to ship. A personalized gift is never a bad idea!",
         "cta_text": "Shop Custom Jewelry",
         "cta_url": "shopify:\/\/collections\/custom-jewelry"
       }
@@ -269,7 +269,7 @@
           "type": "icon-item",
           "settings": {
             "icon": "shopify:\/\/shop_images\/waterproof-icon.png",
-            "heading": "Waterproof",
+            "heading": "100+ Custom Styles",
             "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.<\/p>",
             "large_text": ""
           }
