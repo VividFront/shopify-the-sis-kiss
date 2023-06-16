@@ -134,7 +134,7 @@
         <div class="slider-counter caption">
           <ul class="flex gap-12 w-full items-center">
             {% for page in (1..media_count) %}
-              <li><button data-vf-slider-dot="{{ page }}" class="w-12 h-12 rounded-full bg-disabled aria-[current]:bg-primary"><span class="sr-only">Move to Product #{{ page }}</span></button></li>
+              <li><button data-vf-slider-dot="{{ page }}" class="w-12 h-12 rounded-full bg-disabled aria-[current]:bg-primary hover:border-primary hover:border"><span class="sr-only">Move to Product #{{ page }}</span></button></li>
             {% endfor %}
           </ul>
         </div>
