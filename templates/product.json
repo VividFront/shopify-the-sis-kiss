@@ -5,21 +5,24 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
-          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb": {
-          "type": "shopify://apps/infinite-options/blocks/app-block/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
-          "settings": {}
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -29,7 +32,8 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -93,6 +97,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "hide_breadcrumbs": false,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -106,7 +111,7 @@
     "605a63e6-525e-429b-a87a-b51c70b37d88": {
       "type": "complete-the-look",
       "settings": {
-        "background_image": "shopify://shop_images/wallpaper.png",
+        "background_image": "shopify:\/\/shop_images\/wallpaper.png",
         "marquee_text": "Complete the Look",
         "recommendation_type": "related"
       }
@@ -115,13 +120,15 @@
       "type": "apps",
       "blocks": {
         "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
-          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         }
       },
-      "block_order": ["c2913024-b9fb-4da4-ad2d-d8717af1a674"],
+      "block_order": [
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -132,27 +139,27 @@
         "97091f40-77bb-45ef-bf3b-5808317f311e": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/shipping-icon.png",
+            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
             "heading": "Free Shipping*",
-            "body": "*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.",
+            "body": "Free shipping on all domestic US orders when you spend $150.",
             "large_text": ""
           }
         },
         "17c58f09-71ce-4caa-969a-d06a1880fcfa": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/rewards-icon.png",
+            "icon": "shopify:\/\/shop_images\/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
-            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
             "large_text": ""
           }
         },
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/waterproof-icon.png",
-            "heading": "Over 100 Custom Styles",
-            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "icon": "shopify:\/\/shop_images\/custom-necklace.png",
+            "heading": "100+ Custom Styles",
+            "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
             "large_text": ""
           }
         }
@@ -162,12 +169,13 @@
         "17c58f09-71ce-4caa-969a-d06a1880fcfa",
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "bedc88e8-8e96-4831-bbc6-ab67c80aa826": {
       "type": "recently-viewed",
       "settings": {
-        "background_image": "shopify://shop_images/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
+        "background_image": "shopify:\/\/shop_images\/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
         "heading": "Recently Viewed"
       }
     }
