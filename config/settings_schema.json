@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "9.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -128,6 +128,16 @@
       },
       {
         "type": "url",
+        "id": "bundle_builder_charm_bar_image",
+        "label": "Charm Bar Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_bar_image_mobile",
+        "label": "Charm Bar Image (mobile)"
+      },
+      {
+        "type": "url",
         "id": "bundle_builder_diamond_icon",
         "label": "Diamond Icon"
       },
@@ -145,6 +155,11 @@
         "type": "text",
         "id": "bundle_builder_charm_me_id",
         "label": "Charm Me ID"
+      },
+      {
+        "type": "text",
+        "id": "bundle_builder_charm_bar_id",
+        "label": "Charm Bar ID"
       }
     ]
   },

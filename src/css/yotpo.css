@@ -179,13 +179,14 @@
 .yotpo-widget-referral-widget
   .yotpo-right-align-background
   .yotpo-right-align-image {
-  @apply order-1 lg:order-2 col-start-2 col-end-6 lg:col-start-8 lg:col-end-12 aspect-[2/3] rounded object-cover object-center !h-auto !w-full !min-h-0 !max-h-none !max-w-none;
+  @apply order-1 lg:order-2 col-start-2 col-end-6 lg:col-start-8 lg:col-end-12 2xl:col-end-11 aspect-[2/3] rounded object-cover object-center !h-auto !w-full !min-h-0 !max-h-none !max-w-none;
 }
 
 .yotpo-widget-referral-widget
   .yotpo-right-align-background
   .yotpo-tile-wrapper {
-  @apply order-2 lg:order-1 lg:col-start-2 lg:col-end-8 col-start-1 col-end-7;
+  min-height: 0 !important;
+  @apply order-2 lg:order-1 lg:col-start-2 lg:col-end-8 2xl:col-start-3 col-start-1 col-end-7;
 }
 
 .yotpo-widget-referral-widget
@@ -327,4 +328,25 @@
 
 .yotpo-widget-referral-widget .yotpo-share-buttons-container {
   @apply lg:!mt-64 !gap-8;
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper {
+  @apply flex gap-grid flex-wrap lg:flex-nowrap justify-center;
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container {
+  @apply flex-[0_1_calc(33.33%_-_12px)] lg:flex-[0_1_25%];
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container:not(.yotpo-single-image-container:nth-of-type(-n
+      + 4)) {
+  @apply lg:hidden;
 }

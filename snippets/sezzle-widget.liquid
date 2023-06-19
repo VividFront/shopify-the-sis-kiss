@@ -1,0 +1,44 @@
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=0e5c5020-5dfa-4951-a5d8-cd82a3a63f01"></script>
+
+<script type="text/javascript"> document.sezzleConfig = {
+  "configGroups": [{
+    "targetXPath": ".price__pricing-group/.price__sale/.price-item--sale",
+    "renderToPath": "../../../..",
+    "urlMatch": "product",
+    "relatedElementActions": [
+    {
+    "relatedPath": "../..",
+    "initialAction": function(r,w){
+    if(getComputedStyle(r).display === "none"){
+    w.style.display = "none"
+    }
+    }
+    }
+    ]
+  },{
+    "targetXPath": ".price__pricing-group/.price__regular/.price-item--regular",
+    "renderToPath": "../../../..",
+    "urlMatch": "product",
+    "relatedElementActions": [
+    {
+    "relatedPath": "../../../../..",
+    "initialAction": function(r,w){
+    if(r.querySelector(".price--on-sale")){
+    w.style.display = "none"
+    }
+    }
+    }
+    ]
+  },{
+    "targetXPath": document.querySelector(".product-price") ? document.querySelector(".product-price").getElementsByTagName("SPAN").length > 0 ? ".product-price/SPAN-0" : ".product-price" : ".product-price",
+    "renderToPath": document.querySelector(".product-price") ? document.querySelector(".product-price").getElementsByTagName("SPAN").length > 0 ? "../.." : ".." : "..",
+    "urlMatch": "product"
+  },{
+    "targetXPath": ".total-price",
+    "urlMatch": "cart"
+  },{
+    "targetXPath": "#basket-right/H4-0/.money",
+    "urlMatch": "cart"
+  }]
+  } </script>
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=0e5c5020-5dfa-4951-a5d8-cd82a3a63f01"></script>

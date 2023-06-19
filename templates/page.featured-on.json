@@ -6,70 +6,70 @@
         "ef46a241-47ca-4ea9-8392-2a803a4984b0": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Media_2-2C8B7C59-976D-4C7E-8CAE-7CD5D0B36FAD.jpg",
+            "image": "shopify://shop_images/Media_2-2C8B7C59-976D-4C7E-8CAE-7CD5D0B36FAD.jpg",
             "heading": "Kamp Kiss x <br> Camp Poosh",
             "body": "TSK goes to Coachella! Read about our visit on Poosh.com.",
-            "link": "https:\/\/poosh.com\/camp-poosh-2023\/"
+            "link": "https://poosh.com/camp-poosh-2023/"
           }
         },
         "0584af32-7d6a-4750-ba46-a468faeb9110": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unknown_model118.jpg",
+            "image": "shopify://shop_images/unknown_model118.jpg",
             "heading": "InStyle Features Celebs in TSK!",
             "body": "Gigi Hadid, Sophia Richie and more wearing custom styles.",
-            "link": "https:\/\/www.instyle.com\/fashion\/the-sis-kiss-celebrity-jewelry"
+            "link": "https://www.instyle.com/fashion/the-sis-kiss-celebrity-jewelry"
           }
         },
         "b82c2d73-d5e8-46fa-8db7-8e9a14c36538": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC06893.jpg",
+            "image": "shopify://shop_images/DSC06893.jpg",
             "heading": "Entertainment Tonight",
             "body": "Sex in the City styles include TSK's It's All in a Name.",
-            "link": "https:\/\/www.etonline.com\/the-best-gifts-for-sex-and-the-city-fans-after-watching-the-finale-of-and-just-like-that-170102"
+            "link": "https://www.etonline.com/the-best-gifts-for-sex-and-the-city-fans-after-watching-the-finale-of-and-just-like-that-170102"
           }
         },
         "30cac9e7-3701-4c46-ba75-00a061a5907d": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC02336.jpg",
+            "image": "shopify://shop_images/DSC02336.jpg",
             "heading": "Graduation Gifts For Her",
             "body": "\"A personalized gift is never a bad idea!\" - Country Living",
-            "link": "https:\/\/www.countryliving.com\/shopping\/g32094034\/graduation-gifts-for-her\/"
+            "link": "https://www.countryliving.com/shopping/g32094034/graduation-gifts-for-her/"
           }
         },
         "01d64b3e-6aa8-4821-86c0-cbba0028bcfe": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC00639.jpg",
+            "image": "shopify://shop_images/DSC00639.jpg",
             "heading": "Cleveland Mag: Best of CLE 23",
             "body": "Best of Cleveland: The Sis Kiss, Permanent Jewelry",
-            "link": "https:\/\/clevelandmagazine.com\/best-of\/best-of-cleveland\/articles\/best-of-cleveland-the-sis-kiss-permanent-jewelry"
+            "link": "https://clevelandmagazine.com/best-of/best-of-cleveland/articles/best-of-cleveland-the-sis-kiss-permanent-jewelry"
           }
         },
         "2f8bdc66-7b16-4407-97e3-fe901730a429": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_14.png",
+            "image": "shopify://shop_images/Untitled_design_14.png",
             "heading": "Loverly Gray at TSK HQ!",
             "body": "Loverly and Meg cheers their curated jewelry collection.",
-            "link": "shopify:\/\/collections\/loverly-grey-x-the-sis-kiss"
+            "link": "shopify://collections/loverly-grey-x-the-sis-kiss"
           }
         },
         "70ed1f72-345d-4343-9b85-9c3c28349db9": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC01454.jpg",
+            "image": "shopify://shop_images/DSC01454.jpg",
             "heading": "Charm Bar 2nd Anniversary",
             "body": "TSK's exclusive Charm Bar turns two!",
-            "link": "shopify:\/\/collections\/charm-bar"
+            "link": "shopify://collections/charm-bar"
           }
         },
         "ba88903d-af13-4638-a539-d8f5dda4f6b6": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_15.png",
+            "image": "shopify://shop_images/Untitled_design_15.png",
             "heading": "Influencer Name Here in TSK",
             "body": "Influencer shows off her must-have TSK necklace.",
             "link": ""
@@ -97,56 +97,56 @@
         "82f227f0-e219-4d82-856f-cd16f71606a1": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/poosh.png",
+            "logo": "shopify://shop_images/poosh.png",
             "url": ""
           }
         },
         "57a5210d-37f7-45dc-b735-6785dba04a2a": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/vogue_cd844a39-13b3-4ff3-83db-ad50d19f38f5.png",
+            "logo": "shopify://shop_images/vogue_cd844a39-13b3-4ff3-83db-ad50d19f38f5.png",
             "url": ""
           }
         },
         "8bc771a8-5008-4b6c-a1c3-51fe63fc30e7": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/instyle.png",
+            "logo": "shopify://shop_images/instyle.png",
             "url": ""
           }
         },
         "dc8b821b-b226-41be-9b54-ce36e481378b": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/glamour.png",
+            "logo": "shopify://shop_images/glamour.png",
             "url": ""
           }
         },
         "0d55bdbf-6c45-42ae-a7fd-bbf95f1bb5b9": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/people.png",
+            "logo": "shopify://shop_images/people.png",
             "url": ""
           }
         },
         "8395b95e-b1eb-4ad5-ac23-7a3f9d93fb70": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/popsugar.png",
+            "logo": "shopify://shop_images/popsugar.png",
             "url": ""
           }
         },
         "f1c33b3b-7512-4716-85f4-63fd7859790f": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/star.png",
+            "logo": "shopify://shop_images/star.png",
             "url": ""
           }
         },
         "fbc08209-bf9c-4d6c-b5c2-85c1057e4634": {
           "type": "logo",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/intouch.png",
+            "logo": "shopify://shop_images/intouch.png",
             "url": ""
           }
         }

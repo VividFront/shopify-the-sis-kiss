@@ -71,11 +71,11 @@ class HeaderMenu extends DetailsDisclosure {
 
     let that = this;
 
-    that.mainDetailsToggle.setAttribute('open', '');
+    // that.mainDetailsToggle.setAttribute('open', '');
 
-    // this.timer = setTimeout(function () {
-    //   that.mainDetailsToggle.setAttribute('open', '');
-    // }, 75);
+    this.timer = setTimeout(function () {
+      that.mainDetailsToggle.setAttribute('open', '');
+    }, 75);
   }
 
   onMouseLeave(e) {
@@ -83,7 +83,7 @@ class HeaderMenu extends DetailsDisclosure {
 
     this.timer = setTimeout(function () {
       that.mainDetailsToggle.removeAttribute('open');
-    }, 200);
+    }, 125);
   }
 }
 
