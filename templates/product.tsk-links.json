@@ -218,7 +218,7 @@
           "settings": {
             "icon": "shopify://shop_images/shipping-icon.png",
             "heading": "Free Shipping*",
-            "body": "*on Orders $150+. Lorem ipsum dolor sit amet, consetetur.",
+            "body": "Free shipping on all domestic US orders when you spend $150.",
             "large_text": ""
           }
         },
@@ -227,16 +227,16 @@
           "settings": {
             "icon": "shopify://shop_images/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
-            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
             "large_text": ""
           }
         },
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/waterproof-icon.png",
-            "heading": "Over 100 Custom Styles",
-            "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.",
+            "icon": "shopify://shop_images/custom-necklace.png",
+            "heading": "100+ Custom Styles",
+            "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
             "large_text": ""
           }
         }
@@ -252,11 +252,11 @@
       "type": "z-pattern-contact",
       "settings": {
         "image": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
-        "image_secondary": "shopify://shop_images/Screen_Shot_2023-06-14_at_3.02.46_PM.png",
+        "image_secondary": "shopify://shop_images/Untitled_design_16.png",
         "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
         "image_link": "https://google.com",
         "heading": "TSK HQ",
-        "body": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p><p><a href=\"https://google.com\" target=\"_blank\" title=\"https://google.com\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>M–F: 10AM–5PM</li><li>Saturday: 11AM–4PM</li></ul>"
+        "body": "<p>At The Sis Kiss Headquarters you can find our exclusive Charm Bar, essentials jewelry collection, TSK Your Way and permanent bracelet services (by appointment). Grab your girlfriends and join us at our HQ for a luxurious in-store shopping experience!</p><p><a href=\"https://google.com\" target=\"_blank\" title=\"https://google.com\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>M/W/F: 10AM–5:30PM</li><li>T/Thurs: 10AM-7PM</li><li>Saturday: 11AM–4PM</li><li>Sunday: Closed</li></ul>"
       }
     },
     "605a63e6-525e-429b-a87a-b51c70b37d88": {
