@@ -26947,7 +26947,11 @@
         t.forEach(function (e) {
           e.addEventListener('click', function () {
             t.forEach(function (t) {
-              t !== e && t.removeAttribute('open');
+              if (t !== e) t.removeAttribute('open');
+              else {
+                var r = e.getAttribute('id');
+                location.hash = r;
+              }
             });
           });
         });
