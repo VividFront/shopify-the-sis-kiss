@@ -217,6 +217,10 @@
         background-image: url({{ settings.bundle_builder_charm_me_image }});
       }
 
+      #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_bar_id }} .bundle-builder-app--bundle--header-image-wrapper {
+        background-image: url({{ settings.bundle_builder_charm_bar_image }});
+      }
+
       #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_tsk_your_way_id }} .bundle-builder-app--bundle--header-image-wrapper img {
         display: none !important;
       }
@@ -232,6 +236,10 @@
   
         #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_me_id }} {
           background-image: url({{ settings.bundle_builder_charm_me_image_mobile }});
+        }
+  
+        #bundle-builder-app--bundle--root .bundle-builder-app--bundle--{{ settings.bundle_builder_charm_bar_id }} {
+          background-image: url({{ settings.bundle_builder_charm_bar_image_mobile }});
         }
       }
     </style>

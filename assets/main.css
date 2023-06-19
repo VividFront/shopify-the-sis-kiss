@@ -1046,13 +1046,6 @@ a:hover {
 .top-\[50\%\] {
   top: 50%;
 }
-.-top-4 {
-  top: calc((4rem / 16) * -1);
-  top: calc((4rem / var(--vf-font-size-root)) * -1);
-  top: calc((4rem / 16) * -1);
-  top: calc(calc(4rem / 16) * -1);
-  top: calc(calc(4rem / var(--vf-font-size-root)) * -1);
-}
 .isolate {
   isolation: isolate;
 }
@@ -1413,10 +1406,6 @@ a:hover {
 }
 .h-full {
   height: 100%;
-}
-.h-40 {
-  height: calc(40rem / 16);
-  height: calc(40rem / var(--vf-font-size-root));
 }
 .max-h-96 {
   max-height: calc(96rem / 16);
@@ -2298,10 +2287,6 @@ a:hover {
 .pt-48 {
   padding-top: calc(48rem / 16);
   padding-top: calc(48rem / var(--vf-font-size-root));
-}
-.pt-8 {
-  padding-top: calc(8rem / 16);
-  padding-top: calc(8rem / var(--vf-font-size-root));
 }
 .pt-80 {
   padding-top: calc(80rem / 16);
