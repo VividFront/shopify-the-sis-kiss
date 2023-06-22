@@ -2097,6 +2097,10 @@ a:hover {
   padding: calc(32rem / 16) 0 calc(40rem / 16);
   padding: var(--vf-padding-section-small);
 }
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .px-12 {
   padding-left: calc(12rem / 16);
   padding-left: calc(12rem / var(--vf-font-size-root));
