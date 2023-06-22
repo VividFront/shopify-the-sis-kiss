@@ -4607,10 +4607,10 @@ sesami-button button:hover {
   position: absolute;
   right: 0px;
   top: 3px;
-  height: calc(34rem / 16);
-  height: calc(34rem / var(--vf-font-size-root));
-  width: calc(34rem / 16);
-  width: calc(34rem / var(--vf-font-size-root));
+  height: calc(36rem / 16);
+  height: calc(36rem / var(--vf-font-size-root));
+  width: calc(36rem / 16);
+  width: calc(36rem / var(--vf-font-size-root));
   --tw-translate-y: -50%;
   --tw-translate-x: 50%;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -4620,17 +4620,22 @@ sesami-button button:hover {
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 9999px;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgba(193, 193, 194, var(--tw-border-opacity));
-  border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-shadow: var(--vf-box-shadow);
+  --tw-shadow-colored: var(--vf-box-shadow);
+  -webkit-box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0),
+    var(--tw-shadow);
+  box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0), var(--tw-shadow);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+    var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+    var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
   --tw-content: '';
   content: var(--tw-content);
-  background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2723.23%27 height=%2718.584%27 viewBox=%270 0 23.23 18.584%27%3E%3Cpath id=%27Path_3316%27 data-name=%27Path 3316%27 d=%27M.906-21.75V-5.489H3.35a3.073,3.073,0,0,0,1.089,1.67,2.951,2.951,0,0,0,1.887.653,2.951,2.951,0,0,0,1.887-.653A3.073,3.073,0,0,0,9.3-5.489H15.74a3.073,3.073,0,0,0,1.089,1.67,2.951,2.951,0,0,0,1.887.653A2.951,2.951,0,0,0,20.6-3.819a3.073,3.073,0,0,0,1.089-1.67h2.444v-8.058l-.218-.242-4.646-4.646-.242-.218H14.844v-3.1ZM2.455-20.2H13.3V-7.038H9.3a3.073,3.073,0,0,0-1.089-1.67,2.951,2.951,0,0,0-1.887-.653,2.951,2.951,0,0,0-1.887.653A3.073,3.073,0,0,0,3.35-7.038h-.9Zm12.389,3.1h3.533l4.21,4.21v5.856h-.9A3.073,3.073,0,0,0,20.6-8.707a2.951,2.951,0,0,0-1.887-.653,2.951,2.951,0,0,0-1.887.653,3.073,3.073,0,0,0-1.089,1.67h-.9ZM6.327-7.812a1.5,1.5,0,0,1,1.1.448,1.5,1.5,0,0,1,.448,1.1,1.5,1.5,0,0,1-.448,1.1,1.5,1.5,0,0,1-1.1.448,1.5,1.5,0,0,1-1.1-.448,1.5,1.5,0,0,1-.448-1.1,1.5,1.5,0,0,1,.448-1.1A1.5,1.5,0,0,1,6.327-7.812Zm12.389,0a1.5,1.5,0,0,1,1.1.448,1.5,1.5,0,0,1,.448,1.1,1.5,1.5,0,0,1-.448,1.1,1.5,1.5,0,0,1-1.1.448,1.5,1.5,0,0,1-1.1-.448,1.5,1.5,0,0,1-.448-1.1,1.5,1.5,0,0,1,.448-1.1A1.5,1.5,0,0,1,18.716-7.812Z%27 transform=%27translate%28-0.906 21.75%29%27 fill=%27%23ad1f2e%27/%3E%3C/svg%3E%0A');
+  background-image: url('https://cdn.shopify.com/s/files/1/1216/9642/files/plane.png?v=1687470649');
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 36px;
   background-position: center;
 }
 #slidecarthq
@@ -5961,6 +5966,19 @@ sesami-button button:hover {
     -ms-flex-pack: initial;
     justify-content: initial;
   }
+}
+.route-div .pw-route-protection {
+  margin-top: calc(32rem / 16);
+  margin-top: calc(32rem / var(--vf-font-size-root));
+  border-radius: 16px;
+  border-radius: var(--vf-border-radius);
+  --tw-bg-opacity: 1;
+  background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-ui-background) / var(--tw-bg-opacity));
+  padding: calc(16rem / 16);
+  padding: calc(16rem / var(--vf-font-size-root));
+  padding-bottom: calc(24rem / 16);
+  padding-bottom: calc(24rem / var(--vf-font-size-root));
 }
 summary {
   cursor: pointer;

@@ -268,12 +268,12 @@
       }
     },
     "cart": {
-      "title": "Your cart",
-      "caption": "Cart items",
+      "title": "Your Cart",
+      "caption": "Cart Items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
-      "new_subtotal": "New subtotal",
-      "note": "Order special instructions",
+      "new_subtotal": "New Subtotal",
+      "note": "Order Special Instructions",
       "checkout": "Check out",
       "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
