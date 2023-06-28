@@ -82,6 +82,10 @@
     }
   }
 
+  .bundle-builder-app--bundle--soldout {
+    @apply w-full mt-auto max-w-none text-white py-8 px-20 rounded-button font-bold border-[2px] border-solid border-primary hover:border-primary;
+  }
+
   .bundle-builder-app--bundle--section-breadcrumbs {
     @apply mb-0;
   }
@@ -118,6 +122,10 @@
               @apply p-0 text-body-copy-small;
             }
           }
+        }
+
+        .bundle-builder-app--bundle--product-add--wrapper:empty {
+          @apply mt-0;
         }
 
         .bundle-builder-app--bundle--product-image {

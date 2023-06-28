@@ -1524,6 +1524,9 @@ a:hover {
 .max-w-\[168px\] {
   max-width: 168px;
 }
+.max-w-\[340px\] {
+  max-width: 340px;
+}
 .max-w-\[440px\] {
   max-width: 440px;
 }
@@ -5520,6 +5523,38 @@ sesami-button button:hover {
   background-color: rgba(222, 222, 222, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-disabled) / var(--tw-bg-opacity));
 }
+#bundle-builder-app--bundle--root .bundle-builder-app--bundle--soldout,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--bundle--soldout {
+  margin-top: auto;
+  width: 100%;
+  max-width: none;
+  border-radius: 20px;
+  border-radius: var(--vf-border-radius-button);
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  padding-left: calc(20rem / 16);
+  padding-left: calc(20rem / var(--vf-font-size-root));
+  padding-right: calc(20rem / 16);
+  padding-right: calc(20rem / var(--vf-font-size-root));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+#bundle-builder-app--bundle--root .bundle-builder-app--bundle--soldout:hover,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--bundle--soldout:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+}
 #bundle-builder-app--bundle--root
   .bundle-builder-app--bundle--section-breadcrumbs,
 #bundle-builder-app--bundle-contents-modal
@@ -5705,6 +5740,18 @@ sesami-button button:hover {
   font-size: var(--vf-font-size-body-copy-small);
   line-height: calc(18rem / 16);
   line-height: var(--vf-line-height-body-copy-small);
+}
+#bundle-builder-app--bundle--root
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper:empty,
+#bundle-builder-app--bundle-contents-modal
+  .bundle-builder-app--products--block
+  .bundle-builder-app--bundle--section--product-list
+  .bundle-builder-app--bundle--product
+  .bundle-builder-app--bundle--product-add--wrapper:empty {
+  margin-top: 0px;
 }
 #bundle-builder-app--bundle--root
   .bundle-builder-app--products--block
