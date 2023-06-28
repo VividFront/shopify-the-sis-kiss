@@ -980,9 +980,6 @@ a:hover {
 .relative {
   position: relative;
 }
-.sticky {
-  position: sticky;
-}
 .-right-4 {
   right: calc((4rem / 16) * -1);
   right: calc((4rem / var(--vf-font-size-root)) * -1);
