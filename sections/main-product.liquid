@@ -126,7 +126,14 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'collapsible_tab' -%}
+                  {% assign show_accordion = false %}
+                  {% if block.settings.use_product_description and product.description != blank %}
+                    {% assign show_accordion = true %}
+                  {% endif %}
                   {% if block.settings.content != blank or block.settings.page.content != blank %}
+                    {% assign show_accordion = true %}
+                  {% endif %}
+                  {% if show_accordion %}
                     <div class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
                       <details class="group border-border border px-16 -mb-[1px]" id="Details-{{ block.id }}-{{ section.id }}">
                         <summary class="py-8 flex items-center justify-between relative">
@@ -135,8 +142,12 @@
                           <span class="text-primary [display:none] group-open:inline-block" aria-hidden="true">{%- render 'icon-minus' %}</span>
                         </summary>
                         <div class="pt-10 pb-24 richtext-content" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                          {{ block.settings.content }}
-                          {{ block.settings.page.content }}
+                          {% if block.settings.use_product_description == true %}
+                            {{ product.description }}
+                          {% else %}  
+                            {{ block.settings.content }}
+                            {{ block.settings.page.content }}
+                          {% endif %}
                         </div>
                       </details>
                     </div>
@@ -596,6 +607,11 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_product_description",
+          "label": "Use Product Description"
         }
       ]
     },
