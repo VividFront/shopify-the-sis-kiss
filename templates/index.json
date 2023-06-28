@@ -135,8 +135,8 @@
           "type": "category",
           "settings": {
             "title": "Necklaces",
-            "product_main": "acrylic-hair-clips",
-            "product_alt_image": "shopify://shop_images/necklace-lifestyle.jpg",
+            "product_main": "baguette-burst-necklace",
+            "product_alt_image": "shopify://shop_images/DSC03774.jpg",
             "product_secondary": "custom-my-mantra-name-necklaces",
             "collection": "necklaces"
           }
@@ -145,9 +145,9 @@
           "type": "category",
           "settings": {
             "title": "Earrings",
-            "product_main": "adjustable-crystal-initial-ring",
-            "product_alt_image": "shopify://shop_images/collab-1.jpg",
-            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "product_main": "the-essentials-slim-earring-set",
+            "product_alt_image": "shopify://shop_images/TSK.web.7.21.22179_03edf546-9247-4c26-bb04-7c476be79db6.jpg",
+            "product_secondary": "mini-pearl-huggie-earrings",
             "collection": "earrings"
           }
         },
@@ -155,9 +155,9 @@
           "type": "category",
           "settings": {
             "title": "Bracelets",
-            "product_main": "adjustable-lucky-cord-bracelets",
-            "product_alt_image": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
-            "product_secondary": "adjustable-old-english-lowercase-initial-ring",
+            "product_main": "charm-me-custom-bracelet-bundle",
+            "product_alt_image": "shopify://shop_images/NatalieDawnPhotoLLC-POOSHRegular00019.jpg",
+            "product_secondary": "oval-link-bracelet",
             "collection": "bracelets-cuffs"
           }
         },
@@ -165,9 +165,9 @@
           "type": "category",
           "settings": {
             "title": "Rings",
-            "product_main": "adjustable-crystal-initial-ring",
-            "product_alt_image": "shopify://shop_images/HOME_PAGE_-_GALLERY_NEW_ARRIVALS_2022.jpg",
-            "product_secondary": "adjustable-initial-pinky-ring-in-gold",
+            "product_main": "pearl-and-gold-bead-stretch-rings",
+            "product_alt_image": "shopify://shop_images/f1b07a19-91ba-4a2c-8719-4f62461ffd94_7a72cafc-7166-4b6f-962b-592d5074b563.jpg",
+            "product_secondary": "adjustable-crystal-initial-ring",
             "collection": "rings"
           }
         },
@@ -175,8 +175,8 @@
           "type": "category",
           "settings": {
             "title": "Accessories",
-            "product_main": "mini-mama-it-s-all-in-a-name-necklace",
-            "product_alt_image": "shopify://shop_images/charm.jpg",
+            "product_main": "rhinestone-chain-hair-tassel",
+            "product_alt_image": "shopify://shop_images/image_12e7eecf-58ae-4ba3-9b5a-831cd75a11d8.jpg",
             "product_secondary": "acrylic-hair-clips",
             "collection": "hair-accessories"
           }
@@ -217,8 +217,8 @@
         "body": "Jewelry we are loving at Sis Kiss HQ this season! Shop exclusive Kamp Kiss products that keep the vibes right all summer long.",
         "badge_emoji": "https://cdn.shopify.com/s/files/1/1216/9642/files/tulip_1f337.png?v=1682973594",
         "badge_text": "New This Season",
-        "image": "shopify://shop_images/spring-1.jpg",
-        "designer_tag": "@designer_tag",
+        "image": "shopify://shop_images/Untitled_design_20.png",
+        "designer_tag": "@allisonkuch",
         "cta_text": "Shop All Summer",
         "cta_url": "shopify://collections/spring-summer-new-arrivals"
       }
