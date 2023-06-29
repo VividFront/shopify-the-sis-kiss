@@ -24,7 +24,7 @@
             {% endif %}
             <p class="mt-12 text-center">*required</p>
             <div class="mt-20">
-              {%- render 'form-contact', topics: section.settings.form_topics -%}
+              {%- render 'form-contact', topics: section.settings.form_topics, redirect_url: section.settings.redirect_url -%}
             </div>
           </div>
         </div>
@@ -54,6 +54,11 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "redirect_url",
+      "label": "Redirect URL"
     }
   ],
   "presets": [

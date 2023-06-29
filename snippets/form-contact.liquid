@@ -1,6 +1,9 @@
 {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
   {%- if form.posted_successfully? -%}
     <h5 class="text-success mb-24" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</h5>
+    {%- if redirect_url != blank -%}
+      <script> window.location = "{{ redirect_url }}"; </script>
+    {%- endif -%}
   {%- elsif form.errors -%}
     <div class="border-error border p-12 pb-16 mb-24">
       <h6 class="text-body" role="alert" tabindex="-1" autofocus>{{ 'templates.contact.form.error_heading' | t }}</h6>
