@@ -147,7 +147,7 @@
                   {% endif %}
 
                   {% if show_accordion %}
-                    <div class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
+                    <div data-vf-product-details id="Details-Product-{{ forloop.index }}" class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
                       <details class="group border-border border px-16 -mb-[1px]" id="Details-{{ block.id }}-{{ section.id }}">
                         <summary class="py-8 flex items-center justify-between relative">
                           <h6>{{ block.settings.heading | default: block.settings.page.title }}</h6>
