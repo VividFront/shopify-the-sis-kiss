@@ -13,7 +13,9 @@
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
+      "block_order": [
+        "announcement-bar-0"
+      ],
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
@@ -36,11 +38,11 @@
             "list_3_heading": "Categories",
             "list_3_menu": "jewelry-categories",
             "image_heading": "Featured Collection",
-            "image": "shopify://shop_images/Untitled_design_17.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_17.png",
             "callout_heading": "Beaded Jewelry",
             "callout_body": "Dive into summer with colorful beaded styles!",
             "link_text": "Shop Now",
-            "link_url": "shopify://collections/beaded-jewelry"
+            "link_url": "shopify:\/\/collections\/beaded-jewelry"
           }
         },
         "e027b231-35b0-45e5-ac9e-2e531511e453": {
@@ -51,17 +53,17 @@
             "list_1_heading": "Categories",
             "list_1_menu": "custom-categories",
             "image_1_heading": "",
-            "image_1": "shopify://shop_images/Media_5-6EE04AE8-48E8-4B92-AE7B-5DA9B1B8F08B.jpg",
+            "image_1": "shopify:\/\/shop_images\/Media_5-6EE04AE8-48E8-4B92-AE7B-5DA9B1B8F08B.jpg",
             "callout_1_heading": "Charm Bar",
             "callout_1_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
             "link_1_text": "Shop Now",
-            "link_1_url": "shopify://collections/charm-bar",
+            "link_1_url": "shopify:\/\/collections\/charm-bar",
             "image_2_heading": "",
-            "image_2": "shopify://shop_images/Untitled_design_18.png",
+            "image_2": "shopify:\/\/shop_images\/Untitled_design_18.png",
             "callout_2_heading": "TSK Your Way",
             "callout_2_body": "Want one of our best-selling custom name necklaces without the wait? Custom styles created in just 5 business days!",
             "link_2_text": "Shop Now",
-            "link_2_url": "shopify://collections/tsk-your-way"
+            "link_2_url": "shopify:\/\/collections\/tsk-your-way"
           }
         },
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
@@ -76,18 +78,18 @@
             "list_3_heading": "",
             "list_3_menu": "",
             "image_heading": "",
-            "image": "shopify://shop_images/diamonds.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_22.png",
             "callout_heading": "TSK Atelier Diamonds",
             "callout_body": "Elevate your accessory collection with modern, made-to-order diamond pieces from the badass founder of The Sis Kiss",
             "link_text": "Shop Now",
-            "link_url": "shopify://collections/tsk-atelier-1979"
+            "link_url": "shopify:\/\/collections\/tsk-atelier-1979"
           }
         },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
           "type": "nav_item",
           "settings": {
             "title": "Permanent Jewelry",
-            "link": "shopify://products/sesami-test"
+            "link": "shopify:\/\/products\/sesami-test"
           }
         },
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
@@ -115,8 +117,8 @@
             "list_3_heading": "",
             "list_3_menu": "",
             "image_heading": "Featured Sale Collection",
-            "image": "shopify://shop_images/featured.jpg",
-            "callout_heading": "Collection/Item",
+            "image": "shopify:\/\/shop_images\/featured.jpg",
+            "callout_heading": "Collection\/Item",
             "callout_body": "Example of a featured collection. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
             "link_text": "Shop Now",
             "link_url": ""
@@ -129,7 +131,7 @@
             "link": "",
             "list_1_heading": "",
             "list_1_menu": "about-us",
-            "image": "shopify://shop_images/about.jpg"
+            "image": "shopify:\/\/shop_images\/about.jpg"
           }
         }
       },
@@ -150,5 +152,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
