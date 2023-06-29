@@ -124,7 +124,8 @@
           "settings": {
             "heading": "Details",
             "content": "",
-            "page": ""
+            "page": "",
+            "use_product_description": true
           }
         },
         "collapsible-row-1": {
@@ -132,7 +133,8 @@
           "settings": {
             "heading": "Custom Details",
             "content": "",
-            "page": ""
+            "page": "",
+            "use_product_description": false
           }
         },
         "collapsible-row-2": {
@@ -140,7 +142,8 @@
           "settings": {
             "heading": "Story",
             "content": "",
-            "page": ""
+            "page": "",
+            "use_product_description": false
           }
         },
         "collapsible-row-3": {
@@ -148,7 +151,8 @@
           "settings": {
             "heading": "Shipping & Order Information",
             "content": "",
-            "page": "shipping-order-information"
+            "page": "shipping-order-information",
+            "use_product_description": false
           }
         },
         "share": {
