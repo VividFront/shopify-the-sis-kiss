@@ -133,8 +133,21 @@
                   {% if block.settings.content != blank or block.settings.page.content != blank %}
                     {% assign show_accordion = true %}
                   {% endif %}
+
+                  {% assign is_in_collection = false %}
+                  {% for col in product.collections %}
+                    {% if col.handle == block.settings.collection.handle %}
+                      {% assign is_in_collection = true %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if block.settings.collection != blank and is_in_collection == false %}
+                    {% assign show_accordion = false %}
+                  {% endif %}
+
                   {% if show_accordion %}
-                    <div class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
+                    <div data-vf-product-details id="Details-Product-{{ forloop.index }}" class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
                       <details class="group border-border border px-16 -mb-[1px]" id="Details-{{ block.id }}-{{ section.id }}">
                         <summary class="py-8 flex items-center justify-between relative">
                           <h6>{{ block.settings.heading | default: block.settings.page.title }}</h6>
@@ -612,6 +625,16 @@
           "type": "checkbox",
           "id": "use_product_description",
           "label": "Use Product Description"
+        },
+        {
+          "type": "header",
+          "content": "Display Options"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Row will display if product is in collection"
         }
       ]
     },

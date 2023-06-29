@@ -26956,6 +26956,18 @@
           });
         });
       },
+      11: function () {
+        var t = document.querySelectorAll(
+          '[data-vf-product-details] > details',
+        );
+        t.forEach(function (e) {
+          e.addEventListener('click', function () {
+            t.forEach(function (t) {
+              t !== e && t.removeAttribute('open');
+            });
+          });
+        });
+      },
     },
     __webpack_module_cache__ = {};
   function __webpack_require__(t) {
@@ -29709,6 +29721,7 @@
             }),
               t[e].play();
         }),
-      __webpack_require__(914);
+      __webpack_require__(914),
+      __webpack_require__(11);
   })();
 })();
