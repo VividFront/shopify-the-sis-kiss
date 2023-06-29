@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-universal",
+      "blocks": {
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796": {
+          "type": "page_header",
+          "settings": {
+            "text": "Thank You"
+          }
+        },
+        "73ca64ba-72d2-443d-aa7a-9ff492bdcd4a": {
+          "type": "richtext_content",
+          "settings": {
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796",
+        "73ca64ba-72d2-443d-aa7a-9ff492bdcd4a"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "content_width": "narrow"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
