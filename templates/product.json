@@ -19,6 +19,14 @@
           "settings": {
           }
         },
+        "7d92e0db-90be-462b-8833-49ab9b934f1b": {
+          "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-block\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+          "settings": {
+            "heading": "Sezzle Widget",
+            "font_size": 14,
+            "font_family": "inherit"
+          }
+        },
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb": {
           "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
           "settings": {
@@ -143,6 +151,7 @@
         "title",
         "42ce88cc-e1fc-4e0a-888a-d3836bf45002",
         "price",
+        "7d92e0db-90be-462b-8833-49ab9b934f1b",
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb",
         "variant_picker",
         "quantity_selector",
