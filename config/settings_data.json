@@ -21,6 +21,8 @@
     "settings.bundle_builder_tsk_your_way_id": "132406",
     "bundle_builder_charm_me_id": "131767",
     "bundle_builder_charm_bar_id": "134715",
+    "swatch_options": "Color,Finish,Chain Finish",
+    "swatch_values": "silver,gold,rose-gold",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
