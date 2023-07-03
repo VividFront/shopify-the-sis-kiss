@@ -172,6 +172,13 @@
         "label": "Swatch Options",
         "info": "Comma separated list of option names",
         "default": "Color"
+      },
+      {
+        "type": "textarea",
+        "id": "swatch_values",
+        "label": "Swatch Values",
+        "info": "Comma separated list of handleized swatch names (ie. 'gold', 'rose-gold')",
+        "default": "silver,gold,rose-gold"
       }
     ]
   },
