@@ -38,7 +38,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png",
         "image_mobile": "shopify:\/\/shop_images\/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
-        "designer_tag": "@designer_tag",
+        "designer_tag": "",
         "tag_color": "text-white",
         "content_width": "narrow",
         "content_align": "left",
