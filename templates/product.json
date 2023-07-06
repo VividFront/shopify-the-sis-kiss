@@ -17,6 +17,14 @@
           "type": "price",
           "settings": {}
         },
+        "7d92e0db-90be-462b-8833-49ab9b934f1b": {
+          "type": "shopify://apps/sezzle-widget/blocks/widget-block/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+          "settings": {
+            "heading": "Sezzle Widget",
+            "font_size": 14,
+            "font_family": "inherit"
+          }
+        },
         "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8": {
           "type": "shopify://apps/sezzle-widget/blocks/widget-block/f3a53793-e118-4764-a86b-a79bfedb0d5f",
           "settings": {

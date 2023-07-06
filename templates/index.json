@@ -38,7 +38,7 @@
       "settings": {
         "image": "shopify://shop_images/unknown_model785_2x_0924af36-364d-467e-912c-1216c800eb88.png",
         "image_mobile": "shopify://shop_images/unknown_model785_2x_8080d03e-ebe4-4736-a56f-1d48dc2a2baa.png",
-        "designer_tag": "@designer_tag",
+        "designer_tag": "",
         "tag_color": "text-white",
         "content_width": "narrow",
         "content_align": "left",
@@ -52,43 +52,71 @@
         "e585fc6c-2b93-4fed-a45c-02a7ba737714": {
           "type": "product",
           "settings": {
-            "product": "drink-up-its-all-in-a-name-necklace"
+            "product": "art-of-sucre-x-the-sis-kiss"
+          }
+        },
+        "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
+          "type": "product",
+          "settings": {
+            "product": "infinity-crystal-hoops"
           }
         },
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
           "type": "product",
           "settings": {
-            "product": "acrylic-hair-clips"
+            "product": "pearl-initial-charm"
           }
         },
         "b57d275a-8796-4afc-ac7f-e148534af010": {
           "type": "product",
           "settings": {
-            "product": "adjustable-old-english-lowercase-initial-ring"
+            "product": "something-blue-charm"
           }
         },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "adjustable-lowercase-old-english-initial-ring-wholesale"
+            "product": "engraved-heart-charm"
           }
         },
         "0f0c72ae-5798-47f0-bf9b-99f6efe373a3": {
           "type": "product",
           "settings": {
-            "product": "authentic-pearl-bracelet"
+            "product": "tsk-your-way-figaro-water-bottle-accessory"
+          }
+        },
+        "7c90dd31-0865-4fe9-9fb4-915ed95c1bd0": {
+          "type": "product",
+          "settings": {
+            "product": "tsk-your-way-paperclip-water-bottle-accessory"
+          }
+        },
+        "54f7ed4b-f4f7-4a0d-aa12-4988284629d4": {
+          "type": "product",
+          "settings": {
+            "product": "the-essentials-bold-earring-set"
+          }
+        },
+        "f381268f-c79e-4fb1-a6a7-a906693e1128": {
+          "type": "product",
+          "settings": {
+            "product": "the-essentials-slim-earring-set"
           }
         }
       },
       "block_order": [
         "e585fc6c-2b93-4fed-a45c-02a7ba737714",
+        "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "b57d275a-8796-4afc-ac7f-e148534af010",
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
-        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3"
+        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3",
+        "7c90dd31-0865-4fe9-9fb4-915ed95c1bd0",
+        "54f7ed4b-f4f7-4a0d-aa12-4988284629d4",
+        "f381268f-c79e-4fb1-a6a7-a906693e1128"
       ],
       "settings": {
-        "collection_text": "Shop All <br>Best Sellers",
+        "collection_text": "Shop All Best Sellers",
         "collection": "best-sellers"
       }
     },
@@ -194,22 +222,22 @@
     "bc1dcc69-4df7-4e65-8092-482942e52e37": {
       "type": "home-trends-guide",
       "blocks": {
+        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
+          "type": "product",
+          "settings": {
+            "product": "charm-me-custom-bracelet-bundle"
+          }
+        },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
             "product": "star-charm-bracelet"
           }
-        },
-        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
-          "type": "product",
-          "settings": {
-            "product": "confetti-charm-bracelet"
-          }
         }
       },
       "block_order": [
-        "f51c9b3f-d069-43bb-bb00-0b8edeeddb97",
-        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3"
+        "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3",
+        "f51c9b3f-d069-43bb-bb00-0b8edeeddb97"
       ],
       "settings": {
         "background_image": "shopify://shop_images/Background.png",
@@ -217,7 +245,7 @@
         "body": "Jewelry we are loving at Sis Kiss HQ this season! Shop exclusive Kamp Kiss products that keep the vibes right all summer long.",
         "badge_emoji": "https://cdn.shopify.com/s/files/1/1216/9642/files/tulip_1f337.png?v=1682973594",
         "badge_text": "New This Season",
-        "image": "shopify://shop_images/Untitled_design_20.png",
+        "image": "shopify://shop_images/Untitled_design_24.png",
         "designer_tag": "@allisonkuch",
         "cta_text": "Shop All Summer",
         "cta_url": "shopify://collections/spring-summer-new-arrivals"

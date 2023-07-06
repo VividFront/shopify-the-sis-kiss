@@ -24,7 +24,7 @@
           "type": "icon-item",
           "settings": {
             "icon": "shopify://shop_images/shipping-icon.png",
-            "heading": "Free Shipping",
+            "heading": "Free Shipping*",
             "body": "Free shipping on all domestic US orders when you spend $150.",
             "large_text": ""
           }
@@ -34,7 +34,7 @@
           "settings": {
             "icon": "shopify://shop_images/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
-            "body": "Earn rewards just for following us on social media, sharing your birthday, and more.",
+            "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
             "large_text": ""
           }
         },
@@ -42,8 +42,8 @@
           "type": "icon-item",
           "settings": {
             "icon": "shopify://shop_images/custom-necklace.png",
-            "heading": "Over 100 Custom Styles",
-            "body": "Shop over 100 custom styles to design the perfect gift for yourself and your loved ones.",
+            "heading": "100+ Custom Styles",
+            "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
             "large_text": ""
           }
         }
