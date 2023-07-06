@@ -43,9 +43,35 @@
           endif
       endcase
     endfor
+
+    assign swatch_name = value | downcase | handleize
+    assign swatch_values = settings.swatch_values | split: ','
+    assign swatch_url = blank
+    if swatch_values contains swatch_name
+      assign swatch_url = swatch_name | append: '.png' | asset_url
+    endif
   -%}
 
-  {%- if picker_type == 'button' -%}
+  {%- if has_swatches and swatch_url != blank -%}
+    <input
+      type="radio"
+      class="{% if option_disabled %} disabled{% endif %} [&_+_*]:checked:!border-primary disabled:[&_+]:!border-disabled"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        disabled
+      {% endif %}
+    >
+    <label class="!bg-white h-40 w-40 !rounded-full border-border border !p-6 hover:border-primary" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      <img src="{{ swatch_url }}" class="w-full h-full object-cover rounded-full">
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
+  {%- elsif picker_type == 'button' -%}
     <input
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"

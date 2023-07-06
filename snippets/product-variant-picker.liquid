@@ -42,11 +42,18 @@
           if 'Initial' == option.name
             assign radio_type = '-letter'
           endif
+
+          assign options_with_swatches = settings.swatch_options | split: ','
+          assign option_has_swatches = false
+
+          if options_with_swatches contains option.name
+            assign option_has_swatches = true
+          endif
         -%}
         {%- assign default_value = option.values | first -%}
         <fieldset class="js product-form__input tsk-variant-radio {{ radio_type }}">
           <legend class="form__label font-open-sans font-semibold">{{ option.name }}: <span class="italic font-normal text-placeholder-high-contrast" id="option{{ option.position }}_value">{{ option.selected_value | default: default_value }}</span></legend>
-          {% render 'product-variant-options', product: product, option: option, block: block, picker_type: 'button' %}
+          {% render 'product-variant-options', product: product, option: option, block: block, picker_type: 'button', has_swatches: option_has_swatches %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
