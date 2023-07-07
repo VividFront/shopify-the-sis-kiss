@@ -39,7 +39,7 @@
         "heading": "New to Faire?",
         "body": "You’ll get $100 off your first order, plus free shipping with us for an entire year",
         "cta_text": "Shop Wholesale",
-        "cta_url": "shopify://collections/wholesale",
+        "cta_url": "https://www.faire.com/welcome/r/personal?fdb=thesiskiss&signUp=widgetv2&widgetToken=bw_8d7gvwtrzs",
         "theme": "light"
       }
     },
