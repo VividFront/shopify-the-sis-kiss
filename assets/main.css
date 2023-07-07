@@ -5165,6 +5165,24 @@ sesami-button button:hover {
 #tsk-product-grid #gf-tree .gf-option-block .gf-block-title .gf-clear:hover {
   text-decoration-line: underline;
 }
+#tsk-product-grid #gf-tree [data-filter-type='Tag'] .gf-swatch-image {
+  height: calc(20rem / 16);
+  height: calc(20rem / var(--vf-font-size-root));
+  width: calc(20rem / 16);
+  width: calc(20rem / var(--vf-font-size-root));
+  border-radius: 0px;
+  border-style: none;
+}
+#tsk-product-grid
+  #gf-tree
+  [data-filter-type='Tag']
+  button.checked
+  .gf-swatch-image {
+  border-style: none;
+}
+#tsk-product-grid #gf-tree [data-filter-type='Tag'] button.checked .gf-label {
+  font-weight: 700;
+}
 #bundle-builder-app--bundle--root .bundle-builder-app--bundle--name,
 #bundle-builder-app--bundle-contents-modal .bundle-builder-app--bundle--name {
   width: 100%;

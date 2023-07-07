@@ -86,5 +86,19 @@
         }
       }
     }
+
+    [data-filter-type='Tag'] {
+      .gf-swatch-image {
+        @apply border-none w-20 h-20 rounded-none;
+      }
+
+      button.checked .gf-swatch-image {
+        @apply border-none;
+      }
+
+      button.checked .gf-label {
+        @apply font-bold;
+      }
+    }
   }
 }
