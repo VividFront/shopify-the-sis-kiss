@@ -1,9 +1,7 @@
 {% comment %} {{ 'component-cart-items.css' | asset_url | stylesheet_tag }} {% endcomment %}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
-{%- unless settings.cart_type == 'drawer' -%}
-  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-{%- endunless -%}
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="{% if cart == empty %} is-empty{% endif %}">
   <div class="{% if cart == empty %}p-section-md{% else %}pt-40 md:pt-64 pb-24{% endif %}">
@@ -14,7 +12,6 @@
             <div class="flex justify-between items-center gap-12 flex-wrap">
               <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
             </div>
-          </div>
             {%- if settings.free_shipping_threshold != blank -%}
               <div class="col-span-full">
                 <div class="lg:px-48">
@@ -24,6 +21,7 @@
             {%- endif -%}
           {% endif %}
           <div class="col-span-full lg:col-span-10 lg:col-start-2">
+            {% if cart != empty %}
               <form action="{{ routes.cart_url }}" class="mt-24 lg:mt-32 cart__contents critical-hidden{%- if shop.customer_accounts_enabled and customer != nil and cart != empty %} pb-24 border-b border-border{%- endif -%}" method="post" id="cart">
                 <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
                   <div class="js-contents">
@@ -285,28 +283,28 @@
                 <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
                 <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
               </form>
-
+            {% endif %}
             <div>
               {% if cart == empty %}
-              <div class="flex justify-center text-center flex-col">
-                <div class="flex justify-center text-primary">
-                  {% if section.settings.empty_cart_image != blank %}
-                    {{ section.settings.empty_cart_image | image_url: width: 196 | image_tag:
-                      width: section.settings.empty_cart_image.width,
-                      class: 'w-98 h-98 object-contain',
-                      sizes: section.settings.empty_cart_image.sizes,
-                      widths: '196',
-                      alt: section.settings.empty_cart_image.alt | escape
-                    }}
+                <div class="flex justify-center text-center flex-col">
+                  <div class="flex justify-center text-primary">
+                    {% if section.settings.empty_cart_image != blank %}
+                      {{ section.settings.empty_cart_image | image_url: width: 196 | image_tag:
+                        width: section.settings.empty_cart_image.width,
+                        class: 'w-98 h-98 object-contain',
+                        sizes: section.settings.empty_cart_image.sizes,
+                        widths: '196',
+                        alt: section.settings.empty_cart_image.alt | escape
+                      }}
+                    {% endif %}
+                  </div>
+                  <h1 class="h2 mt-12">Your Cart is Empty</h1>
+                  {% if section.settings.empty_cart_cta_text != blank %}
+                    <div class="flex justify-center mt-24 lg:mt-32">
+                      {% render 'button-large', text: section.settings.empty_cart_cta_text, url: section.settings.empty_cart_cta_link %}
+                    </div>
                   {% endif %}
                 </div>
-                <h1 class="h2 mt-12">Your Cart is Empty</h1>
-                {% if section.settings.empty_cart_cta_text != blank %}
-                  <div class="flex justify-center mt-24 lg:mt-32">
-                    {% render 'button-large', text: section.settings.empty_cart_cta_text, url: section.settings.empty_cart_cta_link %}
-                  </div>
-                {% endif %}
-              </div>
               {% endif %}
               {%- if shop.customer_accounts_enabled and customer == nil and cart != empty -%}
                 <div class="py-16 border-border border-y my-32 flex items-center justify-between gap-12 flex-wrap">
