@@ -65,7 +65,7 @@
           "settings": {
             "heading": "FAQ",
             "content": "<p>FAQ Copy<\/p>",
-            "page": "",
+            "page": "faq",
             "use_product_description": false,
             "collection": ""
           }
@@ -75,7 +75,7 @@
           "settings": {
             "heading": "Jewelry Care",
             "content": "<p>Care Copy<\/p>",
-            "page": "",
+            "page": "care-for-your-jewelry",
             "use_product_description": false,
             "collection": ""
           }
