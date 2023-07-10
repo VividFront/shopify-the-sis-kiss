@@ -5,28 +5,22 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
-          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         },
         "price": {
           "type": "price",
-          "settings": {}
-        },
-        "7d92e0db-90be-462b-8833-49ab9b934f1b": {
-          "type": "shopify://apps/sezzle-widget/blocks/widget-block/f3a53793-e118-4764-a86b-a79bfedb0d5f",
           "settings": {
-            "heading": "Sezzle Widget",
-            "font_size": 14,
-            "font_family": "inherit"
           }
         },
         "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8": {
-          "type": "shopify://apps/sezzle-widget/blocks/widget-block/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+          "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-block\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
           "settings": {
             "heading": "Sezzle Widget",
             "font_size": 14,
@@ -34,8 +28,9 @@
           }
         },
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb": {
-          "type": "shopify://apps/infinite-options/blocks/app-block/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
-          "settings": {}
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -45,7 +40,8 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -68,7 +64,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQ",
-            "content": "<p>FAQ Copy</p>",
+            "content": "<p>FAQ Copy<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -78,7 +74,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Jewelry Care",
-            "content": "<p>Care Copy</p>",
+            "content": "<p>Care Copy<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -98,7 +94,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Custom Jewelry FAQ",
-            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br/><br/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br/><br/><br/>Shipping & Order Information:<br/><br/>Once your order is placed, we can not refund due to the timeline.<br/>NO REFUNDS can or will be given after order is placed due to the personalized nature of the order.<br/>Once you place your order, you are agreeing to the timeline and understand it could be longer than 4 weeks.<br/>If you have any questions about shipping, please review our Shipping Policy here</p>",
+            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br\/><br\/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br\/><br\/><br\/>Shipping & Order Information:<br\/><br\/>Once your order is placed, we can not refund due to the timeline.<br\/>NO REFUNDS can or will be given after order is placed due to the personalized nature of the order.<br\/>Once you place your order, you are agreeing to the timeline and understand it could be longer than 4 weeks.<br\/>If you have any questions about shipping, please review our Shipping Policy here<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "custom-jewelry"
@@ -108,7 +104,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Waterproof",
-            "content": "<p>tbd need to come up with copy</p>",
+            "content": "<p>tbd need to come up with copy<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "waterproof"
@@ -118,7 +114,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "TSK Your Way",
-            "content": "<p>tbd, should be similar to custom jewelry but with the 5 business day turnaround</p>",
+            "content": "<p>tbd, should be similar to custom jewelry but with the 5 business day turnaround<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "tsk-your-way"
@@ -128,7 +124,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "TSK Atelier",
-            "content": "<p>This made-to-order piece will be made for you by our Atelier craftsman. Please allow 3-4 weeks to complete. Please note, no refunds or exchanges on custom orders. Cancellation of an order must be provided no later then 24 hours from your time of checkout. TSK Atelier pieces come with TSK Atelier Concierge Service. Please email customer service to arrange for Concierge Service, including to schedule a personal shopping consultation by phone.</p>",
+            "content": "<p>This made-to-order piece will be made for you by our Atelier craftsman. Please allow 3-4 weeks to complete. Please note, no refunds or exchanges on custom orders. Cancellation of an order must be provided no later then 24 hours from your time of checkout. TSK Atelier pieces come with TSK Atelier Concierge Service. Please email customer service to arrange for Concierge Service, including to schedule a personal shopping consultation by phone.<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "tsk-atelier-1979"
@@ -138,7 +134,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Sis Kiss Links FAQ",
-            "content": "<p>IMPORTANT INFO:chains come in 14k gold or .925 sterling silverto book your appointment you must place an order for your chainonce you've arrived at The Sis Kiss HQ, you will be able to add charms to your Sis Kiss Links styles (birthstone crystals, diamonds, and more)charms are sold separately and payment will be processed on-site with our teamadditional chains OR charms availability is on a first-come, first-served basisall sales are finalif you want to remove your jewelry, please use the appropriate tools or high-quality shearsShould your piece get snagged or break on something, just keep the chain and reach out to us via email at customerservice@thesiskiss.com to schedule a repair! Please note, The Sis Kiss is not liable for lost chains, but we will offer a 20% discount if you need to purchase a new one that has fallen off. **We do not cover lost or damaged pieces after three months of purchase.**</p>",
+            "content": "<p>IMPORTANT INFO:chains come in 14k gold or .925 sterling silver to book your appointment you must place an order for your chain once you've arrived at The Sis Kiss HQ, you will be able to add charms to your Sis Kiss Links styles (birthstone crystals, diamonds, and more)charms are sold separately and payment will be processed on-site with our team additional chains OR charms availability is on a first-come, first-served basisall sales are finalif you want to remove your jewelry, please use the appropriate tools or high-quality shears. Should your piece get snagged or break on something, just keep the chain and reach out to us via email at customerservice@thesiskiss.com to schedule a repair! Please note, The Sis Kiss is not liable for lost chains, but we will offer a 20% discount if you need to purchase a new one that has fallen off. **We do not cover lost or damaged pieces after three months of purchase.**<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "seamless-permanent-jewelry"
@@ -187,7 +183,7 @@
     "605a63e6-525e-429b-a87a-b51c70b37d88": {
       "type": "complete-the-look",
       "settings": {
-        "background_image": "shopify://shop_images/wallpaper.png",
+        "background_image": "shopify:\/\/shop_images\/wallpaper.png",
         "marquee_text": "Complete the Look",
         "recommendation_type": "related"
       }
@@ -196,13 +192,15 @@
       "type": "apps",
       "blocks": {
         "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
-          "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         }
       },
-      "block_order": ["c2913024-b9fb-4da4-ad2d-d8717af1a674"],
+      "block_order": [
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -213,7 +211,7 @@
         "97091f40-77bb-45ef-bf3b-5808317f311e": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/shipping-icon.png",
+            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
             "heading": "Free Shipping*",
             "body": "Free shipping on all domestic US orders when you spend $150.",
             "large_text": ""
@@ -222,7 +220,7 @@
         "17c58f09-71ce-4caa-969a-d06a1880fcfa": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/rewards-icon.png",
+            "icon": "shopify:\/\/shop_images\/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
             "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
             "large_text": ""
@@ -231,7 +229,7 @@
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/custom-necklace.png",
+            "icon": "shopify:\/\/shop_images\/custom-necklace.png",
             "heading": "100+ Custom Styles",
             "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
             "large_text": ""
@@ -243,12 +241,13 @@
         "17c58f09-71ce-4caa-969a-d06a1880fcfa",
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "bedc88e8-8e96-4831-bbc6-ab67c80aa826": {
       "type": "recently-viewed",
       "settings": {
-        "background_image": "shopify://shop_images/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
+        "background_image": "shopify:\/\/shop_images\/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
         "heading": "Recently Viewed"
       }
     },

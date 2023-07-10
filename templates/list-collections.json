@@ -10,8 +10,12 @@
     },
     "main": {
       "type": "main-list-collections",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["255b0234-ef0b-4b40-bf72-f936025a709e", "main"]
+  "order": [
+    "255b0234-ef0b-4b40-bf72-f936025a709e",
+    "main"
+  ]
 }
