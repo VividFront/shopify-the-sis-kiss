@@ -6,15 +6,15 @@
         "03620eb0-edac-4831-9f9a-2bc0f2586ae2": {
           "type": "featured_question",
           "settings": {
-            "title": "What is The Sis Kiss Jewelry Made of?",
-            "url": "shopify://blogs/faq/what-is-the-sis-kiss-jewelry-made-of-1"
+            "title": "What Material Is The Sis Kiss Jewelry Made Of?",
+            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/what-material-is-the-sis-kiss-jewelry-made-with"
           }
         },
         "abeba2a7-6544-4272-a29f-0af30c3c6f32": {
           "type": "featured_question",
           "settings": {
-            "title": "What is The Sis Kiss Jewelry Made of?",
-            "url": "shopify://blogs/faq/what-is-the-sis-kiss-jewelry-made-of-2"
+            "title": "When Will My Order Ship?",
+            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/when-will-my-order-ship"
           }
         }
       },
@@ -84,7 +84,7 @@
         "heading": "Didnt Find What You Were Looking For?",
         "body": "Reach out to us and let us help!",
         "cta_text": "Contact Us",
-        "cta_url": "shopify://pages/contact-us",
+        "cta_url": "shopify:\/\/pages\/contact-us",
         "theme": "dark"
       }
     }
