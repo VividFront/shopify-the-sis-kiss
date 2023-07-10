@@ -65,7 +65,7 @@
           "settings": {
             "heading": "FAQ",
             "content": "<p>FAQ Copy<\/p>",
-            "page": "faq",
+            "page": "",
             "use_product_description": false,
             "collection": ""
           }
