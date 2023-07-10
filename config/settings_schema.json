@@ -183,6 +183,16 @@
     ]
   },
   {
+    "name": "Scripts",
+    "settings": [
+      {
+        "type": "html",
+        "id": "accessibe_script",
+        "label": "AccessiBE Script"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

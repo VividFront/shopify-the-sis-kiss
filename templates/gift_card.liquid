@@ -177,6 +177,9 @@
     <div hidden>
       <span id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</span>
     </div>
+    {% if settings.accessibe_script != blank %}
+      {{ settings.accessibe_script }}
+    {% endif %}
   </body>
 </html>
 

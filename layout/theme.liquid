@@ -302,5 +302,8 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   {% include 'globo.filter.action' %}
+  {% if settings.accessibe_script != blank %}
+    {{ settings.accessibe_script }}
+  {% endif %}
 	</body>
 </html>
