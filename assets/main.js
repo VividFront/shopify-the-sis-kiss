@@ -26942,20 +26942,6 @@
           );
         });
       },
-      914: function () {
-        var t = document.querySelectorAll('[data-vf-mobile-menu] > details');
-        t.forEach(function (e) {
-          e.addEventListener('click', function () {
-            t.forEach(function (t) {
-              if (t !== e) t.removeAttribute('open');
-              else {
-                var r = e.getAttribute('id');
-                location.hash = r;
-              }
-            });
-          });
-        });
-      },
       11: function () {
         var t = document.querySelectorAll(
           '[data-vf-product-details] > details',
@@ -29721,7 +29707,6 @@
             }),
               t[e].play();
         }),
-      __webpack_require__(914),
       __webpack_require__(11);
   })();
 })();
