@@ -55,6 +55,12 @@
             "product": "art-of-sucre-x-the-sis-kiss"
           }
         },
+        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
+          "type": "product",
+          "settings": {
+            "product": "coin-initial-charm"
+          }
+        },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
@@ -106,6 +112,7 @@
       },
       "block_order": [
         "e585fc6c-2b93-4fed-a45c-02a7ba737714",
+        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "b57d275a-8796-4afc-ac7f-e148534af010",
