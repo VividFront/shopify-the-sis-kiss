@@ -1408,6 +1408,10 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.\!h-24 {
+  height: calc(24rem / 16) !important;
+  height: calc(24rem / var(--vf-font-size-root)) !important;
+}
 .max-h-96 {
   max-height: calc(96rem / 16);
   max-height: calc(96rem / var(--vf-font-size-root));
@@ -4040,7 +4044,8 @@ input[type='search'] {
 #infiniteoptions-container > div > span {
   display: block;
 }
-#infiniteoptions-container > div > span > input {
+#infiniteoptions-container > div > span > input,
+#infiniteoptions-container > div > span > fieldset {
   position: relative;
   height: calc(42rem / 16);
   height: calc(42rem / var(--vf-font-size-root));
@@ -4068,14 +4073,16 @@ input[type='search'] {
   line-height: calc(22rem / 16);
   line-height: var(--vf-line-height-body-copy);
 }
-#infiniteoptions-container > div > span > input:focus {
+#infiniteoptions-container > div > span > input:focus,
+#infiniteoptions-container > div > span > fieldset:focus {
   --tw-border-opacity: 1;
   border-color: rgba(23, 23, 23, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-primary-pressed) / var(--tw-border-opacity));
   outline-color: rgba(23, 23, 23, 1);
   outline-color: rgb(var(--vf-color-primary-pressed) / 1);
 }
-#infiniteoptions-container > div > span > input:disabled {
+#infiniteoptions-container > div > span > input:disabled,
+#infiniteoptions-container > div > span > fieldset:disabled {
   --tw-border-opacity: 1;
   border-color: rgba(148, 148, 148, var(--tw-border-opacity));
   border-color: rgb(

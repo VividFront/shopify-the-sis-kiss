@@ -14,7 +14,8 @@
   @apply block;
 }
 
-#infiniteoptions-container > div > span > input {
+#infiniteoptions-container > div > span > input,
+#infiniteoptions-container > div > span > fieldset {
   @apply text-body-copy rounded-[4px] border-border border w-full h-42 px-12 py-12 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled bg-input-background;
 }
 
