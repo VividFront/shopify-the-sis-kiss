@@ -11,18 +11,10 @@
             "text": "Welcome to our store",
             "link": ""
           }
-        },
-        "b99b6115-1e6d-480f-921c-0e465556286d": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free Shipping",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "b99b6115-1e6d-480f-921c-0e465556286d"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "accent-1",
