@@ -1408,6 +1408,10 @@ a:hover {
 .h-full {
   height: 100%;
 }
+.\!h-24 {
+  height: calc(24rem / 16) !important;
+  height: calc(24rem / var(--vf-font-size-root)) !important;
+}
 .max-h-96 {
   max-height: calc(96rem / 16);
   max-height: calc(96rem / var(--vf-font-size-root));

@@ -34,15 +34,15 @@
       <div class="announcement-bar-slider slider-buttons">
         <button
           type="button"
-          class="slider-button slider-button--prev"
+          class="slider-button slider-button--prev !h-24"
           name="previous"
           aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
           aria-controls="Slider-{{ section.id }}"
         >
           {% render 'icon-caret' %}
         </button>
-        <div
-          class="grid grid--1-col slider slider--everywhere"
+        <ul
+          class="flex grid--1-col slider slider--everywhere"
           id="Slider-{{ section.id }}"
           aria-live="polite"
           aria-atomic="true"
@@ -50,8 +50,8 @@
           data-speed="{{ section.settings.change_slides_speed }}"
         >
           {%- for block in section.blocks -%}
-            <div
-              class="slideshow__slide slider__slide grid__item grid--1-col"
+            <li
+              class="w-full slideshow__slide slider__slide grid__item grid--1-col"
               id="Slide-{{ section.id }}-{{ forloop.index }}"
               {{ block.shopify_attributes }}
               role="group"
@@ -64,7 +64,7 @@
                   {%- if block.settings.link != blank -%}
                     <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
                   {%- endif -%}
-                      <p class="announcement-bar__message h5">
+                      <p class="text-body-copy-small">
                         <span>{{ block.settings.text | escape }}</span>
                         {%- if block.settings.link != blank -%}
                           {% render 'icon-arrow' %}
@@ -75,12 +75,12 @@
                   {%- endif -%}
                 {%- endif -%}
               </div>
-            </div>
+            </li>
           {%- endfor -%}
-        </div>
+        </ul>
         <button
           type="button"
-          class="slider-button slider-button--next"
+          class="slider-button slider-button--next !h-24"
           name="next"
           aria-label="{{ 'sections.announcements.next_announcement' | t }}"
           aria-controls="Slider-{{ section.id }}"
