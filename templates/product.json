@@ -80,8 +80,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Order Information",
-            "content": "",
-            "page": "shipping-order-information",
+            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.</strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! </p>",
+            "page": "",
             "use_product_description": false,
             "collection": ""
           }

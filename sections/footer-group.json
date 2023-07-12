@@ -32,7 +32,12 @@
         "cf23ac7c-dc5f-4a8b-a303-7b787df0754b",
         "de921721-51f7-47c3-bf9e-4404295ef55a"
       ],
-      "settings": {}
+      "settings": {
+        "terms_text": "Terms of Use",
+        "terms_url": "shopify://pages/terms-conditions",
+        "privacy_text": "Privacy Policy",
+        "privacy_url": "shopify://pages/privacy-policy"
+      }
     }
   },
   "order": ["footer"]

@@ -64,14 +64,7 @@
         "e42d1854-5bb1-4455-9b63-4769c0c5f067": {
           "type": "accordion",
           "settings": {
-            "heading": "Gold Vermeil",
-            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
-          }
-        },
-        "4b453b4c-0b2a-4b16-9e66-435e15cc6471": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Sterling Silver",
+            "heading": "Gold Vermeil, Sterling Silver and Brass",
             "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
           }
         },
@@ -79,22 +72,13 @@
           "type": "accordion",
           "settings": {
             "heading": "14K Solid Gold",
-            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
-          }
-        },
-        "4aabf690-fac2-40d1-8b5d-fe73efb965eb": {
-          "type": "accordion",
-          "settings": {
-            "heading": "Brass",
-            "body": "<p>Sterling silver dipped in gold or plated is also known as vermeil. Regular gold-plated jewelry is not sterling silver under the gold, but a base metal such as brass or steel. To make gold dipped jewelry, a thin layer of gold adheres to the silver through an electroplating bath. It is a good option for those who like the look of gold but are working on a budget. The gold dip can wear off over time and tarnish. It is important to keep these pieces dry and away from perfumes, lotions and sweat. Those with high Ph skin will also have their gold dipped piece’s tarnish quicker.</p>"
+            "body": "<ul><li>Avoid exposure to chemicals and remove before applying lotions or perfumes.</li><li>Store separately in a fabric-lined jewelry box or pouch to prevent scratches.</li><li>Clean gently with a mild dish soap and warm water using a soft brush or cloth.</li><li>Avoid abrasive materials when cleaning or polishing.</li><li>Remove during physical activities to prevent damage.</li><li>Regularly inspect for loose stones or damage and have them repaired by a professional.</li><li>Consider professional cleaning when needed.</li></ul>"
           }
         }
       },
       "block_order": [
         "e42d1854-5bb1-4455-9b63-4769c0c5f067",
-        "4b453b4c-0b2a-4b16-9e66-435e15cc6471",
-        "859fd3f9-9920-4ebb-b5dc-54df03297144",
-        "4aabf690-fac2-40d1-8b5d-fe73efb965eb"
+        "859fd3f9-9920-4ebb-b5dc-54df03297144"
       ],
       "settings": {
         "heading": "Jewelry Care by Material"
