@@ -60,7 +60,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQ",
-            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?</strong></p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.</p><p></p>",
+            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?</strong></p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.</p><p><a href=\"/blogs/faq\" title=\"FAQ\">Read More FAQs</a></p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -70,7 +70,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Jewelry Care",
-            "content": "<p><strong>Jewelry Care</strong></p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.</p><p></p><p><strong>Jewelry 101</strong></p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.</strong></em><em> </em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  </p>",
+            "content": "<p><strong>Jewelry Care</strong></p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.</p><p></p><p><strong>Jewelry 101</strong></p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.</strong></em><em> </em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  </p><p><a href=\"/pages/care-for-your-jewelry\" title=\"Care For Your Jewelry\">Learn More</a></p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -80,7 +80,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Order Information",
-            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.</strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! </p>",
+            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.</strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! </p><p><a href=\"/pages/shipping-and-returns\" title=\"Shipping and Returns\">Learn More</a></p>",
             "page": "",
             "use_product_description": false,
             "collection": ""

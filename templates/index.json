@@ -261,10 +261,10 @@
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
       "type": "full-width-image-callout",
       "settings": {
-        "background_image": "shopify://shop_images/custom.jpg",
-        "image_mobile": "shopify://shop_images/custom_copy.jpg",
+        "background_image": "shopify://shop_images/custom_homepage_image_v2.1.jpg",
+        "image_mobile": "shopify://shop_images/custom_homepage_image_v2.1_MOBILE.jpg",
         "heading": "Custom Pieces",
-        "body": "Custom styles are handmade with care and take between 4-6 weeks to ship. A personalized gift is never a bad idea!",
+        "body": "Custom styles are handmade with care and take between 3-4 weeks to ship. A personalized gift is never a bad idea!",
         "cta_text": "Shop Custom Jewelry",
         "cta_url": "shopify://collections/custom-jewelry"
       }

@@ -81,7 +81,7 @@
         "faa9cb33-1373-4973-82e0-4a08411e5a50": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/shipping-icon.png",
+            "icon": "shopify://shop_images/rewards-icon_1a19753a-6460-415e-9ca2-d8a2c2d547c9.png",
             "heading": "Minimum",
             "body": "",
             "large_text": "$100"
@@ -99,7 +99,7 @@
         "0a6b8c55-6f62-41b2-a275-8fa956a210dc": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/shipping-icon.png",
+            "icon": "shopify://shop_images/waterproof-icon.png",
             "heading": "Lead Time",
             "body": "",
             "large_text": "1-3 Days"
