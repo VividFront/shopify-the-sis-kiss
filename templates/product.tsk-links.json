@@ -125,34 +125,48 @@
             "heading": "Details",
             "content": "",
             "page": "",
-            "use_product_description": true
+            "use_product_description": true,
+            "collection": ""
           }
         },
-        "collapsible-row-1": {
+        "01d652e9-fc63-471a-922d-f53773c9bac4": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Custom Details",
-            "content": "",
+            "heading": "FAQ",
+            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?</strong></p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.</p><p></p>",
             "page": "",
-            "use_product_description": false
+            "use_product_description": false,
+            "collection": ""
           }
         },
-        "collapsible-row-2": {
+        "64f16b6b-a076-4c3f-a322-19bdb934e657": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Story",
-            "content": "",
+            "heading": "Jewelry Care",
+            "content": "<p><strong>Jewelry Care</strong></p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.</p><p></p><p><strong>Jewelry 101</strong></p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.</strong></em><em> </em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  </p>",
             "page": "",
-            "use_product_description": false
+            "use_product_description": false,
+            "collection": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Order Information",
-            "content": "",
-            "page": "shipping-order-information",
-            "use_product_description": false
+            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.</strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! </p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Custom Jewelry FAQ",
+            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br/><br/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br/><br/><br/>Shipping & Order Information:<br/><br/>Once your order is placed, we can not refund due to the timeline.<br/>NO REFUNDS can or will be given after order is placed due to the personalized nature of the order.<br/>Once you place your order, you are agreeing to the timeline and understand it could be longer than 4 weeks.<br/>If you have any questions about shipping, please review our Shipping Policy here</p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "custom-jewelry"
           }
         },
         "share": {
@@ -171,9 +185,10 @@
         "quantity_selector",
         "buy_buttons",
         "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
+        "01d652e9-fc63-471a-922d-f53773c9bac4",
+        "64f16b6b-a076-4c3f-a322-19bdb934e657",
         "collapsible-row-3",
+        "collapsible-row-1",
         "share"
       ],
       "settings": {
