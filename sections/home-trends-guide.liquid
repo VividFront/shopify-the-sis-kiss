@@ -12,9 +12,9 @@
   </div>
   <div class="container">
     <div class="lg:grid grid-cols gap-x-grid">
-      <div class="lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-3">
+      <div class="lg:col-start-1 lg:col-end-7">
         <div class="relative pl-44 pt-32 lg:pl-64 lg:pt-74">
-          <div class="relative after:absolute after:right-0 after:bottom-0 after:h-full after:w-[40%] after:bg-[linear-gradient(90deg,_#FFFFFF00_0%,_#FFFFFF_100%)] after:opacity-20 after:rounded-tr after:rounded-bl">
+          <div class="relative after:absolute after:right-0 after:bottom-0 after:h-full after:w-[40%] after:bg-[linear-gradient(90deg,#FFFFFF00_0%,#FFFFFF_100%)] after:opacity-20 after:rounded-tr after:rounded-bl">
             {{ section.settings.image | image_url: width: 800 | image_tag:
               width: section.settings.image.width,
               class: 'rounded aspect-[3/4] w-full object-cover',
@@ -29,11 +29,9 @@
           <div class="absolute top-0 left-0">{% render 'curvy-badge.liquid', emoji_url: section.settings.badge_emoji, text: section.settings.badge_text %}</div>
         </div>
       </div>
-      <div class="mt-32 lg:mt-0 lg:col-start-4 xl:col-start-5 lg:col-end-12 lg:row-start-1 lg:row-end-2 relative z-[1] flex lg:items-end">
-        <h2 class="text-center lg:text-left text-h2-alt font-display font-normal leading-h2-alt w-full">{{ section.settings.heading }}</h1>
-      </div>
-      <div class="lg:col-start-7 lg:col-end-13 lg:row-start-2 lg:row-end-3 mt-8 lg:mt-0">
-        <p class="text-center lg:text-left lg:mt-24">{{ section.settings.body }}</p>
+      <div class="lg:col-start-7 lg:col-end-13 mt-8 lg:mt-0">
+        <h2 class="text-center lg:text-left text-h2-alt font-display font-normal leading-h2-alt w-full">{{ section.settings.heading }}</h2>
+        <p class="text-center lg:text-left mt-24">{{ section.settings.body }}</p>
         <div class="mt-18 flex gap-grid justify-center px-30">
           {% for block in section.blocks %}
             {% if block.type == 'product' %}
