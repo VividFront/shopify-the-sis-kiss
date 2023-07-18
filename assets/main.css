@@ -1317,6 +1317,10 @@ a:hover {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
+.\!h-24 {
+  height: calc(24rem / 16) !important;
+  height: calc(24rem / var(--vf-font-size-root)) !important;
+}
 .h-100 {
   height: calc(100rem / 16);
   height: calc(100rem / var(--vf-font-size-root));
@@ -1407,10 +1411,6 @@ a:hover {
 }
 .h-full {
   height: 100%;
-}
-.\!h-24 {
-  height: calc(24rem / 16) !important;
-  height: calc(24rem / var(--vf-font-size-root)) !important;
 }
 .max-h-96 {
   max-height: calc(96rem / 16);
@@ -6620,8 +6620,8 @@ footer #contact_form {
   border-top-right-radius: var(--vf-border-radius);
 }
 .after\:bg-\[linear-gradient\(90deg\2c
-  _\#FFFFFF00_0\%\2c
-  _\#FFFFFF_100\%\)\]::after {
+  \#FFFFFF00_0\%\2c
+  \#FFFFFF_100\%\)\]::after {
   content: var(--tw-content);
   background-image: -webkit-gradient(
     linear,
@@ -7020,14 +7020,8 @@ footer #contact_form {
   .lg\:row-start-1 {
     grid-row-start: 1;
   }
-  .lg\:row-start-2 {
-    grid-row-start: 2;
-  }
   .lg\:row-end-2 {
     grid-row-end: 2;
-  }
-  .lg\:row-end-3 {
-    grid-row-end: 3;
   }
   .lg\:m-0 {
     margin: 0px;
@@ -7532,9 +7526,6 @@ footer #contact_form {
   }
   .xl\:col-start-3 {
     grid-column-start: 3;
-  }
-  .xl\:col-start-5 {
-    grid-column-start: 5;
   }
   .xl\:col-end-7 {
     grid-column-end: 7;

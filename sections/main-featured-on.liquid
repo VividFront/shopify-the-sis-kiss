@@ -9,7 +9,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'card' %}
           <div class="col-span-3 md:col-span-2 lg:col-span-3">
-            {%- if block.settings.link != blank -%}<a class="group" href="{{ block.settings.link }}">{%- endif -%}
+            {%- if block.settings.link != blank -%}<a class="group" href="{{ block.settings.link }}" target="_blank">{%- endif -%}
             <div class="aspect-3/4">
               {{ block.settings.image | image_url: width: 1500 | image_tag:
                 width: block.settings.image.width,

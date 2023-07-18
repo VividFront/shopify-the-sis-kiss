@@ -7,9 +7,9 @@
           "type": "affiliate_card",
           "settings": {
             "heading": "Order Wholesale",
-            "body": "<p>Our custom wholesale is exclusively available for licensed boutique owners who wish to order & carry our jewelry items for resale.<\/p>",
+            "body": "<p>Our custom wholesale is exclusively available for licensed boutique owners who wish to order & carry our jewelry items for resale.</p>",
             "cta_text": "Shop Wholesale",
-            "cta_link": "https:\/\/www.thesiskisswholesale.com\/",
+            "cta_link": "https://www.thesiskisswholesale.com/",
             "target_blank": false
           }
         },
@@ -17,9 +17,9 @@
           "type": "affiliate_card",
           "settings": {
             "heading": "Questions?",
-            "body": "<p>Have questions or need help with your wholesale order? Just email our Customer Service Team at <a href=\"mailto:customerservice@thesiskiss.com\" title=\"mailto:customerservice@thesiskiss.com\">customerservice@thesiskiss.com<\/a><\/p>",
+            "body": "<p>Have questions or need help with your wholesale order? Just email our Customer Service Team at <a href=\"mailto:customerservice@thesiskiss.com\" title=\"mailto:customerservice@thesiskiss.com\">customerservice@thesiskiss.com</a></p>",
             "cta_text": "Contact Us",
-            "cta_link": "shopify:\/\/pages\/contact-us-new",
+            "cta_link": "shopify://pages/contact-us-new",
             "target_blank": false
           }
         }
@@ -39,7 +39,7 @@
         "heading": "New to Faire?",
         "body": "You’ll get $100 off your first order, plus free shipping with us for an entire year",
         "cta_text": "Shop Wholesale",
-        "cta_url": "https:\/\/www.faire.com\/welcome\/r\/personal?fdb=thesiskiss&signUp=widgetv2&widgetToken=bw_8d7gvwtrzs",
+        "cta_url": "https://www.faire.com/welcome/r/personal?fdb=thesiskiss&signUp=widgetv2&widgetToken=bw_8d7gvwtrzs",
         "theme": "light"
       }
     },
@@ -51,7 +51,7 @@
           "settings": {
             "heading": "Free Returns",
             "body": "for risk–free buying",
-            "image": "shopify:\/\/shop_images\/women-icon.png"
+            "image": "shopify://shop_images/women-icon.png"
           }
         },
         "f56a33c3-4cf9-4821-afce-e9d950758d3c": {
@@ -59,7 +59,7 @@
           "settings": {
             "heading": "Net 60 Terms",
             "body": "for stress–free payments",
-            "image": "shopify:\/\/shop_images\/women-icon.png"
+            "image": "shopify://shop_images/women-icon.png"
           }
         }
       },
@@ -68,9 +68,9 @@
         "f56a33c3-4cf9-4821-afce-e9d950758d3c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC00278_1.jpg",
+        "image": "shopify://shop_images/DSC00278_1.jpg",
         "heading": "Order Wholesale From Us Today",
-        "body": "<p>We've partnered with Faire to offer you:<\/p>",
+        "body": "<p>We've partnered with Faire to offer you:</p>",
         "cta_text": "",
         "cta_url": ""
       }
@@ -81,7 +81,7 @@
         "faa9cb33-1373-4973-82e0-4a08411e5a50": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/rewards-icon_1a19753a-6460-415e-9ca2-d8a2c2d547c9.png",
+            "icon": "shopify://shop_images/rewards-icon_1a19753a-6460-415e-9ca2-d8a2c2d547c9.png",
             "heading": "Minimum",
             "body": "",
             "large_text": "$100"
@@ -90,7 +90,7 @@
         "c1cf5314-c9a1-4ea1-bde8-782032ec4952": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
+            "icon": "shopify://shop_images/shipping-icon.png",
             "heading": "Shipping Form",
             "body": "",
             "large_text": "Bay Village, OH"
@@ -99,7 +99,7 @@
         "0a6b8c55-6f62-41b2-a275-8fa956a210dc": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/waterproof-icon.png",
+            "icon": "shopify://shop_images/waterproof-icon.png",
             "heading": "Lead Time",
             "body": "",
             "large_text": "1-3 Days"
@@ -111,8 +111,7 @@
         "c1cf5314-c9a1-4ea1-bde8-782032ec4952",
         "0a6b8c55-6f62-41b2-a275-8fa956a210dc"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "53a2602b-eedd-4e60-83c4-7f1ce5f5e671": {
       "type": "callout-centered",
@@ -120,7 +119,7 @@
         "heading": "Customer Care",
         "body": "Reach out to us and let us help!",
         "cta_text": "Contact Us",
-        "cta_url": "shopify:\/\/pages\/contact-us-new",
+        "cta_url": "shopify://pages/contact-us-new",
         "theme": "dark"
       }
     }

@@ -34,13 +34,11 @@
       ],
       "settings": {
         "terms_text": "Terms of Use",
-        "terms_url": "shopify:\/\/pages\/terms-conditions",
+        "terms_url": "shopify://pages/terms-conditions",
         "privacy_text": "Privacy Policy",
-        "privacy_url": "shopify:\/\/pages\/privacy-policy"
+        "privacy_url": "shopify://pages/privacy-policy"
       }
     }
   },
-  "order": [
-    "footer"
-  ]
+  "order": ["footer"]
 }

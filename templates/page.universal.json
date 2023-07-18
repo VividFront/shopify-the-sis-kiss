@@ -11,8 +11,7 @@
         },
         "9f6ae7bb-dacf-421f-aef6-d4d0e95fb754": {
           "type": "page_content",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -25,7 +24,5 @@
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
