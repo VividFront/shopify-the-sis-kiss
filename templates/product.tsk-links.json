@@ -37,7 +37,7 @@
         "5d95a708-54d1-4814-aefc-0a2ce103d459"
       ],
       "settings": {
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/5bcfd1becf194b53a0e09182b4953b35.mp4"
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ac0d7cc36901413fac8a95449ae9056a.mov"
       }
     },
     "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b": {
@@ -153,20 +153,10 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Order Information",
-            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.</strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! </p>",
-            "page": "",
+            "content": "",
+            "page": "shipping-order-information",
             "use_product_description": false,
             "collection": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Custom Jewelry FAQ",
-            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br/><br/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br/><br/><br/>Shipping & Order Information:<br/><br/>Once your order is placed, we can not refund due to the timeline.<br/>NO REFUNDS can or will be given after order is placed due to the personalized nature of the order.<br/>Once you place your order, you are agreeing to the timeline and understand it could be longer than 4 weeks.<br/>If you have any questions about shipping, please review our Shipping Policy here</p>",
-            "page": "",
-            "use_product_description": false,
-            "collection": "custom-jewelry"
           }
         },
         "share": {
