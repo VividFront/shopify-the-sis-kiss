@@ -5,6 +5,7 @@
       "blocks": {
         "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Introducing"
           }
@@ -12,7 +13,7 @@
         "507c6d37-3da1-48f2-8e83-20b3df62b326": {
           "type": "heading",
           "settings": {
-            "text": "Sis Kiss Essentials"
+            "text": "TSK Charm Bar"
           }
         },
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
