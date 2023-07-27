@@ -2205,12 +2205,6 @@ a:hover {
   padding-bottom: calc(24rem / 16);
   padding-bottom: calc(24rem / var(--vf-font-size-root));
 }
-.py-4 {
-  padding-top: calc(4rem / 16);
-  padding-top: calc(4rem / var(--vf-font-size-root));
-  padding-bottom: calc(4rem / 16);
-  padding-bottom: calc(4rem / var(--vf-font-size-root));
-}
 .py-6 {
   padding-top: calc(6rem / 16);
   padding-top: calc(6rem / var(--vf-font-size-root));
@@ -5081,24 +5075,10 @@ sesami-button button:hover {
   width: 100%;
 }
 @media (min-width: 992px) {
-  [dir='ltr'] #tsk-product-grid #gf-tree {
-    left: calc(2rem / 16);
-    left: calc(2rem / var(--vf-font-size-root));
-  }
-  [dir='rtl'] #tsk-product-grid #gf-tree {
-    right: calc(2rem / 16);
-    right: calc(2rem / var(--vf-font-size-root));
-  }
-  [dir='ltr'] #tsk-product-grid #gf-tree {
-    left: calc(2rem / 16);
-  }
-  [dir='rtl'] #tsk-product-grid #gf-tree {
-    right: calc(2rem / 16);
-  }
   #tsk-product-grid #gf-tree {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 3;
     margin-top: 0px;
   }
@@ -5183,15 +5163,11 @@ sesami-button button:hover {
   border-radius: 0px;
   border-style: none;
 }
-#tsk-product-grid
-  #gf-tree
-  [data-filter-type='Tag']
-  button.checked
-  .gf-swatch-image {
+#tsk-product-grid #gf-tree [data-filter-type='Tag'] .checked .gf-swatch-image {
   border-style: none;
 }
-#tsk-product-grid #gf-tree [data-filter-type='Tag'] button.checked .gf-label {
-  font-weight: 700;
+#tsk-product-grid #gf-tree [data-filter-type='Tag'] .checked .gf-label {
+  font-weight: 700 !important;
 }
 #bundle-builder-app--bundle--root .bundle-builder-app--bundle--name,
 #bundle-builder-app--bundle-contents-modal .bundle-builder-app--bundle--name {
