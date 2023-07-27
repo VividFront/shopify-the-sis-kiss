@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Our website got a face-lift! Shop the new experience now!",
             "link": ""
           }
         }
@@ -24,8 +24,22 @@
     "header": {
       "type": "header",
       "blocks": {
+        "3f17ec64-7e06-4a03-bf5c-b611e3b83ec6": {
+          "type": "menu_no_image",
+          "settings": {
+            "title": "Jewelry",
+            "link": "",
+            "list_1_heading": "Collabs",
+            "list_1_menu": "jewelry-collabs",
+            "list_2_heading": "Collections",
+            "list_2_menu": "jewelry-collections",
+            "list_3_heading": "Categories",
+            "list_3_menu": "jewelry-categories"
+          }
+        },
         "3eefb546-19a9-45f4-b019-741bc5d870ae": {
           "type": "menu_one_image",
+          "disabled": true,
           "settings": {
             "title": "Jewelry",
             "link": "",
@@ -108,8 +122,8 @@
           "settings": {
             "title": "Sale",
             "link": "",
-            "list_1_heading": "Categories",
-            "list_1_menu": "sale-categories",
+            "list_1_heading": "",
+            "list_1_menu": "",
             "list_2_heading": "",
             "list_2_menu": "",
             "list_3_heading": "",
@@ -119,7 +133,7 @@
             "callout_heading": "Last Chance Jewelry",
             "callout_body": "These styles won't last long, sis! Favorite on sale jewelry, while supplies last.",
             "link_text": "Shop Now",
-            "link_url": ""
+            "link_url": "https://thesiskiss.com/collections/last-chance"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
@@ -134,6 +148,7 @@
         }
       },
       "block_order": [
+        "3f17ec64-7e06-4a03-bf5c-b611e3b83ec6",
         "3eefb546-19a9-45f4-b019-741bc5d870ae",
         "e027b231-35b0-45e5-ac9e-2e531511e453",
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
