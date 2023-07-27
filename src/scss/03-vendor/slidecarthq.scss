@@ -1,4 +1,8 @@
 #slidecarthq {
+  .route-modal:not(.rm-open) {
+    display: none;
+  }
+
   .slidecarthq {
     .header {
       border-bottom-style: solid;

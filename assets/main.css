@@ -4452,6 +4452,9 @@ sesami-button button:hover {
     padding-top: 33% !important;
   }
 }
+#slidecarthq .route-modal:not(.rm-open) {
+  display: none;
+}
 #slidecarthq .slidecarthq .header {
   border-bottom-style: solid;
   position: relative;
