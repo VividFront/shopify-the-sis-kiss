@@ -31,12 +31,12 @@
           "settings": {
             "title": "Jewelry",
             "link": "",
-            "list_1_heading": "Collabs",
-            "list_1_menu": "jewelry-collabs",
+            "list_1_heading": "Categories",
+            "list_1_menu": "jewelry-categories",
             "list_2_heading": "Collections",
             "list_2_menu": "jewelry-collections",
-            "list_3_heading": "Categories",
-            "list_3_menu": "jewelry-categories"
+            "list_3_heading": "Collabs",
+            "list_3_menu": "jewelry-collabs"
           }
         },
         "3eefb546-19a9-45f4-b019-741bc5d870ae": {
