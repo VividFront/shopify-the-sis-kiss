@@ -58,7 +58,7 @@
   }
 
   #gf-tree {
-    @apply mt-32 lg:mt-0 col-start-1 col-end-7 row-start-3 lg:start-2 lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-4 w-full float-none clear-none;
+    @apply mt-32 lg:mt-0 col-start-1 col-end-7 row-start-3 lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:col-end-4 w-full float-none clear-none;
 
     &::before {
       content: 'Filters';
@@ -92,12 +92,12 @@
         @apply border-none w-20 h-20 rounded-none;
       }
 
-      button.checked .gf-swatch-image {
+      .checked .gf-swatch-image {
         @apply border-none;
       }
 
-      button.checked .gf-label {
-        @apply font-bold;
+      .checked .gf-label {
+        font-weight: 700 !important;
       }
     }
   }

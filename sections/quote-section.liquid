@@ -5,10 +5,14 @@
         <h2 class="h2-alt text-center">{{ section.settings.quote }}</h2>
         {% if section.settings.cta_url %}
           <div class="flex justify-center mt-28">
+            {% assign target = '_self' %}
+            {% if section.settings.button_target == true %}
+              {% assign target = '_blank' %}
+            {% endif %}
             {% if section.settings.button_type == 'primary_play' %}
-              {%- render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: '[&_a]:bg-primary [&_a]:text-white' -%}
+              {%- render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: '[&_a]:bg-primary [&_a]:text-white', target: target -%}
             {% else %}
-              {%- render 'button', url: section.settings.cta_url, text: section.settings.cta_text, border_color_class: 'border-primary' -%}
+              {%- render 'button', url: section.settings.cta_url, text: section.settings.cta_text, border_color_class: 'border-primary', target: target -%}
             {% endif %}
           </div>
         {% endif %}
@@ -53,6 +57,11 @@
           "label": "Primary w/ Play Icon"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "button_target",
+      "label": "Open button link in new window?"
     }
   ],
   "presets": [

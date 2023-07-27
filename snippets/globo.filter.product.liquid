@@ -93,6 +93,7 @@
           {%- if 
             product.tags contains 'badge:new' or 
             product.tags contains 'badge:trending' or 
+            product.tags contains 'badge:water resistant' or 
             product.tags contains 'badge:limited' 
           -%}
           {% assign badge_classes = '!flex items-center gap-x-4 shadow-xs rounded-[4px] z-[1] bg-white py-2 px-8 text-body-copy-small' %}
@@ -112,7 +113,7 @@
                 <img src="{% endraw %}{{ settings.emoji_limited }}{% raw %}" width="16" height="16"><span class="shrink-0">Limited</span>
               </div>
             {%- endif - %}
-            {%- if product.tags contains 'badge:water-resistant' -%}
+            {%- if product.tags contains 'badge:water resistant' -%}
               <div class="{{ badge_classes }}">
                 <img src="{% endraw %}{{ settings.emoji_water }}{% raw %}" width="16" height="16"><span class="shrink-0">Water Resistant</span>
               </div>

@@ -15,7 +15,11 @@
               <p class="text-center lg:text-left text-white mt-8 lg:mt-24 text-body-copy-large {{ text_color }}">{{ block.settings.text }}</p>
             {%- when 'cta' -%}
               <div class="flex justify-center lg:justify-start">
-                {% render 'button-icon-play', url: block.settings.url, text: block.settings.text, class: 'mt-16 [&_a]:bg-white' %}
+                {% assign target = '_self' %}
+                {% if block.settings.target == true %}
+                  {% assign target = '_blank' %}
+                {% endif %}
+                {% render 'button-icon-play', url: block.settings.url, text: block.settings.text, class: 'mt-16 [&_a]:bg-white', target: target %}
               </div>
           {%- endcase -%}
         {%- endfor -%}
@@ -113,6 +117,11 @@
           "type": "url",
           "id": "url",
           "label": "Url"
+        },
+        {
+          "type": "checkbox",
+          "id": "target",
+          "label": "Open link in new window?"
         }
       ]
     }
