@@ -370,7 +370,7 @@
         "logo": "shopify:\/\/shop_images\/WU-logo.png",
         "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
         "cta_text": "Listen Now",
-        "cta_url": "shopify:\/\/blogs\/news",
+        "cta_url": "https:\/\/thesiskiss.com\/pages\/wildly-unprofessional",
         "ribbon_lottie_json": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/ribbon-homepage-cropped.json?v=1684340951",
         "logo_circle_position": "left"
       }
