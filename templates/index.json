@@ -26,7 +26,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/earrings"
+            "url": "https://thesiskiss.com/apps/bundles/bundle/134715"
           }
         }
       },
@@ -124,8 +124,8 @@
         "f381268f-c79e-4fb1-a6a7-a906693e1128"
       ],
       "settings": {
-        "collection_text": "Shop All<br>Best Sellers",
-        "collection": "best-sellers"
+        "collection_text": "Shop All Best Sellers",
+        "collection": "non-custom-best-sellers"
       }
     },
     "837a7077-541b-41b2-bdb2-9145cb52cde4": {

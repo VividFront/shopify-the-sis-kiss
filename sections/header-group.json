@@ -29,12 +29,12 @@
           "settings": {
             "title": "Jewelry",
             "link": "",
-            "list_1_heading": "Collabs",
-            "list_1_menu": "jewelry-collabs",
+            "list_1_heading": "Categories",
+            "list_1_menu": "jewelry-categories",
             "list_2_heading": "Collections",
             "list_2_menu": "jewelry-collections",
-            "list_3_heading": "Categories",
-            "list_3_menu": "jewelry-categories"
+            "list_3_heading": "Collabs",
+            "list_3_menu": "jewelry-collabs"
           }
         },
         "3eefb546-19a9-45f4-b019-741bc5d870ae": {
@@ -44,11 +44,11 @@
             "title": "Jewelry",
             "link": "",
             "list_1_heading": "Collabs",
-            "list_1_menu": "jewelry-collabs",
+            "list_1_menu": "jewelry-categories",
             "list_2_heading": "Collections",
             "list_2_menu": "jewelry-collections",
             "list_3_heading": "Categories",
-            "list_3_menu": "jewelry-categories",
+            "list_3_menu": "jewelry-collabs",
             "image_heading": "Featured Collection",
             "image": "shopify://shop_images/Untitled_design_17.png",
             "callout_heading": "Beaded Jewelry",
@@ -83,8 +83,8 @@
           "settings": {
             "title": "Fine Jewelry",
             "link": "",
-            "list_1_heading": "Categories",
-            "list_1_menu": "fine-jewelry-categories",
+            "list_1_heading": "",
+            "list_1_menu": "",
             "list_2_heading": "",
             "list_2_menu": "",
             "list_3_heading": "",
@@ -101,7 +101,7 @@
           "type": "nav_item",
           "settings": {
             "title": "Permanent Jewelry",
-            "link": "shopify://products/sesami-test"
+            "link": "shopify://products/sis-kiss-links-permanent-bracelets"
           }
         },
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
@@ -128,10 +128,10 @@
             "list_2_menu": "",
             "list_3_heading": "",
             "list_3_menu": "",
-            "image_heading": "Featured Sale Collection",
+            "image_heading": "On-Sale Styles",
             "image": "shopify://shop_images/EvilEyeCoins.jpg",
             "callout_heading": "Last Chance Jewelry",
-            "callout_body": "These styles won't last long, sis! Favorite on sale jewelry, while supplies last.",
+            "callout_body": "These styles won't last long, sis! Shop on-sale jewelry while supplies last.",
             "link_text": "Shop Now",
             "link_url": "https://thesiskiss.com/collections/last-chance"
           }
