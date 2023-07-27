@@ -124,8 +124,8 @@
           "settings": {
             "title": "Sale",
             "link": "",
-            "list_1_heading": "Categories",
-            "list_1_menu": "sale-categories",
+            "list_1_heading": "",
+            "list_1_menu": "",
             "list_2_heading": "",
             "list_2_menu": "",
             "list_3_heading": "",
