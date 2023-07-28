@@ -75,9 +75,15 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
+        {%- comment %}<locksmith:a83f>{% endcomment -%}
+          {%- assign locksmith_3abb_forloop__size = 0 %}{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_3abb_forloop__size = locksmith_3abb_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_3abb_forloop__index = nil -%}
+        {%- comment %}</locksmith:a83f>{% endcomment -%}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          {%- comment %}<locksmith:f21a>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_3abb_forloop__index == nil %}{% assign locksmith_3abb_forloop__index = 1 %}{% assign locksmith_3abb_forloop__index0 = 0 %}{% else %}{% assign locksmith_3abb_forloop__index = locksmith_3abb_forloop__index | plus: 1 %}{% assign locksmith_3abb_forloop__index0 = locksmith_3abb_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_3abb_forloop__index == 1 %}{% assign locksmith_3abb_forloop__first = true %}{% else %}{% assign locksmith_3abb_forloop__first = false %}{% endif %}{% if locksmith_3abb_forloop__index == locksmith_3abb_forloop__size %}{% assign locksmith_3abb_forloop__last = true %}{% else %}{% assign locksmith_3abb_forloop__last = false %}{% endif %}{% assign locksmith_3abb_forloop__rindex = locksmith_3abb_forloop__size | minus: locksmith_3abb_forloop__index | minus: 1 %}{% assign locksmith_3abb_forloop__rindex0 = locksmith_3abb_forloop__size | minus: locksmith_3abb_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:f21a>{% endcomment -%}
           <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            id="Slide-{{ section.id }}-{{ locksmith_3abb_forloop__index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             data-cascade
           >

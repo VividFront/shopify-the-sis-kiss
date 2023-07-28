@@ -2,6 +2,9 @@
   <div class="container">
     <div class="grid grid-cols gap-grid">
       {% for collection in collections %}
+        {%- comment %}<locksmith:c5af>{% endcomment -%}
+          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:c5af>{% endcomment -%}
         {% if collection.featured_image != blank %}
           <div class="col-span-3">
             <a href="{{ collection.url }}" class="group" title="{{ collection.title }}">

@@ -129,6 +129,9 @@
 
                   {% assign is_in_collection = false %}
                   {% for col in product.collections %}
+                    {%- comment %}<locksmith:f943>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: col, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:f943>{% endcomment -%}
                     {% if col.handle == block.settings.collection.handle %}
                       {% assign is_in_collection = true %}
                       {% break %}

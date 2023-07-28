@@ -36,6 +36,9 @@
               <ul class="splide__list md:!flex md:gap-grid md:justify-center">
                 {% if recommendations.performed and recommendations.products_count > 0 %}
                   {% for recommendation in recommendations.products %}
+                    {%- comment %}<locksmith:e6cc>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: recommendation, subject_parent: recommendations, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:e6cc>{% endcomment -%}
                     {% unless recommendation.vendor == 'Route' %}
                       <li class="splide__slide md:basis-1/4 md:shrink">
                         {% render 'card-product', product: recommendation, show_secondary_image: true %}
