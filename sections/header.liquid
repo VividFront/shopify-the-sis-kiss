@@ -195,7 +195,7 @@
               {%- if cart != empty -%}
                 <div class="cart-count-bubble w-16 h-16 flex items-center justify-center bg-ui-pink font-bold font-open-sans text-[12px] rounded-full absolute -right-4 top-0">
                   {%- if cart.item_count < 100 -%}
-                    <span aria-hidden="true">{{ cart.item_count }}</span>
+                    <span aria-hidden="true" data-cart-count>{{ cart.item_count }}</span>
                   {%- endif -%}
                   <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
                 </div>
