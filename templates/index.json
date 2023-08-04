@@ -53,15 +53,14 @@
       "blocks": {
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
-          "disabled": true,
           "settings": {
-            "text": ""
+            "text": "NEW Water Resistant Jewelry"
           }
         },
         "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
           "type": "heading",
           "settings": {
-            "text": "Hero Banner"
+            "text": "Make A Splash"
           }
         },
         "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
@@ -73,8 +72,8 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
           "type": "cta",
           "settings": {
-            "text": "",
-            "url": ""
+            "text": "Shop Now",
+            "url": "https:\/\/thesiskiss.com\/collections\/waterproof"
           }
         }
       },
@@ -85,10 +84,12 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/DSC07211.jpg",
         "image_position": "object-center",
+        "image_mobile": "shopify:\/\/shop_images\/DSC07211.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
-        "color": "",
+        "color": "#ffffff",
         "text_color": "text-copy",
         "show_breadcrumbs": false
       }
