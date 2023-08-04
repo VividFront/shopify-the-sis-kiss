@@ -64,7 +64,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQ",
-            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?<\/strong><\/p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.<\/p><p><a href=\"\/blogs\/faq\" title=\"FAQ\">Read More FAQs<\/a><\/p>",
+            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?<\/strong><\/p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. <\/p><p><a href=\"\/blogs\/faq\" title=\"FAQ\">Read More FAQs<\/a><\/p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -94,7 +94,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Custom Jewelry FAQ",
-            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br\/><br\/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br\/><br\/><br\/>Shipping & Order Information:<br\/><br\/>Once your order is placed, we can not refund due to the timeline.<br\/>NO REFUNDS can or will be given after order is placed due to the personalized nature of the order.<br\/>Once you place your order, you are agreeing to the timeline and understand it could be longer than 4 weeks.<br\/>If you have any questions about shipping, please review our Shipping Policy here<\/p>",
+            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br\/><br\/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br\/><\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "custom-jewelry"
@@ -103,8 +103,8 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Waterproof",
-            "content": "<p>Durable jewelry that you can wear them while working out!<br\/>Lightweight, comfortable, tarnish- and corrosion-free, and simple to clean.<\/p>",
+            "heading": "Water Resistant",
+            "content": "<p>Durable jewelry that you can wear  while working out!<br\/>Lightweight, comfortable, tarnish- and corrosion-free, and simple to clean.<\/p>",
             "page": "",
             "use_product_description": false,
             "collection": "waterproof"
