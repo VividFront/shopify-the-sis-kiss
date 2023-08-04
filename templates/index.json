@@ -47,6 +47,52 @@
         "color": ""
       }
     },
+    "7079bf07-3a58-485e-ae98-49053f4c640c": {
+      "type": "hero-color",
+      "disabled": true,
+      "blocks": {
+        "cc2b080d-9d35-453c-80ca-b3525e36909a": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
+          "type": "heading",
+          "settings": {
+            "text": "Hero Banner"
+          }
+        },
+        "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
+          "type": "body",
+          "settings": {
+            "text": ""
+          }
+        },
+        "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
+          "type": "cta",
+          "settings": {
+            "text": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc2b080d-9d35-453c-80ca-b3525e36909a",
+        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c",
+        "7a7231c3-0dfd-49da-8aae-8eef0b970466",
+        "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
+      ],
+      "settings": {
+        "image_position": "object-center",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
       "type": "home-trending",
       "blocks": {
@@ -385,6 +431,7 @@
   },
   "order": [
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
+    "7079bf07-3a58-485e-ae98-49053f4c640c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
     "efd3c021-b667-4075-93fd-09a6d2277d0e",
