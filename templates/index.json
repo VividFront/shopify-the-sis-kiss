@@ -2,6 +2,7 @@
   "sections": {
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
       "type": "home-hero",
+      "disabled": true,
       "blocks": {
         "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
           "type": "subheading",
@@ -49,7 +50,6 @@
     },
     "7079bf07-3a58-485e-ae98-49053f4c640c": {
       "type": "hero-color",
-      "disabled": true,
       "blocks": {
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
