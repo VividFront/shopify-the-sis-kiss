@@ -200,15 +200,6 @@
           "customCss": ""
         }
       },
-      "12608439564960700138": {
-        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
-        "disabled": false,
-        "settings": {
-          "heading": "Sezzle Widget",
-          "font_size": 14,
-          "font_family": "inherit"
-        }
-      },
       "6065014864672580889": {
         "type": "shopify:\/\/apps\/slide-cart-upsell-by-amp\/blocks\/app-embed\/0a410b8d-7dc4-4f2d-b4e8-c12d34fd2255",
         "disabled": false,
@@ -246,6 +237,15 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "12608439564960700138": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": true,
+        "settings": {
+          "heading": "Sezzle Widget",
+          "font_size": 14,
+          "font_family": "inherit"
         }
       }
     }
