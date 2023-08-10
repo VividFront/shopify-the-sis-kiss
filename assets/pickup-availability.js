@@ -29,6 +29,13 @@ if (!customElements.get('pickup-availability')) {
               .parseFromString(text, 'text/html')
               .querySelector('.shopify-section');
             this.renderPreview(sectionInnerHTML);
+
+            if (!document.querySelector('.product.is-custom-product')) {
+              const availabilityTime = document.querySelector(
+                '[data-vf-availability-times]',
+              );
+              availabilityTime.style.display = 'block';
+            }
           })
           .catch((e) => {
             const button = this.querySelector('button');
