@@ -1,0 +1,152 @@
+<div class="relative p-section-md overflow-hidden">
+  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% endif %}
+  </div>
+  <div>
+    <div class="infinite-marquee">
+      <ul class="py-12 infinite-marquee-content">
+        <li class="h2-alt">{{ section.settings.marquee_text }} | </li>
+        {% for i in (1..2) %}
+          <li class="h2-alt" aria-hidden="true">{{ section.settings.marquee_text }} | </li>
+        {% endfor %}
+      </ul>
+  
+      <ul aria-hidden="true" class="py-12 infinite-marquee-content">
+        {% for i in (1..3) %}
+          <li class="h2-alt">{{ section.settings.marquee_text }} | </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="container">
+      <div
+        class="product-recommendations"
+        data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent={{ section.settings.recommendation_type }}"
+      >
+        <div class="mt-18">
+          <div class="splide" data-vf-recommended-products-slider>
+            <div class="splide__track overflow-visible">
+              <ul class="splide__list md:!flex md:gap-grid md:justify-center">
+                {% if recommendations.performed and recommendations.products_count > 0 %}
+                  {% for recommendation in recommendations.products %}
+                    {%- comment %}<locksmith:e6cc>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: recommendation, subject_parent: recommendations, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:e6cc>{% endcomment -%}
+                    {% unless recommendation.vendor == 'Route' %}
+                      <li class="splide__slide md:basis-1/4 md:shrink">
+                        {% render 'card-product', product: recommendation, show_secondary_image: true %}
+                      </li>
+                    {% endunless %}
+                  {% endfor %}
+                {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  const handleIntersection = (entries, observer) => {
+    if (!entries[0].isIntersecting) return;
+
+    observer.unobserve(productRecommendationsSection);
+
+    const url = productRecommendationsSection.dataset.url;
+
+    fetch(url)
+      .then(response => response.text())
+      .then(text => {
+        const html = document.createElement('div');
+        html.innerHTML = text;
+        const recommendations = html.querySelector('.product-recommendations');
+
+        if (recommendations && recommendations.innerHTML.trim().length) {
+          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+        }
+        if (document.querySelector('[data-vf-recommended-products-slider]')) {
+          const recommended = new window.Splide('[data-vf-recommended-products-slider]', {
+            gap: 32,
+            type: 'slide',
+            pagination: false,
+            arrows: false,
+            perPage: 4,
+            perMove: 1,
+            destroy: true,
+            breakpoints: {
+              575: {
+                perPage: 2,
+                destroy: false,
+              },
+              767: {
+                perPage: 3,
+                gap: 16,
+                destroy: false,
+              },
+            },
+          });
+          recommended.mount();
+        }
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
+  const productRecommendationsSection = document.querySelector('.product-recommendations');
+  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+  observer.observe(productRecommendationsSection);
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Complete the Look",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "marquee_text",
+      "label": "Marquee Text",
+      "default": "Complete the Look"
+    },
+    {
+      "type": "select",
+      "id": "recommendation_type",
+      "label": "Recommendation Type",
+      "options": [
+        {
+          "value": "related",
+          "label": "Related"
+        },
+        {
+          "value": "complementary",
+          "label": "Complementary"
+        }
+      ],
+      "default": "related"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Complete the Look"
+    }
+  ]
+}
+{% endschema %}

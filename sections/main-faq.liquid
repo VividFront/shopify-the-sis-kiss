@@ -1,0 +1,82 @@
+<div class="bg-white p-section-md">
+  <div class="container">
+    <h2 class="text-center">{{ section.settings.heading }}</h2>
+    <div class="grid grid-cols mt-32">
+      <div class="col-span-full lg:col-span-auto lg:col-start-3 lg:col-end-11">
+        <div class="flex flex-col gap-32">
+          {% for block in section.blocks %}
+            {% if block.type == 'category' %}
+              <div>
+                <h3 class="text-center">{{ block.settings.category }}</h3>
+                <div class="mt-22 flex flex-col gap-y-16">
+                  {% for faq in blog.articles %}
+                    {% if faq.tags contains block.settings.category %}
+                      {% render 'faq-card', faq: faq %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign faq_schema = '' %}
+{% for faq in blogs.faq.articles %}
+  {% capture schema %}
+  {
+    "@type": "Question",
+    "name": "{{ faq.title | escape }}",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{ faq.content | escape }}"
+    }
+  }
+  {% endcapture %}
+  {% assign faq_schema = faq_schema | append:schema %}
+  {% unless forloop.last %}
+    {% assign faq_schema = faq_schema | append:',' %}
+  {% endunless %}
+{% endfor %}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {{ faq_schema }}
+    ]
+  }
+  </script>
+
+{% schema %}
+{
+  "name": "FAQ Main",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "All Questions",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

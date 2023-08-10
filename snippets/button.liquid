@@ -1,0 +1,15 @@
+{% if bg_class == blank %}
+  {% assign bg_class = 'bg-primary' %}
+{% endif %}
+
+{% if border_color_class == blank %}
+  {% assign border_color_class = 'border-white' %}
+{% endif %}
+
+
+<div class="relative inline-block shadow-hover-button {{ class }}">
+  <div arai-hidden class="button-shadow"></div>
+  <a href="{{ url }}" 
+    class="relative inline-block text-white py-8 px-20 rounded-button font-bold border-[2px] {{ bg_class }} {{ border_color_class }}" 
+    target="{%- if target -%}{{ target }}{%- else -%}_self{%- endif -%}">{{ text }}</a>
+</div>

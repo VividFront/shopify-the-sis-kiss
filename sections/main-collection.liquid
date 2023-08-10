@@ -1,0 +1,36 @@
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<div class="container">
+  <div id="tsk-product-grid" class="grid grid-cols gap-x-grid items-start {% if collection.metafields.custom.subcategories == nil %}no-subcategories{% endif %}">
+    {% if collection.metafields.custom.subcategories != nil %}
+      <div class="lg:row-start-1 lg:row-end-2 col-span-6 lg:col-span-9 bg-ui-background rounded-t px-16 pt-18 h-full">
+        {% render 'subcategories', categories: collection.metafields.custom.subcategories.value %}
+      </div>
+    {% endif %}
+    <div id="collection-filters-grid">
+      {% render 'product-grid', collection: collection, section: section %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-collection-product-grid.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 9,
+      "max": 30,
+      "step": 3,
+      "default": 27,
+      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    }
+  ]
+}
+{% endschema %}

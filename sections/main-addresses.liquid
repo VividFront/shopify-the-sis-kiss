@@ -2,34 +2,21 @@
 
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses section-{{ section.id }}-padding" data-customer-addresses>
+  <div class="p-section-md customer addresses" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
       </symbol>
     </svg>
     <h1>{{ 'customer.addresses.title' | t }}</h1>
-    <a href="{{ routes.account_url }}">
+    <a class="block mt-8" href="{{ routes.account_url }}">
       {{ 'customer.account.return' | t }}
     </a>
 
     <div data-address>
       <button
+        class="mt-12"
         type="button"
         aria-expanded="false"
         aria-controls="AddAddress"
@@ -37,9 +24,9 @@
         {{ 'customer.addresses.add_new' | t }}
       </button>
       <div id="AddAddress">
-        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+        <h2 id="AddressNewHeading" class="text-center">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressFirstNameNew"
@@ -50,7 +37,7 @@
             >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressLastNameNew"
@@ -61,7 +48,7 @@
             >
             <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressCompanyNew"
@@ -72,7 +59,7 @@
             >
             <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressAddress1New"
@@ -83,7 +70,7 @@
             >
             <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressAddress2New"
@@ -94,7 +81,7 @@
             >
             <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressCityNew"
@@ -105,7 +92,7 @@
             >
             <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
           </div>
-          <div>
+          <div class="tsk-field-group">
             <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
             <div class="select">
               <select
@@ -116,12 +103,9 @@
               >
                 {{ all_country_option_tags }}
               </select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
             </div>
           </div>
-          <div id="AddressProvinceContainerNew" style="display: none">
+          <div id="AddressProvinceContainerNew" class="tsk-field-group" style="display: none">
             <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
             <div class="select">
               <select
@@ -130,12 +114,9 @@
                 data-default="{{ form.province }}"
                 autocomplete="address-level1"
               ></select>
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                <use href="#icon-caret" />
-              </svg>
             </div>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="text"
               id="AddressZipNew"
@@ -147,7 +128,7 @@
             >
             <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
-          <div class="field">
+          <div class="tsk-field-group mt-24">
             <input
               type="tel"
               id="AddressPhoneNew"
@@ -162,7 +143,7 @@
             {{ form.set_as_default_checkbox }}
             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
           </div>
-          <div>
+          <div class="mt-12">
             <button>{{ 'customer.addresses.add' | t }}</button>
             <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
           </div>
@@ -174,31 +155,33 @@
       {%- for address in customer.addresses -%}
         <li data-address>
           {%- if address == customer.default_address -%}
-            <h2>{{ 'customer.addresses.default' | t }}</h2>
+            <h2 class="underline mt-24">{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
           {{ address | format_address }}
-          <button
-            type="button"
-            id="EditFormButton_{{ address.id }}"
-            aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
-            aria-controls="EditAddress_{{ address.id }}"
-            aria-expanded="false"
-            data-address-id="{{ address.id }}"
-          >
-            {{ 'customer.addresses.edit' | t }}
-          </button>
-          <button
-            type="button"
-            aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
-            data-target="{{ address.url }}"
-            data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
-          >
-            {{ 'customer.addresses.delete' | t }}
-          </button>
+            <button
+              type="button"
+              class="mt-12 hover:!text-white"
+              id="EditFormButton_{{ address.id }}"
+              aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+              aria-controls="EditAddress_{{ address.id }}"
+              aria-expanded="false"
+              data-address-id="{{ address.id }}"
+            >
+              {{ 'customer.addresses.edit' | t }}
+            </button>
+            <button
+              type="button"
+              class="mt-12 hover:!text-white"
+              aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+              data-target="{{ address.url }}"
+              data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+            >
+              {{ 'customer.addresses.delete' | t }}
+            </button>
           <div id="EditAddress_{{ address.id }}">
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressFirstName_{{ form.id }}"
@@ -209,7 +192,7 @@
                 >
                 <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressLastName_{{ form.id }}"
@@ -220,7 +203,7 @@
                 >
                 <label for="AddressLastName_{{ form.id }}">{{ 'customer.addresses.last_name' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressCompany_{{ form.id }}"
@@ -231,7 +214,7 @@
                 >
                 <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressAddress1_{{ form.id }}"
@@ -242,7 +225,7 @@
                 >
                 <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressAddress2_{{ form.id }}"
@@ -253,7 +236,7 @@
                 >
                 <label for="AddressAddress2_{{ form.id }}">{{ 'customer.addresses.address2' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressCity_{{ form.id }}"
@@ -264,7 +247,7 @@
                 >
                 <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
               </div>
-              <div>
+              <div class="tsk-field-group">
                 <label for="AddressCountry_{{ form.id }}">
                   {{ 'customer.addresses.country' | t }}
                 </label>
@@ -279,12 +262,9 @@
                   >
                     {{ all_country_option_tags }}
                   </select>
-                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                    <use href="#icon-caret" />
-                  </svg>
                 </div>
               </div>
-              <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
+              <div id="AddressProvinceContainer_{{ form.id }}" class="tsk-field-group" style="display:none;">
                 <label for="AddressProvince_{{ form.id }}">
                   {{ 'customer.addresses.province' | t }}
                 </label>
@@ -295,12 +275,9 @@
                     data-default="{{ form.province }}"
                     autocomplete="address-level1"
                   ></select>
-                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                    <use href="#icon-caret" />
-                  </svg>
                 </div>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="text"
                   id="AddressZip_{{ form.id }}"
@@ -312,7 +289,7 @@
                 >
                 <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
               </div>
-              <div class="field">
+              <div class="tsk-field-group mt-24">
                 <input
                   type="tel"
                   id="AddressPhone_{{ form.id }}"
@@ -329,7 +306,7 @@
                   {{ 'customer.addresses.set_default' | t }}
                 </label>
               </div>
-              <div>
+              <div class="mt-12">
                 <button>{{ 'customer.addresses.update' | t }}</button>
                 <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
               </div>

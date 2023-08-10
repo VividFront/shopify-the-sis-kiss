@@ -1,0 +1,13 @@
+<nav class="basis-1/2 lg:basis-1/6">
+  {%- if heading != blank -%}
+    <h6 class="text-nav text-copy-light">{{ heading }}</h6>
+  {%- endif -%}
+  <ul class="mt-20 [&_li]:mt-12">
+  {%- for item in menu.links -%}
+    {%- comment %}<locksmith:b82f>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: item, subject_parent: menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+    {%- comment %}</locksmith:b82f>{% endcomment -%}
+    <li class="text-nav"><a class="hover:underline w-full" href="{{ item.url }}">{{ item.title }}</a></li>
+  {%- endfor -%}
+  </ul>
+</nav>

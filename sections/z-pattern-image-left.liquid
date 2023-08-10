@@ -1,0 +1,134 @@
+<div class="relative p-section-md">
+  {% if section.settings.background_image != blank %}
+    <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    </div>
+  {% endif %}
+  {% if section.settings.background_lottie_json != blank %}
+    {% render 'lottie', json_url: section.settings.background_lottie_json, class: 'tw-hidden lg:block w-full h-auto absolute top-0 left-0' %}
+  {% endif %}
+  {%- liquid 
+    assign image_col_end = 'lg:col-end-6'
+    assign copy_col_start = 'lg:col-start-6'
+    if section.settings.sticker != blank
+      assign image_col_end = 'lg:col-end-7'
+      assign copy_col_start = 'lg:col-start-7'
+    endif
+  -%}
+  <div class="container relative z-[1]">
+    <div class="lg:grid grid-cols gap-grid">
+      <div class="lg:col-start-2 {{ image_col_end }}">
+        {% liquid 
+          assign image_padding = ''
+          assign aspect_ratio = 'aspect-4/3'
+          assign image_class = 'h-full w-full object-cover rounded'
+          if section.settings.sticker != blank
+          assign image_padding = 'pb-44 lg:pb-62 lg:pr-78'
+          assign aspect_ratio = 'aspect-3/2'
+          assign image_class = image_class | append: ' rounded'
+          endif
+        %}
+        <div class="relative {{ image_padding }}">
+          {% if section.settings.image != blank %}
+            <div class="{{ aspect_ratio }} lg:aspect-auto lg:h-full">
+              {{ section.settings.image | image_url: width: 1500 | image_tag:
+                width: section.settings.image.width,
+                class: image_class,
+                sizes: section.settings.image.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image.alt | escape
+              }}
+            </div>
+          {% endif %}
+          {% if section.settings.sticker != blank %}
+            <div class="absolute right-0 bottom-0">
+              {{ section.settings.sticker | image_url: width: 800 | image_tag:
+                width: section.settings.sticker.width,
+                class: 'h-[160px] lg:h-[248px] object-contain object-right',
+                sizes: section.settings.sticker.sizes,
+                widths: '375, 550, 750',
+                alt: section.settings.sticker.alt | escape
+              }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {%- liquid 
+        assign mobile_margin = 'mt-28'
+        if section.settings.sticker != blank
+          assign mobile_margin = 'mt-16'
+        endif
+      -%}
+      <div class="{{ mobile_margin }} lg:mt-0 {{ copy_col_start }} lg:col-end-12">
+        <div class="flex flex-col justify-center items-start h-full">
+          <h2>{{ section.settings.heading }}</h2>
+          <div class="mt-12 richtext-content">{{ section.settings.body }}</div>
+          {% if section.settings.cta_url != blank %}
+            {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Z Pattern (Image on Left)",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "sticker",
+      "label": "Sticker"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "background_lottie_json",
+      "label": "Background Lottie JSON"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Z Pattern (Image on Left)"
+    }
+  ]
+}
+{% endschema %}

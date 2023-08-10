@@ -1,0 +1,60 @@
+<div class="p-section-sm">
+  <div class="container">
+    <h4 class="text-center">{{ section.settings.heading }}</h4>
+    <div class="mt-16 flex flex-wrap justify-center gap-x-16 gap-y-12 lg:gap-x-32 lg:gap-y-24">
+      {% for block in section.blocks %}
+        {% if block.type == 'podcast_icon' %}
+          {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" target="_blank">{% endif %}
+            <div class="w-50 h-50 lg:h-78 lg:w-78">
+              {{ block.settings.image | image_url: width: 156 | image_tag:
+                width: block.settings.image.width,
+                class: 'object-contain w-full h-full',
+                sizes: block.settings.image.sizes,
+                widths: '100, 156',
+                alt: block.settings.image.alt | escape
+              }}
+            </div>
+          {% if block.settings.link != blank %}</a>{% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Podcast Platforms",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "podcast_icon",
+      "name": "Podcast Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Podcast Platforms"
+    }
+  ]
+}
+{% endschema %}

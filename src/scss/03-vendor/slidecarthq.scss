@@ -1,0 +1,216 @@
+#slidecarthq {
+  .route-modal:not(.rm-open) {
+    display: none;
+  }
+
+  .slidecarthq {
+    .header {
+      border-bottom-style: solid;
+      @apply -order-2 mx-16 pt-36 px-0 border-none relative;
+
+      button {
+        background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' class='icon icon-close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+        @apply bg-transparent bg-contain bg-no-repeat w-26 h-26;
+
+        svg {
+          @apply hidden;
+        }
+
+        &:hover {
+          background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' class='icon icon-close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M 7.21875 5.78125 L 5.78125 7.21875 L 14.5625 16 L 5.78125 24.78125 L 7.21875 26.21875 L 16 17.4375 L 24.78125 26.21875 L 26.21875 24.78125 L 17.4375 16 L 26.21875 7.21875 L 24.78125 5.78125 L 16 14.5625 Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+          @apply bg-transparent opacity-70;
+        }
+      }
+
+      h2 {
+        @apply text-h4 font-bold text-copy;
+      }
+    }
+
+    .rewards {
+      @apply -order-1 bg-transparent px-28 pt-12 pb-30 relative top-0 border-none;
+
+      &::before {
+        @apply content-[''] absolute left-16 w-[calc(100%_-_32px)] h-full top-0 rounded bg-ui-pink z-[-1];
+      }
+
+      p {
+        @apply flex justify-center items-center gap-4 font-bold;
+      }
+
+      strong {
+        @apply font-bold;
+      }
+    }
+
+    .upsells-stacked {
+      .upsell-item {
+        @apply w-full rounded-none;
+
+        .upsell-add {
+          button {
+            @apply bg-transparent text-primary capitalize text-body-copy font-semibold hover:text-primary-hover;
+
+            svg {
+              @apply mr-10;
+            }
+          }
+        }
+      }
+    }
+
+    .upsells {
+      @apply bg-white border-t-border border-0 border-t border-solid mx-16 w-auto;
+    }
+
+    .upsells-header {
+      h2 {
+        @apply text-h5;
+      }
+    }
+
+    .items {
+      border-top: none !important;
+      @apply px-16;
+
+      .item {
+        @apply px-0 py-16 pb-68 relative border-border;
+
+        &:last-of-type {
+          @apply border-b-0;
+        }
+
+        .image {
+          @apply w-[106px] h-[106px];
+
+          img {
+            @apply w-[106px] h-[106px];
+          }
+        }
+
+        .main {
+          @apply ml-16;
+
+          .title {
+            @apply text-h5 font-bold hover:underline;
+          }
+
+          .main-top {
+            @apply mb-12;
+          }
+
+          .price {
+            @apply font-bold text-copy;
+          }
+
+          .main-bottom {
+            @apply absolute bottom-16 left-0 w-full;
+          }
+
+          .properties-key-value {
+            span {
+              @apply text-body-copy text-copy;
+            }
+
+            .properties-key-value-key {
+              @apply font-bold;
+            }
+          }
+
+          .quantity-selector {
+            @apply h-38 w-[116px];
+
+            [aria-label='increase quantity'] {
+              @apply rounded-r-[12px] h-full border-border;
+            }
+
+            input[type='text'] {
+              border-color: rgb(193 193 194) !important;
+              @apply h-full;
+            }
+
+            [aria-label='decrease quantity'] {
+              @apply rounded-l-[12px] h-full border-border;
+            }
+          }
+        }
+      }
+    }
+
+    .custom-html {
+      @apply p-16 mb-32;
+    }
+
+    .rewards-progress-bar {
+      @apply relative pr-16 bg-white mt-24;
+
+      .rewards-tiers {
+        @apply border-primary border border-solid rounded-[4px];
+      }
+
+      .rewards-progress {
+        @apply relative;
+
+        &::after {
+          @apply content-[''] absolute right-0 top-[3px] w-36 h-36 bg-white translate-y-[-50%] translate-x-[50%] rounded-full shadow z-[2];
+          background-image: url('https://cdn.shopify.com/s/files/1/1216/9642/files/plane.png?v=1687470649');
+          background-repeat: no-repeat;
+          background-size: 36px;
+          background-position: center;
+        }
+      }
+    }
+
+    .rewards-tiers-labels > .rewards-tiers-labels-item > span {
+      display: none !important;
+    }
+
+    .footer {
+      @apply bg-white shadow-[0px_-3px_6px_#00000029];
+
+      &.sticky-footer {
+        @apply bg-white px-16;
+      }
+
+      .footer-row:first-of-type {
+        @apply relative pb-32 justify-end gap-x-32;
+
+        &::after {
+          content: 'Taxes and shipping calculated at checkout';
+          @apply absolute bottom-12 right-0 text-disabled-high-contrast text-[11px] pt-6;
+        }
+
+        strong:first-of-type {
+          @apply font-normal text-body-copy grow-0 basis-auto;
+        }
+      }
+
+      .footer-continue {
+        @apply font-bold underline text-primary;
+      }
+
+      #slidecart-checkout-form {
+        button {
+          @apply text-h6 rounded-[24px] mt-0;
+        }
+      }
+    }
+  }
+
+  .empty {
+    .tsk-empty-cart {
+      @apply mb-[140px];
+      img {
+        @apply w-98 h-98;
+      }
+
+      p {
+        @apply mt-12 text-h3 text-copy font-bold;
+      }
+
+      .flex {
+        display: flex;
+      }
+    }
+  }
+}

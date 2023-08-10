@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-universal",
+      "blocks": {
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796": {
+          "type": "page_header",
+          "settings": {
+            "text": "{{ page.title }}"
+          }
+        },
+        "9f6ae7bb-dacf-421f-aef6-d4d0e95fb754": {
+          "type": "page_content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "2a6f4ac4-c4a5-443a-a7a7-60ec98134796",
+        "9f6ae7bb-dacf-421f-aef6-d4d0e95fb754"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "content_width": "narrow"
+      }
+    }
+  },
+  "order": ["main"]
+}

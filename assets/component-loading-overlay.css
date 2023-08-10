@@ -1,7 +1,7 @@
 .loading-overlay {
   position: absolute;
   z-index: 1;
-  width: 1.8rem;
+  width: 18px;
 }
 
 @media screen and (max-width: 749px) {
@@ -18,7 +18,7 @@
 }
 
 .loading-overlay__spinner {
-  width: 1.8rem;
+  width: 18px;
   display: inline-block;
 }
 
@@ -39,7 +39,7 @@
   stroke-dasharray: 280;
   stroke-dashoffset: 0;
   transform-origin: center;
-  stroke: rgb(var(--color-foreground));
+  stroke: currentColor;
   animation: dash 1.4s ease-in-out infinite;
 }
 

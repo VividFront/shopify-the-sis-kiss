@@ -1,0 +1,117 @@
+<div class="relative p-section-md bg-white">
+  {% if section.settings.background_image != blank %}
+    <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    </div>
+  {% endif %}
+  <div class="container">
+    <div class="lg:grid grid-cols gap-grid">
+      <div class="lg:col-start-2 lg:col-end-6">
+        {%- if section.settings.image != blank -%}
+          {% liquid 
+            assign image_wrapper_classes = 'tw-hidden lg:block'
+            assign image_classes = 'rounded md:rounded-none aspect-4/3 object-contain'
+            if section.settings.image_secondary != blank
+              assign image_wrapper_classes = image_wrapper_classes | append: ' relative aspect-square'
+              assign image_classes = 'absolute top-0 left-0 h-[60%] w-[60%] aspect-square object-cover'
+            endif
+          %}
+          <div class="{{ image_wrapper_classes }}">
+            {%- if section.settings.image_link != blank -%}<a href="{{ section.settings.image_link }}" target="_blank">{%- endif -%}
+            {{ section.settings.image | image_url: width: 1500 | image_tag:
+              width: section.settings.image.width,
+              class: image_classes,
+              sizes: section.settings.image.sizes,
+              widths: '375, 550, 750, 1100',
+              alt: section.settings.image.alt | escape
+            }}
+            {% if section.settings.image_secondary != blank %}
+              {{ section.settings.image_secondary | image_url: width: 1500 | image_tag:
+                width: section.settings.image_secondary.width,
+                class: 'absolute h-[60%] w-[60%] bottom-0 right-0 rounded aspect-square object-cover',
+                sizes: section.settings.image_secondary.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image_secondary.alt | escape
+              }}
+            {% endif %}
+          </div>
+            {%- if section.settings.image_mobile != blank -%}
+              {{ section.settings.image_mobile | image_url: width: 1500 | image_tag:
+                width: section.settings.image_mobile.width,
+                class: 'rounded object-cover aspect-3/2 lg:hidden mx-auto',
+                sizes: section.settings.image_mobile.sizes,
+                widths: '375, 550, 750, 1100',
+                alt: section.settings.image_mobile.alt | escape
+              }}
+            {%- endif -%}
+          {%- if section.settings.image_link != blank -%}</a>{%- endif -%}
+        {%- endif -%}
+      </div>
+      <div class="mt-32 lg:mt-0 lg:col-start-6 lg:col-end-12">
+        <div class="flex flex-col justify-center items-start h-full">
+          <h2>{{ section.settings.heading }}</h2>
+          <div class="mt-12 richtext-content">{{ section.settings.body }}</div>
+          {% if section.settings.cta_url != blank %}
+            {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Z Pattern (Contact)",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_secondary",
+      "label": "Image (Secondary)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (mobile)"
+    },
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "Image Link"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Z Pattern (Contact)"
+    }
+  ]
+}
+{% endschema %}

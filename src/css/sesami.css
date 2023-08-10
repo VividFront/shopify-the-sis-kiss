@@ -1,0 +1,11 @@
+.sesami__buttonWrapper {
+  @apply mb-32;
+}
+
+sesami-button {
+  @apply mt-32;
+}
+
+sesami-button button {
+  @apply !text-white !text-[calc(18rem/16)] !leading-[calc(26rem/16)] !bg-primary !py-8 !px-24 !rounded-button-lg !font-bold !border-primary !border-[2px] hover:!bg-primary-hover;
+}

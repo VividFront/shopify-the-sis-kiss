@@ -1,0 +1,135 @@
+<div class="relative pb-48 pt-80 lg:pb-92">
+  <div class="absolute left-0 top-0 w-full z-[1]">
+    {% render 'breadcrumbs' %}
+  </div>
+  <div class="absolute left-0 top-0 w-full h-full lg:z-[0]">
+    {%- liquid
+      assign image_class = 'h-full w-full object-cover lg:object-center'
+      assign image_position = section.settings.background_image_position_mobile | default: 'left'
+      assign image_class = image_class | append: ' object-' | append: image_position
+    -%}
+    {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+      width: section.settings.background_image.width,
+      class: image_class,
+      sizes: section.settings.background_image.sizes,
+      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+      alt: section.settings.background_image.alt | escape
+    }}
+  </div>
+  <div class="relative container lg:grid grid-cols">
+    <div class="col-start-2 col-end-12">
+      <div class="flex flex-col gap-y-4 md:gap-y-8 lg:gap-y-16">
+        {% assign row_class = 'flex items-center justify-between gap-x-16 lg:gap-x-24' %}
+        <div class="{{ row_class }}">
+          {% for block in section.blocks %}
+            {% if block.type == 'text' %}
+              <span class="tsk-about-hero-text block shrink-0 md:text-54 text-display{% if block.settings.is_bold == true %} font-bold{% endif %}">{{ block.settings.text }}</span>
+            {% elsif block.type == 'image' %}
+              <div class="tsk-about-hero-image shrink grow rounded h-48 md:h-72 lg:h-[110px] overflow-hidden">
+                {{ block.settings.image | image_url: width: 246 | image_tag:
+                  width: block.settings.image.width,
+                  class: 'w-full h-full object-cover',
+                  sizes: block.settings.image.sizes,
+                  widths: '700',
+                  alt: block.settings.image.alt | escape
+                }}
+              </div>
+            {% endif %}
+  
+            {% assign modulo_3 = forloop.index | modulo: 3 %}
+            {% if modulo_3 == 0 %}
+              </div>
+              <div class="{{ row_class }}">
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if section.settings.badge != blank %}
+    <div class="flex w-full justify-center">
+      {{ section.settings.badge | image_url: width: 246 | image_tag:
+        width: section.settings.badge.width,
+        class: 'w-88 h-88 lg:w-[124px] lg:h-[124px] object-contain',
+        sizes: section.settings.badge.sizes,
+        widths: '246',
+        alt: section.settings.badge.alt | escape
+      }}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "About Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "background_image_position_mobile",
+      "label": "Background Image Position (Mobile)",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge",
+      "label": "Badge"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_bold",
+          "label": "Bold?"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Hero"
+    }
+  ],
+  "templates": ["page"]
+}
+{% endschema %}

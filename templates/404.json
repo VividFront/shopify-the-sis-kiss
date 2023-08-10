@@ -1,10 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {
+        "image": "shopify://shop_images/custom-necklace.png",
+        "heading": "",
+        "cta_text": "Continue Shopping",
+        "cta_url": "shopify://collections"
+      }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }

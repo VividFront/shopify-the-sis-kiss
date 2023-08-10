@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "banner": {
+      "type": "affiliates-banner",
+      "blocks": {
+        "7f8e02ae-e5ca-4e5f-8aed-bed7385acfa1": {
+          "type": "affiliate_card",
+          "settings": {
+            "heading": "ShareASale",
+            "body": "<p>Apply to become an affiliate through ShareASale now.</p>",
+            "cta_text": "Apply Now",
+            "cta_link": "https://www.shareasale.com/shareasale.cfm?merchantID=91421",
+            "target_blank": true
+          }
+        },
+        "618d820d-3899-4e6f-ae8b-c302ce3e040e": {
+          "type": "affiliate_card",
+          "settings": {
+            "heading": "Amazon",
+            "body": "<p>Apply to become an affiliate through Amazon Affliates now.</p>",
+            "cta_text": "Apply Now",
+            "cta_link": "https://affiliate-program.amazon.com/",
+            "target_blank": true
+          }
+        },
+        "cb03aa44-120a-4ccb-af62-167b0c3a30a4": {
+          "type": "affiliate_card",
+          "settings": {
+            "heading": "LTK",
+            "body": "<p>Apply to become an influencer on LTK now.</p>",
+            "cta_text": "Apply Now",
+            "cta_link": "https://company.shopltk.com/en/creator",
+            "target_blank": true
+          }
+        }
+      },
+      "block_order": [
+        "7f8e02ae-e5ca-4e5f-8aed-bed7385acfa1",
+        "618d820d-3899-4e6f-ae8b-c302ce3e040e",
+        "cb03aa44-120a-4ccb-af62-167b0c3a30a4"
+      ],
+      "settings": {
+        "heading": "Affiliates",
+        "subheading": "We’re on ShareASale, LTK and Amazon Affiliates!"
+      }
+    },
+    "1c9814c5-09ba-4627-8150-0a0ab1166e60": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Ready to apply? The time is now!",
+        "body": "If you have questions regarding how to apply to become a TSK affiliate partner, please contact us below.",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify://pages/contact-us-new",
+        "theme": "dark"
+      }
+    }
+  },
+  "order": ["banner", "1c9814c5-09ba-4627-8150-0a0ab1166e60"]
+}

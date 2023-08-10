@@ -41,7 +41,7 @@
   endif
 
   if media.media_type == 'image'
-    assign image_class = 'image-magnify-' | append: section.settings.image_zoom
+    assign image_class = 'rounded image-magnify-' | append: section.settings.image_zoom
   endif
 -%}
 
@@ -60,7 +60,8 @@
         {{ media.preview_image | image_url: width: 1946 | image_tag:
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          class: 'rounded'
         }}
       </div>
       <a href="{% if media.media_type == 'video' %}{{ media.sources[1].url }}{% else %}{{ media | external_video_url }}{% endif %}" class="product__media-toggle">
@@ -71,7 +72,8 @@
         {{ media.preview_image | image_url: width: 1946 | image_tag:
           loading: lazy,
           sizes: sizes,
-          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+          widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+          class: 'rounded'
         }}
       </div>
     {%- endif -%}
@@ -135,7 +137,8 @@
       {{ media.preview_image | image_url: width: 1946 | image_tag:
         loading: lazy,
         sizes: sizes,
-        widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
+        widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+        class: 'rounded'
       }}
     </button>
     <template>

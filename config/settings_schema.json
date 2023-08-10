@@ -34,6 +34,165 @@
     ]
   },
   {
+    "name": "Emojis",
+    "settings": [
+      {
+        "type": "url",
+        "id": "emoji_trending",
+        "label": "Trending"
+      },
+      {
+        "type": "url",
+        "id": "emoji_new",
+        "label": "New"
+      },
+      {
+        "type": "url",
+        "id": "emoji_limited",
+        "label": "Limited"
+      },
+      {
+        "type": "url",
+        "id": "emoji_wine",
+        "label": "Wine"
+      },
+      {
+        "type": "url",
+        "id": "emoji_water",
+        "label": "Water"
+      }
+    ]
+  },
+  {
+    "name": "Lottie JSON",
+    "settings": [
+      {
+        "type": "url",
+        "id": "lottie_cat_glasses",
+        "label": "Trending Leopard"
+      },
+      {
+        "type": "url",
+        "id": "lottie_podcast_ribbon_homepage",
+        "label": "Podcast Ribbon (Homepage)"
+      }
+    ]
+  },
+  {
+    "name": "Yotpo Tiers",
+    "settings": [
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_silver",
+        "label": "Silver Icon"
+      },
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_gold",
+        "label": "Gold Icon"
+      },
+      {
+        "type": "url",
+        "id": "yotpo_tiers_icon_diamond",
+        "label": "Diamond Icon"
+      }
+    ]
+  },
+  {
+    "name": "Bundle Builder",
+    "settings": [
+      {
+        "type": "url",
+        "id": "bundle_builder_note_image",
+        "label": "Custom Note Image"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_tsk_your_way_image",
+        "label": "TSK Your Way Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_tsk_your_way_image_mobile",
+        "label": "TSK Your Way Image (mobile)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_me_image",
+        "label": "Charm Me Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_me_image_mobile",
+        "label": "Charm Me Image (mobile)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_bar_image",
+        "label": "Charm Bar Image (desktop)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_charm_bar_image_mobile",
+        "label": "Charm Bar Image (mobile)"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_diamond_icon",
+        "label": "Diamond Icon"
+      },
+      {
+        "type": "url",
+        "id": "bundle_builder_chain_icon",
+        "label": "Chain Icon"
+      },
+      {
+        "type": "text",
+        "id": "settings.bundle_builder_tsk_your_way_id",
+        "label": "TSK Your Way ID"
+      },
+      {
+        "type": "text",
+        "id": "bundle_builder_charm_me_id",
+        "label": "Charm Me ID"
+      },
+      {
+        "type": "text",
+        "id": "bundle_builder_charm_bar_id",
+        "label": "Charm Bar ID"
+      }
+    ]
+  },
+  {
+    "name": "Swatches",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "swatch_options",
+        "label": "Swatch Options",
+        "info": "Comma separated list of option names",
+        "default": "Color"
+      },
+      {
+        "type": "textarea",
+        "id": "swatch_values",
+        "label": "Swatch Values",
+        "info": "Comma separated list of handleized swatch names (ie. 'gold', 'rose-gold')",
+        "default": "silver,gold,rose-gold"
+      }
+    ]
+  },
+  {
+    "name": "Scripts",
+    "settings": [
+      {
+        "type": "html",
+        "id": "accessibe_script",
+        "label": "AccessiBE Script"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
@@ -297,93 +456,6 @@
       {
         "type": "range",
         "id": "buttons_shadow_blur",
-        "min": 0,
-        "max": 20,
-        "step": 5,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.blur.label",
-        "default": 0
-      }
-    ]
-  },
-  {
-    "name": "t:settings_schema.variant_pills.name",
-    "settings": [
-      {
-        "type": "paragraph",
-        "content": "t:settings_schema.variant_pills.paragraph"
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.global.settings.header__border.content"
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_border_thickness",
-        "min": 0,
-        "max": 12,
-        "step": 1,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.thickness.label",
-        "default": 1
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_border_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 55
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_radius",
-        "min": 0,
-        "max": 40,
-        "step": 2,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.corner_radius.label",
-        "default": 40
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.global.settings.header__shadow.content"
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_shadow_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "t:settings_schema.global.settings.opacity.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_shadow_horizontal_offset",
-        "min": -12,
-        "max": 12,
-        "step": 2,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.horizontal_offset.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_shadow_vertical_offset",
-        "min": -12,
-        "max": 12,
-        "step": 2,
-        "unit": "px",
-        "label": "t:settings_schema.global.settings.vertical_offset.label",
-        "default": 0
-      },
-      {
-        "type": "range",
-        "id": "variant_pills_shadow_blur",
         "min": 0,
         "max": 20,
         "step": 5,

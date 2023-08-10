@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "da9fd767-1c72-4078-ba56-a229a45ba083": {
+      "type": "banner-faq",
+      "blocks": {
+        "03620eb0-edac-4831-9f9a-2bc0f2586ae2": {
+          "type": "featured_question",
+          "settings": {
+            "title": "What Material Is The Sis Kiss Jewelry Made Of?",
+            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/what-material-is-the-sis-kiss-jewelry-made-with"
+          }
+        },
+        "abeba2a7-6544-4272-a29f-0af30c3c6f32": {
+          "type": "featured_question",
+          "settings": {
+            "title": "When Will My Order Ship?",
+            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/when-will-my-order-ship"
+          }
+        }
+      },
+      "block_order": [
+        "03620eb0-edac-4831-9f9a-2bc0f2586ae2",
+        "abeba2a7-6544-4272-a29f-0af30c3c6f32"
+      ],
+      "settings": {
+        "subheading": "Featured Questions"
+      }
+    },
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "2290a1ea-6cc7-4c67-adc4-7714f2df8cb5": {
+          "type": "category",
+          "settings": {
+            "category": "Custom Jewelry"
+          }
+        },
+        "407c93d7-f8c4-4fba-b44d-4d9f70a3af89": {
+          "type": "category",
+          "settings": {
+            "category": "Jewelry Care"
+          }
+        },
+        "365254ad-216b-4ec9-bffd-eeb6c533be97": {
+          "type": "category",
+          "settings": {
+            "category": "Promotions"
+          }
+        },
+        "a3bc2b44-dfb1-442c-a580-0055f7ba85a3": {
+          "type": "category",
+          "settings": {
+            "category": "Shipping"
+          }
+        },
+        "48f0c5b3-162c-4c70-878e-4b16f98d87e0": {
+          "type": "category",
+          "settings": {
+            "category": "Returns & Exchanges"
+          }
+        },
+        "95108fbd-2b4d-4fd3-a351-005ee3871512": {
+          "type": "category",
+          "settings": {
+            "category": "Bag Care"
+          }
+        }
+      },
+      "block_order": [
+        "2290a1ea-6cc7-4c67-adc4-7714f2df8cb5",
+        "407c93d7-f8c4-4fba-b44d-4d9f70a3af89",
+        "365254ad-216b-4ec9-bffd-eeb6c533be97",
+        "a3bc2b44-dfb1-442c-a580-0055f7ba85a3",
+        "48f0c5b3-162c-4c70-878e-4b16f98d87e0",
+        "95108fbd-2b4d-4fd3-a351-005ee3871512"
+      ],
+      "settings": {
+        "heading": "All Questions"
+      }
+    },
+    "bc0f8ae1-844e-44ef-9648-6d6ca067e422": {
+      "type": "callout-centered",
+      "settings": {
+        "heading": "Didn't Find What You Were Looking For?",
+        "body": "Reach out to us and let us help!",
+        "cta_text": "Contact Us",
+        "cta_url": "shopify:\/\/pages\/contact-us",
+        "theme": "dark"
+      }
+    }
+  },
+  "order": [
+    "da9fd767-1c72-4078-ba56-a229a45ba083",
+    "main",
+    "bc0f8ae1-844e-44ef-9648-6d6ca067e422"
+  ]
+}

@@ -1,0 +1,55 @@
+<div class="relative p-section-md">
+  <div class="absolute left-0 top-0 w-full h-full">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  <div class="relative container">
+    <div class="grid grid-cols">
+      <div class="col-start-1 lg:col-start-3 col-end-7 lg:col-end-11">
+        <h2 class="text-center">{{ section.settings.heading }}</h2>
+        <div class="mt-12 [&_iframe]:!w-full [&_iframe]:!max-w-none">
+          {{ section.settings.podcast_embed }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Podcast Preview",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "html",
+      "id": "podcast_embed",
+      "label": "Podcast Embed"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Podcast Preview"
+    }
+  ]
+}
+{% endschema %}

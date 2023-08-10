@@ -1,0 +1,104 @@
+#tsk-product-grid {
+  #gf-grid {
+    width: 100% !important;
+    float: none !important;
+    clear: none !important;
+    padding-left: 0;
+
+    @apply col-start-1 col-end-7 lg:row-start-2 lg:row-end-4 lg:col-start-4 lg:col-end-13 bg-ui-background rounded-b px-16 pt-18 lg:pt-0 pb-20;
+
+    #gf-products {
+      @apply grid gap-y-24 gap-x-16 grid-cols-2 lg:grid-cols-3;
+    }
+
+    #gf_pagination_wrap {
+      #pagination {
+        .page {
+          width: calc(25rem / 16) !important;
+          height: calc(25rem / 16) !important;
+          @apply w-[calc(25rem/16)] h-[calc(25rem/16)] text-body-copy-small text-copy flex items-center rounded-full justify-center;
+
+          &.current {
+            @apply text-white bg-primary font-normal;
+          }
+        }
+      }
+    }
+  }
+
+  &.no-subcategories #gf-grid {
+    @apply pt-18 rounded-t lg:row-start-1;
+  }
+
+  #gf-controls-container {
+    .sort-by-toggle {
+      @apply border-primary border flex gap-4 items-center h-auto;
+
+      &::before {
+        content: 'Sort By:';
+        @apply font-bold;
+      }
+    }
+
+    .gf-refine-toggle-mobile,
+    .gf-form-button-group button {
+      background: transparent !important;
+      border: 1px solid #000 !important;
+    }
+  }
+
+  &.search-grid {
+    #product-grid {
+      @apply items-start;
+    }
+
+    #gf-tree {
+      @apply lg:row-start-1;
+    }
+  }
+
+  #gf-tree {
+    @apply mt-32 lg:mt-0 col-start-1 col-end-7 row-start-3 lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:col-end-4 w-full float-none clear-none;
+
+    &::before {
+      content: 'Filters';
+      @apply text-h3 font-heading font-bold pb-24 block;
+    }
+
+    .gf-option-block {
+      @apply p-12 border-border border-t border-b mt-[-1px];
+
+      .gf-block-title {
+        @apply relative;
+
+        .h3 {
+          @apply text-body-copy;
+
+          &::after {
+            @apply float-none absolute right-0 top-[50%] translate-y-[-50%] mr-0;
+          }
+        }
+
+        .gf-clear {
+          font-size: 14px !important;
+          color: rgb(148 148 148) !important;
+          @apply absolute right-30 top-2 hover:underline font-open-sans;
+        }
+      }
+    }
+
+    [data-filter-type='Tag'] {
+      .gf-swatch-image {
+        @apply border-none w-20 h-20 rounded-none;
+      }
+
+      .checked .gf-swatch-image {
+        @apply border-none;
+      }
+
+      .checked .gf-label {
+        font-weight: 700 !important;
+      }
+    }
+  }
+}

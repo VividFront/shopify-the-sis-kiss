@@ -1,0 +1,352 @@
+.yotpo-widget-loyalty-page
+  .yotpo-widget-campaign-widget
+  .yotpo-widget-campaign-widget-container {
+  @apply container !p-0;
+}
+
+.yotpo-widget-campaign-widget-icon-container {
+  @apply flex justify-center;
+}
+
+.yotpo-widget-campaign-widget-icon-container svg {
+  @apply !text-primary;
+}
+
+.yotpo-widget-campaign-widget-container .flexified-wrapper {
+  @apply grid grid-cols gap-grid mt-32;
+}
+
+.yotpo-widget-campaign-widget-container .yotpo-container-headline {
+  @apply !text-h2 !text-header !pb-0;
+}
+
+.yotpo-widget-campaign-widget-container .flexified-wrapper .yotpo-outer-tile {
+  @apply rounded overflow-hidden col-span-3 border-none !w-auto h-auto !m-0 aspect-square;
+}
+
+.yotpo-widget-campaign-widget-container
+  .yotpo-outer-tile
+  .yotpo-tile
+  .yotpo-title-text {
+  @apply !text-header !text-h6 !leading-[26px];
+}
+
+.yotpo-widget-campaign-widget-container
+  .yotpo-outer-tile
+  .yotpo-tile
+  .yotpo-description-text {
+  @apply !text-copy !text-body-copy;
+}
+
+.yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tiers-list {
+  @apply !p-0 !max-w-full;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-headline {
+  @apply !text-h2 !mb-0;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container {
+  @apply container mt-32;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tiers-wrapper {
+  @apply max-w-full gap-16 lg:gap-32 xl:gap-48;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tier-container {
+  @apply bg-white p-16 pb-24 mt-0 md:m-0 basis-full sm:basis-3/4 lg:basis-1/4 rounded shadow overflow-hidden;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tier-icon-wrapper
+  svg {
+  @apply hidden;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tiers-card-container
+  .yotpo-vip-tier-container
+  .yotpo-vip-tier-icon-wrapper {
+  @apply !w-76 !h-76 bg-no-repeat bg-center bg-contain mx-auto;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tier-container:nth-child(1n)
+  .yotpo-vip-tier-icon-wrapper,
+.yotpo-loyalty-page-container
+  .VueCarousel-slide:nth-child(1n)
+  .yotpo-vip-tier-icon-wrapper {
+  background-image: var(--tsk-yotpo-tiers-icon-silver);
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tier-container:nth-child(2n)
+  .yotpo-vip-tier-icon-wrapper,
+.yotpo-loyalty-page-container
+  .VueCarousel-slide:nth-child(2n)
+  .yotpo-vip-tier-icon-wrapper {
+  background-image: var(--tsk-yotpo-tiers-icon-gold);
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tier-container:nth-child(3n)
+  .yotpo-vip-tier-icon-wrapper,
+.yotpo-loyalty-page-container
+  .VueCarousel-slide:nth-child(3n)
+  .yotpo-vip-tier-icon-wrapper {
+  background-image: var(--tsk-yotpo-tiers-icon-diamond);
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier-benefits-list-item {
+  @apply items-start;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier-benefits-list-item
+  svg {
+  @apply mt-8;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-benefits {
+  @apply mt-0 p-0;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-icon-wrapper {
+  @apply flex justify-center;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-threshold {
+  @apply !text-h5 !font-bold !h-auto mt-8;
+}
+
+.yotpo-loyalty-page-container
+  .yotpo-vip-tiers-widget
+  .yotpo-vip-tier
+  .yotpo-vip-tier-name {
+  @apply !text-h4 !font-bold !h-auto mt-18;
+}
+
+.yotpo-loyalty-page-container .yotpo-vip-tiers-widget .yotpo-vip-tier-header {
+  @apply p-0;
+}
+
+.yotpo.yotpo-main-widget {
+  @apply p-section-md;
+}
+
+.yotpo-lightbox-wrapper
+  .yotpo-lightbox-products-main
+  .yotpo-lightbox-product-button {
+  @apply !bg-primary !rounded-button;
+}
+
+.yotpo-lightbox-wrapper
+  .yotpo-lightbox-products-footer
+  .yotpo-lightbox-more-products {
+  @apply !text-primary;
+}
+
+.yotpo-widget-referral-widget .yotpo-right-align-background {
+  @apply !grid grid-cols gap-grid !h-auto container;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-right-align-background
+  .yotpo-right-align-image {
+  @apply order-1 lg:order-2 col-start-2 col-end-6 lg:col-start-8 lg:col-end-12 2xl:col-end-11 aspect-[2/3] rounded object-cover object-center !h-auto !w-full !min-h-0 !max-h-none !max-w-none;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-right-align-background
+  .yotpo-tile-wrapper {
+  min-height: 0 !important;
+  @apply order-2 lg:order-1 lg:col-start-2 lg:col-end-8 2xl:col-start-3 col-start-1 col-end-7;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box {
+  @apply !w-full !p-0;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile {
+  @apply !min-h-0;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  > div {
+  @apply flex flex-col !w-full;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  > div
+  div {
+  @apply m-0;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  > div
+  [role='heading'] {
+  @apply p-0 !font-bold;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form {
+  @apply !flex-row gap-24 !items-center !mt-24;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-description-text {
+  @apply mt-12;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form
+  .yotpo-inputs-container {
+  @apply w-full;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form
+  .yotpo-inputs-container
+  input {
+  @apply h-42 !border-border !rounded-[4px] !text-[16px];
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-is-mobile
+  .yotpo-referral-widget-form {
+  @apply !flex-col;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box.yotpo-final-view {
+  @apply !p-0;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-is-mobile
+  .yotpo-referral-widget-form
+  > div {
+  @apply !w-full;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form
+  .yotpo-action-button-widget {
+  @apply w-80;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-action-button-widget.yotpo-go-back-button {
+  @apply mt-24 flex justify-center items-center;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-action-button-widget.yotpo-go-back-button
+  button {
+  @apply text-primary !py-8 !px-20 rounded-button font-bold !border-solid !border-primary !border-[2px] h-auto;
+}
+
+.yotpo-widget-referral-widget
+  .yotpo-background
+  .yotpo-tile-wrapper
+  .yotpo-tile-box
+  .yotpo-referral-widget-form
+  .yotpo-action-button-widget
+  button {
+  @apply text-primary !py-8 !px-16 rounded-button font-bold !border-solid !border-primary !border-[2px] h-auto;
+}
+
+.yotpo-widget-referral-widget .yotpo-share-buttons-container {
+  @apply lg:!mt-64 !gap-8;
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper {
+  @apply flex gap-grid flex-wrap lg:flex-nowrap justify-center;
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container {
+  @apply flex-[0_1_calc(33.33%_-_12px)] lg:flex-[0_1_25%];
+}
+
+.yotpo-display-wrapper
+  .yotpo-pictures-gallery-wrapper
+  .yotpo-pictures-gallery-images-wrapper
+  .yotpo-single-image-container:not(.yotpo-single-image-container:nth-of-type(-n
+      + 4)) {
+  @apply lg:hidden;
+}

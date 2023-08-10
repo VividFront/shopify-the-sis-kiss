@@ -1,0 +1,135 @@
+<div class="relative bg-ui-dark">
+  <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+    {% render 'breadcrumbs', breadcrumb_classes: 'text-white [&_a]:text-white' %}
+  </div>
+  <div class="flex flex-col lg:grid lg:grid-cols-full-bleed">
+    <div class="lg:col-start-2 xl:col-start-3 lg:col-end-8 pt-24 pb-48 lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)] lg:pl-16 lg:pr-32 flex flex-col h-full justify-center">
+      <div class="container lg:!max-w-full lg:!px-0 lg:!mx-0">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'logo' -%}
+              <img class="max-h-98 lg:max-h-[145px] w-full object-contain" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}"/>
+            {%- when 'heading' -%}
+              <h1 class="text-white text-display font-display font-normal {{ text_color }}{% if block.settings.visually_hidden %} sr-only{% endif %}">{{ block.settings.text }}</h1>
+            {%- when 'body' -%}
+              <p class="text-center lg:text-left text-white mt-8 lg:mt-24 text-body-copy-large {{ text_color }}">{{ block.settings.text }}</p>
+            {%- when 'cta' -%}
+              <div class="flex justify-center lg:justify-start">
+                {% assign target = '_self' %}
+                {% if block.settings.target == true %}
+                  {% assign target = '_blank' %}
+                {% endif %}
+                {% render 'button-icon-play', url: block.settings.url, text: block.settings.text, class: 'mt-16 [&_a]:bg-white', target: target %}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="lg:col-start-8 lg:col-end-[15] relative">
+      {%- liquid 
+        assign image_class = 'h-full w-full object-cover aspect-square md:aspect-4/3 lg:aspect-auto md:max-h-[400px] lg:max-h-[600px]'
+      -%}
+      {{ section.settings.image | image_url: width: 1500 | image_tag:
+        width: section.settings.image.width,
+        class: image_class,
+        sizes: section.settings.image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.image.alt | escape
+      }}
+      {% if section.settings.ribbon_lottie_json != blank %}
+        {% render 'lottie', json_url: section.settings.ribbon_lottie_json, class: 'absolute right-0 bottom-0 w-[80%] h-auto max-h-full overflow-hidden' %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Podcast Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "ribbon_lottie_json",
+      "label": "Ribbon Lottie JSON"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Hero Banner",
+          "label": "Text"
+        },
+        {
+          "type": "checkbox",
+          "id": "visually_hidden",
+          "label": "Hide Visually?"
+        }
+      ]
+    },
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "name": "Body",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "name": "CTA",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "checkbox",
+          "id": "target",
+          "label": "Open link in new window?"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Podcast Hero"
+    }
+  ]
+}
+{% endschema %}

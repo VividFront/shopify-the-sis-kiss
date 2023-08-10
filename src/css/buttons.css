@@ -1,0 +1,17 @@
+.shadow-hover-button button,
+.shadow-hover-button a {
+  @apply transition-[transform] ease-linear;
+}
+
+.shadow-hover-button:hover button,
+.shadow-hover-button:hover a {
+  @apply translate-y-[-4px] translate-x-[-5px];
+}
+
+.shadow-hover-button:hover .button-shadow {
+  @apply block;
+}
+
+.button-shadow {
+  @apply w-full h-full box-border rounded-[24px] bg-white border-primary border-[2px] absolute left-0 bottom-0;
+}

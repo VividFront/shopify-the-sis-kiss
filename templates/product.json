@@ -3,25 +3,34 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "title": {
+          "type": "title",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
           }
         },
-        "title": {
-          "type": "title"
-        },
-        "caption": {
-          "type": "text",
+        "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "product": "{{product}}"
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
+        },
+        "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8": {
+          "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-block\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+          "settings": {
+            "heading": "Sezzle Widget",
+            "font_size": 14,
+            "font_family": "inherit"
+          }
+        },
+        "838ad133-c6a6-45d7-bec9-c3c5fe347deb": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -30,51 +39,105 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description"
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
+            "heading": "Details",
             "content": "",
-            "page": ""
+            "page": "",
+            "use_product_description": true,
+            "collection": ""
           }
         },
-        "collapsible-row-1": {
+        "01d652e9-fc63-471a-922d-f53773c9bac4": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
+            "heading": "FAQ",
+            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?<\/strong><\/p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. <\/p><p><a href=\"\/blogs\/faq\" title=\"FAQ\">Read More FAQs<\/a><\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": ""
           }
         },
-        "collapsible-row-2": {
+        "64f16b6b-a076-4c3f-a322-19bdb934e657": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
+            "heading": "Jewelry Care",
+            "content": "<p><strong>Jewelry Care<\/strong><\/p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.<\/p><p><\/p><p><strong>Jewelry 101<\/strong><\/p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.<\/strong><\/em><em> <\/em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  <\/p><p><a href=\"\/pages\/care-for-your-jewelry\" title=\"Care For Your Jewelry\">Learn More<\/a><\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
+            "heading": "Shipping & Order Information",
+            "content": "<p>Need to cancel or make an adjustment? Let us know right away, and we'll do our best! Email customerservice@thesiskiss.com<strong>.<\/strong>Unfortunately, we're unable to make any changes once an order is sent to our warehouse because we're working quickly to get it to your doorstep! <\/p><p><a href=\"\/pages\/shipping-and-returns\" title=\"Shipping and Returns\">Learn More<\/a><\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Custom Jewelry FAQ",
+            "content": "<p>THIS CUSTOM DESIGN TAKES 3-4 WEEKS TO PRODUCE AND SHIP. ALL OF OUR CUSTOM ITEMS ARE HANDMADE WITH CARE. YOU WILL RECEIVE SHIPPING UPDATES VIA EMAIL. PLEASE REFRAIN FROM EMAILING CUSTOMER SERVICE FOR SHIPPING UPDATES.<br\/><br\/> **If you're ordering multiple necklaces, make sure to add your customization for 1, add to cart, and then add the additional pieces one-by-one with their respective customization.**<br\/><\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "custom-jewelry"
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Water Resistant",
+            "content": "<p>Durable jewelry that you can wear  while working out!<br\/>Lightweight, comfortable, tarnish- and corrosion-free, and simple to clean.<\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "waterproof"
+          }
+        },
+        "07e38b9e-c46f-4c8c-9b22-c0f2372a7e60": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "TSK Your Way",
+            "content": "<p>Custom styles created in just 5 business days!<br\/><br\/>Limited quantities are created each week, so make sure to place your order ASAP! If items are shown as sold out, make sure to sign up for restock notifications. You'll be the first to know we've opened up time slots to create your custom piece.<\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "tsk-your-way"
+          }
+        },
+        "892debba-2045-4edb-abe9-150cb968ebdb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "TSK Atelier",
+            "content": "<p>This made-to-order piece will be made for you by our Atelier craftsman. Please allow 3-4 weeks to complete. Please note, no refunds or exchanges on custom orders. Cancellation of an order must be provided no later then 24 hours from your time of checkout. TSK Atelier pieces come with TSK Atelier Concierge Service. Please email customer service to arrange for Concierge Service, including to schedule a personal shopping consultation by phone.<\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "tsk-atelier-1979"
+          }
+        },
+        "860069f9-132d-4a45-a4b2-4f66e096b0f0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sis Kiss Links FAQ",
+            "content": "<p>QUALITY: Tarnish free and hypoallergenic.<\/p><p>MATERIAL: 14k Gold, birthstones, and diamonds.<\/p><p>SIZE & FIT: All styles are made-to-order and fit each individual.<\/p><p>FEATURES: Permanently secured using our impulse arc welder.<\/p>",
+            "page": "",
+            "use_product_description": false,
+            "collection": "seamless-permanent-jewelry"
           }
         },
         "share": {
@@ -85,131 +148,127 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "caption",
+        "42ce88cc-e1fc-4e0a-888a-d3836bf45002",
         "price",
+        "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8",
+        "838ad133-c6a6-45d7-bec9-c3c5fe347deb",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
+        "01d652e9-fc63-471a-922d-f53773c9bac4",
+        "64f16b6b-a076-4c3f-a322-19bdb934e657",
+        "collapsible-row-3",
         "collapsible-row-1",
         "collapsible-row-2",
-        "collapsible-row-3",
+        "07e38b9e-c46f-4c8c-9b22-c0f2372a7e60",
+        "892debba-2045-4edb-abe9-150cb968ebdb",
+        "860069f9-132d-4a45-a4b2-4f66e096b0f0",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "hide_breadcrumbs": false,
         "media_size": "large",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "enable_video_looping": false
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "605a63e6-525e-429b-a87a-b51c70b37d88": {
+      "type": "complete-the-look",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/wallpaper.png",
+        "marquee_text": "Complete the Look",
+        "recommendation_type": "related"
+      }
+    },
+    "1684352239614af5b1": {
+      "type": "apps",
       "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "product": "{{product}}"
           }
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb": {
+      "type": "icon-section",
       "blocks": {
-        "column-0": {
-          "type": "column",
+        "97091f40-77bb-45ef-bf3b-5808317f311e": {
+          "type": "icon-item",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
+            "heading": "Free Shipping*",
+            "body": "Free shipping on all domestic US orders when you spend $150.",
+            "large_text": ""
           }
         },
-        "column-1": {
-          "type": "column",
+        "17c58f09-71ce-4caa-969a-d06a1880fcfa": {
+          "type": "icon-item",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "icon": "shopify:\/\/shop_images\/rewards-icon.png",
+            "heading": "Sis Kiss Rewards",
+            "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
+            "large_text": ""
+          }
+        },
+        "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
+          "type": "icon-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/custom-necklace.png",
+            "heading": "100+ Custom Styles",
+            "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
+            "large_text": ""
           }
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "97091f40-77bb-45ef-bf3b-5808317f311e",
+        "17c58f09-71ce-4caa-969a-d06a1880fcfa",
+        "3c7c4bc1-73a8-4790-8e6d-24bed14afe89"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "bedc88e8-8e96-4831-bbc6-ab67c80aa826": {
+      "type": "recently-viewed",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "background_image": "shopify:\/\/shop_images\/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
+        "heading": "Recently Viewed"
+      }
+    },
+    "sezzle": {
+      "type": "sezzle-section",
+      "settings": {
+        "show-sezzle-widget": false,
+        "color": "inherit",
+        "font-size": 14,
+        "font-family": "inherit",
+        "product-page-alignment": "auto",
+        "cart-page-alignment": "auto"
       }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
-    "related-products"
+    "605a63e6-525e-429b-a87a-b51c70b37d88",
+    "1684352239614af5b1",
+    "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
+    "bedc88e8-8e96-4831-bbc6-ab67c80aa826",
+    "sezzle"
   ]
 }

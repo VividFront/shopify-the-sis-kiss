@@ -10,8 +10,21 @@ if (!customElements.get('media-gallery')) {
           thumbnails: this.querySelector('[id^="GalleryThumbnails"]'),
         };
         this.mql = window.matchMedia('(min-width: 750px)');
-        if (!this.elements.thumbnails) return;
 
+        this.sliderControlWrapper = this.querySelector('.slider-buttons');
+        if (this.sliderControlWrapper) {
+          this.sliderControlLinksArray = Array.from(
+            this.sliderControlWrapper.querySelectorAll('.slider-counter__link'),
+          );
+          this.sliderControlLinksArray.forEach((link) =>
+            link.addEventListener(
+              'click',
+              this.setActiveMedia.bind(this, link.dataset.mediaId, false),
+            ),
+          );
+        }
+
+        if (!this.elements.thumbnails) return;
         this.elements.viewer.addEventListener(
           'slideChanged',
           debounce(this.onSlideChanged.bind(this), 500),
@@ -35,6 +48,11 @@ if (!customElements.get('media-gallery')) {
           this.mql.matches
         )
           this.removeListSemantic();
+      }
+
+      linkToSlide(event) {
+        event.preventDefault();
+        this.setActiveMedia.bind(this, mediaToSwitch.dataset.target, false);
       }
 
       onSlideChanged(event) {
@@ -77,7 +95,7 @@ if (!customElements.get('media-gallery')) {
             !this.elements.thumbnails ||
             this.dataset.desktopLayout === 'stacked'
           ) {
-            activeMedia.scrollIntoView({ behavior: 'smooth' });
+            activeMedia.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         });
         this.playActiveMedia(activeMedia);

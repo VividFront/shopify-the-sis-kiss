@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="pb-48 lg:pb-72" id="ProductGridContainer">
+    {%- if collection.products.size == 0 -%}
+      <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+        <div class="loading-overlay gradient"></div>
+        <div class="title-wrapper center">
+          <h2 class="title title--primary">
+            {{ 'sections.collection_template.empty' | t }}<br>
+            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+          </h2>
+        </div>
+      </div>
+    {%- else -%}
+      <ul id="product-grid" data-id="{{ section.id }}" class="grid gap-grid grid-cols">
+        {% assign product_order = 0 %}
+        {%- comment %}<locksmith:5a65>{% endcomment -%}
+          {%- assign locksmith_a811_forloop__size = 0 %}{%- for product in collection.products -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_a811_forloop__size = locksmith_a811_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_a811_forloop__index = nil -%}
+        {%- comment %}</locksmith:5a65>{% endcomment -%}
+        {%- for product in collection.products -%}
+          {%- comment %}<locksmith:5466>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_a811_forloop__index == nil %}{% assign locksmith_a811_forloop__index = 1 %}{% assign locksmith_a811_forloop__index0 = 0 %}{% else %}{% assign locksmith_a811_forloop__index = locksmith_a811_forloop__index | plus: 1 %}{% assign locksmith_a811_forloop__index0 = locksmith_a811_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_a811_forloop__index == 1 %}{% assign locksmith_a811_forloop__first = true %}{% else %}{% assign locksmith_a811_forloop__first = false %}{% endif %}{% if locksmith_a811_forloop__index == locksmith_a811_forloop__size %}{% assign locksmith_a811_forloop__last = true %}{% else %}{% assign locksmith_a811_forloop__last = false %}{% endif %}{% assign locksmith_a811_forloop__rindex = locksmith_a811_forloop__size | minus: locksmith_a811_forloop__index | minus: 1 %}{% assign locksmith_a811_forloop__rindex0 = locksmith_a811_forloop__size | minus: locksmith_a811_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:5466>{% endcomment -%}
+          {% assign product_order = product_order | plus: 1 %}
+          {% assign lazy_load = false %}
+          {%- if locksmith_a811_forloop__index > 6 -%}
+            {%- assign lazy_load = true -%}
+          {%- endif -%}
+          <li class="col-span-3">
+            {% render 'card-product',
+              product: product,
+              show_secondary_image: true,
+              lazy_load: lazy_load,
+              section_id: section.id
+            %}
+          </li>
+        {%- endfor -%}
+        {%- if collection.metafields.custom.lifestyle_images != blank -%}
+          {%- for image in collection.metafields.custom.lifestyle_images.value -%}
+            {%- if forloop.index == 1 -%}
+              <li class="col-span-6 md:col-span-3 lg:col-span-6 row-start-3 row-end-4 md:row-start-2 md:row-end-4">
+                {{ image | image_url: width: 800 | image_tag:
+                  width: image.width,
+                  class: 'rounded aspect-square md:aspect-auto h-full w-full object-cover',
+                  sizes: image.sizes,
+                  widths: '375, 550, 750, 1100, 1500',
+                  alt: image.alt | escape
+                }}
+              </li>
+            {%- elsif forloop.index == 2 -%}
+              <li class="col-start-1 md:col-start-4 lg:col-start-7 col-end-7 lg:col-end-13 row-start-8 row-end-9 md:row-start-4 md:row-end-6">
+                {{ image | image_url: width: 800 | image_tag:
+                  width: image.width,
+                  class: 'rounded aspect-square md:aspect-auto h-full w-full object-cover',
+                  sizes: image.sizes,
+                  widths: '375, 550, 750, 1100, 1500',
+                  alt: image.alt | escape
+                }}
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+    {%- endif -%}
+  </div>  
+</div>
+
+{% schema %}
+{
+  "name": "Collaborator Collection",
+  "class": "section"
+}
+{% endschema %}

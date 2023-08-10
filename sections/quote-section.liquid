@@ -1,0 +1,73 @@
+<div class="bg-ui-pink p-section-md">
+  <div class="container">
+    <div class="grid grid-cols">
+      <div class="col-start-1 col-end-7 lg:col-start-3 lg:col-end-11">
+        <h2 class="h2-alt text-center">{{ section.settings.quote }}</h2>
+        {% if section.settings.cta_url %}
+          <div class="flex justify-center mt-28">
+            {% assign target = '_self' %}
+            {% if section.settings.button_target == true %}
+              {% assign target = '_blank' %}
+            {% endif %}
+            {% if section.settings.button_type == 'primary_play' %}
+              {%- render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: '[&_a]:bg-primary [&_a]:text-white', target: target -%}
+            {% else %}
+              {%- render 'button', url: section.settings.cta_url, text: section.settings.cta_text, border_color_class: 'border-primary', target: target -%}
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Quote Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Button Type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "primary_play",
+          "label": "Primary w/ Play Icon"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "button_target",
+      "label": "Open button link in new window?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote Section"
+    }
+  ]
+}
+{% endschema %}

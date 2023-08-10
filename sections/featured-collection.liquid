@@ -50,7 +50,7 @@
 
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin container{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">{{ section.settings.title }}</h2>
       {%- endif -%}
@@ -68,16 +68,22 @@
       {%- endif -%}
     </div>
 
-    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} container{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} container-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
         class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
+        {%- comment %}<locksmith:a83f>{% endcomment -%}
+          {%- assign locksmith_3abb_forloop__size = 0 %}{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_3abb_forloop__size = locksmith_3abb_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_3abb_forloop__index = nil -%}
+        {%- comment %}</locksmith:a83f>{% endcomment -%}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          {%- comment %}<locksmith:f21a>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_3abb_forloop__index == nil %}{% assign locksmith_3abb_forloop__index = 1 %}{% assign locksmith_3abb_forloop__index0 = 0 %}{% else %}{% assign locksmith_3abb_forloop__index = locksmith_3abb_forloop__index | plus: 1 %}{% assign locksmith_3abb_forloop__index0 = locksmith_3abb_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_3abb_forloop__index == 1 %}{% assign locksmith_3abb_forloop__first = true %}{% else %}{% assign locksmith_3abb_forloop__first = false %}{% endif %}{% if locksmith_3abb_forloop__index == locksmith_3abb_forloop__size %}{% assign locksmith_3abb_forloop__last = true %}{% else %}{% assign locksmith_3abb_forloop__last = false %}{% endif %}{% assign locksmith_3abb_forloop__rindex = locksmith_3abb_forloop__size | minus: locksmith_3abb_forloop__index | minus: 1 %}{% assign locksmith_3abb_forloop__rindex0 = locksmith_3abb_forloop__size | minus: locksmith_3abb_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:f21a>{% endcomment -%}
           <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            id="Slide-{{ section.id }}-{{ locksmith_3abb_forloop__index }}"
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             data-cascade
           >

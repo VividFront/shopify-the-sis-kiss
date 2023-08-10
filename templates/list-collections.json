@@ -1,15 +1,21 @@
 {
   "sections": {
+    "255b0234-ef0b-4b40-bf72-f936025a709e": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "Collections",
+        "body": "",
+        "background_color": "bg-ui-pink"
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square"
       }
     }
   },
   "order": [
+    "255b0234-ef0b-4b40-bf72-f936025a709e",
     "main"
   ]
 }
