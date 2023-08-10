@@ -44,8 +44,7 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} {% if product.tags contains 'custom' %} is-custom-product{% endif %}">
     <div class="container">
       <div class="grid grid-cols gap-grid relative lg:static">
         <div class="col-span-full lg:col-span-7">
@@ -251,10 +250,6 @@
                   </div>
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-                {%- when 'rating' -%}
-                  {%- comment -%} TODO: Yotpo rating {%- endcomment -%}
-                {%- when 'sezzle' -%}
-                  {% render 'sezzle-widget' %}
               {%- endcase -%}
             {%- endfor -%}
             <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -661,11 +656,6 @@
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
         }
       ]
-    },
-    {
-      "type": "sezzle",
-      "name": "Sezzle Widget",
-      "limit": 1
     }
   ],
   "settings": [
