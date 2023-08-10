@@ -7554,22 +7554,9 @@ footer #contact_form {
   display: -ms-flexbox !important;
   display: flex !important;
 }
-.\[\&\>\.empty-cart-state\]\:flex > .empty-cart-state {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .\[\&_\+\.sezzle-shopify-info-button\]\:mt-12 + .sezzle-shopify-info-button {
   margin-top: calc(12rem / 16);
   margin-top: calc(12rem / var(--vf-font-size-root));
-}
-.\[\&_\+\.sezzle-shopify-info-button\]\:pr-16 + .sezzle-shopify-info-button {
-  padding-right: calc(16rem / 16);
-  padding-right: calc(16rem / var(--vf-font-size-root));
-}
-.\[\&_\+\.sezzle-shopify-info-button\]\:pr-14 + .sezzle-shopify-info-button {
-  padding-right: calc(14rem / 16);
-  padding-right: calc(14rem / var(--vf-font-size-root));
 }
 .disabled\:\[\&_\+\]\:\!border-disabled + :disabled {
   --tw-border-opacity: 1 !important;
@@ -7587,21 +7574,6 @@ footer #contact_form {
 }
 .\[\&_\+_\.tsk-product-accordion\]\:mt-0 + .tsk-product-accordion {
   margin-top: 0px;
-}
-.\[\&_\.empty-cart-state\]\:flex .empty-cart-state {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.\[\&_\.empty-cart-state\]\:\!flex .empty-cart-state {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-.\[\&\.is-etmpy\]\:\[\&_\.empty-cart-state\]\:flex .empty-cart-state.is-etmpy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .\[\&_\.is-active_p\]\:text-h3 .is-active p {
   font-size: calc(20rem / 16);

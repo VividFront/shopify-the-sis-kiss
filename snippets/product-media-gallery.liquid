@@ -132,7 +132,7 @@
           {% render 'icon-chevron-right' %}
         </button>
         <div class="slider-counter caption">
-          <ul class="flex gap-12 w-full items-center">
+          <ul class="flex gap-x-12 gap-y-4 w-full items-center flex-wrap justify-center">
             {% for page in (1..media_count) %}
               <li><button data-vf-slider-dot="{{ page }}" class="w-12 h-12 rounded-full bg-disabled aria-[current]:bg-primary hover:border-primary hover:border"><span class="sr-only">Move to Product #{{ page }}</span></button></li>
             {% endfor %}
