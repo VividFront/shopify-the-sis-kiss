@@ -2,7 +2,6 @@
   "sections": {
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
       "type": "home-hero",
-      "disabled": true,
       "blocks": {
         "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
           "type": "subheading",
@@ -14,20 +13,20 @@
         "507c6d37-3da1-48f2-8e83-20b3df62b326": {
           "type": "heading",
           "settings": {
-            "text": "Charm Bar"
+            "text": "44% Off Sitewide"
           }
         },
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
           "type": "body",
           "settings": {
-            "text": "See what the excitement is about."
+            "text": "BORN TO BE WILD(LY 44)!"
           }
         },
         "fd92ceac-7245-4615-940f-11e2ed4d36e2": {
           "type": "cta",
           "settings": {
-            "text": "Shop Now",
-            "url": "https:\/\/thesiskiss.com\/collections\/charm-bar"
+            "text": "Shop Meg's Favorites",
+            "url": "https:\/\/thesiskiss.com\/collections\/megs-favorites"
           }
         }
       },
@@ -38,8 +37,8 @@
         "fd92ceac-7245-4615-940f-11e2ed4d36e2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/tsk-CharmBar-hero-desktop.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/tsk-CharmBar-hero-mobile-3.jpg",
+        "image": "shopify:\/\/shop_images\/tsk-webhero-megbday-desktop-final-2.png",
+        "image_mobile": "shopify:\/\/shop_images\/tsk-webhero-megbday-mobile-final-2.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "content_width": "narrow",
@@ -83,6 +82,7 @@
         "7a7231c3-0dfd-49da-8aae-8eef0b970466",
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC07211.jpg",
         "image_position": "object-center",
