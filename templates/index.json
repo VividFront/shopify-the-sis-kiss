@@ -36,6 +36,7 @@
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2",
         "fd92ceac-7245-4615-940f-11e2ed4d36e2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/tsk-webhero-megbday-desktop-final-2.png",
         "image_mobile": "shopify:\/\/shop_images\/tsk-webhero-megbday-mobile-final-2.png",
@@ -82,7 +83,6 @@
         "7a7231c3-0dfd-49da-8aae-8eef0b970466",
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC07211.jpg",
         "image_position": "object-center",
