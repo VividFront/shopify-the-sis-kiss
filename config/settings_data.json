@@ -242,6 +242,27 @@
           "font_size": 14,
           "font_family": "inherit"
         }
+      },
+      "14044569291296200651": {
+        "type": "shopify://apps/bundle-builder/blocks/bb-cart-integration-custom/78802baf-205d-4d1d-908c-fae911f24e36",
+        "disabled": false,
+        "settings": {
+          "theme_override": "",
+          "page_cartItemBox": "",
+          "page_cartItem": "",
+          "page_cartSubtotal": "",
+          "page_cartOriginalTotal": "",
+          "page_checkoutButton": "",
+          "drawer_cartItemBox": "",
+          "drawer_cartItem": "",
+          "drawer_cartSubtotal": "",
+          "drawer_cartOriginalTotal": "",
+          "drawer_checkoutButton": "",
+          "cartItemPrice": "",
+          "cartItemLinePrice": "",
+          "cartItemQuantity": "",
+          "observeTargets": ""
+        }
       }
     }
   },
