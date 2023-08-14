@@ -971,6 +971,9 @@ a:hover {
 .static {
   position: static;
 }
+.fixed {
+  position: fixed;
+}
 .\!absolute {
   position: absolute !important;
 }
@@ -1558,6 +1561,11 @@ a:hover {
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
+.flex-grow {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
 .grow {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -1709,6 +1717,9 @@ a:hover {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.resize {
+  resize: both;
 }
 .grid-cols {
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -2556,6 +2567,25 @@ a:hover {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
     var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
     var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition {
+  -webkit-transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, -webkit-box-shadow,
+    -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, -webkit-box-shadow,
+    -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter,
+    -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
 }
 .transition-\[box-shadow\] {
   -webkit-transition-property: -webkit-box-shadow;
@@ -7510,6 +7540,24 @@ footer #contact_form {
     grid-column-end: 7;
   }
 }
+.\[\&\.is-empty\]\:hidden.is-empty {
+  display: none;
+}
+.\[\&\.is-empty_\.cart-heading\]\:hidden.is-empty .cart-heading {
+  display: none;
+}
+.\[\&\.is-empty_\.cart-login\]\:hidden.is-empty .cart-login {
+  display: none;
+}
+.\[\&\.is-empty_\.empty-cart-state\]\:\!flex.is-empty .empty-cart-state {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.\[\&_\+\.sezzle-shopify-info-button\]\:mt-12 + .sezzle-shopify-info-button {
+  margin-top: calc(12rem / 16);
+  margin-top: calc(12rem / var(--vf-font-size-root));
+}
 .disabled\:\[\&_\+\]\:\!border-disabled + :disabled {
   --tw-border-opacity: 1 !important;
   border-color: rgba(222, 222, 222, var(--tw-border-opacity)) !important;
@@ -7577,6 +7625,9 @@ footer #contact_form {
 .\[\&_li\]\:mt-12 li {
   margin-top: calc(12rem / 16);
   margin-top: calc(12rem / var(--vf-font-size-root));
+}
+.\[\&_p\]\:leading-\[32px\] p {
+  line-height: 32px;
 }
 .\[\&_td\]\:py-12 td {
   padding-top: calc(12rem / 16);

@@ -5,12 +5,23 @@
 {%- endif -%}
 
 <div class="container">
-  <div id="tsk-product-grid" class="grid grid-cols gap-x-grid items-start {% if collection.metafields.custom.subcategories == nil %}no-subcategories{% endif %}">
+  <div id="tsk-product-grid" class="grid grid-cols gap-x-grid items-start {% if collection.metafields.custom.subcategories == nil and collection.metafields.custom.product_card_links == nil %}no-subcategories{% endif %}">
     {% if collection.metafields.custom.subcategories != nil %}
       <div class="lg:row-start-1 lg:row-end-2 col-span-6 lg:col-span-9 bg-ui-background rounded-t px-16 pt-18 h-full">
         {% render 'subcategories', categories: collection.metafields.custom.subcategories.value %}
       </div>
-    {% endif %}
+    {% elsif collection.metafields.custom.product_card_links != nil 
+      and collection.metafields.custom.product_card_images != nil
+      and collection.metafields.custom.product_card_titles != nil 
+    %}
+      <div class="lg:row-start-1 lg:row-end-2 col-start-1 col-end-6 lg:col-start-4 lg:col-end-13 bg-ui-background rounded-t px-16 pt-18 h-full">
+        {% render 'subcategories', 
+          product_card_links: collection.metafields.custom.product_card_links.value, 
+          product_card_images: collection.metafields.custom.product_card_images.value,
+          product_card_titles: collection.metafields.custom.product_card_titles.value 
+        %}
+      </div>
+    {% endif  %}
     <div id="collection-filters-grid">
       {% render 'product-grid', collection: collection, section: section %}
     </div>

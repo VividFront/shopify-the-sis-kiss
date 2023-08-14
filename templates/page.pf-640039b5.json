@@ -2,11 +2,8 @@
   "sections": {
     "pf-640039b5": {
       "type": "pf-640039b5",
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "pf-640039b5"
-  ]
+  "order": ["pf-640039b5"]
 }

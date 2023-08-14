@@ -2,11 +2,8 @@
   "sections": {
     "pf-a244a2ea": {
       "type": "pf-a244a2ea",
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "pf-a244a2ea"
-  ]
+  "order": ["pf-a244a2ea"]
 }

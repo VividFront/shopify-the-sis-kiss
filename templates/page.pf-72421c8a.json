@@ -2,11 +2,8 @@
   "sections": {
     "pf-72421c8a": {
       "type": "pf-72421c8a",
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "pf-72421c8a"
-  ]
+  "order": ["pf-72421c8a"]
 }

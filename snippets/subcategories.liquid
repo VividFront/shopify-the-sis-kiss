@@ -1,18 +1,40 @@
 <div class="flex gap-16 pb-32">
-  {% for category in categories %}
-    {% if category.metafields.custom.subcategory_image != blank %}
-      <a class="block flex-[0_1_25%] max-w-[104px] lg:max-w-[186px] group" href="{{ category.url }}">
-        <div class="">
-          {{ category.metafields.custom.subcategory_image | image_url: width: 800 | image_tag:
-            width: category.metafields.custom.subcategory_image.width,
-            class: 'lg:rounded-t aspect-square w-full object-cover',
-            sizes: category.metafields.custom.subcategory_image.sizes,
-            widths: '375, 550, 750',
-            alt: category.metafields.custom.subcategory_image.alt | escape
-          }}
-          <h6 class="lg:rounded-b lg:px-8 lg:pb-8 text-center lg:bg-white group-hover:underline">{{ category.title }}</h6>
-        </div>
-      </a>
-    {% endif %}
-  {% endfor %}
+  {% if categories != blank %}
+    <h4>cats</h4>
+    {% for category in categories %}
+      {% if category.metafields.custom.subcategory_image != blank %}
+        <a class="block flex-[0_1_25%] max-w-[104px] lg:max-w-[186px] group" href="{{ category.url }}">
+          <div class="">
+            {{ category.metafields.custom.subcategory_image | image_url: width: 800 | image_tag:
+              width: category.metafields.custom.subcategory_image.width,
+              class: 'lg:rounded-t aspect-square w-full object-cover',
+              sizes: category.metafields.custom.subcategory_image.sizes,
+              widths: '375, 550, 750',
+              alt: category.metafields.custom.subcategory_image.alt | escape
+            }}
+            <h6 class="lg:rounded-b lg:px-8 lg:pb-8 text-center lg:bg-white group-hover:underline">{{ category.title }}</h6>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% elsif product_card_links != blank %}
+    {% for image in product_card_images %}
+      {% if product_card_links[forloop.index0] != blank %}
+        <a class="block flex-[0_1_25%] max-w-[104px] lg:max-w-[186px] group" href="{{ product_card_links[forloop.index0] }}">
+          <div class="">
+            {{ image | image_url: width: 800 | image_tag:
+              width: image.width,
+              class: 'lg:rounded-t aspect-square w-full object-cover',
+              sizes: image.sizes,
+              widths: '375, 550, 750',
+              alt: image.alt | escape
+            }}
+            {% if product_card_titles[forloop.index0] != blank %}
+              <h6 class="lg:rounded-b lg:px-8 lg:pb-8 text-center lg:bg-white group-hover:underline">{{ product_card_titles[forloop.index0] }}</h6>
+            {% endif %}
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </div>

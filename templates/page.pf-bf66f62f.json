@@ -2,11 +2,8 @@
   "sections": {
     "pf-bf66f62f": {
       "type": "pf-bf66f62f",
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "pf-bf66f62f"
-  ]
+  "order": ["pf-bf66f62f"]
 }

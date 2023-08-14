@@ -4,7 +4,7 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
 {% if cart != empty %}
-  <div class="container{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+  <div class="container{% if cart == empty %} is-empty{% endif %} [&.is-empty]:hidden" id="main-cart-footer" data-id="{{ section.id }}">
     <div class="grid grid-cols">
       <div class="col-span-full lg:col-span-10 lg:col-start-2">
         <div>
@@ -28,7 +28,7 @@
                   {% render block %}
                 {%- when 'subtotal' -%}
                   <div class="js-contents" {{ block.shopify_attributes }}>
-                    <div class="totals !justify-end">
+                    <div class="totals !justify-end [&_+.sezzle-shopify-info-button]:mt-12">
                       <h2 class="font-normal totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
                       <p class="totals__subtotal-value font-bold">{{ cart.total_price | money }}</p>
                     </div>

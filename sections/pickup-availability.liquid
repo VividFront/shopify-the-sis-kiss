@@ -19,6 +19,9 @@
             | t: location_name: closest_location.location.name
           }}
         </p>
+        <div data-vf-availability-times style="display:none">
+          <p class="">{{ closest_location.pick_up_time }}</p>
+        </div>
         <button
           id="ShowPickupAvailabilityDrawer"
           class="pickup-availability-button link link--text underlined-link"
@@ -51,7 +54,7 @@
   </pickup-availability-preview>
 
   <pickup-availability-drawer
-    class="gradient"
+    class="gradient border-border"
     tabindex="-1"
     role="dialog"
     aria-modal="true"
@@ -86,7 +89,7 @@
           <h3 class="h4">{{ availability.location.name | escape }}</h3>
 
           {%- assign address = availability.location.address -%}
-          <address class="pickup-availability-address">
+          <address class="[&_p]:leading-[32px] pickup-availability-address">
             {{ address | format_address }}
 
             {%- if address.phone.size > 0 -%}

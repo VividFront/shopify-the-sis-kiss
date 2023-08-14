@@ -2,11 +2,8 @@
   "sections": {
     "pf-a910c2f7": {
       "type": "pf-a910c2f7",
-      "settings": {
-      }
+      "settings": {}
     }
   },
-  "order": [
-    "pf-a910c2f7"
-  ]
+  "order": ["pf-a910c2f7"]
 }
