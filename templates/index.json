@@ -287,7 +287,7 @@
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "star-charm-bracelet"
+            "product": "radiant-heart-charm"
           }
         }
       },
@@ -296,15 +296,14 @@
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Background.png",
-        "heading": "Summer Trends Guide",
+        "heading": "Limited Edition Charms",
         "body": "Jewelry we are loving at Sis Kiss HQ this season! Shop exclusive Kamp Kiss products that keep the vibes right all summer long.",
         "badge_emoji": "",
         "badge_text": "New This Season",
-        "image": "shopify:\/\/shop_images\/IMG_0243.jpg",
-        "designer_tag": "@allisonkuch",
-        "cta_text": "Shop All Summer",
-        "cta_url": "https:\/\/thesiskiss.com\/collections\/new-arrivals"
+        "image": "shopify:\/\/shop_images\/Media_1-40FF6F1E-E3EB-43C2-8E04-AD7E7B1FF08D.jpg",
+        "designer_tag": "",
+        "cta_text": "Shop Charm Bar",
+        "cta_url": "shopify:\/\/collections\/charm-bar"
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
