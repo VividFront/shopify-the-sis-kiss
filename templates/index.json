@@ -2,7 +2,6 @@
   "sections": {
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
       "type": "home-hero",
-      "disabled": true,
       "blocks": {
         "b1fa8654-1bde-4e56-a4a9-8f4a74395ac6": {
           "type": "subheading",
@@ -14,20 +13,20 @@
         "507c6d37-3da1-48f2-8e83-20b3df62b326": {
           "type": "heading",
           "settings": {
-            "text": "Charm Bar"
+            "text": "44% Off Sitewide"
           }
         },
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2": {
           "type": "body",
           "settings": {
-            "text": "See what the excitement is about."
+            "text": "USE CODE: MEG44"
           }
         },
         "fd92ceac-7245-4615-940f-11e2ed4d36e2": {
           "type": "cta",
           "settings": {
-            "text": "Shop Now",
-            "url": "https:\/\/thesiskiss.com\/collections\/charm-bar"
+            "text": "Shop Meg's Favorites",
+            "url": "https:\/\/thesiskiss.com\/collections\/megs-favorites"
           }
         }
       },
@@ -37,9 +36,10 @@
         "b34253ab-fb9a-4f18-80fb-9c85d6af3ba2",
         "fd92ceac-7245-4615-940f-11e2ed4d36e2"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/tsk-CharmBar-hero-desktop.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/tsk-CharmBar-hero-mobile-3.jpg",
+        "image": "shopify:\/\/shop_images\/tsk-webhero-megbday-desktop-final-2.png",
+        "image_mobile": "shopify:\/\/shop_images\/tsk-webhero-megbday-mobile-final-2.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "content_width": "narrow",
@@ -54,13 +54,13 @@
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
           "settings": {
-            "text": "NEW Water Resistant Jewelry"
+            "text": "Treat yourself"
           }
         },
         "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
           "type": "heading",
           "settings": {
-            "text": "Make A Splash"
+            "text": "Limited Edition Charms"
           }
         },
         "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
@@ -72,8 +72,8 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
           "type": "cta",
           "settings": {
-            "text": "Shop Now",
-            "url": "https:\/\/thesiskiss.com\/collections\/waterproof"
+            "text": "Shop Charm Bar",
+            "url": "https:\/\/thesiskiss.com\/collections\/charm-bar"
           }
         }
       },
@@ -84,9 +84,9 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC07211.jpg",
+        "image": "shopify:\/\/shop_images\/Media_1-40FF6F1E-E3EB-43C2-8E04-AD7E7B1FF08D.jpg",
         "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/DSC07211.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_3.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -218,8 +218,8 @@
           "type": "category",
           "settings": {
             "title": "Necklaces",
-            "product_main": "baguette-burst-necklace",
-            "product_alt_image": "shopify:\/\/shop_images\/DSC03774.jpg",
+            "product_main": "crystal-cross-necklace",
+            "product_alt_image": "shopify:\/\/shop_images\/image_9e99a72c-d0ac-412c-9a38-65951fdfe170.jpg",
             "product_secondary": "custom-my-mantra-name-necklaces",
             "collection": "necklaces"
           }
