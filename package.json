@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "build": "webpack",
-    "dev": "concurrently --raw \"npm:webpack:watch\" \"npm:shopify:serve\"",
+    "dev": "concurrently --raw \"npm:webpack:watch\" \"npm:shopify:dev\"",
     "watch": "npm run dev",
     "switch": "npm run shopify:switch",
     "lint": "eslint --fix --cache --cache-location \"node_modules/.eslintcache\" src/**/*.{js,mjs,cjs} && npm run format && shopify theme check -a",
@@ -15,7 +15,7 @@
     "webpack:watch": "webpack watch",
     "webpack:build": "webpack --mode production",
     "shopify:switch": "dotenv cross-var \"shopify switch --store %SHOPIFY_STORE%\"",
-    "shopify:serve": "cross-var shopify theme serve --port %npm_package_config_port%"
+    "shopify:dev": "cross-var shopify theme dev --store the-sis-kiss.myshopify.com"
   },
   "repository": {
     "type": "git",

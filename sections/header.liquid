@@ -344,7 +344,18 @@
       {{ settings.social_youtube_link | json }},
       {{ settings.social_vimeo_link | json }}
     ],
-    "url": {{ request.origin | append: page.url | json }}
+    "url": {{ request.origin | append: page.url | json }},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ shop.address.address1 }}",
+      "addressLocality": "{{ shop.address.city }}",
+      "addressRegion": "{{ shop.address.province }}",
+      "postalCode": "{{ shop.address.zip }}",
+      "addressCountry": {
+        "@type": "Country",
+        "name": "{{ shop.address.country_code }}"
+      }
+    }
   }
 </script>
 
