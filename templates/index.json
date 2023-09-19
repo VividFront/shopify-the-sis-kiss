@@ -54,13 +54,13 @@
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
           "settings": {
-            "text": "Treat yourself"
+            "text": "✨NEW✨"
           }
         },
         "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
           "type": "heading",
           "settings": {
-            "text": "Limited Edition Charms"
+            "text": "Water Resistant Jewelry"
           }
         },
         "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
@@ -72,8 +72,8 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
           "type": "cta",
           "settings": {
-            "text": "Shop Charm Bar",
-            "url": "https:\/\/thesiskiss.com\/collections\/charm-bar"
+            "text": "Shop Now",
+            "url": "shopify:\/\/collections\/waterproof"
           }
         }
       },
@@ -84,9 +84,9 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Media_1-40FF6F1E-E3EB-43C2-8E04-AD7E7B1FF08D.jpg",
+        "image": "shopify:\/\/shop_images\/DSC07211.jpg",
         "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_3.png",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_12.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -281,13 +281,13 @@
         "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
           "type": "product",
           "settings": {
-            "product": "charm-me-custom-bracelet"
+            "product": "roll-the-dice-charm"
           }
         },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "star-charm-bracelet"
+            "product": "radiant-heart-charm"
           }
         }
       },
@@ -296,15 +296,15 @@
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97"
       ],
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/Background.png",
-        "heading": "Summer Trends Guide",
-        "body": "Jewelry we are loving at Sis Kiss HQ this season! Shop exclusive Kamp Kiss products that keep the vibes right all summer long.",
+        "background_image": "shopify:\/\/shop_images\/TSK_New_This_Season_Background_1.png",
+        "heading": "Limited Edition Charms",
+        "body": "Glam up for the upcoming season with our new collection of limited edition fall charms. Now is the perfect time to create the piece that is uniquely you, sis!\nGet them before they are gone!",
         "badge_emoji": "",
         "badge_text": "New This Season",
-        "image": "shopify:\/\/shop_images\/IMG_0243.jpg",
-        "designer_tag": "@allisonkuch",
-        "cta_text": "Shop All Summer",
-        "cta_url": "https:\/\/thesiskiss.com\/collections\/new-arrivals"
+        "image": "shopify:\/\/shop_images\/Media_1-40FF6F1E-E3EB-43C2-8E04-AD7E7B1FF08D.jpg",
+        "designer_tag": "",
+        "cta_text": "Shop Charm Bar",
+        "cta_url": "shopify:\/\/collections\/charm-bar"
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
