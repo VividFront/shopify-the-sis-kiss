@@ -318,6 +318,47 @@
   {% if settings.accessibe_script != blank %}
     {{ settings.accessibe_script }}
   {% endif %}
+
+    <!-- Klaviyo Back-in-stock -->
+    {%- if template contains 'product' -%}
+    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+    <script>
+      var klaviyo = klaviyo || [];
+      klaviyo.init({
+        account: "RbUEak",
+        list: "SyqUtx",
+        platform: "shopify"
+      });
+      klaviyo.enable("backinstock", { 
+        trigger: {
+          product_page_text: "Email Me When Back In Stock",
+          product_page_class: 'flex justify-center items-center gap-12 rounded-[24px] py-12 px-16 text-h6 font-bold bg-primary hover:bg-primary-hover active:bg-primary-pressed text-white w-full disabled:bg-disabled disabled:text-disabled-high-contrast',
+          product_page_text_align: 'center',
+          product_page_margin: '0px',
+          product_page_width: '100%',
+          alternate_anchor: "AddToCart",
+          replace_anchor: true
+        },
+        modal: {
+          headline: "{product_name}",
+          body_content: "We’ll send you a notification when this item is back in stock.",
+          email_field_label: "Email Address",
+          button_label: "Notify me when available",
+          subscription_success_label: "We will be in touch!",
+          background_color: "default",
+          text_color: "#071d30",
+          button_text_color: "#fff",
+          button_background_color: "#000",
+          error_background_color: "default",
+          error_text_color: "default",
+          success_background_color: "default",
+          success_text_color: "default",
+          font_family: "Quasimoda, Helvetica, sans-serif",
+          headers_font_family: "Quasimoda, Helvetica, sans-serif"
+        }
+      });
+    </script>
+  {%- endif -%}
 	</body>
 </html>
 
