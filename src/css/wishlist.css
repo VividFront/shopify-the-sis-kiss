@@ -10,7 +10,7 @@
   @apply pb-32;
 }
 
-.wishlist-whale-wrapper .wishlist-form-Items-Container {
+#wishlist-whale .wishlist-whale-wrapper .wishlist-form-Items-Container {
   @apply !flex h-auto !p-8 bg-ui-background rounded mx-0 md:mx-16 !pb-24 gap-y-16;
 }
 

@@ -4153,7 +4153,7 @@ input[type='search'] {
   padding-bottom: calc(32rem / 16);
   padding-bottom: calc(32rem / var(--vf-font-size-root));
 }
-.wishlist-whale-wrapper .wishlist-form-Items-Container {
+#wishlist-whale .wishlist-whale-wrapper .wishlist-form-Items-Container {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -4162,7 +4162,7 @@ input[type='search'] {
   padding-bottom: calc(24rem / 16) !important;
   padding-bottom: calc(24rem / var(--vf-font-size-root)) !important;
 }
-.wishlist-whale-wrapper .wishlist-form-Items-Container {
+#wishlist-whale .wishlist-whale-wrapper .wishlist-form-Items-Container {
   margin-left: 0px;
   margin-right: 0px;
   height: auto;
@@ -4175,7 +4175,7 @@ input[type='search'] {
   background-color: rgb(var(--vf-color-ui-background) / var(--tw-bg-opacity));
 }
 @media (min-width: 768px) {
-  .wishlist-whale-wrapper .wishlist-form-Items-Container {
+  #wishlist-whale .wishlist-whale-wrapper .wishlist-form-Items-Container {
     margin-left: calc(16rem / 16);
     margin-left: calc(16rem / var(--vf-font-size-root));
     margin-right: calc(16rem / 16);
