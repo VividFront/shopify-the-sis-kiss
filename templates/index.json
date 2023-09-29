@@ -97,22 +97,16 @@
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
       "type": "home-trending",
       "blocks": {
-        "e585fc6c-2b93-4fed-a45c-02a7ba737714": {
+        "efd4c4a8-a61b-4ae7-9232-eb925566e1bb": {
           "type": "product",
           "settings": {
-            "product": "art-of-sucre-x-the-sis-kiss"
+            "product": "birthstone-charm"
           }
         },
-        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
+        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
           "type": "product",
           "settings": {
-            "product": "coin-initial-charm"
-          }
-        },
-        "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
-          "type": "product",
-          "settings": {
-            "product": "infinity-crystal-hoops"
+            "product": "zodiac-charm"
           }
         },
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
@@ -121,54 +115,46 @@
             "product": "pearl-initial-charm"
           }
         },
-        "b57d275a-8796-4afc-ac7f-e148534af010": {
-          "type": "product",
-          "settings": {
-            "product": "something-blue-charm"
-          }
-        },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
             "product": "engraved-heart-charm"
           }
         },
-        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3": {
+        "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
-            "product": "tsk-your-way-figaro-water-bottle-accessory"
+            "product": "infinity-crystal-hoops"
           }
         },
-        "7c90dd31-0865-4fe9-9fb4-915ed95c1bd0": {
+        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
           "type": "product",
           "settings": {
-            "product": "tsk-your-way-paperclip-water-bottle-accessory"
+            "product": "coin-initial-charm"
           }
         },
-        "54f7ed4b-f4f7-4a0d-aa12-4988284629d4": {
+        "b57d275a-8796-4afc-ac7f-e148534af010": {
           "type": "product",
           "settings": {
-            "product": "the-essentials-bold-earring-set"
+            "product": "something-blue-charm"
           }
         },
-        "f381268f-c79e-4fb1-a6a7-a906693e1128": {
+        "7c628292-5ec0-4b6d-bf1c-8d85b7c3806c": {
           "type": "product",
           "settings": {
-            "product": "the-essentials-slim-earring-set"
+            "product": ""
           }
         }
       },
       "block_order": [
-        "e585fc6c-2b93-4fed-a45c-02a7ba737714",
-        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
-        "5a814dbd-1bc3-48cb-9648-788ee66247e5",
+        "efd4c4a8-a61b-4ae7-9232-eb925566e1bb",
+        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a",
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
-        "b57d275a-8796-4afc-ac7f-e148534af010",
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
-        "0f0c72ae-5798-47f0-bf9b-99f6efe373a3",
-        "7c90dd31-0865-4fe9-9fb4-915ed95c1bd0",
-        "54f7ed4b-f4f7-4a0d-aa12-4988284629d4",
-        "f381268f-c79e-4fb1-a6a7-a906693e1128"
+        "5a814dbd-1bc3-48cb-9648-788ee66247e5",
+        "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
+        "b57d275a-8796-4afc-ac7f-e148534af010",
+        "7c628292-5ec0-4b6d-bf1c-8d85b7c3806c"
       ],
       "settings": {
         "collection_text": "<p>Shop All <\/p><p>Best Sellers<\/p>",
