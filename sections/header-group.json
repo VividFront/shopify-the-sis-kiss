@@ -9,14 +9,13 @@
           "type": "announcement",
           "settings": {
             "text": "Our website got a face-lift! Shop the new experience now!",
-            "link": ""
+            "link": "shopify:\/\/collections\/a-double-dose"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
