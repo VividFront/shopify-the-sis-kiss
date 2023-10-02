@@ -8,15 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Our website got a face-lift! Shop the new experience now!",
-            "link": ""
+            "text": "Breast Cancer Awareness Month 🎗️🎀 Proceeds from Hope Pink Link Bracelet are donated to BCRF",
+            "link": "shopify:\/\/products\/pink-hero-bead-and-gold-bracelet"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
