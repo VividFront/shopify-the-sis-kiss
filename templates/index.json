@@ -321,7 +321,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/shipping-icon.png",
             "heading": "Free Shipping*",
-            "body": "<p>Free shipping on all domestic US orders when you spend $150.<\/p>",
+            "body": "<p>Free shipping on all domestic US orders when you spend $75.<\/p>",
             "large_text": ""
           }
         },
