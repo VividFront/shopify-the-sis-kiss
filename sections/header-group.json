@@ -8,14 +8,12 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Our website got a face-lift! Shop the new experience now!",
-            "link": "shopify:\/\/collections\/a-double-dose"
+            "text": "Breast Cancer Awareness Month 🎗️🎀 Proceeds from Hope Pink Link Bracelet are donated to BCRF",
+            "link": "shopify://products/pink-hero-bead-and-gold-bracelet"
           }
         }
       },
-      "block_order": [
-        "announcement-bar-0"
-      ],
+      "block_order": ["announcement-bar-0"],
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
@@ -52,11 +50,11 @@
             "list_3_heading": "Categories",
             "list_3_menu": "jewelry-collabs",
             "image_heading": "Featured Collection",
-            "image": "shopify:\/\/shop_images\/Untitled_design_17.png",
+            "image": "shopify://shop_images/Untitled_design_17.png",
             "callout_heading": "Beaded Jewelry",
             "callout_body": "Dive into summer with colorful beaded styles!",
             "link_text": "Shop Now",
-            "link_url": "shopify:\/\/collections\/beaded-jewelry"
+            "link_url": "shopify://collections/beaded-jewelry"
           }
         },
         "e027b231-35b0-45e5-ac9e-2e531511e453": {
@@ -67,17 +65,17 @@
             "list_1_heading": "Categories",
             "list_1_menu": "custom-categories",
             "image_1_heading": "",
-            "image_1": "shopify:\/\/shop_images\/DSC01812_1.jpg",
+            "image_1": "shopify://shop_images/DSC01812_1.jpg",
             "callout_1_heading": "Charm Bar",
             "callout_1_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
             "link_1_text": "Shop Now",
-            "link_1_url": "https:\/\/thesiskiss.com\/collections\/charm-bar",
+            "link_1_url": "https://thesiskiss.com/collections/charm-bar",
             "image_2_heading": "",
-            "image_2": "shopify:\/\/shop_images\/Untitled_design_18.png",
+            "image_2": "shopify://shop_images/Untitled_design_18.png",
             "callout_2_heading": "TSK Your Way",
             "callout_2_body": "Want one of our best-selling custom name necklaces without the wait? Custom styles created in just 5 business days!",
             "link_2_text": "Shop Now",
-            "link_2_url": "https:\/\/thesiskiss.com\/apps\/bundles\/bundle\/132406"
+            "link_2_url": "https://thesiskiss.com/apps/bundles/bundle/132406"
           }
         },
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
@@ -92,18 +90,18 @@
             "list_3_heading": "",
             "list_3_menu": "",
             "image_heading": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_22.png",
+            "image": "shopify://shop_images/Untitled_design_22.png",
             "callout_heading": "TSK Atelier Diamonds",
             "callout_body": "Elevate your accessory collection with modern, made-to-order diamond pieces from the badass founder of The Sis Kiss",
             "link_text": "Shop Now",
-            "link_url": "shopify:\/\/collections\/tsk-atelier-1979"
+            "link_url": "shopify://collections/tsk-atelier-1979"
           }
         },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
           "type": "nav_item",
           "settings": {
             "title": "Permanent Jewelry",
-            "link": "shopify:\/\/products\/sis-kiss-links-permanent-bracelets"
+            "link": "shopify://products/sis-kiss-links-permanent-bracelets"
           }
         },
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
@@ -131,11 +129,11 @@
             "list_3_heading": "",
             "list_3_menu": "",
             "image_heading": "On-Sale Styles",
-            "image": "shopify:\/\/shop_images\/EvilEyeCoins.jpg",
+            "image": "shopify://shop_images/EvilEyeCoins.jpg",
             "callout_heading": "Last Chance Jewelry",
             "callout_body": "These styles won't last long, sis! Shop on-sale jewelry while supplies last.",
             "link_text": "Shop Now",
-            "link_url": "https:\/\/thesiskiss.com\/collections\/last-chance"
+            "link_url": "https://thesiskiss.com/collections/last-chance"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
@@ -145,7 +143,7 @@
             "link": "",
             "list_1_heading": "",
             "list_1_menu": "about-us",
-            "image": "shopify:\/\/shop_images\/about.jpg"
+            "image": "shopify://shop_images/about.jpg"
           }
         }
       },
@@ -160,15 +158,12 @@
         "d83de503-6965-4841-aef4-e189be6e7c98"
       ],
       "settings": {
-        "shipping_text": "FREE domestic shipping on all orders $150+!",
+        "shipping_text": "FREE domestic shipping on all orders $75+!",
         "logo_position": "top-center",
         "sticky_header_type": "always",
         "mobile_logo_position": "center"
       }
     }
   },
-  "order": [
-    "announcement-bar",
-    "header"
-  ]
+  "order": ["announcement-bar", "header"]
 }

@@ -2134,6 +2134,9 @@ a:hover {
   padding: calc(32rem / 16) 0 calc(40rem / 16);
   padding: var(--vf-padding-section-small);
 }
+.p-0 {
+  padding: 0px;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2534,6 +2537,9 @@ a:hover {
 }
 .underline {
   text-decoration-line: underline;
+}
+.decoration-white {
+  text-decoration-color: #fff;
 }
 .shadow {
   --tw-shadow: var(--vf-box-shadow);
@@ -7666,6 +7672,10 @@ footer #contact_form {
 }
 .\[\&_p\]\:leading-\[32px\] p {
   line-height: 32px;
+}
+.\[\&_svg\]\:w-20 svg {
+  width: calc(20rem / 16);
+  width: calc(20rem / var(--vf-font-size-root));
 }
 .\[\&_td\]\:py-12 td {
   padding-top: calc(12rem / 16);
