@@ -1,0 +1,26 @@
+<div class="p-section-md">
+  <div class="container">
+    {{ section.settings.embed_code }}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Map Embed",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "html",
+      "id": "embed_code",
+      "label": "Embed Code"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Map Embed"
+    }
+  ]
+}
+{% endschema %}
