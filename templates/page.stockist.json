@@ -3,7 +3,7 @@
     "banner": {
       "type": "page-banner",
       "settings": {
-        "heading": "Find Permanent Jewelry Near You",
+        "heading": "Permanent Jewelry Near You",
         "body": "",
         "background_color": "bg-ui-pink"
       }
@@ -11,7 +11,7 @@
     "f0c7ce33-86e6-43d0-8554-3130803c9853": {
       "type": "map-embed",
       "settings": {
-        "embed_code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u19209\">Loading store locator\nfrom <a href=\"https://stockist.co\">Stockist store locator</a>...</div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','//stockist.co/embed/v1/widget.min.js');\n</script>\n<!-- End Stockist.co widget -->"
+        "embed_code": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u19209\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->"
       }
     },
     "007ad14e-ea33-4102-b80d-cc908ac1bc34": {
@@ -20,7 +20,7 @@
         "heading": "Have a Question Now?",
         "body": "Reach out to us and let us help!",
         "cta_text": "Contact Us",
-        "cta_url": "shopify://pages/contact-us-new",
+        "cta_url": "shopify:\/\/pages\/contact-us-new",
         "theme": "dark"
       }
     }
