@@ -2114,6 +2114,9 @@ a:hover {
   padding: calc(6rem / 16) !important;
   padding: calc(6rem / var(--vf-font-size-root)) !important;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-12 {
   padding: calc(12rem / 16);
   padding: calc(12rem / var(--vf-font-size-root));
@@ -2133,9 +2136,6 @@ a:hover {
 .p-section-sm {
   padding: calc(32rem / 16) 0 calc(40rem / 16);
   padding: var(--vf-padding-section-small);
-}
-.p-0 {
-  padding: 0px;
 }
 .px-0 {
   padding-left: 0px;

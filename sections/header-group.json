@@ -65,17 +65,17 @@
             "list_1_heading": "Categories",
             "list_1_menu": "custom-categories",
             "image_1_heading": "",
-            "image_1": "shopify://shop_images/DSC01812_1.jpg",
-            "callout_1_heading": "Charm Bar",
-            "callout_1_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
+            "image_1": "shopify://shop_images/Untitled_design_18_2794716a-8c71-4125-8c4d-3913e5eefaa7.png",
+            "callout_1_heading": "TSK Your Way",
+            "callout_1_body": "Want one of our best-selling custom name necklaces without the wait? Custom styles created in just 5 business days!",
             "link_1_text": "Shop Now",
             "link_1_url": "https://thesiskiss.com/collections/charm-bar",
             "image_2_heading": "",
-            "image_2": "shopify://shop_images/Untitled_design_18.png",
-            "callout_2_heading": "TSK Your Way",
-            "callout_2_body": "Want one of our best-selling custom name necklaces without the wait? Custom styles created in just 5 business days!",
+            "image_2": "shopify://shop_images/DSC01812_1_c45783c1-2796-48f4-8c3b-d97cb6b356de.jpg",
+            "callout_2_heading": "Charm Bar",
+            "callout_2_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
             "link_2_text": "Shop Now",
-            "link_2_url": "https://thesiskiss.com/apps/bundles/bundle/132406"
+            "link_2_url": "shopify://collections/charm-bar"
           }
         },
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
@@ -97,6 +97,25 @@
             "link_url": "shopify://collections/tsk-atelier-1979"
           }
         },
+        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c": {
+          "type": "menu_one_image",
+          "settings": {
+            "title": "Charm Bar",
+            "link": "",
+            "list_1_heading": "",
+            "list_1_menu": "",
+            "list_2_heading": "",
+            "list_2_menu": "",
+            "list_3_heading": "",
+            "list_3_menu": "",
+            "image_heading": "",
+            "image": "shopify://shop_images/f74c5a00-5730-49a3-9d92-c210d07a410c_09cca79c-bd9a-4f33-827f-07c8494db2a6.jpg",
+            "callout_heading": "Charm Bar",
+            "callout_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/charm-bar"
+          }
+        },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
           "type": "nav_item",
           "settings": {
@@ -107,7 +126,7 @@
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb": {
           "type": "menu_no_image",
           "settings": {
-            "title": "Gifts & Accessories",
+            "title": "Gifts",
             "link": "",
             "list_1_heading": "Categories",
             "list_1_menu": "gift-categories",
@@ -152,6 +171,7 @@
         "3eefb546-19a9-45f4-b019-741bc5d870ae",
         "e027b231-35b0-45e5-ac9e-2e531511e453",
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
+        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c",
         "10a917bf-6bdd-48c6-b641-2c32af38ef52",
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
         "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2",
