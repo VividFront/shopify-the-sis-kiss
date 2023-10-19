@@ -84,7 +84,7 @@
           "type": "menu_one_image",
           "settings": {
             "title": "Fine Jewelry",
-            "link": "",
+            "link": "shopify:\/\/collections\/tsk-atelier-1979",
             "list_1_heading": "",
             "list_1_menu": "",
             "list_2_heading": "",
@@ -99,23 +99,11 @@
             "link_url": "shopify:\/\/collections\/tsk-atelier-1979"
           }
         },
-        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c": {
-          "type": "menu_one_image",
+        "7fb787fc-077c-4ff0-b67c-cf740ceb6c52": {
+          "type": "nav_item",
           "settings": {
             "title": "Charm Bar",
-            "link": "",
-            "list_1_heading": "",
-            "list_1_menu": "",
-            "list_2_heading": "",
-            "list_2_menu": "",
-            "list_3_heading": "",
-            "list_3_menu": "",
-            "image_heading": "",
-            "image": "shopify:\/\/shop_images\/f74c5a00-5730-49a3-9d92-c210d07a410c_09cca79c-bd9a-4f33-827f-07c8494db2a6.jpg",
-            "callout_heading": "Charm Bar",
-            "callout_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
-            "link_text": "Shop Now",
-            "link_url": "shopify:\/\/collections\/charm-bar"
+            "link": "shopify:\/\/collections\/charm-bar"
           }
         },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
@@ -138,8 +126,26 @@
             "list_3_menu": ""
           }
         },
+        "d468b5d0-4562-47ea-80c1-5a2471e385bb": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Sale",
+            "link": "shopify:\/\/collections\/last-chance"
+          }
+        },
+        "d83de503-6965-4841-aef4-e189be6e7c98": {
+          "type": "menu_large_image",
+          "settings": {
+            "title": "About Us",
+            "link": "",
+            "list_1_heading": "",
+            "list_1_menu": "about-us",
+            "image": "shopify:\/\/shop_images\/about.jpg"
+          }
+        },
         "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2": {
           "type": "menu_one_image",
+          "disabled": true,
           "settings": {
             "title": "Sale",
             "link": "",
@@ -157,14 +163,24 @@
             "link_url": "https:\/\/thesiskiss.com\/collections\/last-chance"
           }
         },
-        "d83de503-6965-4841-aef4-e189be6e7c98": {
-          "type": "menu_large_image",
+        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c": {
+          "type": "menu_one_image",
+          "disabled": true,
           "settings": {
-            "title": "About Us",
+            "title": "Charm Bar",
             "link": "",
             "list_1_heading": "",
-            "list_1_menu": "about-us",
-            "image": "shopify:\/\/shop_images\/about.jpg"
+            "list_1_menu": "",
+            "list_2_heading": "",
+            "list_2_menu": "",
+            "list_3_heading": "",
+            "list_3_menu": "",
+            "image_heading": "",
+            "image": "shopify:\/\/shop_images\/f74c5a00-5730-49a3-9d92-c210d07a410c_09cca79c-bd9a-4f33-827f-07c8494db2a6.jpg",
+            "callout_heading": "Charm Bar",
+            "callout_body": "Create your own custom necklace or bracelet with our new, exclusive Charm Bar collection!",
+            "link_text": "Shop Now",
+            "link_url": "shopify:\/\/collections\/charm-bar"
           }
         }
       },
@@ -173,11 +189,13 @@
         "3eefb546-19a9-45f4-b019-741bc5d870ae",
         "e027b231-35b0-45e5-ac9e-2e531511e453",
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
-        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c",
+        "7fb787fc-077c-4ff0-b67c-cf740ceb6c52",
         "10a917bf-6bdd-48c6-b641-2c32af38ef52",
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
+        "d468b5d0-4562-47ea-80c1-5a2471e385bb",
+        "d83de503-6965-4841-aef4-e189be6e7c98",
         "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2",
-        "d83de503-6965-4841-aef4-e189be6e7c98"
+        "d25aa7d5-e113-4125-8bb1-9f438d2cf10c"
       ],
       "settings": {
         "shipping_text": "FREE domestic shipping on all orders $75+!",
