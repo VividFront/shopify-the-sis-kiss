@@ -4398,6 +4398,12 @@ sesami-button button:hover {
     var(--vf-color-primary-hover) / var(--tw-bg-opacity)
   ) !important;
 }
+.stockist-result-address {
+  display: none;
+}
+.stockist-result-details {
+  margin-top: 0px;
+}
 @-webkit-keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;
