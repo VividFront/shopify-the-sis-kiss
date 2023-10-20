@@ -139,12 +139,6 @@
           "settings": {
             "product": "something-blue-charm"
           }
-        },
-        "7c628292-5ec0-4b6d-bf1c-8d85b7c3806c": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
         }
       },
       "block_order": [
@@ -154,8 +148,7 @@
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
-        "b57d275a-8796-4afc-ac7f-e148534af010",
-        "7c628292-5ec0-4b6d-bf1c-8d85b7c3806c"
+        "b57d275a-8796-4afc-ac7f-e148534af010"
       ],
       "settings": {
         "collection_text": "<p>Shop All </p><p>Best Sellers</p>",
