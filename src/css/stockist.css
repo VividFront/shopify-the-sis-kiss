@@ -1,0 +1,7 @@
+.stockist-result-address {
+  @apply hidden;
+}
+
+.stockist-result-details {
+  @apply mt-0;
+}

@@ -1,0 +1,18 @@
+<script type="text/javascript">
+   
+        function add_btnMiniCart() {
+            var btnMiniCart = document.createElement("a");
+            btnMiniCart.setAttribute("id", "gsxbuttonnow");
+            btnMiniCart.setAttribute("style", "border-radius: 25px; font-size:17px;");
+            btnMiniCart.setAttribute("class", "button full");
+            btnMiniCart.setAttribute("href", "/pages/globalshopex-checkout");
+            btnMiniCart.innerText = "International Checkout";
+            jQuery("#slidecart-checkout-form").after(btnMiniCart);
+        }
+
+        setInterval(function () {
+            if (jQuery("#gsxbuttonnow").length == 0) {
+                add_btnMiniCart();
+            }
+        }, 500);
+</script>
