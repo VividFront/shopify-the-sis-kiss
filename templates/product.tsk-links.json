@@ -24,9 +24,17 @@
         "5d95a708-54d1-4814-aefc-0a2ce103d459": {
           "type": "cta",
           "settings": {
-            "text": "Make An Appointment",
+            "text": "Make An Appt at HQ",
             "anchor": "#product-section",
             "url": ""
+          }
+        },
+        "ea0c94e6-56f4-4d14-ae93-cbacbddbd63c": {
+          "type": "cta",
+          "settings": {
+            "text": "Book Appt In Your Area",
+            "anchor": "",
+            "url": "shopify://pages/find-linkers"
           }
         }
       },
@@ -34,7 +42,8 @@
         "9041d596-7a43-42aa-b10c-3fd773c0728e",
         "679054a2-51ea-43ab-82fc-85edeab76720",
         "f3dfa036-1021-4149-b780-0d3806c801a7",
-        "5d95a708-54d1-4814-aefc-0a2ce103d459"
+        "5d95a708-54d1-4814-aefc-0a2ce103d459",
+        "ea0c94e6-56f4-4d14-ae93-cbacbddbd63c"
       ],
       "settings": {
         "video_url": "https://cdn.shopify.com/videos/c/o/v/ac0d7cc36901413fac8a95449ae9056a.mov"
