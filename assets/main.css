@@ -2114,6 +2114,9 @@ a:hover {
   padding: calc(6rem / 16) !important;
   padding: calc(6rem / var(--vf-font-size-root)) !important;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-12 {
   padding: calc(12rem / 16);
   padding: calc(12rem / var(--vf-font-size-root));
@@ -2133,9 +2136,6 @@ a:hover {
 .p-section-sm {
   padding: calc(32rem / 16) 0 calc(40rem / 16);
   padding: var(--vf-padding-section-small);
-}
-.p-0 {
-  padding: 0px;
 }
 .px-0 {
   padding-left: 0px;
@@ -4397,6 +4397,12 @@ sesami-button button:hover {
   background-color: rgb(
     var(--vf-color-primary-hover) / var(--tw-bg-opacity)
   ) !important;
+}
+.stockist-result-address {
+  display: none;
+}
+.stockist-result-details {
+  margin-top: 0px;
 }
 @-webkit-keyframes placeHolderShimmer {
   0% {
@@ -7346,6 +7352,10 @@ footer #contact_form {
   }
   .lg\:gap-0 {
     gap: 0px;
+  }
+  .lg\:gap-24 {
+    gap: calc(24rem / 16);
+    gap: calc(24rem / var(--vf-font-size-root));
   }
   .lg\:gap-32 {
     gap: calc(32rem / 16);
