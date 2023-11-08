@@ -7353,6 +7353,10 @@ footer #contact_form {
   .lg\:gap-0 {
     gap: 0px;
   }
+  .lg\:gap-24 {
+    gap: calc(24rem / 16);
+    gap: calc(24rem / var(--vf-font-size-root));
+  }
   .lg\:gap-32 {
     gap: calc(32rem / 16);
     gap: calc(32rem / var(--vf-font-size-root));
@@ -7360,10 +7364,6 @@ footer #contact_form {
   .lg\:gap-grid {
     gap: 16px;
     gap: var(--vf-grid-gap);
-  }
-  .lg\:gap-24 {
-    gap: calc(24rem / 16);
-    gap: calc(24rem / var(--vf-font-size-root));
   }
   .lg\:gap-x-24 {
     -webkit-column-gap: calc(24rem / 16);
