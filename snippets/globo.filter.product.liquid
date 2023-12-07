@@ -63,7 +63,7 @@
   {%- assign ratio = 1 -%}
   {%- endif -%}
 
-  <li{% if showPageData %} data-page="{{page}}" {% endif %} class="col-span-1 block">
+  <li{% if showPageData %} data-page="{{page}}" {% endif %} class="block col-span-1">
     <div class="flex flex-col">
       <div class="relative"> 
         {%- if card_product.featured_image -%} <div class="card__media">
@@ -94,10 +94,28 @@
             product.tags contains 'badge:new' or 
             product.tags contains 'badge:trending' or 
             product.tags contains 'badge:water resistant' or 
-            product.tags contains 'badge:limited' 
+            product.tags contains 'badge:limited' or 
+            product.tags contains 'badge:$10 Gift' or
+            product.tags contains 'badge:$20 Gift' or
+            product.tags contains 'badge:$30 Gift'
           -%}
           {% assign badge_classes = '!flex items-center gap-x-4 shadow-xs rounded-[4px] z-[1] bg-white py-2 px-8 text-body-copy-small' %}
           <div class="!absolute top-12 left-8 !flex gap-4 flex-wrap">
+            {%- if product.tags contains 'badge:$10 Gift' -%}
+              <div class="{{ badge_classes }}">
+                <img src="{% endraw %}{{ settings.emoji_gift_10 }}{% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
+              </div>
+            {%- endif -%}
+            {%- if product.tags contains 'badge:$20 Gift' -%}
+              <div class="{{ badge_classes }}">
+                <img src="{% endraw %}{{ settings.emoji_gift_20 }}{% raw %}" width="16" height="16"><span class="shrink-0">$20 Gift</span>
+              </div>
+            {%- endif -%}
+            {%- if product.tags contains 'badge:$30 Gift' -%}
+              <div class="{{ badge_classes }}">
+                <img src="{% endraw %}{{ settings.emoji_gift_30 }}{% raw %}" width="16" height="16"><span class="shrink-0">$30 Gift</span>
+              </div>
+            {%- endif -%}
             {%- if product.tags contains 'badge:new' -%}
               <div class="{{ badge_classes }}">
                 <img src="{% endraw %}{{ settings.emoji_new }}{% raw %}" width="16" height="16"><span class="shrink-0">New</span>
@@ -176,7 +194,7 @@
                     </span>
                   {%- endunless -%}
                   <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-                  <span class="price-item price-item--sale price-item--last font-bold">
+                  <span class="font-bold price-item price-item--sale price-item--last">
                     {{ money_price }}
                   </span>
                 </div>
