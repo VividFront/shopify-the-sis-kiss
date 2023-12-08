@@ -60,6 +60,21 @@
         "type": "url",
         "id": "emoji_water",
         "label": "Water"
+      },
+      {
+        "type": "url",
+        "id": "emoji_gift_10",
+        "label": "$10 Gift"
+      },
+      {
+        "type": "url",
+        "id": "emoji_gift_20",
+        "label": "$20 Gift"
+      },
+      {
+        "type": "url",
+        "id": "emoji_gift_30",
+        "label": "$30 Gift"
       }
     ]
   },
