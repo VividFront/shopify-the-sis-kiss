@@ -100,43 +100,61 @@
         "efd4c4a8-a61b-4ae7-9232-eb925566e1bb": {
           "type": "product",
           "settings": {
-            "product": "birthstone-charm"
+            "product": "custom-my-mantra-name-necklaces"
           }
         },
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
           "type": "product",
           "settings": {
-            "product": "zodiac-charm"
+            "product": "handwritten-name-necklace"
           }
         },
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
           "type": "product",
           "settings": {
-            "product": "pearl-initial-charm"
+            "product": "crystal-cross-necklace"
           }
         },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "engraved-heart-charm"
+            "product": "loverly-crystal-bar-necklace"
           }
         },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
-            "product": "infinity-crystal-hoops"
+            "product": "loverly-crystal-dotted-necklace"
           }
         },
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
           "type": "product",
           "settings": {
-            "product": "coin-initial-charm"
+            "product": "loverly-gold-earrings"
           }
         },
         "b57d275a-8796-4afc-ac7f-e148534af010": {
           "type": "product",
           "settings": {
-            "product": "something-blue-charm"
+            "product": "the-blanche-ring"
+          }
+        },
+        "762e1eb0-21fb-4ffc-917f-69496c668d0c": {
+          "type": "product",
+          "settings": {
+            "product": "the-dorothy-ring"
+          }
+        },
+        "dc61ddd6-2d07-40f2-b5fd-4df4440590b4": {
+          "type": "product",
+          "settings": {
+            "product": "coin-initial-charm"
+          }
+        },
+        "92e53095-2c2d-4326-b521-de306ee70c63": {
+          "type": "product",
+          "settings": {
+            "product": "birthstone-charm"
           }
         }
       },
@@ -147,7 +165,10 @@
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
-        "b57d275a-8796-4afc-ac7f-e148534af010"
+        "b57d275a-8796-4afc-ac7f-e148534af010",
+        "762e1eb0-21fb-4ffc-917f-69496c668d0c",
+        "dc61ddd6-2d07-40f2-b5fd-4df4440590b4",
+        "92e53095-2c2d-4326-b521-de306ee70c63"
       ],
       "settings": {
         "collection_text": "<p>Shop All <\/p><p>Best Sellers<\/p>",
