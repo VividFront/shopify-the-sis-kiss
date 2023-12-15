@@ -53,6 +53,7 @@
       "blocks": {
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Free Shipping, today only!"
           }
@@ -60,13 +61,13 @@
         "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
           "type": "heading",
           "settings": {
-            "text": "Time is ticking, sis."
+            "text": "Shiny & Bright ✨"
           }
         },
         "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
           "type": "body",
           "settings": {
-            "text": "Today is your last chance to order your goodies to get them in time to put under the tree!"
+            "text": "Add a little sparkle to every occasion this holiday season."
           }
         },
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {

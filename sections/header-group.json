@@ -11,18 +11,10 @@
             "text": "Gifts under $30 | Shop Now >",
             "link": "shopify:\/\/collections\/stocking-stuffers-gifts"
           }
-        },
-        "0b5851f2-210e-41e8-ac12-34a25be5bf19": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free Shipping | Today Only! | Order by tonight to receive your order by 12\/24",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "0b5851f2-210e-41e8-ac12-34a25be5bf19"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "accent-1",
@@ -206,7 +198,7 @@
         "d25aa7d5-e113-4125-8bb1-9f438d2cf10c"
       ],
       "settings": {
-        "shipping_text": "FREE domestic shipping on all orders, today only!",
+        "shipping_text": "FREE domestic shipping on all orders over $75",
         "logo_position": "top-center",
         "sticky_header_type": "always",
         "mobile_logo_position": "center"
