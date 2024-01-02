@@ -7,6 +7,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Gifts under $30 | Shop Now >",
             "link": "shopify:\/\/collections\/stocking-stuffers-gifts"
@@ -16,6 +17,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
