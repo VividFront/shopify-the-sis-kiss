@@ -8,6 +8,11 @@
             btnMiniCart.setAttribute("href", "/pages/globalshopex-checkout");
             btnMiniCart.innerText = "International Checkout";
             jQuery("#slidecart-checkout-form").after(btnMiniCart);
+
+            setTimeout(() => {
+                document.querySelector('#gsxbuttonnow[data-route-href="https://thesiskiss.com/checkout"]').setAttribute("style", "display: none !important");
+                document.querySelector('#gsxbuttonnow[href="/pages/globalshopex-checkout"]').setAttribute("style", "display: block !important; border-radius: 30px; font-size: 17px;"); 
+            }, 2000);
         }
 
         setInterval(function () {
