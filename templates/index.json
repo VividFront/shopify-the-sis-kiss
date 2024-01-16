@@ -83,6 +83,7 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/TSK_Mobile_Hero_1_18f28366-cb62-4de8-8b55-d80030478572.png",
         "image_position": "object-center",
@@ -130,7 +131,6 @@
         "7a7231c3-0dfd-49da-8aae-8eef0b970466",
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Sis_Kiss_Shoot_Edits-Hayley_Dolson-5204_websize.jpg",
         "image_position": "object-center",
