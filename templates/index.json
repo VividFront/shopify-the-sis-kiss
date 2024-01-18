@@ -73,7 +73,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "https:\/\/thesiskiss.com\/collections\/warehouse-sale"
+            "url": "shopify:\/\/collections\/custom-jewelry"
           }
         }
       },
