@@ -52,28 +52,28 @@
       "blocks": {
         "cc2b080d-9d35-453c-80ca-b3525e36909a": {
           "type": "subheading",
-          "disabled": true,
           "settings": {
-            "text": "Free Shipping, today only!"
+            "text": "Cheers to our Galentine's!"
           }
         },
         "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
           "type": "heading",
           "settings": {
-            "text": "New Year, New Bling"
+            "text": "Feel the love 💕"
           }
         },
         "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
           "type": "body",
+          "disabled": true,
           "settings": {
-            "text": "More treating yourself in 2024 💅"
+            "text": ""
           }
         },
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify:\/\/collections\/non-custom-best-sellers"
+            "url": "shopify:\/\/collections\/feel-the-love"
           }
         }
       },
@@ -84,9 +84,9 @@
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Sis_Kiss_Shoot_Edits-Hayley_Dolson-5204_websize.jpg",
+        "image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px.png",
         "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/TSK_Mobile_Hero_36ad7a33-ac46-44c1-988c-1d8d75a4c321.png",
+        "image_mobile": "shopify:\/\/shop_images\/TSK_Mobile_Hero_7.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
