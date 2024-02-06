@@ -1,11 +1,11 @@
 <script type="text/javascript">
    
         function add_btnMiniCart() {
-            var btnMiniCart = document.createElement("a");
+            var btnMiniCart = document.createElement("button");
             btnMiniCart.setAttribute("id", "gsxbuttonnow");
             btnMiniCart.setAttribute("style", "border-radius: 25px; font-size:17px;");
             btnMiniCart.setAttribute("class", "button full");
-            btnMiniCart.setAttribute("href", "/pages/globalshopex-checkout");
+            btnMiniCart.setAttribute("onclick", "javascript:location='/pages/globalshopex-checkout'");
             btnMiniCart.innerText = "International Checkout";
             jQuery("#slidecart-checkout-form").after(btnMiniCart);
         }

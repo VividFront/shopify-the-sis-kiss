@@ -1,5 +1,99 @@
 {
   "sections": {
+    "hero_color_xQBCrb": {
+      "type": "hero-color",
+      "blocks": {
+        "subheading_9Tiy8G": {
+          "type": "subheading",
+          "settings": {
+            "text": "Love is in the air ☁️"
+          }
+        },
+        "heading_Hjgcpc": {
+          "type": "heading",
+          "settings": {
+            "text": "25% off sitewide!"
+          }
+        },
+        "body_jGRcYX": {
+          "type": "body",
+          "settings": {
+            "text": "Use Code HEART25"
+          }
+        },
+        "cta_BpPYHN": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify:\/\/collections\/custom-jewelry"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9Tiy8G",
+        "heading_Hjgcpc",
+        "body_jGRcYX",
+        "cta_BpPYHN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/TSK_Mobile_Hero_3.png",
+        "image_position": "object-center",
+        "image_mobile": "shopify:\/\/shop_images\/TSK_Mobile_Hero_3.png",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "#ffffff",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
+    "7079bf07-3a58-485e-ae98-49053f4c640c": {
+      "type": "hero-color",
+      "blocks": {
+        "cc2b080d-9d35-453c-80ca-b3525e36909a": {
+          "type": "subheading",
+          "settings": {
+            "text": "Cheers to our Galentine's!"
+          }
+        },
+        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
+          "type": "heading",
+          "settings": {
+            "text": "Feel the love 💕"
+          }
+        },
+        "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
+          "type": "body",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify:\/\/collections\/feel-the-love"
+          }
+        }
+      },
+      "block_order": [
+        "cc2b080d-9d35-453c-80ca-b3525e36909a",
+        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c",
+        "7a7231c3-0dfd-49da-8aae-8eef0b970466",
+        "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
+        "image_position": "object-center",
+        "image_mobile": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "#ffffff",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c": {
       "type": "home-hero",
       "blocks": {
@@ -26,7 +120,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Meg's Favorites",
-            "url": "https://thesiskiss.com/collections/megs-favorites"
+            "url": "https:\/\/thesiskiss.com\/collections\/megs-favorites"
           }
         }
       },
@@ -38,8 +132,8 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/tsk-webhero-megbday-desktop-final-2.png",
-        "image_mobile": "shopify://shop_images/tsk-webhero-megbday-mobile-final-2.png",
+        "image": "shopify:\/\/shop_images\/tsk-webhero-megbday-desktop-final-2.png",
+        "image_mobile": "shopify:\/\/shop_images\/tsk-webhero-megbday-mobile-final-2.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "content_width": "narrow",
@@ -48,96 +142,67 @@
         "color": ""
       }
     },
-    "7079bf07-3a58-485e-ae98-49053f4c640c": {
-      "type": "hero-color",
-      "blocks": {
-        "cc2b080d-9d35-453c-80ca-b3525e36909a": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Hey sis,"
-          }
-        },
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
-          "type": "heading",
-          "settings": {
-            "text": "Your name looks good on you ✨"
-          }
-        },
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
-          "type": "body",
-          "settings": {
-            "text": ""
-          }
-        },
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
-          "type": "cta",
-          "settings": {
-            "text": "Shop Custom Jewelry",
-            "url": "shopify://collections/custom-jewelry"
-          }
-        }
-      },
-      "block_order": [
-        "cc2b080d-9d35-453c-80ca-b3525e36909a",
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c",
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466",
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Charm_Bar82.jpg",
-        "image_position": "object-center",
-        "image_mobile": "shopify://shop_images/Untitled_design_14_dcf4a8a4-3221-4994-982d-a293f023a7fd.png",
-        "designer_tag": "",
-        "tag_color": "text-white",
-        "color": "#ffffff",
-        "text_color": "text-copy",
-        "show_breadcrumbs": false
-      }
-    },
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
       "type": "home-trending",
       "blocks": {
         "efd4c4a8-a61b-4ae7-9232-eb925566e1bb": {
           "type": "product",
           "settings": {
-            "product": "birthstone-charm"
+            "product": "custom-my-mantra-name-necklaces"
           }
         },
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
           "type": "product",
           "settings": {
-            "product": "zodiac-charm"
+            "product": "handwritten-name-necklace"
           }
         },
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
           "type": "product",
           "settings": {
-            "product": "pearl-initial-charm"
+            "product": "crystal-cross-necklace"
           }
         },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "engraved-heart-charm"
+            "product": "loverly-crystal-bar-necklace"
           }
         },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
-            "product": "infinity-crystal-hoops"
+            "product": "loverly-crystal-dotted-necklace"
           }
         },
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
           "type": "product",
           "settings": {
-            "product": "coin-initial-charm"
+            "product": "loverly-gold-earrings"
           }
         },
         "b57d275a-8796-4afc-ac7f-e148534af010": {
           "type": "product",
           "settings": {
-            "product": "something-blue-charm"
+            "product": "the-blanche-ring"
+          }
+        },
+        "762e1eb0-21fb-4ffc-917f-69496c668d0c": {
+          "type": "product",
+          "settings": {
+            "product": "the-dorothy-ring"
+          }
+        },
+        "dc61ddd6-2d07-40f2-b5fd-4df4440590b4": {
+          "type": "product",
+          "settings": {
+            "product": "coin-initial-charm"
+          }
+        },
+        "92e53095-2c2d-4326-b521-de306ee70c63": {
+          "type": "product",
+          "settings": {
+            "product": "birthstone-charm"
           }
         }
       },
@@ -148,10 +213,13 @@
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
-        "b57d275a-8796-4afc-ac7f-e148534af010"
+        "b57d275a-8796-4afc-ac7f-e148534af010",
+        "762e1eb0-21fb-4ffc-917f-69496c668d0c",
+        "dc61ddd6-2d07-40f2-b5fd-4df4440590b4",
+        "92e53095-2c2d-4326-b521-de306ee70c63"
       ],
       "settings": {
-        "collection_text": "<p>Shop All </p><p>Best Sellers</p>",
+        "collection_text": "<p>Shop All <\/p><p>Best Sellers<\/p>",
         "collection": "non-custom-best-sellers"
       }
     },
@@ -161,20 +229,20 @@
         "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
           "type": "image_short",
           "settings": {
-            "image": "shopify://shop_images/collab-2.jpg",
+            "image": "shopify:\/\/shop_images\/collab-2.jpg",
             "position_adjustment": "up"
           }
         },
         "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
           "type": "image_tall",
           "settings": {
-            "image": "shopify://shop_images/collab-1.jpg"
+            "image": "shopify:\/\/shop_images\/collab-1.jpg"
           }
         },
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
           "type": "image_short",
           "settings": {
-            "image": "shopify://shop_images/collab-3.jpg",
+            "image": "shopify:\/\/shop_images\/collab-3.jpg",
             "position_adjustment": "down"
           }
         }
@@ -185,7 +253,7 @@
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
+        "background_image": "shopify:\/\/shop_images\/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
         "subheading": "Featured Collection",
         "heading": "Loverly Grey x The Sis Kiss",
         "collection": "loverly-grey-x-the-sis-kiss"
@@ -199,7 +267,7 @@
           "settings": {
             "title": "Necklaces",
             "product_main": "crystal-cross-necklace",
-            "product_alt_image": "shopify://shop_images/image_9e99a72c-d0ac-412c-9a38-65951fdfe170.jpg",
+            "product_alt_image": "shopify:\/\/shop_images\/image_9e99a72c-d0ac-412c-9a38-65951fdfe170.jpg",
             "product_secondary": "custom-my-mantra-name-necklaces",
             "collection": "necklaces"
           }
@@ -209,7 +277,7 @@
           "settings": {
             "title": "Earrings",
             "product_main": "the-essentials-slim-earring-set",
-            "product_alt_image": "shopify://shop_images/TSK.web.7.21.22179_03edf546-9247-4c26-bb04-7c476be79db6.jpg",
+            "product_alt_image": "shopify:\/\/shop_images\/TSK.web.7.21.22179_03edf546-9247-4c26-bb04-7c476be79db6.jpg",
             "product_secondary": "mini-pearl-huggie-earrings",
             "collection": "earrings"
           }
@@ -219,7 +287,7 @@
           "settings": {
             "title": "Bracelets",
             "product_main": "charm-me-custom-bracelet-bundle",
-            "product_alt_image": "shopify://shop_images/NatalieDawnPhotoLLC-POOSHRegular00019.jpg",
+            "product_alt_image": "shopify:\/\/shop_images\/NatalieDawnPhotoLLC-POOSHRegular00019.jpg",
             "product_secondary": "oval-link-bracelet",
             "collection": "bracelets-cuffs"
           }
@@ -229,7 +297,7 @@
           "settings": {
             "title": "Rings",
             "product_main": "pearl-and-gold-bead-stretch-rings",
-            "product_alt_image": "shopify://shop_images/f1b07a19-91ba-4a2c-8719-4f62461ffd94_7a72cafc-7166-4b6f-962b-592d5074b563.jpg",
+            "product_alt_image": "shopify:\/\/shop_images\/f1b07a19-91ba-4a2c-8719-4f62461ffd94_7a72cafc-7166-4b6f-962b-592d5074b563.jpg",
             "product_secondary": "adjustable-crystal-initial-ring",
             "collection": "rings"
           }
@@ -239,8 +307,8 @@
           "settings": {
             "title": "Accessories",
             "product_main": "rhinestone-chain-hair-tassel",
-            "product_alt_image": "shopify://shop_images/image_12e7eecf-58ae-4ba3-9b5a-831cd75a11d8.jpg",
-            "product_secondary": "acrylic-hair-clips",
+            "product_alt_image": "shopify:\/\/shop_images\/image_12e7eecf-58ae-4ba3-9b5a-831cd75a11d8.jpg",
+            "product_secondary": "leopard-mini-bag",
             "collection": "hair-accessories"
           }
         }
@@ -252,7 +320,8 @@
         "be4c93a1-6c16-4093-918b-ad0c829f9ee1",
         "f655c052-e686-464e-a80f-d3ea6d3793fc"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "bc1dcc69-4df7-4e65-8092-482942e52e37": {
       "type": "home-trends-guide",
@@ -260,13 +329,13 @@
         "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
           "type": "product",
           "settings": {
-            "product": "roll-the-dice-charm"
+            "product": "the-clara-chain"
           }
         },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "radiant-heart-charm"
+            "product": "the-essentials-slim-earring-set"
           }
         }
       },
@@ -275,26 +344,26 @@
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/TSK_New_This_Season_Background_1.png",
-        "heading": "Limited Edition Charms",
-        "body": "Glam up for the upcoming season with our new collection of limited edition fall charms. Now is the perfect time to create the piece that is uniquely you, sis!\nGet them before they are gone!",
+        "background_image": "shopify:\/\/shop_images\/Untitled_design_6.png",
+        "heading": "Just the essentials, sis.",
+        "body": "If each Sis Kiss Essentials set comes with a piece of jewelry that I can use with every outfit, and I can mix and match to create the style I want every day, then that is basically free. #girlmath",
         "badge_emoji": "",
-        "badge_text": "New This Season",
-        "image": "shopify://shop_images/Media_1-40FF6F1E-E3EB-43C2-8E04-AD7E7B1FF08D.jpg",
+        "badge_text": "Capsule Wardrobe",
+        "image": "shopify:\/\/shop_images\/New_TSK_model_229.jpg",
         "designer_tag": "",
-        "cta_text": "Shop Charm Bar",
-        "cta_url": "shopify://collections/charm-bar"
+        "cta_text": "Shop Essentials",
+        "cta_url": "shopify:\/\/collections\/the-sis-kiss-essentials"
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
       "type": "full-width-image-callout",
       "settings": {
-        "background_image": "shopify://shop_images/custom_homepage_image_v2.1.jpg",
-        "image_mobile": "shopify://shop_images/big-custom_homepage_image_v2.jpg",
+        "background_image": "shopify:\/\/shop_images\/custom_homepage_image_v2.1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/big-custom_homepage_image_v2.jpg",
         "heading": "Custom Pieces",
         "body": "Custom styles are handmade with care and take between 3-4 weeks to ship. A personalized gift is never a bad idea!",
         "cta_text": "Shop Custom Jewelry",
-        "cta_url": "shopify://collections/custom-jewelry"
+        "cta_url": "shopify:\/\/collections\/custom-jewelry"
       }
     },
     "e55e6111-cf7e-4f0e-99df-a63469c1213f": {
@@ -303,36 +372,36 @@
         "535ac3b1-681a-4114-80b4-18b90c38e2f3": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/women-icon.png",
+            "icon": "shopify:\/\/shop_images\/women-icon.png",
             "heading": "Women Owned",
-            "body": "<p>Women owned and operated in Cleveland, Ohio.</p>",
+            "body": "<p>Women owned and operated in Cleveland, Ohio.<\/p>",
             "large_text": ""
           }
         },
         "240d4905-1fb8-4d40-a7bb-4bfe0241e563": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/shipping-icon.png",
+            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
             "heading": "Free Shipping*",
-            "body": "<p>Free shipping on all domestic US orders when you spend $75.</p>",
+            "body": "<p>Free shipping on all domestic US orders when you spend $100.<\/p>",
             "large_text": ""
           }
         },
         "177408fd-1357-494d-81f8-73c3a819d9b7": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/rewards-icon.png",
+            "icon": "shopify:\/\/shop_images\/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
-            "body": "<p>Earn rewards for following us on social media, sharing your birthday, and more.</p>",
+            "body": "<p>Earn rewards for following us on social media, sharing your birthday, and more.<\/p>",
             "large_text": ""
           }
         },
         "18543a21-5d02-4ef0-8d62-f97c768af217": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify://shop_images/custom-necklace.png",
+            "icon": "shopify:\/\/shop_images\/custom-necklace.png",
             "heading": "100+ Custom Styles",
-            "body": "<p>Custom jewelry makes the perfect gift to yourself and your loved ones.</p>",
+            "body": "<p>Custom jewelry makes the perfect gift to yourself and your loved ones.<\/p>",
             "large_text": ""
           }
         }
@@ -343,7 +412,8 @@
         "177408fd-1357-494d-81f8-73c3a819d9b7",
         "18543a21-5d02-4ef0-8d62-f97c768af217"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "532c5839-bed9-45ca-993c-1b983e6903c8": {
       "type": "featured-in",
@@ -351,28 +421,56 @@
         "2ae773bf-3575-4cec-a316-00e35328aff1": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/poosh.png",
+            "logo": "shopify:\/\/shop_images\/poosh.png",
             "url": ""
           }
         },
         "2ef7ebef-8e24-454f-9445-30934ada670d": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/instyle.png",
-            "url": "shopify://collections/beaded-jewelry"
+            "logo": "shopify:\/\/shop_images\/instyle.png",
+            "url": "shopify:\/\/collections\/beaded-jewelry"
           }
         },
         "de3068c3-34b5-4af8-a26e-4c0c35a187eb": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/popsugar.png",
+            "logo": "shopify:\/\/shop_images\/popsugar.png",
             "url": ""
           }
         },
         "8154a033-8e22-4675-b626-d9654c9837b1": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/people.png",
+            "logo": "shopify:\/\/shop_images\/people.png",
+            "url": ""
+          }
+        },
+        "92181bc0-b4f0-46f2-8cc3-58fd34274c9c": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/bravocon.visid_.simplelogo1-1-49ed2ac71b2547e49c2cfe9a4aa44dbb.png",
+            "url": ""
+          }
+        },
+        "643c394e-ba0e-49f2-990f-3edb683ddbed": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/QVC_logo_2019_b1f597a2-480c-41bc-9591-0b6b72a5b31d.png",
+            "url": ""
+          }
+        },
+        "ec89d6f3-f0f3-4d93-976c-dc25c3c769b0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/vogue_93f6b947-3add-4a22-b0df-03a98d1f7df8.png",
+            "url": ""
+          }
+        },
+        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/glamour_3b327523-e664-4dfa-9db3-70508936728b.png",
             "url": ""
           }
         }
@@ -381,7 +479,11 @@
         "2ae773bf-3575-4cec-a316-00e35328aff1",
         "2ef7ebef-8e24-454f-9445-30934ada670d",
         "de3068c3-34b5-4af8-a26e-4c0c35a187eb",
-        "8154a033-8e22-4675-b626-d9654c9837b1"
+        "8154a033-8e22-4675-b626-d9654c9837b1",
+        "92181bc0-b4f0-46f2-8cc3-58fd34274c9c",
+        "643c394e-ba0e-49f2-990f-3edb683ddbed",
+        "ec89d6f3-f0f3-4d93-976c-dc25c3c769b0",
+        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce"
       ],
       "settings": {
         "heading": "Featured In"
@@ -390,13 +492,13 @@
     "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0": {
       "type": "podcast-callout",
       "settings": {
-        "image": "shopify://shop_images/Background_1.png",
-        "image_mobile": "shopify://shop_images/podcast-Background.jpg",
-        "logo": "shopify://shop_images/WU-logo.png",
+        "image": "shopify:\/\/shop_images\/Background_1.png",
+        "image_mobile": "shopify:\/\/shop_images\/podcast-Background.jpg",
+        "logo": "shopify:\/\/shop_images\/WU-logo.png",
         "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
         "cta_text": "Listen Now",
-        "cta_url": "https://thesiskiss.com/pages/wildly-unprofessional",
-        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-homepage-cropped.json?v=1684340951",
+        "cta_url": "https:\/\/thesiskiss.com\/pages\/wildly-unprofessional",
+        "ribbon_lottie_json": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/ribbon-homepage-cropped.json?v=1684340951",
         "logo_circle_position": "left"
       }
     },
@@ -409,8 +511,9 @@
     }
   },
   "order": [
-    "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
+    "hero_color_xQBCrb",
     "7079bf07-3a58-485e-ae98-49053f4c640c",
+    "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
     "efd3c021-b667-4075-93fd-09a6d2277d0e",
