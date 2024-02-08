@@ -2762,6 +2762,38 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
+#slidecarthq .button.-ghost {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  border-radius: var(--vf-border-radius-button);
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  padding-left: calc(20rem / 16);
+  padding-left: calc(20rem / var(--vf-font-size-root));
+  padding-right: calc(20rem / 16);
+  padding-right: calc(20rem / var(--vf-font-size-root));
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  color: rgb(var(--vf-color-primary) / var(--tw-text-opacity));
+}
+#slidecarthq .button.-ghost:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  text-decoration-line: underline;
+}
 .tsk-field-group {
   position: relative;
 }

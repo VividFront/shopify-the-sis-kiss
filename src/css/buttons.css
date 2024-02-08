@@ -15,3 +15,7 @@
 .button-shadow {
   @apply w-full h-full box-border rounded-[24px] bg-white border-primary border-[2px] absolute left-0 bottom-0;
 }
+
+#slidecarthq .button.-ghost {
+  @apply text-primary py-8 px-20 rounded-button text-center font-bold border-primary border-[2px] bg-white block leading-5 border-solid w-full hover:bg-white hover:underline;
+}
