@@ -13,7 +13,7 @@
         "heading_Hjgcpc": {
           "type": "heading",
           "settings": {
-            "text": "25% off custom jewelry"
+            "text": "25% Off Custom Jewelry"
           }
         },
         "body_jGRcYX": {
@@ -36,7 +36,6 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--15_websize.jpg",
         "image_position": "object-center",
@@ -124,6 +123,7 @@
         "7a7231c3-0dfd-49da-8aae-8eef0b970466",
         "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
         "image_position": "object-center",
@@ -195,7 +195,7 @@
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
           "type": "product",
           "settings": {
-            "product": "handwritten-name-necklace"
+            "product": "tsk-its-all-in-a-name-necklace-in-14k-gold-with-diamonds"
           }
         },
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
