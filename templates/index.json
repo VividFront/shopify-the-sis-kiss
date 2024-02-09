@@ -198,22 +198,16 @@
             "product": "it-s-all-in-a-name"
           }
         },
-        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
-          "type": "product",
-          "settings": {
-            "product": "crystal-cross-necklace"
-          }
-        },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "loverly-crystal-bar-necklace"
+            "product": "two-tone-beaded-adjustable-bracelets"
           }
         },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
-            "product": "loverly-crystal-dotted-necklace"
+            "product": "classic-dainty-cross-necklace"
           }
         },
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
@@ -240,23 +234,29 @@
             "product": "coin-initial-charm"
           }
         },
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
+          "type": "product",
+          "settings": {
+            "product": "crystal-cross-necklace"
+          }
+        },
         "92e53095-2c2d-4326-b521-de306ee70c63": {
           "type": "product",
           "settings": {
-            "product": "birthstone-charm"
+            "product": "sleek-initial-charm"
           }
         }
       },
       "block_order": [
         "efd4c4a8-a61b-4ae7-9232-eb925566e1bb",
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a",
-        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
         "b57d275a-8796-4afc-ac7f-e148534af010",
         "762e1eb0-21fb-4ffc-917f-69496c668d0c",
         "dc61ddd6-2d07-40f2-b5fd-4df4440590b4",
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "92e53095-2c2d-4326-b521-de306ee70c63"
       ],
       "settings": {
@@ -370,13 +370,13 @@
         "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
           "type": "product",
           "settings": {
-            "product": "the-clara-chain"
+            "product": "coin-initial-charm"
           }
         },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "the-essentials-slim-earring-set"
+            "product": "standout-initial-charm"
           }
         }
       },
@@ -386,14 +386,14 @@
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Untitled_design_6.png",
-        "heading": "Just the essentials, sis.",
-        "body": "If each Sis Kiss Essentials set comes with a piece of jewelry that I can use with every outfit, and I can mix and match to create the style I want every day, then that is basically free. #girlmath",
+        "heading": "Charm me, babe!",
+        "body": "Show off what makes you unique through our Charm Bar. Build your own personalized necklace that's all about you, sis.",
         "badge_emoji": "",
-        "badge_text": "Capsule Wardrobe",
-        "image": "shopify:\/\/shop_images\/New_TSK_model_229.jpg",
+        "badge_text": "Charm Bar",
+        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--100_websize.jpg",
         "designer_tag": "",
-        "cta_text": "Shop Essentials",
-        "cta_url": "shopify:\/\/collections\/the-sis-kiss-essentials"
+        "cta_text": "Shop Charm Bar",
+        "cta_url": "shopify:\/\/collections\/charm-bar"
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
