@@ -7,9 +7,8 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "25% Off Custom Jewelry | Shop Now >",
+            "text": "25% Off Custom Jewelry with Code TREATYOSELF25 | Shop Now >",
             "link": "shopify:\/\/collections\/custom-jewelry"
           }
         }
@@ -17,7 +16,6 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
