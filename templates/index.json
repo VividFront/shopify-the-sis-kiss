@@ -1,5 +1,44 @@
 {
   "sections": {
+    "hero_color_9EQmGi": {
+      "type": "hero-color",
+      "blocks": {
+        "heading_RCJNEr": {
+          "type": "heading",
+          "settings": {
+            "text": "Bold & Beautiful"
+          }
+        },
+        "body_tTx3zH": {
+          "type": "body",
+          "settings": {
+            "text": "Life is too short; buy the bling 💖"
+          }
+        },
+        "cta_MRQaei": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify:\/\/collections\/custom-jewelry"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RCJNEr",
+        "body_tTx3zH",
+        "cta_MRQaei"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
+        "image_position": "object-center",
+        "image_mobile": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "#ffffff",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
     "hero_color_xQBCrb": {
       "type": "hero-color",
       "blocks": {
@@ -36,98 +75,11 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--15_websize.jpg",
         "image_position": "object-center",
         "image_mobile": "shopify:\/\/shop_images\/TSK_Mobile_Hero_9.png",
-        "designer_tag": "",
-        "tag_color": "text-white",
-        "color": "#ffffff",
-        "text_color": "text-copy",
-        "show_breadcrumbs": false
-      }
-    },
-    "hero_color_9EQmGi": {
-      "type": "hero-color",
-      "blocks": {
-        "heading_RCJNEr": {
-          "type": "heading",
-          "settings": {
-            "text": "Bold & Beautiful"
-          }
-        },
-        "body_tTx3zH": {
-          "type": "body",
-          "settings": {
-            "text": "Life is too short; buy the bling 💖"
-          }
-        },
-        "cta_MRQaei": {
-          "type": "cta",
-          "settings": {
-            "text": "Shop Now",
-            "url": "shopify:\/\/collections\/custom-jewelry"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RCJNEr",
-        "body_tTx3zH",
-        "cta_MRQaei"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
-        "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
-        "designer_tag": "",
-        "tag_color": "text-white",
-        "color": "#ffffff",
-        "text_color": "text-copy",
-        "show_breadcrumbs": false
-      }
-    },
-    "7079bf07-3a58-485e-ae98-49053f4c640c": {
-      "type": "hero-color",
-      "blocks": {
-        "cc2b080d-9d35-453c-80ca-b3525e36909a": {
-          "type": "subheading",
-          "settings": {
-            "text": "Cheers to our Galentine's! 💕"
-          }
-        },
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
-          "type": "heading",
-          "settings": {
-            "text": "Feel the love"
-          }
-        },
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
-          "type": "body",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
-          "type": "cta",
-          "settings": {
-            "text": "Shop Now",
-            "url": "shopify:\/\/collections\/feel-the-love"
-          }
-        }
-      },
-      "block_order": [
-        "cc2b080d-9d35-453c-80ca-b3525e36909a",
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c",
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466",
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
-        "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -552,9 +504,8 @@
     }
   },
   "order": [
-    "hero_color_xQBCrb",
     "hero_color_9EQmGi",
-    "7079bf07-3a58-485e-ae98-49053f4c640c",
+    "hero_color_xQBCrb",
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
