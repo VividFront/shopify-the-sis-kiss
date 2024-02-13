@@ -222,20 +222,20 @@
         "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
           "type": "image_short",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-2.jpg",
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Flat_Lay_Edits-Hayley_Dolson-2217_websize_1.jpg",
             "position_adjustment": "up"
           }
         },
         "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
           "type": "image_tall",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-1.jpg"
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Shoot_Edits-Hayley_Dolson-4445_websize_1.jpg"
           }
         },
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
           "type": "image_short",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-3.jpg",
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Flat_Lay_Edits-Hayley_Dolson-2260_websize.jpg",
             "position_adjustment": "down"
           }
         }
@@ -248,8 +248,8 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
         "subheading": "Featured Collection",
-        "heading": "Loverly Grey x The Sis Kiss",
-        "collection": "loverly-grey-x-the-sis-kiss"
+        "heading": "The Sis Kiss Essentials",
+        "collection": "the-sis-kiss-essentials"
       }
     },
     "efd3c021-b667-4075-93fd-09a6d2277d0e": {
@@ -259,9 +259,9 @@
           "type": "category",
           "settings": {
             "title": "Necklaces",
-            "product_main": "crystal-cross-necklace",
-            "product_alt_image": "shopify:\/\/shop_images\/image_9e99a72c-d0ac-412c-9a38-65951fdfe170.jpg",
-            "product_secondary": "custom-my-mantra-name-necklaces",
+            "product_main": "two-tone-rope-chain",
+            "product_alt_image": "shopify:\/\/shop_images\/DSC06640.jpg",
+            "product_secondary": "it-s-all-in-a-name-mini-bubble-letters-necklace",
             "collection": "necklaces"
           }
         },
