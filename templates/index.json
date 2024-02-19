@@ -3,27 +3,34 @@
     "hero_color_9EQmGi": {
       "type": "hero-color",
       "blocks": {
+        "subheading_rD3VJb": {
+          "type": "subheading",
+          "settings": {
+            "text": "This just in:"
+          }
+        },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Bold & Beautiful"
+            "text": "30% off Sitewide"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Life is too short; buy the bling 💖"
+            "text": "One day only! Use code: 3DAY30"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify:\/\/collections\/custom-jewelry"
+            "url": "shopify:\/\/collections\/non-custom-best-sellers"
           }
         }
       },
       "block_order": [
+        "subheading_rD3VJb",
         "heading_RCJNEr",
         "body_tTx3zH",
         "cta_MRQaei"
