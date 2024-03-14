@@ -473,6 +473,20 @@
             "logo": "shopify:\/\/shop_images\/glamour_3b327523-e664-4dfa-9db3-70508936728b.png",
             "url": ""
           }
+        },
+        "logo_RQeVgW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/revolve-logo_1_1.png",
+            "url": ""
+          }
+        },
+        "logo_E7tU3F": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/THE_REAL_HOUSEWIVES_OF_MIAMI_NEW_LOGO_2.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -483,7 +497,9 @@
         "92181bc0-b4f0-46f2-8cc3-58fd34274c9c",
         "643c394e-ba0e-49f2-990f-3edb683ddbed",
         "ec89d6f3-f0f3-4d93-976c-dc25c3c769b0",
-        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce"
+        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce",
+        "logo_RQeVgW",
+        "logo_E7tU3F"
       ],
       "settings": {
         "heading": "Featured In"
