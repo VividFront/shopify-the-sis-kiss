@@ -487,20 +487,6 @@
             "logo": "shopify:\/\/shop_images\/THE_REAL_HOUSEWIVES_OF_MIAMI_NEW_LOGO_2.png",
             "url": ""
           }
-        },
-        "logo_e8kMbX": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/gmaTealLogo_1.png",
-            "url": ""
-          }
-        },
-        "logo_zVLptE": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Nordstrom-logo_1.png",
-            "url": ""
-          }
         }
       },
       "block_order": [
@@ -513,9 +499,7 @@
         "ec89d6f3-f0f3-4d93-976c-dc25c3c769b0",
         "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce",
         "logo_RQeVgW",
-        "logo_E7tU3F",
-        "logo_e8kMbX",
-        "logo_zVLptE"
+        "logo_E7tU3F"
       ],
       "settings": {
         "heading": "Featured In"
