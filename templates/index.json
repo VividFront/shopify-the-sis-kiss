@@ -1,5 +1,51 @@
 {
   "sections": {
+    "hero_color_9EQmGi": {
+      "type": "hero-color",
+      "blocks": {
+        "subheading_rD3VJb": {
+          "type": "subheading",
+          "settings": {
+            "text": "Restocked:"
+          }
+        },
+        "heading_RCJNEr": {
+          "type": "heading",
+          "settings": {
+            "text": "Best Selling Styles"
+          }
+        },
+        "body_tTx3zH": {
+          "type": "body",
+          "settings": {
+            "text": "Life is short, buy the bling ✨"
+          }
+        },
+        "cta_MRQaei": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify:\/\/collections\/non-custom-best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rD3VJb",
+        "heading_RCJNEr",
+        "body_tTx3zH",
+        "cta_MRQaei"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
+        "image_position": "object-center",
+        "image_mobile": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "#ffffff",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
     "hero_color_xQBCrb": {
       "type": "hero-color",
       "blocks": {
@@ -13,7 +59,7 @@
         "heading_Hjgcpc": {
           "type": "heading",
           "settings": {
-            "text": "25% off custom jewelry"
+            "text": "25% Off Custom Jewelry"
           }
         },
         "body_jGRcYX": {
@@ -40,94 +86,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--15_websize.jpg",
         "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
-        "designer_tag": "",
-        "tag_color": "text-white",
-        "color": "#ffffff",
-        "text_color": "text-copy",
-        "show_breadcrumbs": false
-      }
-    },
-    "hero_color_9EQmGi": {
-      "type": "hero-color",
-      "blocks": {
-        "heading_RCJNEr": {
-          "type": "heading",
-          "settings": {
-            "text": "Bold & Beautiful"
-          }
-        },
-        "body_tTx3zH": {
-          "type": "body",
-          "settings": {
-            "text": "Life is too short; buy the bling 💖"
-          }
-        },
-        "cta_MRQaei": {
-          "type": "cta",
-          "settings": {
-            "text": "Shop Now",
-            "url": "shopify:\/\/collections\/custom-jewelry"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RCJNEr",
-        "body_tTx3zH",
-        "cta_MRQaei"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
-        "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--65_websize_1.jpg",
-        "designer_tag": "",
-        "tag_color": "text-white",
-        "color": "#ffffff",
-        "text_color": "text-copy",
-        "show_breadcrumbs": false
-      }
-    },
-    "7079bf07-3a58-485e-ae98-49053f4c640c": {
-      "type": "hero-color",
-      "blocks": {
-        "cc2b080d-9d35-453c-80ca-b3525e36909a": {
-          "type": "subheading",
-          "settings": {
-            "text": "Cheers to our Galentine's! 💕"
-          }
-        },
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c": {
-          "type": "heading",
-          "settings": {
-            "text": "Feel the love"
-          }
-        },
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466": {
-          "type": "body",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc": {
-          "type": "cta",
-          "settings": {
-            "text": "Shop Now",
-            "url": "shopify:\/\/collections\/feel-the-love"
-          }
-        }
-      },
-      "block_order": [
-        "cc2b080d-9d35-453c-80ca-b3525e36909a",
-        "11d1256e-5035-4f41-b3db-e7ffaa9aa38c",
-        "7a7231c3-0dfd-49da-8aae-8eef0b970466",
-        "33e1cf43-a6d9-4893-9efe-be84c849b0dc"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
-        "image_position": "object-center",
-        "image_mobile": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_1.png",
+        "image_mobile": "shopify:\/\/shop_images\/TSK_Mobile_Hero_9.png",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -195,25 +154,19 @@
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
           "type": "product",
           "settings": {
-            "product": "handwritten-name-necklace"
-          }
-        },
-        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
-          "type": "product",
-          "settings": {
-            "product": "crystal-cross-necklace"
+            "product": "it-s-all-in-a-name"
           }
         },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "loverly-crystal-bar-necklace"
+            "product": "two-tone-beaded-adjustable-bracelets"
           }
         },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
           "type": "product",
           "settings": {
-            "product": "loverly-crystal-dotted-necklace"
+            "product": "classic-dainty-cross-necklace"
           }
         },
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
@@ -240,23 +193,29 @@
             "product": "coin-initial-charm"
           }
         },
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0": {
+          "type": "product",
+          "settings": {
+            "product": "crystal-cross-necklace"
+          }
+        },
         "92e53095-2c2d-4326-b521-de306ee70c63": {
           "type": "product",
           "settings": {
-            "product": "birthstone-charm"
+            "product": "sleek-initial-charm"
           }
         }
       },
       "block_order": [
         "efd4c4a8-a61b-4ae7-9232-eb925566e1bb",
         "4d51858b-b4e2-406a-9c19-e0fd1a213b8a",
-        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
         "b57d275a-8796-4afc-ac7f-e148534af010",
         "762e1eb0-21fb-4ffc-917f-69496c668d0c",
         "dc61ddd6-2d07-40f2-b5fd-4df4440590b4",
+        "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
         "92e53095-2c2d-4326-b521-de306ee70c63"
       ],
       "settings": {
@@ -270,20 +229,20 @@
         "106204a7-9ee4-4c22-b68e-59f0473cbe1b": {
           "type": "image_short",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-2.jpg",
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Flat_Lay_Edits-Hayley_Dolson-2217_websize_1.jpg",
             "position_adjustment": "up"
           }
         },
         "b2cc5eee-4012-4457-b9c7-cf8abdd09809": {
           "type": "image_tall",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-1.jpg"
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Shoot_Edits-Hayley_Dolson-4445_websize_1.jpg"
           }
         },
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2": {
           "type": "image_short",
           "settings": {
-            "image": "shopify:\/\/shop_images\/collab-3.jpg",
+            "image": "shopify:\/\/shop_images\/Sis_Kiss_Flat_Lay_Edits-Hayley_Dolson-2260_websize.jpg",
             "position_adjustment": "down"
           }
         }
@@ -296,8 +255,8 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
         "subheading": "Featured Collection",
-        "heading": "Loverly Grey x The Sis Kiss",
-        "collection": "loverly-grey-x-the-sis-kiss"
+        "heading": "The Sis Kiss Essentials",
+        "collection": "the-sis-kiss-essentials"
       }
     },
     "efd3c021-b667-4075-93fd-09a6d2277d0e": {
@@ -307,9 +266,9 @@
           "type": "category",
           "settings": {
             "title": "Necklaces",
-            "product_main": "crystal-cross-necklace",
-            "product_alt_image": "shopify:\/\/shop_images\/image_9e99a72c-d0ac-412c-9a38-65951fdfe170.jpg",
-            "product_secondary": "custom-my-mantra-name-necklaces",
+            "product_main": "two-tone-rope-chain",
+            "product_alt_image": "shopify:\/\/shop_images\/DSC06640.jpg",
+            "product_secondary": "it-s-all-in-a-name-mini-bubble-letters-necklace",
             "collection": "necklaces"
           }
         },
@@ -317,9 +276,9 @@
           "type": "category",
           "settings": {
             "title": "Earrings",
-            "product_main": "the-essentials-slim-earring-set",
-            "product_alt_image": "shopify:\/\/shop_images\/TSK.web.7.21.22179_03edf546-9247-4c26-bb04-7c476be79db6.jpg",
-            "product_secondary": "mini-pearl-huggie-earrings",
+            "product_main": "bad-ass-bling-earrings",
+            "product_alt_image": "shopify:\/\/shop_images\/Sis_Kiss_Shoot_Edits-Hayley_Dolson-5364_websize.jpg",
+            "product_secondary": "accordion-hoop-earrings",
             "collection": "earrings"
           }
         },
@@ -327,8 +286,8 @@
           "type": "category",
           "settings": {
             "title": "Bracelets",
-            "product_main": "charm-me-custom-bracelet-bundle",
-            "product_alt_image": "shopify:\/\/shop_images\/NatalieDawnPhotoLLC-POOSHRegular00019.jpg",
+            "product_main": "the-essentials-bracelets-layering-set",
+            "product_alt_image": "shopify:\/\/shop_images\/NatalieDawnPhotoLLC00018.jpg",
             "product_secondary": "oval-link-bracelet",
             "collection": "bracelets-cuffs"
           }
@@ -370,13 +329,13 @@
         "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
           "type": "product",
           "settings": {
-            "product": "the-clara-chain"
+            "product": "coin-initial-charm"
           }
         },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "the-essentials-slim-earring-set"
+            "product": "standout-initial-charm"
           }
         }
       },
@@ -386,14 +345,14 @@
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/Untitled_design_6.png",
-        "heading": "Just the essentials, sis.",
-        "body": "If each Sis Kiss Essentials set comes with a piece of jewelry that I can use with every outfit, and I can mix and match to create the style I want every day, then that is basically free. #girlmath",
+        "heading": "Charm me, babe!",
+        "body": "Show off what makes you unique through our Charm Bar. Build your own personalized necklace that's all about you, sis.",
         "badge_emoji": "",
-        "badge_text": "Capsule Wardrobe",
-        "image": "shopify:\/\/shop_images\/New_TSK_model_229.jpg",
+        "badge_text": "Charm Bar",
+        "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--100_websize.jpg",
         "designer_tag": "",
-        "cta_text": "Shop Essentials",
-        "cta_url": "shopify:\/\/collections\/the-sis-kiss-essentials"
+        "cta_text": "Shop Charm Bar",
+        "cta_url": "shopify:\/\/collections\/charm-bar"
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
@@ -514,6 +473,34 @@
             "logo": "shopify:\/\/shop_images\/glamour_3b327523-e664-4dfa-9db3-70508936728b.png",
             "url": ""
           }
+        },
+        "logo_RQeVgW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/revolve-logo_1_1.png",
+            "url": ""
+          }
+        },
+        "logo_E7tU3F": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/THE_REAL_HOUSEWIVES_OF_MIAMI_NEW_LOGO_2.png",
+            "url": ""
+          }
+        },
+        "logo_b9Rkha": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/GMA-logo-edit.png",
+            "url": ""
+          }
+        },
+        "logo_qibcwy": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Nordstrom-logo-edit.png",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -524,7 +511,11 @@
         "92181bc0-b4f0-46f2-8cc3-58fd34274c9c",
         "643c394e-ba0e-49f2-990f-3edb683ddbed",
         "ec89d6f3-f0f3-4d93-976c-dc25c3c769b0",
-        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce"
+        "f6dc722d-7cbb-48e1-9c56-1a761ab2b3ce",
+        "logo_RQeVgW",
+        "logo_E7tU3F",
+        "logo_b9Rkha",
+        "logo_qibcwy"
       ],
       "settings": {
         "heading": "Featured In"
@@ -552,9 +543,8 @@
     }
   },
   "order": [
-    "hero_color_xQBCrb",
     "hero_color_9EQmGi",
-    "7079bf07-3a58-485e-ae98-49053f4c640c",
+    "hero_color_xQBCrb",
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
