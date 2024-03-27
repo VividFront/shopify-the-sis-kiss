@@ -1539,9 +1539,6 @@ a:hover {
 .max-w-\[168px\] {
   max-width: 168px;
 }
-.max-w-\[340px\] {
-  max-width: 340px;
-}
 .max-w-\[440px\] {
   max-width: 440px;
 }
@@ -4096,6 +4093,20 @@ input[type='search'] {
 #infiniteoptions-container {
   margin-top: calc(20rem / 16);
   margin-top: calc(20rem / var(--vf-font-size-root));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: calc(18rem / 16);
+  gap: calc(18rem / var(--vf-font-size-root));
+}
+#slidecarthq .empty .tsk-empty-cart #infiniteoptions-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /* #infiniteoptions-container:empty {
   @apply h-46;
@@ -4107,6 +4118,8 @@ input[type='search'] {
   display: block;
 }
 #infiniteoptions-container > div > span > input,
+#infiniteoptions-container .spb-select,
+#infiniteoptions-container form[data-uploadery],
 #infiniteoptions-container > div > span > fieldset {
   position: relative;
   height: calc(42rem / 16);
@@ -4136,6 +4149,8 @@ input[type='search'] {
   line-height: var(--vf-line-height-body-copy);
 }
 #infiniteoptions-container > div > span > input:focus,
+#infiniteoptions-container .spb-select:focus,
+#infiniteoptions-container form[data-uploadery]:focus,
 #infiniteoptions-container > div > span > fieldset:focus {
   --tw-border-opacity: 1;
   border-color: rgba(23, 23, 23, var(--tw-border-opacity));
@@ -4144,6 +4159,8 @@ input[type='search'] {
   outline-color: rgb(var(--vf-color-primary-pressed) / 1);
 }
 #infiniteoptions-container > div > span > input:disabled,
+#infiniteoptions-container .spb-select:disabled,
+#infiniteoptions-container form[data-uploadery]:disabled,
 #infiniteoptions-container > div > span > fieldset:disabled {
   --tw-border-opacity: 1;
   border-color: rgba(148, 148, 148, var(--tw-border-opacity));
@@ -4153,6 +4170,29 @@ input[type='search'] {
   --tw-bg-opacity: 1;
   background-color: rgba(222, 222, 222, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-disabled) / var(--tw-bg-opacity));
+}
+#infiniteoptions-container form[data-uploadery] {
+  height: auto;
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  font-weight: 700;
+}
+#infiniteoptions-container form[data-uploadery] .spb-fileupload {
+  margin-top: calc(4rem / 16);
+  margin-top: calc(4rem / var(--vf-font-size-root));
+  font-weight: 400;
+}
+#infiniteoptions-container .spb-select {
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  padding-right: 0px;
+}
+#infiniteoptions-container .spb-select select {
+  width: 100%;
 }
 #infiniteoptions-container > div > .spb-label-tooltip > label {
   position: absolute;
