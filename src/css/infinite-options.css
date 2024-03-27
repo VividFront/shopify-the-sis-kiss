@@ -1,5 +1,5 @@
 #infiniteoptions-container {
-  @apply mt-20;
+  @apply flex flex-col mt-20 gap-18;
 }
 
 /* #infiniteoptions-container:empty {
@@ -15,8 +15,26 @@
 }
 
 #infiniteoptions-container > div > span > input,
+#infiniteoptions-container .spb-select,
+#infiniteoptions-container form[data-uploadery],
 #infiniteoptions-container > div > span > fieldset {
   @apply text-body-copy rounded-[4px] border-border border w-full h-42 px-12 py-12 relative focus:border-primary-pressed focus:outline-primary-pressed disabled:border-disabled-high-contrast disabled:bg-disabled bg-input-background;
+}
+
+#infiniteoptions-container form[data-uploadery] {
+  @apply h-auto py-8 font-bold;
+}
+
+#infiniteoptions-container form[data-uploadery] .spb-fileupload {
+  @apply mt-4 font-normal;
+}
+
+#infiniteoptions-container .spb-select {
+  @apply py-8 pr-0;
+}
+
+#infiniteoptions-container .spb-select select {
+  @apply w-full;
 }
 
 #infiniteoptions-container > div > .spb-label-tooltip > label {
