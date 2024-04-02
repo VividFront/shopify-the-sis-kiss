@@ -8,17 +8,6 @@
     },
     "video_hero_CyihmA": {
       "type": "video-hero",
-      "blocks": {
-        "heading_bdpixL": {
-          "type": "heading",
-          "settings": {
-            "text": "Charm Bar"
-          }
-        }
-      },
-      "block_order": [
-        "heading_bdpixL"
-      ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/TSK_desktop_Hero_1500_x_1068_px_0840d0b8-9be6-4468-83f9-1f702968bc25.png",
         "video_url": ""
@@ -27,7 +16,7 @@
     "custom_liquid_iEM7Gw": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div class=\"container\">\n<h1 class=\"text-center\">Charm Bar<\/h1>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
