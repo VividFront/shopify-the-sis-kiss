@@ -2,13 +2,13 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "settings": {
-      }
+      "disabled": true,
+      "settings": {}
     },
     "collaborator_hero_LyQE8r": {
       "type": "collaborator-hero",
-      "disabled": true,
       "settings": {
+        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
       }
     },
     "product-grid": {
@@ -18,9 +18,5 @@
       }
     }
   },
-  "order": [
-    "banner",
-    "collaborator_hero_LyQE8r",
-    "product-grid"
-  ]
+  "order": ["banner", "collaborator_hero_LyQE8r", "product-grid"]
 }
