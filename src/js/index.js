@@ -16,3 +16,4 @@ import './lottie.js';
 import './mobile-menu.js';
 import './product-details.js';
 import './video.js';
+import './add-charm-to-cart.js';

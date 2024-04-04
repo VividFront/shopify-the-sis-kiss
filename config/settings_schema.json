@@ -75,6 +75,11 @@
         "type": "url",
         "id": "emoji_gift_30",
         "label": "$30 Gift"
+      },
+      {
+        "type": "url",
+        "id": "emoji_buy_2_get_1",
+        "label": "Buy 2 Get 1"
       }
     ]
   },
