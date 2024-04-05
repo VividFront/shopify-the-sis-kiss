@@ -983,6 +983,9 @@ a:hover {
 .relative {
   position: relative;
 }
+.\!relative {
+  position: relative !important;
+}
 .-right-4 {
   right: calc((4rem / 16) * -1);
   right: calc((4rem / var(--vf-font-size-root)) * -1);
@@ -7042,6 +7045,9 @@ footer #contact_form {
   }
   .lg\:absolute {
     position: absolute;
+  }
+  .lg\:\!absolute {
+    position: absolute !important;
   }
   .lg\:relative {
     position: relative;
