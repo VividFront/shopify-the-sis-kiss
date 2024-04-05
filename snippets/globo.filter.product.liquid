@@ -101,7 +101,7 @@
             product.tags contains 'badge:$30 Gift'
           -%}
           {% assign badge_classes = '!flex items-center gap-x-4 shadow-xs rounded-[4px] z-[1] bg-white py-2 px-8 text-body-copy-small' %}
-          <div class="!absolute top-12 left-8 !flex gap-4 flex-wrap">
+          <div class="!absolute top-12 left-8 !flex gap-4 flex-wrap pr-28">
             {%- if product.tags contains 'badge:$10 Gift' -%}
               <div class="{{ badge_classes }}">
                 <img src="{% endraw %}{{ settings.emoji_gift_10 }}{% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
