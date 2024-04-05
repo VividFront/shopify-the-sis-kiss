@@ -3,13 +3,14 @@
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
-      "settings": {}
+      "settings": {
+      }
     },
     "collaborator_hero_LyQE8r": {
       "type": "collaborator-hero",
       "settings": {
         "heading": "Buy 2 Get 1 Free",
-        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
+        "explore_badge": "shopify:\/\/shop_images\/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
       }
     },
     "product-grid": {
@@ -19,5 +20,9 @@
       }
     }
   },
-  "order": ["banner", "collaborator_hero_LyQE8r", "product-grid"]
+  "order": [
+    "banner",
+    "collaborator_hero_LyQE8r",
+    "product-grid"
+  ]
 }
