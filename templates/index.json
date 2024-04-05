@@ -352,7 +352,8 @@
         "image": "shopify:\/\/shop_images\/Sis_Kiss_Custom_Edits-Hayley_Dolson--100_websize.jpg",
         "designer_tag": "",
         "cta_text": "Shop Charm Bar",
-        "cta_url": "shopify:\/\/collections\/charm-bar"
+        "cta_url": "shopify:\/\/collections\/charm-bar",
+        "hide_product_badges": true
       }
     },
     "03e98e28-bb6a-4d26-8fa8-bed336462fcb": {
