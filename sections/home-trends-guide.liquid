@@ -36,7 +36,7 @@
           {% for block in section.blocks %}
             {% if block.type == 'product' %}
               <div class="basis-1/2">
-                {% render 'card-product', product: block.settings.product, show_secondary_image: true %}
+                {% render 'card-product', product: block.settings.product, show_secondary_image: true, hide_product_badges: section.settings.hide_product_badges %}
               </div>
             {% endif %}
           {% endfor %}
@@ -104,6 +104,12 @@
       "type": "url",
       "id": "cta_url",
       "label": "CTA Url"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_product_badges",
+      "label": "Hide Product Badges",
+      "default": false
     }
   ],
   "blocks": [

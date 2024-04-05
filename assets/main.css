@@ -2333,6 +2333,14 @@ a:hover {
 .pt-\[138px\] {
   padding-top: 138px;
 }
+.pr-24 {
+  padding-right: calc(24rem / 16);
+  padding-right: calc(24rem / var(--vf-font-size-root));
+}
+.pr-28 {
+  padding-right: calc(28rem / 16);
+  padding-right: calc(28rem / var(--vf-font-size-root));
+}
 .text-left {
   text-align: left;
 }
