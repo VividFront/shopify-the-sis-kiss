@@ -980,11 +980,11 @@ a:hover {
 .absolute {
   position: absolute;
 }
-.relative {
-  position: relative;
-}
 .\!relative {
   position: relative !important;
+}
+.relative {
+  position: relative;
 }
 .-right-4 {
   right: calc((4rem / 16) * -1);
@@ -7043,11 +7043,11 @@ footer #contact_form {
   .lg\:static {
     position: static;
   }
-  .lg\:absolute {
-    position: absolute;
-  }
   .lg\:\!absolute {
     position: absolute !important;
+  }
+  .lg\:absolute {
+    position: absolute;
   }
   .lg\:relative {
     position: relative;
