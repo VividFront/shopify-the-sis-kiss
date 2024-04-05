@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {}
+    },
+    "collaborator_hero_LyQE8r": {
+      "type": "collaborator-hero",
+      "settings": {
+        "heading": "Buy 2 Get 1 Free",
+        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection",
+      "settings": {
+        "products_per_page": 27
+      }
+    }
+  },
+  "order": ["banner", "collaborator_hero_LyQE8r", "product-grid"]
+}

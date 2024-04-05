@@ -1,0 +1,7 @@
+.vf-cart-sale-alert {
+  @apply !text-center !text-white !bg-primary !block !rounded !p-8 [&_span]:!font-bold;
+}
+
+#slidecarthq .slidecarthq .custom-html {
+  @apply !m-0;
+}

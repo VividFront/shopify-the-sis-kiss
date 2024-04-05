@@ -34,7 +34,7 @@
           "settings": {
             "text": "Book Appt In Your Area",
             "anchor": "",
-            "url": "shopify:\/\/pages\/find-linkers"
+            "url": "shopify://pages/find-linkers"
           }
         }
       },
@@ -46,7 +46,7 @@
         "ea0c94e6-56f4-4d14-ae93-cbacbddbd63c"
       ],
       "settings": {
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ac0d7cc36901413fac8a95449ae9056a.mov"
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ac0d7cc36901413fac8a95449ae9056a.mov"
       }
     },
     "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b": {
@@ -57,7 +57,7 @@
           "settings": {
             "heading": "Choose and purchase your chain",
             "body": "Pick out the chain you want from our current collection. Charm and additional chain availability is subject to change.",
-            "image": "shopify:\/\/shop_images\/One_2x_561d3299-19bf-4058-a2ba-f7fb3704cb4c.png"
+            "image": "shopify://shop_images/One_2x_561d3299-19bf-4058-a2ba-f7fb3704cb4c.png"
           }
         },
         "98563b9c-11c7-425e-892b-dfeb8f7404df": {
@@ -65,7 +65,7 @@
           "settings": {
             "heading": "Schedule your fitting",
             "body": "Schedule your 15 minute fitting at time of online purchase.",
-            "image": "shopify:\/\/shop_images\/Two_2x_91db532e-ce61-4f84-8014-88296cf0b3db.png"
+            "image": "shopify://shop_images/Two_2x_91db532e-ce61-4f84-8014-88296cf0b3db.png"
           }
         },
         "a6ee1b76-5c57-41e0-803b-7edd75ebaf6c": {
@@ -73,7 +73,7 @@
           "settings": {
             "heading": "Come to HQ and get linked!",
             "body": "We request you arrive at least 5 minutes early. Feel free peruse our current charm and add-on pieces for extra bling.",
-            "image": "shopify:\/\/shop_images\/Three_2x_fb6018b0-b0cd-4582-aa51-cb3000558b29.png"
+            "image": "shopify://shop_images/Three_2x_fb6018b0-b0cd-4582-aa51-cb3000558b29.png"
           }
         }
       },
@@ -83,9 +83,9 @@
         "a6ee1b76-5c57-41e0-803b-7edd75ebaf6c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/big-Sis_Kiss_Lovely_Links_HQ_52.jpg",
+        "image": "shopify://shop_images/big-Sis_Kiss_Lovely_Links_HQ_52.jpg",
         "heading": "How it Works",
-        "body": "<p>Choose your chain and book an appointment on our website, then get linked at our Sis Kiss HQ on Dover Center Rd., just outside Cleveland, Ohio!<\/p>",
+        "body": "<p>Choose your chain and book an appointment on our website, then get linked at our Sis Kiss HQ on Dover Center Rd., just outside Cleveland, Ohio!</p>",
         "cta_text": "",
         "cta_url": ""
       }
@@ -95,24 +95,21 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
-          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb": {
-          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
-          "settings": {
-          }
+          "type": "shopify://apps/infinite-options/blocks/app-block/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -122,11 +119,10 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "29808f61-0d66-4a6d-bd42-14eaa620bca2": {
-          "type": "shopify:\/\/apps\/sesami\/blocks\/app-block\/dc3b1344-0a53-477e-93d0-4b8a473ab587",
+          "type": "shopify://apps/sesami/blocks/app-block/dc3b1344-0a53-477e-93d0-4b8a473ab587",
           "settings": {
             "auto_add_to_cart": false,
             "skip_cart": false,
@@ -164,7 +160,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "FAQ",
-            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?<\/strong><\/p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.<\/p><p><\/p>",
+            "content": "<p><strong>What is The Sis Kiss Jewelry Made of?</strong></p><p>Our pieces are hand-crafted using a variety of high quality materials, including semi-precious stone, glass, resin, 14K gold, sterling silver and brass. Exact materials associated with each style may be  listed on their product detail page.</p><p></p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -174,7 +170,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Jewelry Care",
-            "content": "<p><strong>Jewelry Care<\/strong><\/p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.<\/p><p><\/p><p><strong>Jewelry 101<\/strong><\/p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.<\/strong><\/em><em> <\/em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  <\/p>",
+            "content": "<p><strong>Jewelry Care</strong></p><p>Lightly polish each piece of jewelry after you wear it with a soft cotton cloth. For rings, try to remove them when you wash your hands that way the plating will not wear off. Store your jewelry in the pouch you received to protect it from getting scratched and keep the pouch in a sealed plastic baggie. Do not shower or go swimming with your jewelry.</p><p></p><p><strong>Jewelry 101</strong></p><p>The Sis Kiss recommends taking off <em><strong>all jewelry before using hand sanitizer or washing your hands.</strong></em><em> </em>We love our products and want yours to keep looking like new. Hand sanitizer and harsh soaps may affect your jewelry so we recommend removing your TSK Bling before washing up!  </p>",
             "page": "",
             "use_product_description": false,
             "collection": ""
@@ -228,9 +224,9 @@
     "4db25240-7fe7-48e9-8f1d-61cdea6ffe79": {
       "type": "video-callout",
       "settings": {
-        "video_url": "https:\/\/vimeo.com\/854745100",
+        "video_url": "https://vimeo.com/854745100",
         "heading": "What Makes Sis Kiss Links Special?",
-        "body": "<p>The Sis Kiss has always been on the forefront of custom, high-quality jewelry. Now, we’ve added the next level of customization for you to enjoy. We use only the best quality 14k gold and .925 sterling silver chains and charms to partner with you and your friends to create unique, evergreen pieces you will enjoy for a lifetime!<\/p>",
+        "body": "<p>The Sis Kiss has always been on the forefront of custom, high-quality jewelry. Now, we’ve added the next level of customization for you to enjoy. We use only the best quality 14k gold and .925 sterling silver chains and charms to partner with you and your friends to create unique, evergreen pieces you will enjoy for a lifetime!</p>",
         "cta_text": "",
         "cta_url": ""
       }
@@ -239,15 +235,13 @@
       "type": "apps",
       "blocks": {
         "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
-          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         }
       },
-      "block_order": [
-        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
-      ],
+      "block_order": ["c2913024-b9fb-4da4-ad2d-d8717af1a674"],
       "settings": {
         "include_margins": true
       }
@@ -258,7 +252,7 @@
         "97091f40-77bb-45ef-bf3b-5808317f311e": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/shipping-icon.png",
+            "icon": "shopify://shop_images/shipping-icon.png",
             "heading": "Free Shipping*",
             "body": "Free shipping on all domestic US orders when you spend $100.",
             "large_text": ""
@@ -267,7 +261,7 @@
         "17c58f09-71ce-4caa-969a-d06a1880fcfa": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/rewards-icon.png",
+            "icon": "shopify://shop_images/rewards-icon.png",
             "heading": "Sis Kiss Rewards",
             "body": "Earn rewards for following us on social media, sharing your birthday, and more.",
             "large_text": ""
@@ -276,7 +270,7 @@
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89": {
           "type": "icon-item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/custom-necklace.png",
+            "icon": "shopify://shop_images/custom-necklace.png",
             "heading": "100+ Custom Styles",
             "body": "Custom jewelry makes the perfect gift to yourself and your loved ones.",
             "large_text": ""
@@ -288,24 +282,23 @@
         "17c58f09-71ce-4caa-969a-d06a1880fcfa",
         "3c7c4bc1-73a8-4790-8e6d-24bed14afe89"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "3cb2d5a7-2642-427b-9496-bf32f5a9fb7b": {
       "type": "z-pattern-contact",
       "settings": {
-        "image": "shopify:\/\/shop_images\/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
-        "image_secondary": "shopify:\/\/shop_images\/Untitled_design_16.png",
-        "image_mobile": "shopify:\/\/shop_images\/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
-        "image_link": "https:\/\/google.com",
+        "image": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_secondary": "shopify://shop_images/Untitled_design_16.png",
+        "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_link": "https://google.com",
         "heading": "TSK HQ",
-        "body": "<p>At The Sis Kiss Headquarters you can find our exclusive Charm Bar, essentials jewelry collection, TSK Your Way and permanent bracelet services (by appointment). Grab your girlfriends and join us at our HQ for a luxurious in-store shopping experience!<\/p><p><a href=\"https:\/\/google.com\" target=\"_blank\" title=\"https:\/\/google.com\">681 Dover Center Rd, Westlake, OH 44145<\/a><\/p><h3>Hours of Operation<\/h3><ul><li>Monday: 10AM-5:30PM<\/li><li>Wednesday: 10AM–5:30PM<\/li><li>Friday: 10AM–5:30PM<\/li><li>Saturday: 11AM–4PM<\/li><li>Sunday: Closed<\/li><li>Tues, Thurs: Closed<\/li><\/ul>"
+        "body": "<p>At The Sis Kiss Headquarters you can find our exclusive Charm Bar, essentials jewelry collection, TSK Your Way and permanent bracelet services (by appointment). Grab your girlfriends and join us at our HQ for a luxurious in-store shopping experience!</p><p><a href=\"https://google.com\" target=\"_blank\" title=\"https://google.com\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>Monday: 10AM-5:30PM</li><li>Wednesday: 10AM–5:30PM</li><li>Friday: 10AM–5:30PM</li><li>Saturday: 11AM–4PM</li><li>Sunday: Closed</li><li>Tues, Thurs: Closed</li></ul>"
       }
     },
     "605a63e6-525e-429b-a87a-b51c70b37d88": {
       "type": "complete-the-look",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/wallpaper.png",
+        "background_image": "shopify://shop_images/wallpaper.png",
         "marquee_text": "You May Also Like",
         "recommendation_type": "related"
       }

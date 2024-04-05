@@ -5,8 +5,13 @@
   {% assign breadcrumb_text_class = 'text-white [&_a]:text-white' %}
 {% endif %}
 
+{% assign heading = section.settings.heading %}
+{% if heading == blank %}
+  {% assign heading = collection.title %}
+{% endif %}
+
 <div class="relative mb-40 lg:mb-72 lg:pt-[calc(108rem/16)] lg:pb-[calc(108rem/16)]" style="background-color: {{ collection.metafields.custom.hero_background_color | default: '#fff' }}">
-  <div class="lg:absolute lg:left-0 lg:top-0 w-full">
+  <div class="w-full lg:absolute lg:left-0 lg:top-0">
     {% render 'breadcrumbs', breadcrumb_classes: breadcrumb_text_class %}
   </div>
   {%- liquid
@@ -19,7 +24,7 @@
     assign desktop_image_class = desktop_image_class | append: ' object-' | append: image_position
     assign mobile_image_class = mobile_image_class | append: ' object-' | append: image_position
   -%}
-  <div class="relative lg:absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[0]">
+  <div class="!relative lg:!absolute left-0 top-0 w-full aspect-[4/3] md:aspect-auto lg:h-full lg:z-[0]">
     {% if collection.metafields.custom.hero_background_image != blank %}
       {{ collection.metafields.custom.hero_background_image.value | image_url: width: 1500 | image_tag:
         width: collection.metafields.custom.hero_background_image.width,
@@ -43,14 +48,14 @@
       <span class="absolute bottom-12 left-12 text-body-copy-small {{ hero_text_color }}">{{ collection.metafields.custom.hero_influencer_tag }}</span>
     {% endif %}
   </div>
-  <div class="relative container lg:grid grid-cols pb-48 pt-24 lg:py-0">
+  <div class="container relative pt-24 pb-48 lg:grid grid-cols lg:py-0">
     {%- liquid 
       assign content_col_start = 'lg:col-start-1 xl:col-start-2'
       assign content_col_end = 'lg:col-end-6'
     -%}
     <div class="{{ content_col_start }} {{ content_col_end }} {{ hero_text_color }}">
       <h6 class="mb-8">{{ collection.metafields.custom.hero_subtitle | default: 'Introducing' }}</h6>
-      <h1 class="text-display font-display font-normal">{{ collection.title }}</h1>
+      <h1 class="font-normal text-display font-display">{{ heading }}</h1>
       {% if collection.metafields.custom.hero_body != blank %}
         <p class="mt-12 lg:mt-24 text-body-copy-large">{{ collection.metafields.custom.hero_body }}</p>
       {% endif %}
@@ -75,6 +80,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
     {
       "type": "image_picker",
       "id": "explore_badge",

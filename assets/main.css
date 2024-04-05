@@ -983,6 +983,9 @@ a:hover {
 .relative {
   position: relative;
 }
+.\!relative {
+  position: relative !important;
+}
 .-right-4 {
   right: calc((4rem / 16) * -1);
   right: calc((4rem / var(--vf-font-size-root)) * -1);
@@ -3855,6 +3858,27 @@ input[type='search'] {
     -webkit-animation-play-state: paused !important;
     animation-play-state: paused !important;
   }
+}
+.vf-cart-sale-alert {
+  display: block !important;
+  border-radius: 16px !important;
+  border-radius: var(--vf-border-radius) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity)) !important;
+  background-color: rgb(
+    var(--vf-color-primary) / var(--tw-bg-opacity)
+  ) !important;
+  padding: calc(8rem / 16) !important;
+  padding: calc(8rem / var(--vf-font-size-root)) !important;
+  text-align: center !important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+.vf-cart-sale-alert span {
+  font-weight: 700 !important;
+}
+#slidecarthq .slidecarthq .custom-html {
+  margin: 0px !important;
 }
 .tsk-quantity {
   display: -webkit-box;
@@ -7021,6 +7045,9 @@ footer #contact_form {
   }
   .lg\:absolute {
     position: absolute;
+  }
+  .lg\:\!absolute {
+    position: absolute !important;
   }
   .lg\:relative {
     position: relative;
