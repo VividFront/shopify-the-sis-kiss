@@ -211,6 +211,74 @@
       background-image: var(--tsk-bundle-builder-note-image);
     }
   }
+
+  .Notifications-module__kitenzo-notification-wrapper-top-right {
+    @apply top-[80px];
+  }
+
+  .Notifications-module__kitenzo-notification-group {
+    @apply bg-ui-pink rounded-lg border border-primary max-w-[645px] pt-0 text-[14px] md:text-[16px];
+
+    @media screen and (min-width: 992px) {
+      padding-left: 200px;
+      background-image: url('https://cdn.shopify.com/s/files/1/1216/9642/files/modal-icons.png?v=1712954596');
+      background-size: 161px;
+      background-position: 28px 16px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .Notifications-module__kitenzo-notification-dismiss {
+    width: 24px !important;
+    height: 24px !important;
+    padding: 4px !important;
+    border: none !important;
+    margin-top: 4px !important;
+    margin-right: 4px !important;
+  }
+
+  .kitenzo-quick-view-button {
+    border: none !important;
+    border-radius: 0 !important;
+    color: #000 !important;
+    padding: 0 !important;
+  }
+
+  .QuantitySelectorButton-module__kitenzo-button {
+    border-radius: none !important;
+    border: none !important;
+    color: #000 !important;
+  }
+
+  .kitenzo-component[data-component='StickyContainer'] {
+    bottom: 40px !important;
+    border-bottom: 1px solid #000 !important;
+  }
+
+  .KitSummaryRow-module__kitenzo-kit-summary-row-content {
+    .TextButton-module__kitenzo-text-button {
+      color: #000 !important;
+      padding: 0 !important;
+      border: none !important;
+    }
+  }
+}
+
+.Modal-module__kitenzo-modal-container-open {
+  .Modal-module__kitenzo-modal-open
+    .Modal-module__kitenzo-modal-footer
+    .KitSummaryModal-module__kitenzo-footer-container {
+    max-width: none !important;
+    display: block !important;
+
+    .KitSummaryModal-module__kitenzo-message {
+      @apply text-[14px] text-right;
+    }
+
+    .KitAddToCart-module__button {
+      @apply px-12 py-8 text-white bg-primary border-primary border-[2px] rounded-button font-bold;
+    }
+  }
 }
 
 #bundle-builder-app--bundle-contents-modal {
