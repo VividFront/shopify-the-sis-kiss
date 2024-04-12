@@ -2282,6 +2282,10 @@ a:hover {
   padding-right: calc(16rem / 16);
   padding-right: calc(16rem / var(--vf-font-size-root));
 }
+.pr-28 {
+  padding-right: calc(28rem / 16);
+  padding-right: calc(28rem / var(--vf-font-size-root));
+}
 .pr-72 {
   padding-right: calc(72rem / 16);
   padding-right: calc(72rem / var(--vf-font-size-root));
@@ -2332,14 +2336,6 @@ a:hover {
 }
 .pt-\[138px\] {
   padding-top: 138px;
-}
-.pr-24 {
-  padding-right: calc(24rem / 16);
-  padding-right: calc(24rem / var(--vf-font-size-root));
-}
-.pr-28 {
-  padding-right: calc(28rem / 16);
-  padding-right: calc(28rem / var(--vf-font-size-root));
 }
 .text-left {
   text-align: left;
@@ -6334,6 +6330,132 @@ sesami-button button:hover {
   --tw-content: '';
   content: var(--tw-content);
   background-image: var(--tsk-bundle-builder-note-image);
+}
+#bundle-builder-app--bundle--root
+  .Notifications-module__kitenzo-notification-wrapper-top-right,
+#bundle-builder-app--bundle-contents-modal
+  .Notifications-module__kitenzo-notification-wrapper-top-right {
+  top: 80px;
+}
+#bundle-builder-app--bundle--root
+  .Notifications-module__kitenzo-notification-group,
+#bundle-builder-app--bundle-contents-modal
+  .Notifications-module__kitenzo-notification-group {
+  max-width: 645px;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
+  padding-top: 0px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  #bundle-builder-app--bundle--root
+    .Notifications-module__kitenzo-notification-group,
+  #bundle-builder-app--bundle-contents-modal
+    .Notifications-module__kitenzo-notification-group {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #bundle-builder-app--bundle--root
+    .Notifications-module__kitenzo-notification-group,
+  #bundle-builder-app--bundle-contents-modal
+    .Notifications-module__kitenzo-notification-group {
+    padding-left: 200px;
+    background-image: url('https://cdn.shopify.com/s/files/1/1216/9642/files/modal-icons.png?v=1712954596');
+    background-size: 161px;
+    background-position: 28px 16px;
+    background-repeat: no-repeat;
+  }
+}
+#bundle-builder-app--bundle--root
+  .Notifications-module__kitenzo-notification-dismiss,
+#bundle-builder-app--bundle-contents-modal
+  .Notifications-module__kitenzo-notification-dismiss {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 4px !important;
+  border: none !important;
+  margin-top: 4px !important;
+  margin-right: 4px !important;
+}
+#bundle-builder-app--bundle--root .kitenzo-quick-view-button,
+#bundle-builder-app--bundle-contents-modal .kitenzo-quick-view-button {
+  border: none !important;
+  border-radius: 0 !important;
+  color: #000 !important;
+  padding: 0 !important;
+}
+#bundle-builder-app--bundle--root
+  .QuantitySelectorButton-module__kitenzo-button,
+#bundle-builder-app--bundle-contents-modal
+  .QuantitySelectorButton-module__kitenzo-button {
+  border-radius: none !important;
+  border: none !important;
+  color: #000 !important;
+}
+#bundle-builder-app--bundle--root
+  .kitenzo-component[data-component='StickyContainer'],
+#bundle-builder-app--bundle-contents-modal
+  .kitenzo-component[data-component='StickyContainer'] {
+  bottom: 40px !important;
+  border-bottom: 1px solid #000 !important;
+}
+#bundle-builder-app--bundle--root
+  .KitSummaryRow-module__kitenzo-kit-summary-row-content
+  .TextButton-module__kitenzo-text-button,
+#bundle-builder-app--bundle-contents-modal
+  .KitSummaryRow-module__kitenzo-kit-summary-row-content
+  .TextButton-module__kitenzo-text-button {
+  color: #000 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+.Modal-module__kitenzo-modal-container-open
+  .Modal-module__kitenzo-modal-open
+  .Modal-module__kitenzo-modal-footer
+  .KitSummaryModal-module__kitenzo-footer-container {
+  max-width: none !important;
+  display: block !important;
+}
+.Modal-module__kitenzo-modal-container-open
+  .Modal-module__kitenzo-modal-open
+  .Modal-module__kitenzo-modal-footer
+  .KitSummaryModal-module__kitenzo-footer-container
+  .KitSummaryModal-module__kitenzo-message {
+  text-align: right;
+  font-size: 14px;
+}
+.Modal-module__kitenzo-modal-container-open
+  .Modal-module__kitenzo-modal-open
+  .Modal-module__kitenzo-modal-footer
+  .KitSummaryModal-module__kitenzo-footer-container
+  .KitAddToCart-module__button {
+  border-radius: 20px;
+  border-radius: var(--vf-border-radius-button);
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
+  padding-left: calc(12rem / 16);
+  padding-left: calc(12rem / var(--vf-font-size-root));
+  padding-right: calc(12rem / 16);
+  padding-right: calc(12rem / var(--vf-font-size-root));
+  padding-top: calc(8rem / 16);
+  padding-top: calc(8rem / var(--vf-font-size-root));
+  padding-bottom: calc(8rem / 16);
+  padding-bottom: calc(8rem / var(--vf-font-size-root));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 #bundle-builder-app--bundle-contents-modal {
   top: 16px !important;
