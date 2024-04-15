@@ -3,9 +3,9 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "form_body": "Email the Sis Kiss™ Customer Service Team anytime to chat about your custom fashion accessories order! We accept returns within 30 days if you received your item damaged or broken. \n<br>Please allow up to 4 business days for a response back.",
-        "form_topics": "General Jewelry Questions,Order Questions,Event Inquiry, Returns,Collaboration \/ Partnership,Shipping \/ Tracking",
-        "background_image": "shopify:\/\/shop_images\/Background_2.png",
+        "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>Please allow up to 3 business days for a response back.",
+        "form_topics": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
+        "background_image": "shopify:\/\/shop_images\/Untitled_design_8.png",
         "redirect_url": "shopify:\/\/pages\/thank-you"
       }
     },
@@ -22,6 +22,7 @@
     },
     "4a119896-ce6d-4e84-8fe4-f6b457385bd4": {
       "type": "z-pattern-multi-image",
+      "disabled": true,
       "settings": {
         "heading": "Our Designs",
         "body": "Our jewelry collections are hand curated by our TSK team. We collaborate with our favorite influencer's to bring you unique and hand-picked styles we are sure you will love.",
