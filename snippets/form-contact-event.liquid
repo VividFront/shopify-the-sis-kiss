@@ -51,7 +51,6 @@
       </div>
     {% endif %}
         </div>
-        </div>
     {% if topics != blank %}
       {% assign topics_array = topics | split: ',' %}
       <div class="tsk-field-group field--with-error flex flex-col gap-6">
@@ -63,8 +62,7 @@
         <label class="font-bold" for="ContactForm-topic">Topic *</label>
       </div>
     {% endif %}
-        </div>
-        </div>
+      </div>
     {% if topics != blank %}
       {% assign topics_array = topics | split: ',' %}
       <div class="tsk-field-group field--with-error flex flex-col gap-6">
@@ -74,8 +72,7 @@
           {% endfor %}
         </select>
         <label class="font-bold" for="ContactForm-topic">Topic *</label>
-        </div>
-        </div>
+      </div>
     {% endif %}
     <div class="tsk-field-group field--with-error flex flex-col gap-6">
       <input
