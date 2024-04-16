@@ -5,8 +5,8 @@
       "settings": {
         "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>Please allow up to 3 business days for a response back.",
         "form_event-type": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
-        "form_topics2": "1-5, 6-10, 11-15, 16-20, 20+",
-        "form_topics3": "1 Hour, 2 Hours, 3 Hours, 4 Hours",
+        "form_group-size": "1-5, 6-10, 11-15, 16-20, 20+",
+        "form_event-length": "1 Hour, 2 Hours, 3 Hours, 4+ Hours",
         "background_image": "shopify:\/\/shop_images\/Untitled_design_10.png",
         "redirect_url": "shopify:\/\/pages\/thank-you"
       }
