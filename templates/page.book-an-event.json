@@ -7,6 +7,7 @@
         "form_event-type": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
         "form_topics2": "1-5, 6-10, 11-15, 16-20, 20+",
         "form_topics3": "1 Hour, 2 Hours, 3 Hours, 4 Hours",
+        "background_image": "shopify:\/\/shop_images\/Untitled_design_10.png",
         "redirect_url": "shopify:\/\/pages\/thank-you"
       }
     },
