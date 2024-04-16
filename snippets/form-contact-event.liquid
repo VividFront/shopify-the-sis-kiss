@@ -42,7 +42,7 @@
     {% if topics != blank %}
       {% assign topics_array = topics | split: ',' %}
       <div class="tsk-field-group field--with-error flex flex-col gap-6">
-        <select name="contact[topic]" id="ContactForm-topic">
+        <select name="contact[Event Type]" id="ContactForm-topic">
           {% for topic in topics_array %}
             <option value="{{ topic }}">{{ topic }}</option>
           {% endfor %}
