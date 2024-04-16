@@ -2,6 +2,7 @@
   "sections": {
     "contact_form_events_x4rURV": {
       "type": "contact-form-events",
+      "disabled": true,
       "settings": {
         "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>\nIn your message please include your preferred event date, group size, and event length (up to 4 hours).\n<br><br>Please allow up to 3 business days for a response back.",
         "form_event-type": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
@@ -14,9 +15,9 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>Please allow up to 3 business days for a response back.",
+        "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>\nIn your message please include your preferred event date, group size, and event length (up to 4 hours).\n<br><br>Please allow up to 3 business days for a response back.",
         "form_topics": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
-        "background_image": "shopify:\/\/shop_images\/Untitled_design_8.png",
+        "background_image": "shopify:\/\/shop_images\/Untitled_design_10.png",
         "redirect_url": "shopify:\/\/pages\/thank-you"
       }
     },
