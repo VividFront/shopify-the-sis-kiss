@@ -1,5 +1,15 @@
 {
   "sections": {
+    "contact_form_events_x4rURV": {
+      "type": "contact-form-events",
+      "settings": {
+        "form_body": "Looking for the perfect event venue? Want to get permanent jewelry with your friends and family? The Sis Kiss™ HQ is the perfect location for all your private party needs! Take a moment to fill out our inquiry form, and one of our talented Sis Kiss event managers will reach out shortly. \n<br><br>Please allow up to 3 business days for a response back.",
+        "form_topics": "Private Event Inquiry, Permanent Jewelry Party, Event Space Rental, Photoshoot Rental",
+        "form_topics2": "",
+        "form_topics3": "",
+        "redirect_url": ""
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -63,6 +73,7 @@
     }
   },
   "order": [
+    "contact_form_events_x4rURV",
     "form",
     "bae0b27f-6748-4629-9b23-d72bc6ba747c",
     "4a119896-ce6d-4e84-8fe4-f6b457385bd4",
