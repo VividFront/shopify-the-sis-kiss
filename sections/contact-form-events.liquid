@@ -1,0 +1,82 @@
+<div class="relative">
+  <div class="absolute left-0 top-0 w-full h-full z-[-1]">
+    {% if section.settings.background_image != blank %}
+      {{ section.settings.background_image | image_url: width: 1500 | image_tag:
+        width: section.settings.background_image.width,
+        class: 'h-full w-full object-cover',
+        sizes: section.settings.background_image.sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.background_image.alt | escape
+      }}
+    {% else %}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+  </div>
+  {%- render 'breadcrumbs', breadcrumb_classes: 'relative' -%}
+  <div class="relative p-section-md">
+    <div class="container">
+      <div class="grid grid-cols">
+        <div class="col-start-1 col-end-13 lg:col-start-3 lg:col-end-11">
+          <div class="bg-white rounded px-24 pt-24 pb-32">
+            <h1 class="h2 text-center">{{ page.title }}</h1>
+            {% if section.settings.form_body != blank %}
+              <p class="mt-16 text-center">{{ section.settings.form_body }}</p>
+            {% endif %}
+            <p class="mt-12 text-center">*required</p>
+            <div class="mt-20">
+              {%- render 'form-contact-event', topics: section.settings.form_event-type, section.settings.form_group-size, section.settings.form_event-legnth, redirect_url: section.settings.redirect_url -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "form_body",
+      "label": "Form Body"
+    },
+    {
+      "type": "textarea",
+      "id": "form_event-type",
+      "label": "Event Type",
+      "info": "Comma Separated"
+    },
+    {
+      "type": "textarea",
+      "id": "form_group-size",
+      "label": "Group Size",
+      "info": "Comma Separated"
+    },
+    {
+      "type": "textarea",
+      "id": "form_event-length",
+      "label": "Event Length",
+      "info": "Comma Separated"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "url",
+      "id": "redirect_url",
+      "label": "Redirect URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

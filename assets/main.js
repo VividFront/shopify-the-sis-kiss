@@ -26942,6 +26942,16 @@
           );
         });
       },
+      56: function () {
+        window.SLIDECART_OPENED = function () {
+          var t = window.cart_tags,
+            e = document.querySelector('#slidecarthq .vf-cart-sale-alert');
+          t &&
+            e &&
+            t.includes('badge:buy 2 get 1 free') &&
+            e.classList.remove('hidden');
+        };
+      },
       11: function () {
         var t = document.querySelectorAll(
           '[data-vf-product-details] > details',
@@ -29707,6 +29717,7 @@
             }),
               t[e].play();
         }),
-      __webpack_require__(11);
+      __webpack_require__(11),
+      __webpack_require__(56);
   })();
 })();
