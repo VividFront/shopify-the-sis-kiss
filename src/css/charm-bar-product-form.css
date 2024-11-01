@@ -1,0 +1,5 @@
+charm-bar-product-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

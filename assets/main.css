@@ -1254,6 +1254,9 @@ a:hover {
 .mt-\[2rem\] {
   margin-top: 2rem;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .block {
   display: block;
 }
@@ -1988,6 +1991,13 @@ a:hover {
   border-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
 }
+.border-disabled-high-contrast {
+  --tw-border-opacity: 1;
+  border-color: rgba(148, 148, 148, var(--tw-border-opacity));
+  border-color: rgb(
+    var(--vf-color-disabled-high-contrast) / var(--tw-border-opacity)
+  );
+}
 .border-error {
   --tw-border-opacity: 1;
   border-color: rgba(205, 32, 38, var(--tw-border-opacity));
@@ -2189,6 +2199,10 @@ a:hover {
   padding-right: calc(8rem / 16);
   padding-right: calc(8rem / var(--vf-font-size-root));
 }
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
 .py-10 {
   padding-top: calc(10rem / 16);
   padding-top: calc(10rem / var(--vf-font-size-root));
@@ -2230,6 +2244,10 @@ a:hover {
   padding-top: calc(8rem / var(--vf-font-size-root));
   padding-bottom: calc(8rem / 16);
   padding-bottom: calc(8rem / var(--vf-font-size-root));
+}
+.py-\[4px\] {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .pb-12 {
   padding-bottom: calc(12rem / 16);
@@ -4503,6 +4521,16 @@ sesami-button button:hover {
 }
 .stockist-result-details {
   margin-top: 0px;
+}
+charm-bar-product-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
 }
 @-webkit-keyframes placeHolderShimmer {
   0% {
