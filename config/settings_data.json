@@ -1,34 +1,34 @@
 {
   "current": {
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/logo.JPG",
-    "emoji_trending": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/kiss-mark_1f48b.png?v=1682697466",
-    "emoji_new": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/sparkles_2728.png?v=1682697466",
-    "emoji_limited": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/locked_1f512.png?v=1682697466",
-    "emoji_wine": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/wine-glass_1f377.png?v=1683126996",
-    "emoji_water": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/droplet_1f4a7.png?v=1683150318",
-    "emoji_gift_10": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/10.png?v=1701982376",
-    "emoji_gift_20": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/20.png?v=1701982377",
-    "emoji_gift_30": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/30.png?v=1701982375",
-    "emoji_buy_2_get_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/shopping-bags_1f6cd-fe0f.png?v=1712345209",
-    "lottie_cat_glasses": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/cat-glasses.json?v=1683137087",
-    "lottie_podcast_ribbon_homepage": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/ribbon-homepage-cropped.json?v=1684340951",
-    "yotpo_tiers_icon_silver": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/silver.png?v=1685640556",
-    "yotpo_tiers_icon_gold": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/gold.png?v=1685640556",
-    "yotpo_tiers_icon_diamond": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/heart.png?v=1685568933",
-    "bundle_builder_note_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/custom-necklace.png?v=1684508317",
-    "bundle_builder_tsk_your_way_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/TSK_Your_Way_1.jpg?v=1686253431",
-    "bundle_builder_tsk_your_way_image_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/tsk-mobile.png?v=1686161825",
-    "bundle_builder_charm_bar_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/Background_2_52b6b902-0f8a-4ce3-877d-d9da865699ab.png?v=1687194927",
-    "bundle_builder_charm_bar_image_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/charm-bar_f6adf952-dc7c-4dc9-ba64-56a83303ba8a.png?v=1687981951",
-    "bundle_builder_diamond_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/diamond-icon--transparent-150x150-1651083192561.png?v=1686161732",
-    "bundle_builder_chain_icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/1216\/9642\/files\/necklace-chain-icon--transparent-150x150-1651083192562.png?v=1686161732",
+    "favicon": "shopify://shop_images/logo.JPG",
+    "emoji_trending": "https://cdn.shopify.com/s/files/1/1216/9642/files/kiss-mark_1f48b.png?v=1682697466",
+    "emoji_new": "https://cdn.shopify.com/s/files/1/1216/9642/files/sparkles_2728.png?v=1682697466",
+    "emoji_limited": "https://cdn.shopify.com/s/files/1/1216/9642/files/locked_1f512.png?v=1682697466",
+    "emoji_wine": "https://cdn.shopify.com/s/files/1/1216/9642/files/wine-glass_1f377.png?v=1683126996",
+    "emoji_water": "https://cdn.shopify.com/s/files/1/1216/9642/files/droplet_1f4a7.png?v=1683150318",
+    "emoji_gift_10": "https://cdn.shopify.com/s/files/1/1216/9642/files/10.png?v=1701982376",
+    "emoji_gift_20": "https://cdn.shopify.com/s/files/1/1216/9642/files/20.png?v=1701982377",
+    "emoji_gift_30": "https://cdn.shopify.com/s/files/1/1216/9642/files/30.png?v=1701982375",
+    "emoji_buy_2_get_1": "https://cdn.shopify.com/s/files/1/1216/9642/files/shopping-bags_1f6cd-fe0f.png?v=1712345209",
+    "lottie_cat_glasses": "https://cdn.shopify.com/s/files/1/1216/9642/files/cat-glasses.json?v=1683137087",
+    "lottie_podcast_ribbon_homepage": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-homepage-cropped.json?v=1684340951",
+    "yotpo_tiers_icon_silver": "https://cdn.shopify.com/s/files/1/1216/9642/files/silver.png?v=1685640556",
+    "yotpo_tiers_icon_gold": "https://cdn.shopify.com/s/files/1/1216/9642/files/gold.png?v=1685640556",
+    "yotpo_tiers_icon_diamond": "https://cdn.shopify.com/s/files/1/1216/9642/files/heart.png?v=1685568933",
+    "bundle_builder_note_image": "https://cdn.shopify.com/s/files/1/1216/9642/files/custom-necklace.png?v=1684508317",
+    "bundle_builder_tsk_your_way_image": "https://cdn.shopify.com/s/files/1/1216/9642/files/TSK_Your_Way_1.jpg?v=1686253431",
+    "bundle_builder_tsk_your_way_image_mobile": "https://cdn.shopify.com/s/files/1/1216/9642/files/tsk-mobile.png?v=1686161825",
+    "bundle_builder_charm_bar_image": "https://cdn.shopify.com/s/files/1/1216/9642/files/Background_2_52b6b902-0f8a-4ce3-877d-d9da865699ab.png?v=1687194927",
+    "bundle_builder_charm_bar_image_mobile": "https://cdn.shopify.com/s/files/1/1216/9642/files/charm-bar_f6adf952-dc7c-4dc9-ba64-56a83303ba8a.png?v=1687981951",
+    "bundle_builder_diamond_icon": "https://cdn.shopify.com/s/files/1/1216/9642/files/diamond-icon--transparent-150x150-1651083192561.png?v=1686161732",
+    "bundle_builder_chain_icon": "https://cdn.shopify.com/s/files/1/1216/9642/files/necklace-chain-icon--transparent-150x150-1651083192562.png?v=1686161732",
     "settings.bundle_builder_tsk_your_way_id": "132406",
     "bundle_builder_charm_me_id": "131767",
     "bundle_builder_charm_bar_id": "134715",
     "swatch_options": "Color,Finish,Chain Finish",
     "swatch_values": "silver,gold,rose-gold,yellow-gold",
-    "accessibe_script": "<script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https:\/\/acsbapp.com\/apps\/app\/dist\/js\/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '20' } }); }; h.appendChild(s); })(); <\/script>",
+    "accessibe_script": "<script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
@@ -127,13 +127,13 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_facebook_link": "https:\/\/www.facebook.com\/thesiskiss",
-    "social_instagram_link": "https:\/\/www.instagram.com\/thesiskiss\/",
+    "social_facebook_link": "https://www.facebook.com/thesiskiss",
+    "social_instagram_link": "https://www.instagram.com/thesiskiss/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/TheSisKiss\/",
+    "social_pinterest_link": "https://www.pinterest.com/TheSisKiss/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -144,7 +144,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-26_at_11.21.57_PM.png",
+    "checkout_logo_image": "shopify://shop_images/Screen_Shot_2023-07-26_at_11.21.57_PM.png",
     "checkout_logo_position": "center",
     "checkout_sidebar_background_color": "#f7f7f7",
     "checkout_accent_color": "#000000",
@@ -185,18 +185,15 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "12795042946931334281": {
-        "type": "shopify:\/\/apps\/wishlist-rocket\/blocks\/main\/8d81315d-6d32-4a20-960a-67cfb6cf9e73",
+        "type": "shopify://apps/wishlist-rocket/blocks/main/8d81315d-6d32-4a20-960a-67cfb6cf9e73",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "5059203847231188605": {
-        "type": "shopify:\/\/apps\/smart-product-filter-search\/blocks\/app-embed\/5cc1944c-3014-4a2a-af40-7d65abc0ef73",
+        "type": "shopify://apps/smart-product-filter-search/blocks/app-embed/5cc1944c-3014-4a2a-af40-7d65abc0ef73",
         "disabled": false,
         "settings": {
           "productGridSelector": "#collection-filters-grid",
@@ -205,13 +202,12 @@
         }
       },
       "6065014864672580889": {
-        "type": "shopify:\/\/apps\/slide-cart-upsell-by-amp\/blocks\/app-embed\/0a410b8d-7dc4-4f2d-b4e8-c12d34fd2255",
+        "type": "shopify://apps/slide-cart-upsell-by-amp/blocks/app-embed/0a410b8d-7dc4-4f2d-b4e8-c12d34fd2255",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "1386531382474587334": {
-        "type": "shopify:\/\/apps\/bundle-builder\/blocks\/bb-cart-integration\/78802baf-205d-4d1d-908c-fae911f24e36",
+        "type": "shopify://apps/bundle-builder/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
         "disabled": true,
         "settings": {
           "hide_accelerated_checkout": false,
@@ -238,13 +234,12 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12608439564960700138": {
-        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "type": "shopify://apps/sezzle-widget/blocks/widget-embed/f3a53793-e118-4764-a86b-a79bfedb0d5f",
         "disabled": false,
         "settings": {
           "heading": "Sezzle Widget",
@@ -253,7 +248,7 @@
         }
       },
       "14044569291296200651": {
-        "type": "shopify:\/\/apps\/bundle-builder\/blocks\/bb-cart-integration-custom\/78802baf-205d-4d1d-908c-fae911f24e36",
+        "type": "shopify://apps/bundle-builder/blocks/bb-cart-integration-custom/78802baf-205d-4d1d-908c-fae911f24e36",
         "disabled": false,
         "settings": {
           "theme_override": "",
@@ -274,22 +269,19 @@
         }
       },
       "12657775114333427046": {
-        "type": "shopify:\/\/apps\/essential-countdown\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+        "type": "shopify://apps/essential-countdown/blocks/app_embed/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "pagefly-page-builder": {
-        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
-      "3886181796285292942": {
-        "type": "shopify:\/\/apps\/cowlendar-booking\/blocks\/app-embed\/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+      "15404810374585504564": {
+        "type": "shopify://apps/videeo-mobile-commerce/blocks/app-embed-sdk/acf9f8eb-c211-4324-a19b-9f362f43b225",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
