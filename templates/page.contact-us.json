@@ -4,20 +4,20 @@
       "type": "contact-form",
       "settings": {
         "form_body": "Email the Sis Kiss™ Customer Service Team anytime to chat about your custom fashion accessories order! We accept returns within 30 days if you received your item damaged or broken. \n<br>Please allow up to 4 business days for a response back.",
-        "form_topics": "General Jewelry Questions,Order Questions,Event Inquiry, Returns,Collaboration \/ Partnership,Shipping \/ Tracking",
-        "background_image": "shopify:\/\/shop_images\/Background_2.png",
-        "redirect_url": "shopify:\/\/pages\/thank-you"
+        "form_topics": "General Jewelry Questions,Order Questions,Event Inquiry, Returns,Collaboration / Partnership,Shipping / Tracking",
+        "background_image": "shopify://shop_images/Background_2.png",
+        "redirect_url": "shopify://pages/thank-you"
       }
     },
     "bae0b27f-6748-4629-9b23-d72bc6ba747c": {
       "type": "z-pattern-contact",
       "settings": {
-        "image": "shopify:\/\/shop_images\/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.webp",
-        "image_secondary": "shopify:\/\/shop_images\/Untitled_design_16.png",
-        "image_mobile": "shopify:\/\/shop_images\/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
-        "image_link": "https:\/\/goo.gl\/maps\/Tfxc2bMXNLrByM4h6",
+        "image": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.webp",
+        "image_secondary": "shopify://shop_images/Untitled_design_16.png",
+        "image_mobile": "shopify://shop_images/32_2x_1504e0b6-adb8-44e5-b615-ee7ebdc38dc0.png",
+        "image_link": "https://goo.gl/maps/Tfxc2bMXNLrByM4h6",
         "heading": "TSK HQ",
-        "body": "<p>At The Sis Kiss Headquarters you can find our exclusive Charm Bar, essentials jewelry collection, TSK Your Way and permanent bracelet services (by appointment). Grab your girlfriends and join us at our HQ for a luxurious in-store shopping experience!<\/p><p><a href=\"https:\/\/goo.gl\/maps\/Tfxc2bMXNLrByM4h6\" target=\"_blank\" title=\"The Sis Kiss Dover Address\">681 Dover Center Rd, Westlake, OH 44145<\/a><\/p><h3>Hours of Operation<\/h3><ul><li>Monday: 10AM-5:30PM<\/li><li>Wednesday: 10AM–5:30PM<\/li><li>Friday: 10AM–5:30PM<\/li><li>Saturday: 11AM–4PM<\/li><li>Sunday: 11AM–4PM<\/li><li>Tues, Thurs: Closed<\/li><\/ul>"
+        "body": "<p>At The Sis Kiss Headquarters you can find our exclusive Charm Bar, essentials jewelry collection, TSK Your Way and permanent bracelet services (by appointment). Grab your girlfriends and join us at our HQ for a luxurious in-store shopping experience!</p><p><a href=\"https://goo.gl/maps/Tfxc2bMXNLrByM4h6\" target=\"_blank\" title=\"The Sis Kiss Dover Address\">681 Dover Center Rd, Westlake, OH 44145</a></p><h3>Hours of Operation</h3><ul><li>Monday: 11AM-6:00PM</li><li>Tuesday: CLOSED</li><li>Wednesday: 11AM–6:00PM</li><li>Thursday: CLOSED</li><li>Friday: 11AM–6:00PM</li><li>Saturday: 11AM–4:00PM</li><li>Sunday: 11AM–4:00PM</li></ul>"
       }
     },
     "4a119896-ce6d-4e84-8fe4-f6b457385bd4": {
@@ -26,10 +26,10 @@
         "heading": "Our Designs",
         "body": "Our jewelry collections are hand curated by our TSK team. We collaborate with our favorite influencer's to bring you unique and hand-picked styles we are sure you will love.",
         "cta_text": "Shop All Jewelry",
-        "cta_url": "shopify:\/\/collections",
-        "image_1": "shopify:\/\/shop_images\/your-way.jpg",
-        "image_2": "shopify:\/\/shop_images\/DSC00916.png",
-        "image_3": "shopify:\/\/shop_images\/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
+        "cta_url": "shopify://collections",
+        "image_1": "shopify://shop_images/your-way.jpg",
+        "image_2": "shopify://shop_images/DSC00916.png",
+        "image_3": "shopify://shop_images/11_2x_ae4dbf5c-342f-4f3c-a12d-a3e32c4dc068.png"
       }
     },
     "0d6c58c8-2c83-45af-bb7d-c45e771995ff": {
@@ -39,14 +39,14 @@
           "type": "question",
           "settings": {
             "title": "How Do I Keep My Jewelry Clean?",
-            "url": "shopify:\/\/blogs\/faq\/how-do-i-keep-my-jewelry-clean"
+            "url": "shopify://blogs/faq/how-do-i-keep-my-jewelry-clean"
           }
         },
         "ec0cd7e1-182a-4afa-ad89-deb090947166": {
           "type": "question",
           "settings": {
             "title": "What Material Is The Sis Kiss Jewelry Made With?",
-            "url": "shopify:\/\/blogs\/faq\/what-material-is-the-sis-kiss-jewelry-made-with"
+            "url": "shopify://blogs/faq/what-material-is-the-sis-kiss-jewelry-made-with"
           }
         }
       },
@@ -57,7 +57,7 @@
       "settings": {
         "heading": "Frequently Asked Questions",
         "cta_text": "View All FAQs",
-        "cta_url": "shopify:\/\/blogs\/faq"
+        "cta_url": "shopify://blogs/faq"
       }
     }
   },

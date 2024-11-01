@@ -59,7 +59,13 @@
           >
             {%- assign product_form_id = 'product-form-' | append: section.id -%}
     
+            {%- comment %}<locksmith:bff9>{% endcomment -%}
+              {%- assign locksmith_10d3_forloop__size = 0 %}{%- for block in section.blocks -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: block.settings.collection, subject_parent: section, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_10d3_forloop__size = locksmith_10d3_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_10d3_forloop__index = nil -%}
+            {%- comment %}</locksmith:bff9>{% endcomment -%}
             {%- for block in section.blocks -%}
+              {%- comment %}<locksmith:8556>{% endcomment -%}
+                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: block.settings.collection, subject_parent: section, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_10d3_forloop__index == nil %}{% assign locksmith_10d3_forloop__index = 1 %}{% assign locksmith_10d3_forloop__index0 = 0 %}{% else %}{% assign locksmith_10d3_forloop__index = locksmith_10d3_forloop__index | plus: 1 %}{% assign locksmith_10d3_forloop__index0 = locksmith_10d3_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_10d3_forloop__index == 1 %}{% assign locksmith_10d3_forloop__first = true %}{% else %}{% assign locksmith_10d3_forloop__first = false %}{% endif %}{% if locksmith_10d3_forloop__index == locksmith_10d3_forloop__size %}{% assign locksmith_10d3_forloop__last = true %}{% else %}{% assign locksmith_10d3_forloop__last = false %}{% endif %}{% assign locksmith_10d3_forloop__rindex = locksmith_10d3_forloop__size | minus: locksmith_10d3_forloop__index | minus: 1 %}{% assign locksmith_10d3_forloop__rindex0 = locksmith_10d3_forloop__size | minus: locksmith_10d3_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:8556>{% endcomment -%}
               {%- case block.type -%}
                 {%- when '@app' -%}
                   {% render block %}
@@ -128,9 +134,9 @@
 
                   {% assign is_in_collection = false %}
                   {% for col in product.collections %}
-                    {%- comment %}<locksmith:f943>{% endcomment -%}
+                    {%- comment %}<locksmith:1b76>{% endcomment -%}
                       {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: col, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-                    {%- comment %}</locksmith:f943>{% endcomment -%}
+                    {%- comment %}</locksmith:1b76>{% endcomment -%}
                     {% if col.handle == block.settings.collection.handle %}
                       {% assign is_in_collection = true %}
                       {% break %}
@@ -142,7 +148,7 @@
                   {% endif %}
 
                   {% if show_accordion %}
-                    <div data-vf-product-details id="Details-Product-{{ forloop.index }}" class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
+                    <div data-vf-product-details id="Details-Product-{{ locksmith_10d3_forloop__index }}" class="tsk-product-accordion mt-32 [&_+_.tsk-product-accordion]:mt-0 first-of-type:mt-32 quick-add-hidden" {{ block.shopify_attributes }}>
                       <details class="group border-border border px-16 -mb-[1px]" id="Details-{{ block.id }}-{{ section.id }}">
                         <summary class="py-8 flex items-center justify-between relative">
                           <h6>{{ block.settings.heading | default: block.settings.page.title }}</h6>
@@ -266,6 +272,9 @@
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
   {%- for block in popups -%}
+    {%- comment %}<locksmith:6c84>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: block, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+    {%- comment %}</locksmith:6c84>{% endcomment -%}
     <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
       <div
         role="dialog"

@@ -1401,3 +1401,40 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+class CharmBarProductForm extends HTMLElement {
+  constructor() {
+    super();
+    this.form = this.querySelector('form');
+    this.form.addEventListener('change', this.onVariantChange.bind(this));
+    this.variantIdInput = this.querySelector('[data-product-variant-id]');
+    this.optionSelectors = this.querySelectorAll('[data-option-selector]');
+    this.addToCartButton = this.querySelector('[data-add-to-cart-button]');
+    this.productId = this.dataset.productId;
+    this.variants = JSON.parse(this.dataset.variants);
+  }
+
+  onVariantChange() {
+    const selectedOptions = Array.from(this.optionSelectors).map(
+      (select) => select.value,
+    );
+    const selectedVariant = this.variants.find((variant) => {
+      return variant.options.every(
+        (option, index) => option === selectedOptions[index],
+      );
+    });
+
+    if (selectedVariant) {
+      this.variantIdInput.value = selectedVariant.id;
+      this.addToCartButton.disabled = !selectedVariant.available;
+      this.addToCartButton.textContent = selectedVariant.available
+        ? 'Add to Cart'
+        : 'Sold Out';
+    } else {
+      this.addToCartButton.disabled = true;
+      this.addToCartButton.textContent = 'Sold Out';
+    }
+  }
+}
+
+customElements.define('charm-bar-product-form', CharmBarProductForm);
