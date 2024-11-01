@@ -1991,6 +1991,13 @@ a:hover {
   border-color: rgba(193, 193, 194, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-border) / var(--tw-border-opacity));
 }
+.border-disabled-high-contrast {
+  --tw-border-opacity: 1;
+  border-color: rgba(148, 148, 148, var(--tw-border-opacity));
+  border-color: rgb(
+    var(--vf-color-disabled-high-contrast) / var(--tw-border-opacity)
+  );
+}
 .border-error {
   --tw-border-opacity: 1;
   border-color: rgba(205, 32, 38, var(--tw-border-opacity));
@@ -2004,13 +2011,6 @@ a:hover {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-}
-.border-disabled-high-contrast {
-  --tw-border-opacity: 1;
-  border-color: rgba(148, 148, 148, var(--tw-border-opacity));
-  border-color: rgb(
-    var(--vf-color-disabled-high-contrast) / var(--tw-border-opacity)
-  );
 }
 .\!bg-white {
   --tw-bg-opacity: 1 !important;
@@ -2199,6 +2199,10 @@ a:hover {
   padding-right: calc(8rem / 16);
   padding-right: calc(8rem / var(--vf-font-size-root));
 }
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
 .py-10 {
   padding-top: calc(10rem / 16);
   padding-top: calc(10rem / var(--vf-font-size-root));
@@ -2240,26 +2244,6 @@ a:hover {
   padding-top: calc(8rem / var(--vf-font-size-root));
   padding-bottom: calc(8rem / 16);
   padding-bottom: calc(8rem / var(--vf-font-size-root));
-}
-.px-4 {
-  padding-left: calc(4rem / 16);
-  padding-left: calc(4rem / var(--vf-font-size-root));
-  padding-right: calc(4rem / 16);
-  padding-right: calc(4rem / var(--vf-font-size-root));
-}
-.px-6 {
-  padding-left: calc(6rem / 16);
-  padding-left: calc(6rem / var(--vf-font-size-root));
-  padding-right: calc(6rem / 16);
-  padding-right: calc(6rem / var(--vf-font-size-root));
-}
-.px-\[4px\] {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-.px-\[6px\] {
-  padding-left: 6px;
-  padding-right: 6px;
 }
 .py-\[4px\] {
   padding-top: 4px;
