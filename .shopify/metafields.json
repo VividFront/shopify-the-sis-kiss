@@ -1,0 +1,441 @@
+{
+  "article": [
+    {
+      "key": "related_question_1_title",
+      "namespace": "custom",
+      "name": "Related Question 1 Title",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_question_2_title",
+      "namespace": "custom",
+      "name": "Related Question 2 Title",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_question_1_url",
+      "namespace": "custom",
+      "name": "Related Question 1 Url",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "related_question_2_url",
+      "namespace": "custom",
+      "name": "Related Question 2 Url",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    }
+  ],
+  "blog": [
+    {
+      "key": "featured_question_1_title",
+      "namespace": "custom",
+      "name": "Featured Question 1 Title",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "featured_question_1_url",
+      "namespace": "custom",
+      "name": "Featured Question 1 URL",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "featured_question_2_title",
+      "namespace": "custom",
+      "name": "Featured Question 2 Title",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "featured_question_2_url",
+      "namespace": "custom",
+      "name": "Featured Question 2 URL",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    }
+  ],
+  "brand": [],
+  "collection": [
+    {
+      "key": "subcategories",
+      "namespace": "custom",
+      "name": "Subcategories",
+      "description": "",
+      "type": {
+        "name": "list.collection_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "subcategory_image",
+      "namespace": "custom",
+      "name": "Subcategory Image",
+      "description": "Used when displaying this collection as a subcategory",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "lifestyle_images",
+      "namespace": "custom",
+      "name": "Collaborator Lifestyle Images",
+      "description": "Images that appear in the collection grid on collaborator collection pages",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "hero_subtitle",
+      "namespace": "custom",
+      "name": "Hero Subtitle",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "hero_body",
+      "namespace": "custom",
+      "name": "Hero Body",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "hero_background_image",
+      "namespace": "custom",
+      "name": "Hero Background Image",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "hero_background_image_mobile",
+      "namespace": "custom",
+      "name": "Hero Background Image Mobile",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "hero_influencer_tag",
+      "namespace": "custom",
+      "name": "Hero Influencer Tag",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "hero_white_text",
+      "namespace": "custom",
+      "name": "Hero White Text",
+      "description": "Enable to use white text in the hero",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "hero_background_color",
+      "namespace": "custom",
+      "name": "Hero Background Color",
+      "description": "",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    },
+    {
+      "key": "hero_image_position",
+      "namespace": "custom",
+      "name": "Hero Image Position",
+      "description": "Options: left, center, right",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "yotpo_gallery_id",
+      "namespace": "custom",
+      "name": "Yotpo Gallery ID",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_card_links",
+      "namespace": "custom",
+      "name": "Product Card Links",
+      "description": "Links used to display a product cards above grid. Product Card Images is also required",
+      "type": {
+        "name": "list.url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "product_card_images",
+      "namespace": "custom",
+      "name": "Product Card Images",
+      "description": "Images used for product cards. Images must be in same order as links",
+      "type": {
+        "name": "list.file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_card_titles",
+      "namespace": "custom",
+      "name": "Product Card Titles",
+      "description": "Titles used for product cards",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [
+    {
+      "key": "redo-returns",
+      "namespace": "app--3426665--returns",
+      "name": "Returns Metafield Definition",
+      "description": "Returns for this order",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "page": [],
+  "product": [
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "jewelry-material",
+      "namespace": "shopify",
+      "name": "Jewelry material",
+      "description": "Identifies the main material used in jewelry items, such as gold or enamel",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "age-group",
+      "namespace": "shopify",
+      "name": "Age group",
+      "description": "Defines the target age range for a product, such as adults or kids",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "jewelry-type",
+      "namespace": "shopify",
+      "name": "Jewelry type",
+      "description": "Distinguishes between types of jewelry, such as fine or imitation jewelry",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "target-gender",
+      "namespace": "shopify",
+      "name": "Target gender",
+      "description": "Identifies the intended gender for a product, such as female, male or unisex",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "necklace-design",
+      "namespace": "shopify",
+      "name": "Necklace design",
+      "description": "Describes the style of a necklace, such as pendant or choker",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "variant": [
+    {
+      "key": "custom_label_4",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 4",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_3",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 3",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_2",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 2",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_1",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 1",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "custom_label_0",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Label 0",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_system",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size System",
+      "description": "The country of the size system used by your product.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_type",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Size Type",
+      "description": "Your apparel product’s cut.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mpn",
+      "namespace": "mm-google-shopping",
+      "name": "Google: MPN",
+      "description": "Your product’s Manufacturer Part Number (MPN).",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "gender",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Gender",
+      "description": "The gender for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "condition",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Condition",
+      "description": "The condition of your product at time of sale.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "age_group",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Age Group",
+      "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
+  "shop": []
+}

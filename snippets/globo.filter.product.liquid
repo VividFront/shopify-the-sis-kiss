@@ -6,8 +6,12 @@
 
 {% if use_add_to_cart %}
   {% raw %}
-  {% assign root_url = {% endraw %}"{%- if routes.root_url != "/" -%}{{ routes.root_url }}{%- endif -%}"{% raw %} %}
-  {% assign currencyFormat = {% endraw %}{{ shop.money_format | json }}{% raw %} %}
+  {% assign root_url = {% endraw %}"
+  {%- if routes.root_url != '/' -%}{{ routes.root_url }}{%- endif -%}
+  "{% raw %} %}
+  {% assign currencyFormat = {% endraw %}
+  {{- shop.money_format | json -}}
+  {% raw %} %}
   {% assign swatch_options = 'Colour~~Color' | downcase | split: "~~" | uniq  %}
   {% assign image_options  = '' | downcase | split: "~~" | uniq  %}
   {% assign text_options   = 'Size' | downcase | split: "~~" | uniq  %}
@@ -109,42 +113,58 @@
           <div class="!absolute top-12 left-8 !flex gap-4 flex-wrap pr-28">
             {%- if product.tags contains 'badge:$10 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_10 }}{% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_10 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:$20 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_20 }}{% raw %}" width="16" height="16"><span class="shrink-0">$20 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_20 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$20 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:$30 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_30 }}{% raw %}" width="16" height="16"><span class="shrink-0">$30 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_30 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$30 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:Buy 2 get 1 Free' -%}
               <div class="{{ badge_classes }} font-bold">
-                <img src="{% endraw %}{{ settings.emoji_buy_2_get_1 }}{% raw %}" width="16" height="16"><span class="shrink-0">Buy 2 Get 1 Free</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_buy_2_get_1 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Buy 2 Get 1 Free</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:new' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_new }}{% raw %}" width="16" height="16"><span class="shrink-0">New</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_new -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">New</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:trending' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_trending }}{% raw %}" width="16" height="16"><span class="shrink-0">Trending</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_trending -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Trending</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:limited' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_limited }}{% raw %}" width="16" height="16"><span class="shrink-0">Limited</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_limited -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Limited</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:water resistant' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_water }}{% raw %}" width="16" height="16"><span class="shrink-0">Water Resistant</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_water -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Water Resistant</span>
               </div>
             {%- endif -%}
           </div>
@@ -173,7 +193,9 @@
               {%-   assign money_price = price | money_with_currency -%} 
             {%- endif -%} 
             {%- if target == product and product.price_varies -%} 
-              {% assign price = money_price %} {%- capture money_price %} {% endraw %}{{ 'products.product.price.from_price_html' | t }}{% raw %} {% endcapture %} 
+              {% assign price = money_price %} {%- capture money_price %} {% endraw %}
+  {{- 'products.product.price.from_price_html' | t -}}
+  {% raw %} {% endcapture %} 
             {%- endif -%} 
             <div class="price mt-8 
               {%- if price_class %} {{ price_class }}{% endif -%}
@@ -239,6 +261,7 @@
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" data-product-variant-id>
             
             {% for option in product.options %}
+              {% if option.name != 'Title' %}
               <div class="mb-8">
                 <label for="Option-{{ section_id }}-{{ product.id }}-{{ forloop.index0 }}" class="font-semibold">
                   {{ option.name }}
@@ -259,6 +282,7 @@
                   {% endfor %}
                 </select>
               </div>
+              {% endif %}
             {% endfor %}
             
             <input type="hidden" name="quantity" value="1" />
@@ -278,9 +302,13 @@
   </li>
       {% endraw %}
 {% else %}
-{% raw %}
-  {% assign root_url = {% endraw %}"{%- if routes.root_url != "/" -%}{{ routes.root_url }}{%- endif -%}"{% raw %} %}
-  {% assign currencyFormat = {% endraw %}{{ shop.money_format | json }}{% raw %} %}
+  {% raw %}
+  {% assign root_url = {% endraw %}"
+  {%- if routes.root_url != '/' -%}{{ routes.root_url }}{%- endif -%}
+  "{% raw %} %}
+  {% assign currencyFormat = {% endraw %}
+  {{- shop.money_format | json -}}
+  {% raw %} %}
   {% assign swatch_options = 'Colour~~Color' | downcase | split: "~~" | uniq  %}
   {% assign image_options  = '' | downcase | split: "~~" | uniq  %}
   {% assign text_options   = 'Size' | downcase | split: "~~" | uniq  %}
@@ -382,42 +410,58 @@
           <div class="!absolute top-12 left-8 !flex gap-4 flex-wrap pr-28">
             {%- if product.tags contains 'badge:$10 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_10 }}{% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_10 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$10 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:$20 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_20 }}{% raw %}" width="16" height="16"><span class="shrink-0">$20 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_20 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$20 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:$30 Gift' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_gift_30 }}{% raw %}" width="16" height="16"><span class="shrink-0">$30 Gift</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_gift_30 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">$30 Gift</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:Buy 2 get 1 Free' -%}
               <div class="{{ badge_classes }} font-bold">
-                <img src="{% endraw %}{{ settings.emoji_buy_2_get_1 }}{% raw %}" width="16" height="16"><span class="shrink-0">Buy 2 Get 1 Free</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_buy_2_get_1 -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Buy 2 Get 1 Free</span>
               </div>
             {%- endif -%}
             {%- if product.tags contains 'badge:new' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_new }}{% raw %}" width="16" height="16"><span class="shrink-0">New</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_new -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">New</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:trending' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_trending }}{% raw %}" width="16" height="16"><span class="shrink-0">Trending</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_trending -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Trending</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:limited' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_limited }}{% raw %}" width="16" height="16"><span class="shrink-0">Limited</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_limited -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Limited</span>
               </div>
             {%- endif - %}
             {%- if product.tags contains 'badge:water resistant' -%}
               <div class="{{ badge_classes }}">
-                <img src="{% endraw %}{{ settings.emoji_water }}{% raw %}" width="16" height="16"><span class="shrink-0">Water Resistant</span>
+                <img src="{% endraw %}
+  {{- settings.emoji_water -}}
+  {% raw %}" width="16" height="16"><span class="shrink-0">Water Resistant</span>
               </div>
             {%- endif -%}
           </div>
@@ -446,7 +490,9 @@
               {%-   assign money_price = price | money_with_currency -%} 
             {%- endif -%} 
             {%- if target == product and product.price_varies -%} 
-              {% assign price = money_price %} {%- capture money_price %} {% endraw %}{{ 'products.product.price.from_price_html' | t }}{% raw %} {% endcapture %} 
+              {% assign price = money_price %} {%- capture money_price %} {% endraw %}
+  {{- 'products.product.price.from_price_html' | t -}}
+  {% raw %} {% endcapture %} 
             {%- endif -%} 
             <div class="price mt-8 
               {%- if price_class %} {{ price_class }}{% endif -%}
