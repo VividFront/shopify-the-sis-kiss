@@ -15,7 +15,7 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "It's Layering Season❄️✨ "
+            "text": "Something Sweet 💕"
           }
         },
         "heading_RCJNEr": {
@@ -557,7 +557,9 @@
           "settings": {}
         }
       },
-      "block_order": ["videeo_mobile_commerce_popclips_carousel_FzrMFV"],
+      "block_order": [
+        "videeo_mobile_commerce_popclips_carousel_FzrMFV"
+      ],
       "settings": {
         "include_margins": true
       }
