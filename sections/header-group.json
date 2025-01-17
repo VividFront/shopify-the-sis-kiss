@@ -22,7 +22,9 @@
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
+      "block_order": [
+        "announcement-bar-0"
+      ],
       "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
@@ -218,12 +220,15 @@
         "d25aa7d5-e113-4125-8bb1-9f438d2cf10c"
       ],
       "settings": {
-        "shipping_text": "FREE domestic shipping on all orders over $100",
+        "shipping_text": "Order Custom Valentine's Gifts by Sunday 1.19 at Midnight!",
         "logo_position": "top-center",
         "sticky_header_type": "always",
         "mobile_logo_position": "center"
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
