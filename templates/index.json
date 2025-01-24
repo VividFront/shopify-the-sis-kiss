@@ -44,6 +44,7 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Vday_25_Off_Custom_website_hero_2.jpg",
         "image_position": "object-left",
@@ -68,20 +69,20 @@
         "heading_Hjgcpc": {
           "type": "heading",
           "settings": {
-            "text": "25% Off Custom Jewelry"
+            "text": "The BIG Sale"
           }
         },
         "body_jGRcYX": {
           "type": "body",
           "settings": {
-            "text": "You're a queen, treat yourself like one 💖 <br> Use code: TREATYOSELF25"
+            "text": "Shop $5, $10, $15, and $20 styles this weekend only!"
           }
         },
         "cta_BpPYHN": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/custom-jewelry"
+            "url": "shopify://collections/warehouse-sale-collection"
           }
         }
       },
@@ -91,7 +92,6 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Sis_Kiss_Custom_Edits-Hayley_Dolson--15_websize.jpg",
         "image_position": "object-center",
