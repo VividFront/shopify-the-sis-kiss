@@ -94,7 +94,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/warehouse_sale_website_hero.jpg",
-        "image_position": "object-center",
+        "image_position": "object-bottom",
         "image_mobile": "shopify://shop_images/warehouse_sale_website_hero.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
