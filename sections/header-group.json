@@ -151,7 +151,7 @@
           "type": "nav_item",
           "settings": {
             "title": "Sale",
-            "link": "shopify://collections/last-chance"
+            "link": "shopify://collections/warehouse-sale-collection"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
