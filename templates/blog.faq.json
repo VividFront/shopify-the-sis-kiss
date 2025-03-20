@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "da9fd767-1c72-4078-ba56-a229a45ba083": {
@@ -7,20 +16,47 @@
           "type": "featured_question",
           "settings": {
             "title": "What Material Is The Sis Kiss Jewelry Made Of?",
-            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/what-material-is-the-sis-kiss-jewelry-made-with"
+            "url": "https://thesiskiss.com/blogs/faq/what-material-is-the-sis-kiss-jewelry-made-with"
           }
         },
         "abeba2a7-6544-4272-a29f-0af30c3c6f32": {
           "type": "featured_question",
           "settings": {
             "title": "When Will My Order Ship?",
-            "url": "https:\/\/thesiskiss.com\/blogs\/faq\/when-will-my-order-ship"
+            "url": "https://thesiskiss.com/blogs/faq/when-will-my-order-ship"
           }
         }
       },
       "block_order": [
         "03620eb0-edac-4831-9f9a-2bc0f2586ae2",
         "abeba2a7-6544-4272-a29f-0af30c3c6f32"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "Featured Questions"
+      }
+    },
+    "banner_faq_HrRCc6": {
+      "type": "banner-faq",
+      "blocks": {
+        "featured_question_QYNeJe": {
+          "type": "featured_question",
+          "settings": {
+            "title": "What is the Lifetime Guarantee?",
+            "url": "https://thesiskiss.com/blogs/faq/what-material-is-the-sis-kiss-jewelry-made-with"
+          }
+        },
+        "featured_question_B4zYW4": {
+          "type": "featured_question",
+          "settings": {
+            "title": "When Will My Order Ship?",
+            "url": "https://thesiskiss.com/blogs/faq/when-will-my-order-ship"
+          }
+        }
+      },
+      "block_order": [
+        "featured_question_QYNeJe",
+        "featured_question_B4zYW4"
       ],
       "settings": {
         "subheading": "Featured Questions"
@@ -84,13 +120,14 @@
         "heading": "Didn't Find What You Were Looking For?",
         "body": "Reach out to us and let us help!",
         "cta_text": "Contact Us",
-        "cta_url": "shopify:\/\/pages\/contact-us",
+        "cta_url": "shopify://pages/contact-us",
         "theme": "dark"
       }
     }
   },
   "order": [
     "da9fd767-1c72-4078-ba56-a229a45ba083",
+    "banner_faq_HrRCc6",
     "main",
     "bc0f8ae1-844e-44ef-9648-6d6ca067e422"
   ]
