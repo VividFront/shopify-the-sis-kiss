@@ -31,6 +31,7 @@
         "03620eb0-edac-4831-9f9a-2bc0f2586ae2",
         "abeba2a7-6544-4272-a29f-0af30c3c6f32"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "Featured Questions"
       }
@@ -57,7 +58,6 @@
         "featured_question_QYNeJe",
         "featured_question_B4zYW4"
       ],
-      "disabled": true,
       "settings": {
         "subheading": "Featured Questions"
       }
