@@ -1,16 +1,20 @@
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
-<footer class="bg-white pt-40 lg:pt-56">
-  <div class="container">
-    <div class="grid grid-cols gap-x-16 lg:gap-32">
-      <div class="col-span-full lg:col-start-2 lg:col-span-4">
-        <div class="mb-48 lg:mb-0 pb-48 lg:pb-0 flex flex-col items-center lg:items-start border-b border-border lg:border-none">
-          <a href="{{ routes.root_url }}" class="w-[284px] h-[122px] lg:w-[295px] lg:h-[128px] block">
-            {%- render 'logo' -%}
+<footer class='pt-40 bg-white lg:pt-56'>
+  <div class='container'>
+    <div class='grid grid-cols gap-x-16 lg:gap-32'>
+      <div class='col-span-full lg:col-start-2 lg:col-span-4'>
+        <div class='flex flex-col items-center pb-48 mb-48 border-b lg:mb-0 lg:pb-0 lg:items-start border-border lg:border-none'>
+          <a href='{{ routes.root_url }}' class='w-[284px] h-[122px] lg:w-[295px] lg:h-[128px] block'>
+            <img
+              class='object-contain w-full h-full'
+              src='{{ settings.logo | img_url: 'master' }}'
+              alt='{{ settings.logo.alt }}'
+            >
           </a>
-          <div class="mt-16 lg:mt-32 text-center lg:text-left">
+          <div class='mt-16 text-center lg:mt-32 lg:text-left'>
             <h6>Connect with Us!</h6>
-            <div class="mt-12 mx-auto lg:mx-0">
+            <div class='mx-auto mt-12 lg:mx-0'>
               {% render 'social-icons' %}
             </div>
           </div>
@@ -18,16 +22,19 @@
       </div>
       {% for block in section.blocks %}
         {% if block.type == 'menu' %}
-          <div class="col-span-3 lg:col-span-2">
+          <div class='col-span-3 lg:col-span-2'>
             {% if block.settings.heading != blank %}
-              <h6 class="text-copy-light">{{ block.settings.heading }}</h6>
+              <h6 class='text-copy-light'>{{ block.settings.heading }}</h6>
               <nav>
                 <ul>
                   {% for item in block.settings.menu.links %}
-                    {%- comment %}<locksmith:2b26>{% endcomment -%}
-                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: item, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-                    {%- comment %}</locksmith:2b26>{% endcomment -%}
-                    <li class="mt-10"><a class="hover:underline" href="{{ item.url }}">{{ item.title }}</a></li>
+                    {%- comment %}<locksmith:2b26>{%- endcomment %}
+                    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: item, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture -%}
+                    {%- if var == 'true' %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:2b26>{%- endcomment %}
+                    <li class='mt-10'>
+                      <a class='hover:underline' href='{{ item.url }}'>{{ item.title }}</a>
+                    </li>
                   {% endfor %}
                 </ul>
               </nav>
@@ -35,21 +42,27 @@
           </div>
         {% endif %}
       {% endfor %}
-      <div class="mt-48 lg:mt-0 col-span-full lg:col-span-11">
-        <div class="flex justify-center md:justify-end w-full">
+      <div class='mt-48 lg:mt-0 col-span-full lg:col-span-11'>
+        <div class='flex justify-center w-full md:justify-end'>
           {% render 'footer-payment-icons' %}
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-ui-background mt-[100px] lg:mt-20">
-    <div class="container">
-      <div class="grid grid-cols">
-        <div class="col-span-full lg:col-start-2 lg:col-end-12">
-          <div class="py-10 flex justify-between text-body-copy-small leading-body-copy-small">
-            <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url -}}</span>
+  <div class='bg-ui-background mt-[100px] lg:mt-20'>
+    <div class='container'>
+      <div class='grid grid-cols'>
+        <div class='col-span-full lg:col-start-2 lg:col-end-12'>
+          <div class='flex justify-between py-10 text-body-copy-small leading-body-copy-small'>
+            <span
+              >&copy; {{ 'now' | date: '%Y' }}
+              {{ shop.name | link_to: routes.root_url -}}
+            </span>
             <div>
-              <a class="hover:underline" href="{{ section.settings.terms_url}}">{{ section.settings.terms_text}}</a> | <a class="hover:underline" href="{{ section.settings.privacy_url }}">{{ section.settings.privacy_text }}</a>
+              <a class='hover:underline' href='{{ section.settings.terms_url}}'>{{ section.settings.terms_text }}</a> |
+              <a class='hover:underline' href='{{ section.settings.privacy_url }}'>
+                {{- section.settings.privacy_text -}}
+              </a>
             </div>
           </div>
         </div>

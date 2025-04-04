@@ -1135,6 +1135,12 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+.my-12 {
+  margin-top: calc(12rem / 16);
+  margin-top: calc(12rem / var(--vf-font-size-root));
+  margin-bottom: calc(12rem / 16);
+  margin-bottom: calc(12rem / var(--vf-font-size-root));
+}
 .my-32 {
   margin-top: calc(32rem / 16);
   margin-top: calc(32rem / var(--vf-font-size-root));
@@ -1409,9 +1415,6 @@ a:hover {
 .h-\[60\%\] {
   height: 60%;
 }
-.h-\[61px\] {
-  height: 61px;
-}
 .h-\[calc\(25rem\/16\)\] {
   height: calc(25rem / 16);
 }
@@ -1511,9 +1514,6 @@ a:hover {
 }
 .w-\[140px\] {
   width: 140px;
-}
-.w-\[141px\] {
-  width: 141px;
 }
 .w-\[160px\] {
   width: 160px;
