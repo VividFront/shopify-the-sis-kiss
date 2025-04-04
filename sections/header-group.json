@@ -22,7 +22,9 @@
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
+      "block_order": [
+        "announcement-bar-0"
+      ],
       "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
@@ -149,7 +151,7 @@
           "type": "nav_item",
           "settings": {
             "title": "Sale",
-            "link": "shopify://collections/last-chance"
+            "link": "shopify://collections/warehouse-sale-collection"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
@@ -218,12 +220,15 @@
         "d25aa7d5-e113-4125-8bb1-9f438d2cf10c"
       ],
       "settings": {
-        "shipping_text": "FREE domestic shipping on all orders over $100",
+        "shipping_text": "FREE shipping on U.S. orders over $100",
         "logo_position": "top-center",
         "sticky_header_type": "always",
         "mobile_logo_position": "center"
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }

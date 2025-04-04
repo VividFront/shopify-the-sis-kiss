@@ -15,26 +15,26 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "It's Layering Season❄️✨ "
+            "text": "INTRODUCING"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "SHOP BEST SELLERS"
+            "text": "LIFETIME GUARANTEE"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Find your go-to stack you'll wear all year long."
+            "text": "We value quality and care just as much as we value you!"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
-            "text": "Shop Now",
-            "url": "shopify://collections/non-custom-best-sellers"
+            "text": "Learn More",
+            "url": "shopify://blogs/faq/lifetime-guarantee"
           }
         }
       },
@@ -45,9 +45,9 @@
         "cta_MRQaei"
       ],
       "settings": {
-        "image": "shopify://shop_images/TSK_Mobile_Hero_3_9b671925-9af1-464c-8fd5-4a976a077023.png",
-        "image_position": "object-center",
-        "image_mobile": "shopify://shop_images/TSK_Mobile_Hero_3_9b671925-9af1-464c-8fd5-4a976a077023.png",
+        "image": "shopify://shop_images/Lifetime_Guarantee_email_hero.jpg",
+        "image_position": "object-left",
+        "image_mobile": "shopify://shop_images/Lifetime_Guarantee_email_hero.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -68,20 +68,20 @@
         "heading_Hjgcpc": {
           "type": "heading",
           "settings": {
-            "text": "25% Off Custom Jewelry"
+            "text": "The BIG Sale"
           }
         },
         "body_jGRcYX": {
           "type": "body",
           "settings": {
-            "text": "You're a queen, treat yourself like one 💖 <br> Use code: TREATYOSELF25"
+            "text": "Shop $5, $10, $15, and $20 styles this weekend only!"
           }
         },
         "cta_BpPYHN": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/custom-jewelry"
+            "url": "shopify://collections/warehouse-sale-collection"
           }
         }
       },
@@ -93,9 +93,9 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Sis_Kiss_Custom_Edits-Hayley_Dolson--15_websize.jpg",
+        "image": "shopify://shop_images/warehouse_sale_website_hero.jpg",
         "image_position": "object-center",
-        "image_mobile": "shopify://shop_images/TSK_Mobile_Hero_9.png",
+        "image_mobile": "shopify://shop_images/warehouse_sale_website_hero.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
@@ -169,7 +169,7 @@
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
           "type": "product",
           "settings": {
-            "product": "two-tone-beaded-adjustable-bracelets"
+            "product": "dainty-custom-name-necklace"
           }
         },
         "5a814dbd-1bc3-48cb-9648-788ee66247e5": {
@@ -182,12 +182,6 @@
           "type": "product",
           "settings": {
             "product": "loverly-gold-earrings"
-          }
-        },
-        "b57d275a-8796-4afc-ac7f-e148534af010": {
-          "type": "product",
-          "settings": {
-            "product": "the-blanche-ring"
           }
         },
         "762e1eb0-21fb-4ffc-917f-69496c668d0c": {
@@ -221,7 +215,6 @@
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
-        "b57d275a-8796-4afc-ac7f-e148534af010",
         "762e1eb0-21fb-4ffc-917f-69496c668d0c",
         "dc61ddd6-2d07-40f2-b5fd-4df4440590b4",
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
@@ -557,7 +550,9 @@
           "settings": {}
         }
       },
-      "block_order": ["videeo_mobile_commerce_popclips_carousel_FzrMFV"],
+      "block_order": [
+        "videeo_mobile_commerce_popclips_carousel_FzrMFV"
+      ],
       "settings": {
         "include_margins": true
       }
