@@ -28,10 +28,9 @@
               <nav>
                 <ul>
                   {% for item in block.settings.menu.links %}
-                    {%- comment %}<locksmith:2b26>{%- endcomment %}
-                    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: item, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture -%}
-                    {%- if var == 'true' %}{% else %}{% continue %}{% endif -%}
-                    {%- comment %}</locksmith:2b26>{%- endcomment %}
+                    {%- comment %}<locksmith:0b4d>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: item, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:0b4d>{% endcomment -%}
                     <li class='mt-10'>
                       <a class='hover:underline' href='{{ item.url }}'>{{ item.title }}</a>
                     </li>
