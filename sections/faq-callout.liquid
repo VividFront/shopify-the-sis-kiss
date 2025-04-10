@@ -1,14 +1,14 @@
-<div class="bg-ui-pink p-section-md">
-  <div class="container">
+<div class='bg-marshmallow p-section-md'>
+  <div class='container'>
     {% if section.settings.heading != blank %}
-      <h2 class="text-center">{{ section.settings.heading }}</h2>
+      <h2 class='text-center'>{{ section.settings.heading }}</h2>
     {% endif %}
-    <div class="grid grid-cols mt-32">
-      <div class="col-span-full lg:col-span-auto lg:col-start-2 lg:col-end-12">
-        <div class="flex gap-grid flex-wrap lg:flex-nowrap">
+    <div class='grid grid-cols mt-32'>
+      <div class='col-span-full lg:col-span-auto lg:col-start-2 lg:col-end-12'>
+        <div class='flex gap-grid flex-wrap lg:flex-nowrap'>
           {% for block in section.blocks %}
             {% if block.type == 'question' %}
-              <div class="basis-full lg:basis-1/2">
+              <div class='basis-full lg:basis-1/2'>
                 {% render 'faq-card', title: block.settings.title, url: block.settings.url %}
               </div>
             {% endif %}
@@ -17,13 +17,16 @@
       </div>
     </div>
     {% if section.settings.cta_url != blank %}
-      <div class="flex justify-center mt-24">
-        {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, bg_class: 'bg-ui-pink' -%}
+      <div class='flex justify-center mt-24'>
+        {%- render 'button-secondary',
+          url: section.settings.cta_url,
+          text: section.settings.cta_text,
+          bg_class: 'bg-marshmallow'
+        -%}
       </div>
     {% endif %}
   </div>
 </div>
-
 
 {% schema %}
 {

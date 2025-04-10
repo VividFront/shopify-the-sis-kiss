@@ -1,20 +1,20 @@
-<div class="lg:hidden bg-split-white-pink">
-  <div class="container">
+<div class='lg:hidden bg-split-white-pink'>
+  <div class='container'>
     {% if settings.lottie_cat_glasses != blank %}
-      <div class="flex justify-center w-full">
+      <div class='flex justify-center w-full'>
         {% render 'lottie', json_url: settings.lottie_cat_glasses, class: 'max-w-[168px] w-full aspect-square' %}
       </div>
     {% endif %}
   </div>
 </div>
-<div class="overflow-hidden bg-ui-pink p-section-md">
-  <div class="container">
-    <div class="splide" data-vf-trending-slider>
-      <div class="overflow-visible splide__track">
-        <ul class="splide__list">
+<div class='overflow-hidden bg-marshmallow p-section-md'>
+  <div class='container'>
+    <div class='splide' data-vf-trending-slider>
+      <div class='overflow-visible splide__track'>
+        <ul class='splide__list'>
           {% if settings.lottie_cat_glasses != blank %}
-            <li data-vf-leopard-slide class="js-leopard-slide tw-hidden lg:list-item splide__slide">
-              <div class="flex items-start">
+            <li data-vf-leopard-slide class='js-leopard-slide tw-hidden lg:list-item splide__slide'>
+              <div class='flex items-start'>
                 {% render 'lottie', json_url: settings.lottie_cat_glasses, class: 'w-full aspect-square' %}
               </div>
             </li>
@@ -22,31 +22,55 @@
           {% for block in section.blocks %}
             {% if block.type == 'product' %}
               {% if block.settings.product != empty %}
-                <li class="splide__slide">
-                  {% render 'card-product', product: block.settings.product, alt_image: block.settings.alt_image, show_secondary_image: true %}
+                <li class='splide__slide'>
+                  {% render 'card-product',
+                    product: block.settings.product,
+                    alt_image: block.settings.alt_image,
+                    show_secondary_image: true
+                  %}
                 </li>
               {% endif %}
             {% endif %}
           {% endfor %}
           {% if section.settings.collection_text %}
-            <li class="splide__slide">
-              <a href="{{ section.settings.collection.url }}" class="block font-bold text-center text-h3 hover:underline mt-80">{{ section.settings.collection_text }}</a>
+            <li class='splide__slide'>
+              <a
+                href='{{ section.settings.collection.url }}'
+                class='block font-bold text-center text-h3 hover:underline mt-80'
+              >
+                {{- section.settings.collection_text -}}
+              </a>
             </li>
           {% endif %}
         </ul>
       </div>
-      <div class="splide__arrows w-full absolute top-[150px] pointer-events-none">
-        <button class="absolute left-0 flex items-center justify-center bg-white border-white rounded-full shadow pointer-events-auto lg:-left-24 splide__arrow splide__arrow--prev h-52 w-52 disabled:hidden">
-          <svg class="rotate-180" id="Icon:_Chevron:_Right:_Large" data-name="Icon: Chevron: Right: Large" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+      <div class='splide__arrows w-full absolute top-[150px] pointer-events-none'>
+        <button class='absolute left-0 flex items-center justify-center bg-white border-white rounded-full shadow pointer-events-auto lg:-left-24 splide__arrow splide__arrow--prev h-52 w-52 disabled:hidden'>
+          <svg
+            class='rotate-180'
+            id='Icon:_Chevron:_Right:_Large'
+            data-name='Icon: Chevron: Right: Large'
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='0 0 24 24'
+          >
             <circle id="Ellipse_31" data-name="Ellipse 31" cx="12" cy="12" r="12" fill="none"/>
             <path id="Path_3228" data-name="Path 3228" d="M4.751-11.859,13-3.605l.516.539L13-2.527,4.751,5.727,3.672,4.649l7.715-7.715L3.672-10.781Z" transform="translate(4.971 15.072)" fill="currentColor"/>
-          </svg>  
+          </svg>
         </button>
-        <button class="absolute right-0 flex items-center justify-center bg-white border-white rounded-full shadow pointer-events-auto lg:-right-24 splide__arrow splide__arrow--next h-52 w-52 disabled:hidden">
-          <svg id="Icon:_Chevron:_Right:_Large" data-name="Icon: Chevron: Right: Large" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <button class='absolute right-0 flex items-center justify-center bg-white border-white rounded-full shadow pointer-events-auto lg:-right-24 splide__arrow splide__arrow--next h-52 w-52 disabled:hidden'>
+          <svg
+            id='Icon:_Chevron:_Right:_Large'
+            data-name='Icon: Chevron: Right: Large'
+            xmlns='http://www.w3.org/2000/svg'
+            width='32'
+            height='32'
+            viewBox='0 0 24 24'
+          >
             <circle id="Ellipse_31" data-name="Ellipse 31" cx="12" cy="12" r="12" fill="none"/>
             <path id="Path_3228" data-name="Path 3228" d="M4.751-11.859,13-3.605l.516.539L13-2.527,4.751,5.727,3.672,4.649l7.715-7.715L3.672-10.781Z" transform="translate(4.971 15.072)" fill="currentColor"/>
-          </svg>            
+          </svg>
         </button>
       </div>
     </div>

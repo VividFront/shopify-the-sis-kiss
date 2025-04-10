@@ -1,23 +1,34 @@
-<div class="relative p-section-md bg-ui-pink">
-  <div class="container">
-    <div class="grid grid-cols gap-32 lg:gap-grid">
-      <div class="col-start-1 col-end-7 md:col-start-2 md:col-end-6">
-        <div class="relative">
+<div class='relative p-section-md bg-marshmallow'>
+  <div class='container'>
+    <div class='grid grid-cols gap-32 lg:gap-grid'>
+      <div class='col-start-1 col-end-7 md:col-start-2 md:col-end-6'>
+        <div class='relative'>
           {% if section.settings.video_url != blank %}
             {% if section.settings.video_url.type == 'vimeo' %}
-              <div class="rounded aspect-[9/16] overflow-hidden">
-                <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?title=false&byline=false&portrait=false" width="100%" height="100%" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <div class='rounded aspect-[9/16] overflow-hidden'>
+                <iframe
+                  src='https://player.vimeo.com/video/{{ section.settings.video_url.id }}?title=false&byline=false&portrait=false'
+                  width='100%'
+                  height='100%'
+                  frameborder='0'
+                  allow='fullscreen; picture-in-picture'
+                  allowfullscreen
+                ></iframe>
               </div>
             {% endif %}
           {% endif %}
         </div>
       </div>
-      <div class="lg:mt-0 col-start-1 col-end-7 lg:col-start-6 lg:col-end-12">
-        <div class="flex flex-col justify-center h-full">
-          <h2 class="h2-alt">{{ section.settings.heading }}</h2>
-          <div class="mt-16 richtext-content">{{ section.settings.body }}</div>
+      <div class='lg:mt-0 col-start-1 col-end-7 lg:col-start-6 lg:col-end-12'>
+        <div class='flex flex-col justify-center h-full'>
+          <h2 class='h2-alt'>{{ section.settings.heading }}</h2>
+          <div class='mt-16 richtext-content'>{{ section.settings.body }}</div>
           {% if section.settings.cta_url != blank %}
-            {%- render 'button-secondary', url: section.settings.cta_url, text: section.settings.cta_text, class: 'mt-24' -%}
+            {%- render 'button-secondary',
+              url: section.settings.cta_url,
+              text: section.settings.cta_text,
+              class: 'mt-24'
+            -%}
           {% endif %}
         </div>
       </div>
@@ -35,10 +46,7 @@
       "type": "video_url",
       "id": "video_url",
       "label": "Video URL",
-      "accept": [
-        "youtube",
-        "vimeo"
-      ]    
+      "accept": ["youtube", "vimeo"]
     },
     {
       "type": "text",

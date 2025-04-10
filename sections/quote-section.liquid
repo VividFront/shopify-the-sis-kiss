@@ -1,18 +1,28 @@
-<div class="bg-ui-pink p-section-md">
-  <div class="container">
-    <div class="grid grid-cols">
-      <div class="col-start-1 col-end-7 lg:col-start-3 lg:col-end-11">
-        <h2 class="h2-alt text-center">{{ section.settings.quote }}</h2>
+<div class='bg-marshmallow p-section-md'>
+  <div class='container'>
+    <div class='grid grid-cols'>
+      <div class='col-start-1 col-end-7 lg:col-start-3 lg:col-end-11'>
+        <h2 class='h2-alt text-center'>{{ section.settings.quote }}</h2>
         {% if section.settings.cta_url %}
-          <div class="flex justify-center mt-28">
+          <div class='flex justify-center mt-28'>
             {% assign target = '_self' %}
             {% if section.settings.button_target == true %}
               {% assign target = '_blank' %}
             {% endif %}
             {% if section.settings.button_type == 'primary_play' %}
-              {%- render 'button-icon-play', url: section.settings.cta_url, text: section.settings.cta_text, class: '[&_a]:bg-primary [&_a]:text-white', target: target -%}
+              {%- render 'button-icon-play',
+                url: section.settings.cta_url,
+                text: section.settings.cta_text,
+                class: '[&_a]:bg-primary [&_a]:text-white',
+                target: target
+              -%}
             {% else %}
-              {%- render 'button', url: section.settings.cta_url, text: section.settings.cta_text, border_color_class: 'border-primary', target: target -%}
+              {%- render 'button',
+                url: section.settings.cta_url,
+                text: section.settings.cta_text,
+                border_color_class: 'border-primary',
+                target: target
+              -%}
             {% endif %}
           </div>
         {% endif %}
@@ -20,7 +30,6 @@
     </div>
   </div>
 </div>
-
 
 {% schema %}
 {
