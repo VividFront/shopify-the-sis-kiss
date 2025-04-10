@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "about-hero": {
@@ -93,7 +102,8 @@
         "quote": "Jewelry for Unapologetic Babes.",
         "cta_text": "",
         "cta_url": "",
-        "button_type": "primary"
+        "button_type": "primary",
+        "button_target": false
       }
     },
     "aabc5ef0-f0d5-4f75-9c50-0fa466c6d61d": {
@@ -135,7 +145,7 @@
         "body": "Join her every other Wednesday for new episodes featuring her favorite entrepreneurs, friends, and wildly unprofessional folks.",
         "cta_text": "Listen Now",
         "cta_url": "https://thesiskiss.com/pages/wildly-unprofessional",
-        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-about-cropped.json?v=1684878609",
+        "ribbon_lottie_json": "https://cdn.shopify.com/s/files/1/1216/9642/files/ribbon-about-cropped_2.json?v=1744309934",
         "logo_circle_position": "right"
       }
     }
