@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "db0377bb-7301-4096-a731-1be37f8f598f": {
@@ -18,7 +27,7 @@
         "f3dfa036-1021-4149-b780-0d3806c801a7": {
           "type": "body",
           "settings": {
-            "text": "We’re making our love for jewelry official! Introducing Sis Kiss Links, a permanent jewelry collection of 14k gold, semi-precious, and precious stones that last a lifetime."
+            "text": "We’re making our love for jewelry official! Introducing Sis Kiss Links, a permanent jewelry collection of 14k gold, semi-precious, and precious stones that last a lifetime.\n\nOpen every Saturday 11 - 4pm."
           }
         },
         "5d95a708-54d1-4814-aefc-0a2ce103d459": {
@@ -31,6 +40,7 @@
         },
         "ea0c94e6-56f4-4d14-ae93-cbacbddbd63c": {
           "type": "cta",
+          "disabled": true,
           "settings": {
             "text": "Book Appt In Your Area",
             "anchor": "",
@@ -98,7 +108,7 @@
           "settings": {}
         },
         "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
-          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
@@ -122,12 +132,11 @@
           "settings": {}
         },
         "29808f61-0d66-4a6d-bd42-14eaa620bca2": {
-          "type": "shopify://apps/sesami/blocks/app-block/dc3b1344-0a53-477e-93d0-4b8a473ab587",
+          "type": "shopify://apps/sesami-booking-app/blocks/app-block/dc3b1344-0a53-477e-93d0-4b8a473ab587",
           "settings": {
             "auto_add_to_cart": false,
             "skip_cart": false,
-            "hide_any_available": false,
-            "button-label": "Book Appointment",
+            "button_label": "Select time",
             "alignment": "center",
             "color": "",
             "color_background": "#FFF",
@@ -237,13 +246,15 @@
       "type": "apps",
       "blocks": {
         "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
-          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
         }
       },
-      "block_order": ["c2913024-b9fb-4da4-ad2d-d8717af1a674"],
+      "block_order": [
+        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
+      ],
       "settings": {
         "include_margins": true
       }
