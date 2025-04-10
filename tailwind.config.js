@@ -159,6 +159,7 @@ module.exports = {
       'ui-background': 'rgb(var(--vf-color-ui-background) / <alpha-value>)',
       'ui-dark': 'rgb(var(--vf-color-ui-dark) / <alpha-value>)',
       'ui-pink': 'rgb(var(--vf-color-ui-pink) / <alpha-value>)',
+      marshmallow: 'rgb(var(--vf-color-marshmallow) / <alpha-value>)',
       'input-background':
         'rgb(var(--vf-color-input-background) / <alpha-value>)',
       border: 'rgb(var(--vf-color-border) / <alpha-value>)',

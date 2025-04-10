@@ -512,6 +512,7 @@ video {
   --vf-color-ui-background: 247 247 247;
   --vf-color-ui-dark: 25 25 25;
   --vf-color-ui-pink: 243 229 232;
+  --vf-color-marshmallow: 226 224 222;
   --vf-color-input-background: 253 253 253;
   --vf-color-border: 193 193 194;
   --vf-color-disabled: 222 222 222;
@@ -2021,6 +2022,11 @@ a:hover {
   background-color: rgba(222, 222, 222, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-disabled) / var(--tw-bg-opacity));
 }
+.bg-marshmallow {
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 224, 222, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-marshmallow) / var(--tw-bg-opacity));
+}
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
@@ -2038,11 +2044,6 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(25, 25, 25, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-ui-dark) / var(--tw-bg-opacity));
-}
-.bg-ui-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
-  background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -4729,8 +4730,8 @@ charm-bar-product-form {
   border-radius: 16px;
   border-radius: var(--vf-border-radius);
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
-  background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
+  background-color: rgba(226, 224, 222, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-marshmallow) / var(--tw-bg-opacity));
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -6376,8 +6377,8 @@ charm-bar-product-form {
   border-color: rgba(0, 0, 0, var(--tw-border-opacity));
   border-color: rgb(var(--vf-color-primary) / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
-  background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
+  background-color: rgba(226, 224, 222, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-marshmallow) / var(--tw-bg-opacity));
   padding-top: 0px;
   font-size: 14px;
 }
@@ -7671,13 +7672,13 @@ footer #contact_form {
   .lg\:border-none {
     border-style: none;
   }
+  .lg\:bg-marshmallow {
+    --tw-bg-opacity: 1;
+    background-color: rgba(226, 224, 222, var(--tw-bg-opacity));
+    background-color: rgb(var(--vf-color-marshmallow) / var(--tw-bg-opacity));
+  }
   .lg\:bg-transparent {
     background-color: transparent;
-  }
-  .lg\:bg-ui-pink {
-    --tw-bg-opacity: 1;
-    background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
-    background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
   }
   .lg\:bg-white {
     --tw-bg-opacity: 1;
@@ -7895,15 +7896,15 @@ footer #contact_form {
 .\[\&_\.is-active_p\]\:font-bold .is-active p {
   font-weight: 700;
 }
+.\[\&_a\]\:bg-marshmallow a {
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 224, 222, var(--tw-bg-opacity));
+  background-color: rgb(var(--vf-color-marshmallow) / var(--tw-bg-opacity));
+}
 .\[\&_a\]\:bg-primary a {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
   background-color: rgb(var(--vf-color-primary) / var(--tw-bg-opacity));
-}
-.\[\&_a\]\:bg-ui-pink a {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 229, 232, var(--tw-bg-opacity));
-  background-color: rgb(var(--vf-color-ui-pink) / var(--tw-bg-opacity));
 }
 .\[\&_a\]\:bg-white a {
   --tw-bg-opacity: 1;
