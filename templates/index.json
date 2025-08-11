@@ -34,7 +34,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/summer"
+            "url": "shopify://collections/custom-jewelry"
           }
         }
       },
