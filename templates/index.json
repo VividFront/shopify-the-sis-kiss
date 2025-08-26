@@ -15,26 +15,26 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "OH SO CHARMING"
+            "text": "NEW, AND SELLING FAST!"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Buy 2, Get 1 Free"
+            "text": "BOLD Name Necklace"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Create custom charm styles with just a few clicks."
+            "text": "From the original name necklace to the mini, we've got you covered!"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/charm-bar"
+            "url": "shopify://products/it-s-all-in-a-name-bold-personalized-necklace"
           }
         }
       },
@@ -44,6 +44,53 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
+      "settings": {
+        "image": "shopify://shop_images/BOLD-name-necklace-homepage-hero.gif",
+        "image_position": "object-left",
+        "image_mobile": "shopify://shop_images/BOLD-name-necklace-homepage-hero.gif",
+        "designer_tag": "",
+        "tag_color": "text-white",
+        "color": "#ffffff",
+        "text_color": "text-copy",
+        "show_breadcrumbs": false
+      }
+    },
+    "hero_color_bz3rjk": {
+      "type": "hero-color",
+      "blocks": {
+        "subheading_UrfJBm": {
+          "type": "subheading",
+          "settings": {
+            "text": "OH SO CHARMING"
+          }
+        },
+        "heading_Qgi3RF": {
+          "type": "heading",
+          "settings": {
+            "text": "Buy 2, Get 1 Free"
+          }
+        },
+        "body_BexEMj": {
+          "type": "body",
+          "settings": {
+            "text": "Create custom charm styles with just a few clicks."
+          }
+        },
+        "cta_nRcYKx": {
+          "type": "cta",
+          "settings": {
+            "text": "Shop Now",
+            "url": "shopify://collections/charm-bar"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_UrfJBm",
+        "heading_Qgi3RF",
+        "body_BexEMj",
+        "cta_nRcYKx"
+      ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/summer_collection_homepage_hero.jpg",
         "image_position": "object-left",
@@ -553,6 +600,7 @@
   },
   "order": [
     "hero_color_9EQmGi",
+    "hero_color_bz3rjk",
     "hero_color_xQBCrb",
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
