@@ -295,7 +295,7 @@
         "6aa3e035-1f3c-4096-99dd-c60e364ec4d2"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/Background_2x_136734e3-7155-4369-a5c6-ffbf8b05e205.png",
+        "background_image": "shopify://shop_images/essentials_background_gradient_v2.png",
         "subheading": "Featured Collection",
         "heading": "The Sis Kiss Essentials",
         "collection": "the-sis-kiss-essentials"
@@ -385,8 +385,8 @@
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/Untitled_design_6.png",
-        "heading": "Charm me, babe!",
+        "background_image": "shopify://shop_images/charm_bar_background_transparent.png",
+        "heading": "Buy 2, Get 1 Free!",
         "body": "Show off what makes you unique through our Charm Bar. Build your own personalized necklace that's all about you, sis.",
         "badge_emoji": "",
         "badge_text": "Charm Bar",
