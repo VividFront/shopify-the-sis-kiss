@@ -42,7 +42,7 @@
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
-    "colors_accent_2": "#334fb4",
+    "colors_accent_2": "#121212",
     "gradient_accent_2": "",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
@@ -288,14 +288,14 @@
         "disabled": false,
         "settings": {}
       },
-      "15404810374585504564": {
-        "type": "shopify://apps/videeo-mobile-commerce/blocks/app-embed-sdk/acf9f8eb-c211-4324-a19b-9f362f43b225",
-        "disabled": false,
-        "settings": {}
-      },
       "17442089763355273418": {
         "type": "shopify://apps/vify-gift-cards/blocks/gift-card-issue/43d9e0cc-139a-4d15-b0b8-63f2863afb32",
         "disabled": false,
+        "settings": {}
+      },
+      "15404810374585504564": {
+        "type": "shopify://apps/videeo-mobile-commerce/blocks/app-embed-sdk/acf9f8eb-c211-4324-a19b-9f362f43b225",
+        "disabled": true,
         "settings": {}
       }
     }
