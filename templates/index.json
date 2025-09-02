@@ -15,26 +15,26 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "GOODBYE SUMMER"
+            "text": "NEW CUSTOM"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "HELLO SAVINGS! 30% STARTS NOW"
+            "text": "Bold Necklace"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Labor Day Weekend Sale is LIVE!"
+            "text": "Create your perfect piece!"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/trending"
+            "url": "shopify://collections/custom-jewelry"
           }
         }
       },
