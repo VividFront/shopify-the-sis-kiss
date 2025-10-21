@@ -201,6 +201,12 @@
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
       "type": "home-trending",
       "blocks": {
+        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
+          "type": "product",
+          "settings": {
+            "product": "custom-vertical-name-necklace"
+          }
+        },
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a": {
           "type": "product",
           "settings": {
@@ -217,12 +223,6 @@
           "type": "product",
           "settings": {
             "product": "custom-my-mantra-name-necklaces"
-          }
-        },
-        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a": {
-          "type": "product",
-          "settings": {
-            "product": "it-s-all-in-a-name"
           }
         },
         "5c3f95ac-2cd8-413e-a978-0899e1308776": {
@@ -251,10 +251,10 @@
         }
       },
       "block_order": [
+        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a",
         "cfd2d0e2-833b-49ab-8ae6-5ce8cbe5a43a",
         "product_bgrM7a",
         "efd4c4a8-a61b-4ae7-9232-eb925566e1bb",
-        "4d51858b-b4e2-406a-9c19-e0fd1a213b8a",
         "5c3f95ac-2cd8-413e-a978-0899e1308776",
         "5a814dbd-1bc3-48cb-9648-788ee66247e5",
         "d39899eb-34c6-4969-9b63-6c4a763a1ac0",
