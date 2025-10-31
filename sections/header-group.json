@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "25% Off Custom Jewelry with Code TREATYOSELF25 | Shop Now >",
+            "text": "Holiday Custom Order Cut Off is November 16! Shop Now!",
             "link": "shopify://collections/custom-jewelry"
           }
         }
@@ -25,7 +25,6 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
