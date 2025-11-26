@@ -148,9 +148,10 @@
         },
         "d468b5d0-4562-47ea-80c1-5a2471e385bb": {
           "type": "nav_item",
+          "disabled": true,
           "settings": {
             "title": "Sale",
-            "link": "shopify://collections/warehouse-sale-collection"
+            "link": "shopify://collections/2025-doorbusters"
           }
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
