@@ -15,26 +15,26 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "WATER-RESISTANT, LIFETIME GUARANTEE"
+            "text": "LOAD UP YOUR CART"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Custom Styles"
+            "text": "30% OFF"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "THE SEASON OF YOU"
+            "text": "(ALMOST) THE ENTIRE SITE, NO CODE NEEDED!"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/custom-jewelry"
+            "url": "shopify://collections/trending"
           }
         }
       },
@@ -45,7 +45,7 @@
         "cta_MRQaei"
       ],
       "settings": {
-        "image": "shopify://shop_images/holiday_homepage_hero_v2.jpg",
+        "image": "shopify://shop_images/holiday_homepage_hero_BCFM.jpg",
         "image_position": "object-left",
         "image_mobile": "shopify://shop_images/holiday_homepage_hero_v2.jpg",
         "designer_tag": "",
