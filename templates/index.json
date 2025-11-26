@@ -47,7 +47,7 @@
       "settings": {
         "image": "shopify://shop_images/holiday_homepage_hero_BCFM.jpg",
         "image_position": "object-left",
-        "image_mobile": "shopify://shop_images/holiday_homepage_hero_v2.jpg",
+        "image_mobile": "shopify://shop_images/holiday_homepage_hero_BCFM.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
