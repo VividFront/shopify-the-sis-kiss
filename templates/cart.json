@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "cart-items": {
@@ -20,16 +29,24 @@
           "settings": {}
         }
       },
-      "block_order": ["subtotal", "buttons"],
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
       "settings": {}
     },
     "b088a010-366f-43e8-be58-515698b5ea6e": {
       "type": "recently-viewed",
+      "disabled": true,
       "settings": {
         "background_image": "shopify://shop_images/wallpaper_ccb33c11-d26f-4ac2-a6c6-f2f55d9d2f5b.png",
         "heading": "Recently Viewed"
       }
     }
   },
-  "order": ["cart-items", "cart-footer", "b088a010-366f-43e8-be58-515698b5ea6e"]
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "b088a010-366f-43e8-be58-515698b5ea6e"
+  ]
 }
