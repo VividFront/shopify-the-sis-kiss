@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "FREE Shipping on All Orders Over $100",
-            "link": "shopify://collections/trending"
+            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: 50% Off Gifts for Mamas",
+            "link": "shopify://collections/gifts-for-mamas"
           }
         }
       },
