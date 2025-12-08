@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: 40% Off The Essentials Collection",
-            "link": "shopify://collections/the-sis-kiss-essentials"
+            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: Spend $75+ get a free crystal drop necklace",
+            "link": "shopify://products/crystal-drop-necklace"
           }
         }
       },
