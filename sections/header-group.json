@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: 35% Off Initial Charms",
-            "link": "shopify://collections/initial-charms"
+            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: Buy one, get one FREE Charm Bar collection!",
+            "link": "shopify://collections/charm-bar"
           }
         }
       },
