@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: 50% Off Bracelets!",
-            "link": "shopify://collections/bracelets-cuffs"
+            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: Buy One, Get One Free Mystery Bags!",
+            "link": "shopify://products/5-for-35-mystery-bag"
           }
         }
       },
