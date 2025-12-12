@@ -26,6 +26,7 @@
         },
         "body_tTx3zH": {
           "type": "body",
+          "disabled": true,
           "settings": {
             "text": "CUSTOM,"
           }
