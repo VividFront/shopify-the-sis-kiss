@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "12 Days of Kissmas is LIVE! | Today’s Deal: 40% Off Darling Diva Collection!",
-            "link": "shopify://collections/darling-diva"
+            "text": "LAST CHANCE! Order before 12/17 at midnight to receive your order by Christmas! Save 15% with code: QUICKSHIP15",
+            "link": "shopify://collections/trending"
           }
         }
       },
