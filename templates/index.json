@@ -15,18 +15,17 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "GET YOUR GIFTS BY CHRISTMAS"
+            "text": "GIVE THE GIFT OF CHOICE"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Last Day"
+            "text": "Gift Cards"
           }
         },
         "body_tTx3zH": {
           "type": "body",
-          "disabled": true,
           "settings": {
             "text": "Order by midnight 12/17, excludes custom items."
           }
@@ -35,7 +34,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/trending"
+            "url": "shopify://products/e-gift-card-1"
           }
         }
       },
