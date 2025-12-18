@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "LAST CHANCE! Order before 12/17 at midnight to receive your order by Christmas! Save 15% with code: QUICKSHIP15",
-            "link": "shopify://collections/trending"
+            "text": "Give the gift of choice this year, shop e-gift cards now!",
+            "link": "shopify://products/e-gift-card-1"
           }
         }
       },
