@@ -34,7 +34,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/the-sis-kiss-essentials"
+            "url": "shopify://collections/charm-bar"
           }
         }
       },
@@ -44,6 +44,7 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Vday_25_Off_Custom_website_hero_2.jpg",
         "image_position": "object-left",
@@ -90,7 +91,6 @@
         "body_BexEMj",
         "cta_nRcYKx"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/summer_collection_homepage_hero.jpg",
         "image_position": "object-left",
