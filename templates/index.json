@@ -44,6 +44,7 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/meg_and_journal_vday_drop_homepage_hero.jpg",
         "image_position": "object-left",
@@ -90,7 +91,6 @@
         "body_BexEMj",
         "cta_nRcYKx"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/summer_collection_homepage_hero.jpg",
         "image_position": "object-left",
