@@ -21,7 +21,7 @@
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Valentine's Collection"
+            "text": "Vintage Romance Collection"
           }
         },
         "body_tTx3zH": {
@@ -34,7 +34,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/valentines-day-drop"
+            "url": "shopify://collections/vintage-romance"
           }
         }
       },
