@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "FREE Shipping at $100!",
-            "link": "shopify://collections/custom-jewelry"
+            "text": "NEW Cool Girl Kit: Buy 2, Get 1 Free! FREE Shipping at $100!",
+            "link": "shopify://collections/cool-girl-kit"
           }
         }
       },
