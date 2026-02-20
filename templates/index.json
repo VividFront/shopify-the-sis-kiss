@@ -21,20 +21,20 @@
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Vintage Romance Collection"
+            "text": "Cool Girl Kit"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "STACK YOUR FAVE STYLES"
+            "text": "BUY 2, GET 1 FREE"
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/vintage-romance"
+            "url": "shopify://collections/cool-girl-kit"
           }
         }
       },
