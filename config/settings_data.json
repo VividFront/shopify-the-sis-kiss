@@ -216,33 +216,6 @@
         "disabled": false,
         "settings": {}
       },
-      "1386531382474587334": {
-        "type": "shopify://apps/bundle-builder/blocks/bb-cart-integration/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": true,
-        "settings": {
-          "hide_accelerated_checkout": false,
-          "placement": "below",
-          "hide_empty_line_items": false,
-          "font_size": 16,
-          "font_color": "",
-          "button_color": "",
-          "button_background": "",
-          "button_radius": 0,
-          "border_color": "#000000",
-          "background": "",
-          "heading": "Your cart contains {count} bundle",
-          "heading_plural": "Your cart contains {count} bundles",
-          "view_text": "View Details",
-          "modal_title": "Your bundle summary",
-          "modal_font_color": "#000000",
-          "modal_background": "#FFFFFF",
-          "modal_border_color": "#C4C4C4",
-          "modal_item_background": "",
-          "modal_item_content_background": "#F1F1F1",
-          "modal_item_product_background": "#FFFFFF",
-          "custom_css": ""
-        }
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -255,27 +228,6 @@
           "heading": "Sezzle Widget",
           "font_size": 14,
           "font_family": "inherit"
-        }
-      },
-      "14044569291296200651": {
-        "type": "shopify://apps/bundle-builder/blocks/bb-cart-integration-custom/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": false,
-        "settings": {
-          "theme_override": "",
-          "page_cartItemBox": "",
-          "page_cartItem": "",
-          "page_cartSubtotal": "",
-          "page_cartOriginalTotal": "",
-          "page_checkoutButton": "",
-          "drawer_cartItemBox": "",
-          "drawer_cartItem": "",
-          "drawer_cartSubtotal": "",
-          "drawer_cartOriginalTotal": "",
-          "drawer_checkoutButton": "",
-          "cartItemPrice": "",
-          "cartItemLinePrice": "",
-          "cartItemQuantity": "",
-          "observeTargets": ""
         }
       },
       "12657775114333427046": {
@@ -296,6 +248,11 @@
       "15404810374585504564": {
         "type": "shopify://apps/videeo-mobile-commerce/blocks/app-embed-sdk/acf9f8eb-c211-4324-a19b-9f362f43b225",
         "disabled": true,
+        "settings": {}
+      },
+      "10436698916776057164": {
+        "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-helper/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+        "disabled": false,
         "settings": {}
       }
     }
