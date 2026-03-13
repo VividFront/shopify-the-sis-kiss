@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Lucky You, BOGO FREE From Now Until 3/17 at Midnight! FREE Shipping at $100!",
-            "link": "shopify://collections/lucky-you"
+            "text": "FREE Shipping at $100!",
+            "link": "shopify://collections/charm-bar"
           }
         }
       },
