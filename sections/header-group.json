@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "FREE Shipping at $100!",
-            "link": "shopify://collections/charm-bar"
+            "text": "Lucky You BOGO FREE! Buy a Charm Base and Get a Charm for FREE!",
+            "link": "shopify://collections/lucky-you"
           }
         }
       },
