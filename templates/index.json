@@ -15,13 +15,13 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "Ignite Your Spark 🔥"
+            "text": "LUCKY YOU 🍀"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "New Custom Styles"
+            "text": "BOGO Lucky You Collection"
           }
         },
         "body_tTx3zH": {
@@ -35,7 +35,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/new-arrivals"
+            "url": "shopify://collections/lucky-you"
           }
         }
       },
@@ -46,9 +46,9 @@
         "cta_MRQaei"
       ],
       "settings": {
-        "image": "shopify://shop_images/3.7.26-Spark-duo-homepage-hero.jpg",
+        "image": "shopify://shop_images/3.7.26-LUCKY_YOU-homepage-hero.jpg",
         "image_position": "object-left",
-        "image_mobile": "shopify://shop_images/3.7.26-Spark-duo-homepage-hero.jpg",
+        "image_mobile": "shopify://shop_images/3.7.26-LUCKY_YOU-homepage-hero.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
