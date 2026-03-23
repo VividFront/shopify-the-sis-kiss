@@ -265,13 +265,13 @@
         "90ff9ade-70f0-4b3c-bfaa-443b34b1f7a3": {
           "type": "product",
           "settings": {
-            "product": "keepsake-charm-necklace"
+            "product": "mini-paperclip-chain-necklace"
           }
         },
         "f51c9b3f-d069-43bb-bb00-0b8edeeddb97": {
           "type": "product",
           "settings": {
-            "product": "sleek-initial-charm"
+            "product": "bezel-birthstone-charms"
           }
         }
       },
@@ -385,11 +385,11 @@
         "f655c052-e686-464e-a80f-d3ea6d3793fc": {
           "type": "category",
           "settings": {
-            "title": "Accessories",
-            "product_main": "twinning-mama-and-mini-hair-clips",
-            "product_alt_image": "shopify://shop_images/mamaandmini_goldclips.jpg",
-            "product_secondary": "tsk-graphic-hats-in-mama-babe-and-boss",
-            "collection": "hair-accessories"
+            "title": "Stainless Studio",
+            "product_main": "custom-classic-rhinestone-nameplate-necklace",
+            "product_alt_image": "shopify://shop_images/Custom_Classic_Rhinestone_Nameplate_Necklace.jpg",
+            "product_secondary": "custom-my-mantra-name-necklaces",
+            "collection": "stainless-studio"
           }
         }
       },
