@@ -342,6 +342,16 @@
     "efd3c021-b667-4075-93fd-09a6d2277d0e": {
       "type": "home-product-tabs",
       "blocks": {
+        "f655c052-e686-464e-a80f-d3ea6d3793fc": {
+          "type": "category",
+          "settings": {
+            "title": "Stainless Studio",
+            "product_main": "custom-classic-rhinestone-nameplate-necklace",
+            "product_alt_image": "shopify://shop_images/Custom_Classic_Rhinestone_Nameplate_Necklace.jpg",
+            "product_secondary": "custom-my-mantra-name-necklaces",
+            "collection": "stainless-studio"
+          }
+        },
         "d15ef88c-f2c4-49c6-84b1-b67963c90fe3": {
           "type": "category",
           "settings": {
@@ -381,24 +391,14 @@
             "product_secondary": "black-enamel-and-crystal-circles-ring",
             "collection": "rings"
           }
-        },
-        "f655c052-e686-464e-a80f-d3ea6d3793fc": {
-          "type": "category",
-          "settings": {
-            "title": "Stainless Studio",
-            "product_main": "custom-classic-rhinestone-nameplate-necklace",
-            "product_alt_image": "shopify://shop_images/Custom_Classic_Rhinestone_Nameplate_Necklace.jpg",
-            "product_secondary": "custom-my-mantra-name-necklaces",
-            "collection": "stainless-studio"
-          }
         }
       },
       "block_order": [
+        "f655c052-e686-464e-a80f-d3ea6d3793fc",
         "d15ef88c-f2c4-49c6-84b1-b67963c90fe3",
         "8150f579-29b2-4181-9920-dcfb6df1146d",
         "82ec5070-51e6-4ab9-9434-fb712f63896f",
-        "be4c93a1-6c16-4093-918b-ad0c829f9ee1",
-        "f655c052-e686-464e-a80f-d3ea6d3793fc"
+        "be4c93a1-6c16-4093-918b-ad0c829f9ee1"
       ],
       "settings": {}
     },
