@@ -15,17 +15,18 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "30% Off Custom Styles for Mother’s Day"
+            "text": "BEST-SELLING CUSTOM"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Make it Personal"
+            "text": "New - Stainless Studio"
           }
         },
         "body_tTx3zH": {
           "type": "body",
+          "disabled": true,
           "settings": {
             "text": "Order by April 5"
           }
@@ -34,7 +35,7 @@
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/custom-jewelry"
+            "url": "shopify://collections/stainless-studio"
           }
         }
       },
