@@ -15,8 +15,8 @@
         "7f8e02ae-e5ca-4e5f-8aed-bed7385acfa1": {
           "type": "affiliate_card",
           "settings": {
-            "heading": "ShareASale",
-            "body": "<p>Apply to become an affiliate through ShareASale now.</p>",
+            "heading": "Sis Kiss Creator Community",
+            "body": "<p>Apply to earn 20% on direct sales, and 2%-6% on your referrals</p>",
             "cta_text": "Apply Now",
             "cta_link": "https://www.shareasale.com/shareasale.cfm?merchantID=91421",
             "target_blank": true
@@ -57,7 +57,7 @@
       "type": "callout-centered",
       "settings": {
         "heading": "Ready to apply? The time is now!",
-        "body": "If you have questions regarding how to apply to become a TSK affiliate partner, please contact us below.",
+        "body": "If you have questions regarding how to apply to become a Sis Kiss affiliate partner, please contact us below.",
         "cta_text": "Contact Us",
         "cta_url": "shopify://pages/contact-us",
         "theme": "dark"
