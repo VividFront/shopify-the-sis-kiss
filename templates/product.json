@@ -205,6 +205,7 @@
       "blocks": {
         "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -212,6 +213,21 @@
       },
       "block_order": [
         "c2913024-b9fb-4da4-ad2d-d8717af1a674"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1775185000c8bda5fe": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_JcfacW": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_JcfacW"
       ],
       "settings": {
         "include_margins": true
@@ -276,6 +292,7 @@
   },
   "order": [
     "main",
+    "1775185000c8bda5fe",
     "605a63e6-525e-429b-a87a-b51c70b37d88",
     "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
