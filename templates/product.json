@@ -55,6 +55,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "klaviyo_reviews_average_rating_yYnTCc": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -161,6 +167,7 @@
         "quantity_selector",
         "custom_liquid_NRePWE",
         "buy_buttons",
+        "klaviyo_reviews_average_rating_yYnTCc",
         "collapsible-row-0",
         "01d652e9-fc63-471a-922d-f53773c9bac4",
         "64f16b6b-a076-4c3f-a322-19bdb934e657",
