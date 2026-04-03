@@ -198,6 +198,17 @@
         "color": ""
       }
     },
+    "full_width_image_callout_HNDrTz": {
+      "type": "full-width-image-callout",
+      "settings": {
+        "background_image": "shopify://shop_images/Riviera_Drop_Stone_Charm_Hero_flatlay_homepage_feature.jpg",
+        "image_mobile": "shopify://shop_images/Riviera_Drop_Stone_Charm_Hero_flatlay_homepage_feature.jpg",
+        "heading": "NEW Charm of the Month",
+        "body": "<b>Join the Sis Kiss Charm of the Month and get fresh, collectible charms delivered monthly. Choose the number of items you want in your box, and pick your metal finish, Gold or Silver.\n\nWear your story, one charm at a time. </b>",
+        "cta_text": "Subscribe Now",
+        "cta_url": "shopify://products/charm-of-the-month-subscription"
+      }
+    },
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394": {
       "type": "home-trending",
       "blocks": {
@@ -589,6 +600,75 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "featured_product_PyMUF8": {
+      "type": "featured-product",
+      "blocks": {
+        "text_nkwwGh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_MfzyT9": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_xXPjWM": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_FK7KmJ": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_ckTkcz": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_kkp39K": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_KypAjg": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_nkwwGh",
+        "title_MfzyT9",
+        "price_xXPjWM",
+        "variant_picker_FK7KmJ",
+        "quantity_selector_ckTkcz",
+        "buy_buttons_kkp39K",
+        "share_KypAjg"
+      ],
+      "disabled": true,
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "charm-of-the-month-subscription",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -596,6 +676,7 @@
     "hero_color_bz3rjk",
     "hero_color_xQBCrb",
     "9112a0ba-7f75-4de6-84f8-5477492c9d9c",
+    "full_width_image_callout_HNDrTz",
     "f49f6f1c-4d8d-4867-8d2e-0a51c1cf6394",
     "bc1dcc69-4df7-4e65-8092-482942e52e37",
     "837a7077-541b-41b2-bdb2-9145cb52cde4",
@@ -605,6 +686,7 @@
     "532c5839-bed9-45ca-993c-1b983e6903c8",
     "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0",
     "686f2ccf-6996-4ccb-8881-ec7928848173",
-    "1722434502c75d6600"
+    "1722434502c75d6600",
+    "featured_product_PyMUF8"
   ]
 }
