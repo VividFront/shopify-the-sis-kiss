@@ -51,8 +51,15 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "text_PbRyCC": {
+          "type": "text",
+          "settings": {
+            "text": "FREE Shipping on U.S. Orders over $100",
+            "text_style": "body"
           }
         },
         "klaviyo_reviews_average_rating_yYnTCc": {
@@ -167,6 +174,7 @@
         "quantity_selector",
         "custom_liquid_NRePWE",
         "buy_buttons",
+        "text_PbRyCC",
         "klaviyo_reviews_average_rating_yYnTCc",
         "collapsible-row-0",
         "01d652e9-fc63-471a-922d-f53773c9bac4",
