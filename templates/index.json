@@ -385,9 +385,9 @@
           "type": "category",
           "settings": {
             "title": "Rings",
-            "product_main": "custom-open-initial-ring",
-            "product_alt_image": "shopify://shop_images/image_5de51034-3f6d-49e8-a4c3-4fc81a92bbe4.jpg",
-            "product_secondary": "black-enamel-and-crystal-circles-ring",
+            "product_main": "custom-name-band-ring",
+            "product_alt_image": "shopify://shop_images/custom_nameband_ring_lifestyle_-_LeoClaraRing.jpg",
+            "product_secondary": "the-eternity-band-ring",
             "collection": "rings"
           }
         }
