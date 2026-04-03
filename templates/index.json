@@ -44,6 +44,7 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/8D2C99FE-0DA8-4577-B412-BF4E90AABF38.png",
         "image_position": "object-center",
@@ -115,20 +116,20 @@
         "heading_Hjgcpc": {
           "type": "heading",
           "settings": {
-            "text": "The BIG Sale"
+            "text": "20% OFF CUSTOM"
           }
         },
         "body_jGRcYX": {
           "type": "body",
           "settings": {
-            "text": "Shop $5, $10, $15, and $20 styles this weekend only!"
+            "text": "Shop the collection all weekend long, no code needed!"
           }
         },
         "cta_BpPYHN": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/warehouse-sale-collection"
+            "url": "shopify://collections/custom-jewelry"
           }
         }
       },
@@ -138,11 +139,10 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/warehouse_sale_website_hero.jpg",
+        "image": "shopify://shop_images/mother_s-day-custom-cut-off-20_-homepage-hero.gif",
         "image_position": "object-center",
-        "image_mobile": "shopify://shop_images/warehouse_sale_website_hero.jpg",
+        "image_mobile": "shopify://shop_images/mother_s-day-custom-cut-off-20_-homepage-hero.gif",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
