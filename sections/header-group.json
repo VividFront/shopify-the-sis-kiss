@@ -89,6 +89,24 @@
             "link_2_url": "shopify://collections/charm-bar"
           }
         },
+        "menu_large_image_wcwQUL": {
+          "type": "menu_large_image",
+          "settings": {
+            "title": "Charm Bar",
+            "link": "shopify://collections/charm-bar",
+            "list_1_heading": "",
+            "list_1_menu": "charm-bar",
+            "image": "shopify://shop_images/image-5_2.png"
+          }
+        },
+        "7fb787fc-077c-4ff0-b67c-cf740ceb6c52": {
+          "type": "nav_item",
+          "disabled": true,
+          "settings": {
+            "title": "Charm Bar",
+            "link": "shopify://collections/charm-bar"
+          }
+        },
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
           "type": "menu_one_image",
           "settings": {
@@ -106,24 +124,6 @@
             "callout_body": "Elevate your accessory collection with modern, made-to-order diamond pieces from the badass founder of The Sis Kiss",
             "link_text": "Shop Now",
             "link_url": "shopify://collections/tsk-atelier-1979"
-          }
-        },
-        "menu_large_image_wcwQUL": {
-          "type": "menu_large_image",
-          "settings": {
-            "title": "Charm Bar",
-            "link": "shopify://collections/charm-bar",
-            "list_1_heading": "",
-            "list_1_menu": "charm-bar",
-            "image": "shopify://shop_images/image-5_2.png"
-          }
-        },
-        "7fb787fc-077c-4ff0-b67c-cf740ceb6c52": {
-          "type": "nav_item",
-          "disabled": true,
-          "settings": {
-            "title": "Charm Bar",
-            "link": "shopify://collections/charm-bar"
           }
         },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
@@ -162,6 +162,13 @@
             "list_1_heading": "",
             "list_1_menu": "about-us",
             "image": "shopify://shop_images/about.jpg"
+          }
+        },
+        "nav_item_y3k4UM": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Join Our Creator Community",
+            "link": "https://af.uppromote.com/the-sis-kiss/register"
           }
         },
         "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2": {
@@ -209,13 +216,14 @@
         "3f17ec64-7e06-4a03-bf5c-b611e3b83ec6",
         "3eefb546-19a9-45f4-b019-741bc5d870ae",
         "e027b231-35b0-45e5-ac9e-2e531511e453",
-        "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
         "menu_large_image_wcwQUL",
         "7fb787fc-077c-4ff0-b67c-cf740ceb6c52",
+        "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204",
         "10a917bf-6bdd-48c6-b641-2c32af38ef52",
         "e8c5d460-4afc-4ef5-92e9-8d3807edcbcb",
         "d468b5d0-4562-47ea-80c1-5a2471e385bb",
         "d83de503-6965-4841-aef4-e189be6e7c98",
+        "nav_item_y3k4UM",
         "a8a0e9fa-e4d9-4261-a4c6-3ea734a24ee2",
         "d25aa7d5-e113-4125-8bb1-9f438d2cf10c"
       ],
