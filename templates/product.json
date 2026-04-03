@@ -16,12 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "42ce88cc-e1fc-4e0a-888a-d3836bf45002": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/star-rating/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -160,7 +154,6 @@
       },
       "block_order": [
         "title",
-        "42ce88cc-e1fc-4e0a-888a-d3836bf45002",
         "price",
         "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8",
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb",
@@ -192,32 +185,6 @@
         "enable_video_looping": false
       }
     },
-    "605a63e6-525e-429b-a87a-b51c70b37d88": {
-      "type": "complete-the-look",
-      "settings": {
-        "background_image": "shopify://shop_images/wallpaper.png",
-        "marquee_text": "Complete the Look",
-        "recommendation_type": "related"
-      }
-    },
-    "1684352239614af5b1": {
-      "type": "apps",
-      "blocks": {
-        "c2913024-b9fb-4da4-ad2d-d8717af1a674": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "disabled": true,
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "c2913024-b9fb-4da4-ad2d-d8717af1a674"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "1775185000c8bda5fe": {
       "type": "apps",
       "blocks": {
@@ -231,6 +198,14 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "605a63e6-525e-429b-a87a-b51c70b37d88": {
+      "type": "complete-the-look",
+      "settings": {
+        "background_image": "shopify://shop_images/wallpaper.png",
+        "marquee_text": "Complete the Look",
+        "recommendation_type": "complementary"
       }
     },
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb": {
@@ -294,7 +269,6 @@
     "main",
     "1775185000c8bda5fe",
     "605a63e6-525e-429b-a87a-b51c70b37d88",
-    "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
     "bedc88e8-8e96-4831-bbc6-ab67c80aa826",
     "sezzle"
