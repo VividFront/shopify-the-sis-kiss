@@ -62,7 +62,7 @@
             "text_style": "body"
           }
         },
-        "klaviyo_reviews_average_rating_yYnTCc": {
+        "klaviyo_reviews_average_rating_rzheLT": {
           "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
           "settings": {
             "product": "{{product}}"
@@ -175,7 +175,7 @@
         "custom_liquid_NRePWE",
         "buy_buttons",
         "text_PbRyCC",
-        "klaviyo_reviews_average_rating_yYnTCc",
+        "klaviyo_reviews_average_rating_rzheLT",
         "collapsible-row-0",
         "01d652e9-fc63-471a-922d-f53773c9bac4",
         "64f16b6b-a076-4c3f-a322-19bdb934e657",
