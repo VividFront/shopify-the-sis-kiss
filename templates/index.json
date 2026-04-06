@@ -44,7 +44,6 @@
         "body_tTx3zH",
         "cta_MRQaei"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/8D2C99FE-0DA8-4577-B412-BF4E90AABF38.png",
         "image_position": "object-center",
@@ -139,6 +138,7 @@
         "body_jGRcYX",
         "cta_BpPYHN"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/mother_s-day-custom-cut-off-20_-homepage-hero.gif",
         "image_position": "object-center",
