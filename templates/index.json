@@ -15,19 +15,19 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "JUST DROPPED"
+            "text": "MOTHER'S DAY COLLECTION"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Mother's Day Charm Sets"
+            "text": "20% OFF"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Something special for the mamas in your life!"
+            "text": "Order by midnight 4.27 to receive by Mother's Day"
           }
         },
         "cta_MRQaei": {
@@ -45,9 +45,9 @@
         "cta_MRQaei"
       ],
       "settings": {
-        "image": "shopify://shop_images/mother_s_day_20_off_email_hero.jpg",
+        "image": "shopify://shop_images/4.24.26_mothers_day-homepage-hero.jpg",
         "image_position": "object-bottom",
-        "image_mobile": "shopify://shop_images/mother_s_day_20_off_email_hero.jpg",
+        "image_mobile": "shopify://shop_images/4.24.26_mothers_day-homepage-hero.jpg",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
