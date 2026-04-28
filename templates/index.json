@@ -21,11 +21,12 @@
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "20% OFF"
+            "text": "New Exclusive Sets"
           }
         },
         "body_tTx3zH": {
           "type": "body",
+          "disabled": true,
           "settings": {
             "text": "Order by midnight 4.27 to receive by Mother's Day"
           }
