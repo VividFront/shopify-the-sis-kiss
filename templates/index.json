@@ -15,20 +15,19 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "MOTHER'S DAY COLLECTION"
+            "text": "FINE JEWELRY + DIAMONDS"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "New Exclusive Sets"
+            "text": "20% OFF"
           }
         },
         "body_tTx3zH": {
           "type": "body",
-          "disabled": true,
           "settings": {
-            "text": "Order by midnight 4.27 to receive by Mother's Day"
+            "text": "No code needed, Order by midnight 5.3 to receive by Mother's Day"
           }
         },
         "cta_MRQaei": {
@@ -589,15 +588,6 @@
     },
     "1722434502c75d6600": {
       "type": "apps",
-      "blocks": {
-        "videeo_mobile_commerce_popclips_carousel_FzrMFV": {
-          "type": "shopify://apps/videeo-mobile-commerce/blocks/popclips-carousel/acf9f8eb-c211-4324-a19b-9f362f43b225",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "videeo_mobile_commerce_popclips_carousel_FzrMFV"
-      ],
       "settings": {
         "include_margins": true
       }
