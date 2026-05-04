@@ -592,25 +592,6 @@
         "include_margins": true
       }
     },
-    "17779093295b0123d8": {
-      "type": "apps",
-      "blocks": {
-        "lyve_shoppable_video_stream_pdp_app_block_3QyaXk": {
-          "type": "shopify://apps/lyve-shoppable-video-stream/blocks/pdp-app-block/59c1ba16-2c38-422a-a2a9-23074d5a3fd9",
-          "settings": {
-            "custom_id": "69f8b3469a97bd49f1146f43",
-            "language": "en"
-          }
-        }
-      },
-      "block_order": [
-        "lyve_shoppable_video_stream_pdp_app_block_3QyaXk"
-      ],
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "custom_liquid_4WCLYY": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -638,7 +619,6 @@
     "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0",
     "686f2ccf-6996-4ccb-8881-ec7928848173",
     "1722434502c75d6600",
-    "17779093295b0123d8",
     "custom_liquid_4WCLYY"
   ]
 }
