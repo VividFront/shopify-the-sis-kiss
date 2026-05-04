@@ -11,13 +11,33 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1777906151675bbb5d": {
+      "type": "apps",
+      "blocks": {
+        "lyve_shoppable_video_stream_channel_page_app_block_7TRbDr": {
+          "type": "shopify://apps/lyve-shoppable-video-stream/blocks/channel-page-app-block/59c1ba16-2c38-422a-a2a9-23074d5a3fd9",
+          "settings": {
+            "custom_id": "69f4dbe45b3db16f996329be",
+            "language": "en"
+          }
+        }
+      },
+      "block_order": [
+        "lyve_shoppable_video_stream_channel_page_app_block_7TRbDr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1777906151675bbb5d"
   ]
 }
