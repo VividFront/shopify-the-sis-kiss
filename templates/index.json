@@ -606,8 +606,19 @@
       "block_order": [
         "lyve_shoppable_video_stream_pdp_app_block_3QyaXk"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_4WCLYY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script data-lyvecom async src=\"https://dashboard.lyvecom.com/widget/widget.js\"></script>\n      <script>\n        (() => {\n            const scriptElement = document.querySelector('script[data-lyvecom]');\n            scriptElement.addEventListener('load', () => {\n                LyveComWidget.mountSwiperWidget({\n                    swiperID: '69f8b3469a97bd49f1146f43',\n                    lng: 'en'\n                });\n        })})()\n      </script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -627,6 +638,7 @@
     "dcf72bd3-9bb0-4478-9090-2e83a9cdf5b0",
     "686f2ccf-6996-4ccb-8881-ec7928848173",
     "1722434502c75d6600",
-    "17779093295b0123d8"
+    "17779093295b0123d8",
+    "custom_liquid_4WCLYY"
   ]
 }
