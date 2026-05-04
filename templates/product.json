@@ -16,6 +16,13 @@
           "type": "title",
           "settings": {}
         },
+        "lyve_shoppable_video_stream_bubbles_app_block_BPMigB": {
+          "type": "shopify://apps/lyve-shoppable-video-stream/blocks/bubbles-app-block/59c1ba16-2c38-422a-a2a9-23074d5a3fd9",
+          "settings": {
+            "custom_id": "{{ product.metafields.custom.lyvecom_bubbles.value }}",
+            "language": "en"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -167,6 +174,7 @@
       },
       "block_order": [
         "title",
+        "lyve_shoppable_video_stream_bubbles_app_block_BPMigB",
         "price",
         "7d6a9aba-11ab-4b33-ac37-ab76b9562cb8",
         "838ad133-c6a6-45d7-bec9-c3c5fe347deb",
@@ -198,6 +206,24 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false
+      }
+    },
+    "1777911554168709ce": {
+      "type": "apps",
+      "blocks": {
+        "lyve_shoppable_video_stream_carousel_app_block_6XjgxD": {
+          "type": "shopify://apps/lyve-shoppable-video-stream/blocks/carousel-app-block/59c1ba16-2c38-422a-a2a9-23074d5a3fd9",
+          "settings": {
+            "custom_id": "69f8c7a2426b43869ae42533",
+            "language": "en"
+          }
+        }
+      },
+      "block_order": [
+        "lyve_shoppable_video_stream_carousel_app_block_6XjgxD"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "1775185000c8bda5fe": {
@@ -288,6 +314,7 @@
   },
   "order": [
     "main",
+    "1777911554168709ce",
     "1775185000c8bda5fe",
     "605a63e6-525e-429b-a87a-b51c70b37d88",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
