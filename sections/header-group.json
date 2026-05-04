@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_GzfWgh": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Order ready-to-ship styles by Sunday 5/3 at midnight to receive by Mother's Day!",
             "link": ""
