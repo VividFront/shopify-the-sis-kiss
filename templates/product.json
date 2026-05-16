@@ -170,6 +170,10 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "uploadery_app_block_Nwxb9y": {
+          "type": "shopify://apps/uploadery/blocks/app-block/5253cb5d-9d0f-47bd-a1aa-51cb83bf6de3",
+          "settings": {}
         }
       },
       "block_order": [
@@ -193,7 +197,8 @@
         "07e38b9e-c46f-4c8c-9b22-c0f2372a7e60",
         "892debba-2045-4edb-abe9-150cb968ebdb",
         "860069f9-132d-4a45-a4b2-4f66e096b0f0",
-        "share"
+        "share",
+        "uploadery_app_block_Nwxb9y"
       ],
       "settings": {
         "enable_sticky_info": true,
