@@ -15,19 +15,19 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "BEST-SELLING CUSTOM STYLES"
+            "text": "MEMORIAL DAY SALE IS LIVE"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "Stainless Studio"
+            "text": "25% OFF YOUR FAVES"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Fan faves at a friendlier price!"
+            "text": "Savings auto-applied at checkout, exclusions apply."
           }
         },
         "cta_MRQaei": {
@@ -45,9 +45,9 @@
         "cta_MRQaei"
       ],
       "settings": {
-        "image": "shopify://shop_images/stainless_studio_flat_lay_1.heic",
+        "image": "shopify://shop_images/5.21.26-memorial-day-homepage-hero.gif",
         "image_position": "object-bottom",
-        "image_mobile": "shopify://shop_images/stainless_studio_flat_lay_1.heic",
+        "image_mobile": "shopify://shop_images/5.21.26-memorial-day-homepage-hero.gif",
         "designer_tag": "",
         "tag_color": "text-white",
         "color": "#ffffff",
