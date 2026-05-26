@@ -15,17 +15,18 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "MEMORIAL DAY SALE IS LIVE"
+            "text": "NEW ARRIVALS"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "25% OFF YOUR FAVES"
+            "text": "JUST DROPPED"
           }
         },
         "body_tTx3zH": {
           "type": "body",
+          "disabled": true,
           "settings": {
             "text": "Savings auto-applied at checkout, exclusions apply."
           }
