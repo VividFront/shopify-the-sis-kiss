@@ -47,12 +47,12 @@
         "3f17ec64-7e06-4a03-bf5c-b611e3b83ec6": {
           "type": "menu_no_image",
           "settings": {
-            "title": "Jewelry",
+            "title": "Shop",
             "link": "",
-            "list_1_heading": "Categories",
-            "list_1_menu": "jewelry-categories",
+            "list_1_heading": "Collections",
+            "list_1_menu": "jewelry-collections",
             "list_2_heading": "Collections",
-            "list_2_menu": "jewelry-collections",
+            "list_2_menu": "jewelry-categories",
             "list_3_heading": "Collaborations",
             "list_3_menu": "jewelry-collabs"
           }
