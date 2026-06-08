@@ -48,11 +48,11 @@
           "type": "menu_no_image",
           "settings": {
             "title": "Shop",
-            "link": "",
-            "list_1_heading": "Collections",
-            "list_1_menu": "jewelry-collections",
+            "link": "shopify://collections/frontpage",
+            "list_1_heading": "Categories",
+            "list_1_menu": "jewelry-categories",
             "list_2_heading": "Collections",
-            "list_2_menu": "jewelry-categories",
+            "list_2_menu": "jewelry-collections",
             "list_3_heading": "Collaborations",
             "list_3_menu": "jewelry-collabs"
           }
