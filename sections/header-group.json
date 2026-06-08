@@ -118,6 +118,7 @@
         },
         "8400d1cd-2b9b-4fdd-8eb5-c53c8f066204": {
           "type": "menu_one_image",
+          "disabled": true,
           "settings": {
             "title": "Fine Jewelry",
             "link": "shopify://collections/tsk-atelier-1979",
@@ -137,6 +138,7 @@
         },
         "10a917bf-6bdd-48c6-b641-2c32af38ef52": {
           "type": "nav_item",
+          "disabled": true,
           "settings": {
             "title": "Permanent Jewelry",
             "link": "shopify://products/sis-kiss-links-permanent-bracelets"
@@ -165,10 +167,11 @@
         },
         "d83de503-6965-4841-aef4-e189be6e7c98": {
           "type": "menu_large_image",
+          "disabled": true,
           "settings": {
-            "title": "About Us",
-            "link": "",
-            "list_1_heading": "",
+            "title": "New & Trending",
+            "link": "shopify://collections/new-arrivals",
+            "list_1_heading": "New Arrivals",
             "list_1_menu": "about-us",
             "image": "shopify://shop_images/about.jpg"
           }
