@@ -16,10 +16,9 @@
       "blocks": {
         "announcement_GzfWgh": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Order ready-to-ship styles by Sunday 5/3 at midnight to receive by Mother's Day!",
-            "link": ""
+            "text": "Shop Custom Styles 25% Off. Ends Sunday at Midnight.",
+            "link": "shopify://collections/custom-jewelry"
           }
         },
         "announcement-bar-0": {
