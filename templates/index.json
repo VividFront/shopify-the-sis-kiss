@@ -33,7 +33,7 @@
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
-            "text": "Shop Now",
+            "text": "Shop the Sale",
             "url": "shopify://collections/custom-jewelry"
           }
         }
