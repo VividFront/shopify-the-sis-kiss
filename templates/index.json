@@ -15,26 +15,26 @@
         "subheading_rD3VJb": {
           "type": "subheading",
           "settings": {
-            "text": "JUST DROPPED"
+            "text": "CELEBRATE YOU!"
           }
         },
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "New Arrivals"
+            "text": "25% OFF  CUSTOM"
           }
         },
         "body_tTx3zH": {
           "type": "body",
           "settings": {
-            "text": "Custom pieces, charms, and more!"
+            "text": "No code needed, ends Sunday at midnight."
           }
         },
         "cta_MRQaei": {
           "type": "cta",
           "settings": {
             "text": "Shop Now",
-            "url": "shopify://collections/new-arrivals"
+            "url": "shopify://collections/custom-jewelry"
           }
         }
       },
