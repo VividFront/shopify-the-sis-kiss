@@ -21,11 +21,12 @@
         "heading_RCJNEr": {
           "type": "heading",
           "settings": {
-            "text": "25% OFF  CUSTOM"
+            "text": "NEW  CUSTOM"
           }
         },
         "body_tTx3zH": {
           "type": "body",
+          "disabled": true,
           "settings": {
             "text": "No code needed, ends Sunday at midnight."
           }

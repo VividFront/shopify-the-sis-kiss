@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_GzfWgh": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Shop Custom Styles 25% Off. Ends Sunday at Midnight.",
             "link": "shopify://collections/custom-jewelry"
