@@ -315,10 +315,26 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "product_genius_app_section_a0dae25c": {
+      "type": "apps",
+      "blocks": {
+        "product_genius_ai_product_genius_liquid_36c03229": {
+          "type": "shopify://apps/product-genius-ai/blocks/product-genius-liquid/90d2ddb0-7095-41f9-a623-2079e56d0c9c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_genius_ai_product_genius_liquid_36c03229"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
+    "product_genius_app_section_a0dae25c",
     "1777911554168709ce",
     "1775185000c8bda5fe",
     "605a63e6-525e-429b-a87a-b51c70b37d88",
