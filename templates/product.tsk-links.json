@@ -316,16 +316,16 @@
         "recommendation_type": "related"
       }
     },
-    "product_genius_app_section_4a8f4c86": {
+    "product_genius_app_section_523bb49a": {
       "type": "apps",
       "blocks": {
-        "product_genius_ai_product_genius_liquid_263833ad": {
+        "product_genius_ai_product_genius_liquid_b8cf5241": {
           "type": "shopify://apps/product-genius-ai/blocks/product-genius-liquid/90d2ddb0-7095-41f9-a623-2079e56d0c9c",
           "settings": {}
         }
       },
       "block_order": [
-        "product_genius_ai_product_genius_liquid_263833ad"
+        "product_genius_ai_product_genius_liquid_b8cf5241"
       ],
       "settings": {
         "include_margins": true
@@ -336,7 +336,7 @@
     "db0377bb-7301-4096-a731-1be37f8f598f",
     "5d25238f-4cbf-46cd-9b8a-9901a3d0de2b",
     "main",
-    "product_genius_app_section_4a8f4c86",
+    "product_genius_app_section_523bb49a",
     "4db25240-7fe7-48e9-8f1d-61cdea6ffe79",
     "1684352239614af5b1",
     "8aafe899-fe4c-4b44-b49a-b7ad082e0dcb",
