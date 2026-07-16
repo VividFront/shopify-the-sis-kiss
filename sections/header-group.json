@@ -18,8 +18,8 @@
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "Shop Custom Styles 25% Off. Ends Sunday at Midnight.",
-            "link": "shopify://collections/custom-jewelry"
+            "text": "Shop Essentials 25% Off. Ends Monday at Midnight.",
+            "link": "shopify://collections/the-sis-kiss-essentials"
           }
         },
         "announcement-bar-0": {
