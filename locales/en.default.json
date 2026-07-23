@@ -484,12 +484,6 @@
       "max_characters": "{{ max_chars }} characters max"
     }
   },
-  "locksmith": {
-    "forms": {
-      "submit_button_text": "Continue",
-      "loading_text": "One moment..."
-    }
-  },
   "pagefly": {
     "products": {
       "product": {

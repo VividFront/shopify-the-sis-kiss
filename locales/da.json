@@ -484,12 +484,6 @@
       "email_label_optional_for_no_js_behavior": "Modtagerens mailadresse (valgfrit)"
     }
   },
-  "locksmith": {
-    "forms": {
-      "submit_button_text": "Continue",
-      "loading_text": "One moment..."
-    }
-  },
   "pagefly": {
     "products": {
       "product": {
