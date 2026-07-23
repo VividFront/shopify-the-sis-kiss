@@ -484,12 +484,6 @@
       "email_label_optional_for_no_js_behavior": "อีเมลผู้รับ (ระบุหรือไม่ก็ได้)"
     }
   },
-  "locksmith": {
-    "forms": {
-      "submit_button_text": "Continue",
-      "loading_text": "One moment..."
-    }
-  },
   "pagefly": {
     "products": {
       "product": {

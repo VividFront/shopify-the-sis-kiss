@@ -494,12 +494,6 @@
       "email_label_optional_for_no_js_behavior": "E-mail do destinatário (opcional)"
     }
   },
-  "locksmith": {
-    "forms": {
-      "submit_button_text": "Continue",
-      "loading_text": "One moment..."
-    }
-  },
   "pagefly": {
     "products": {
       "product": {
