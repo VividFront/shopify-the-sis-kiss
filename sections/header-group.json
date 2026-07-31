@@ -16,9 +16,8 @@
       "blocks": {
         "announcement_GzfWgh": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Shop Essentials 25% Off. Ends Monday at Midnight.",
+            "text": "Last Call! Charm Bar B2G1 Free. Ends Sunday at Midnight.",
             "link": "shopify://collections/the-sis-kiss-essentials"
           }
         },
