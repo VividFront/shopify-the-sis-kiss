@@ -1,16 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "collaborator_hero_LyQE8r": {
       "type": "collaborator-hero",
+      "disabled": true,
       "settings": {
         "heading": "CHARM NECKLACE",
-        "explore_badge": "shopify:\/\/shop_images\/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
+        "explore_badge": "shopify://shop_images/Explore_2x_6a85a935-99e8-4183-813f-62c4789fb95d.png"
       }
     },
     "product-grid": {
